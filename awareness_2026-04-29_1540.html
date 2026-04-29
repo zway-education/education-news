@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知 SEL 教育文宣｜2026.04.29 | 15:40</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    background: #f7f5f2;
+    color: #2d2d2d;
+    padding: 0 0 60px;
+  }
+  .site-header {
+    background: #fff;
+    border-bottom: 3px solid #d97757;
+    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .brand-dot {
+    width: 36px; height: 36px;
+    background: #d97757;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -1px;
+  }
+  .brand-name {
+    font-size: 20px;
+    font-weight: 800;
+    color: #d97757;
+    letter-spacing: 1px;
+  }
+  .brand-sub {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 2px;
+  }
+  .header-date {
+    font-size: 13px;
+    color: #aaa;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .page-intro {
+    max-width: 860px;
+    margin: 36px auto 10px;
+    padding: 0 24px;
+  }
+  .page-intro h1 {
+    font-size: 15px;
+    color: #888;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .page-intro p {
+    font-size: 13px;
+    color: #bbb;
+  }
+  .cards-container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.07);
+  }
+  .card-visual {
+    width: 100%;
+    background: #f0ece7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .card-visual svg {
+    width: 100%;
+    display: block;
+  }
+  .card-body {
+    padding: 30px 34px 26px;
+  }
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+  .tag-pain { background: #fff0eb; color: #d97757; border: 1.5px solid #d97757; }
+  .tag-skill { background: #f0ebff; color: #7c5cbf; border: 1.5px solid #a07ee0; }
+  .tag-trend { background: #e8faf3; color: #2a9d6e; border: 1.5px solid #4ec99a; }
+  .tag-extra { background: #f5f2e8; color: #8a7a50; border: 1.5px solid #c4b07a; }
+  .card-number {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .card-title {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.45;
+    color: #1e1e1e;
+    margin-bottom: 18px;
+    letter-spacing: 0.3px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d97757;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .resonance {
+    background: #fdf8f5;
+    border-left: 4px solid #d97757;
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #444;
+  }
+  .insight-box {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+  }
+  .insight-box strong {
+    color: #333;
+  }
+  .copy-box {
+    background: linear-gradient(135deg, #fffaf7 0%, #fff7f3 100%);
+    border: 1.5px solid #f0d8cc;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #333;
+  }
+  .copy-box .copy-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d97757;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .closing-quote {
+    background: #d97757;
+    color: #fff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+  }
+  .card-footer {
+    border-top: 1px solid #f0ece7;
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa;
+  }
+  .footer-col { display: flex; flex-direction: column; gap: 4px; }
+  .footer-col span { display: flex; align-items: center; gap: 5px; }
+  .footer-col a { color: #a07ee0; text-decoration: none; }
+  .footer-col a:hover { text-decoration: underline; }
+  .unsplash-hint {
+    font-size: 12px;
+    color: #bbb;
+    font-style: italic;
+    margin-top: 8px;
+  }
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e0dbd5, transparent);
+    margin: 6px 0 20px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-dot">覺</div>
+    <div>
+      <div class="brand-name">覺知 SEL 教育</div>
+      <div class="brand-sub">AWARENESS · SEL · EDUCATION</div>
+    </div>
+  </div>
+  <div class="header-date">2026.04.29 &nbsp;|&nbsp; 15:40 &nbsp;·&nbsp; 每日教養文宣</div>
+</header>
+
+<div class="page-intro">
+  <h1>TODAY'S CONTENT · 3 篇文宣</h1>
+  <p>拒學徵兆 × 爸爸的角色 × 兒童自律力科學——三個角度，三種共鳴</p>
+</div>
+
+<div class="cards-container">
+
+  <!-- ── CARD 1 ── 拒學徵兆（第一層：家長痛點） -->
+  <div class="card">
+    <div class="card-visual">
+      <svg viewBox="0 0 860 280" xmlns="http://www.w3.org/2000/svg">
+        <rect width="860" height="280" fill="#fdf5f1"/>
+        <!-- Morning window light -->
+        <rect x="0" y="0" width="860" height="280" fill="url(#morningGrad)"/>
+        <defs>
+          <linearGradient id="morningGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff9f6"/>
+            <stop offset="100%" stop-color="#fdeee6"/>
+          </linearGradient>
+        </defs>
+        <!-- School bag -->
+        <rect x="340" y="70" width="120" height="100" rx="18" fill="#d97757" opacity="0.85"/>
+        <rect x="365" y="55" width="70" height="30" rx="14" fill="#c4663f" opacity="0.85"/>
+        <rect x="390" y="90" width="30" height="22" rx="5" fill="#fff" opacity="0.5"/>
+        <!-- Sad face child -->
+        <circle cx="180" cy="145" r="60" fill="#f5c3a0" opacity="0.9"/>
+        <circle cx="163" cy="138" r="7" fill="#6b4226"/>
+        <circle cx="197" cy="138" r="7" fill="#6b4226"/>
+        <path d="M165 162 Q180 154 195 162" stroke="#6b4226" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- Tear -->
+        <ellipse cx="160" cy="152" rx="4" ry="7" fill="#a0c8f5" opacity="0.7"/>
+        <!-- Stomach pain lines -->
+        <path d="M118 145 Q135 130 152 145" stroke="#d97757" stroke-width="2.5" fill="none" stroke-dasharray="5,3" opacity="0.7"/>
+        <path d="M110 158 Q130 143 150 158" stroke="#d97757" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.5"/>
+        <!-- Text -->
+        <text x="280" y="188" font-family="sans-serif" font-size="18" fill="#d97757" font-weight="bold">「媽媽⋯我肚子好痛」</text>
+        <text x="280" y="215" font-family="sans-serif" font-size="13" fill="#b07050">早上七點，書包還沒背起來</text>
+        <!-- Alarm clock -->
+        <circle cx="700" cy="120" r="42" fill="#fff" opacity="0.8" stroke="#e0c8b8" stroke-width="2"/>
+        <circle cx="700" cy="120" r="35" fill="#fff7f3" opacity="0.9"/>
+        <text x="700" y="115" font-family="sans-serif" font-size="11" fill="#999" text-anchor="middle">07:00</text>
+        <line x1="700" y1="120" x2="700" y2="100" stroke="#d97757" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="700" y1="120" x2="715" y2="120" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+        <!-- school closed -->
+        <text x="635" y="195" font-family="sans-serif" font-size="13" fill="#ccc">第 7 個「肚子痛」的早晨</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="tag tag-pain">🔴 家長痛點</span>
+        <span class="tag tag-pain">拒學徵兆</span>
+        <span class="card-number">No. 01</span>
+      </div>
+      <h2 class="card-title">孩子每天早上喊「肚子痛」——不是裝病，是身體在替情緒說話</h2>
+      <div class="divider"></div>
+
+      <div class="section-label">家長共鳴情境</div>
+      <div class="resonance">
+        七點的鬧鐘響了，你進房叫小偉起床。<br>
+        他已經蜷縮在棉被裡，臉色蒼白地說：「媽媽，我肚子很痛。」<br>
+        這是這個月第七次了。<br>
+        你開始懷疑——他是真的不舒服，還是只是不想去學校？<br>
+        但更深的擔心是：<strong>萬一他真的在學校遇到了什麼？</strong>
+      </div>
+
+      <div class="section-label">教育新知引用</div>
+      <div class="insight-box">
+        台北慈濟醫院及多位臨床心理師的研究指出，兒童拒學的盛行率約為 <strong>1–5%</strong>，且後疫情時代顯著上升。許多孩子不是「不想念書」，而是焦慮已轉化為身體症狀——反覆頭痛、腹痛、心跳加速——這是大腦的自我保護機制。拒學往往在「升學關鍵節點」（小升國中、國中升高中）前後集中爆發。
+        <br><br>
+        <a href="https://taipei.tzuchi.com.tw/%E9%9D%92%E5%B0%91%E5%B9%B4%E6%8B%92%E5%AD%B8%E5%95%8F%E9%A1%8C%E5%A4%A7-%E5%AE%B6%E9%95%B7%E9%99%AA%E4%BC%B4%E6%98%AF%E9%97%9C%E9%8D%B5/" style="font-size:12px;color:#a07ee0;">📎 來源：台北慈濟醫院－青少年拒學問題</a>
+      </div>
+
+      <div class="section-label">覺知 SEL 觀點</div>
+      <div class="insight-box">
+        覺知 SEL 的核心：孩子不是故意「裝病」——他的身體在說一件情緒還不會說的話。當孩子的情緒辨識能力還不夠成熟，焦慮與恐懼就會從「肚子痛」、「頭很暈」出現。這時父母最重要的不是判斷「真假」，而是先同理身體、再慢慢問心裡。
+      </div>
+
+      <div class="copy-box">
+        <span class="copy-label">✏️ 可直接發布文案（LINE / FB / IG）</span>
+        孩子每天早上喊肚子痛，帶去看醫生卻查不出原因⋯<br><br>
+        很多家長以為孩子在「裝病」，但心理師說——<br>
+        這可能是焦慮在說話，只是孩子的身體比嘴巴先開口了。🫀<br><br>
+        後疫情時代，拒學的孩子比以前多了好幾倍。<br>
+        他們不是不想努力，是身體的警報系統已經先亮燈了。<br><br>
+        如果你家也有這樣的早晨，<br>
+        先不急著說「學校一定要去」——<br>
+        試著問：「你最近有什麼事讓你很擔心嗎？」<br><br>
+        孩子能說出來，才是真正的開始。💬<br><br>
+        #拒學 #兒童焦慮 #SEL情緒教育 #覺知教育 #教養筆記
+      </div>
+
+      <div class="closing-quote">
+        「孩子的身體，從不說謊。」
+      </div>
+
+      <div class="card-footer">
+        <div class="footer-col">
+          <span>🎯 適合對象：國小中高年級、國中生家長</span>
+          <span>📱 適合平台：FB 家長社群、LINE 親子群組、IG 輪播</span>
+        </div>
+        <div class="footer-col">
+          <div class="unsplash-hint">📸 Unsplash 關鍵字：child stomach ache morning school, sad boy backpack, parent comfort child</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CARD 2 ── 爸爸角色（加值類別：家長自我照顧） -->
+  <div class="card">
+    <div class="card-visual">
+      <svg viewBox="0 0 860 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="dadGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f0f4ff"/>
+            <stop offset="100%" stop-color="#e8ecff"/>
+          </linearGradient>
+        </defs>
+        <rect width="860" height="280" fill="url(#dadGrad)"/>
+        <!-- Dad silhouette -->
+        <circle cx="300" cy="110" r="45" fill="#5b6fa8" opacity="0.85"/>
+        <!-- Dad body -->
+        <path d="M255 175 Q300 155 345 175 L355 260 H245 Z" fill="#5b6fa8" opacity="0.7"/>
+        <!-- Child on shoulders -->
+        <circle cx="300" cy="65" r="28" fill="#f5c3a0" opacity="0.95"/>
+        <circle cx="290" cy="60" r="5" fill="#6b4226"/>
+        <circle cx="310" cy="60" r="5" fill="#6b4226"/>
+        <path d="M293 74 Q300 80 307 74" stroke="#6b4226" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <!-- child arms up happy -->
+        <line x1="272" y1="78" x2="252" y2="58" stroke="#f5c3a0" stroke-width="5" stroke-linecap="round"/>
+        <line x1="328" y1="78" x2="348" y2="58" stroke="#f5c3a0" stroke-width="5" stroke-linecap="round"/>
+        <!-- Stars/sparkles -->
+        <text x="230" y="55" font-size="18" fill="#f5c842" opacity="0.8">✦</text>
+        <text x="358" y="48" font-size="14" fill="#f5c842" opacity="0.6">✦</text>
+        <text x="215" y="80" font-size="10" fill="#f5c842" opacity="0.5">✦</text>
+        <!-- Text area -->
+        <text x="430" y="105" font-family="sans-serif" font-size="20" fill="#3d4e8a" font-weight="bold">爸爸，不只是幫手</text>
+        <text x="430" y="135" font-family="sans-serif" font-size="14" fill="#6b7ab5">2026 育兒新觀點</text>
+        <!-- Divider line -->
+        <line x1="430" y1="148" x2="680" y2="148" stroke="#8a9bd4" stroke-width="1" opacity="0.4"/>
+        <text x="430" y="170" font-family="sans-serif" font-size="13" fill="#8a9bd4">「育兒結構的核心一員」</text>
+        <text x="430" y="192" font-family="sans-serif" font-size="13" fill="#aab0d8">研究：爸爸參與 → 孩子學習成就更高</text>
+        <text x="430" y="214" font-family="sans-serif" font-size="13" fill="#aab0d8">爸爸在場 → 媽媽比較不累</text>
+        <!-- badge -->
+        <rect x="430" y="228" width="180" height="28" rx="14" fill="#5b6fa8" opacity="0.15"/>
+        <text x="520" y="246" font-family="sans-serif" font-size="12" fill="#3d4e8a" text-anchor="middle" font-weight="bold">父職 × SEL × 家庭力量</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="tag tag-extra">🟡 家長自我照顧</span>
+        <span class="tag tag-extra">爸爸角色</span>
+        <span class="card-number">No. 02</span>
+      </div>
+      <h2 class="card-title">爸爸以為自己是「育兒助理」——但孩子需要的，是一個真正在場的爸爸</h2>
+      <div class="divider"></div>
+
+      <div class="section-label">家長共鳴情境</div>
+      <div class="resonance">
+        小芸的爸爸下班回家，習慣問：「今天有沒有乖？功課做了嗎？」<br>
+        媽媽在旁邊默默把碗洗完、把作業簽好、哄孩子睡覺。<br>
+        爸爸覺得自己「有幫忙」——但媽媽已經累到沒有力氣說謝謝了。<br>
+        孩子心裡呢？只記得媽媽的臉，忘了爸爸的聲音。
+      </div>
+
+      <div class="section-label">教育新知引用</div>
+      <div class="insight-box">
+        根據《媽寶月刊》2026 年育兒新觀點系列報導，台灣超過八成媽媽表示伴侶已成為「可以一起討論、一起承擔」的育兒夥伴。研究指出，<strong>爸爸積極參與照護的孩子，學業表現更好、課外活動更豐富、心理福祉更高</strong>。父職研究學者 Michael Lamb 更指出：父親扮演的八個角色——從陪伴者、楷模到道德引導者——缺一不可。
+        <br><br>
+        <a href="https://www.mababy.com/knowledge-detail?id=16808" style="font-size:12px;color:#a07ee0;">📎 來源：媽寶月刊－2026 育兒新觀點，爸爸不是來幫忙的</a>
+      </div>
+
+      <div class="section-label">覺知 SEL 觀點</div>
+      <div class="insight-box">
+        SEL 的情緒連結，不只是媽媽的工作。當爸爸真正「在場」——不是滑手機式的陪伴，而是看著孩子、回應孩子——孩子會學到一件事：「我值得被關注。」這是自信心與安全感最早的來源。爸爸的參與，不只讓媽媽喘息，更是孩子 SEL 能力的雙重保險。
+      </div>
+
+      <div class="copy-box">
+        <span class="copy-label">✏️ 可直接發布文案（LINE / FB / IG）</span>
+        你有沒有發現——<br>
+        在很多家庭裡，爸爸是「週末加班的育兒助理」，<br>
+        媽媽是「不下班的全職教練」。<br><br>
+        但 2026 年的育兒研究說：<br>
+        爸爸不是來幫忙的——是育兒結構的核心一員。👨‍👧<br><br>
+        研究顯示，爸爸積極參與的孩子：<br>
+        ✅ 學業成就更高<br>
+        ✅ 情緒更穩定<br>
+        ✅ 人際關係更好<br><br>
+        對媽媽來說，最療癒的事不是「謝謝你幫我」，<br>
+        而是「我們一起來」。<br><br>
+        今天，試著讓爸爸接手一件事——<br>
+        不是「幫忙」，而是「負責」。<br><br>
+        #爸爸在場 #育兒夥伴 #SEL家庭教育 #父職 #覺知教育
+      </div>
+
+      <div class="closing-quote">
+        「孩子記住的，不是你買的玩具——是你是否真的出現過。」
+      </div>
+
+      <div class="card-footer">
+        <div class="footer-col">
+          <span>🎯 適合對象：雙親家庭、爸爸族群、媽媽倡議者</span>
+          <span>📱 適合平台：FB 親子版、IG 教養帳號、Podcast 分享</span>
+        </div>
+        <div class="footer-col">
+          <div class="unsplash-hint">📸 Unsplash 關鍵字：father carrying child on shoulders, dad playing with kids, family bonding father</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CARD 3 ── 兒童自律力 EF（第二層：能力培養） -->
+  <div class="card">
+    <div class="card-visual">
+      <svg viewBox="0 0 860 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="skillGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f8f4ff"/>
+            <stop offset="100%" stop-color="#f0ebff"/>
+          </linearGradient>
+        </defs>
+        <rect width="860" height="280" fill="url(#skillGrad)"/>
+        <!-- Brain with gears inside -->
+        <ellipse cx="200" cy="140" rx="80" ry="72" fill="#c4aff0" opacity="0.5"/>
+        <ellipse cx="220" cy="130" rx="65" ry="58" fill="#a07ee0" opacity="0.45"/>
+        <!-- Gear 1 -->
+        <circle cx="195" cy="135" r="28" fill="none" stroke="#7c5cbf" stroke-width="3" stroke-dasharray="8,4"/>
+        <circle cx="195" cy="135" r="16" fill="#ede5ff" stroke="#a07ee0" stroke-width="2"/>
+        <text x="195" y="140" font-family="sans-serif" font-size="14" fill="#7c5cbf" text-anchor="middle">⚙</text>
+        <!-- Gear 2 smaller -->
+        <circle cx="235" cy="108" r="18" fill="none" stroke="#a07ee0" stroke-width="2.5" stroke-dasharray="5,3"/>
+        <circle cx="235" cy="108" r="10" fill="#f5f0ff" stroke="#c4aff0" stroke-width="1.5"/>
+        <text x="235" y="113" font-family="sans-serif" font-size="10" fill="#9b7cd4" text-anchor="middle">⚙</text>
+        <!-- Meter bar - self regulation -->
+        <rect x="360" y="80" width="380" height="22" rx="11" fill="#e8e0f5" opacity="0.8"/>
+        <rect x="360" y="80" width="280" height="22" rx="11" fill="#a07ee0" opacity="0.75"/>
+        <text x="360" y="72" font-family="sans-serif" font-size="12" fill="#7c5cbf" font-weight="bold">自我調節力</text>
+        <text x="648" y="96" font-family="sans-serif" font-size="11" fill="#fff" font-weight="bold">74%</text>
+
+        <rect x="360" y="120" width="380" height="22" rx="11" fill="#e8e0f5" opacity="0.8"/>
+        <rect x="360" y="120" width="190" height="22" rx="11" fill="#c4aff0" opacity="0.75"/>
+        <text x="360" y="112" font-family="sans-serif" font-size="12" fill="#7c5cbf" font-weight="bold">衝動控制</text>
+        <text x="557" y="136" font-family="sans-serif" font-size="11" fill="#fff" font-weight="bold">50%</text>
+
+        <rect x="360" y="160" width="380" height="22" rx="11" fill="#e8e0f5" opacity="0.8"/>
+        <rect x="360" y="160" width="320" height="22" rx="11" fill="#8b65d9" opacity="0.7"/>
+        <text x="360" y="152" font-family="sans-serif" font-size="12" fill="#7c5cbf" font-weight="bold">工作記憶</text>
+        <text x="688" y="176" font-family="sans-serif" font-size="11" fill="#fff" font-weight="bold">84%</text>
+
+        <!-- Caption -->
+        <text x="360" y="218" font-family="sans-serif" font-size="13" fill="#9b7cd4">EF 執行功能：比 IQ 更能預測孩子未來</text>
+        <text x="360" y="238" font-family="sans-serif" font-size="12" fill="#b8a5e0">哈佛兒童發展中心 · Frontiers in Psychology</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="tag tag-skill">🟣 能力培養</span>
+        <span class="tag tag-skill">自律力 EF</span>
+        <span class="card-number">No. 03</span>
+      </div>
+      <h2 class="card-title">比 IQ 更重要的能力——哈佛研究說，決定孩子成就的是「這三件事」</h2>
+      <div class="divider"></div>
+
+      <div class="section-label">家長共鳴情境</div>
+      <div class="resonance">
+        姐姐數學滿分，弟弟想到什麼就做什麼、說了三遍還是忘。<br>
+        全家都說弟弟是「不夠努力」，但弟弟根本不是不努力——<br>
+        他只是大腦裡的「煞車系統」還在發育中。<br>
+        這件事，你知道嗎？
+      </div>
+
+      <div class="section-label">教育新知引用</div>
+      <div class="insight-box">
+        《Frontiers in Psychology》2021 年系統性回顧研究，以及哈佛兒童發展中心長期追蹤資料均指出：<strong>執行功能（EF）——包含自我調節、工作記憶、衝動控制——對孩子的學業與人生成就，預測力等同或超過 IQ</strong>。更重要的是，EF 技能可以透過師生互動與家庭環境「訓練養成」，不是天生定型的。
+        <br><br>
+        <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.718262/full" style="font-size:12px;color:#a07ee0;">📎 來源：Frontiers in Psychology－EF 與自我調節系統性回顧</a>
+      </div>
+
+      <div class="section-label">覺知 SEL 觀點</div>
+      <div class="insight-box">
+        覺知 SEL 的課程設計，就是以執行功能為核心骨幹。我們不只教孩子「要自律」，而是透過具體的情境練習——延遲滿足、情緒暫停、目標設定——幫助孩子的大腦前額葉真正建立「煞車能力」。這不是意志力的問題，是可以學會的技能。
+      </div>
+
+      <div class="copy-box">
+        <span class="copy-label">✏️ 可直接發布文案（LINE / FB / IG）</span>
+        你家孩子是不是也有這樣的時候：<br>
+        說了五遍還是記不住、衝動行事後才後悔、<br>
+        明明想好好讀書，但就是坐不住？🙈<br><br>
+        哈佛兒童發展中心告訴我們——<br>
+        這不是「不夠努力」，是大腦的執行功能（EF）還在發育。<br><br>
+        EF 包含三個核心能力：<br>
+        🧠 工作記憶（記住指令，按順序完成）<br>
+        🛑 衝動控制（想到不一定要馬上做）<br>
+        🔄 認知彈性（被打斷後能重新調整）<br><br>
+        最好的消息是：EF 可以訓練，不是天生注定。<br>
+        從家庭日常的小練習開始，孩子的自律力是可以長出來的。🌱<br><br>
+        #執行功能EF #自律力 #兒童大腦發展 #SEL教育 #覺知教育
+      </div>
+
+      <div class="closing-quote">
+        「孩子不是缺乏意志力——他只是還在學習怎麼踩煞車。」
+      </div>
+
+      <div class="card-footer">
+        <div class="footer-col">
+          <span>🎯 適合對象：學齡前到國小家長、親師</span>
+          <span>📱 適合平台：IG 教育帳號、FB 家長社群、親職講座推廣</span>
+        </div>
+        <div class="footer-col">
+          <div class="unsplash-hint">📸 Unsplash 關鍵字：child focused task learning, brain development child, self control kids study</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end cards-container -->
+
+<div style="text-align:center; padding: 30px 20px 10px; font-size: 12px; color: #ccc; letter-spacing: 1px;">
+  覺知 SEL 教育 · 內容企劃資料庫 · 自動生成 2026.04.29 15:40<br>
+  本文宣僅供內部使用與社群發布參考
+</div>
+
+</body>
+</html>

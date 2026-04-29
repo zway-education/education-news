@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知 SEL 教育｜每日文宣資料庫</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    background: #f7f5f2;
+    color: #2d2d2d;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    background: #fff;
+    border-bottom: 3px solid #d97757;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand-dot {
+    width: 40px; height: 40px;
+    background: #d97757;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 20px; font-weight: 900;
+  }
+  .brand-name { font-size: 22px; font-weight: 800; color: #d97757; letter-spacing: 1px; }
+  .brand-sub { font-size: 11px; color: #bbb; letter-spacing: 2px; margin-top: 2px; }
+  .header-right { font-size: 13px; color: #bbb; letter-spacing: 1px; }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #fff9f6 0%, #fdeee6 100%);
+    padding: 48px 40px 36px;
+    text-align: center;
+    border-bottom: 1px solid #f0ddd4;
+  }
+  .hero h1 { font-size: 28px; font-weight: 900; color: #1e1e1e; margin-bottom: 10px; }
+  .hero p { font-size: 15px; color: #888; line-height: 1.7; }
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+  .stat-box {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 28px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(217,119,87,0.1);
+    border: 1px solid #f5e0d5;
+  }
+  .stat-num { font-size: 32px; font-weight: 900; color: #d97757; }
+  .stat-label { font-size: 12px; color: #aaa; margin-top: 4px; letter-spacing: 1px; }
+
+  /* ── Toolbar ── */
+  .toolbar {
+    max-width: 900px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 16px;
+    border: 1.5px solid #e8ddd8;
+    border-radius: 30px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+    color: #333;
+    transition: border-color 0.2s;
+  }
+  .search-input:focus { border-color: #d97757; }
+  .filter-btn {
+    padding: 9px 18px;
+    border-radius: 20px;
+    border: 1.5px solid #e0d8d2;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: #d97757;
+    border-color: #d97757;
+    color: #fff;
+  }
+
+  /* ── Date Groups ── */
+  .content-area {
+    max-width: 900px;
+    margin: 24px auto 60px;
+    padding: 0 24px;
+  }
+  .date-group { margin-bottom: 36px; }
+  .date-heading {
+    font-size: 13px;
+    font-weight: 700;
+    color: #bbb;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border-bottom: 1px solid #ede9e5;
+    margin-bottom: 14px;
+  }
+
+  /* ── Article Cards ── */
+  .article-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-decoration: none;
+    color: inherit;
+    border: 1.5px solid transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .article-card:hover {
+    border-color: #d97757;
+    box-shadow: 0 4px 20px rgba(217,119,87,0.12);
+    transform: translateY(-1px);
+  }
+  .card-time-badge {
+    flex-shrink: 0;
+    background: #fff5f0;
+    border: 1.5px solid #f5ddd0;
+    border-radius: 10px;
+    padding: 8px 14px;
+    text-align: center;
+    min-width: 64px;
+  }
+  .card-time-badge .time { font-size: 18px; font-weight: 900; color: #d97757; }
+  .card-time-badge .ampm { font-size: 10px; color: #ccc; letter-spacing: 1px; }
+  .card-info { flex: 1; }
+  .card-filename {
+    font-size: 11px;
+    color: #ccc;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    font-family: monospace;
+  }
+  .card-topics { display: flex; flex-direction: column; gap: 5px; }
+  .topic-line {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .topic-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+  .dot-pain { background: #d97757; }
+  .dot-skill { background: #a07ee0; }
+  .dot-trend { background: #4ec99a; }
+  .dot-extra { background: #c4b07a; }
+  .dot-default { background: #ccc; }
+  .card-arrow {
+    flex-shrink: 0;
+    color: #e0d8d2;
+    font-size: 20px;
+    align-self: center;
+    transition: color 0.2s;
+  }
+  .article-card:hover .card-arrow { color: #d97757; }
+
+  /* ── Empty state ── */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #ccc;
+    font-size: 15px;
+    display: none;
+  }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    padding: 0 24px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #aaa; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-dot">覺</div>
+    <div>
+      <div class="brand-name">覺知 SEL 教育</div>
+      <div class="brand-sub">AWARENESS · SEL · EDUCATION</div>
+    </div>
+  </div>
+  <div class="header-right">每日文宣資料庫</div>
+</header>
+
+<div class="hero">
+  <h1>📚 覺知 SEL 教養文宣</h1>
+  <p>每日自動產出的 SEL 教育文宣內容<br>涵蓋家長痛點 × 能力培養 × 教育趨勢三大主題</p>
+  <div class="hero-stats">
+    <div class="stat-box">
+      <div class="stat-num" id="total-count">—</div>
+      <div class="stat-label">篇文宣</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" id="total-days">—</div>
+      <div class="stat-label">天記錄</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num" id="total-topics">—</div>
+      <div class="stat-label">則主題內容</div>
+    </div>
+  </div>
+</div>
+
+<div class="toolbar">
+  <input class="search-input" type="text" id="searchInput" placeholder="🔍 搜尋標題關鍵字⋯">
+  <button class="filter-btn active" onclick="filterDate('all', this)">全部</button>
+  <button class="filter-btn" onclick="filterDate('today', this)">今天</button>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#d97757"></div> 家長痛點</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#a07ee0"></div> 能力培養</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4ec99a"></div> 科學趨勢</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#c4b07a"></div> 加值類別</div>
+</div>
+
+<div class="content-area" id="contentArea">
+  <!-- JS 動態填入 -->
+  <div class="empty-state" id="emptyState">找不到符合的文宣 🌿</div>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+//  文宣清單（每次新增檔案後，在這裡加一行）
+//  格式：{ file, date, time, topics[] }
+//  topics 裡每個物件：{ text, type }
+//  type: 'pain' | 'skill' | 'trend' | 'extra'
+// ══════════════════════════════════════════
+const articles = [
+  {
+    file: "awareness_2026-04-29_1307.html",
+    date: "2026-04-29", time: "13:07",
+    topics: [
+      { text: "（早期版本）", type: "default" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-29_1324.html",
+    date: "2026-04-29", time: "13:24",
+    topics: [
+      { text: "（早期版本）", type: "default" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-29_1334.html",
+    date: "2026-04-29", time: "13:34",
+    topics: [
+      { text: "（早期版本）", type: "default" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-29_1503.html",
+    date: "2026-04-29", time: "15:03",
+    topics: [
+      { text: "（早期版本）", type: "default" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-29_1510.html",
+    date: "2026-04-29", time: "15:10",
+    topics: [
+      { text: "孩子考前哭著說「我一定會考砸」——不是玻璃心，是完美主義正在吞噬他", type: "pain" },
+      { text: "咖啡涼了才想起來沒喝——那杯咖啡，是多少媽媽的縮影？", type: "extra" },
+      { text: "芬蘭學生不補習、不排名——但為什麼他們長大後反而更有競爭力？", type: "trend" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-29_1525.html",
+    date: "2026-04-29", time: "15:25",
+    topics: [
+      { text: "「你就是偏心！」——孩子說出這句話的那天晚上，你睡得著嗎？", type: "pain" },
+      { text: "你家孩子「衝動、分心、講不聽」——不是壞習慣，是大腦的「空管中心」還沒長好", type: "skill" },
+      { text: "OECD 最新報告震驚教育界：AI 讓孩子成績進步 48%，但真正學到的——少了 17%", type: "trend" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-29_1540.html",
+    date: "2026-04-29", time: "15:40",
+    topics: [
+      { text: "孩子每天早上喊「肚子痛」——不是裝病，是身體在替情緒說話", type: "pain" },
+      { text: "爸爸以為自己是「育兒助理」——但孩子需要的，是一個真正在場的爸爸", type: "extra" },
+      { text: "比 IQ 更重要的能力——哈佛研究說，決定孩子成就的是「這三件事」", type: "skill" }
+    ]
+  }
+  // ← 之後每次新增文宣，在這裡加一個 { } 物件
+];
+
+// ══════════════════════════════════════════
+//  渲染邏輯（不需要改）
+// ══════════════════════════════════════════
+const dotClass = { pain: 'dot-pain', skill: 'dot-skill', trend: 'dot-trend', extra: 'dot-extra', default: 'dot-default' };
+const today = new Date().toISOString().slice(0,10);
+let currentFilter = 'all';
+let currentSearch = '';
+
+function render() {
+  const area = document.getElementById('contentArea');
+  const empty = document.getElementById('emptyState');
+  // filter
+  let list = [...articles].reverse();
+  if (currentFilter === 'today') list = list.filter(a => a.date === today);
+  if (currentSearch) {
+    const q = currentSearch.toLowerCase();
+    list = list.filter(a =>
+      a.topics.some(t => t.text.toLowerCase().includes(q)) ||
+      a.file.includes(q) || a.time.includes(q)
+    );
+  }
+  // clear
+  area.querySelectorAll('.date-group').forEach(el => el.remove());
+  empty.style.display = list.length === 0 ? 'block' : 'none';
+  // group by date
+  const groups = {};
+  list.forEach(a => { if (!groups[a.date]) groups[a.date] = []; groups[a.date].push(a); });
+  Object.keys(groups).sort().reverse().forEach(date => {
+    const group = document.createElement('div');
+    group.className = 'date-group';
+    const d = new Date(date + 'T00:00:00');
+    const label = `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
+    group.innerHTML = `<div class="date-heading">${label} &nbsp;·&nbsp; ${groups[date].length} 份文宣</div>`;
+    groups[date].forEach(a => {
+      const card = document.createElement('a');
+      card.className = 'article-card';
+      card.href = a.file;
+      card.target = '_blank';
+      const timeParts = a.time.split(':');
+      card.innerHTML = `
+        <div class="card-time-badge">
+          <div class="time">${timeParts[0]}:${timeParts[1]}</div>
+          <div class="ampm">台灣時間</div>
+        </div>
+        <div class="card-info">
+          <div class="card-filename">${a.file}</div>
+          <div class="card-topics">
+            ${a.topics.map(t => `
+              <div class="topic-line">
+                <div class="topic-dot ${dotClass[t.type] || 'dot-default'}"></div>
+                <span>${t.text}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+        <div class="card-arrow">›</div>
+      `;
+      group.appendChild(card);
+    });
+    area.insertBefore(group, empty);
+  });
+  // stats
+  const allTopics = articles.reduce((s,a) => s + a.topics.filter(t=>t.type!=='default').length, 0);
+  const days = new Set(articles.map(a=>a.date)).size;
+  document.getElementById('total-count').textContent = articles.length;
+  document.getElementById('total-days').textContent = days;
+  document.getElementById('total-topics').textContent = allTopics;
+}
+
+function filterDate(type, btn) {
+  currentFilter = type;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+document.getElementById('searchInput').addEventListener('input', e => {
+  currentSearch = e.target.value.trim();
+  render();
+});
+
+render();
+</script>
+
+</body>
+</html>

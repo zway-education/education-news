@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>覺知 SEL 教育文宣｜2026.04.29 | 15:47</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f5f2;
+      color: #2d2d2d;
+      padding: 32px 16px 60px;
+    }
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .page-header .brand {
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: #d97757;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .page-header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+    .page-header .datestamp {
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 1px;
+    }
+    .page-header .tagline {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+    }
+    .card-visual {
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .tag-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+    .tag-pain    { background: #fff1eb; color: #d97757; }
+    .tag-skill   { background: #f0ebff; color: #7c5cbf; }
+    .tag-trend   { background: #e8faf3; color: #2aaa72; }
+    .tag-bonus   { background: #f5f0e4; color: #a08540; }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 2px;
+    }
+    .card-body p {
+      font-size: 14.5px;
+      line-height: 1.75;
+      color: #444;
+    }
+    .highlight-box {
+      background: #fdf8f5;
+      border-left: 3px solid #d97757;
+      border-radius: 0 10px 10px 0;
+      padding: 12px 16px;
+    }
+    .highlight-box.purple { border-color: #7c5cbf; background: #f8f5ff; }
+    .highlight-box.green  { border-color: #2aaa72; background: #f0fbf5; }
+
+    .copy-box {
+      background: #fffcf9;
+      border: 1.5px dashed #f0c5a8;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .copy-box.purple { border-color: #c8b8f0; background: #fdfbff; }
+    .copy-box.green  { border-color: #a0dfc0; background: #f6fdf9; }
+    .copy-box p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .quote-block {
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .quote-block.orange { background: #fff4ef; color: #c05e38; }
+    .quote-block.purple { background: #f3efff; color: #6040aa; }
+    .quote-block.green  { background: #edfbf2; color: #1e8a58; }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 12px;
+      color: #888;
+    }
+    .meta-row span {
+      background: #f5f5f5;
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+
+    .unsplash-hint {
+      font-size: 11.5px;
+      color: #bbb;
+      padding: 6px 12px;
+      background: #fafafa;
+      border-radius: 8px;
+      margin-top: 4px;
+    }
+    .source-link {
+      font-size: 12px;
+      color: #bbb;
+    }
+    .source-link a {
+      color: #d97757;
+      text-decoration: none;
+    }
+    .source-link a:hover { text-decoration: underline; }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid #f0ece6;
+      margin: 2px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== PAGE HEADER ========== -->
+<div class="page-header">
+  <div class="brand">覺知 SEL 教育</div>
+  <h1>每日教養文宣企劃</h1>
+  <div class="datestamp">2026.04.29 | 15:47</div>
+  <div class="tagline">給每一個想好好陪伴孩子的大人——今天有三件事，值得你知道。</div>
+</div>
+
+<!-- ========== CARD GRID ========== -->
+<div class="grid">
+
+  <!-- ===== CARD 1：痛點層 — 考試焦慮→身體症狀 ===== -->
+  <div class="card">
+    <div class="card-visual" style="background: linear-gradient(135deg, #fff0ea 0%, #ffd9c4 100%);">
+      <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="320" height="180">
+        <!-- desk -->
+        <rect x="40" y="120" width="240" height="8" rx="4" fill="#e8b898"/>
+        <!-- paper stack -->
+        <rect x="100" y="80" width="90" height="40" rx="6" fill="#fff" stroke="#e0c0a0" stroke-width="1.5"/>
+        <rect x="105" y="85" width="55" height="3" rx="2" fill="#f0d0b0"/>
+        <rect x="105" y="93" width="70" height="3" rx="2" fill="#f0d0b0"/>
+        <rect x="105" y="101" width="40" height="3" rx="2" fill="#f0d0b0"/>
+        <!-- child figure sitting -->
+        <circle cx="195" cy="68" r="18" fill="#f5c4a0"/>
+        <!-- hair -->
+        <ellipse cx="195" cy="54" rx="20" ry="10" fill="#5c3a1e"/>
+        <!-- body -->
+        <rect x="180" y="86" width="30" height="34" rx="8" fill="#7bb8e8"/>
+        <!-- arms on desk -->
+        <rect x="148" y="102" width="32" height="10" rx="5" fill="#7bb8e8"/>
+        <rect x="210" y="102" width="28" height="10" rx="5" fill="#7bb8e8"/>
+        <!-- hand on forehead (stressed) -->
+        <ellipse cx="195" cy="63" rx="8" ry="5" fill="#f5c4a0" opacity="0.7"/>
+        <!-- sweat drops -->
+        <ellipse cx="172" cy="60" rx="3" ry="5" fill="#a8d8f0" opacity="0.7"/>
+        <ellipse cx="218" cy="55" rx="2.5" ry="4" fill="#a8d8f0" opacity="0.6"/>
+        <!-- stomach area -->
+        <ellipse cx="195" cy="108" rx="10" ry="7" fill="#f8a090" opacity="0.5"/>
+        <!-- zigzag stress lines -->
+        <polyline points="228,65 235,58 242,65 249,58" stroke="#e07050" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- test paper with grade -->
+        <text x="125" y="105" font-size="13" fill="#d97757" font-weight="bold">考試中</text>
+        <!-- caption -->
+        <text x="160" y="165" text-anchor="middle" font-size="12" fill="#c08060">肚子痛頭痛...不一定是裝的</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <div class="tag-row">
+        <span class="tag tag-pain">🧡 家長痛點</span>
+        <span class="tag tag-pain">考試焦慮</span>
+        <span class="tag tag-pain">身體化症狀</span>
+      </div>
+      <div class="card-title">每逢考試就喊頭痛、胃痛——孩子不是在撒嬌，是焦慮在說話</div>
+
+      <hr class="divider"/>
+
+      <div>
+        <div class="section-label">家長共鳴情境</div>
+        <p>期末快到了，小宇每天早上起床就說頭痛、不想吃早餐。媽媽帶去看診，醫生說「查不出問題」。回家後，小宇繼續說「我好想吐」——偏偏今天是學校模擬考。</p>
+      </div>
+
+      <div class="highlight-box">
+        <div class="section-label">教育新知引用</div>
+        <p>馬偕醫院衛教資料指出，兒童焦慮常以「身體化」呈現：肚子痛、頭痛、心悸、胸悶，但身體檢查完全正常。近期衛生福利部草屯療養院門診也觀察到，因莫名頭痛、胃痛、情緒易怒求診的學生<strong>顯著增加</strong>，考試壓力是主因之一。</p>
+      </div>
+
+      <div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p>當孩子說「我肚子不舒服」，他可能是在說：「我好害怕考不好，你還會愛我嗎？」焦慮不是性格軟弱，是大腦在發出求救訊號。讓孩子學會辨識、說出這種感受，是 SEL 最重要的起點。</p>
+      </div>
+
+      <div class="copy-box">
+        <div class="section-label">✏️ 可直接發布文案（LINE / FB / IG）</div>
+        <p>
+          期末考快到了，孩子突然開始喊頭痛、胃痛——<br/>
+          帶去看診，又沒查出什麼問題……<br/><br/>
+          你不是不疼孩子，你只是沒想到：<br/>
+          <strong>身體的不舒服，常常是焦慮在說話。</strong><br/><br/>
+          研究顯示，高達 40% 的孩子曾出現「考試焦慮身體化」——<br/>
+          肚子痛、頭痛、心悸，全都可能是壓力的語言。<br/><br/>
+          孩子沒有辦法說「我好害怕失敗」，<br/>
+          所以身體替他說了。<br/><br/>
+          這個時候，與其說「你不要裝了，去讀書」，<br/>
+          不如蹲下來問：「你現在心裡是什麼感覺？」<br/><br/>
+          當孩子學會說出情緒，焦慮就少了一半。<br/>
+          這，就是情緒教育最真實的樣子。
+        </p>
+      </div>
+
+      <div class="quote-block orange">
+        「孩子的身體，是情緒最後的出口。」
+      </div>
+
+      <hr class="divider"/>
+      <div class="meta-row">
+        <span>📱 適合平台：FB、LINE 社群</span>
+        <span>👤 適合對象：國小生家長</span>
+      </div>
+      <div class="unsplash-hint">📸 Unsplash 關鍵字：child holding stomach exam stress, worried kid desk, school anxiety body</div>
+      <div class="source-link">
+        來源：
+        <a href="https://www.mmh.org.tw/know_health_view.php?docid=309" target="_blank">馬偕醫院衛教－兒童焦慮身體化</a>、
+        <a href="https://grinews.com/news/%E6%93%BA%E8%84%AB%E3%80%8C%E8%80%83%E8%A9%A6%E7%84%A6%E6%85%AE%E3%80%8D%E6%9C%89%E5%8A%A9%E5%AD%A9%E5%AD%90%E9%87%8D%E6%8B%BE%E8%87%AA%E4%BF%A1%E8%88%87%E9%9F%8C%E6%80%A7/" target="_blank">草根影響力－擺脫考試焦慮</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CARD 2：趨勢層 — 螢幕時間 × 睡眠 × 心理健康 ===== -->
+  <div class="card">
+    <div class="card-visual" style="background: linear-gradient(135deg, #e8f5f0 0%, #c0eedd 100%);">
+      <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="320" height="180">
+        <!-- bed -->
+        <rect x="30" y="120" width="180" height="30" rx="8" fill="#b8d8e8"/>
+        <rect x="30" y="110" width="60" height="20" rx="6" fill="#d8e8f0"/>
+        <!-- child lying in bed -->
+        <circle cx="90" cy="113" r="14" fill="#f5c4a0"/>
+        <ellipse cx="90" cy="103" rx="16" ry="8" fill="#5c3a1e"/>
+        <!-- phone glow lighting up face in dark -->
+        <rect x="105" y="108" width="50" height="30" rx="5" fill="#2d2d3a"/>
+        <rect x="108" y="111" width="44" height="24" rx="3" fill="#5ae8c8" opacity="0.85"/>
+        <!-- glow effect on pillow/face -->
+        <ellipse cx="100" cy="118" rx="20" ry="10" fill="#5ae8c8" opacity="0.15"/>
+        <!-- clock on wall -->
+        <circle cx="270" cy="60" r="22" fill="#fff" stroke="#ccc" stroke-width="2"/>
+        <line x1="270" y1="60" x2="270" y2="44" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="270" y1="60" x2="282" y2="65" stroke="#d97757" stroke-width="2" stroke-linecap="round"/>
+        <text x="263" y="85" font-size="10" fill="#888">00:30</text>
+        <!-- moon and stars -->
+        <path d="M245 28 Q252 18 262 22 Q254 28 254 38 Q246 36 245 28Z" fill="#ffd060" opacity="0.7"/>
+        <circle cx="225" cy="20" r="2" fill="#ffd060" opacity="0.6"/>
+        <circle cx="235" cy="35" r="1.5" fill="#ffd060" opacity="0.5"/>
+        <!-- stat bubble -->
+        <rect x="210" y="120" width="95" height="34" rx="8" fill="#fff" opacity="0.92"/>
+        <text x="257" y="134" text-anchor="middle" font-size="11" fill="#d97757" font-weight="bold">每天 &gt;4 小時</text>
+        <text x="257" y="147" text-anchor="middle" font-size="10" fill="#666">憂鬱風險 ↑ 61%</text>
+        <!-- caption -->
+        <text x="160" y="170" text-anchor="middle" font-size="11.5" fill="#3a8a68">深夜滑手機：睡眠是第一個受害者</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <div class="tag-row">
+        <span class="tag tag-trend">🌿 科學趨勢</span>
+        <span class="tag tag-trend">螢幕時間</span>
+        <span class="tag tag-trend">睡眠健康</span>
+      </div>
+      <div class="card-title">睡前滑一下，孩子的大腦卻要再等半小時才關機</div>
+
+      <hr class="divider"/>
+
+      <div>
+        <div class="section-label">家長共鳴情境</div>
+        <p>週末晚上，女兒說「再五分鐘就睡」，結果燈已關了，房間裡還透著手機的藍光。媽媽推門進去，已是凌晨十二點——孩子說她「睡不著」，隔天早上眼圈烏青，整個人沒有精神。</p>
+      </div>
+
+      <div class="highlight-box green">
+        <div class="section-label">2026 最新研究</div>
+        <p>照護線上 2026 年 4 月報導指出，青少年睡前玩手機遊戲，平均多花 <strong>30 分鐘</strong> 才能入睡；每多玩遊戲一小時，入睡時間就推後 10 分鐘。更關鍵的數據：兒童每天螢幕時間超過 4 小時，<strong>憂鬱風險上升 61%、焦慮增加 45%</strong>。睡眠不足不只是「明天會累」，而是影響情緒調節、記憶力和抗壓力的慢性消耗。</p>
+      </div>
+
+      <div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p>孩子晚上滑手機，不全是自律問題。大腦還在發育，「延遲滿足」和「自我管理」需要被練習。比起沒收手機，更有效的方式是：和孩子一起設定規則、讓他參與討論，這本身就是 SEL 中「自我調節」能力的練習。</p>
+      </div>
+
+      <div class="copy-box green">
+        <div class="section-label">✏️ 可直接發布文案（LINE / FB / IG）</div>
+        <p>
+          「再五分鐘就睡」——你家孩子也說過嗎？<br/><br/>
+          2026 年最新研究告訴我們：<br/>
+          <strong>睡前玩手機，孩子平均多花 30 分鐘才能真的入睡。</strong><br/>
+          每天螢幕超過 4 小時，憂鬱風險上升 61%。<br/><br/>
+          這不是在嚇人。<br/>
+          這是「睡眠不足」正在悄悄吃掉孩子的情緒調節力。<br/><br/>
+          疲倦的大腦，更難控制衝動、更難面對挫折、<br/>
+          更容易在小事上崩潰。<br/><br/>
+          管手機，不是管孩子。<br/>
+          是幫他的大腦，留一段真正休息的空間。<br/><br/>
+          今晚，試試看一起討論「幾點前要把手機放到客廳」——<br/>
+          讓孩子參與規則制定，他更願意遵守。
+        </p>
+      </div>
+
+      <div class="quote-block green">
+        「睡得好的孩子，情緒才有餘裕成長。」
+      </div>
+
+      <hr class="divider"/>
+      <div class="meta-row">
+        <span>📱 適合平台：FB、IG Reels 說明</span>
+        <span>👤 適合對象：國小中高年級、國中家長</span>
+      </div>
+      <div class="unsplash-hint">📸 Unsplash 關鍵字：child phone dark bedroom night, teenager screen glow bed, sleep and phone</div>
+      <div class="source-link">
+        來源：
+        <a href="https://www.careonline.com.tw/2026/04/202604232000.html" target="_blank">照護線上 2026.04－螢幕時間與青少年心理健康</a>、
+        <a href="https://heho.com.tw/archives/311008" target="_blank">Heho 健康－手機遊戲比電視更影響睡眠</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CARD 3：能力層 — 同儕霸凌 × 自信 × 情緒韌性 ===== -->
+  <div class="card">
+    <div class="card-visual" style="background: linear-gradient(135deg, #f0ebff 0%, #d8ccf8 100%);">
+      <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" width="320" height="180">
+        <!-- background playground -->
+        <rect x="0" y="140" width="320" height="40" fill="#d4c8f0" opacity="0.4"/>
+        <!-- isolated child on bench -->
+        <rect x="50" y="118" width="80" height="10" rx="5" fill="#b8a8e0"/>
+        <rect x="55" y="110" width="8" height="18" rx="3" fill="#b8a8e0"/>
+        <rect x="117" y="110" width="8" height="18" rx="3" fill="#b8a8e0"/>
+        <!-- child sitting alone -->
+        <circle cx="90" cy="100" r="14" fill="#f5c4a0"/>
+        <ellipse cx="90" cy="90" rx="16" ry="8" fill="#a06080"/>
+        <rect x="78" y="114" width="24" height="22" rx="6" fill="#9090d0"/>
+        <rect x="68" y="118" width="22" height="8" rx="4" fill="#9090d0"/>
+        <rect x="90" y="118" width="22" height="8" rx="4" fill="#9090d0"/>
+        <!-- sad face -->
+        <path d="M84 103 Q90 99 96 103" stroke="#c08060" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="86" cy="99" r="1.5" fill="#8a5030"/>
+        <circle cx="94" cy="99" r="1.5" fill="#8a5030"/>
+        <!-- group of kids in background -->
+        <circle cx="200" cy="108" r="11" fill="#f5c4a0"/>
+        <ellipse cx="200" cy="99" rx="13" ry="7" fill="#5c3a1e"/>
+        <rect x="190" y="119" width="20" height="18" rx="5" fill="#e07050"/>
+        <circle cx="230" cy="112" r="10" fill="#f5d0b0"/>
+        <ellipse cx="230" cy="103" rx="12" ry="6" fill="#804020"/>
+        <rect x="221" y="122" width="18" height="16" rx="5" fill="#50a070"/>
+        <circle cx="258" cy="110" r="10" fill="#f5c4a0"/>
+        <ellipse cx="258" cy="101" rx="12" ry="6" fill="#3a3060"/>
+        <rect x="249" y="120" width="18" height="16" rx="5" fill="#7060c0"/>
+        <!-- speech bubble from group -->
+        <rect x="170" y="70" width="110" height="22" rx="10" fill="#fff" opacity="0.9"/>
+        <polygon points="182,92 175,102 195,92" fill="#fff" opacity="0.9"/>
+        <text x="225" y="85" text-anchor="middle" font-size="10" fill="#888">你不能跟我們玩</text>
+        <!-- heart shield -->
+        <path d="M90 60 Q80 52 80 62 Q80 70 90 76 Q100 70 100 62 Q100 52 90 60Z" fill="#d97757" opacity="0.25"/>
+        <!-- caption -->
+        <text x="160" y="170" text-anchor="middle" font-size="11.5" fill="#6040aa">被排擠的孩子，需要的不只是安慰</text>
+      </svg>
+    </div>
+    <div class="card-body">
+      <div class="tag-row">
+        <span class="tag tag-skill">💜 能力培養</span>
+        <span class="tag tag-skill">自信心</span>
+        <span class="tag tag-skill">情緒韌性</span>
+      </div>
+      <div class="card-title">孩子被排擠回家什麼都不說——沉默背後，是自信正在流失</div>
+
+      <hr class="divider"/>
+
+      <div>
+        <div class="section-label">家長共鳴情境</div>
+        <p>小涵放學後把書包往地上一丟，問她「今天怎樣」，她說「還好」——但臉上沒有一絲光。吃飯時悶著頭不說話，晚上睡覺前偷偷在棉被裡哭。媽媽問了三次，她才說：「班上同學說不跟我玩。」</p>
+      </div>
+
+      <div class="highlight-box purple">
+        <div class="section-label">台灣最新調查（2025–2026）</div>
+        <p>兒福聯盟調查顯示，遭受同儕排擠或網路霸凌的孩子中，近 <strong>48.9%</strong> 出現社交焦慮或社交障礙；<strong>42.2%</strong> 自尊受挫、覺得自己沒有價值。Taiwan News 2026 年 4 月報導也指出，霸凌的影響並非一時，而是一種「長期累積的失控機制」，早期情緒支持至關重要。</p>
+      </div>
+
+      <div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p>被排擠的孩子需要的不是「別理他們、你很好的」這種安慰，而是有人幫他說出：「被這樣對待，你一定很傷心、也很困惑。」情緒被接住了，自信才有土壤重新長出來。SEL 教育中的「自我認同」與「社交技能」，正是孩子在這種時刻最需要的內在資源。</p>
+      </div>
+
+      <div class="copy-box purple">
+        <div class="section-label">✏️ 可直接發布文案（LINE / FB / IG）</div>
+        <p>
+          孩子放學回來悶悶不樂，<br/>
+          問她怎麼了，她說「沒事」。<br/>
+          但你感覺到了——她眼眶有點紅。<br/><br/>
+          台灣調查告訴我們：<br/>
+          <strong>近五成曾遭排擠的孩子，出現了社交焦慮。</strong><br/>
+          而且，有四成以上覺得自己「沒有價值」。<br/><br/>
+          這不只是小孩之間的事。<br/>
+          這是孩子的自信，正在一點一點流失。<br/><br/>
+          這種時候，「你很好的、別理他們」沒有用。<br/>
+          孩子需要的是你先說：<br/>
+          <strong>「被這樣對待，你一定很難受——告訴我，發生什麼事了？」</strong><br/><br/>
+          情緒被接住，自信才有辦法重新長回來。<br/>
+          陪伴，是最有效的情緒教育。
+        </p>
+      </div>
+
+      <div class="quote-block purple">
+        「孩子的自信，是被大人的回應一句句撐起來的。」
+      </div>
+
+      <hr class="divider"/>
+      <div class="meta-row">
+        <span>📱 適合平台：FB、IG、LINE 社群</span>
+        <span>👤 適合對象：國小至國中家長</span>
+      </div>
+      <div class="unsplash-hint">📸 Unsplash 關鍵字：child sitting alone playground, sad girl school bench, kids exclusion</div>
+      <div class="source-link">
+        來源：
+        <a href="https://www.children.org.tw/news/news_detail/3452" target="_blank">兒福聯盟－網路霸凌調查</a>、
+        <a href="https://www.taiwannews.com.tw/zh/news/6347313" target="_blank">Taiwan News 2026.04－校園霸凌長期影響</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /grid -->
+
+<!-- ========== FOOTER ========== -->
+<div style="text-align:center; margin-top: 48px; font-size: 12px; color: #ccc; letter-spacing: 1px;">
+  覺知 SEL 教育 · 文宣企劃資料庫 · 2026.04.29 · 自動產出
+</div>
+
+</body>
+</html>

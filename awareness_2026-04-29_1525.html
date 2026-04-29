@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育文宣 | 2026.04.29 15:25</title>
+  <style>
+    :root {
+      --brand: #d97757;
+      --brand-light: #fdf0eb;
+      --pain: #d97757;
+      --pain-bg: #fff5f1;
+      --ability: #7c5cbf;
+      --ability-bg: #f5f0ff;
+      --trend: #3aaa8c;
+      --trend-bg: #edfaf5;
+      --bonus: #b09250;
+      --bonus-bg: #faf7ee;
+      --text: #2d2d2d;
+      --muted: #7a7a7a;
+      --border: #e8e8e8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Helvetica Neue', '微軟正黑體', 'PingFang TC', Arial, sans-serif;
+      background: #f7f7f5;
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      background: #fff;
+      border-bottom: 3px solid var(--brand);
+      padding: 28px 40px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+    }
+    .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: 2px;
+    }
+    .brand-sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 3px;
+      letter-spacing: 1px;
+    }
+    .header-date {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+      letter-spacing: 1px;
+    }
+    .header-date strong {
+      display: block;
+      font-size: 16px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 36px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    /* CARD */
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+    }
+    .card-visual {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .card-visual svg {
+      width: 100%;
+      height: 100%;
+    }
+    .card-body {
+      padding: 28px 32px 24px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      border-radius: 20px;
+      padding: 4px 14px;
+      margin-bottom: 16px;
+    }
+    .tag-pain  { background: var(--pain-bg);    color: var(--pain);   }
+    .tag-ability { background: var(--ability-bg); color: var(--ability); }
+    .tag-trend { background: var(--trend-bg);   color: var(--trend);  }
+    .tag-bonus { background: var(--bonus-bg);   color: var(--bonus);  }
+
+    .card-title {
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.45;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .scenario {
+      font-size: 14.5px;
+      line-height: 1.8;
+      color: #444;
+      background: #f9f9f7;
+      border-left: 4px solid var(--brand);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .news-cite {
+      font-size: 13px;
+      color: var(--muted);
+      border-left: 3px solid var(--border);
+      padding-left: 12px;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    .news-cite a { color: var(--brand); text-decoration: none; }
+    .news-cite a:hover { text-decoration: underline; }
+    .sel-angle {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 18px;
+    }
+    .copy-box {
+      background: var(--brand-light);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+    .copy-box p {
+      font-size: 14.5px;
+      line-height: 1.9;
+      color: #333;
+    }
+    .quote-box {
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 4px;
+    }
+    .quote-box blockquote {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--brand);
+      line-height: 1.5;
+      position: relative;
+      padding-left: 18px;
+    }
+    .quote-box blockquote::before {
+      content: "❝";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      opacity: 0.5;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .meta-pill {
+      font-size: 11.5px;
+      border-radius: 20px;
+      padding: 4px 12px;
+      background: #f2f2f2;
+      color: #555;
+    }
+    .unsplash-hint {
+      margin-top: 8px;
+      font-size: 11.5px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+    }
+    footer span { color: var(--brand); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-brand">
+    <!-- Logo SVG -->
+    <svg class="brand-logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="24" fill="#fdf0eb"/>
+      <circle cx="24" cy="19" r="8" fill="#d97757" opacity="0.85"/>
+      <path d="M10 38c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke="#d97757" stroke-width="3" stroke-linecap="round" fill="none"/>
+    </svg>
+    <div>
+      <div class="brand-name">覺知 SEL 教育</div>
+      <div class="brand-sub">內容企劃資料庫｜每日教養文宣</div>
+    </div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29 | 15:25</strong>
+    每日自動生成 · 繁中溫暖版
+  </div>
+</header>
+
+<main>
+
+  <!-- ═══════════════════════════════════════════
+       文案 1：教養兩難（痛點層）── 手足衝突偏心感
+  ══════════════════════════════════════════════ -->
+  <div>
+    <div class="section-label">📌 文案 01 ／ 教養兩難 × 家長痛點</div>
+    <div class="card">
+      <div class="card-visual">
+        <!-- SVG：兩個孩子拔河，中間是爸媽的手 -->
+        <svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="860" height="200" fill="#fff5f1"/>
+          <!-- 地面 -->
+          <rect x="0" y="155" width="860" height="45" fill="#ffe4d4" rx="0"/>
+          <!-- 左孩子 -->
+          <circle cx="240" cy="110" r="30" fill="#d97757" opacity="0.25"/>
+          <circle cx="240" cy="82" r="18" fill="#d97757" opacity="0.55"/>
+          <rect x="228" y="100" width="24" height="42" rx="8" fill="#d97757" opacity="0.4"/>
+          <!-- 右孩子 -->
+          <circle cx="620" cy="110" r="30" fill="#f4a07a" opacity="0.25"/>
+          <circle cx="620" cy="82" r="18" fill="#f4a07a" opacity="0.55"/>
+          <rect x="608" y="100" width="24" height="42" rx="8" fill="#f4a07a" opacity="0.4"/>
+          <!-- 繩子 -->
+          <line x1="270" y1="118" x2="590" y2="118" stroke="#d97757" stroke-width="4" stroke-dasharray="12,6" opacity="0.5"/>
+          <!-- 爸媽 (中間) -->
+          <circle cx="430" cy="80" r="24" fill="#d97757" opacity="0.7"/>
+          <rect x="418" y="104" width="26" height="40" rx="8" fill="#d97757" opacity="0.55"/>
+          <!-- 說話泡泡 -->
+          <rect x="310" y="28" width="240" height="34" rx="10" fill="#fff" opacity="0.9"/>
+          <text x="430" y="50" font-size="13" fill="#d97757" font-weight="bold" text-anchor="middle" font-family="sans-serif">「你就是偏心！」</text>
+          <!-- 標題裝飾 -->
+          <text x="430" y="185" font-size="11" fill="#c86040" text-anchor="middle" font-family="sans-serif" opacity="0.7">手足爭寵的那一刻，爸媽最怕的話說出口了</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <span class="tag tag-pain">🔥 家長痛點｜教養兩難</span>
+        <h2 class="card-title">「你就是偏心！」——孩子說出這句話的那天晚上，你睡得著嗎？</h2>
+
+        <div class="scenario">
+          爸爸幫哥哥拍了球賽影片，卻沒時間去看妹妹的舞蹈發表。吃飯前妹妹突然說：「你從來都比較愛哥哥。」桌上靜了三秒，爸爸說不出話……
+        </div>
+
+        <div class="news-cite">
+          📌 研究指出，<strong>90% 的手足衝突源於「不公平感」</strong>，但父母其實追求的是「平等」而非「公平」——公平是給一樣的東西，平等是依每個孩子的需求給予不同支持。（資料來源：<a href="https://www.leaderkid.com.tw/2022/06/04/121647/" target="_blank">天才領袖親子教育</a>）
+        </div>
+
+        <div class="sel-angle">
+          在 SEL 的視角裡，「偏心感」不只是孩子情緒的爆發，更是他在學習辨識、表達、倡導自己的需求。孩子能說出「你不公平」，其實代表他開始信任你——他覺得說了有用。問題不在於偏心不偏心，而在於孩子有沒有感受到：<strong>「我的需求，你看見了嗎？」</strong>
+        </div>
+
+        <div class="copy-box">
+          <p>
+            「你偏心！」——下次孩子說這句話，先別急著解釋。<br/><br/>
+
+            試著蹲下來問他：「你覺得爸爸媽媽沒有注意到你哪裡？說給我聽。」<br/><br/>
+
+            孩子不是真的在算帳，他是在問：「我對你重要嗎？」<br/><br/>
+
+            每個孩子的需求不一樣，愛不需要一樣多，但每個孩子都需要感覺：<strong>有一個專屬於我的時刻，爸媽真的在這裡。</strong><br/><br/>
+
+            覺知 SEL 教育｜讓每個孩子都感受到被看見 👁️
+          </p>
+        </div>
+
+        <div class="quote-box">
+          <blockquote>不偏心不是愛得一樣多，而是每個孩子都被真正看見。</blockquote>
+        </div>
+
+        <div class="meta-row">
+          <span class="meta-pill">📱 LINE / FB / IG 限動</span>
+          <span class="meta-pill">👨‍👩‍👧‍👦 二孩以上家庭</span>
+          <span class="meta-pill">🎯 爸爸族群高共鳴</span>
+          <span class="meta-pill">💬 留言率高</span>
+        </div>
+        <div class="unsplash-hint">📸 Unsplash 關鍵字：two siblings arguing, dad mediating children, family conflict moment</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       文案 2：能力培養層 ── 執行功能 EF
+  ══════════════════════════════════════════════ -->
+  <div>
+    <div class="section-label">📌 文案 02 ／ 能力培養層 × 科學育兒</div>
+    <div class="card">
+      <div class="card-visual">
+        <!-- SVG：大腦航管中心 -->
+        <svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="860" height="200" fill="#f5f0ff"/>
+          <!-- 大腦輪廓 -->
+          <ellipse cx="430" cy="100" rx="120" ry="85" fill="#c4aaee" opacity="0.3"/>
+          <ellipse cx="430" cy="98" rx="108" ry="73" fill="#9b75d9" opacity="0.18"/>
+          <!-- 神經連結線 -->
+          <line x1="310" y1="80" x2="430" y2="100" stroke="#7c5cbf" stroke-width="2" opacity="0.4"/>
+          <line x1="550" y1="80" x2="430" y2="100" stroke="#7c5cbf" stroke-width="2" opacity="0.4"/>
+          <line x1="380" y1="40" x2="430" y2="100" stroke="#7c5cbf" stroke-width="2" opacity="0.4"/>
+          <line x1="480" y1="40" x2="430" y2="100" stroke="#7c5cbf" stroke-width="2" opacity="0.4"/>
+          <line x1="430" y1="160" x2="430" y2="100" stroke="#7c5cbf" stroke-width="2" opacity="0.4"/>
+          <!-- 節點 -->
+          <circle cx="310" cy="80" r="14" fill="#7c5cbf" opacity="0.7"/>
+          <circle cx="550" cy="80" r="14" fill="#7c5cbf" opacity="0.7"/>
+          <circle cx="380" cy="40" r="14" fill="#9b75d9" opacity="0.7"/>
+          <circle cx="480" cy="40" r="14" fill="#9b75d9" opacity="0.7"/>
+          <circle cx="430" cy="160" r="14" fill="#b09ae0" opacity="0.7"/>
+          <!-- 中心 -->
+          <circle cx="430" cy="100" r="22" fill="#7c5cbf" opacity="0.85"/>
+          <text x="430" y="105" font-size="13" fill="white" font-weight="bold" text-anchor="middle" font-family="sans-serif">EF</text>
+          <!-- 標籤 -->
+          <text x="310" y="63" font-size="10" fill="#7c5cbf" text-anchor="middle" font-family="sans-serif">抑制控制</text>
+          <text x="550" y="63" font-size="10" fill="#7c5cbf" text-anchor="middle" font-family="sans-serif">工作記憶</text>
+          <text x="380" y="26" font-size="10" fill="#7c5cbf" text-anchor="middle" font-family="sans-serif">認知彈性</text>
+          <text x="480" y="26" font-size="10" fill="#7c5cbf" text-anchor="middle" font-family="sans-serif">計畫能力</text>
+          <text x="430" y="187" font-size="10" fill="#7c5cbf" text-anchor="middle" font-family="sans-serif">情緒調節</text>
+          <!-- 左右說明 -->
+          <rect x="30" y="60" width="200" height="80" rx="10" fill="white" opacity="0.85"/>
+          <text x="130" y="85" font-size="12" fill="#7c5cbf" font-weight="bold" text-anchor="middle" font-family="sans-serif">執行功能</text>
+          <text x="130" y="103" font-size="11" fill="#555" text-anchor="middle" font-family="sans-serif">比智商更能預測</text>
+          <text x="130" y="120" font-size="11" fill="#555" text-anchor="middle" font-family="sans-serif">孩子未來成就</text>
+          <!-- 右說明 -->
+          <rect x="630" y="60" width="200" height="80" rx="10" fill="white" opacity="0.85"/>
+          <text x="730" y="85" font-size="12" fill="#7c5cbf" font-weight="bold" text-anchor="middle" font-family="sans-serif">黃金培養期</text>
+          <text x="730" y="103" font-size="11" fill="#555" text-anchor="middle" font-family="sans-serif">3–12 歲</text>
+          <text x="730" y="120" font-size="11" fill="#555" text-anchor="middle" font-family="sans-serif">前額葉快速發展</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <span class="tag tag-ability">🧠 能力培養｜執行功能 EF</span>
+        <h2 class="card-title">你家孩子「衝動、分心、講不聽」——不是壞習慣，是大腦的「空管中心」還沒長好</h2>
+
+        <div class="scenario">
+          七歲的承翰寫作業從七點坐到十點，只寫了半頁。中間削了三次鉛筆、摸了一隻橡皮擦、玩了一下桌上的尺——媽媽快抓狂了：「你到底是沒在聽，還是故意的？」
+        </div>
+
+        <div class="news-cite">
+          📌 哈佛兒童發展中心與多項研究指出，<strong>執行功能（EF）比 IQ 更能預測孩子的學業表現與人生成就</strong>，核心包含：工作記憶、抑制控制、認知彈性。3–12 歲是培養 EF 的黃金窗口期，且 EF 可以透過練習顯著提升。（資料來源：<a href="https://udn.com/news/story/6885/9073752" target="_blank">聯合新聞網</a>、<a href="https://www.combokid.com/knowledge/areas-of-development/cognitive/executive-function/" target="_blank">ComboKid</a>）
+        </div>
+
+        <div class="sel-angle">
+          覺知 SEL 把「執行功能」翻譯成生活語言：孩子的前額葉就像大腦的「空中交通管制中心」，負責告訴孩子：現在做什麼、先做什麼、遇到困難怎麼辦。這個中心不是天生設定好的——它需要大人提供穩定、有結構的環境，一點一滴地練習，才能越來越靈敏。
+        </div>
+
+        <div class="copy-box">
+          <p>
+            孩子分心、忘東忘西、剛說完就忘了？先別急著貼標籤。<br/><br/>
+
+            科學告訴我們：<strong>8 歲以前的孩子，大腦的「自我管理系統」根本還沒建構完成。</strong><br/><br/>
+
+            執行功能（Executive Function）——就是管理注意力、計畫行動、控制衝動的那個能力——是可以練習、可以培養的。<br/><br/>
+
+            不是孩子壞，是大腦還在施工中。<br/>
+            你能做的，是當那個幫他搭鷹架的人。🏗️<br/><br/>
+
+            覺知 SEL 教育｜從神經科學出發，讓教養更有方向
+          </p>
+        </div>
+
+        <div class="quote-box">
+          <blockquote>孩子不是不願意，是大腦的指揮中心還在學習上線。</blockquote>
+        </div>
+
+        <div class="meta-row">
+          <span class="meta-pill">📱 FB 長文｜IG 科普卡</span>
+          <span class="meta-pill">👩‍👦 3–10 歲家長</span>
+          <span class="meta-pill">🎯 ADHD 疑慮家長</span>
+          <span class="meta-pill">📚 科學育兒族群</span>
+        </div>
+        <div class="unsplash-hint">📸 Unsplash 關鍵字：child distracted homework, brain learning concept, focus child desk</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       文案 3：科學趨勢層 ── OECD AI 教育衝擊
+  ══════════════════════════════════════════════ -->
+  <div>
+    <div class="section-label">📌 文案 03 ／ 科學趨勢層 × AI 教育</div>
+    <div class="card">
+      <div class="card-visual">
+        <!-- SVG：AI vs 孩子的大腦 -->
+        <svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="860" height="200" fill="#edfaf5"/>
+          <!-- AI 機器人左側 -->
+          <rect x="80" y="50" width="130" height="100" rx="20" fill="#3aaa8c" opacity="0.2"/>
+          <rect x="100" y="65" width="90" height="70" rx="12" fill="#3aaa8c" opacity="0.4"/>
+          <!-- 眼睛 AI -->
+          <circle cx="130" cy="92" r="9" fill="white" opacity="0.9"/>
+          <circle cx="160" cy="92" r="9" fill="white" opacity="0.9"/>
+          <circle cx="130" cy="92" r="5" fill="#3aaa8c"/>
+          <circle cx="160" cy="92" r="5" fill="#3aaa8c"/>
+          <!-- 嘴 AI -->
+          <rect x="120" y="112" width="50" height="8" rx="4" fill="#3aaa8c" opacity="0.6"/>
+          <text x="145" y="165" font-size="11" fill="#3aaa8c" text-anchor="middle" font-family="sans-serif" font-weight="bold">生成式 AI</text>
+          <!-- 中間對比 -->
+          <text x="430" y="108" font-size="26" fill="#3aaa8c" text-anchor="middle" font-family="sans-serif" font-weight="bold">VS</text>
+          <!-- 孩子右側 -->
+          <circle cx="660" cy="95" r="45" fill="#f0fff8" stroke="#3aaa8c" stroke-width="2" opacity="0.6"/>
+          <circle cx="648" cy="87" r="6" fill="#3aaa8c" opacity="0.6"/>
+          <circle cx="672" cy="87" r="6" fill="#3aaa8c" opacity="0.6"/>
+          <path d="M648 108 Q660 118 672 108" stroke="#3aaa8c" stroke-width="2.5" fill="none" opacity="0.6"/>
+          <text x="660" y="165" font-size="11" fill="#3aaa8c" text-anchor="middle" font-family="sans-serif" font-weight="bold">孩子的大腦</text>
+          <!-- 數據泡泡 -->
+          <rect x="260" y="35" width="340" height="50" rx="12" fill="white" opacity="0.9"/>
+          <text x="430" y="56" font-size="12" fill="#3aaa8c" font-weight="bold" text-anchor="middle" font-family="sans-serif">OECD 2026：AI 讓成績進步 48%</text>
+          <text x="430" y="74" font-size="11" fill="#555" text-anchor="middle" font-family="sans-serif">但後測真實學習能力下降 17%</text>
+          <!-- 警示 -->
+          <rect x="260" y="130" width="340" height="40" rx="10" fill="#d4f5eb" opacity="0.8"/>
+          <text x="430" y="155" font-size="12" fill="#3aaa8c" font-weight="bold" text-anchor="middle" font-family="sans-serif">沒有 SEL，AI 是捷徑，不是學習</text>
+        </svg>
+      </div>
+      <div class="card-body">
+        <span class="tag tag-trend">🌏 全球趨勢｜AI 教育衝擊</span>
+        <h2 class="card-title">OECD 最新報告震驚教育界：AI 讓孩子成績進步 48%，但真正學到的——少了 17%</h2>
+
+        <div class="scenario">
+          十歲的品妍用 AI 幫她「理解」課文重點、「整理」讀書筆記，期中考前完全沒怎麼複習，成績竟然還不錯。但一個月後換了考試範圍，她什麼都想不起來……
+        </div>
+
+        <div class="news-cite">
+          📌 OECD《2026 數位教育展望報告》指出，一項大規模實地研究發現：<strong>使用通用型 AI 的學生短期任務成績提高了 48%，但後續測試中真實學習表現下降了 17%。</strong> OECD 警告：沒有教學設計引導的 AI 使用，只是增強表現，不產生真正的學習。（來源：<a href="https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html" target="_blank">OECD Digital Education Outlook 2026</a>）
+        </div>
+
+        <div class="sel-angle">
+          覺知 SEL 的立場不是「反對 AI」——而是：AI 最終只能強化「已經有能力思考的大腦」。當孩子缺乏自我覺察、缺乏情緒調節、缺乏內在動機，AI 給的只是一個讓他省略思考的捷徑。<strong>SEL 正是在 AI 時代裡，最不能被省略的核心工程。</strong>
+        </div>
+
+        <div class="copy-box">
+          <p>
+            AI 讓孩子成績變好了——但這樣算「學會」嗎？<br/><br/>
+
+            OECD 最新研究給了一個讓人不舒服的答案：<strong>孩子用 AI 完成作業，成績進步了將近一半；但真正的學習能力，卻悄悄退步了。</strong><br/><br/>
+
+            原因很簡單：當孩子不需要自己思考、不需要面對困難、不需要從挫折中摸索——大腦就不會生長。<br/><br/>
+
+            AI 時代最需要培養的，不是會不會用工具，而是：<strong>孩子知道自己在學什麼、為什麼學、學了之後感覺如何。</strong><br/><br/>
+
+            那，就是 SEL。🌱<br/><br/>
+
+            覺知 SEL 教育｜讓孩子在 AI 時代，還擁有真正屬於自己的大腦
+          </p>
+        </div>
+
+        <div class="quote-box">
+          <blockquote>AI 能代替孩子答題，但無法代替孩子成長。</blockquote>
+        </div>
+
+        <div class="meta-row">
+          <span class="meta-pill">📱 FB 教育趨勢貼文</span>
+          <span class="meta-pill">📊 家長＋教育工作者</span>
+          <span class="meta-pill">🎯 高轉發潛力</span>
+          <span class="meta-pill">🏫 適合親師分享</span>
+        </div>
+        <div class="unsplash-hint">📸 Unsplash 關鍵字：child using tablet AI, student digital learning, technology education thinking</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  自動生成於台灣時間 2026.04.29 15:25 ｜ <span>覺知 SEL 教育</span> 內容企劃資料庫<br/>
+  本文案供品牌內部參考使用，發布前請依實際情況調整，並確認引用來源最新狀態。
+</footer>
+
+</body>
+</html>

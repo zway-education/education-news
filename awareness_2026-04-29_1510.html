@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知 SEL 教育每日教養文宣｜2026.04.29</title>
+<style>
+  :root {
+    --brand: #d97757;
+    --brand-light: #fdf0ea;
+    --pain: #d97757;
+    --pain-bg: #fff5f0;
+    --ability: #7c5cbf;
+    --ability-bg: #f3effc;
+    --trend: #2baa8a;
+    --trend-bg: #e8faf5;
+    --bonus: #b89a4a;
+    --bonus-bg: #fdf8ec;
+    --ink: #1e1e2e;
+    --muted: #6b6b80;
+    --border: #ede8e3;
+    --white: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    background: #f7f4f0;
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  /* HEADER */
+  .site-header {
+    background: var(--white);
+    border-bottom: 3px solid var(--brand);
+    padding: 28px 32px 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .site-logo {
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: var(--brand);
+    letter-spacing: 0.04em;
+  }
+  .site-logo span { color: var(--ink); }
+  .site-date {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .site-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  /* GRID */
+  .grid {
+    max-width: 1100px;
+    margin: 36px auto;
+    padding: 0 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 36px rgba(0,0,0,0.12);
+  }
+
+  /* VISUAL AREA */
+  .card-visual {
+    width: 100%;
+    height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .card-visual svg { width: 100%; height: 100%; }
+
+  /* BODY */
+  .card-body { padding: 24px 24px 20px; flex: 1; display: flex; flex-direction: column; gap: 14px; }
+
+  /* TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 99px;
+    padding: 3px 11px;
+    letter-spacing: 0.03em;
+  }
+  .t-pain  { background: var(--pain-bg);   color: var(--pain);   }
+  .t-bonus { background: var(--bonus-bg);  color: var(--bonus);  }
+  .t-trend { background: var(--trend-bg);  color: var(--trend);  }
+
+  /* TITLE */
+  .card-title {
+    font-size: 1.18rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  /* LEAD / COPY */
+  .card-lead {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: #3d3d52;
+  }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid var(--border); }
+
+  /* COPY BOX */
+  .copy-box {
+    background: #fafafa;
+    border-left: 4px solid var(--brand);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 16px;
+    font-size: 0.88rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .copy-box.pain-accent  { border-left-color: var(--pain);  }
+  .copy-box.bonus-accent { border-left-color: var(--bonus); }
+  .copy-box.trend-accent { border-left-color: var(--trend); }
+
+  /* QUOTE */
+  .card-quote {
+    font-size: 0.98rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--brand);
+    text-align: right;
+  }
+  .card-quote.ability-q { color: var(--ability); }
+  .card-quote.trend-q   { color: var(--trend);   }
+  .card-quote.bonus-q   { color: var(--bonus);   }
+
+  /* META ROW */
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .meta-chip {
+    background: #f2f2f7;
+    border-radius: 6px;
+    padding: 3px 9px;
+  }
+  .meta a { color: var(--brand); text-decoration: none; font-weight: 600; }
+  .meta a:hover { text-decoration: underline; }
+
+  /* UNSPLASH HINT */
+  .unsplash-hint {
+    font-size: 0.7rem;
+    color: #aaa;
+    font-style: italic;
+    padding: 0 24px 14px;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    background: var(--white);
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="site-header">
+  <div>
+    <div class="site-logo">覺知<span> SEL 教育</span></div>
+    <div class="site-sub">每日教養新知文宣 · 內容企劃資料庫</div>
+  </div>
+  <div style="margin-left:auto;text-align:right;">
+    <div class="site-date">2026.04.29 | 15:10</div>
+    <div class="site-sub">Taiwan Time · 第 5 期</div>
+  </div>
+</header>
+
+<!-- ═══════════════ CARDS GRID ═══════════════ -->
+<div class="grid">
+
+  <!-- ─────────── CARD 1 ─────────── 第一層·痛點：考試焦慮×完美主義 -->
+  <article class="card">
+    <div class="card-visual">
+      <!-- SVG：孩子坐在考卷堆中，頭頂漂浮著「100分」氣泡，構圖以壓迫感線條呈現 -->
+      <svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1a" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff5f0"/>
+            <stop offset="100%" stop-color="#fde2d2"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="196" fill="url(#g1a)"/>
+        <!-- 桌面 -->
+        <rect x="60" y="120" width="280" height="12" rx="6" fill="#e8c4b0"/>
+        <!-- 考卷堆 -->
+        <rect x="80" y="78" width="110" height="46" rx="5" fill="#fff" stroke="#d97757" stroke-width="2" transform="rotate(-6 135 101)"/>
+        <rect x="86" y="80" width="110" height="46" rx="5" fill="#fff" stroke="#d97757" stroke-width="1.5" transform="rotate(-2 141 103)"/>
+        <rect x="90" y="82" width="110" height="46" rx="5" fill="#fff" stroke="#d97757" stroke-width="1"/>
+        <!-- 小圓臉 -->
+        <ellipse cx="270" cy="98" rx="28" ry="28" fill="#f4c591"/>
+        <!-- 眉毛（皺眉） -->
+        <path d="M257 86 Q264 81 271 86" stroke="#5a3a1a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <path d="M270 86 Q277 81 284 86" stroke="#5a3a1a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <!-- 眼睛 -->
+        <ellipse cx="261" cy="93" rx="4" ry="5" fill="#3d2b0c"/>
+        <ellipse cx="279" cy="93" rx="4" ry="5" fill="#3d2b0c"/>
+        <!-- 嘴巴（ )字型） -->
+        <path d="M260 110 Q270 106 280 110" stroke="#5a3a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- 汗水 -->
+        <ellipse cx="291" cy="88" rx="4" ry="6" fill="#87cefc" opacity="0.8" transform="rotate(20 291 88)"/>
+        <!-- 100分氣泡 -->
+        <ellipse cx="222" cy="44" rx="40" ry="22" fill="#d97757" opacity="0.15"/>
+        <ellipse cx="222" cy="44" rx="40" ry="22" fill="none" stroke="#d97757" stroke-width="1.8"/>
+        <text x="222" y="50" text-anchor="middle" font-size="18" font-weight="900" fill="#d97757">100分</text>
+        <!-- 箭頭 -->
+        <path d="M234 65 Q252 72 262 80" stroke="#d97757" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+        <defs>
+          <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#d97757"/>
+          </marker>
+        </defs>
+        <!-- 壓力線條裝飾 -->
+        <line x1="30" y1="30" x2="50" y2="50" stroke="#d97757" stroke-width="1.5" opacity="0.3"/>
+        <line x1="350" y1="20" x2="370" y2="40" stroke="#d97757" stroke-width="1.5" opacity="0.3"/>
+        <line x1="38" y1="160" x2="55" y2="140" stroke="#d97757" stroke-width="1" opacity="0.2"/>
+      </svg>
+    </div>
+
+    <div class="card-body">
+      <div class="tags">
+        <span class="tag t-pain">#考試焦慮</span>
+        <span class="tag t-pain">#完美主義</span>
+        <span class="tag t-pain">#親子痛點</span>
+      </div>
+
+      <h2 class="card-title">孩子考前哭著說「我一定會考砸」——不是玻璃心，是完美主義正在吞噬他</h2>
+
+      <p class="card-lead">
+        小涵考前一週就開始睡不好，白天反覆問媽媽：「我會不會考不好？」
+        媽媽說：「你準備這麼久，一定沒問題！」但孩子還是哭了。
+        <br><br>
+        研究發現，過度追求高分的孩子，焦慮來源不是「不夠努力」，而是內化了一個聲音：
+        <strong>「只有滿分才值得被愛。」</strong>
+        這就是完美主義在孩子大腦裡的模樣——用考卷定義自我價值，而不是用努力定義成長。
+        （資料來源：香港弱勢家庭兒童精神健康研究 2025）
+      </p>
+
+      <hr class="divider">
+
+      <div class="copy-box pain-accent">
+        📌 <strong>可直接發布文案</strong><br><br>
+        「孩子考前哭著說：我一定考不好——」<br>
+        這句話背後不是悲觀，是完美主義在作怪。<br><br>
+        研究發現：習慣用分數定義自我的孩子，焦慮感明顯高於同齡人。<br>
+        不是孩子太脆弱，是他把「考卷」當成「愛不愛我」的證明。<br><br>
+        這時候最有效的，不是鼓勵「你一定行」，<br>
+        而是說：<strong>「不管考幾分，我對你的感覺不會變。」</strong><br><br>
+        讓孩子知道，努力是成長，分數只是回饋——<br>
+        這才是 SEL 情緒教育想給孩子最深的底氣。<br><br>
+        #考試焦慮 #完美主義孩子 #情緒教育 #覺知SEL
+      </div>
+
+      <p class="card-quote">「分數衡量的是當下，愛衡量的是一輩子。」</p>
+
+      <hr class="divider">
+      <div class="meta">
+        <span class="meta-chip">📱 LINE / FB</span>
+        <span class="meta-chip">👨‍👩‍👧 國小家長</span>
+        <span class="meta-chip">🕐 考試前一週發效果最佳</span>
+        <a href="https://soco.org.hk/wp-content/uploads/2014/10/SoCO-and-CUSWK報告全文《弱勢家庭兒童及青少年的精神健康狀況研究調查報告》_4-May-2025-with-page-no.pdf" target="_blank">📄 來源</a>
+      </div>
+      <div class="unsplash-hint">Unsplash 關鍵字建議：child studying anxious, exam stress kid, parent comforting child</div>
+    </div>
+  </article>
+
+  <!-- ─────────── CARD 2 ─────────── 加值類別：家長自我照顧 -->
+  <article class="card">
+    <div class="card-visual">
+      <!-- SVG：媽媽坐在空蕩蕩的廚房，杯子裡的咖啡已涼，窗外夕陽透進光 -->
+      <svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g2a" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fdf8ec"/>
+            <stop offset="100%" stop-color="#faebd7"/>
+          </linearGradient>
+          <radialGradient id="sunGlow" cx="85%" cy="30%" r="40%">
+            <stop offset="0%" stop-color="#ffd580" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#fdf8ec" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="196" fill="url(#g2a)"/>
+        <rect width="400" height="196" fill="url(#sunGlow)"/>
+        <!-- 窗框 -->
+        <rect x="300" y="20" width="80" height="100" rx="4" fill="#ffd57e" opacity="0.6"/>
+        <line x1="340" y1="20" x2="340" y2="120" stroke="#c8a84b" stroke-width="1.5"/>
+        <line x1="300" y1="70" x2="380" y2="70" stroke="#c8a84b" stroke-width="1.5"/>
+        <!-- 桌面 -->
+        <rect x="0" y="148" width="400" height="50" rx="0" fill="#e8d5b7"/>
+        <!-- 咖啡杯 -->
+        <rect x="155" y="110" width="50" height="42" rx="8" fill="#fffbe8" stroke="#c8a84b" stroke-width="2"/>
+        <path d="M205 124 Q220 124 220 136 Q220 148 205 148" stroke="#c8a84b" stroke-width="2" fill="none"/>
+        <!-- 咖啡液面 -->
+        <rect x="161" y="128" width="38" height="6" rx="3" fill="#c8906e" opacity="0.5"/>
+        <!-- 媽媽剪影 -->
+        <!-- 身體 -->
+        <ellipse cx="100" cy="160" rx="35" ry="15" fill="#c4956a" opacity="0.5"/>
+        <!-- 上半身 -->
+        <rect x="78" y="100" width="44" height="65" rx="10" fill="#b07a50" opacity="0.7"/>
+        <!-- 頭 -->
+        <ellipse cx="100" cy="90" rx="22" ry="24" fill="#f0c080"/>
+        <!-- 頭髮 -->
+        <path d="M78 82 Q80 55 100 58 Q120 55 122 82 Q115 68 100 67 Q85 68 78 82Z" fill="#5a3820"/>
+        <!-- 眼睛（往下看，疲憊感） -->
+        <ellipse cx="93" cy="92" rx="3" ry="2.5" fill="#3d2b0c"/>
+        <ellipse cx="107" cy="92" rx="3" ry="2.5" fill="#3d2b0c"/>
+        <!-- 微微下垂的嘴 -->
+        <path d="M93 103 Q100 101 107 103" stroke="#8a5a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <!-- 雙手放桌上 -->
+        <rect x="66" y="138" width="28" height="14" rx="7" fill="#f0c080"/>
+        <rect x="106" y="138" width="28" height="14" rx="7" fill="#f0c080"/>
+        <!-- 心情低落小細節：眼眶陰影 -->
+        <ellipse cx="93" cy="94" rx="5" ry="3" fill="#d4956a" opacity="0.25"/>
+        <ellipse cx="107" cy="94" rx="5" ry="3" fill="#d4956a" opacity="0.25"/>
+        <!-- 裝飾文字 -->
+        <text x="200" y="175" text-anchor="middle" font-size="11" fill="#b89a4a" opacity="0.8" font-style="italic">你還好嗎？</text>
+      </svg>
+    </div>
+
+    <div class="card-body">
+      <div class="tags">
+        <span class="tag t-bonus">#家長自我照顧</span>
+        <span class="tag t-bonus">#媽媽的情緒</span>
+        <span class="tag t-bonus">#親職壓力</span>
+      </div>
+
+      <h2 class="card-title">咖啡涼了才想起來沒喝——那杯咖啡，是多少媽媽的縮影？</h2>
+
+      <p class="card-lead">
+        她記得孩子的上課時間、作業截止日、老師說的每一句話，
+        但忘記了自己上一次好好休息是什麼時候。
+        <br><br>
+        2025 年調查指出，逾 <strong>22% 的台港家長親職壓力指數偏高</strong>，
+        而情緒耗竭的家長更容易在無意間對孩子說出「講不完的道理」——
+        不是不愛，是自己的杯子已經空了，卻還在硬擠。
+        <br><br>
+        SEL 教育說的不只是孩子的情緒，也包括你的。
+        因為孩子最先學習情緒的地方，就是你的臉。
+      </p>
+
+      <hr class="divider">
+
+      <div class="copy-box bonus-accent">
+        📌 <strong>可直接發布文案</strong><br><br>
+        那杯咖啡，你喝的時候還是熱的嗎？<br><br>
+        有一項調查發現，超過兩成的家長正承受偏高的親職壓力，<br>
+        其中媽媽因為同時扛著「情感後盾」的角色，最容易悄悄崩潰。<br><br>
+        但孩子最敏感，他感覺得到你今天是不是撐著在笑。<br><br>
+        不是要你做一個「完美媽媽」，<br>
+        是想邀請你先做一個「不忘照顧自己的人」。<br><br>
+        你不需要先把自己榨乾，才能說你愛孩子。<br>
+        <strong>把自己顧好，就是給孩子最好的情緒示範。</strong><br><br>
+        #媽媽也需要被照顧 #親職壓力 #SEL從家長開始 #覺知SEL
+      </div>
+
+      <p class="card-quote bonus-q">「你的情緒穩定，是孩子的第一堂SEL課。」</p>
+
+      <hr class="divider">
+      <div class="meta">
+        <span class="meta-chip">📱 LINE / IG</span>
+        <span class="meta-chip">👩 媽媽族群</span>
+        <span class="meta-chip">🌆 週末下午發效果佳</span>
+        <a href="https://www.parentingheadline.com/article/15552/" target="_blank">📄 來源</a>
+      </div>
+      <div class="unsplash-hint">Unsplash 關鍵字建議：tired mom coffee morning, mother exhausted home, self-care parent</div>
+    </div>
+  </article>
+
+  <!-- ─────────── CARD 3 ─────────── 第三層·趨勢：芬蘭現象式教學×幸福感 -->
+  <article class="card">
+    <div class="card-visual">
+      <!-- SVG：芬蘭教室場景，孩子圍坐討論，窗外有松樹，冬日光線斜射 -->
+      <svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g3a" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e8faf5"/>
+            <stop offset="100%" stop-color="#c8f0e8"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="196" fill="url(#g3a)"/>
+        <!-- 地板 -->
+        <rect x="0" y="155" width="400" height="41" fill="#b2d8c8" opacity="0.5"/>
+        <!-- 松樹（窗外） -->
+        <polygon points="340,130 355,80 370,130" fill="#2baa8a" opacity="0.3"/>
+        <polygon points="345,145 355,105 365,145" fill="#2baa8a" opacity="0.25"/>
+        <rect x="352" y="145" width="6" height="15" fill="#6b4c2a" opacity="0.3"/>
+        <!-- 窗框 -->
+        <rect x="320" y="50" width="65" height="95" rx="4" fill="#e0f7f0" stroke="#2baa8a" stroke-width="1.5"/>
+        <line x1="352" y1="50" x2="352" y2="145" stroke="#2baa8a" stroke-width="1" opacity="0.5"/>
+        <line x1="320" y1="97" x2="385" y2="97" stroke="#2baa8a" stroke-width="1" opacity="0.5"/>
+        <!-- 圓桌 -->
+        <ellipse cx="180" cy="148" rx="105" ry="22" fill="#c8e6df"/>
+        <!-- 孩子 A（左） -->
+        <ellipse cx="90" cy="118" rx="16" ry="18" fill="#f9d4a0"/>
+        <path d="M74 110 Q80 92 90 94 Q100 92 106 110 Q98 102 90 102 Q82 102 74 110Z" fill="#8b5e3c"/>
+        <ellipse cx="85" cy="120" rx="2.5" ry="2" fill="#3d2b0c"/>
+        <ellipse cx="95" cy="120" rx="2.5" ry="2" fill="#3d2b0c"/>
+        <path d="M84 130 Q90 134 96 130" stroke="#7a4a2a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <!-- 孩子 B（中） -->
+        <ellipse cx="180" cy="110" rx="18" ry="20" fill="#f7c8b0"/>
+        <path d="M162 102 Q168 82 180 84 Q192 82 198 102 Q190 92 180 93 Q170 92 162 102Z" fill="#3d2b0c"/>
+        <ellipse cx="174" cy="112" rx="3" ry="2.5" fill="#3d2b0c"/>
+        <ellipse cx="186" cy="112" rx="3" ry="2.5" fill="#3d2b0c"/>
+        <path d="M173 124 Q180 129 187 124" stroke="#7a4a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- 孩子 C（右） -->
+        <ellipse cx="270" cy="118" rx="16" ry="18" fill="#faeabf"/>
+        <path d="M254 110 Q260 92 270 94 Q280 92 286 110 Q278 102 270 102 Q262 102 254 110Z" fill="#5a3820"/>
+        <ellipse cx="265" cy="120" rx="2.5" ry="2" fill="#3d2b0c"/>
+        <ellipse cx="275" cy="120" rx="2.5" ry="2" fill="#3d2b0c"/>
+        <path d="M264 130 Q270 135 276 130" stroke="#7a4a2a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <!-- 連線（討論感） -->
+        <path d="M108 120 Q140 108 162 114" stroke="#2baa8a" stroke-width="1.5" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
+        <path d="M198 114 Q230 108 254 118" stroke="#2baa8a" stroke-width="1.5" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
+        <!-- 小燈泡（靈感） -->
+        <circle cx="180" cy="54" r="16" fill="#fff8b0" stroke="#f0c030" stroke-width="2"/>
+        <path d="M174 54 Q180 46 186 54 Q186 60 180 63 Q174 60 174 54Z" fill="#f0c030" opacity="0.7"/>
+        <rect x="176" y="63" width="8" height="5" rx="2" fill="#e0a020"/>
+        <!-- 文字裝飾 -->
+        <text x="24" y="40" font-size="12" fill="#2baa8a" opacity="0.7" font-weight="700">現象式學習</text>
+        <text x="24" y="58" font-size="10" fill="#2baa8a" opacity="0.5">Phenomenon-Based</text>
+      </svg>
+    </div>
+
+    <div class="card-body">
+      <div class="tags">
+        <span class="tag t-trend">#芬蘭教育</span>
+        <span class="tag t-trend">#現象式教學</span>
+        <span class="tag t-trend">#學生幸福感</span>
+      </div>
+
+      <h2 class="card-title">芬蘭學生不補習、不排名——但為什麼他們長大後反而更有競爭力？</h2>
+
+      <p class="card-lead">
+        一位台灣爸爸到赫爾辛基考察，發現芬蘭小學沒有統一考試、沒有班級排名，
+        孩子卻對學習充滿熱情。老師說：
+        「我們教的不是科目，是對世界的好奇心。」
+        <br><br>
+        芬蘭近年全面推行「<strong>現象式教學</strong>」——以真實生活情境為核心，
+        孩子們在討論「為什麼河川汙染」時，同時學了自然、社會、語言與情緒溝通。
+        研究指出，這種跨學科的學習方式，不只提升學業成就，更大幅降低學生的焦慮指數。
+        （資料：光明網 跨學科教學芬蘭實踐報導，2025）
+      </p>
+
+      <hr class="divider">
+
+      <div class="copy-box trend-accent">
+        📌 <strong>可直接發布文案</strong><br><br>
+        芬蘭的孩子不背排名、不刷題，<br>
+        卻在長大後展現出超強的解題能力與心理韌性——<br>
+        這到底是為什麼？<br><br>
+        因為他們從小學的不是「背答案」，而是「問問題」。<br><br>
+        芬蘭的「現象式教學」讓孩子用真實情境學習，<br>
+        同時培養批判思考、同理心與情緒調節——<br>
+        也就是 SEL 情緒社會化能力的核心。<br><br>
+        你不需要移民芬蘭，<br>
+        但可以在餐桌上這樣問孩子：<br>
+        <strong>「你今天遇到什麼問題？你是怎麼想的？」</strong><br><br>
+        好奇心，就從一個問題開始。<br><br>
+        #芬蘭教育 #現象式教學 #SEL素養 #覺知SEL
+      </div>
+
+      <p class="card-quote trend-q">「教孩子問問題，比給他答案，更值錢。」</p>
+
+      <hr class="divider">
+      <div class="meta">
+        <span class="meta-chip">📱 FB / IG</span>
+        <span class="meta-chip">👨‍👩‍👦 國小至國中家長</span>
+        <span class="meta-chip">🌏 教育趨勢話題高互動</span>
+        <a href="https://edu.gmw.cn/2025-01/09/content_37787981.htm" target="_blank">📄 來源</a>
+      </div>
+      <div class="unsplash-hint">Unsplash 關鍵字建議：finland classroom kids discussion, children learning together, curious child nature</div>
+    </div>
+  </article>
+
+</div><!-- end grid -->
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="site-footer">
+  覺知 SEL 教育 · 內容企劃資料庫 · 自動產出 2026.04.29 15:10 (台灣時間)<br>
+  本文案僅供品牌內部企劃參考，發布前請依平台特性微調語氣。
+</footer>
+
+</body>
+</html>
