@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育每日教養文宣 | 2026.04.29 | 16:53</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f4f0;
+      color: #2d2d2d;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      background: #fff;
+      border-bottom: 3px solid #d97757;
+      padding: 28px 40px 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-block .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #d97757;
+      letter-spacing: 0.04em;
+    }
+    .brand-block .brand-sub {
+      font-size: 12px;
+      color: #888;
+      margin-top: 3px;
+      letter-spacing: 0.08em;
+    }
+    .header-date {
+      font-size: 13px;
+      color: #aaa;
+      text-align: right;
+      line-height: 1.7;
+    }
+    .header-date strong { color: #d97757; font-size: 15px; }
+
+    /* ── Layout ── */
+    .main-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 24px 0;
+    }
+    .section-headline {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: #bbb;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+    }
+    .card-visual {
+      width: 100%;
+      height: 180px;
+    }
+    .card-body { padding: 24px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .tag-pain { background: #fff3ee; color: #c0512a; border: 1px solid #f5cdb8; }
+    .tag-skill { background: #f3f0ff; color: #6b3ea6; border: 1px solid #d4c9f5; }
+    .tag-trend { background: #edfaf4; color: #1e7d52; border: 1px solid #b8e8d0; }
+
+    .card-title {
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.45;
+      color: #1e1e1e;
+      margin-bottom: 14px;
+      letter-spacing: 0.01em;
+    }
+    .divider { height: 1px; background: #f0ece6; margin: 12px 0; }
+    .section-label {
+      font-size: 11px;
+      color: #aaa;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .section-text {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #444;
+      margin-bottom: 4px;
+    }
+    .section-text strong { color: #d97757; }
+    .skill-strong strong { color: #7c5cbf !important; }
+    .trend-strong strong { color: #2aa06b !important; }
+
+    .copy-box {
+      background: #fff8f4;
+      border-left: 4px solid #d97757;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      line-height: 1.85;
+      color: #4a3a30;
+      border-radius: 0 8px 8px 0;
+      margin-top: 4px;
+    }
+    .skill-copy { background: #f8f5ff; border-left-color: #7c5cbf; color: #3e2e5a; }
+    .trend-copy { background: #f3fbf6; border-left-color: #2aa06b; color: #1e3e2c; }
+
+    .quote-wrap {
+      margin: 18px 0 14px;
+      padding: 16px 18px;
+      background: linear-gradient(135deg, #fff5ef 0%, #ffeadd 100%);
+      border-radius: 12px;
+      position: relative;
+    }
+    .skill-quote { background: linear-gradient(135deg, #f5f0ff 0%, #ede4ff 100%); }
+    .trend-quote { background: linear-gradient(135deg, #effaf3 0%, #ddf2e7 100%); }
+    .quote-mark {
+      position: absolute;
+      top: 4px;
+      left: 12px;
+      font-size: 36px;
+      color: #d97757;
+      opacity: 0.35;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .skill-q { color: #7c5cbf; }
+    .trend-q { color: #2aa06b; }
+    .quote-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: #555;
+      text-align: center;
+      line-height: 1.6;
+      padding: 0 8px;
+    }
+
+    .card-meta {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px dashed #e8e0d8;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+      color: #888;
+      line-height: 1.6;
+    }
+    .card-meta strong { color: #555; }
+    .card-meta a { color: #d97757; text-decoration: none; }
+    .card-meta a:hover { text-decoration: underline; }
+    .unsplash-tip {
+      font-size: 12px;
+      color: #ccc;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header">
+  <div class="brand-block">
+    <div class="brand-name">覺知 SEL 教育</div>
+    <div class="brand-sub">每日教養文宣 · 內容企劃資料庫</div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29 | 16:53</strong><br>
+    今日第 12 份文宣輸出
+  </div>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main class="main-wrap">
+  <p class="section-headline">Today's 3 Posts — 覺知教養每日精選</p>
+
+  <div class="cards-grid">
+
+    <!-- ══ CARD 1：家長痛點 ── 拒學循環 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：拒學心理循環圖 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#fff8f5"/>
+          <circle cx="50" cy="30" r="40" fill="#ffe8df" opacity="0.5"/>
+          <circle cx="350" cy="160" r="45" fill="#ffe8df" opacity="0.4"/>
+
+          <!-- 循環圈外圈 -->
+          <ellipse cx="200" cy="90" rx="125" ry="60" fill="none" stroke="#d97757" stroke-width="2" stroke-dasharray="6,4" opacity="0.5"/>
+
+          <!-- 四個節點 -->
+          <!-- 節點 1：壓力 -->
+          <circle cx="80" cy="90" r="22" fill="#fff" stroke="#d97757" stroke-width="2"/>
+          <text x="80" y="86" text-anchor="middle" font-size="10" fill="#c0512a" font-weight="700">壓力</text>
+          <text x="80" y="98" text-anchor="middle" font-size="9" fill="#888">累積</text>
+
+          <!-- 節點 2：請假 -->
+          <circle cx="200" cy="50" r="22" fill="#fff" stroke="#d97757" stroke-width="2"/>
+          <text x="200" y="46" text-anchor="middle" font-size="10" fill="#c0512a" font-weight="700">請假</text>
+          <text x="200" y="58" text-anchor="middle" font-size="9" fill="#888">逃避</text>
+
+          <!-- 節點 3：鬆一口氣 -->
+          <circle cx="320" cy="90" r="22" fill="#fff" stroke="#d97757" stroke-width="2"/>
+          <text x="320" y="86" text-anchor="middle" font-size="9" fill="#c0512a" font-weight="700">鬆一</text>
+          <text x="320" y="98" text-anchor="middle" font-size="9" fill="#888">口氣</text>
+
+          <!-- 節點 4：脫節 -->
+          <circle cx="200" cy="130" r="22" fill="#fff" stroke="#d97757" stroke-width="2"/>
+          <text x="200" y="126" text-anchor="middle" font-size="10" fill="#c0512a" font-weight="700">更怕</text>
+          <text x="200" y="138" text-anchor="middle" font-size="9" fill="#888">回校</text>
+
+          <!-- 中央文字 -->
+          <text x="200" y="88" text-anchor="middle" font-size="13" fill="#d97757" font-weight="800">拒學</text>
+          <text x="200" y="104" text-anchor="middle" font-size="13" fill="#d97757" font-weight="800">循環</text>
+
+          <!-- 箭頭裝飾 -->
+          <text x="135" y="62" font-size="14" fill="#d97757" opacity="0.6">↗</text>
+          <text x="262" y="62" font-size="14" fill="#d97757" opacity="0.6">↘</text>
+          <text x="262" y="125" font-size="14" fill="#d97757" opacity="0.6">↙</text>
+          <text x="125" y="125" font-size="14" fill="#d97757" opacity="0.6">↖</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-pain">🧡 家長痛點</span>
+          <span class="tag tag-pain">拒學</span>
+          <span class="tag tag-pain">學校焦慮</span>
+          <span class="tag tag-pain">逃避循環</span>
+        </div>
+
+        <h2 class="card-title">
+          孩子說「我今天不想去上學」——<br>
+          答應他一次，可能就回不去了
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          星期一早上六點半，孩子蓋著棉被說：「媽媽，我頭好痛。」你伸手摸額頭，沒燒。但你看著他的眼神，就是不想下床。請一天假吧——你心軟了。<strong>但一週後，他開始每天都頭痛。</strong>那一張請假單，悄悄變成了一道回不去的門。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">教育新知引用</p>
+        <p class="section-text">
+          臨床心理師指出，拒學會形成「逃避循環」：壓力 → 請假 → 暫時鬆一口氣 → 與學校脫節 → 更怕回去 → 壓力更大。<strong>這不是孩子在「裝病」，是他大腦真的學會用身體痛來換取安全</strong>。每多請一天，回去的門檻就高一階。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          拒學從來不是「懶」的問題，是孩子內在有一個還沒被聽懂的訊號。覺知教養的第一步，是先放下「他怎麼又這樣」，問一句：「你今天的學校，發生什麼了嗎？」
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box">
+          🧡 孩子說「不想上學」的那天，你怎麼處理？<br><br>
+          幫他請假，是慈悲。<br>
+          但幫他請第二次、第三次，<br>
+          可能就把他鎖在家裡了。<br><br>
+          臨床心理師說：拒學是一個循環。<br>
+          壓力 → 請假 → 鬆一口氣 → 更怕回校 → 壓力更大。<br><br>
+          孩子不是懶，是有一個你還沒聽懂的訊號。<br>
+          頭痛、肚子痛，常常是身體在替情緒說話。<br><br>
+          請假之前，先問他：<br>
+          「你今天的學校，發生什麼了嗎？」<br>
+          這一句，可能就是他最需要的那道光。<br><br>
+          ✨ 不催促，但也不放任。<br>
+          覺知 SEL，陪你穩住這場拉鋸。
+        </div>
+
+        <div class="quote-wrap">
+          <span class="quote-mark">"</span>
+          <p class="quote-text">拒學的孩子，<br>不是不愛學校，是學校裡有他扛不住的事</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · LINE · IG · 親子社群</span>
+          <span><strong>適合對象：</strong>國小至國中階段孩子的父母、孩子最近抗拒上學的家庭</span>
+          <span><strong>來源：</strong><a href="http://www.wushin.org.tw/6-2-3.html" target="_blank">悟心心理治療所：拒學的心理循環</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：child reluctant school morning bed worried</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ══ CARD 2：能力培養 / 趨勢 ── 螢幕成癮模式 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：時間 vs 模式對比 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#f8f5ff"/>
+          <circle cx="60" cy="150" r="45" fill="#ede8ff" opacity="0.5"/>
+          <circle cx="350" cy="40" r="40" fill="#ede8ff" opacity="0.4"/>
+
+          <!-- 左：時鐘（時間長短） -->
+          <circle cx="100" cy="90" r="40" fill="#fff" stroke="#c4b5fd" stroke-width="2.5"/>
+          <line x1="100" y1="90" x2="100" y2="62" stroke="#9b8ec4" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="100" y1="90" x2="120" y2="90" stroke="#9b8ec4" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="100" cy="90" r="3" fill="#7c5cbf"/>
+          <text x="100" y="148" text-anchor="middle" font-size="11" fill="#888" font-weight="700">總時間</text>
+          <text x="100" y="162" text-anchor="middle" font-size="10" fill="#bbb">不是關鍵</text>
+          <!-- X 標誌 -->
+          <text x="135" y="58" font-size="22" fill="#dc6060" font-weight="800">✕</text>
+
+          <!-- 中間箭頭 -->
+          <text x="200" y="98" text-anchor="middle" font-size="14" fill="#7c5cbf" font-weight="800">→</text>
+
+          <!-- 右：警告圖（成癮模式） -->
+          <polygon points="290,60 330,130 250,130" fill="#fff" stroke="#7c5cbf" stroke-width="2.5"/>
+          <text x="290" y="115" text-anchor="middle" font-size="32" fill="#7c5cbf" font-weight="800">!</text>
+          <text x="290" y="148" text-anchor="middle" font-size="11" fill="#5b21b6" font-weight="700">上癮模式</text>
+          <text x="290" y="162" text-anchor="middle" font-size="10" fill="#7c5cbf">才是危險</text>
+
+          <!-- 上方標題 -->
+          <text x="200" y="28" text-anchor="middle" font-size="13" fill="#5b21b6" font-weight="800">2025 最新研究</text>
+
+          <!-- 裝飾 -->
+          <text x="370" y="105" font-size="14" fill="#c4b5fd" opacity="0.6">✦</text>
+          <text x="20" y="60" font-size="14" fill="#c4b5fd" opacity="0.5">✦</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-skill">💜 能力培養</span>
+          <span class="tag tag-skill">螢幕時間</span>
+          <span class="tag tag-skill">手機成癮</span>
+          <span class="tag tag-skill">大腦發展</span>
+        </div>
+
+        <h2 class="card-title">
+          別再只看「滑了幾小時」——<br>
+          真正讓孩子大腦失控的，是「成癮模式」
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          晚餐桌上，爸爸第七次喊「再五分鐘就放下手機」。孩子嘴上說好，眼睛卻黏在螢幕上，手指一直不停往上滑。爸爸忍不住吼出來，孩子大哭，飯沒吃完。<strong>你以為問題是「他用太久了」，但研究說，可能不是。</strong>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label skill-strong">教育新知引用</p>
+        <p class="section-text skill-strong">
+          2025 年國際大型研究發現：青少年「螢幕總時間」其實和焦慮、憂鬱沒有直接關係，<strong>真正高度相關的，是「成癮模式」——一停就煩躁、停不下來、影響睡眠和情緒</strong>。也就是說：問題不是「滑多久」，是「有沒有停得下來」。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          覺知教養不是用秒數鬥爭，而是幫孩子練習「我能感覺到什麼時候該停」。這不是規定，是一種能力——一種一輩子帶得走的自我調節力。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box skill-copy">
+          💜 別再吼「你滑多久了」——你問錯問題了<br><br>
+          2025 年最新研究說：<br>
+          孩子用手機「總時間」和情緒問題沒直接關係。<br>
+          真正讓他焦慮、易怒、睡不好的——<br>
+          是「停不下來」這件事本身。<br><br>
+          所以家長要觀察的不是「幾小時」，<br>
+          而是這三件事：<br>
+          ① 你叫他停的時候，他會爆炸嗎？<br>
+          ② 沒有手機時，他坐立難安嗎？<br>
+          ③ 他能不能在約定時間內主動放下？<br><br>
+          答案藏在這三題裡，不在計時器裡。<br><br>
+          ✨ 我們不是在管手機，是在陪孩子練「自我調節」。<br>
+          覺知 SEL，從一個更聰明的問題開始。
+        </div>
+
+        <div class="quote-wrap skill-quote">
+          <span class="quote-mark skill-q">"</span>
+          <p class="quote-text">時間不是敵人，<br>「停不下來」才是</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · IG · LINE · 教育論壇</span>
+          <span><strong>適合對象：</strong>國小高年級到國中階段孩子的父母、為螢幕時間家庭戰爭頭痛的家長</span>
+          <span><strong>來源：</strong><a href="https://www.careonline.com.tw/2026/04/202604232000.html" target="_blank">照護線上：螢幕時間與睡眠如何影響青少年心理健康</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：teen smartphone scroll addiction night</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ══ CARD 3：科學趨勢 ── PISA 2029 AI 素養 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：PISA 時間軸 + AI 素養 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#f3fbf6"/>
+          <circle cx="60" cy="40" r="40" fill="#ddf2e7" opacity="0.5"/>
+          <circle cx="350" cy="155" r="45" fill="#ddf2e7" opacity="0.4"/>
+
+          <!-- 時間軸 -->
+          <line x1="50" y1="100" x2="350" y2="100" stroke="#2aa06b" stroke-width="3"/>
+
+          <!-- 2025 節點 -->
+          <circle cx="90" cy="100" r="14" fill="#fff" stroke="#2aa06b" stroke-width="2.5"/>
+          <text x="90" y="105" text-anchor="middle" font-size="10" fill="#1e7d52" font-weight="800">2025</text>
+          <text x="90" y="78" text-anchor="middle" font-size="11" fill="#1e7d52" font-weight="700">數位素養</text>
+          <text x="90" y="130" text-anchor="middle" font-size="10" fill="#888">9月公布</text>
+
+          <!-- 2026 節點（強調，現在） -->
+          <circle cx="200" cy="100" r="18" fill="#2aa06b" stroke="#1e7d52" stroke-width="3"/>
+          <text x="200" y="106" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">2026</text>
+          <text x="200" y="74" text-anchor="middle" font-size="11" fill="#1e7d52" font-weight="800">結果發布</text>
+          <text x="200" y="135" text-anchor="middle" font-size="10" fill="#1e7d52" font-weight="700">★ 我們在這</text>
+
+          <!-- 2029 節點 -->
+          <circle cx="310" cy="100" r="16" fill="#fff" stroke="#2aa06b" stroke-width="2.5"/>
+          <text x="310" y="105" text-anchor="middle" font-size="10" fill="#1e7d52" font-weight="800">2029</text>
+          <text x="310" y="76" text-anchor="middle" font-size="11" fill="#1e7d52" font-weight="700">AI 素養</text>
+          <text x="310" y="130" text-anchor="middle" font-size="10" fill="#888">新增評量</text>
+
+          <!-- 上方標題 -->
+          <text x="200" y="28" text-anchor="middle" font-size="13" fill="#1e7d52" font-weight="800">OECD PISA 全球評量轉型</text>
+
+          <!-- 裝飾 -->
+          <text x="370" y="55" font-size="14" fill="#a3d9ba" opacity="0.7">✦</text>
+          <text x="25" y="160" font-size="14" fill="#a3d9ba" opacity="0.7">✦</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-trend">🌿 科學趨勢</span>
+          <span class="tag tag-trend">PISA 2029</span>
+          <span class="tag tag-trend">AI 素養</span>
+          <span class="tag tag-trend">媒體素養</span>
+        </div>
+
+        <h2 class="card-title">
+          OECD 正式宣告：2029 年起，<br>
+          孩子要被全球評量「AI 素養」了
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          媽媽群組裡，有人 PO：「孩子用 ChatGPT 寫作業被老師抓到了，怎麼辦？」一秒湧進 80 則回覆。但比起「會不會被抓到」，<strong>更值得擔心的，其實是另一件事：等他長大時，學校會不會用他「不會用 AI」當作扣分標準？</strong>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label trend-strong">教育新知引用</p>
+        <p class="section-text trend-strong">
+          OECD 已正式公布：PISA 2025 結果將於 2026 年 9 月發布；而 2029 年起，<strong>「媒體與 AI 素養」(MAIL) 將成為 PISA 的全球新評量項目</strong>。換句話說，「會不會聰明地使用 AI」即將從「補習加分」變成「全球學生的基本功」。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          AI 素養的底層，不是技術，是判斷力——能不能分辨真假、能不能對自己生成的內容負責、能不能在資訊洪流裡保有自己的聲音。這正是 SEL 一直在做的事：自我覺察、做出選擇、為選擇負責。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box trend-copy">
+          🌿 OECD 剛剛宣布：2029 年，AI 素養變必考<br><br>
+          PISA（全球最大教育評量）正式公告：<br>
+          • 2026 年 9 月：發布 2025「數位素養」結果<br>
+          • 2029 年起：新增「媒體與 AI 素養」評量<br><br>
+          這代表什麼？<br>
+          孩子未來「會不會用 AI」，<br>
+          將直接影響他在全球教育系統的競爭位置。<br><br>
+          但 AI 素養的核心，不是寫得多快，<br>
+          而是「我能不能判斷它對不對」、<br>
+          「我能不能對結果負責」。<br><br>
+          這些，正是 SEL 教育的底層能力——<br>
+          自我覺察、批判思考、為選擇負責。<br><br>
+          ✨ 比起禁止孩子用 AI，更該教他「聰明地用」。<br>
+          覺知 SEL，提早為孩子準備那個未來。
+        </div>
+
+        <div class="quote-wrap trend-quote">
+          <span class="quote-mark trend-q">"</span>
+          <p class="quote-text">AI 素養的底層，<br>是 SEL 一直在做的事</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · LinkedIn · 教育論壇 · 親子社群</span>
+          <span><strong>適合對象：</strong>關注未來教育趨勢的家長、教育工作者、12 歲以下孩子的父母</span>
+          <span><strong>來源：</strong><a href="https://www.teachermagazine.com/au_en/articles/pisa-2029-media-and-ai-literacy-key-concepts-curriculum-links-and-competences" target="_blank">Teacher Magazine：PISA 2029 媒體與 AI 素養關鍵概念</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：child AI laptop future learning literacy</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+</body>
+</html>
