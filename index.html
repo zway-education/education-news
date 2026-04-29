@@ -95,6 +95,64 @@
   .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #aaa; }
   .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 
+  /* ── Topic Tag Cloud ── */
+  .tag-cloud-wrap {
+    max-width: 900px; margin: 18px auto 0; padding: 0 24px;
+  }
+  .tag-cloud-title {
+    font-size: 11px; font-weight: 700; color: #ccc;
+    letter-spacing: 2px; margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .tag-cloud-title::after {
+    content: ''; flex: 1; height: 1px; background: #ede9e5;
+  }
+  .tag-cloud {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .topic-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 6px 14px; border-radius: 20px;
+    font-size: 13px; cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: all 0.18s; font-family: inherit;
+    font-weight: 500;
+  }
+  .topic-tag:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+  .topic-tag.active { box-shadow: 0 3px 12px rgba(0,0,0,0.15); transform: translateY(-1px); }
+
+  /* 痛點：暖橘 */
+  .tag-pain {
+    background: #fff3ee; color: #c0512a; border-color: #f5cdb8;
+  }
+  .tag-pain.active, .tag-pain:hover { background: #d97757; color: #fff; border-color: #d97757; }
+
+  /* 能力：紫色 */
+  .tag-skill {
+    background: #f3f0ff; color: #6b3ea6; border-color: #d4c9f5;
+  }
+  .tag-skill.active, .tag-skill:hover { background: #7c5cbf; color: #fff; border-color: #7c5cbf; }
+
+  /* 趨勢：薄荷綠 */
+  .tag-trend {
+    background: #edfaf4; color: #1e7d52; border-color: #b8e8d0;
+  }
+  .tag-trend.active, .tag-trend:hover { background: #2aa06b; color: #fff; border-color: #2aa06b; }
+
+  /* 加值：灰金 */
+  .tag-extra {
+    background: #f8f5ea; color: #7a6420; border-color: #e0d49a;
+  }
+  .tag-extra.active, .tag-extra:hover { background: #b89a38; color: #fff; border-color: #b89a38; }
+
+  /* 關鍵字：淺灰 */
+  .tag-kw {
+    background: #f5f3f1; color: #888; border-color: #e5e0db;
+  }
+  .tag-kw.active, .tag-kw:hover { background: #555; color: #fff; border-color: #555; }
+
+  .tag-cloud-divider { width: 100%; height: 0; margin: 4px 0; }
+
   /* ── Content ── */
   .content-area {
     max-width: 900px; margin: 20px auto 60px; padding: 0 24px;
@@ -233,6 +291,34 @@
   <div class="legend-item"><div class="legend-dot" style="background:#c4b07a"></div> 加值類別</div>
 </div>
 
+<!-- ── 主題標籤雲 ── -->
+<div class="tag-cloud-wrap">
+  <div class="tag-cloud-title">快速篩選主題</div>
+  <div class="tag-cloud" id="tagCloud">
+    <!-- 分類大標籤 -->
+    <button class="topic-tag tag-pain" onclick="tagFilter('pain', this)" data-mode="type" data-val="pain">🧡 家長痛點</button>
+    <button class="topic-tag tag-skill" onclick="tagFilter('skill', this)" data-mode="type" data-val="skill">💜 能力培養</button>
+    <button class="topic-tag tag-trend" onclick="tagFilter('trend', this)" data-mode="type" data-val="trend">🌿 科學趨勢</button>
+    <button class="topic-tag tag-extra" onclick="tagFilter('extra', this)" data-mode="type" data-val="extra">✨ 加值類別</button>
+    <div class="tag-cloud-divider"></div>
+    <!-- 關鍵字標籤 -->
+    <button class="topic-tag tag-kw" onclick="tagFilter('情緒', this)" data-mode="kw" data-val="情緒">情緒管理</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('大腦', this)" data-mode="kw" data-val="大腦">大腦發展</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('焦慮', this)" data-mode="kw" data-val="焦慮">焦慮</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('同理心', this)" data-mode="kw" data-val="同理心">同理心</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('執行功能', this)" data-mode="kw" data-val="執行功能">執行功能 EF</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('SEL', this)" data-mode="kw" data-val="SEL">SEL</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('芬蘭', this)" data-mode="kw" data-val="芬蘭">芬蘭教育</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('AI', this)" data-mode="kw" data-val="AI">AI 教育</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('手足', this)" data-mode="kw" data-val="手足">手足衝突</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('睡眠', this)" data-mode="kw" data-val="睡眠">睡眠</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('自信', this)" data-mode="kw" data-val="自信">自信</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('媽媽', this)" data-mode="kw" data-val="媽媽">媽媽</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('爸爸', this)" data-mode="kw" data-val="爸爸">爸爸</button>
+    <button class="topic-tag tag-kw" onclick="tagFilter('OECD', this)" data-mode="kw" data-val="OECD">OECD</button>
+  </div>
+</div>
+
 <!-- ── 文宣列表 ── -->
 <div class="content-area" id="contentArea">
   <div class="empty-state" id="emptyState">找不到符合的文宣 🌿</div>
@@ -360,18 +446,40 @@ function closeViewer() {
 }
 
 // ══════════════════════════════════════════
-//  渲染列表
+//  篩選狀態
 // ══════════════════════════════════════════
 const dotClass = { pain: 'dot-pain', skill: 'dot-skill', trend: 'dot-trend', extra: 'dot-extra', default: 'dot-default' };
-const today = new Date().toISOString().slice(0,10);
-let currentFilter = 'all';
-let currentSearch = '';
+const typeLabel = { pain: '家長痛點', skill: '能力培養', trend: '科學趨勢', extra: '加值類別' };
 
+// 台灣時間今天日期
+const now = new Date();
+const taiwanOffset = 8 * 60;
+const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+const taiwanNow = new Date(utc + taiwanOffset * 60000);
+const today = `${taiwanNow.getFullYear()}-${String(taiwanNow.getMonth()+1).padStart(2,'0')}-${String(taiwanNow.getDate()).padStart(2,'0')}`;
+
+let currentDateFilter = 'all';  // 'all' | 'today'
+let currentTypeFilter = '';     // '' | 'pain' | 'skill' | 'trend' | 'extra'
+let currentSearch = '';         // keyword string
+let activeTagBtn = null;        // 目前 active 的 tag 按鈕
+
+// ══════════════════════════════════════════
+//  渲染列表
+// ══════════════════════════════════════════
 function render() {
   const area = document.getElementById('contentArea');
   const empty = document.getElementById('emptyState');
   let list = [...articles].reverse();
-  if (currentFilter === 'today') list = list.filter(a => a.date === today);
+
+  // 日期篩選
+  if (currentDateFilter === 'today') list = list.filter(a => a.date === today);
+
+  // 分類篩選（type）
+  if (currentTypeFilter) {
+    list = list.filter(a => a.topics.some(t => t.type === currentTypeFilter));
+  }
+
+  // 關鍵字搜尋
   if (currentSearch) {
     const q = currentSearch.toLowerCase();
     list = list.filter(a =>
@@ -379,6 +487,7 @@ function render() {
       a.file.includes(q) || a.time.includes(q)
     );
   }
+
   area.querySelectorAll('.date-group').forEach(el => el.remove());
   empty.style.display = list.length === 0 ? 'block' : 'none';
 
@@ -397,6 +506,18 @@ function render() {
       card.className = 'article-card';
       card.onclick = () => openViewer(a.file);
       const tp = a.time.split(':');
+
+      // 高亮符合分類的 topic
+      const topicsHtml = a.topics.map(t => {
+        const highlight = currentTypeFilter && t.type === currentTypeFilter;
+        return `
+          <div class="topic-line" style="${highlight ? 'font-weight:700;' : ''}">
+            <div class="topic-dot ${dotClass[t.type] || 'dot-default'}"></div>
+            <span>${highlightText(t.text, currentSearch)}</span>
+            ${highlight ? `<span style="font-size:10px;padding:1px 7px;border-radius:10px;background:${typeColor(t.type)};color:#fff;margin-left:4px;flex-shrink:0;">${typeLabel[t.type]}</span>` : ''}
+          </div>`;
+      }).join('');
+
       card.innerHTML = `
         <div class="card-time-badge">
           <div class="time">${tp[0]}:${tp[1]}</div>
@@ -404,13 +525,7 @@ function render() {
         </div>
         <div class="card-info">
           <div class="card-filename">${a.file}</div>
-          <div class="card-topics">
-            ${a.topics.map(t => `
-              <div class="topic-line">
-                <div class="topic-dot ${dotClass[t.type] || 'dot-default'}"></div>
-                <span>${t.text}</span>
-              </div>`).join('')}
-          </div>
+          <div class="card-topics">${topicsHtml}</div>
         </div>
         <div class="card-arrow">›</div>
       `;
@@ -426,14 +541,63 @@ function render() {
   document.getElementById('total-topics').textContent = allTopics;
 }
 
+function typeColor(type) {
+  return { pain: '#d97757', skill: '#7c5cbf', trend: '#2aa06b', extra: '#b89a38' }[type] || '#aaa';
+}
+
+function highlightText(text, q) {
+  if (!q) return text;
+  const re = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi');
+  return text.replace(re, '<mark style="background:#fff3cd;border-radius:3px;padding:0 2px;">$1</mark>');
+}
+
+// ══════════════════════════════════════════
+//  篩選函數
+// ══════════════════════════════════════════
 function filterDate(type, btn) {
-  currentFilter = type;
+  currentDateFilter = type;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   render();
 }
+
+// 主題標籤點擊
+function tagFilter(val, btn) {
+  const mode = btn.dataset.mode; // 'type' or 'kw'
+
+  // 再次點同一個 → 取消
+  if (activeTagBtn === btn) {
+    activeTagBtn.classList.remove('active');
+    activeTagBtn = null;
+    currentTypeFilter = '';
+    currentSearch = '';
+    document.getElementById('searchInput').value = '';
+    render();
+    return;
+  }
+
+  // 清除舊的 active
+  if (activeTagBtn) activeTagBtn.classList.remove('active');
+  btn.classList.add('active');
+  activeTagBtn = btn;
+
+  if (mode === 'type') {
+    currentTypeFilter = val;
+    currentSearch = '';
+    document.getElementById('searchInput').value = '';
+  } else {
+    currentTypeFilter = '';
+    currentSearch = val;
+    document.getElementById('searchInput').value = val;
+  }
+  render();
+}
+
+// 搜尋框輸入時清除 tag active
 document.getElementById('searchInput').addEventListener('input', e => {
   currentSearch = e.target.value.trim();
+  currentTypeFilter = '';
+  if (activeTagBtn) { activeTagBtn.classList.remove('active'); activeTagBtn = null; }
   render();
 });
 

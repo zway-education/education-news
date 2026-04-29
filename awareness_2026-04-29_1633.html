@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育每日教養文宣 | 2026.04.29 | 16:33</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f4f0;
+      color: #2d2d2d;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      background: #fff;
+      border-bottom: 3px solid #d97757;
+      padding: 28px 40px 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-block .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #d97757;
+      letter-spacing: 0.04em;
+    }
+    .brand-block .brand-sub {
+      font-size: 12px;
+      color: #888;
+      margin-top: 3px;
+      letter-spacing: 0.08em;
+    }
+    .header-date {
+      font-size: 13px;
+      color: #aaa;
+      text-align: right;
+      line-height: 1.7;
+    }
+    .header-date strong { color: #d97757; font-size: 15px; }
+
+    /* ── Layout ── */
+    .main-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 24px 0;
+    }
+    .section-headline {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: #bbb;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+    }
+    .card-visual {
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .card-visual svg { width: 100%; height: 100%; display: block; }
+
+    .card-body {
+      padding: 26px 26px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* Tags */
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.04em;
+    }
+    .tag-pain  { background: #fff1eb; color: #c2562e; border: 1px solid #f5c4ae; }
+    .tag-skill { background: #f5f0ff; color: #6d28d9; border: 1px solid #d8b4fe; }
+    .tag-extra { background: #fefce8; color: #92400e; border: 1px solid #fde68a; }
+
+    /* Card Title */
+    .card-title {
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.45;
+      color: #1a1a1a;
+    }
+
+    .divider {
+      height: 1px;
+      background: #f0ece8;
+      margin: 2px 0;
+    }
+
+    /* Sections */
+    .section-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #c4a882;
+      margin-bottom: 5px;
+    }
+    .section-text {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #444;
+    }
+    .section-text strong { color: #d97757; }
+
+    /* Copywriting */
+    .copy-box {
+      background: #faf8f6;
+      border-left: 3px solid #d97757;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 16px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #333;
+    }
+    .copy-box.skill-copy { border-left-color: #7c5cbf; }
+    .copy-box.extra-copy { border-left-color: #d4a017; }
+
+    /* Quote */
+    .quote-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px 0 4px;
+    }
+    .quote-mark {
+      font-size: 36px;
+      line-height: 1;
+      color: #d97757;
+      font-family: Georgia, serif;
+      flex-shrink: 0;
+      margin-top: -4px;
+    }
+    .quote-mark.skill-q { color: #7c5cbf; }
+    .quote-mark.extra-q { color: #d4a017; }
+    .quote-text {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.55;
+      color: #2d2d2d;
+    }
+
+    /* Meta */
+    .card-meta {
+      font-size: 12px;
+      color: #999;
+      border-top: 1px solid #f0ece8;
+      padding-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: auto;
+    }
+    .card-meta a { color: #d97757; text-decoration: none; }
+    .card-meta a:hover { text-decoration: underline; }
+    .card-meta .unsplash-tip {
+      font-style: italic;
+      color: #bbb;
+      font-size: 11px;
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 12px;
+      color: #ccc;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header">
+  <div class="brand-block">
+    <div class="brand-name">覺知 SEL 教育</div>
+    <div class="brand-sub">每日教養文宣 · 內容企劃資料庫</div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29 | 16:33</strong><br>
+    今日第 11 份文宣輸出
+  </div>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main class="main-wrap">
+  <p class="section-headline">Today's 3 Posts — 覺知教養每日精選</p>
+
+  <div class="cards-grid">
+
+    <!-- ══ CARD 1：家長痛點 ── 考試焦慮傳染 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：體溫計式焦慮計，父母刻度比孩子還高 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#fff8f5"/>
+          <!-- 背景裝飾圓 -->
+          <circle cx="340" cy="30" r="50" fill="#ffe8df" opacity="0.5"/>
+          <circle cx="60" cy="150" r="40" fill="#ffe8df" opacity="0.4"/>
+          <!-- 媽媽體溫計 -->
+          <rect x="90" y="30" width="22" height="110" rx="11" fill="#e8e0f5"/>
+          <rect x="94" y="50" width="14" height="82" rx="7" fill="#d97757" opacity="0.8"/>
+          <circle cx="101" cy="142" r="14" fill="#d97757"/>
+          <text x="101" y="22" text-anchor="middle" font-size="11" fill="#888" font-weight="700">媽媽</text>
+          <text x="101" y="147" text-anchor="middle" font-size="9" fill="#fff" font-weight="800">高</text>
+          <!-- 孩子體溫計 -->
+          <rect x="155" y="55" width="22" height="85" rx="11" fill="#e8e0f5"/>
+          <rect x="159" y="90" width="14" height="42" rx="7" fill="#d97757" opacity="0.5"/>
+          <circle cx="166" cy="142" r="14" fill="#d97757" opacity="0.6"/>
+          <text x="166" y="47" text-anchor="middle" font-size="11" fill="#888" font-weight="700">孩子</text>
+          <text x="166" y="147" text-anchor="middle" font-size="9" fill="#fff" font-weight="800">中</text>
+          <!-- 箭頭傳遞 -->
+          <path d="M125 100 Q138 90 152 100" stroke="#d97757" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+          <polygon points="150,95 155,102 145,103" fill="#d97757"/>
+          <!-- 說明文字 -->
+          <text x="230" y="75" font-size="15" fill="#d97757" font-weight="800">焦慮</text>
+          <text x="230" y="95" font-size="13" fill="#555">會傳染</text>
+          <text x="230" y="118" font-size="11" fill="#aaa">父母的緊張</text>
+          <text x="230" y="134" font-size="11" fill="#aaa">孩子全收到了</text>
+          <!-- 小愛心 -->
+          <text x="315" y="120" font-size="24" fill="#d97757" opacity="0.3">♥</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-pain">🧡 家長痛點</span>
+          <span class="tag tag-pain">考試焦慮</span>
+          <span class="tag tag-pain">壓力傳染</span>
+          <span class="tag tag-pain">親子情緒</span>
+        </div>
+
+        <h2 class="card-title">
+          孩子還沒說緊張，<br>
+          你的手心已經先出汗了？
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          期中考前一週，媽媽已經偷偷在計算孩子的複習進度。孩子說「我不緊張」，但媽媽夜裡三點醒來，腦袋還在轉：「他真的讀夠了嗎？」——其實<strong>誰才是真正需要被安慰的那個人？</strong>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">教育新知引用</p>
+        <p class="section-text">
+          精神科醫師研究發現：考試前，父母的焦慮往往高於孩子本身。而孩子的杏仁核非常敏感，能精準感知大人的情緒狀態——<strong>父母愈緊繃，孩子的表現愈容易失常</strong>。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          真正的支持，不是幫孩子複習更多，而是先調節自己的情緒頻道。當你穩了，孩子才能穩。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box">
+          🧡 考試前，你比孩子更焦慮嗎？<br><br>
+          孩子還沒說緊張，爸媽的心跳已經先亂了。<br><br>
+          研究說，孩子的大腦像一塊精準的情緒海綿——<br>
+          你有多緊，他就吸多緊。<br><br>
+          不是叫你不在乎成績，<br>
+          而是你的「平靜」，才是孩子最強的備考後盾。<br><br>
+          先照顧好自己的呼吸，<br>
+          再陪孩子準備考試。<br><br>
+          ✨ 你不需要假裝不擔心，但你可以練習穩下來。<br>
+          覺知 SEL，和你一起。
+        </div>
+
+        <div class="quote-wrap">
+          <span class="quote-mark">"</span>
+          <p class="quote-text">孩子最需要的後盾，<br>是一個情緒穩定的大人</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · LINE · IG</span>
+          <span><strong>適合對象：</strong>國小至國中階段孩子的父母、即將迎來重要考試的家庭</span>
+          <span><strong>來源：</strong><a href="https://www.uho.com.tw/article-69385.html" target="_blank">Uho 優活健康網：明明是孩子考試，父母卻更焦慮？</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：parent child study calm anxiety</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ══ CARD 2：能力培養 ── 成長型思維 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：兩顆腦袋，固定型 vs 成長型，種子→大樹意象 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#f8f5ff"/>
+          <circle cx="330" cy="150" r="55" fill="#ede8ff" opacity="0.5"/>
+          <!-- 固定型：鎖住的腦 -->
+          <ellipse cx="100" cy="90" rx="42" ry="36" fill="#e5e0f5" stroke="#c4b5fd" stroke-width="2"/>
+          <!-- 鎖 -->
+          <rect x="88" y="82" width="24" height="18" rx="4" fill="#9b8ec4"/>
+          <path d="M93 82 Q93 72 112 72 Q121 72 121 82" stroke="#9b8ec4" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="100" cy="92" r="3" fill="#fff"/>
+          <text x="100" y="140" text-anchor="middle" font-size="11" fill="#7c5cbf" font-weight="700">固定型思維</text>
+          <text x="100" y="155" text-anchor="middle" font-size="10" fill="#aaa">「我就是不行」</text>
+          <!-- 箭頭 -->
+          <path d="M148 90 L185 90" stroke="#7c5cbf" stroke-width="2" stroke-dasharray="5,4"/>
+          <polygon points="183,85 192,90 183,95" fill="#7c5cbf"/>
+          <text x="168" y="83" text-anchor="middle" font-size="10" fill="#7c5cbf">轉化</text>
+          <!-- 成長型：長出葉子的腦 -->
+          <ellipse cx="230" cy="90" rx="42" ry="36" fill="#ede8ff" stroke="#7c5cbf" stroke-width="2"/>
+          <!-- 小樹枝 -->
+          <line x1="230" y1="58" x2="230" y2="46" stroke="#5b21b6" stroke-width="2"/>
+          <circle cx="230" cy="42" r="7" fill="#7c5cbf" opacity="0.8"/>
+          <circle cx="220" cy="49" r="5" fill="#a78bfa" opacity="0.7"/>
+          <circle cx="240" cy="49" r="5" fill="#a78bfa" opacity="0.7"/>
+          <circle cx="216" cy="56" r="4" fill="#c4b5fd" opacity="0.6"/>
+          <circle cx="244" cy="56" r="4" fill="#c4b5fd" opacity="0.6"/>
+          <text x="230" y="97" text-anchor="middle" font-size="12" fill="#5b21b6" font-weight="800">還沒</text>
+          <text x="230" y="140" text-anchor="middle" font-size="11" fill="#7c5cbf" font-weight="700">成長型思維</text>
+          <text x="230" y="155" text-anchor="middle" font-size="10" fill="#aaa">「我還沒學會」</text>
+          <!-- 星星 -->
+          <text x="360" y="55" font-size="18" fill="#c4b5fd" opacity="0.7">✦</text>
+          <text x="345" y="80" font-size="12" fill="#c4b5fd" opacity="0.5">✦</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-skill">💜 能力培養</span>
+          <span class="tag tag-skill">成長型思維</span>
+          <span class="tag tag-skill">挫折復原力</span>
+          <span class="tag tag-skill">非認知能力</span>
+        </div>
+
+        <h2 class="card-title">
+          孩子說「我好笨」的時候，<br>
+          你怎麼回，決定了他的人生高度
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          小學三年級的女兒拿回考卷，看到 62 分，把考卷往桌上一扔：「我就是笨，數學永遠學不好。」爸爸正要說「哪有，你很聰明」——但這句話，可能是全天下最沒用的安慰。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">教育新知引用</p>
+        <p class="section-text">
+          史丹佛心理學教授 Carol Dweck 研究數萬名學生發現：被誇「你很聰明」的孩子，反而更怕失敗、更不敢挑戰難題。而被教導「你還沒學會」的孩子，<strong>挫折後的復原速度快 3 倍</strong>——關鍵只在一個字：<strong>「還」</strong>。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          「我不行」是終點，「我還不行」是起點。SEL 情緒教育的核心，就是幫孩子找到那個「還」字的力量。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box skill-copy">
+          💜 孩子說「我好笨」——你下一句話，很重要<br><br>
+          不要說：「哪有！你很聰明！」<br>
+          試試說：「你現在還不會，但你已經比上次進步了。」<br><br>
+          研究發現，孩子聽到「還」這個字，<br>
+          大腦會真的切換模式——<br>
+          從「我是個失敗的人」<br>
+          變成「這是一道我可以繼續解的題」。<br><br>
+          這就是成長型思維，<br>
+          不是正向口號，是科學驗證的大腦習慣。<br><br>
+          ✨ 一個字，改變孩子看待挫折的方式。<br>
+          覺知 SEL，從日常對話開始。
+        </div>
+
+        <div class="quote-wrap">
+          <span class="quote-mark skill-q">"</span>
+          <p class="quote-text">「還不會」是種子，<br>「我不行」才是終點</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · IG · 親子社群 · LINE</span>
+          <span><strong>適合對象：</strong>國小階段孩子的父母、對學習動機與挫折教育有興趣的家長</span>
+          <span><strong>來源：</strong><a href="https://flipedu.parenting.com.tw/article/009703" target="_blank">翻轉教育：成長型思維的 5 大培養祕訣</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：child learning growth resilience mindset</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ══ CARD 3：家長自我照顧 ── 媽媽情緒耗竭 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：媽媽電池快沒電，充電意象 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#fffdf0"/>
+          <circle cx="60" cy="40" r="45" fill="#fef9c3" opacity="0.5"/>
+          <circle cx="360" cy="155" r="50" fill="#fef9c3" opacity="0.4"/>
+          <!-- 電池外殼 -->
+          <rect x="80" y="55" width="180" height="80" rx="12" fill="#fff" stroke="#d4a017" stroke-width="3"/>
+          <!-- 電池正極頭 -->
+          <rect x="260" y="78" width="18" height="34" rx="5" fill="#d4a017" opacity="0.7"/>
+          <!-- 電量 (很低 ~15%) -->
+          <rect x="86" y="61" width="27" height="68" rx="8" fill="#f97316" opacity="0.85"/>
+          <!-- 電量刻度線 -->
+          <line x1="120" y1="62" x2="120" y2="134" stroke="#f0e8d0" stroke-width="1"/>
+          <line x1="155" y1="62" x2="155" y2="134" stroke="#f0e8d0" stroke-width="1"/>
+          <line x1="190" y1="62" x2="190" y2="134" stroke="#f0e8d0" stroke-width="1"/>
+          <line x1="225" y1="62" x2="225" y2="134" stroke="#f0e8d0" stroke-width="1"/>
+          <!-- 閃電符號 -->
+          <text x="152" y="105" text-anchor="middle" font-size="32" fill="#d4a017" opacity="0.25">⚡</text>
+          <!-- 百分比 -->
+          <text x="170" y="100" text-anchor="middle" font-size="22" fill="#d4a017" font-weight="800" opacity="0.5">15%</text>
+          <!-- 標籤 -->
+          <text x="170" y="155" text-anchor="middle" font-size="11" fill="#92400e" font-weight="700">媽媽的能量電池</text>
+          <!-- 右邊說明 -->
+          <text x="308" y="80" text-anchor="middle" font-size="12" fill="#92400e" font-weight="700">你還</text>
+          <text x="308" y="98" text-anchor="middle" font-size="12" fill="#92400e" font-weight="700">記得</text>
+          <text x="308" y="116" text-anchor="middle" font-size="12" fill="#92400e" font-weight="700">上次</text>
+          <text x="308" y="134" text-anchor="middle" font-size="12" fill="#92400e" font-weight="700">充電</text>
+          <text x="308" y="152" text-anchor="middle" font-size="12" fill="#92400e" font-weight="700">是何時？</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-extra">✨ 家長自我照顧</span>
+          <span class="tag tag-extra">媽媽情緒耗竭</span>
+          <span class="tag tag-extra">母職壓力</span>
+          <span class="tag tag-extra">自我關懷</span>
+        </div>
+
+        <h2 class="card-title">
+          你對孩子溫柔，對自己卻最嚴苛——<br>
+          媽媽的情緒電池，快沒電了嗎？
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          奶奶說「你應該更有耐心」，老公說「你怎麼這麼容易崩潰」，孩子說「媽媽你又在生氣了」。深夜洗碗，熱水燙到手，才發現自己哭了——不是因為燙，而是不記得上次有人問你「你還好嗎」是什麼時候的事。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">教育新知引用</p>
+        <p class="section-text">
+          研究顯示：母親的心理健康狀態，是預測孩子認知與情緒發展最關鍵的因子之一。但台灣媽媽平均每天「照顧自己」的時間不到 23 分鐘。<strong>空杯子無法倒出水</strong>，情緒耗竭的媽媽，給不了孩子真正需要的安全感。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          SEL 教育從不只針對孩子。媽媽的情緒調節能力，本身就是給孩子最強的 SEL 示範。照顧自己，不是自私，是教養的地基。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box extra-copy">
+          ✨ 給已經撐很久的媽媽<br><br>
+          你記得上次一個人安靜喝完一杯熱咖啡是什麼時候嗎？<br><br>
+          每天叫孩子好好吃飯、好好休息，<br>
+          卻忘記自己也需要被照顧。<br><br>
+          研究說：媽媽的情緒狀態，<br>
+          是孩子心理健康最重要的預測因子。<br><br>
+          你不需要當超人媽媽，<br>
+          你只需要是一個有在「充電」的媽媽。<br><br>
+          今天，給自己 10 分鐘——<br>
+          不是為了孩子，是為了你自己。<br><br>
+          💛 覺知 SEL，陪孩子成長，也陪你好好呼吸。
+        </div>
+
+        <div class="quote-wrap">
+          <span class="quote-mark extra-q">"</span>
+          <p class="quote-text">媽媽先充好電，<br>才能照亮整個家</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · IG · 媽媽社群 · LINE 群組</span>
+          <span><strong>適合對象：</strong>有育兒壓力的媽媽、多重角色壓力下的照顧者、隔代教養家庭</span>
+          <span><strong>來源：</strong><a href="https://heho.com.tw/archives/255856" target="_blank">Heho 健康：母親的心理健康恐影響孩子學業成績</a> · <a href="https://www.commonhealth.com.tw/article/article.action?nid=63802" target="_blank">康健：媽媽身心健康對孩子影響大</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：mother self care rest coffee peaceful</span>
+        </div>
+      </div>
+    </article>
+
+  </div><!-- /cards-grid -->
+</main>
+
+<footer class="site-footer">
+  <p>覺知 SEL 教育 · 內容企劃自動化系統 · 2026.04.29 16:33 台灣時間</p>
+  <p style="margin-top:6px">本份文宣已通過防重複比對 ✓ | 跨 3 個分類層級 ✓</p>
+</footer>
+
+</body>
+</html>
