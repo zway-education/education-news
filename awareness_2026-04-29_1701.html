@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育每日教養文宣 | 2026.04.29 | 17:01</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f4f0;
+      color: #2d2d2d;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 3px solid #d97757;
+      padding: 28px 40px 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-block .brand-name {
+      font-size: 22px; font-weight: 800; color: #d97757; letter-spacing: 0.04em;
+    }
+    .brand-block .brand-sub {
+      font-size: 12px; color: #888; margin-top: 3px; letter-spacing: 0.08em;
+    }
+    .header-date {
+      font-size: 13px; color: #aaa; text-align: right; line-height: 1.7;
+    }
+    .header-date strong { color: #d97757; font-size: 15px; }
+
+    .main-wrap { max-width: 980px; margin: 0 auto; padding: 36px 24px 0; }
+    .section-headline {
+      font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
+      color: #bbb; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #fff; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      display: flex; flex-direction: column;
+    }
+    .card-visual { width: 100%; height: 180px; }
+    .card-body { padding: 24px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: 11px; padding: 4px 10px; border-radius: 12px;
+      font-weight: 600; letter-spacing: 0.04em;
+    }
+    .tag-extra { background: #f8f5ea; color: #7a6420; border: 1px solid #e0d49a; }
+    .tag-trend { background: #edfaf4; color: #1e7d52; border: 1px solid #b8e8d0; }
+
+    .card-title {
+      font-size: 19px; font-weight: 800; line-height: 1.45;
+      color: #1e1e1e; margin-bottom: 14px; letter-spacing: 0.01em;
+    }
+    .divider { height: 1px; background: #f0ece6; margin: 12px 0; }
+    .section-label {
+      font-size: 11px; color: #aaa; letter-spacing: 0.12em;
+      text-transform: uppercase; font-weight: 700; margin-bottom: 6px;
+    }
+    .section-text {
+      font-size: 14px; line-height: 1.75; color: #444; margin-bottom: 4px;
+    }
+    .extra-strong strong { color: #b89a38; }
+    .trend-strong strong { color: #2aa06b; }
+
+    .copy-box {
+      padding: 14px 16px; font-size: 13.5px; line-height: 1.85;
+      border-radius: 0 8px 8px 0; margin-top: 4px;
+    }
+    .extra-copy {
+      background: #fdfaee; border-left: 4px solid #b89a38; color: #4f4322;
+    }
+    .trend-copy {
+      background: #f3fbf6; border-left: 4px solid #2aa06b; color: #1e3e2c;
+    }
+
+    .quote-wrap {
+      margin: 18px 0 14px; padding: 16px 18px;
+      border-radius: 12px; position: relative;
+    }
+    .extra-quote { background: linear-gradient(135deg, #fdf9e8 0%, #f5edc4 100%); }
+    .trend-quote { background: linear-gradient(135deg, #effaf3 0%, #ddf2e7 100%); }
+    .quote-mark {
+      position: absolute; top: 4px; left: 12px; font-size: 36px;
+      opacity: 0.35; font-family: Georgia, serif; line-height: 1;
+    }
+    .extra-q { color: #b89a38; }
+    .trend-q { color: #2aa06b; }
+    .quote-text {
+      font-size: 14px; font-weight: 700; color: #555;
+      text-align: center; line-height: 1.6; padding: 0 8px;
+    }
+
+    .card-meta {
+      margin-top: auto; padding-top: 14px; border-top: 1px dashed #e8e0d8;
+      display: flex; flex-direction: column; gap: 6px;
+      font-size: 12px; color: #888; line-height: 1.6;
+    }
+    .card-meta strong { color: #555; }
+    .card-meta a { color: #d97757; text-decoration: none; }
+    .card-meta a:hover { text-decoration: underline; }
+    .unsplash-tip { font-size: 12px; color: #ccc; letter-spacing: 0.06em; }
+
+    /* 書本卡片區塊 */
+    .book-list {
+      background: #fefbef;
+      border: 1px dashed #e0d49a;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 6px 0;
+    }
+    .book-item {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #5a4a25;
+      padding: 4px 0;
+      border-bottom: 1px dotted #e8d8a8;
+    }
+    .book-item:last-child { border-bottom: none; }
+    .book-item strong { color: #7a6420; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-block">
+    <div class="brand-name">覺知 SEL 教育</div>
+    <div class="brand-sub">每日教養文宣 · 內容企劃資料庫</div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29 | 17:01</strong><br>
+    今日第 13 份文宣輸出
+  </div>
+</header>
+
+<main class="main-wrap">
+  <p class="section-headline">Today's 3 Posts — 教養新書 × 科技大老 教養觀點特輯</p>
+
+  <div class="cards-grid">
+
+    <!-- ══ CARD 1：加值類 ── 教養新書推薦 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：三本書疊起來，書頁飛出星光 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#fdfaee"/>
+          <circle cx="350" cy="40" r="40" fill="#f5edc4" opacity="0.5"/>
+          <circle cx="60" cy="155" r="35" fill="#f5edc4" opacity="0.4"/>
+
+          <!-- 書本 1（最下層） -->
+          <rect x="120" y="125" width="180" height="22" rx="3" fill="#b89a38"/>
+          <rect x="125" y="128" width="170" height="16" fill="#fdfaee"/>
+          <text x="210" y="140" text-anchor="middle" font-size="10" fill="#7a6420" font-weight="700">SEL 全方位實踐指南</text>
+
+          <!-- 書本 2（中層） -->
+          <rect x="115" y="100" width="190" height="22" rx="3" fill="#d4a017"/>
+          <rect x="120" y="103" width="180" height="16" fill="#fdfaee"/>
+          <text x="210" y="115" text-anchor="middle" font-size="10" fill="#7a6420" font-weight="700">蛤蟆先生去看心理師</text>
+
+          <!-- 書本 3（最上層，立著） -->
+          <rect x="155" y="40" width="60" height="58" rx="3" fill="#e0c674"/>
+          <rect x="158" y="43" width="54" height="52" fill="#fef9c3"/>
+          <text x="185" y="62" text-anchor="middle" font-size="9" fill="#7a6420" font-weight="800">親密</text>
+          <text x="185" y="74" text-anchor="middle" font-size="9" fill="#7a6420" font-weight="800">恐懼</text>
+          <line x1="170" y1="82" x2="200" y2="82" stroke="#b89a38" stroke-width="1"/>
+          <line x1="170" y1="88" x2="200" y2="88" stroke="#b89a38" stroke-width="1"/>
+
+          <!-- 飛出的星星 -->
+          <text x="240" y="55" font-size="16" fill="#d4a017" opacity="0.7">✦</text>
+          <text x="265" y="80" font-size="12" fill="#d4a017" opacity="0.6">✦</text>
+          <text x="100" y="60" font-size="14" fill="#d4a017" opacity="0.6">✦</text>
+          <text x="80" y="90" font-size="10" fill="#d4a017" opacity="0.5">✦</text>
+
+          <!-- 上方標題 -->
+          <text x="200" y="25" text-anchor="middle" font-size="13" fill="#7a6420" font-weight="800">2026 教養必讀新書</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-extra">✨ 加值類別</span>
+          <span class="tag tag-extra">教養新書</span>
+          <span class="tag tag-extra">SEL</span>
+          <span class="tag tag-extra">心理勵志</span>
+        </div>
+
+        <h2 class="card-title">
+          書架上多一本好書，<br>
+          家裡少一場情緒風暴
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          孩子昨晚又因為作業哭了，你站在門外不敢進去，怕一開口又把場面搞糟。你滑著手機，隨手點了一篇親子文章——但讀完還是不知道下一句該怎麼說。<strong>有些時候，我們不是缺道理，是缺一個能慢慢陪我們想的人。</strong>而一本好書，剛好就是那個人。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label extra-strong">2026 教養 × 心理三本必讀新書</p>
+        <div class="book-list">
+          <div class="book-item">
+            📘 <strong>《SEL 全方位實踐指南》</strong>——用大腦科學重新理解被問題包圍的孩子，培養五大核心能力：自我覺察、自我管理、社會覺察、人際技巧、負責任的決定。
+          </div>
+          <div class="book-item">
+            📕 <strong>《蛤蟆先生去看心理師》</strong>——博客來年度暢銷霸榜冠軍，溫馨故事帶你理解情緒與心理健康，適合大人讀完再用故事陪孩子聊。
+          </div>
+          <div class="book-item">
+            📗 <strong>《親密恐懼：為什麼我們無法好好愛人，好好被愛？》</strong>——金石堂 2025 心理勵志暢銷書，幫家長看見自己童年帶到大的傷口，是教養的隱形地雷。
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          教養的瓶頸，常常不在「孩子需要更多技巧」，而是「父母需要先被理解」。讀一本書，是給自己一段不被打擾的時間，去整理自己——這件事，比任何教養課程都重要。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box extra-copy">
+          ✨ 給已經很努力的爸媽：這個春天，給自己一本書<br><br>
+          📘《SEL 全方位實踐指南》<br>
+          → 用大腦科學讀懂孩子的情緒風暴<br><br>
+          📕《蛤蟆先生去看心理師》<br>
+          → 連續霸榜的暖心心理書，讀完換你陪孩子<br><br>
+          📗《親密恐懼》<br>
+          → 看見自己的傷口，才不會把它複製到孩子身上<br><br>
+          有些教養問題，<br>
+          答案不在 Google，<br>
+          在你願意慢慢翻完的那一本書裡。<br><br>
+          書架上多一本好書，<br>
+          家裡可能就少一場情緒風暴。<br><br>
+          ✨ 留 30 分鐘給自己，是給孩子最好的禮物。<br>
+          覺知 SEL，從你先穩下來開始。
+        </div>
+
+        <div class="quote-wrap extra-quote">
+          <span class="quote-mark extra-q">"</span>
+          <p class="quote-text">教養的卡關處，<br>常是父母自己還沒被理解的地方</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · IG · LINE · 親子社群</span>
+          <span><strong>適合對象：</strong>所有有孩子的父母、書友圈、想送禮給朋友的家長</span>
+          <span><strong>來源：</strong><a href="https://readingoutpost.com/books-top-rank/" target="_blank">閱讀前哨站：2026 博客來年度暢銷書榜</a> · <a href="https://www.kingstone.com.tw/theme/1327/" target="_blank">金石堂：2025 心理勵志春季暢銷榜</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：parent reading book quiet morning self care</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ══ CARD 2：科學趨勢 ── 黃仁勳：AI 家教 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：黃仁勳剪影 + AI 家教概念 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#f3fbf6"/>
+          <circle cx="60" cy="40" r="35" fill="#ddf2e7" opacity="0.5"/>
+          <circle cx="350" cy="155" r="42" fill="#ddf2e7" opacity="0.4"/>
+
+          <!-- 中央：孩子 + AI 家教對話框 -->
+          <!-- 孩子頭像 -->
+          <circle cx="100" cy="95" r="22" fill="#fff" stroke="#2aa06b" stroke-width="2.5"/>
+          <circle cx="93" cy="92" r="2" fill="#1e7d52"/>
+          <circle cx="107" cy="92" r="2" fill="#1e7d52"/>
+          <path d="M93 102 Q100 107 107 102" stroke="#1e7d52" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <text x="100" y="135" text-anchor="middle" font-size="10" fill="#888" font-weight="700">孩子</text>
+
+          <!-- AI 對話框 -->
+          <rect x="160" y="65" width="170" height="60" rx="14" fill="#fff" stroke="#2aa06b" stroke-width="2"/>
+          <polygon points="158,90 145,98 158,102" fill="#fff" stroke="#2aa06b" stroke-width="2"/>
+          <text x="245" y="85" text-anchor="middle" font-size="11" fill="#1e7d52" font-weight="800">「每個人都該」</text>
+          <text x="245" y="103" text-anchor="middle" font-size="13" fill="#2aa06b" font-weight="800">「有一個 AI 家教」</text>
+          <text x="245" y="118" text-anchor="middle" font-size="9" fill="#888">— 黃仁勳</text>
+
+          <!-- 機器人圖示 -->
+          <rect x="345" y="78" width="32" height="35" rx="4" fill="#2aa06b"/>
+          <circle cx="354" cy="92" r="3" fill="#fff"/>
+          <circle cx="368" cy="92" r="3" fill="#fff"/>
+          <line x1="354" y1="103" x2="368" y2="103" stroke="#fff" stroke-width="1.5"/>
+          <line x1="361" y1="74" x2="361" y2="78" stroke="#2aa06b" stroke-width="2"/>
+          <circle cx="361" cy="72" r="2" fill="#2aa06b"/>
+
+          <!-- 上方標題 -->
+          <text x="200" y="28" text-anchor="middle" font-size="13" fill="#1e7d52" font-weight="800">NVIDIA CEO 給家長的話</text>
+
+          <!-- 裝飾 -->
+          <text x="370" y="50" font-size="14" fill="#a3d9ba" opacity="0.7">✦</text>
+          <text x="20" y="100" font-size="14" fill="#a3d9ba" opacity="0.6">✦</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-trend">🌿 科學趨勢</span>
+          <span class="tag tag-trend">黃仁勳</span>
+          <span class="tag tag-trend">AI 家教</span>
+          <span class="tag tag-trend">未來學習</span>
+        </div>
+
+        <h2 class="card-title">
+          黃仁勳對家長說：<br>
+          別禁止 AI——是時候給孩子一個「AI 家教」了
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          老師 LINE 群組剛剛跳出訊息：「請各位家長注意，本班已有同學使用 ChatGPT 寫作業。」你心裡咯噔一下——那天晚上，你問孩子：「你有沒有用 AI 寫作業？」孩子低頭沒說話。<strong>你以為這是品德問題，但這個世界最有錢的科技人，給了完全不同的答案。</strong>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label trend-strong">教育新知引用</p>
+        <p class="section-text trend-strong">
+          NVIDIA 執行長黃仁勳公開呼籲：<strong>「每個人都該立刻有個 AI 家教。」</strong>他更進一步說：「學電腦的時代已經過去了，生命科學才是未來，因為 AI 讓每個人都成為程式設計師。」這句話震驚教育界——重點不再是「會不會用」，而是「會不會問問題」。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          會不會用 AI，背後其實是一種能力：知道自己不知道什麼、能清楚表達需求、能判斷答案對不對。這三件事，正是 SEL 的「自我覺察」與「批判思考」——AI 只是放大鏡，把孩子的內在功夫放大給你看。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box trend-copy">
+          🌿 全球最有錢的科技人，剛剛打臉「禁 AI 派」家長<br><br>
+          NVIDIA 執行長黃仁勳說：<br>
+          ▸ 「每個人都該立刻有個 AI 家教。」<br>
+          ▸ 「學電腦的時代已過，生命科學才是未來。」<br>
+          ▸ 「AI 已經讓每個人都成為程式設計師。」<br><br>
+          所以重點不是孩子有沒有用 AI，<br>
+          是他<strong>會不會用得聰明</strong>。<br><br>
+          會用 AI 的孩子，懂這三件事：<br>
+          ① 我知道自己不知道什麼（自我覺察）<br>
+          ② 我能清楚提問（語言表達）<br>
+          ③ 我能判斷答案對不對（批判思考）<br><br>
+          這三件事，全部是 SEL 的核心。<br>
+          所以禁不是答案，陪孩子練——才是。<br><br>
+          ✨ 黃仁勳的母親每天教他 10 個英文單字。<br>
+          今天，你可以陪孩子問 AI 一個好問題。<br>
+          覺知 SEL，從一個問題開始。
+        </div>
+
+        <div class="quote-wrap trend-quote">
+          <span class="quote-mark trend-q">"</span>
+          <p class="quote-text">會用 AI 的孩子，<br>是會問好問題的孩子</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · LinkedIn · IG · 教育論壇</span>
+          <span><strong>適合對象：</strong>關注未來教育的家長、教育工作者、有國中小孩子的爸媽</span>
+          <span><strong>來源：</strong><a href="https://blog.104.com.tw/jensen-huang-ai-learning/" target="_blank">104 職場力：黃仁勳 — 每個人都該有個 AI 家教</a> · <a href="https://www.bnext.com.tw/article/78420/jensen-huang-computer-past" target="_blank">數位時代：黃仁勳 — 學電腦時代已過</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：child AI tutor laptop curious learning</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ══ CARD 3：科學趨勢 ── Musk Ad Astra：教孩子「解決問題」 ══ -->
+    <article class="card">
+      <div class="card-visual">
+        <!-- SVG：扳手＋火箭，象徵「解決問題」vs「學工具」 -->
+        <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#f3fbf6"/>
+          <circle cx="350" cy="40" r="40" fill="#ddf2e7" opacity="0.5"/>
+          <circle cx="50" cy="155" r="35" fill="#ddf2e7" opacity="0.4"/>
+
+          <!-- 左：學工具（X 標記） -->
+          <rect x="55" y="80" width="80" height="50" rx="6" fill="#fff" stroke="#dc6060" stroke-width="2"/>
+          <text x="95" y="100" text-anchor="middle" font-size="11" fill="#888" font-weight="700">只教</text>
+          <text x="95" y="116" text-anchor="middle" font-size="11" fill="#888" font-weight="700">「工具的用法」</text>
+          <text x="55" y="76" font-size="22" fill="#dc6060" font-weight="800">✕</text>
+
+          <!-- 中間箭頭 -->
+          <text x="170" y="110" text-anchor="middle" font-size="20" fill="#2aa06b" font-weight="800">→</text>
+
+          <!-- 右：解決問題（火箭） -->
+          <rect x="200" y="70" width="160" height="68" rx="6" fill="#fff" stroke="#2aa06b" stroke-width="2.5"/>
+
+          <!-- 火箭 -->
+          <polygon points="240,82 230,108 250,108" fill="#2aa06b"/>
+          <rect x="232" y="108" width="16" height="20" fill="#2aa06b"/>
+          <polygon points="232,128 226,135 232,135" fill="#1e7d52"/>
+          <polygon points="248,128 254,135 248,135" fill="#1e7d52"/>
+          <circle cx="240" cy="100" r="3" fill="#fff"/>
+          <!-- 火焰 -->
+          <polygon points="234,128 240,138 240,128" fill="#f97316" opacity="0.8"/>
+          <polygon points="246,128 240,138 240,128" fill="#fbbf24" opacity="0.8"/>
+
+          <text x="305" y="92" text-anchor="middle" font-size="11" fill="#1e7d52" font-weight="800">教「解決</text>
+          <text x="305" y="108" text-anchor="middle" font-size="11" fill="#1e7d52" font-weight="800">真實問題」</text>
+          <text x="305" y="128" text-anchor="middle" font-size="9" fill="#888">— Ad Astra 模式</text>
+
+          <!-- 上方標題 -->
+          <text x="200" y="28" text-anchor="middle" font-size="13" fill="#1e7d52" font-weight="800">Musk 給孩子的學校長什麼樣？</text>
+
+          <!-- 裝飾 -->
+          <text x="375" y="100" font-size="14" fill="#a3d9ba" opacity="0.7">✦</text>
+          <text x="20" y="60" font-size="14" fill="#a3d9ba" opacity="0.6">✦</text>
+        </svg>
+      </div>
+
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-trend">🌿 科學趨勢</span>
+          <span class="tag tag-trend">Elon Musk</span>
+          <span class="tag tag-trend">Ad Astra</span>
+          <span class="tag tag-trend">問題導向學習</span>
+        </div>
+
+        <h2 class="card-title">
+          馬斯克為自己的孩子辦學校：<br>
+          「不要再教工具了，教他怎麼解決問題」
+        </h2>
+
+        <div class="divider"></div>
+
+        <p class="section-label">家長共鳴開頭</p>
+        <p class="section-text">
+          媽媽看著孩子的數學考卷——分數很漂亮。但晚餐時問他：「今天教的這個東西，可以拿來解什麼真正的問題？」孩子愣住，想了好久說：「考試會考。」<strong>那一刻，媽媽心裡有點涼。原來考好的，不一定學到了。</strong>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label trend-strong">教育新知引用</p>
+        <p class="section-text trend-strong">
+          特斯拉與 SpaceX 創辦人 Elon Musk 為自己的五個兒子辦了實驗學校 Ad Astra。他公開批評現代教育：「<strong>學校只教孩子工具的用法，但沒教怎麼運用工具解決實際的問題。</strong>」Ad Astra 不分年級、不打分數，孩子學的是「為什麼要解這道題」，而不是「公式怎麼背」。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">覺知 SEL 觀點</p>
+        <p class="section-text">
+          孩子會不會解決問題，關鍵不在 IQ，是「敢不敢面對不確定」。這正是 SEL 的核心能力：自我管理（不被挫折擊倒）、做決定（敢選一條沒人走的路）、為選擇負責。學會解問題的孩子，才有資格進到 Musk 描繪的那個未來。
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-label">可直接發布文案</p>
+        <div class="copy-box trend-copy">
+          🌿 馬斯克幫自己的兒子蓋了一所學校，理由很扎心<br><br>
+          他說：<br>
+          「現在的學校，只教孩子工具的用法。<br>
+          　但沒教怎麼運用這些工具，<br>
+          　解決真實世界的問題。」<br><br>
+          所以他辦的 Ad Astra 學校：<br>
+          ▸ 不分年級<br>
+          ▸ 不打分數<br>
+          ▸ 不教死背的東西<br>
+          ▸ 讓孩子自己選想解的問題<br><br>
+          回頭看自己的孩子——<br>
+          數學考 95 分，但他知道為什麼要學嗎？<br>
+          會背公式，但敢面對沒答案的問題嗎？<br><br>
+          解決問題的勇氣，是 SEL 教育的底層：<br>
+          自我管理、做決定、為選擇負責。<br><br>
+          ✨ 比起讓孩子考贏別人，<br>
+          不如教他敢面對「沒有標準答案」的世界。<br>
+          覺知 SEL，從一個沒答案的問題開始。
+        </div>
+
+        <div class="quote-wrap trend-quote">
+          <span class="quote-mark trend-q">"</span>
+          <p class="quote-text">會背公式的孩子很多，<br>敢面對沒答案的孩子很少</p>
+        </div>
+
+        <div class="card-meta">
+          <span><strong>適合平台：</strong>FB · LinkedIn · 教育論壇 · 親子社群</span>
+          <span><strong>適合對象：</strong>關注教育創新的家長、教育工作者、不滿傳統考試制度的爸媽</span>
+          <span><strong>來源：</strong><a href="https://flipedu.parenting.com.tw/article/008860" target="_blank">翻轉教育：狂人馬斯克要辦大學？</a> · <a href="https://www.inside.com.tw/article/13403-ad-astra" target="_blank">INSIDE：馬斯克 Ad Astra 學校全解析</a></span>
+          <span class="unsplash-tip">📷 Unsplash 建議關鍵字：children problem solving rocket innovation school</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+</body>
+</html>

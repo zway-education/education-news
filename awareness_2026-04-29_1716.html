@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育每日教養文宣 | 2026.04.29 | 17:16</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f4f0;
+      color: #2d2d2d;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 3px solid #d97757;
+      padding: 28px 40px 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-block .brand-name {
+      font-size: 22px; font-weight: 800; color: #d97757; letter-spacing: 0.04em;
+    }
+    .brand-block .brand-sub {
+      font-size: 12px; color: #888; margin-top: 3px; letter-spacing: 0.08em;
+    }
+    .header-date {
+      font-size: 13px; color: #aaa; text-align: right; line-height: 1.7;
+    }
+    .header-date strong { color: #d97757; font-size: 15px; }
+
+    .main-wrap { max-width: 980px; margin: 0 auto; padding: 36px 24px 0; }
+    .section-headline {
+      font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
+      color: #bbb; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #fff; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      display: flex; flex-direction: column;
+    }
+    .card-visual { width: 100%; height: 180px; }
+    .card-body { padding: 24px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: 11px; padding: 4px 10px; border-radius: 12px;
+      font-weight: 600; letter-spacing: 0.04em;
+    }
+    .tag-pain { background: #fff3ee; color: #c0512a; border: 1px solid #f5cdb8; }
+    .tag-skill { background: #f3f0ff; color: #6b3ea6; border: 1px solid #d4c9f5; }
+    .tag-trend { background: #edfaf4; color: #1e7d52; border: 1px solid #b8e8d0; }
+
+    .card-title {
+      font-size: 19px; font-weight: 800; line-height: 1.45;
+      color: #1e1e1e; margin-bottom: 14px; letter-spacing: 0.01em;
+    }
+    .divider { height: 1px; background: #f0ece6; margin: 12px 0; }
+    .section-label {
+      font-size: 11px; color: #aaa; letter-spacing: 0.12em;
+      text-transform: uppercase; font-weight: 700; margin-bottom: 6px;
+    }
+    .section-text {
+      font-size: 14px; line-height: 1.75; color: #444; margin-bottom: 4px;
+    }
+    .pain-strong strong { color: #c0512a; }
+    .skill-strong strong { color: #6b3ea6; }
+    .trend-strong strong { color: #2aa06b; }
+
+    .copy-box {
+      padding: 14px 16px; font-size: 13.5px; line-height: 1.85;
+      border-radius: 0 8px 8px 0; margin-top: 4px;
+    }
+    .pain-copy {
+      background: #fff8f3; border-left: 4px solid #d97757; color: #4a2c1e;
+    }
+    .skill-copy {
+      background: #f8f5ff; border-left: 4px solid #7c5cbf; color: #2d1f4a;
+    }
+    .trend-copy {
+      background: #f3fbf6; border-left: 4px solid #2aa06b; color: #1e3e2c;
+    }
+
+    .quote-wrap {
+      margin: 18px 0 14px; padding: 16px 18px;
+      border-radius: 12px; position: relative;
+    }
+    .pain-quote { background: linear-gradient(135deg, #fff3ee 0%, #fde0d0 100%); }
+    .skill-quote { background: linear-gradient(135deg, #f6f1ff 0%, #e6dcfb 100%); }
+    .trend-quote { background: linear-gradient(135deg, #effaf3 0%, #ddf2e7 100%); }
+    .quote-mark {
+      position: absolute; top: 4px; left: 12px; font-size: 36px;
+      opacity: 0.35; font-family: Georgia, serif; line-height: 1;
+    }
+    .quote-text {
+      padding-left: 22px; font-size: 14.5px; line-height: 1.7;
+      color: #2d2d2d; font-weight: 600; font-style: italic;
+    }
+
+    .meta-grid {
+      display: grid; grid-template-columns: 90px 1fr;
+      gap: 6px 14px; font-size: 12px; color: #777; margin-top: 14px;
+    }
+    .meta-grid dt { color: #aaa; }
+    .meta-grid dd { color: #555; }
+    .meta-grid a { color: #d97757; text-decoration: none; }
+    .meta-grid a:hover { text-decoration: underline; }
+
+    .footer-tip {
+      max-width: 980px; margin: 36px auto 0; padding: 0 24px;
+      font-size: 12px; color: #aaa; text-align: center; line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .site-header { padding: 22px 20px; }
+      .main-wrap { padding: 24px 16px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-block">
+    <div class="brand-name">覺知 SEL 教育</div>
+    <div class="brand-sub">AWARENESS · SEL · EDUCATION</div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29</strong><br>
+    台灣時間 17:16　·　每日教養文宣
+  </div>
+</header>
+
+<div class="main-wrap">
+  <div class="section-headline">— 今日精選 3 則文宣（家長痛點 · 能力培養 · 科學趨勢）—</div>
+
+  <div class="cards-grid">
+
+    <!-- ── 卡片 1：家長痛點（霸凌沉默） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff0e6"/>
+            <stop offset="100%" stop-color="#ffd6bf"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g1)"/>
+        <!-- 書包輪廓 -->
+        <rect x="155" y="65" width="90" height="80" rx="14" fill="#d97757" opacity="0.55"/>
+        <rect x="170" y="55" width="60" height="22" rx="6" fill="#d97757" opacity="0.45"/>
+        <rect x="175" y="95" width="50" height="10" rx="3" fill="#fff" opacity="0.7"/>
+        <!-- 孩子小小的輪廓在書包後 -->
+        <circle cx="200" cy="40" r="14" fill="#7d5840" opacity="0.6"/>
+        <!-- 雨點 -->
+        <line x1="80" y1="20" x2="78" y2="40" stroke="#c0512a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="100" y1="30" x2="98" y2="55" stroke="#c0512a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="320" y1="25" x2="318" y2="50" stroke="#c0512a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="340" y1="40" x2="338" y2="60" stroke="#c0512a" stroke-width="1.5" opacity="0.4"/>
+        <!-- 沉默符號 -->
+        <text x="200" y="165" text-anchor="middle" fill="#c0512a" font-size="20" font-weight="800" font-family="serif" opacity="0.65">⋯</text>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-pain">🧡 家長痛點</span>
+          <span class="tag tag-pain">霸凌</span>
+          <span class="tag tag-pain">沉默</span>
+        </div>
+        <h2 class="card-title">他不是「OK」——只是學會了把眼淚收進書包裡</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text pain-strong">
+          開家長會的路上，導師輕輕拉住你：「最近他在班上比較安靜⋯⋯」<br>
+          你回家問他：「在學校還好嗎？」<br>
+          他抬起頭，擠出一個笑：「還好啊。」<br>
+          那一晚，你發現他的書包帶子被人剪了一個小口——
+          <strong>而他什麼都沒說。</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          兒福聯盟 2025 年最新調查顯示：<strong>台灣國中生實際遭遇校園霸凌的比例，是學校通報數字的 6 倍以上</strong>。<br>
+          研究指出：受凌經驗會持續影響到成年期，造成低自尊、長期焦慮，甚至迴避人際——
+          而最大關鍵不在「事件本身」，而在「孩子有沒有被聽見」。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          孩子說「還好」的時候，往往是他<strong>還在判斷你能不能接住</strong>。<br>
+          沉默不是沒事——是還沒準備好說出口。<br>
+          你的耐心，就是他願意開口的那道門縫。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box pain-copy">
+          他放學回家，<br>
+          書包亂亂的，鞋帶鬆著，<br>
+          你問：「今天過得怎樣？」<br>
+          他說：「還好。」<br><br>
+          別讓「還好」成為你的句點。<br>
+          那只是他試探你能不能承接的開場白。<br><br>
+          蹲下來，輕輕說：<br>
+          「不一定要現在說，我等你。」<br><br>
+          被霸凌的孩子，<br>
+          通常不是不敢說——<br>
+          是怕說了之後，<br>
+          那個本來愛他的人，會更受傷。<br><br>
+          #還好不是答案 #聽見沉默 #覺知教養
+        </div>
+
+        <div class="quote-wrap pain-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">最深的傷，常常藏在最輕的「還好」裡——<br>請別讓那兩個字，成為你和他之間最遠的距離。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>適合平台</dt><dd>FB、IG、LINE 社群</dd>
+          <dt>適合對象</dt><dd>國小中高年級～國中孩子的家長、導師</dd>
+          <dt>來源連結</dt><dd><a href="https://www.children.org.tw/publication_research/research_report/2909" target="_blank">兒福聯盟・2024 台灣校園霸凌與創傷知情校園調查</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>school backpack alone, child silhouette rainy</em></dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- ── 卡片 2：能力培養（高敏感與自我覺察） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f4eeff"/>
+            <stop offset="100%" stop-color="#dccdff"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g2)"/>
+        <!-- 蒲公英 -->
+        <line x1="200" y1="170" x2="200" y2="100" stroke="#7c5cbf" stroke-width="2" opacity="0.55"/>
+        <circle cx="200" cy="95" r="22" fill="#7c5cbf" opacity="0.18"/>
+        <!-- 飄散種子 -->
+        <g opacity="0.7" fill="#7c5cbf">
+          <circle cx="200" cy="95" r="2"/>
+          <circle cx="180" cy="80" r="2"/>
+          <circle cx="220" cy="80" r="2"/>
+          <circle cx="170" cy="100" r="2"/>
+          <circle cx="230" cy="100" r="2"/>
+          <circle cx="190" cy="75" r="2"/>
+          <circle cx="210" cy="75" r="2"/>
+          <circle cx="155" cy="65" r="2" opacity="0.5"/>
+          <circle cx="245" cy="55" r="2" opacity="0.5"/>
+          <circle cx="120" cy="50" r="2" opacity="0.4"/>
+          <circle cx="280" cy="40" r="2" opacity="0.4"/>
+          <circle cx="90" cy="35" r="2" opacity="0.3"/>
+          <circle cx="310" cy="65" r="2" opacity="0.3"/>
+        </g>
+        <!-- 連線 -->
+        <g stroke="#7c5cbf" stroke-width="1" opacity="0.35">
+          <line x1="200" y1="95" x2="180" y2="80"/>
+          <line x1="200" y1="95" x2="220" y2="80"/>
+          <line x1="200" y1="95" x2="170" y2="100"/>
+          <line x1="200" y1="95" x2="230" y2="100"/>
+          <line x1="200" y1="95" x2="190" y2="75"/>
+          <line x1="200" y1="95" x2="210" y2="75"/>
+        </g>
+        <text x="200" y="165" text-anchor="middle" fill="#6b3ea6" font-size="11" font-weight="700" letter-spacing="2">HIGH SENSITIVITY</text>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-skill">💜 能力培養</span>
+          <span class="tag tag-skill">高敏感</span>
+          <span class="tag tag-skill">自我覺察</span>
+        </div>
+        <h2 class="card-title">「他什麼都想太多」——不是缺點，是他大腦比別人多了一條「天線」</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text skill-strong">
+          別人玩得很開心，他卻在角落不肯加入。<br>
+          別人吃完都說「好吃」，他卻說「這個味道怪怪的」。<br>
+          你忍不住想：「為什麼別人家小孩都好好的，我家這個就特別難帶？」<br>
+          —— 但你不知道，他其實是<strong>每天比同齡孩子多接收了 3 倍的訊息</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          發展心理學家 Elaine Aron 與近年神經科學研究指出：全球約 <strong>15~20% 的孩子屬於「高敏感族」（HSC）</strong>。
+          他們的大腦對聲音、表情、情緒的處理比一般人深一層——這意味著更容易疲倦、更容易焦慮，<strong>但同時也更有創意、更具同理心、覺察力更強</strong>。<br>
+          研究發現：高敏感不是病，<strong>是一種神經類型</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          高敏感的孩子需要的不是「變得堅強」——<br>
+          是學會「我感受到了，但我可以選擇怎麼回應」。<br>
+          這就是 SEL 第一塊基石：<strong>自我覺察</strong>。<br>
+          當他懂得「啊，我現在很累，因為剛剛那邊太吵」，就已經贏了一半。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box skill-copy">
+          當別人說「這小事而已」，<br>
+          他卻在心裡反覆想了一個禮拜。<br><br>
+          別急著糾正他「想太多」。<br>
+          研究說，<br>
+          全世界 5 個孩子裡，就有 1 個是高敏感。<br><br>
+          他不是脆弱，<br>
+          只是大腦多了一條天線——<br>
+          能接收到別人忽略的細節，<br>
+          也包括你今天皺起來的眉頭。<br><br>
+          試著對他說：<br>
+          「你感受到的，都是真的。<br>
+          我們一起來看看，怎麼讓自己舒服一點。」<br><br>
+          #高敏感不是缺點 #自我覺察 #覺知SEL
+        </div>
+
+        <div class="quote-wrap skill-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">他不是太敏感——<br>是這個世界，還沒學會怎麼溫柔地對待這樣的孩子。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>適合平台</dt><dd>IG、FB、Threads、LINE 群</dd>
+          <dt>適合對象</dt><dd>覺得孩子「特別難帶」的家長、教師</dd>
+          <dt>來源連結</dt><dd><a href="https://www.cw.com.tw/article/5124952" target="_blank">天下雜誌・高敏感腦的 12 個特徵</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>dandelion seeds child quiet, sensitive child window</em></dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- ── 卡片 3：科學趨勢（嬰幼兒螢幕暴露 vs 親子共讀） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e6f7ee"/>
+            <stop offset="100%" stop-color="#c5ecd6"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g3)"/>
+        <!-- 書本 -->
+        <path d="M120 80 L120 140 L200 140 L200 80 Q160 70 120 80 Z" fill="#2aa06b" opacity="0.5"/>
+        <path d="M280 80 L280 140 L200 140 L200 80 Q240 70 280 80 Z" fill="#2aa06b" opacity="0.55"/>
+        <line x1="200" y1="80" x2="200" y2="140" stroke="#1e7d52" stroke-width="2" opacity="0.7"/>
+        <!-- 書頁線 -->
+        <line x1="135" y1="95" x2="185" y2="95" stroke="#fff" stroke-width="1.2" opacity="0.7"/>
+        <line x1="135" y1="105" x2="185" y2="105" stroke="#fff" stroke-width="1.2" opacity="0.7"/>
+        <line x1="135" y1="115" x2="185" y2="115" stroke="#fff" stroke-width="1.2" opacity="0.6"/>
+        <line x1="215" y1="95" x2="265" y2="95" stroke="#fff" stroke-width="1.2" opacity="0.7"/>
+        <line x1="215" y1="105" x2="265" y2="105" stroke="#fff" stroke-width="1.2" opacity="0.7"/>
+        <line x1="215" y1="115" x2="265" y2="115" stroke="#fff" stroke-width="1.2" opacity="0.6"/>
+        <!-- 大人小孩剪影 -->
+        <circle cx="80" cy="55" r="14" fill="#1e7d52" opacity="0.5"/>
+        <circle cx="105" cy="62" r="9" fill="#1e7d52" opacity="0.55"/>
+        <!-- 愛心 -->
+        <path d="M340 50 Q340 40 350 40 Q360 40 360 50 Q360 60 350 68 Q340 60 340 50 Z" fill="#2aa06b" opacity="0.55"/>
+        <text x="200" y="165" text-anchor="middle" fill="#1e7d52" font-size="11" font-weight="700" letter-spacing="2">READING · BRAIN · BUFFER</text>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-trend">🌿 科學趨勢</span>
+          <span class="tag tag-trend">大腦發展</span>
+          <span class="tag tag-trend">親子共讀</span>
+        </div>
+        <h2 class="card-title">嬰兒滑手機改變大腦——但科學家發現一件事，能逆轉這個傷害</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text trend-strong">
+          家裡那個剛 1 歲的孩子，吃飯時總要看 YouTube 才肯張嘴。<br>
+          你心裡知道不對，但累了一整天，<strong>能換 20 分鐘清靜，誰能拒絕？</strong><br>
+          直到你看到一份新研究——你才發現，那 20 分鐘換的，可能是孩子 13 年後的焦慮。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          2025 年 12 月最新發表於《eBioMedicine》的研究（新加坡 A*STAR + 國立大學）：
+          追蹤同一批孩子超過 10 年，發現<strong>2 歲前螢幕時間越長，大腦視覺處理區會「過早特化」</strong>，
+          導致 8 歲反應變慢、13 歲焦慮分數顯著升高。<br>
+          但研究也發現了一個關鍵變項——
+          <strong>3 歲時若父母經常陪讀繪本，這個負向影響會被「明顯削弱」</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          科學給的不是恐嚇，是希望。<br>
+          就算過去用了太多螢幕，<strong>現在開始的每一頁繪本，都在替孩子的大腦補回連線</strong>。<br>
+          每天 10 分鐘，比補習更有效。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box trend-copy">
+          1 歲坐推車滑短影音，<br>
+          3 歲拿平板自己點下一集——<br>
+          以為小孩看不懂沒關係，<br>
+          但 2025 年最新追蹤研究說：<br>
+          那段時間的大腦結構，已經改變了。<br><br>
+          先別自責。<br>
+          科學家也找到一件事——<br>
+          只要父母每天陪讀 10 分鐘繪本，<br>
+          這個影響會被明顯削弱。<br><br>
+          不是別的高科技，<br>
+          就是你的聲音、你的體溫、<br>
+          一頁一頁翻過去。<br><br>
+          孩子要的，從來就不貴。<br><br>
+          #親子共讀 #大腦最佳補丁 #覺知教養
+        </div>
+
+        <div class="quote-wrap trend-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">沒有一支手機，<br>能取代你逐字念書時，那個慢慢靠過來的小肩膀。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>適合平台</dt><dd>FB、IG、媽媽社團、LINE 育兒群</dd>
+          <dt>適合對象</dt><dd>0~6 歲孩子的家長、新手爸媽</dd>
+          <dt>來源連結</dt><dd><a href="https://medicalxpress.com/news/2025-12-screen-links-infant-exposure-brain.html" target="_blank">Medical Xpress・2025 年嬰兒螢幕暴露追蹤研究</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>parent reading book to baby, picture book bedtime</em></dd>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-tip">
+    內容由「覺知 SEL 教育」每日自動產出　·　歡迎自由轉載與改寫，請保留來源連結
+  </div>
+</div>
+
+</body>
+</html>
