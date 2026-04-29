@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育每日教養文宣 | 2026.04.29 | 20:05</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f4f0;
+      color: #2d2d2d;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 3px solid #d97757;
+      padding: 28px 40px 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-block .brand-name {
+      font-size: 22px; font-weight: 800; color: #d97757; letter-spacing: 0.04em;
+    }
+    .brand-block .brand-sub {
+      font-size: 12px; color: #888; margin-top: 3px; letter-spacing: 0.08em;
+    }
+    .header-date {
+      font-size: 13px; color: #aaa; text-align: right; line-height: 1.7;
+    }
+    .header-date strong { color: #d97757; font-size: 15px; }
+
+    .main-wrap { max-width: 980px; margin: 0 auto; padding: 36px 24px 0; }
+    .section-headline {
+      font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
+      color: #bbb; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #fff; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      display: flex; flex-direction: column;
+    }
+    .card-visual { width: 100%; height: 180px; }
+    .card-body { padding: 24px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: 11px; padding: 4px 10px; border-radius: 12px;
+      font-weight: 600; letter-spacing: 0.04em;
+    }
+    .tag-pain { background: #fff3ee; color: #c0512a; border: 1px solid #f5cdb8; }
+    .tag-skill { background: #f3f0ff; color: #6b3ea6; border: 1px solid #d4c9f5; }
+    .tag-trend { background: #edfaf4; color: #1e7d52; border: 1px solid #b8e8d0; }
+
+    .card-title {
+      font-size: 19px; font-weight: 800; line-height: 1.45;
+      color: #1e1e1e; margin-bottom: 14px; letter-spacing: 0.01em;
+    }
+    .divider { height: 1px; background: #f0ece6; margin: 12px 0; }
+    .section-label {
+      font-size: 11px; color: #aaa; letter-spacing: 0.12em;
+      text-transform: uppercase; font-weight: 700; margin-bottom: 6px;
+    }
+    .section-text {
+      font-size: 14px; line-height: 1.75; color: #444; margin-bottom: 4px;
+    }
+    .pain-strong strong { color: #c0512a; }
+    .skill-strong strong { color: #6b3ea6; }
+    .trend-strong strong { color: #2aa06b; }
+
+    .copy-box {
+      padding: 14px 16px; font-size: 13.5px; line-height: 1.85;
+      border-radius: 0 8px 8px 0; margin-top: 4px;
+    }
+    .pain-copy {
+      background: #fff8f3; border-left: 4px solid #d97757; color: #4a2c1e;
+    }
+    .skill-copy {
+      background: #f8f5ff; border-left: 4px solid #7c5cbf; color: #2d1f4a;
+    }
+    .trend-copy {
+      background: #f3fbf6; border-left: 4px solid #2aa06b; color: #1e3e2c;
+    }
+
+    .quote-wrap {
+      margin: 18px 0 14px; padding: 16px 18px;
+      border-radius: 12px; position: relative;
+    }
+    .pain-quote { background: linear-gradient(135deg, #fff3ee 0%, #fde0d0 100%); }
+    .skill-quote { background: linear-gradient(135deg, #f6f1ff 0%, #e6dcfb 100%); }
+    .trend-quote { background: linear-gradient(135deg, #effaf3 0%, #ddf2e7 100%); }
+    .quote-mark {
+      position: absolute; top: 4px; left: 12px; font-size: 36px;
+      opacity: 0.35; font-family: Georgia, serif; line-height: 1;
+    }
+    .quote-text {
+      padding-left: 22px; font-size: 14.5px; line-height: 1.7;
+      color: #2d2d2d; font-weight: 600; font-style: italic;
+    }
+
+    .meta-grid {
+      display: grid; grid-template-columns: 90px 1fr;
+      gap: 6px 14px; font-size: 12px; color: #777; margin-top: 14px;
+    }
+    .meta-grid dt { color: #aaa; }
+    .meta-grid dd { color: #555; }
+    .meta-grid a { color: #d97757; text-decoration: none; }
+    .meta-grid a:hover { text-decoration: underline; }
+
+    .footer-tip {
+      max-width: 980px; margin: 36px auto 0; padding: 0 24px;
+      font-size: 12px; color: #aaa; text-align: center; line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .site-header { padding: 22px 20px; }
+      .main-wrap { padding: 24px 16px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-block">
+    <div class="brand-name">覺知 SEL 教育</div>
+    <div class="brand-sub">AWARENESS · SEL · EDUCATION</div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29</strong><br>
+    台灣時間 20:05　·　每日教養文宣
+  </div>
+</header>
+
+<div class="main-wrap">
+  <div class="section-headline">— 今日精選 3 則文宣（家長痛點 · 能力培養 · 科學趨勢）—</div>
+
+  <div class="cards-grid">
+
+    <!-- ── 卡片 1：家長痛點（放學後自制力崩潰 After-School Restraint Collapse） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff0e6"/>
+            <stop offset="100%" stop-color="#ffd6bf"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g1)"/>
+        <!-- 左：學校（乖孩子盔甲） -->
+        <g>
+          <rect x="40" y="50" width="120" height="100" rx="6" fill="#fff" opacity="0.7"/>
+          <text x="100" y="40" text-anchor="middle" fill="#c0512a" font-size="11" font-weight="700" letter-spacing="2">SCHOOL · ON</text>
+          <!-- 戴面具的孩子 -->
+          <circle cx="100" cy="95" r="22" fill="#d97757" opacity="0.85"/>
+          <path d="M88 92 Q100 100 112 92" stroke="#fff" stroke-width="2" fill="none"/>
+          <circle cx="92" cy="88" r="2.5" fill="#fff"/>
+          <circle cx="108" cy="88" r="2.5" fill="#fff"/>
+          <!-- 裝乖光環 -->
+          <ellipse cx="100" cy="65" rx="20" ry="4" fill="none" stroke="#f5cdb8" stroke-width="1.5" stroke-dasharray="3"/>
+        </g>
+        <!-- 中間箭頭：放學 -->
+        <g>
+          <path d="M170 100 L220 100" stroke="#c0512a" stroke-width="2.5" fill="none" stroke-dasharray="5"/>
+          <polygon points="220,100 213,96 213,104" fill="#c0512a"/>
+          <text x="195" y="92" text-anchor="middle" fill="#c0512a" font-size="9" font-weight="700">放學回家</text>
+        </g>
+        <!-- 右：家裡（崩潰小怪獸） -->
+        <g>
+          <rect x="240" y="50" width="120" height="100" rx="6" fill="#fff" opacity="0.7"/>
+          <text x="300" y="40" text-anchor="middle" fill="#c0512a" font-size="11" font-weight="700" letter-spacing="2">HOME · MELTDOWN</text>
+          <!-- 崩潰孩子 -->
+          <circle cx="300" cy="95" r="22" fill="#c0512a" opacity="0.95"/>
+          <path d="M290 102 Q300 92 310 102" stroke="#fff" stroke-width="2.5" fill="none"/>
+          <line x1="289" y1="86" x2="296" y2="89" stroke="#fff" stroke-width="2.5"/>
+          <line x1="304" y1="89" x2="311" y2="86" stroke="#fff" stroke-width="2.5"/>
+          <!-- 眼淚 -->
+          <line x1="293" y1="92" x2="291" y2="108" stroke="#3a6fa0" stroke-width="2" opacity="0.8"/>
+          <line x1="307" y1="92" x2="309" y2="108" stroke="#3a6fa0" stroke-width="2" opacity="0.8"/>
+          <!-- 噴發符號 -->
+          <text x="300" y="160" text-anchor="middle" fill="#c0512a" font-size="14" font-weight="900">💥</text>
+        </g>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-pain">🧡 家長痛點</span>
+          <span class="tag tag-pain">放學後崩潰</span>
+          <span class="tag tag-pain">情緒</span>
+        </div>
+        <h2 class="card-title">「在學校乖到讓老師稱讚——一回家秒變小怪獸」這不是雙面人，是他對你最深的安全感</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text pain-strong">
+          下午四點，校門口。<br>
+          老師笑著對你說：「他今天乖得不得了，分組討論還主動發言！」<br>
+          你心裡一暖。回家路上他還在哼歌。<br>
+          結果——一進家門，書包被甩、為了「餅乾被妹妹拿走」哭了 30 分鐘、<br>
+          洗澡時你輕輕說「快一點」，他突然吼：<strong>「你都不愛我！」</strong><br>
+          —— 那一刻，你心想：<strong>這個孩子是不是被外星人換走了？</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          加拿大心理治療師 Andrea Loewen Nair 在 2017 年提出一個讓全世界爸媽鬆一口氣的名詞——
+          <strong>「After-School Restraint Collapse 放學後自制力崩潰」</strong>。<br>
+          背後是兩個經典心理學發現：<br>
+          ① <strong>Baumeister「自我耗竭」理論</strong>：自我控制是有限資源，孩子在學校維持專注、忍住情緒、配合規矩，會把「意志力電池」耗光。<br>
+          ② <strong>Bowlby 依附理論</strong>：家是孩子唯一的「安全基地」——他在外面戴了一整天的面具，
+          <strong>只敢在你面前卸下</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          他在學校撐了 8 小時，<br>
+          把眼淚、緊張、被忽視的委屈，全收進「乖孩子」的盔甲裡。<br>
+          回家後選擇在你面前崩潰——不是因為你不好，<br>
+          而是<strong>他確定你不會走</strong>。<br>
+          覺知教養的關鍵：<strong>進門那 10 分鐘，先別問「今天怎樣？」</strong><br>
+          給一杯水、一個擁抱、安靜的陪伴——
+          <strong>他會用更穩定的方式，把今天告訴你。</strong>
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box pain-copy">
+          老師說他在學校超乖，<br>
+          一進家門卻為了一片餅乾哭半小時。<br><br>
+          你心想：他是不是只欺負我？<br>
+          其實——他只是把今天累積的「壞情緒」，<br>
+          選擇在你面前才敢崩潰。<br><br>
+          心理學叫這個現象：<br>
+          <strong>放學後自制力崩潰</strong><br>
+          （After-School Restraint Collapse）<br><br>
+          因為他在學校太「乖」、太忍，<br>
+          意志力電池在 4 點前就耗盡。<br>
+          回家後第一件事——<br>
+          不是惹你，是<strong>「卸下盔甲」</strong>。<br><br>
+          下次接他放學，<br>
+          試試前 10 分鐘什麼都不問。<br>
+          一杯水、一個擁抱、<br>
+          安靜的副駕駛座——<br>
+          就是他最需要的「情緒緩衝區」。<br><br>
+          他不是回家變壞，<br>
+          是把整天的勇氣，<br>
+          留到你身邊才敢卸下。<br><br>
+          #放學後崩潰 #安全感最大 #覺知教養
+        </div>
+
+        <div class="quote-wrap pain-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">他選擇在你面前崩潰，<br>不是因為你不好——是他確定你不會走。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>分類</dt><dd>🧡 家長痛點</dd>
+          <dt>適合平台</dt><dd>FB、IG、LINE 媽媽社團、家長 Threads</dd>
+          <dt>適合對象</dt><dd>幼兒園至國小家長、雙薪職業父母</dd>
+          <dt>來源連結</dt><dd><a href="https://www.understood.org/en/articles/restraint-collapse-why-kids-fall-apart-after-school" target="_blank">Understood.org · After-School Restraint Collapse</a> ／<a href="https://love-parenting.com/reason-of-after-school-restraint-collapse/" target="_blank">愛兒學・放學後自制力崩潰專文</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>tired child backpack home, mother hugging crying kid, after school door entrance</em></dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- ── 卡片 2：能力培養（4-6歲動作協調 × 認知自我調節） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f4eeff"/>
+            <stop offset="100%" stop-color="#dccdff"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g2)"/>
+        <!-- 左：身體（跳躍） -->
+        <g>
+          <text x="100" y="35" text-anchor="middle" fill="#6b3ea6" font-size="10" font-weight="700" letter-spacing="2">BODY · MOVE</text>
+          <!-- 跳躍小人 -->
+          <circle cx="100" cy="75" r="11" fill="#7c5cbf"/>
+          <line x1="100" y1="86" x2="100" y2="115" stroke="#7c5cbf" stroke-width="3.5"/>
+          <!-- 手張開（雙側協調） -->
+          <line x1="100" y1="95" x2="80" y2="80" stroke="#7c5cbf" stroke-width="3.5"/>
+          <line x1="100" y1="95" x2="120" y2="80" stroke="#7c5cbf" stroke-width="3.5"/>
+          <!-- 腿張開（跳躍） -->
+          <line x1="100" y1="115" x2="85" y2="135" stroke="#7c5cbf" stroke-width="3.5"/>
+          <line x1="100" y1="115" x2="115" y2="135" stroke="#7c5cbf" stroke-width="3.5"/>
+          <!-- 彈跳線 -->
+          <path d="M75 145 Q100 125 125 145" stroke="#7c5cbf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="3"/>
+        </g>
+        <!-- 中間：神經連結 -->
+        <g>
+          <path d="M150 95 Q200 75 250 95" stroke="#6b3ea6" stroke-width="2" fill="none" opacity="0.7" stroke-dasharray="4"/>
+          <circle cx="170" cy="88" r="2" fill="#6b3ea6" opacity="0.7"/>
+          <circle cx="200" cy="80" r="2" fill="#6b3ea6" opacity="0.7"/>
+          <circle cx="230" cy="88" r="2" fill="#6b3ea6" opacity="0.7"/>
+          <text x="200" y="115" text-anchor="middle" fill="#6b3ea6" font-size="9" font-weight="700">神經連結</text>
+        </g>
+        <!-- 右：大腦（自我控制） -->
+        <g>
+          <text x="320" y="35" text-anchor="middle" fill="#6b3ea6" font-size="10" font-weight="700" letter-spacing="2">BRAIN · CONTROL</text>
+          <!-- 大腦輪廓 -->
+          <path d="M285 90 Q280 70 295 60 Q310 50 325 60 Q345 55 350 75 Q358 90 348 105 Q345 120 325 122 Q305 125 295 115 Q282 105 285 90 Z"
+                fill="#6b3ea6" opacity="0.85"/>
+          <!-- 大腦紋路 -->
+          <path d="M295 75 Q310 80 320 72" stroke="#fff" stroke-width="1.5" fill="none" opacity="0.7"/>
+          <path d="M300 90 Q315 95 330 88" stroke="#fff" stroke-width="1.5" fill="none" opacity="0.7"/>
+          <path d="M298 105 Q315 110 332 102" stroke="#fff" stroke-width="1.5" fill="none" opacity="0.7"/>
+          <!-- 控制中樞 icon -->
+          <circle cx="320" cy="90" r="4" fill="#fff" opacity="0.9"/>
+          <text x="320" y="155" text-anchor="middle" fill="#6b3ea6" font-size="11" font-weight="900">🎯</text>
+        </g>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-skill">💜 能力培養</span>
+          <span class="tag tag-skill">自我調節</span>
+          <span class="tag tag-skill">動作發展</span>
+        </div>
+        <h2 class="card-title">想讓孩子「坐得住、寫得完、忍得住」？最快捷徑——不是寫評量，是「先讓他動」</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text skill-strong">
+          晚上六點，飯桌前。<br>
+          「先把功課寫完！」「不要動來動去！」「你為什麼就是不能專心？」<br>
+          結果你越說，他越扭——30 分鐘只寫了三行。<br>
+          你火氣上來，覺得是「注意力的問題」。<br>
+          但科學告訴你：<strong>他不是不專心，是身體還沒「動夠」，腦袋根本還沒準備好坐下。</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          發表於《上海體育學院學報》的最新研究追蹤 4-6 歲幼兒：
+          <strong>雙側肢體動作協調能力，與「認知自我調節」呈顯著正相關（β=0.22，男孩特別明顯）</strong>。<br>
+          而美國幼稚園教師早就把<strong>「跟從指示、輪流分享、注意力」</strong>列為孩子入學最關鍵的 SEL 三件事——
+          這三件事，全都建立在「自我調節」之上。<br>
+          結論一句話：<strong>身體會的，腦袋才學得會。</strong>
+          每一次跨越中線、平衡、跳繩、爬梯——
+          都是大腦在<strong>「升級自我控制硬體」</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          你以為他在客廳「跑來跑去」是搗蛋——<br>
+          其實是大腦在自動執行：<strong>下載「韌性」與「專注力」更新檔</strong>。<br>
+          覺知教養的順序是：<br>
+          <strong>① 先讓身體有出口 → ② 大腦才能有秩序</strong>。<br>
+          所以下一次，與其吼「坐好」，<br>
+          不如先帶他出門 20 分鐘——
+          回來那頁作業，<strong>常常 10 分鐘就寫完了</strong>。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box skill-copy">
+          孩子寫作業 30 分鐘只寫三行，<br>
+          你罵到喉嚨啞——他越罵越扭。<br><br>
+          你以為是專注力的問題。<br>
+          其實是<strong>「他身體還沒動夠」</strong>。<br><br>
+          2026 最新追蹤研究：<br>
+          4-6 歲幼兒的「雙側肢體協調」<br>
+          與「認知自我調節」呈顯著正相關。<br>
+          翻譯成白話——<br>
+          <strong>跳繩、爬梯、跨大步走的孩子，<br>
+          坐下來時更專心、更忍得住、<br>
+          更會跟從指示。</strong><br><br>
+          因為大腦的「自我控制」，<br>
+          是用身體一塊一塊長出來的。<br><br>
+          下次他寫到一半開始扭——<br>
+          別吼「坐好」。<br>
+          帶他下樓跑兩圈，<br>
+          回來那頁作業，<br>
+          常常 10 分鐘就寫完了。<br><br>
+          自我控制不是「忍出來的」，<br>
+          是「動出來的」。<br><br>
+          #先動才靜 #自我調節 #覺知SEL
+        </div>
+
+        <div class="quote-wrap skill-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">想讓孩子腦袋安靜，<br>得先讓他的身體有過出口——<br>專注力，是動出來的。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>分類</dt><dd>💜 能力培養</dd>
+          <dt>適合平台</dt><dd>FB、IG、LINE 幼兒園班群、運動才藝家長社團</dd>
+          <dt>適合對象</dt><dd>幼兒至國小低年級家長、感統治療師、體能教練</dd>
+          <dt>來源連結</dt><dd><a href="https://html.rhhz.net/SHTYXYXB/weixin/077deef8-c916-4dba-959f-ef900bca1147.htm" target="_blank">上海體育學院學報・4-6歲動作技能與認知自我調節研究</a> ／<a href="https://love-parenting.com/nurture-your-childs-focus-by-getting-them-moving-2/" target="_blank">愛兒學・從動起來開始培養專注力</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>kid jumping rope playground, child climbing balance, preschool gross motor</em></dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- ── 卡片 3：科學趨勢（親子天下 2026 趨勢報告 + WEF 未來工作報告） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#effaf3"/>
+            <stop offset="100%" stop-color="#c8eed7"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g3)"/>
+        <!-- 10 個能力點，8 個綠色（人類），2 個藍色（AI 可學） -->
+        <g>
+          <!-- 標題 -->
+          <text x="200" y="28" text-anchor="middle" fill="#1e7d52" font-size="11" font-weight="700" letter-spacing="2">FUTURE 10 SKILLS · 2025–2030</text>
+          <!-- 第一排 5 個 -->
+          <circle cx="60" cy="65" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="60" y="69" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">韌</text>
+          <circle cx="130" cy="65" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="130" y="69" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">創</text>
+          <circle cx="200" cy="65" r="12" fill="#3a6fa0" opacity="0.7"/>
+          <text x="200" y="69" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">AI</text>
+          <circle cx="270" cy="65" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="270" y="69" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">奇</text>
+          <circle cx="340" cy="65" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="340" y="69" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">領</text>
+          <!-- 第二排 5 個 -->
+          <circle cx="60" cy="115" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="60" y="119" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">人</text>
+          <circle cx="130" cy="115" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="130" y="119" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">析</text>
+          <circle cx="200" cy="115" r="12" fill="#3a6fa0" opacity="0.7"/>
+          <text x="200" y="119" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">技</text>
+          <circle cx="270" cy="115" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="270" y="119" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">覺</text>
+          <circle cx="340" cy="115" r="12" fill="#2aa06b" opacity="0.85"/>
+          <text x="340" y="119" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">境</text>
+        </g>
+        <!-- 圖例 -->
+        <g>
+          <circle cx="120" cy="156" r="6" fill="#2aa06b" opacity="0.85"/>
+          <text x="135" y="160" fill="#1e7d52" font-size="10" font-weight="600">8 項 AI 學不會</text>
+          <circle cx="240" cy="156" r="6" fill="#3a6fa0" opacity="0.7"/>
+          <text x="255" y="160" fill="#3a6fa0" font-size="10" font-weight="600">2 項 AI 相關</text>
+        </g>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-trend">🌿 科學趨勢</span>
+          <span class="tag tag-trend">親子天下</span>
+          <span class="tag tag-trend">非認知能力</span>
+        </div>
+        <h2 class="card-title">親子天下 2026 趨勢報告震撼出爐——WEF 認證「未來 10 大能力」，AI 學不會的就佔 8 項</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text trend-strong">
+          你看孩子用 ChatGPT 寫作文，5 秒交差。<br>
+          你又生氣又不安：「以後考試怎麼辦？」「他這樣會不會變笨？」<br>
+          《親子天下 2026 年度趨勢報告》四月剛上架，第一句話就讓家長愣住：<br>
+          —— <strong>「你擔心的方向，從一開始就錯了。」</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          世界經濟論壇（WEF）<strong>《2025 未來工作報告》</strong>整理了「2025–2030 最關鍵的 10 大能力」：<br>
+          AI 與大數據、創意思考、<strong>韌性</strong>、彈性與敏捷、<strong>好奇心與終身學習</strong>、
+          <strong>領導力與社會影響力</strong>、人才管理、分析思考、<strong>自我覺察</strong>、環境永續。<br>
+          其中 <strong>10 項裡有 8 項屬於「非認知能力」——AI 學不會、考試也測不出來</strong>。<br>
+          《親子天下 2026 趨勢報告》綜合 1.3 萬名台灣中小學生大調查 + MIT 最新研究，得出一句結論：<br>
+          <strong>「未來不是 AI 取代人類，是『會用 AI + 有非認知能力』的人，取代『沒有的人』。」</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          覺知 SEL 教養談的——
+          <strong>自我覺察、情緒調節、復原力、同理心</strong>——<br>
+          剛好就是 WEF 報告裡那 <strong>8 項「AI 學不會」的能力</strong>。<br>
+          當別的家長忙著教孩子寫程式、補全科，<br>
+          覺知家長在做的是：陪孩子練「情緒覺察」、練「失敗後爬起來」、練「跟人合作」。<br>
+          因為他們知道：<strong>未來最稀缺的，不是工具人，是「有溫度的人」。</strong>
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box trend-copy">
+          孩子用 ChatGPT 5 秒寫完作文——<br>
+          你心慌：以後他要靠什麼吃飯？<br><br>
+          《親子天下 2026 年度趨勢報告》四月剛上架，<br>
+          綜合 WEF《2025 未來工作報告》<br>
+          + 1.3 萬名台灣中小學生大調查，<br>
+          直接告訴家長：<strong>你擔心的方向錯了。</strong><br><br>
+          未來 5 年「最關鍵 10 大能力」——<br>
+          有 <strong>8 項是 AI 學不會的</strong>：<br>
+          韌性、創意思考、好奇心、<br>
+          自我覺察、領導力、人才管理、<br>
+          分析思考、環境永續。<br><br>
+          換句話說——<br>
+          <strong>未來不是 AI 取代人類，<br>
+          是「會用 AI + 有非認知能力」的人，<br>
+          取代「沒有的人」。</strong><br><br>
+          別再焦慮孩子寫程式快不快——<br>
+          先問自己：<br>
+          他失敗後，會不會自己爬起來？<br>
+          他生氣時，知道自己怎麼了嗎？<br>
+          他能跟人合作完成一件事嗎？<br><br>
+          AI 不會搶走他的工作，<br>
+          沒練「人味」才會。<br><br>
+          #2026教養趨勢 #非認知能力 #覺知SEL
+        </div>
+
+        <div class="quote-wrap trend-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">未來最稀缺的不是工具人——<br>是「有溫度的人」。<br>AI 越強，人味越值錢。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>分類</dt><dd>🌿 科學趨勢</dd>
+          <dt>適合平台</dt><dd>FB、IG、Threads、LINE 家長群、學校官網／電子報</dd>
+          <dt>適合對象</dt><dd>國中小家長、教育工作者、校長、輔導與課程設計者</dd>
+          <dt>來源連結</dt><dd><a href="https://www.books.com.tw/products/R030102994" target="_blank">親子天下 2026 年度趨勢報告：AI 世代 駕馭學習新宇宙</a> ／<a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/3-skills-outlook/" target="_blank">WEF · Future of Jobs Report 2025（Skills Outlook）</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>child human warmth vs robot, kids collaborating teamwork, future skills classroom</em></dd>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer-tip">
+  覺知 SEL 教育・每日教養文宣 ｜ 來源：兒福聯盟、世界經濟論壇、親子天下、Understood.org、上海體育學院學報・愛兒學<br>
+  本日文宣產出時間：2026.04.29　20:05（台灣時間）
+</div>
+
+</body>
+</html>

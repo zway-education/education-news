@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>覺知 SEL 教育每日教養文宣 | 2026.04.29 | 18:09</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f7f4f0;
+      color: #2d2d2d;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 3px solid #d97757;
+      padding: 28px 40px 22px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-block .brand-name {
+      font-size: 22px; font-weight: 800; color: #d97757; letter-spacing: 0.04em;
+    }
+    .brand-block .brand-sub {
+      font-size: 12px; color: #888; margin-top: 3px; letter-spacing: 0.08em;
+    }
+    .header-date {
+      font-size: 13px; color: #aaa; text-align: right; line-height: 1.7;
+    }
+    .header-date strong { color: #d97757; font-size: 15px; }
+
+    .main-wrap { max-width: 980px; margin: 0 auto; padding: 36px 24px 0; }
+    .section-headline {
+      font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
+      color: #bbb; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #fff; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      display: flex; flex-direction: column;
+    }
+    .card-visual { width: 100%; height: 180px; }
+    .card-body { padding: 24px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tag {
+      font-size: 11px; padding: 4px 10px; border-radius: 12px;
+      font-weight: 600; letter-spacing: 0.04em;
+    }
+    .tag-pain { background: #fff3ee; color: #c0512a; border: 1px solid #f5cdb8; }
+    .tag-skill { background: #f3f0ff; color: #6b3ea6; border: 1px solid #d4c9f5; }
+    .tag-trend { background: #edfaf4; color: #1e7d52; border: 1px solid #b8e8d0; }
+
+    .card-title {
+      font-size: 19px; font-weight: 800; line-height: 1.45;
+      color: #1e1e1e; margin-bottom: 14px; letter-spacing: 0.01em;
+    }
+    .divider { height: 1px; background: #f0ece6; margin: 12px 0; }
+    .section-label {
+      font-size: 11px; color: #aaa; letter-spacing: 0.12em;
+      text-transform: uppercase; font-weight: 700; margin-bottom: 6px;
+    }
+    .section-text {
+      font-size: 14px; line-height: 1.75; color: #444; margin-bottom: 4px;
+    }
+    .pain-strong strong { color: #c0512a; }
+    .skill-strong strong { color: #6b3ea6; }
+    .trend-strong strong { color: #2aa06b; }
+
+    .copy-box {
+      padding: 14px 16px; font-size: 13.5px; line-height: 1.85;
+      border-radius: 0 8px 8px 0; margin-top: 4px;
+    }
+    .pain-copy {
+      background: #fff8f3; border-left: 4px solid #d97757; color: #4a2c1e;
+    }
+    .skill-copy {
+      background: #f8f5ff; border-left: 4px solid #7c5cbf; color: #2d1f4a;
+    }
+    .trend-copy {
+      background: #f3fbf6; border-left: 4px solid #2aa06b; color: #1e3e2c;
+    }
+
+    .quote-wrap {
+      margin: 18px 0 14px; padding: 16px 18px;
+      border-radius: 12px; position: relative;
+    }
+    .pain-quote { background: linear-gradient(135deg, #fff3ee 0%, #fde0d0 100%); }
+    .skill-quote { background: linear-gradient(135deg, #f6f1ff 0%, #e6dcfb 100%); }
+    .trend-quote { background: linear-gradient(135deg, #effaf3 0%, #ddf2e7 100%); }
+    .quote-mark {
+      position: absolute; top: 4px; left: 12px; font-size: 36px;
+      opacity: 0.35; font-family: Georgia, serif; line-height: 1;
+    }
+    .quote-text {
+      padding-left: 22px; font-size: 14.5px; line-height: 1.7;
+      color: #2d2d2d; font-weight: 600; font-style: italic;
+    }
+
+    .meta-grid {
+      display: grid; grid-template-columns: 90px 1fr;
+      gap: 6px 14px; font-size: 12px; color: #777; margin-top: 14px;
+    }
+    .meta-grid dt { color: #aaa; }
+    .meta-grid dd { color: #555; }
+    .meta-grid a { color: #d97757; text-decoration: none; }
+    .meta-grid a:hover { text-decoration: underline; }
+
+    .footer-tip {
+      max-width: 980px; margin: 36px auto 0; padding: 0 24px;
+      font-size: 12px; color: #aaa; text-align: center; line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .site-header { padding: 22px 20px; }
+      .main-wrap { padding: 24px 16px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-block">
+    <div class="brand-name">覺知 SEL 教育</div>
+    <div class="brand-sub">AWARENESS · SEL · EDUCATION</div>
+  </div>
+  <div class="header-date">
+    <strong>2026.04.29</strong><br>
+    台灣時間 18:09　·　每日教養文宣
+  </div>
+</header>
+
+<div class="main-wrap">
+  <div class="section-headline">— 今日精選 3 則文宣（家長痛點 · 能力培養 · 科學趨勢）—</div>
+
+  <div class="cards-grid">
+
+    <!-- ── 卡片 1：家長痛點（每班2-3名孩子情緒低落） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fff0e6"/>
+            <stop offset="100%" stop-color="#ffd6bf"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g1)"/>
+        <!-- 30 個小頭像（教室） -->
+        <g fill="#d97757" opacity="0.45">
+          <circle cx="60" cy="55" r="7"/><circle cx="100" cy="55" r="7"/><circle cx="140" cy="55" r="7"/>
+          <circle cx="180" cy="55" r="7"/><circle cx="220" cy="55" r="7"/><circle cx="260" cy="55" r="7"/>
+          <circle cx="300" cy="55" r="7"/><circle cx="340" cy="55" r="7"/>
+          <circle cx="60" cy="90" r="7"/><circle cx="100" cy="90" r="7"/>
+          <circle cx="180" cy="90" r="7"/><circle cx="220" cy="90" r="7"/><circle cx="260" cy="90" r="7"/>
+          <circle cx="300" cy="90" r="7"/><circle cx="340" cy="90" r="7"/>
+          <circle cx="60" cy="125" r="7"/><circle cx="100" cy="125" r="7"/><circle cx="140" cy="125" r="7"/>
+          <circle cx="180" cy="125" r="7"/><circle cx="220" cy="125" r="7"/>
+          <circle cx="300" cy="125" r="7"/><circle cx="340" cy="125" r="7"/>
+        </g>
+        <!-- 哭泣的 2-3 個 -->
+        <g>
+          <circle cx="140" cy="90" r="9" fill="#c0512a" opacity="0.95"/>
+          <line x1="140" y1="100" x2="138" y2="115" stroke="#3a6fa0" stroke-width="2" opacity="0.7"/>
+          <circle cx="260" cy="125" r="9" fill="#c0512a" opacity="0.95"/>
+          <line x1="260" y1="135" x2="258" y2="148" stroke="#3a6fa0" stroke-width="2" opacity="0.7"/>
+        </g>
+        <text x="200" y="170" text-anchor="middle" fill="#c0512a" font-size="11" font-weight="700" letter-spacing="2">CLASSROOM · 30 KIDS</text>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-pain">🧡 家長痛點</span>
+          <span class="tag tag-pain">情緒</span>
+          <span class="tag tag-pain">沉默</span>
+        </div>
+        <h2 class="card-title">「他在學校沒事啊」——但 30 個孩子裡，每天有 2-3 個正在偷偷崩潰</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text pain-strong">
+          家長日結束，老師笑著對你說：「他在學校挺好的。」<br>
+          你聽完安心了。<br>
+          回家後，孩子鎖上房門，吃飯只應一聲「嗯」。<br>
+          你心想：青春期吧？<br>
+          —— 但兒福聯盟剛公布的新數字告訴你：
+          <strong>那扇關起來的門，可能不是叛逆，是求救。</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          兒福聯盟《2025 台灣青少年心理健康調查》最新發表：<strong>16.4% 國中生每週超過一次出現情緒低落</strong>，
+          換算下來——<strong>平均每班 30 人，就有 2 至 3 個正在情緒風暴中</strong>。<br>
+          常見困擾：易怒（13.6%）、緊張（12.6%）、過度憂慮（12.1%）、害怕（10.0%）、
+          無法控制焦慮（9.8%）。<br>
+          研究強調：這些孩子在學校往往「看起來還好」——所以最容易被漏接的，就是他們。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          孩子不會一開始就喊「我快撐不下去了」。<br>
+          他會先試著用沉默、用「沒事」、用早餐少吃半碗——
+          <strong>來測你有沒有發現他</strong>。<br>
+          覺知教養的第一步，不是教他堅強，<br>
+          而是讓他知道：<strong>就算崩潰，這裡也有人會接住</strong>。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box pain-copy">
+          老師說他在學校好好的，<br>
+          回家後卻像把自己關在玻璃罩裡。<br><br>
+          兒福聯盟最新調查：<br>
+          全台國中每班 30 人，<br>
+          平均 2 至 3 個正在情緒低落。<br>
+          而這群孩子，<br>
+          多半「外表看起來沒事」。<br><br>
+          別再被「還好」騙過去。<br>
+          今晚試著問他一句：<br>
+          「最近身上有沒有什麼，<br>
+          重得讓你不想說？」<br><br>
+          沉默不是懂事，<br>
+          有時候，是孩子最大聲的求救。<br><br>
+          #每班2到3個 #沉默背後 #覺知教養
+        </div>
+
+        <div class="quote-wrap pain-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">看起來最沒事的那個，<br>常常是把眼淚藏得最深的那個——別讓「乖」遮住了「累」。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>適合平台</dt><dd>FB、IG、LINE 班級群、家長社團</dd>
+          <dt>適合對象</dt><dd>國高中生家長、級任老師、輔導老師</dd>
+          <dt>來源連結</dt><dd><a href="https://www.children.org.tw/publication_research/research_report/mentalhealth2025" target="_blank">兒福聯盟・2025 台灣青少年心理健康調查報告</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>empty classroom desk, teen alone hallway window</em></dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- ── 卡片 2：能力培養（復原力 vs 過度保護） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f4eeff"/>
+            <stop offset="100%" stop-color="#dccdff"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g2)"/>
+        <!-- 跌倒到爬起來的小人 -->
+        <!-- 第一階段：跌倒 -->
+        <g opacity="0.45">
+          <circle cx="80" cy="120" r="9" fill="#7c5cbf"/>
+          <line x1="80" y1="129" x2="80" y2="148" stroke="#7c5cbf" stroke-width="3"/>
+        </g>
+        <!-- 第二階段：手撐地 -->
+        <g opacity="0.65">
+          <circle cx="160" cy="110" r="9" fill="#7c5cbf"/>
+          <line x1="160" y1="119" x2="160" y2="140" stroke="#7c5cbf" stroke-width="3"/>
+          <line x1="160" y1="130" x2="178" y2="138" stroke="#7c5cbf" stroke-width="3"/>
+        </g>
+        <!-- 第三階段：半蹲 -->
+        <g opacity="0.85">
+          <circle cx="240" cy="95" r="9" fill="#7c5cbf"/>
+          <line x1="240" y1="104" x2="240" y2="130" stroke="#7c5cbf" stroke-width="3"/>
+          <line x1="240" y1="120" x2="252" y2="138" stroke="#7c5cbf" stroke-width="3"/>
+        </g>
+        <!-- 第四階段：站起來 -->
+        <g opacity="1">
+          <circle cx="320" cy="65" r="10" fill="#6b3ea6"/>
+          <line x1="320" y1="75" x2="320" y2="125" stroke="#6b3ea6" stroke-width="3"/>
+          <line x1="320" y1="95" x2="305" y2="80" stroke="#6b3ea6" stroke-width="3"/>
+          <line x1="320" y1="95" x2="335" y2="80" stroke="#6b3ea6" stroke-width="3"/>
+        </g>
+        <!-- 連接箭頭 -->
+        <path d="M95 115 Q120 105 145 110" stroke="#7c5cbf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="3"/>
+        <path d="M175 105 Q200 95 225 95" stroke="#7c5cbf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="3"/>
+        <path d="M255 90 Q280 75 305 70" stroke="#7c5cbf" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="3"/>
+        <text x="200" y="170" text-anchor="middle" fill="#6b3ea6" font-size="11" font-weight="700" letter-spacing="2">RESILIENCE · STAND BACK UP</text>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-skill">💜 能力培養</span>
+          <span class="tag tag-skill">復原力</span>
+          <span class="tag tag-skill">放手</span>
+        </div>
+        <h2 class="card-title">你接得越快，他學得越少——孩子的「復原力」，是你「忍住沒救」的那幾次練出來的</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text skill-strong">
+          孩子在公園跌倒，膝蓋擦了一下。<br>
+          他還沒哭，你已經三步併兩步衝過去：「沒事沒事，媽媽抱抱！」<br>
+          畫面溫馨——但這個「秒衝」，<br>
+          可能正在悄悄拿走他「自己站起來」的機會。<br>
+          —— <strong>愛得太快，反而讓他長不出韌性。</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          2025 年發表於《心理科學進展》的最新中介分析（J Cent South Univ Med Sci）發現：
+          <strong>父母的「情緒溫暖」與「過度保護」對青少年心理復原力是兩股相反的力</strong>。<br>
+          減少過度保護 + 提供情緒支持，<strong>能透過心理復原力，把自殺意念降低 16.7%</strong>。<br>
+          研究結論一句話：<strong>「該在身邊的時候在，該退一步的時候退」</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          覺知教養不是不愛，是「愛得有節奏」。<br>
+          不立刻幫他擦眼淚，是讓他知道——<strong>眼淚會自己停，他比想像中強</strong>。<br>
+          每一次「我陪你，但我不替你」的時刻，<br>
+          都是在替他大腦長出那條<strong>叫做「韌性」的肌肉</strong>。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box skill-copy">
+          孩子摔倒，<br>
+          你還沒思考，腳已經跑過去了。<br><br>
+          這是愛——<br>
+          但 2025 最新研究說：<br>
+          父母「過度保護」會削弱孩子的復原力，<br>
+          失去那 16.7% 的緩衝，<br>
+          讓他面對挫折時更容易崩潰。<br><br>
+          下一次他跌倒——<br>
+          深呼吸，慢一秒。<br>
+          蹲下來，看著他，溫柔地說：<br>
+          「我看見了，你會自己起來嗎？<br>
+          我在這裡。」<br><br>
+          韌性不是天生的，<br>
+          是你「忍住沒衝過去」的那幾次，<br>
+          一塊一塊長出來的。<br><br>
+          #忍住沒救才是愛 #復原力肌肉 #覺知SEL
+        </div>
+
+        <div class="quote-wrap skill-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">真正的愛，不是把石頭從他腳下搬走——<br>是相信他下一次，能自己跨過去。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>適合平台</dt><dd>IG、FB、Threads、媽媽 LINE 群</dd>
+          <dt>適合對象</dt><dd>學齡前到中學家長、容易「秒衝救火」的爸媽</dd>
+          <dt>來源連結</dt><dd><a href="https://www.journals.com.tw/twpca/" target="_blank">J Cent South Univ Med Sci 2025・父母教養與青少年心理復原力中介研究</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>child standing up after falling, kid climbing rock back view</em></dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- ── 卡片 3：科學趨勢（螢幕時間 vs 大腦白質） ── -->
+    <div class="card">
+      <svg class="card-visual" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e6f7ee"/>
+            <stop offset="100%" stop-color="#c5ecd6"/>
+          </linearGradient>
+          <radialGradient id="brain" cx="0.5" cy="0.5">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#2aa06b" stop-opacity="0.55"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="180" fill="url(#g3)"/>
+        <!-- 大腦剪影 -->
+        <ellipse cx="200" cy="90" rx="78" ry="58" fill="url(#brain)"/>
+        <!-- 白質紊亂的線條（亂碼感） -->
+        <g stroke="#1e7d52" stroke-width="1.6" fill="none" opacity="0.7">
+          <path d="M155 75 Q170 80 175 95"/>
+          <path d="M180 65 Q195 75 200 90"/>
+          <path d="M215 70 Q225 85 230 100"/>
+          <path d="M165 100 Q180 110 195 115"/>
+          <path d="M210 110 Q225 115 240 105"/>
+        </g>
+        <!-- 紊亂的紅點（白質受損） -->
+        <g fill="#c0512a" opacity="0.7">
+          <circle cx="170" cy="85" r="2.5"/>
+          <circle cx="195" cy="78" r="2.5"/>
+          <circle cx="220" cy="92" r="2.5"/>
+          <circle cx="185" cy="105" r="2.5"/>
+          <circle cx="225" cy="108" r="2.5"/>
+        </g>
+        <!-- 數字 1HR -->
+        <text x="65" y="100" fill="#1e7d52" font-size="28" font-weight="900" opacity="0.55">1H</text>
+        <text x="65" y="115" fill="#1e7d52" font-size="9" font-weight="700" letter-spacing="1" opacity="0.6">THRESHOLD</text>
+        <text x="200" y="170" text-anchor="middle" fill="#1e7d52" font-size="11" font-weight="700" letter-spacing="2">SCREEN · WHITE MATTER · LIMIT</text>
+      </svg>
+      <div class="card-body">
+        <div class="tags">
+          <span class="tag tag-trend">🌿 科學趨勢</span>
+          <span class="tag tag-trend">大腦白質</span>
+          <span class="tag tag-trend">螢幕時間</span>
+        </div>
+        <h2 class="card-title">1 小時就夠——美國醫學會研究：螢幕時間越過這條線，孩子大腦的「白質」開始紊亂</h2>
+
+        <div class="section-label">家長共鳴開頭</div>
+        <p class="section-text trend-strong">
+          孩子鬧脾氣，你遞過手機，他立刻安靜。<br>
+          午餐 30 分鐘、捷運 30 分鐘、媽媽煮飯 30 分鐘——<br>
+          回頭一看，今天他已經滑了 2 個多小時。<br>
+          你心裡安慰自己：「應該還好吧？」<br>
+          —— <strong>但科學家給的「剛好」門檻，可能比你想的低很多。</strong>
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">教育新知</div>
+        <p class="section-text">
+          《美國醫學會雜誌》JAMA Pediatrics 經典研究（辛辛那提兒童醫院醫藥中心）：
+          <strong>學齡前兒童每天螢幕時間超過 1 小時，大腦「白質」結構出現顯著紊亂</strong>——
+          白質負責灰質之間的「資訊高速公路」，主管語言、自我控制、情緒調節。<br>
+          搭配 WHO 最新建議：<strong>2 歲前不應接觸螢幕，2-4 歲每天上限 1 小時</strong>。<br>
+          現實：台灣 2-4 歲孩子平均螢幕時間，<strong>已超過 2 小時</strong>。
+        </p>
+
+        <div class="divider"></div>
+        <div class="section-label">覺知 SEL 觀點</div>
+        <p class="section-text">
+          別把這份研究當作罪惡感的來源——當作一張地圖。<br>
+          你今天能少給他 30 分鐘螢幕，就<strong>多給了他大腦 30 分鐘整修工程</strong>。<br>
+          覺知教養：不是禁止，是<strong>有意識地選擇</strong>。<br>
+          孩子需要的不是更多 YouTube，<br>
+          是<strong>有人陪他走完那 30 分鐘的無聊</strong>。
+        </p>
+
+        <div class="section-label" style="margin-top:14px;">可直接發布文案</div>
+        <div class="copy-box trend-copy">
+          午餐遞手機、<br>
+          捷運給平板、<br>
+          媽媽煮飯時開電視——<br>
+          一天累積，輕鬆超過 2 小時。<br><br>
+          但《JAMA Pediatrics》研究發現：<br>
+          只要每天螢幕超過 1 小時，<br>
+          孩子大腦的「白質」結構就開始紊亂——<br>
+          那是負責語言、自制力、情緒調節的<br>
+          神經高速公路。<br><br>
+          WHO 直接寫進建議：<br>
+          2 歲以下，零螢幕。<br>
+          2-4 歲，最多 1 小時。<br><br>
+          不需要全戒。<br>
+          今天少給他 30 分鐘，<br>
+          換來的是孩子未來十年的專注力。<br><br>
+          #1小時是門檻 #大腦白質 #覺知教養
+        </div>
+
+        <div class="quote-wrap trend-quote">
+          <div class="quote-mark">"</div>
+          <div class="quote-text">每一分鐘螢幕之外的時間，<br>都是你在替他大腦鋪一條更安靜、更穩的路。</div>
+        </div>
+
+        <dl class="meta-grid">
+          <dt>適合平台</dt><dd>FB、IG、媽媽社團、新手爸媽 LINE 群</dd>
+          <dt>適合對象</dt><dd>0~6 歲幼兒家長、托嬰中心、幼教老師</dd>
+          <dt>來源連結</dt><dd><a href="https://medicalinspire.com/posts/43999/" target="_blank">JAMA Pediatrics・學齡前螢幕時間與大腦白質結構研究</a></dd>
+          <dt>圖片建議</dt><dd>Unsplash 關鍵字：<em>toddler tablet screen close, child looking out window quiet</em></dd>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-tip">
+    內容由「覺知 SEL 教育」每日自動產出　·　歡迎自由轉載與改寫，請保留來源連結
+  </div>
+</div>
+
+</body>
+</html>
