@@ -17,7 +17,7 @@
   .site-header {
     background: #fff;
     border-bottom: 3px solid #d97757;
-    padding: 24px 40px;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,116 +30,91 @@
   }
   .brand { display: flex; align-items: center; gap: 14px; }
   .brand-dot {
-    width: 40px; height: 40px;
-    background: #d97757;
-    border-radius: 50%;
+    width: 38px; height: 38px;
+    background: #d97757; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: 20px; font-weight: 900;
+    color: #fff; font-size: 19px; font-weight: 900;
   }
-  .brand-name { font-size: 22px; font-weight: 800; color: #d97757; letter-spacing: 1px; }
+  .brand-name { font-size: 20px; font-weight: 800; color: #d97757; letter-spacing: 1px; }
   .brand-sub { font-size: 11px; color: #bbb; letter-spacing: 2px; margin-top: 2px; }
-  .header-right { font-size: 13px; color: #bbb; letter-spacing: 1px; }
+  .header-right { font-size: 13px; color: #bbb; }
 
   /* ── Hero ── */
   .hero {
     background: linear-gradient(135deg, #fff9f6 0%, #fdeee6 100%);
-    padding: 48px 40px 36px;
+    padding: 40px 40px 30px;
     text-align: center;
     border-bottom: 1px solid #f0ddd4;
   }
-  .hero h1 { font-size: 28px; font-weight: 900; color: #1e1e1e; margin-bottom: 10px; }
-  .hero p { font-size: 15px; color: #888; line-height: 1.7; }
+  .hero h1 { font-size: 26px; font-weight: 900; color: #1e1e1e; margin-bottom: 8px; }
+  .hero p { font-size: 14px; color: #888; line-height: 1.7; }
   .hero-stats {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    margin-top: 28px;
-    flex-wrap: wrap;
+    display: flex; gap: 24px; justify-content: center;
+    margin-top: 24px; flex-wrap: wrap;
   }
   .stat-box {
-    background: #fff;
-    border-radius: 14px;
-    padding: 16px 28px;
-    text-align: center;
-    box-shadow: 0 2px 12px rgba(217,119,87,0.1);
+    background: #fff; border-radius: 14px; padding: 14px 26px;
+    text-align: center; box-shadow: 0 2px 12px rgba(217,119,87,0.1);
     border: 1px solid #f5e0d5;
   }
-  .stat-num { font-size: 32px; font-weight: 900; color: #d97757; }
-  .stat-label { font-size: 12px; color: #aaa; margin-top: 4px; letter-spacing: 1px; }
+  .stat-num { font-size: 30px; font-weight: 900; color: #d97757; }
+  .stat-label { font-size: 11px; color: #aaa; margin-top: 3px; letter-spacing: 1px; }
 
   /* ── Toolbar ── */
   .toolbar {
-    max-width: 900px;
-    margin: 32px auto 0;
+    max-width: 900px; margin: 28px auto 0;
     padding: 0 24px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
   }
   .search-input {
-    flex: 1;
-    min-width: 200px;
+    flex: 1; min-width: 200px;
     padding: 10px 16px;
-    border: 1.5px solid #e8ddd8;
-    border-radius: 30px;
-    font-size: 14px;
-    outline: none;
-    background: #fff;
-    color: #333;
+    border: 1.5px solid #e8ddd8; border-radius: 30px;
+    font-size: 14px; outline: none;
+    background: #fff; color: #333;
+    font-family: inherit;
     transition: border-color 0.2s;
   }
   .search-input:focus { border-color: #d97757; }
   .filter-btn {
-    padding: 9px 18px;
-    border-radius: 20px;
-    border: 1.5px solid #e0d8d2;
-    background: #fff;
-    font-size: 13px;
-    cursor: pointer;
-    color: #666;
-    transition: all 0.2s;
-    font-family: inherit;
+    padding: 9px 18px; border-radius: 20px;
+    border: 1.5px solid #e0d8d2; background: #fff;
+    font-size: 13px; cursor: pointer; color: #666;
+    font-family: inherit; transition: all 0.2s;
   }
   .filter-btn:hover, .filter-btn.active {
-    background: #d97757;
-    border-color: #d97757;
-    color: #fff;
+    background: #d97757; border-color: #d97757; color: #fff;
   }
 
-  /* ── Date Groups ── */
-  .content-area {
+  /* ── Legend ── */
+  .legend {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin: 10px auto 0; padding: 0 24px;
     max-width: 900px;
-    margin: 24px auto 60px;
-    padding: 0 24px;
   }
-  .date-group { margin-bottom: 36px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #aaa; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  /* ── Content ── */
+  .content-area {
+    max-width: 900px; margin: 20px auto 60px; padding: 0 24px;
+  }
+  .date-group { margin-bottom: 32px; }
   .date-heading {
-    font-size: 13px;
-    font-weight: 700;
-    color: #bbb;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 8px 0;
-    border-bottom: 1px solid #ede9e5;
-    margin-bottom: 14px;
+    font-size: 12px; font-weight: 700; color: #bbb;
+    letter-spacing: 3px; text-transform: uppercase;
+    padding: 8px 0; border-bottom: 1px solid #ede9e5; margin-bottom: 12px;
   }
 
-  /* ── Article Cards ── */
+  /* ── Article Card ── */
   .article-card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 20px 24px;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
+    background: #fff; border-radius: 14px; padding: 18px 22px;
+    margin-bottom: 10px;
+    display: flex; align-items: flex-start; gap: 16px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    text-decoration: none;
-    color: inherit;
     border: 1.5px solid transparent;
-    transition: all 0.2s;
     cursor: pointer;
+    transition: all 0.18s;
   }
   .article-card:hover {
     border-color: #d97757;
@@ -147,79 +122,73 @@
     transform: translateY(-1px);
   }
   .card-time-badge {
-    flex-shrink: 0;
-    background: #fff5f0;
-    border: 1.5px solid #f5ddd0;
-    border-radius: 10px;
-    padding: 8px 14px;
-    text-align: center;
-    min-width: 64px;
+    flex-shrink: 0; background: #fff5f0;
+    border: 1.5px solid #f5ddd0; border-radius: 10px;
+    padding: 8px 12px; text-align: center; min-width: 60px;
   }
-  .card-time-badge .time { font-size: 18px; font-weight: 900; color: #d97757; }
+  .card-time-badge .time { font-size: 17px; font-weight: 900; color: #d97757; }
   .card-time-badge .ampm { font-size: 10px; color: #ccc; letter-spacing: 1px; }
   .card-info { flex: 1; }
-  .card-filename {
-    font-size: 11px;
-    color: #ccc;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
-    font-family: monospace;
-  }
+  .card-filename { font-size: 11px; color: #ccc; letter-spacing: 1px; margin-bottom: 6px; font-family: monospace; }
   .card-topics { display: flex; flex-direction: column; gap: 5px; }
   .topic-line {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.5;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
+    font-size: 14px; color: #444; line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 8px;
   }
   .topic-dot {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    margin-top: 6px;
-    flex-shrink: 0;
+    width: 7px; height: 7px; border-radius: 50%;
+    margin-top: 6px; flex-shrink: 0;
   }
   .dot-pain { background: #d97757; }
   .dot-skill { background: #a07ee0; }
   .dot-trend { background: #4ec99a; }
   .dot-extra { background: #c4b07a; }
   .dot-default { background: #ccc; }
-  .card-arrow {
-    flex-shrink: 0;
-    color: #e0d8d2;
-    font-size: 20px;
-    align-self: center;
-    transition: color 0.2s;
-  }
+  .card-arrow { flex-shrink: 0; color: #e0d8d2; font-size: 20px; align-self: center; transition: color 0.2s; }
   .article-card:hover .card-arrow { color: #d97757; }
 
-  /* ── Empty state ── */
-  .empty-state {
-    text-align: center;
-    padding: 60px 20px;
-    color: #ccc;
-    font-size: 15px;
+  /* ── Viewer ── */
+  #viewer {
     display: none;
+    position: fixed; inset: 0; z-index: 200;
+    background: #f7f5f2;
+    flex-direction: column;
+  }
+  #viewer.open { display: flex; }
+  .viewer-bar {
+    background: #fff; border-bottom: 2px solid #d97757;
+    padding: 14px 24px;
+    display: flex; align-items: center; gap: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .back-btn {
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 18px; border-radius: 20px;
+    background: #d97757; color: #fff;
+    border: none; cursor: pointer;
+    font-size: 14px; font-weight: 700;
+    font-family: inherit; transition: background 0.2s;
+  }
+  .back-btn:hover { background: #c4663f; }
+  .viewer-title {
+    font-size: 13px; color: #aaa;
+    flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .viewer-frame {
+    flex: 1; border: none; background: #fff;
   }
 
-  /* ── Legend ── */
-  .legend {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-    margin-top: 6px;
-    padding: 0 24px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+  /* ── Empty ── */
+  .empty-state {
+    text-align: center; padding: 60px 20px;
+    color: #ccc; font-size: 15px; display: none;
   }
-  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #aaa; }
-  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 </style>
 </head>
 <body>
 
+<!-- ── 頂部 Header ── -->
 <header class="site-header">
   <div class="brand">
     <div class="brand-dot">覺</div>
@@ -231,6 +200,7 @@
   <div class="header-right">每日文宣資料庫</div>
 </header>
 
+<!-- ── Hero ── -->
 <div class="hero">
   <h1>📚 覺知 SEL 教養文宣</h1>
   <p>每日自動產出的 SEL 教育文宣內容<br>涵蓋家長痛點 × 能力培養 × 教育趨勢三大主題</p>
@@ -250,12 +220,12 @@
   </div>
 </div>
 
+<!-- ── 搜尋與篩選 ── -->
 <div class="toolbar">
   <input class="search-input" type="text" id="searchInput" placeholder="🔍 搜尋標題關鍵字⋯">
   <button class="filter-btn active" onclick="filterDate('all', this)">全部</button>
   <button class="filter-btn" onclick="filterDate('today', this)">今天</button>
 </div>
-
 <div class="legend">
   <div class="legend-item"><div class="legend-dot" style="background:#d97757"></div> 家長痛點</div>
   <div class="legend-item"><div class="legend-dot" style="background:#a07ee0"></div> 能力培養</div>
@@ -263,45 +233,59 @@
   <div class="legend-item"><div class="legend-dot" style="background:#c4b07a"></div> 加值類別</div>
 </div>
 
+<!-- ── 文宣列表 ── -->
 <div class="content-area" id="contentArea">
-  <!-- JS 動態填入 -->
   <div class="empty-state" id="emptyState">找不到符合的文宣 🌿</div>
+</div>
+
+<!-- ── 內嵌閱讀器（不開新分頁） ── -->
+<div id="viewer">
+  <div class="viewer-bar">
+    <button class="back-btn" onclick="closeViewer()">← 回首頁</button>
+    <div class="viewer-title" id="viewerTitle"></div>
+  </div>
+  <iframe class="viewer-frame" id="viewerFrame" src=""></iframe>
 </div>
 
 <script>
 // ══════════════════════════════════════════
-//  文宣清單（每次新增檔案後，在這裡加一行）
-//  格式：{ file, date, time, topics[] }
-//  topics 裡每個物件：{ text, type }
-//  type: 'pain' | 'skill' | 'trend' | 'extra'
+//  文宣清單（每次新增檔案後在這裡加一筆）
 // ══════════════════════════════════════════
 const articles = [
   {
     file: "awareness_2026-04-29_1307.html",
     date: "2026-04-29", time: "13:07",
     topics: [
-      { text: "（早期版本）", type: "default" }
+      { text: "「他不是不想讀，是已經提不起力氣為自己努力」——54.3% 國中生正在悄悄倦怠", type: "pain" },
+      { text: "日本最新研究：每天滑短影音超過 150 分鐘，大腦會「縮水」——這不是危言聳聽", type: "trend" },
+      { text: "家不是和平的地方，而是「練習修復」的地方——SEL 真正的起點，從來不在學校", type: "extra" }
     ]
   },
   {
     file: "awareness_2026-04-29_1324.html",
     date: "2026-04-29", time: "13:24",
     topics: [
-      { text: "（早期版本）", type: "default" }
+      { text: "OECD 最新 AI 素養框架出爐：未來孩子贏的，不是會用 AI，而是 AI 學不會的那塊", type: "trend" },
+      { text: "當孩子早上突然說「我不想去學校」——這三句話，請先別急著說", type: "pain" },
+      { text: "他不是懶，是「執行功能」還沒長好——孩子寫作業拖到深夜，腦袋裡其實正在打仗", type: "skill" }
     ]
   },
   {
     file: "awareness_2026-04-29_1334.html",
     date: "2026-04-29", time: "13:34",
     topics: [
-      { text: "（早期版本）", type: "default" }
+      { text: "「孩子早上起來就在鬧」——睡眠不足才是情緒風暴的隱形開關", type: "pain" },
+      { text: "台灣終於動了：教育部悄悄頒布一份「情緒學習」五年計畫，你的孩子學校跟上了嗎？", type: "trend" },
+      { text: "手足天天吵架，你急著當裁判——但研究說，讓他們吵，才是最好的同理心訓練", type: "skill" }
     ]
   },
   {
     file: "awareness_2026-04-29_1503.html",
     date: "2026-04-29", time: "15:03",
     topics: [
-      { text: "（早期版本）", type: "default" }
+      { text: "你問他什麼都說「不知道」——不是孩子不愛你，是他不確定說了會不會被罵", type: "pain" },
+      { text: "孩子等不了五分鐘？科學說，這不是個性問題，是「大腦還在學習」", type: "skill" },
+      { text: "全球排名前段班的新加坡，正在用「情緒課」拉開與其他國家的距離", type: "trend" }
     ]
   },
   {
@@ -335,7 +319,21 @@ const articles = [
 ];
 
 // ══════════════════════════════════════════
-//  渲染邏輯（不需要改）
+//  閱讀器
+// ══════════════════════════════════════════
+function openViewer(file) {
+  document.getElementById('viewerFrame').src = file;
+  document.getElementById('viewerTitle').textContent = file;
+  document.getElementById('viewer').classList.add('open');
+  window.scrollTo(0, 0);
+}
+function closeViewer() {
+  document.getElementById('viewer').classList.remove('open');
+  document.getElementById('viewerFrame').src = '';
+}
+
+// ══════════════════════════════════════════
+//  渲染列表
 // ══════════════════════════════════════════
 const dotClass = { pain: 'dot-pain', skill: 'dot-skill', trend: 'dot-trend', extra: 'dot-extra', default: 'dot-default' };
 const today = new Date().toISOString().slice(0,10);
@@ -345,7 +343,6 @@ let currentSearch = '';
 function render() {
   const area = document.getElementById('contentArea');
   const empty = document.getElementById('emptyState');
-  // filter
   let list = [...articles].reverse();
   if (currentFilter === 'today') list = list.filter(a => a.date === today);
   if (currentSearch) {
@@ -355,27 +352,27 @@ function render() {
       a.file.includes(q) || a.time.includes(q)
     );
   }
-  // clear
   area.querySelectorAll('.date-group').forEach(el => el.remove());
   empty.style.display = list.length === 0 ? 'block' : 'none';
-  // group by date
+
   const groups = {};
   list.forEach(a => { if (!groups[a.date]) groups[a.date] = []; groups[a.date].push(a); });
+
   Object.keys(groups).sort().reverse().forEach(date => {
     const group = document.createElement('div');
     group.className = 'date-group';
     const d = new Date(date + 'T00:00:00');
     const label = `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')}`;
     group.innerHTML = `<div class="date-heading">${label} &nbsp;·&nbsp; ${groups[date].length} 份文宣</div>`;
+
     groups[date].forEach(a => {
-      const card = document.createElement('a');
+      const card = document.createElement('div');
       card.className = 'article-card';
-      card.href = a.file;
-      card.target = '_blank';
-      const timeParts = a.time.split(':');
+      card.onclick = () => openViewer(a.file);
+      const tp = a.time.split(':');
       card.innerHTML = `
         <div class="card-time-badge">
-          <div class="time">${timeParts[0]}:${timeParts[1]}</div>
+          <div class="time">${tp[0]}:${tp[1]}</div>
           <div class="ampm">台灣時間</div>
         </div>
         <div class="card-info">
@@ -385,8 +382,7 @@ function render() {
               <div class="topic-line">
                 <div class="topic-dot ${dotClass[t.type] || 'dot-default'}"></div>
                 <span>${t.text}</span>
-              </div>
-            `).join('')}
+              </div>`).join('')}
           </div>
         </div>
         <div class="card-arrow">›</div>
@@ -395,9 +391,9 @@ function render() {
     });
     area.insertBefore(group, empty);
   });
-  // stats
-  const allTopics = articles.reduce((s,a) => s + a.topics.filter(t=>t.type!=='default').length, 0);
-  const days = new Set(articles.map(a=>a.date)).size;
+
+  const allTopics = articles.reduce((s,a) => s + a.topics.filter(t => t.type !== 'default').length, 0);
+  const days = new Set(articles.map(a => a.date)).size;
   document.getElementById('total-count').textContent = articles.length;
   document.getElementById('total-days').textContent = days;
   document.getElementById('total-topics').textContent = allTopics;
@@ -409,7 +405,6 @@ function filterDate(type, btn) {
   btn.classList.add('active');
   render();
 }
-
 document.getElementById('searchInput').addEventListener('input', e => {
   currentSearch = e.target.value.trim();
   render();
@@ -417,6 +412,5 @@ document.getElementById('searchInput').addEventListener('input', e => {
 
 render();
 </script>
-
 </body>
 </html>
