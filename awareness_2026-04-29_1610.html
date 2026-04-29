@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知 SEL 教育文宣 | 2026.04.29</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    background: #f7f5f2;
+    color: #2d2d2d;
+    min-height: 100vh;
+    padding: 0 0 60px 0;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    background: #fff;
+    border-bottom: 3px solid #d97757;
+    padding: 22px 40px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .brand-logo {
+    width: 48px; height: 48px;
+    background: #d97757;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .brand-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #d97757;
+    letter-spacing: 2px;
+  }
+  .brand-sub {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 1px;
+    margin-top: 2px;
+  }
+  .header-date {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #fdf4f0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #f0d5c8;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #fff8f5 0%, #fdeee6 50%, #fdf5ff 100%);
+    padding: 44px 40px 36px;
+    text-align: center;
+    border-bottom: 1px solid #f0e0d8;
+  }
+  .hero-svg-wrap {
+    margin: 0 auto 24px;
+    max-width: 520px;
+  }
+  .hero-title {
+    font-size: 28px;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: #888;
+    letter-spacing: 1px;
+  }
+  .issue-badge {
+    display: inline-block;
+    background: #d97757;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+  }
+
+  /* ── Cards ── */
+  .cards-section {
+    max-width: 920px;
+    margin: 40px auto 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    overflow: hidden;
+    border: 1px solid #f0ebe5;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 36px rgba(0,0,0,0.12);
+  }
+
+  .card-accent {
+    height: 5px;
+  }
+  .accent-pain { background: linear-gradient(90deg, #d97757, #f0a07a); }
+  .accent-skill { background: linear-gradient(90deg, #8b5cf6, #c084fc); }
+  .accent-trend { background: linear-gradient(90deg, #10b981, #6ee7b7); }
+
+  .card-body {
+    padding: 28px 32px 24px;
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  .tag-pain { background: #fff1eb; color: #c2562e; border: 1px solid #f5c4ae; }
+  .tag-skill { background: #f5f0ff; color: #6d28d9; border: 1px solid #d8b4fe; }
+  .tag-trend { background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+  .tag-extra { background: #fefce8; color: #92400e; border: 1px solid #fde68a; }
+
+  .card-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+
+  .card-divider {
+    border: none;
+    border-top: 1px dashed #ede8e0;
+    margin: 18px 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #bbb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  .section-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+  .section-text strong { color: #d97757; }
+
+  .awareness-box {
+    background: #fff8f5;
+    border-left: 4px solid #d97757;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin: 14px 0;
+  }
+  .awareness-box p {
+    font-size: 15px;
+    color: #5a3020;
+    line-height: 1.7;
+  }
+
+  .copy-box {
+    background: #fafafa;
+    border: 1.5px solid #ede8e0;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-top: 4px;
+  }
+  .copy-box-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #d97757;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .copy-text {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.9;
+    white-space: pre-wrap;
+  }
+
+  .quote-box {
+    text-align: center;
+    margin: 20px 0 6px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #fdf4f0, #f5f0ff);
+    border-radius: 12px;
+  }
+  .quote-text {
+    font-size: 17px;
+    font-weight: 800;
+    color: #2d2d2d;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .quote-mark {
+    font-size: 36px;
+    color: #d97757;
+    line-height: 0.5;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+
+  .card-footer {
+    background: #fafaf8;
+    border-top: 1px solid #f0ebe5;
+    padding: 14px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: #999;
+  }
+  .footer-meta span { display: flex; align-items: center; gap: 4px; }
+  .source-link {
+    font-size: 12px;
+    color: #d97757;
+    text-decoration: none;
+    border: 1px solid #f5c4ae;
+    padding: 3px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  .source-link:hover { background: #fff1eb; }
+
+  .unsplash-tip {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 4px;
+  }
+
+  /* ── Footer ── */
+  .site-footer {
+    text-align: center;
+    margin-top: 52px;
+    padding: 24px;
+    font-size: 13px;
+    color: #bbb;
+    border-top: 1px solid #ede8e0;
+  }
+  .site-footer strong { color: #d97757; }
+</style>
+</head>
+<body>
+
+<!-- ══════ Header ══════ -->
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <circle cx="14" cy="14" r="10" fill="none" stroke="#fff" stroke-width="2.2"/>
+        <path d="M9 14 C9 10 14 8 14 8 C14 8 19 10 19 14 C19 18 14 20 14 20 C14 20 9 18 9 14Z" fill="#fff" opacity="0.8"/>
+        <circle cx="14" cy="14" r="3" fill="#fff"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">覺知 SEL</div>
+      <div class="brand-sub">社會情緒學習 × 教養新知</div>
+    </div>
+  </div>
+  <div class="header-date">2026.04.29 &nbsp;|&nbsp; 16:10</div>
+</header>
+
+<!-- ══════ Hero ══════ -->
+<section class="hero">
+  <div class="hero-svg-wrap">
+    <svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px;">
+      <!-- Background -->
+      <rect width="520" height="200" rx="18" fill="#fff8f5"/>
+      <!-- Decorative circles -->
+      <circle cx="60" cy="100" r="70" fill="#fdeee6" opacity="0.6"/>
+      <circle cx="460" cy="50" r="55" fill="#ede9fe" opacity="0.5"/>
+      <circle cx="420" cy="160" r="45" fill="#d1fae5" opacity="0.4"/>
+      <!-- Main figure: adult and child silhouette -->
+      <ellipse cx="200" cy="150" rx="26" ry="8" fill="#f0d5c8" opacity="0.5"/>
+      <!-- Adult -->
+      <circle cx="200" cy="88" r="18" fill="#d97757"/>
+      <path d="M178 148 Q200 120 222 148" fill="#d97757" opacity="0.85"/>
+      <!-- Child -->
+      <circle cx="250" cy="100" r="13" fill="#8b5cf6"/>
+      <path d="M234 148 Q250 128 266 148" fill="#8b5cf6" opacity="0.8"/>
+      <!-- Heart between them -->
+      <path d="M225 108 C225 104 228 102 231 104 C234 102 237 104 237 108 C237 114 231 120 231 120 C231 120 225 114 225 108Z" fill="#d97757" opacity="0.6"/>
+      <!-- Speech bubble from child -->
+      <rect x="268" y="72" width="120" height="44" rx="12" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+      <polygon points="268,96 256,104 270,104" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="328" y="91" text-anchor="middle" font-size="11" fill="#6d28d9" font-weight="700">孩子的沉默</text>
+      <text x="328" y="106" text-anchor="middle" font-size="10" fill="#888">是另一種求救</text>
+      <!-- Decorative dots -->
+      <circle cx="80" cy="40" r="5" fill="#d97757" opacity="0.3"/>
+      <circle cx="95" cy="60" r="3" fill="#8b5cf6" opacity="0.3"/>
+      <circle cx="440" cy="120" r="6" fill="#10b981" opacity="0.3"/>
+      <circle cx="470" cy="140" r="4" fill="#d97757" opacity="0.25"/>
+      <!-- Labels -->
+      <text x="260" y="180" text-anchor="middle" font-size="12" fill="#bbb" letter-spacing="2">今日三篇教養新知 ✦ 覺知 SEL</text>
+    </svg>
+  </div>
+  <div class="issue-badge">📌 每日精選 No.6</div>
+  <h1 class="hero-title">孩子的沉默、同理心的根<br>還有一場正在改寫教育的革命</h1>
+  <p class="hero-sub">給每一個想讀懂孩子、也讀懂自己的大人</p>
+</section>
+
+<!-- ══════ Cards ══════ -->
+<div class="cards-section">
+
+  <!-- ── Card 1: 家長痛點 ── -->
+  <article class="card">
+    <div class="card-accent accent-pain"></div>
+    <div class="card-body">
+      <div class="tag-row">
+        <span class="tag tag-pain">🧡 家長痛點</span>
+        <span class="tag tag-pain">社交孤島</span>
+        <span class="tag tag-pain">青少年沉默</span>
+      </div>
+      <h2 class="card-title">孩子回家後什麼都不說——<br>不是「沒話講」，是「不知道怎麼開口」</h2>
+
+      <p class="section-label">家長共鳴情境</p>
+      <p class="section-text">
+        那天晚餐，十三歲的他把飯扒完，滑手機，回房，關門。你問「學校還好嗎？」他說「還好」。你問「有沒有發生什麼事？」他說「沒有」。
+        夜深了，你坐在客廳發呆，心裡有一個問號越來越大——<strong>他到底還好嗎？</strong>
+      </p>
+      <hr class="card-divider"/>
+
+      <p class="section-label">教育新知</p>
+      <p class="section-text">
+        精神科醫師近期提出警訊：臨床上越來越多青少年正陷入「<strong>社交孤島</strong>」狀態——表面沉默、不求助，但內在壓力已高度累積。這不是「青春期本來就這樣」，而是孩子的情緒語言匱乏了，他不知道怎麼描述自己的感受，更不相信說出來有用。台灣青少年網路成癮研究也指出，具有社交焦慮傾向的孩子，往往藉由刷社群代替真實連結，惡性循環。
+      </p>
+      <hr class="card-divider"/>
+
+      <div class="awareness-box">
+        <p><strong>覺知觀點：</strong>孩子不說，通常不是「不願意說」，而是從來沒有人示範過「怎麼把內心的事說出來」。SEL 教育最核心的一件事，就是幫孩子建立情緒詞彙庫——讓他知道：喜怒哀懼之外，還有「委屈」「茫然」「被誤解」。有了語言，才有連結的可能。</p>
+      </div>
+      <hr class="card-divider"/>
+
+      <div class="copy-box">
+        <div class="copy-box-label">✦ 可直接發布文案（LINE / FB / IG）</div>
+        <div class="copy-text">孩子沉默的樣子，有時候讓人又心疼又挫敗。
+
+問了什麼都說「還好」「沒事」——
+但你總覺得不只這樣。
+
+其實，孩子不是不願意說。
+他是真的不知道怎麼說。
+
+如果從小，有人陪他練習描述自己的感受；
+如果他知道「我覺得很委屈、不知道為什麼」這句話是被允許說出口的——
+
+那個關著的門，可能會多一條縫。
+
+情緒語言，是連結的起點。
+覺知 SEL，陪孩子從「說出來」開始。</div>
+      </div>
+      <hr class="card-divider"/>
+
+      <div class="quote-box">
+        <span class="quote-mark">"</span>
+        <span class="quote-text">孩子不說話，不是拒絕你——<br>是在等一個他相信說了有用的時刻</span>
+      </div>
+      <p class="unsplash-tip">📸 Unsplash 建議搜尋：teenager sitting alone window light / parent teen distance quiet home</p>
+    </div>
+    <div class="card-footer">
+      <div class="footer-meta">
+        <span>🎯 適合對象：國小高年級至國中家長</span>
+        <span>📱 適合平台：FB 長文、IG 輪播、LINE 群組</span>
+      </div>
+      <a class="source-link" href="https://www.bannedbook.org/bnews/zh-tw/baitai/20260105/2272626.html" target="_blank">來源：禁聞網 2026.01</a>
+    </div>
+  </article>
+
+  <!-- ── Card 2: 能力培養 ── -->
+  <article class="card">
+    <div class="card-accent accent-skill"></div>
+    <div class="card-body">
+      <div class="tag-row">
+        <span class="tag tag-skill">💜 能力培養</span>
+        <span class="tag tag-skill">同理心</span>
+        <span class="tag tag-skill">情緒模仿</span>
+      </div>
+      <h2 class="card-title">同理心不是「天生的」——<br>研究說：是你每一次的回應，在塑造它</h2>
+
+      <p class="section-label">家長共鳴情境</p>
+      <p class="section-text">
+        小妹妹跌倒哭了，五歲的哥哥走過來說「沒在痛啦，你自己撞的」，然後繼續玩玩具。媽媽心裡一緊：<strong>我的孩子，是沒有同理心嗎？</strong>
+      </p>
+      <hr class="card-divider"/>
+
+      <p class="section-label">教育新知</p>
+      <p class="section-text">
+        國家教育研究院最新發表的研究紀要指出：同理心的發展確實受基因與神經發育影響，但<strong>關鍵的後天因素——情緒模仿、教養方式、親子關係，才是家長最能掌握的部分</strong>。孩子學習「感受別人的感受」，最主要的方式就是觀察大人怎麼回應他自己的情緒。當你認真地說「你剛才摔倒，一定很痛很委屈對不對」，你就是在示範：感受別人的痛，是可以做到的事。
+      </p>
+      <hr class="card-divider"/>
+
+      <div class="awareness-box">
+        <p><strong>覺知觀點：</strong>培養同理心，不需要上課，從日常三件事開始：① 說出孩子的感受而不是直接解決問題；② 對孩子真實表達你自己的情緒；③ 當孩子傷害別人時，引導他「猜猜對方現在的感覺」。這三件事，比任何品德課都有效。</p>
+      </div>
+      <hr class="card-divider"/>
+
+      <div class="copy-box">
+        <div class="copy-box-label">✦ 可直接發布文案（LINE / FB / IG）</div>
+        <div class="copy-text">「我的孩子怎麼對別人這麼冷漠？」
+
+先別擔心——
+同理心，不是天生有沒有的問題。
+
+研究告訴我們：
+孩子的同理心，是從他被「同理」的經驗裡長出來的。
+
+每一次你說「你覺得很委屈，對嗎？」
+每一次你沒有說「沒事沒事不要哭了」——
+
+孩子就在學：感受別人的感受，是可以做到的事。
+
+同理心不是品德，是練習。
+覺知 SEL，從親子互動開始。</div>
+      </div>
+      <hr class="card-divider"/>
+
+      <div class="quote-box">
+        <span class="quote-mark">"</span>
+        <span class="quote-text">你怎麼回應孩子的情緒<br>就是在教他怎麼感受這個世界</span>
+      </div>
+      <p class="unsplash-tip">📸 Unsplash 建議搜尋：child empathy comfort friend / parent listening child gentle</p>
+    </div>
+    <div class="card-footer">
+      <div class="footer-meta">
+        <span>🎯 適合對象：幼兒園至國小低年級家長</span>
+        <span>📱 適合平台：IG Reels 字卡、FB 親子社群</span>
+      </div>
+      <a class="source-link" href="https://www.naer.edu.tw/PageDoc?fid=14" target="_blank">來源：國家教育研究院 2026.01</a>
+    </div>
+  </article>
+
+  <!-- ── Card 3: 科學趨勢 ── -->
+  <article class="card">
+    <div class="card-accent accent-trend"></div>
+    <div class="card-body">
+      <div class="tag-row">
+        <span class="tag tag-trend">🌿 科學趨勢</span>
+        <span class="tag tag-trend">SEL 國家政策</span>
+        <span class="tag tag-trend">台灣教育部</span>
+      </div>
+      <h2 class="card-title">教育部正式宣告：SEL 不是加分項<br>——是接下來五年台灣教育的核心</h2>
+
+      <p class="section-label">家長共鳴情境</p>
+      <p class="section-text">
+        職業媽媽王小姐最近在想：孩子補了數學、英文、才藝，但她總覺得少了什麼。孩子會算題目，但遇到挫折就崩潰；功課不差，但在班上沒有好朋友。<strong>這個「缺的那一塊」，到底是什麼？</strong>
+      </p>
+      <hr class="card-divider"/>
+
+      <p class="section-label">教育新知</p>
+      <p class="section-text">
+        台灣教育部於 2025 年 2 月正式發布「<strong>社會情緒學習中長程計畫第一期五年計畫（114～118年）</strong>」，首度以國家政策層級宣示：SEL 社會情緒學習與 12 年國教精神一致，並推動全台學校系統性落實 SEL 五大核心能力：自我覺察、自我管理、社會覺察、人際關係技巧、負責任的決定。這是台灣情緒教育史上最具里程碑意義的政策推進。
+      </p>
+      <hr class="card-divider"/>
+
+      <div class="awareness-box">
+        <p><strong>覺知觀點：</strong>政策是方向，但家庭是土壤。教育部這份五年計畫告訴我們：SEL 不是「特殊孩子才需要」，而是每個孩子都需要、從現在就需要開始練習的基礎能力。在學校還在轉型的此刻，家長可以先從家裡開始——讓情緒被說出來、讓錯誤有機會被理解、讓孩子知道感受和成績一樣值得被重視。</p>
+      </div>
+      <hr class="card-divider"/>
+
+      <div class="copy-box">
+        <div class="copy-box-label">✦ 可直接發布文案（LINE / FB / IG）</div>
+        <div class="copy-text">你知道嗎——
+台灣教育部剛剛啟動了一項五年大計畫。
+
+不是課綱改革，不是考試制度變化。
+是把「情緒學習」正式寫進國家教育政策。
+
+SEL 社會情緒學習：
+自我覺察、自我管理、同理心、人際關係、負責任的選擇——
+這五件事，教育部說，比考試成績更影響孩子的一生。
+
+我們一直知道。
+現在，國家也正式承認了。
+
+在學校慢慢跟上的這段時間，
+家庭，是最快的教室。
+
+覺知 SEL，和你一起不等政策——從今天開始。</div>
+      </div>
+      <hr class="card-divider"/>
+
+      <div class="quote-box">
+        <span class="quote-mark">"</span>
+        <span class="quote-text">情緒學習，已經是國家級的優先課題<br>你家的客廳，可以是最早的教室</span>
+      </div>
+      <p class="unsplash-tip">📸 Unsplash 建議搜尋：classroom Taiwan children learning / education policy school future</p>
+    </div>
+    <div class="card-footer">
+      <div class="footer-meta">
+        <span>🎯 適合對象：所有階段家長、教育工作者</span>
+        <span>📱 適合平台：FB 長文、官方 LINE、演講簡報</span>
+      </div>
+      <a class="source-link" href="https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=CA99860C9634CFB0" target="_blank">來源：教育部 SEL 五年計畫 2025.02</a>
+    </div>
+  </article>
+
+</div><!-- /cards-section -->
+
+<!-- ══════ Footer ══════ -->
+<footer class="site-footer">
+  <p><strong>覺知 SEL 教育</strong> &nbsp;✦&nbsp; 社會情緒學習 × 科學教養 × 家庭實踐</p>
+  <p style="margin-top:6px;">本文宣由 AI 輔助整理，內容僅供教育推廣參考。歡迎轉發，請保留品牌來源。</p>
+  <p style="margin-top:6px; color:#ccc;">自動產出 | 2026.04.29 16:10 台灣時間</p>
+</footer>
+
+</body>
+</html>
