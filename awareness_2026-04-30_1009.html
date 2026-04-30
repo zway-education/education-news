@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知 SEL 教育每日教養文宣 | 2026.04.30 | 10:09</title>
+<style>
+  :root{
+    --brand:#d97757;
+    --brand-soft:#f5e7df;
+    --pain:#d97757;
+    --pain-bg:#fdf1ea;
+    --skill:#7c5fb3;
+    --skill-bg:#f1ecf8;
+    --trend:#5fa896;
+    --trend-bg:#e8f4f0;
+    --gold:#a8916b;
+    --gold-bg:#f4efe5;
+    --ink:#2b2b2b;
+    --ink-soft:#5a5a5a;
+    --ink-mute:#888;
+    --line:#ececec;
+    --bg:#fafaf7;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:32px 22px 80px;}
+  /* HEADER */
+  .header{
+    text-align:center;
+    padding:28px 20px 22px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:30px;
+  }
+  .brand-mark{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;letter-spacing:.32em;color:var(--brand);
+    font-weight:600;margin-bottom:14px;
+  }
+  .brand-mark::before,.brand-mark::after{
+    content:"";width:28px;height:1px;background:var(--brand);opacity:.5;
+  }
+  .header h1{
+    font-size:24px;margin:6px 0 8px;letter-spacing:.04em;font-weight:700;
+  }
+  .date-block{
+    display:inline-block;
+    padding:6px 18px;border-radius:999px;
+    background:var(--brand-soft);color:var(--brand);
+    font-size:13px;font-weight:600;letter-spacing:.08em;
+    margin-top:6px;
+  }
+  .subtitle{color:var(--ink-mute);font-size:13px;margin-top:14px;}
+  /* HERO SVG */
+  .hero{
+    background:linear-gradient(180deg,#fff 0%,#fdf6f0 100%);
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:32px;
+    border:1px solid var(--line);
+  }
+  .hero svg{display:block;width:100%;height:auto;}
+  /* CARD */
+  .card{
+    background:#fff;
+    border-radius:16px;
+    padding:30px 28px;
+    margin-bottom:26px;
+    box-shadow:0 2px 12px rgba(0,0,0,.04);
+    border:1px solid var(--line);
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+  .tag{
+    display:inline-block;padding:4px 12px;border-radius:999px;
+    font-size:12px;font-weight:600;letter-spacing:.04em;
+  }
+  .tag-pain{background:var(--pain-bg);color:var(--pain);}
+  .tag-skill{background:var(--skill-bg);color:var(--skill);}
+  .tag-trend{background:var(--trend-bg);color:var(--trend);}
+  .tag-bonus{background:var(--gold-bg);color:var(--gold);}
+  .card-title{
+    font-size:22px;line-height:1.5;font-weight:700;
+    margin:6px 0 18px;letter-spacing:.01em;
+  }
+  .opening{
+    background:#fafafa;border-left:3px solid var(--ink-soft);
+    padding:14px 18px;border-radius:0 10px 10px 0;
+    color:var(--ink-soft);font-size:15px;margin-bottom:18px;
+  }
+  .card.pain .opening{border-left-color:var(--pain);background:#fdf1ea66;}
+  .card.skill .opening{border-left-color:var(--skill);background:#f1ecf866;}
+  .card.trend .opening{border-left-color:var(--trend);background:#e8f4f066;}
+  h3.section-h{
+    font-size:14px;letter-spacing:.12em;color:var(--ink-mute);
+    margin:22px 0 8px;font-weight:600;
+  }
+  .insight{font-size:15.5px;color:var(--ink);margin:0 0 8px;}
+  .insight strong{color:var(--brand);}
+  .post-block{
+    background:#fcfaf6;border-radius:10px;
+    padding:18px 20px;margin:14px 0;
+    font-size:15px;color:#3a3a3a;
+    border:1px dashed #e2d8c6;
+    white-space:pre-line;
+  }
+  .quote-wrap{
+    margin:18px 0 6px;padding:18px 22px;
+    border-radius:12px;position:relative;
+  }
+  .pain-quote{background:linear-gradient(135deg,#fdf1ea,#fbe6d8);}
+  .skill-quote{background:linear-gradient(135deg,#f1ecf8,#e7defb);}
+  .trend-quote{background:linear-gradient(135deg,#e8f4f0,#d8ece4);}
+  .quote-mark{
+    position:absolute;top:6px;left:14px;
+    font-size:42px;line-height:1;color:rgba(0,0,0,.12);font-family:Georgia;
+  }
+  .quote-text{
+    font-size:17px;font-weight:600;line-height:1.7;
+    text-align:center;padding:8px 14px;letter-spacing:.02em;
+  }
+  .meta{
+    display:grid;grid-template-columns:1fr 1fr;gap:10px;
+    margin-top:18px;padding-top:16px;border-top:1px dashed #e3e3e3;
+    font-size:13px;color:var(--ink-soft);
+  }
+  .meta b{color:var(--ink);font-weight:600;}
+  .src{margin-top:14px;font-size:13px;}
+  .src a{
+    display:inline-block;color:var(--brand);
+    text-decoration:none;border-bottom:1px solid transparent;
+    margin-right:14px;
+  }
+  .src a:hover{border-bottom-color:var(--brand);}
+  /* FOOTER */
+  .footer{
+    text-align:center;color:var(--ink-mute);
+    font-size:12px;margin-top:40px;padding-top:24px;
+    border-top:1px solid var(--line);
+  }
+  .footer .src-summary{margin-top:8px;color:#aaa;}
+  @media(max-width:560px){
+    .card{padding:24px 20px;}
+    .card-title{font-size:19px;}
+    .meta{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="brand-mark">AWARENESS · SEL · EDUCATION</div>
+    <h1>覺知 SEL 教育每日教養文宣</h1>
+    <div class="date-block">2026.04.30 | 10:09</div>
+    <div class="subtitle">— 今日精選 3 則文宣（家長痛點 · 能力培養 · 科學趨勢）—</div>
+  </div>
+
+  <div class="hero">
+    <svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#fff5ed"/>
+          <stop offset="100%" stop-color="#f3e6dc"/>
+        </linearGradient>
+        <linearGradient id="lamp" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#fbe2c5"/>
+          <stop offset="100%" stop-color="#f5b78a"/>
+        </linearGradient>
+      </defs>
+      <rect width="800" height="260" fill="url(#sky)"/>
+      <!-- 桌面 -->
+      <rect x="60" y="200" width="680" height="44" rx="6" fill="#e9d6c2"/>
+      <rect x="60" y="200" width="680" height="6" fill="#d8bfa6"/>
+      <!-- 檯燈光暈 -->
+      <ellipse cx="200" cy="200" rx="160" ry="36" fill="#fbe2c5" opacity=".55"/>
+      <!-- 檯燈 -->
+      <line x1="220" y1="200" x2="220" y2="120" stroke="#7d5a3d" stroke-width="3"/>
+      <path d="M180 80 L260 80 L240 120 L200 120 Z" fill="url(#lamp)" stroke="#c98850" stroke-width="2"/>
+      <circle cx="220" cy="200" r="6" fill="#7d5a3d"/>
+      <!-- 作業本 -->
+      <rect x="120" y="170" width="160" height="34" rx="3" fill="#fff" stroke="#d4c1ac" stroke-width="1.5"/>
+      <line x1="135" y1="180" x2="265" y2="180" stroke="#e9d6bd" stroke-width="1"/>
+      <line x1="135" y1="188" x2="240" y2="188" stroke="#e9d6bd" stroke-width="1"/>
+      <line x1="135" y1="196" x2="220" y2="196" stroke="#e9d6bd" stroke-width="1"/>
+      <!-- 鉛筆 -->
+      <rect x="150" y="160" width="60" height="6" rx="1" fill="#f4cf6e" transform="rotate(-12 180 163)"/>
+      <polygon points="207,158 215,162 207,166" fill="#2b2b2b" transform="rotate(-12 180 163)"/>
+      <!-- 對話泡泡：生氣的家長 -->
+      <ellipse cx="430" cy="100" rx="80" ry="38" fill="#fff" stroke="#d97757" stroke-width="2"/>
+      <text x="430" y="98" text-anchor="middle" font-size="14" fill="#d97757" font-weight="700" font-family="'Noto Sans TC',sans-serif">為什麼又錯！</text>
+      <text x="430" y="116" text-anchor="middle" font-size="12" fill="#a85a3c" font-family="'Noto Sans TC',sans-serif">講第三遍了…</text>
+      <polygon points="408,130 420,140 432,130" fill="#fff" stroke="#d97757" stroke-width="2"/>
+      <!-- 對話泡泡：孩子腦中 -->
+      <ellipse cx="610" cy="92" rx="92" ry="40" fill="#f1ecf8" stroke="#7c5fb3" stroke-width="2"/>
+      <text x="610" y="88" text-anchor="middle" font-size="13" fill="#7c5fb3" font-weight="700" font-family="'Noto Sans TC',sans-serif">我笨／我不行</text>
+      <text x="610" y="108" text-anchor="middle" font-size="11" fill="#5d4690" font-family="'Noto Sans TC',sans-serif">乾脆都不要寫了</text>
+      <polygon points="600,124 612,134 624,124" fill="#f1ecf8" stroke="#7c5fb3" stroke-width="2"/>
+      <!-- 孩子小頭 -->
+      <circle cx="610" cy="180" r="22" fill="#ffd9b0"/>
+      <path d="M590 174 Q610 168 630 174" stroke="#7d5a3d" stroke-width="2" fill="none"/>
+      <circle cx="603" cy="180" r="1.8" fill="#2b2b2b"/>
+      <circle cx="617" cy="180" r="1.8" fill="#2b2b2b"/>
+      <path d="M603 190 Q610 187 617 190" stroke="#a05a3c" stroke-width="1.5" fill="none"/>
+      <!-- 心 (連結) -->
+      <path d="M530 180 q-8 -10 -16 0 q0 12 16 22 q16 -10 16 -22 q-8 -10 -16 0 z" fill="#d97757"/>
+      <!-- 點點裝飾 -->
+      <circle cx="730" cy="50" r="4" fill="#5fa896"/>
+      <circle cx="60" cy="60" r="3" fill="#7c5fb3"/>
+      <circle cx="90" cy="100" r="2" fill="#d97757"/>
+      <circle cx="760" cy="180" r="3" fill="#d97757"/>
+    </svg>
+  </div>
+
+  <!-- =============== CARD 1：家長痛點 - 寫作業崩潰 =============== -->
+  <div class="card pain">
+    <div class="tags">
+      <span class="tag tag-pain">🧡 家長痛點</span>
+      <span class="tag tag-pain">寫作業</span>
+      <span class="tag tag-pain">情緒控制</span>
+    </div>
+    <h2 class="card-title">「為什麼這題講第三遍還在錯？！」——孩子寫作業的時候，正在偷偷學一件比答案更重要的事</h2>
+
+    <div class="opening">
+      晚上 8 點。你坐在他旁邊。<br>
+      第一題講完，他點頭。<br>
+      第二題開始，他寫錯了。<br>
+      第三題你深呼吸——他還是寫錯。<br>
+      你聽到自己的聲音越來越大：「為什麼這麼簡單你都不會？」<br>
+      他低下頭，鉛筆握得更緊，眼神卻飄走了。<br>
+      你發現——他從這題開始，就再也沒有「真的在思考」了。
+    </div>
+
+    <h3 class="section-h">教育新知 · 引用</h3>
+    <p class="insight">研究親子衝突的心理學家發現：寫作業的爭吵 90% 都不是在處理「題目」，而是在處理<strong>父母自己的焦慮</strong>。當大人開始失控，孩子大腦的前額葉（負責思考、解題的區域）會立刻關機，進入「<strong>戰鬥／逃跑／僵住</strong>」模式——也就是說，你越生氣，他越「真的不會」。<br>香港言語治療師也指出：與其滅火，不如「先連結情感、再糾正行為」，這是把每次衝突轉化為自我管理練習的關鍵。</p>
+
+    <h3 class="section-h">覺知 SEL 觀點</h3>
+    <p class="insight">寫作業，從來就不是「數學課」。<br>它是孩子人生第一次，學習「<strong>失敗了還願意再試一次</strong>」的功課。<br>而我們有沒有發現——他到底敢不敢失敗，<strong>取決於我們在旁邊的那張臉</strong>。</p>
+
+    <h3 class="section-h">📱 可直接發布文案</h3>
+    <div class="post-block">「為什麼這題講第三遍還在錯？！」
+
+如果你今晚也對孩子吼了這句話——
+別自責。我們都吼過。
+
+但請記得：
+寫作業的時間，
+其實是孩子在你身邊
+練習「面對挫折」的時間。
+
+他寫不出來不是不會，
+是他在偷看——
+你會用什麼樣的眼神，
+回應一個正在卡住的人。
+
+你的表情，
+就是他未來面對失敗的樣子。
+
+——今晚，當他又寫錯時，
+試著先說一句：「沒關係，我們一起再看一次。」
+
+#覺知SEL #寫作業崩潰 #情緒教養 #親子關係</div>
+
+    <div class="quote-wrap pain-quote">
+      <span class="quote-mark">"</span>
+      <div class="quote-text">他寫的不只是作業，<br>是他人生第一次「面對自己不會」的練習。<br>而你，是他的第一個觀眾。</div>
+    </div>
+
+    <div class="meta">
+      <div><b>適合平台：</b>FB · LINE · IG 圖文（深夜時段）</div>
+      <div><b>適合對象：</b>國小家長、輔導老師</div>
+      <div><b>Unsplash 關鍵字：</b>homework frustrated child / parent helping</div>
+      <div><b>分類層級：</b>第一層・家長痛點</div>
+    </div>
+
+    <div class="src">
+      <b>來源連結：</b><br>
+      <a href="https://mamaclub.com/learn/%E7%9C%8B%E5%AD%A9%E5%AD%90%E5%AF%AB%E4%BD%9C%E6%A5%AD%E7%B8%BD%E7%94%9F%E6%B0%A3%EF%BC%9F%E5%8F%AF%E4%BB%A5%E5%85%88%E5%95%8F%E5%95%8F%E8%87%AA%E5%B7%B1%E4%B8%89%E5%80%8B%E5%95%8F%E9%A1%8C/" target="_blank">媽媽寶寶・看孩子寫作業總生氣？先問自己三個問題</a>
+      <a href="https://www.stheadline.com/parenting/3538475/" target="_blank">星島頭條・拆解 4 大常見親子衝突情景</a>
+      <a href="https://sites.google.com/ynps.tc.edu.tw/counseling/輔導專欄/克服四大類寫功課症候群" target="_blank">永寧國小輔導室・克服四大類寫功課症候群</a>
+    </div>
+  </div>
+
+  <!-- =============== CARD 2：能力培養 - 成長型思維／讚美方式 =============== -->
+  <div class="card skill">
+    <div class="tags">
+      <span class="tag tag-skill">💜 能力培養</span>
+      <span class="tag tag-skill">成長型思維</span>
+      <span class="tag tag-skill">讚美技巧</span>
+    </div>
+    <h2 class="card-title">你以為你在誇他「很棒」——其實，你正在偷偷把他變脆弱</h2>
+
+    <div class="opening">
+      週一下午，幼兒園接送門口。<br>
+      老師笑著告訴你：「他今天疊積木好厲害。」<br>
+      你蹲下來，摸摸孩子的頭：<br>
+      「哇！你好聰明喔～」<br>
+      孩子笑得燦爛。<br>
+      你不知道的是——<br>
+      下一次積木倒下來，<br>
+      他會比同學多哭一倍的時間。<br>
+      因為他怕：「原來我，不夠聰明。」
+    </div>
+
+    <h3 class="section-h">教育新知 · 引用</h3>
+    <p class="insight">史丹佛心理學家 Carol Dweck 在數十年研究後發現：被讚美「<strong>聰明</strong>」的孩子，反而會選擇<strong>簡單的題目</strong>——因為他們不敢冒險「破壞自己很聰明」這件事。<br>而被讚美「<strong>努力、過程、策略</strong>」的孩子，挑戰難題的意願多出一倍以上。<br>香港教育局 2024 年發布的成長型思維教養指南也明確指出：父母的第一句話，決定孩子是「保護自我」還是「擁抱挑戰」。</p>
+
+    <h3 class="section-h">覺知 SEL 觀點</h3>
+    <p class="insight">「你好聰明」是禮物，但會慢慢變成枷鎖。<br>「你很努力」是肯定，會慢慢變成翅膀。<br>真正的讚美——不是評價結果，<strong>是讓他看見過程裡的自己</strong>。</p>
+
+    <h3 class="section-h">📱 可直接發布文案</h3>
+    <div class="post-block">把「你好聰明」收起來。
+
+換成這 3 句，孩子會慢慢長出「不怕失敗」的心：
+
+▌「你剛才一直試到找出方法，這個過程很厲害。」
+▌「你卡住的時候沒有放棄，我看到了。」
+▌「這個想法很特別，你怎麼想到的？」
+
+讚美「聰明」——他怕下次不聰明。
+讚美「努力」——他知道下次可以再來。
+
+孩子不是被誇出聰明，
+是被看見，
+才敢繼續變強。
+
+#成長型思維 #覺知SEL #讚美的方式 #正向教養</div>
+
+    <div class="quote-wrap skill-quote">
+      <span class="quote-mark">"</span>
+      <div class="quote-text">他不是因為聰明而強大，<br>是因為被看見「願意再試」，<br>才慢慢變得不怕。</div>
+    </div>
+
+    <div class="meta">
+      <div><b>適合平台：</b>IG 輪播 · FB · LINE 社群</div>
+      <div><b>適合對象：</b>幼兒～國中家長、教育工作者</div>
+      <div><b>Unsplash 關鍵字：</b>child building blocks / mother praising child</div>
+      <div><b>分類層級：</b>第二層・能力培養</div>
+    </div>
+
+    <div class="src">
+      <b>來源連結：</b><br>
+      <a href="https://readingoutpost.com/mindset-io/" target="_blank">閱讀前哨站・《心態致勝》Carol Dweck 讀後心得</a>
+      <a href="https://crossing.cw.com.tw/article/16995" target="_blank">換日線・成長型思維的反思與爭議</a>
+      <a href="https://mentalhealth.edb.gov.hk/uploads/mh/content/20241017_growth%20mindset.pdf" target="_blank">香港教育局・以成長型思維提升子女抗逆力 (2024.10)</a>
+    </div>
+  </div>
+
+  <!-- =============== CARD 3：科學趨勢 - 哈佛兒童發展中心 EF =============== -->
+  <div class="card trend">
+    <div class="tags">
+      <span class="tag tag-trend">🌿 科學趨勢</span>
+      <span class="tag tag-trend">哈佛兒童發展中心</span>
+      <span class="tag tag-trend">執行功能 EF</span>
+    </div>
+    <h2 class="card-title">哈佛揭密：孩子腦中藏著一座「航空管制塔」——能不能控制塔台，決定他這一生過得順不順</h2>
+
+    <div class="opening">
+      早上 7:25，書包還沒打開，<br>
+      水壺已經灑了，襪子穿一半，<br>
+      你問：「鉛筆盒呢？」<br>
+      他抬起頭，茫然地看著空氣。<br>
+      你常常以為「他就是不專心」、「這孩子粗心」、<br>
+      但科學告訴你——<br>
+      他不是不想做好，<br>
+      是腦中那座「塔台」還在蓋。
+    </div>
+
+    <h3 class="section-h">教育新知 · 引用</h3>
+    <p class="insight">哈佛大學「兒童發展中心」(Center on the Developing Child) 的研究指出：人腦中有一組能力叫「<strong>執行功能 (Executive Function)</strong>」——就像大腦的「<strong>航空管制塔台</strong>」，負責同時管理「<strong>工作記憶</strong>」、「<strong>心智彈性</strong>」、「<strong>自我控制</strong>」三個系統。<br>沒有人天生擁有這組能力，但<strong>每個孩子天生都具備發展它的潛力</strong>。EF 的好壞，比 IQ 更能預測一個人未來的學業、工作、健康、甚至關係穩定度。<br>而養成這套塔台最關鍵的方式，是來自父母的「<strong>來回互動 (Serve and Return)</strong>」——當孩子發出訊號，大人接住、回應、再發回去。</p>
+
+    <h3 class="section-h">覺知 SEL 觀點</h3>
+    <p class="insight">他不是粗心，是塔台還在蓋。<br>而工地最重要的工頭，<strong>是你和他每天的對話、回應、眼神</strong>。<br>不用更多教材，孩子需要的——是你願意「<strong>接他的球</strong>」。</p>
+
+    <h3 class="section-h">📱 可直接發布文案</h3>
+    <div class="post-block">哈佛兒童發展中心研究：
+
+孩子的腦中，藏著一座「航空管制塔」。
+它管 3 件事——
+✈ 記得剛剛要做什麼（工作記憶）
+✈ 卡住了能換條路（心智彈性）
+✈ 想衝動但忍住（自我控制）
+
+這就是「執行功能 (EF)」。
+科學家說：EF 比 IQ 更能預測一個孩子的未來。
+
+而蓋好這座塔的方式——
+不是補習，
+不是評量本，
+是你每天願意「接住他發出的球」：
+
+他指一隻鳥，你回應「對，是麻雀」。
+他問「為什麼」，你不嫌煩答一句。
+他卡住了，你沒搶過來幫他。
+
+你以為的閒聊與等待——
+正是他大腦最重要的工程。
+
+#覺知SEL #執行功能 #哈佛研究 #腦科學教養</div>
+
+    <div class="quote-wrap trend-quote">
+      <span class="quote-mark">"</span>
+      <div class="quote-text">他大腦裡的塔台，<br>不是用教材蓋的，<br>是用你願意接住的每一次對話蓋起來的。</div>
+    </div>
+
+    <div class="meta">
+      <div><b>適合平台：</b>FB 長文 · 部落格 · LINE 社群</div>
+      <div><b>適合對象：</b>家長、教師、教育機構主管</div>
+      <div><b>Unsplash 關鍵字：</b>child brain development / parent eye contact baby</div>
+      <div><b>分類層級：</b>第三層・科學趨勢</div>
+    </div>
+
+    <div class="src">
+      <b>來源連結：</b><br>
+      <a href="https://developingchild.harvard.edu/resource-guides/guide-executive-function/" target="_blank">Harvard・A Guide to Executive Function</a>
+      <a href="https://developingchild.harvard.edu/key-concept/serve-and-return/" target="_blank">Harvard・Serve and Return 來回互動</a>
+      <a href="https://developingchild.harvard.edu/wp-content/uploads/2024/10/InBrief-Executive-Function-Skills-for-Life-and-Learning-2.pdf" target="_blank">Harvard・InBrief: Executive Function (PDF, 2024)</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    內容由「覺知 SEL 教育」每日自動產出　·　歡迎自由轉載與改寫，請保留來源連結<br>
+    <span class="src-summary">來源：媽媽寶寶、星島頭條、永寧國小輔導室、Carol Dweck《心態致勝》、香港教育局、哈佛兒童發展中心</span>
+  </div>
+
+</div>
+</body>
+</html>
