@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知 SEL 教育 ｜ 每日教養文宣 ｜ 2026.04.30 11:10</title>
+<style>
+  :root{
+    --orange:#d97757;
+    --orange-soft:#fbe9df;
+    --purple:#7c5fb5;
+    --purple-soft:#ece6f7;
+    --mint:#5fb5a0;
+    --mint-soft:#e2f3ee;
+    --gold:#a08a5f;
+    --gold-soft:#f3eedf;
+    --ink:#2a2a2a;
+    --grey:#6b6b6b;
+    --line:#ececec;
+    --bg:#fafaf7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.75;
+    padding:32px 16px;
+  }
+  .container{max-width:920px;margin:0 auto}
+  header.brand{
+    text-align:center;
+    padding:24px 16px 36px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:36px;
+  }
+  .brand-eyebrow{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:.3em;
+    color:var(--orange);
+    background:var(--orange-soft);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:18px;
+  }
+  .main-title{
+    font-size:30px;
+    font-weight:800;
+    color:var(--ink);
+    letter-spacing:.02em;
+    margin-bottom:10px;
+  }
+  .main-sub{
+    color:var(--grey);
+    font-size:15px;
+  }
+  .timestamp{
+    margin-top:16px;
+    font-size:13px;
+    color:var(--grey);
+    letter-spacing:.05em;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:30px 28px 28px;
+    margin-bottom:28px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.03);
+  }
+  .card-head{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:18px;
+  }
+  .card-svg{
+    flex:0 0 110px;
+    width:110px;
+    height:110px;
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .card-meta{flex:1;min-width:0}
+  .tag-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:10px;
+  }
+  .tag{
+    font-size:11px;
+    padding:4px 10px;
+    border-radius:999px;
+    letter-spacing:.05em;
+    font-weight:600;
+  }
+  .tag-pain{background:var(--orange-soft);color:var(--orange)}
+  .tag-skill{background:var(--purple-soft);color:var(--purple)}
+  .tag-trend{background:var(--mint-soft);color:var(--mint)}
+  .tag-addon{background:var(--gold-soft);color:var(--gold)}
+  .tag-plain{background:#f0f0f0;color:#555}
+  .post-title{
+    font-size:22px;
+    font-weight:800;
+    color:var(--ink);
+    line-height:1.45;
+    margin-bottom:6px;
+  }
+  .opener{
+    background:#fff8f3;
+    border-left:3px solid var(--orange);
+    padding:14px 16px;
+    border-radius:8px;
+    color:#3a3a3a;
+    font-size:15px;
+    margin:12px 0 18px;
+  }
+  .card.skill .opener{background:#f4efff;border-left-color:var(--purple)}
+  .card.trend .opener{background:#eef9f4;border-left-color:var(--mint)}
+  .card.addon .opener{background:#f8f4e8;border-left-color:var(--gold)}
+  .section-h{
+    font-size:13px;
+    font-weight:700;
+    color:#444;
+    letter-spacing:.08em;
+    margin:14px 0 6px;
+    padding-left:10px;
+    border-left:3px solid var(--orange);
+  }
+  .card.skill .section-h{border-left-color:var(--purple)}
+  .card.trend .section-h{border-left-color:var(--mint)}
+  .card.addon .section-h{border-left-color:var(--gold)}
+  .body-p{
+    color:#3a3a3a;
+    font-size:14.5px;
+    margin-bottom:6px;
+  }
+  .post-box{
+    background:#fafafa;
+    border:1px dashed #d8d8d8;
+    border-radius:10px;
+    padding:16px 18px;
+    margin-top:8px;
+    font-size:14.5px;
+    color:#2c2c2c;
+    white-space:pre-wrap;
+  }
+  .quote{
+    font-size:17px;
+    font-weight:700;
+    color:var(--orange);
+    text-align:center;
+    margin:18px auto 6px;
+    padding:14px 8px;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .card.skill .quote{color:var(--purple)}
+  .card.trend .quote{color:var(--mint)}
+  .card.addon .quote{color:var(--gold)}
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px 24px;
+    font-size:12.5px;
+    color:#666;
+    margin-top:14px;
+    padding-top:14px;
+    border-top:1px solid var(--line);
+  }
+  .meta-row span b{color:#333;font-weight:700;margin-right:4px}
+  .source-link{color:var(--orange);text-decoration:none;font-weight:600}
+  .source-link:hover{text-decoration:underline}
+  .footer{
+    text-align:center;
+    color:#999;
+    font-size:12px;
+    padding:30px 10px;
+    border-top:1px solid var(--line);
+    margin-top:30px;
+  }
+  @media (max-width:560px){
+    .card-head{flex-direction:column}
+    .card-svg{width:100%;height:160px;flex:0 0 auto}
+    .post-title{font-size:19px}
+    .main-title{font-size:24px}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="brand">
+    <span class="brand-eyebrow">覺 知 · S E L · 教 育</span>
+    <h1 class="main-title">每日教養文宣 ｜ 從手足戰爭、同理心，到媽媽的隱形傷</h1>
+    <p class="main-sub">三則來自痛點、能力、家長照顧三個層級的內容企劃</p>
+    <div class="timestamp">台灣時間 2026.04.30 | 11:10</div>
+  </header>
+
+  <!-- ========== Card 1：痛點層 ========== -->
+  <article class="card pain">
+    <div class="card-head">
+      <div class="card-svg">
+        <!-- SVG: two siblings tug-of-war -->
+        <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="110" height="110" fill="#fbe9df"/>
+          <circle cx="35" cy="42" r="13" fill="#d97757"/>
+          <circle cx="75" cy="42" r="13" fill="#b85f3f"/>
+          <rect x="22" y="58" width="26" height="32" rx="6" fill="#d97757"/>
+          <rect x="62" y="58" width="26" height="32" rx="6" fill="#b85f3f"/>
+          <rect x="40" y="68" width="30" height="6" rx="3" fill="#fff"/>
+          <circle cx="35" cy="40" r="2" fill="#fff"/>
+          <circle cx="75" cy="40" r="2" fill="#fff"/>
+          <path d="M30 47 Q35 44 40 47" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M70 47 Q75 50 80 47" stroke="#fff" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <div class="card-meta">
+        <div class="tag-row">
+          <span class="tag tag-pain">痛點 · 手足戰爭</span>
+          <span class="tag tag-plain">FB / LINE 社群</span>
+          <span class="tag tag-plain">雙寶＋家長</span>
+        </div>
+        <h2 class="post-title">「他先打我的！」「是她先搶的！」——你不是法官，你正在主持一堂他們一輩子受用的課</h2>
+      </div>
+    </div>
+
+    <div class="opener">
+      週六下午 4 點，廚房在燒，你左手翻鍋、右手回 LINE。客廳一聲尖叫劃破——七歲的姊姊把五歲的弟弟壓在沙發上，弟弟邊哭邊喊「媽——她又欺負我！」，姊姊立刻接「明明是他先弄壞我的積木！」你深吸一口氣，心裡默念「不要吼、不要吼⋯⋯」第三秒，你還是吼了。
+    </div>
+
+    <h3 class="section-h">教育新知 · 引用</h3>
+    <p class="body-p">伊利諾大學家庭研究專家 Laurie Kramer 教授追蹤手足互動 30 年發現：<b>手足衝突不是教養失敗，而是孩子練習衝突解決、立場切換、情緒修復的「最便宜的訓練場」。</b>真正影響孩子未來人際的，不是「吵不吵」，是父母如何介入。當父母只當裁判（誰對誰錯），孩子學會的是告狀；當父母當教練（你看到他怎麼了？你想怎麼解決？），孩子練出的是同理與協商。</p>
+
+    <h3 class="section-h">覺知 SEL 觀點</h3>
+    <p class="body-p">手足戰爭，是 SEL 五大能力一次到齊的天然教室——情緒辨識、自我覺察、社交覺察、人際技巧、負責任的決定。家裡那個會把你逼瘋的場景，正是孩子練習成為「能合作的大人」的高頻演習。父母的工作不是判出誰對誰錯，而是把這場混亂，變成一次「我們一起學」。</p>
+
+    <h3 class="section-h">📱 可直接發布文案</h3>
+    <div class="post-box">「媽——他先打我的！」
+「不對！她先搶我的玩具！」
+
+每次聽到這兩句，你是不是只想直接喊：「都不准玩了！」
+
+但你知道嗎——
+手足吵架，不是教養失敗，
+是孩子在練「跟人類相處」的最便宜訓練場。
+
+伊利諾大學追蹤 30 年的研究說：
+影響孩子未來人際力的不是「吵不吵」，
+是父母怎麼介入。
+
+❌ 當裁判 → 孩子學會「告狀」
+✅ 當教練 → 孩子練出「協商」
+
+下次他們吵起來，試試這三句：
+1. 「我看到你們兩個都很生氣。」（情緒辨識）
+2. 「你想對方知道什麼？」（換位）
+3. 「你們覺得怎麼辦比較好？」（解決）
+
+你不是少了一個會聽話的孩子，
+你是多了兩個正在練習合作的人類。
+
+#手足戰爭 #覺知SEL #社會情緒學習</div>
+
+    <div class="quote">不要急著當裁判——他們需要的，是教練，不是判決。</div>
+
+    <div class="meta-row">
+      <span><b>分類：</b>第一層 · 家長痛點</span>
+      <span><b>適合對象：</b>育有 2 名以上子女的家長</span>
+      <span><b>Unsplash 主題：</b>siblings / brother sister fight / family conflict</span>
+      <span><b>來源：</b><a class="source-link" href="https://kid-pro.com/empathy-02/" target="_blank">KidPro 兒童發展教育</a></span>
+    </div>
+  </article>
+
+  <!-- ========== Card 2：能力層 ========== -->
+  <article class="card skill">
+    <div class="card-head">
+      <div class="card-svg">
+        <!-- SVG: two faces / mirror neuron concept -->
+        <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="110" height="110" fill="#ece6f7"/>
+          <circle cx="35" cy="55" r="20" fill="#7c5fb5"/>
+          <circle cx="75" cy="55" r="20" fill="#a48bd1"/>
+          <circle cx="30" cy="52" r="2.5" fill="#fff"/>
+          <circle cx="40" cy="52" r="2.5" fill="#fff"/>
+          <path d="M28 62 Q35 66 42 62" stroke="#fff" stroke-width="2" fill="none"/>
+          <circle cx="70" cy="52" r="2.5" fill="#fff"/>
+          <circle cx="80" cy="52" r="2.5" fill="#fff"/>
+          <path d="M68 62 Q75 66 82 62" stroke="#fff" stroke-width="2" fill="none"/>
+          <path d="M48 55 L62 55" stroke="#7c5fb5" stroke-width="1.5" stroke-dasharray="2 2"/>
+          <text x="55" y="22" text-anchor="middle" font-size="11" fill="#7c5fb5" font-weight="700">♡</text>
+        </svg>
+      </div>
+      <div class="card-meta">
+        <div class="tag-row">
+          <span class="tag tag-skill">能力 · 同理心</span>
+          <span class="tag tag-plain">FB / IG</span>
+          <span class="tag tag-plain">學齡前～國中家長</span>
+        </div>
+        <h2 class="post-title">哈佛 20 年追蹤：那個成年後最快樂的人，小時候被反覆教過「一件事」——不是禮貌，不是成績</h2>
+      </div>
+    </div>
+
+    <div class="opener">
+      早上 7 點 50 分，校門口。前面那個小男生不小心踩到一個女生的鞋帶，女生差點跌倒。男生回頭看了一眼，繼續往前走。第二個男生看到了，停下來：「你還好嗎？要我幫你綁嗎？」差三秒，差一個動作——但那個動作，腦科學家會告訴你：是被「練」出來的。
+    </div>
+
+    <h3 class="section-h">教育新知 · 引用</h3>
+    <p class="body-p">哈佛教育學院「Making Caring Common（讓關懷成為日常）」計畫，追蹤上萬名孩子發現：<b>同理心高的孩子，成年後在幸福感、人際品質、領導表現三項指標都顯著領先。</b>而同理心不是天生決定——人類腦中的「鏡像神經元」會在觀察他人時同步啟動，意思是：孩子每天看見什麼，他的大腦就在練什麼。父母一句「你是不是也覺得很失望？」，比一百次「要懂得體諒別人」更有效。</p>
+
+    <h3 class="section-h">覺知 SEL 觀點</h3>
+    <p class="body-p">同理心不是性格，是肌肉。SEL 教學現場最常被忽略的真相是——孩子不會複製你「說」的，只會複製你「真的對他做」的。當你願意對孩子的眼淚先停下來、先承接、再處理，你正在替他連結那條決定一生人際的神經迴路。</p>
+
+    <h3 class="section-h">📱 可直接發布文案</h3>
+    <div class="post-box">哈佛追蹤 20 年發現一件事：
+
+那個長大後最快樂、最有人緣、最被信任的孩子——
+小時候並沒有比較聰明、比較聽話。
+
+他只是反覆被教過一件事：
+「你看到別人怎麼了嗎？」
+
+這就是「同理心」。
+
+腦科學家說，孩子大腦有一群「鏡像神經元」——
+你做什麼，它就練什麼。
+你罵人，它練罵人。
+你停下來、蹲下來、聽他講完，它就練「會聽人」。
+
+所以最有效的同理心教育不是說：
+「你要懂得體諒別人」（孩子聽不懂）
+
+而是當他哭著回家說「他們都不跟我玩」時，
+你說的這句：
+「你一定很難過、也有點氣對不對？」
+
+那一秒，
+他學到的不是「媽媽懂我」，
+而是——
+原來，「懂別人」長這個樣子。
+
+#同理心 #鏡像神經元 #覺知SEL</div>
+
+    <div class="quote">孩子複製的，永遠是你「真的做」的，不是你「一直說」的。</div>
+
+    <div class="meta-row">
+      <span><b>分類：</b>第二層 · 能力培養</span>
+      <span><b>適合對象：</b>3–15 歲孩子的父母、教育工作者</span>
+      <span><b>Unsplash 主題：</b>empathy / child listening / kindness</span>
+      <span><b>來源：</b><a class="source-link" href="https://reading.cw.com.tw/trend-article/606" target="_blank">天下雜誌教育基金會 · 哈佛同理心研究</a></span>
+    </div>
+  </article>
+
+  <!-- ========== Card 3：加值類別 - 家長自我照顧 ========== -->
+  <article class="card addon">
+    <div class="card-head">
+      <div class="card-svg">
+        <!-- SVG: tired mom alone at night -->
+        <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="110" height="110" fill="#f3eedf"/>
+          <circle cx="90" cy="22" r="9" fill="#a08a5f" opacity="0.4"/>
+          <circle cx="86" cy="20" r="9" fill="#f3eedf"/>
+          <circle cx="55" cy="48" r="14" fill="#a08a5f"/>
+          <rect x="38" y="60" width="34" height="32" rx="6" fill="#a08a5f"/>
+          <circle cx="51" cy="46" r="1.8" fill="#fff"/>
+          <circle cx="59" cy="46" r="1.8" fill="#fff"/>
+          <path d="M50 55 Q55 53 60 55" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <circle cx="48" cy="50" r="1.5" fill="#7ec0e8" opacity="0.7"/>
+          <rect x="46" y="74" width="18" height="10" rx="2" fill="#5a4a30"/>
+          <line x1="20" y1="92" x2="92" y2="92" stroke="#a08a5f" stroke-width="1" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="card-meta">
+        <div class="tag-row">
+          <span class="tag tag-addon">加值 · 家長自我照顧</span>
+          <span class="tag tag-plain">IG / FB</span>
+          <span class="tag tag-plain">媽媽社群</span>
+        </div>
+        <h2 class="post-title">「我今天又對他吼了」——媽媽，你不是壞媽媽，你只是太久沒有人問你：「妳還好嗎？」</h2>
+      </div>
+    </div>
+
+    <div class="opener">
+      凌晨一點，全家都睡了。你坐在客廳沙發，手機螢幕還亮著，剛剛你在群組打了一段話又刪掉，打了又刪掉。最後你只打了三個字「我好累」，停了五秒，連這三個字也刪了。然後你走進浴室，把水開到最大，這樣，沒有人會聽到你在哭。
+    </div>
+
+    <h3 class="section-h">教育新知 · 引用</h3>
+    <p class="body-p">心理研究指出，「母職的隱形負荷（mental load）」是現代媽媽憂鬱與羞愧感的最大來源——<b>不是煮飯、不是接送，是 24 小時在腦中運行的「我有沒有做好」自我審查。</b>2026 年《報導者》與多份心理學文獻都指出：媽媽的羞愧感，多半不是來自孩子，而是來自社會與文化裡那個「無私、不累、永遠溫柔」的母親理想形象。當這個形象太遠，每一次的真實情緒，就會被解讀成「我失格」。</p>
+
+    <h3 class="section-h">覺知 SEL 觀點</h3>
+    <p class="body-p">SEL 不是只給孩子的——父母自己的情緒覺察與自我同理，是孩子最早、最深的學習教材。一個能對自己說「我累了，這不是我的錯」的媽媽，孩子就能學會對自己的脆弱說「我累了，這不是我不好」。要對孩子溫柔，先對自己放下審判。</p>
+
+    <h3 class="section-h">📱 可直接發布文案</h3>
+    <div class="post-box">媽媽，
+你今天有沒有又默默地，對自己說過這幾句話：
+
+「我怎麼又吼他了。」
+「別的媽媽都做得到，為什麼我不行。」
+「他這樣，是不是因為我不夠好。」
+
+我想跟你說一句話——
+
+你不是壞媽媽。
+你只是太久，沒有人問你：「妳還好嗎？」
+
+研究說，媽媽的羞愧感
+有 8 成不是來自孩子，
+是來自那個「無私、不累、永遠溫柔」的完美媽媽形象。
+
+但那個形象，從來不存在過。
+真實存在的，是凌晨 1 點，
+還在廚房收拾，邊收邊掉眼淚的，妳。
+
+媽媽，
+你要先成為一個被照顧的人，
+才能繼續照顧那個叫你「媽媽」的人。
+
+今晚，請對自己說一句：
+「我已經做得很多了。
+今天就到這裡。」
+
+#媽媽不必完美 #隱形負荷 #覺知SEL</div>
+
+    <div class="quote">能對孩子溫柔的人，先要學會——對自己溫柔。</div>
+
+    <div class="meta-row">
+      <span><b>分類：</b>加值 · 家長自我照顧</span>
+      <span><b>適合對象：</b>0–12 歲孩子的媽媽、雙薪家庭</span>
+      <span><b>Unsplash 主題：</b>tired mother / mom alone night / motherhood self care</span>
+      <span><b>來源：</b><a class="source-link" href="https://womany.net/read/article/26002" target="_blank">womany · 母職真實研究</a> ／ <a class="source-link" href="https://love-parenting.com/seeing-mothers-invisible-load-1/" target="_blank">愛兒學 · 母親隱形負荷</a></span>
+    </div>
+  </article>
+
+  <div class="footer">
+    覺知 SEL 教育 ｜ 內容企劃資料庫 ｜ 自動產出 2026.04.30 11:10（GMT+8）<br>
+    本期主題跨層：第一層（痛點）｜第二層（能力）｜加值類別（家長自我照顧）
+  </div>
+
+</div>
+</body>
+</html>
