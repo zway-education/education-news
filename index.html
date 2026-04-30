@@ -182,10 +182,10 @@
   .card-time-badge {
     flex-shrink: 0; background: #fff5f0;
     border: 1.5px solid #f5ddd0; border-radius: 10px;
-    padding: 8px 12px; text-align: center; min-width: 60px;
+    padding: 8px 12px; text-align: center; min-width: 76px;
   }
-  .card-time-badge .time { font-size: 17px; font-weight: 900; color: #d97757; }
-  .card-time-badge .ampm { font-size: 10px; color: #ccc; letter-spacing: 1px; }
+  .card-time-badge .nth { font-size: 17px; font-weight: 900; color: #d97757; letter-spacing: 1px; line-height: 1.15; }
+  .card-time-badge .time { font-size: 11px; color: #c8a690; letter-spacing: .5px; margin-top: 2px; }
   .card-info { flex: 1; }
   .card-filename { font-size: 11px; color: #ccc; letter-spacing: 1px; margin-bottom: 6px; font-family: monospace; }
   .card-topics { display: flex; flex-direction: column; gap: 5px; }
@@ -544,6 +544,24 @@ const articles = [
       { text: "那個被擠出群組的女兒，回家只說「沒事」——她不是不想說，是「不會說」", type: "skill" },
       { text: "芬蘭把「情緒」排進國小一年級課表——他們發現一件比成績更難教的事", type: "trend" }
     ]
+  },
+  {
+    file: "awareness_2026-04-30_1309.html",
+    date: "2026-04-30", time: "13:09",
+    topics: [
+      { text: "「我肚子痛，不能考試。」——當孩子的胃替他說出焦慮，請別罵他逃避", type: "pain" },
+      { text: "不是「他懶」，也不是「他笨」——學業真正卡住的，是這項看不見的關鍵能力", type: "skill" },
+      { text: "不是學校的事而已——2026 起，台灣 SEL 教育正式延伸到「你家客廳」", type: "trend" }
+    ]
+  },
+  {
+    file: "awareness_2026-04-30_1409.html",
+    date: "2026-04-30", time: "14:09",
+    topics: [
+      { text: "「他不是叛逆，是把你關在門外保護自己」——國中男孩沉默語言的內裡", type: "pain" },
+      { text: "「他考差了就再也不想碰那本書」——恆毅力，是從第二次再翻開開始的", type: "skill" },
+      { text: "日本「拒學」突破 35 萬人創歷史新高——12 年連續上升的背後是什麼？", type: "trend" }
+    ]
   }
   // ← 之後每次新增文宣，在這裡加一個 { } 物件
 ];
@@ -611,6 +629,17 @@ function render() {
   const groups = {};
   list.forEach(a => { if (!groups[a.date]) groups[a.date] = []; groups[a.date].push(a); });
 
+  // 預先建立「每篇文章在當天的篇數」對照表（依時間由早到晚 = 第 1 篇～第 N 篇）
+  const nthByFile = {};
+  const allByDate = {};
+  articles.forEach(a => { (allByDate[a.date] = allByDate[a.date] || []).push(a); });
+  Object.keys(allByDate).forEach(d => {
+    allByDate[d]
+      .slice()
+      .sort((x, y) => x.time.localeCompare(y.time))
+      .forEach((a, i) => { nthByFile[a.file] = i + 1; });
+  });
+
   Object.keys(groups).sort().reverse().forEach(date => {
     const group = document.createElement('div');
     group.className = 'date-group';
@@ -623,6 +652,7 @@ function render() {
       card.className = 'article-card';
       card.onclick = () => openViewer(a.file);
       const tp = a.time.split(':');
+      const nth = nthByFile[a.file];
 
       // 高亮符合分類的 topic
       const topicsHtml = a.topics.map(t => {
@@ -637,8 +667,8 @@ function render() {
 
       card.innerHTML = `
         <div class="card-time-badge">
-          <div class="time">${tp[0]}:${tp[1]}</div>
-          <div class="ampm">台灣時間</div>
+          <div class="nth">第 ${nth} 篇</div>
+          <div class="time">｜${tp[0]}:${tp[1]}</div>
         </div>
         <div class="card-info">
           <div class="card-filename">${a.file}</div>
