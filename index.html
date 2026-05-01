@@ -721,7 +721,11 @@ let activeTagBtn = null;        // 目前 active 的 tag 按鈕
 function render() {
   const area = document.getElementById('contentArea');
   const empty = document.getElementById('emptyState');
-  let list = [...articles].reverse();
+  // 最新的文宣排在上面：先依日期、再依時間，全部由新到舊
+  let list = [...articles].sort((a, b) => {
+    if (a.date !== b.date) return b.date.localeCompare(a.date);
+    return b.time.localeCompare(a.time);
+  });
 
   // 日期篩選
   if (currentDateFilter === 'today') list = list.filter(a => a.date === today);
