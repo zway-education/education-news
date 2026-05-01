@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.01 18:15</title>
+<style>
+  :root{
+    --brand:#d97757;
+    --brand-soft:#f4d8c8;
+    --pain:#d97757;     /* 痛點＝暖橘 */
+    --skill:#7c5cb0;    /* 能力＝紫色 */
+    --trend:#5dbfa1;    /* 趨勢＝薄荷綠 */
+    --bonus:#a8896b;    /* 加值＝灰金 */
+    --ink:#2d2520;
+    --ink-soft:#5a4a40;
+    --line:#ece4dc;
+    --bg:#fbf8f4;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 22px 80px}
+  header.head{
+    text-align:center;
+    padding:8px 4px 22px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:32px;
+  }
+  .brand{
+    display:inline-block;
+    color:var(--brand);
+    font-weight:700;
+    letter-spacing:.18em;
+    font-size:13px;
+  }
+  .date-line{
+    color:var(--ink-soft);
+    font-size:13.5px;
+    margin-top:6px;
+    letter-spacing:.06em;
+  }
+  h1.title{
+    font-size:24px;
+    line-height:1.55;
+    margin:14px 0 6px;
+    color:var(--ink);
+    font-weight:700;
+  }
+  .subtitle{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin-top:4px;
+  }
+  .hero{
+    margin:24px 0 6px;
+    border-radius:18px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fff3e6 0%,#fde9d8 60%,#f6dec3 100%);
+  }
+  .hero svg{display:block;width:100%;height:auto}
+  article.card{
+    background:#ffffff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:26px 24px 22px;
+    margin:26px 0;
+    box-shadow:0 2px 8px rgba(60,40,28,.04);
+    position:relative;
+  }
+  .star-slot{
+    position:absolute;
+    top:18px; right:18px;
+    width:34px; height:34px;
+    border:1.5px dashed #e2cfbd;
+    border-radius:10px;
+    color:#c9b39d;
+    display:flex; align-items:center; justify-content:center;
+    font-size:17px;
+    user-select:none;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .star-slot:hover{border-color:var(--brand);color:var(--brand)}
+  .star-slot.on{
+    border-style:solid;
+    background:#fff7ed;
+    border-color:var(--brand);
+    color:var(--brand);
+  }
+  .tag-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; padding-right:48px}
+  .tag{
+    display:inline-block;
+    font-size:12.5px;
+    padding:4px 10px;
+    border-radius:999px;
+    color:#fff;
+    letter-spacing:.04em;
+  }
+  .tag.pain{background:var(--pain)}
+  .tag.skill{background:var(--skill)}
+  .tag.trend{background:var(--trend)}
+  .tag.bonus{background:var(--bonus)}
+  .tag.plat{
+    background:#fff;
+    color:var(--ink-soft);
+    border:1px solid var(--line);
+  }
+  h2.headline{
+    font-size:19.5px;
+    line-height:1.55;
+    margin:6px 0 12px;
+    color:var(--ink);
+    font-weight:700;
+  }
+  .scene{
+    background:#faf3eb;
+    border-left:3px solid var(--brand);
+    padding:14px 16px;
+    border-radius:6px 14px 14px 6px;
+    color:var(--ink);
+    font-size:15.5px;
+    line-height:1.85;
+    margin-bottom:14px;
+  }
+  h3.sub{
+    font-size:14px;
+    color:var(--brand);
+    letter-spacing:.1em;
+    margin:18px 0 6px;
+    font-weight:700;
+  }
+  .body{font-size:15.2px; line-height:1.85; color:var(--ink)}
+  .body p{margin:6px 0 10px}
+  .copy-block{
+    background:#fff8f1;
+    border:1px dashed #e7c8ad;
+    border-radius:12px;
+    padding:16px 18px;
+    margin:8px 0 14px;
+    white-space:pre-wrap;
+    font-size:15.2px;
+    line-height:1.95;
+    color:#3a2f28;
+  }
+  .quote{
+    font-size:17px;
+    line-height:1.7;
+    color:var(--brand);
+    border-top:1px dotted #ecd0b8;
+    border-bottom:1px dotted #ecd0b8;
+    padding:12px 4px;
+    margin:14px 0 6px;
+    font-weight:700;
+    text-align:center;
+  }
+  .meta-foot{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:10px;
+    line-height:1.8;
+  }
+  .meta-foot b{color:var(--ink)}
+  .src{
+    margin-top:10px;
+    font-size:12.8px;
+    line-height:1.85;
+    color:var(--ink-soft);
+    word-break:break-all;
+  }
+  .src a{color:var(--brand); text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer.foot{
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:12.5px;
+    padding:30px 4px 0;
+    margin-top:40px;
+    border-top:1px solid var(--line);
+  }
+  .legend{
+    display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
+    font-size:12.5px; margin-top:14px;
+  }
+  .legend span{
+    display:inline-flex; align-items:center; gap:5px;
+    color:var(--ink-soft);
+  }
+  .legend i{
+    display:inline-block; width:10px; height:10px; border-radius:3px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <div class="brand">覺知 SEL 教育 ｜ 每日教養文宣</div>
+  <div class="date-line">2026.05.01 ｜ 18:15 ｜ 台灣時間</div>
+  <h1 class="title">下班那一刻才開始當父母——五個今天就能放進晚餐桌的 SEL 練習</h1>
+  <div class="subtitle">當孩子開始沉默、孤單、卡關、不肯上學、把你推開——他們其實還在問你那同一句話</div>
+  <div class="legend">
+    <span><i style="background:var(--pain)"></i>第一層・痛點</span>
+    <span><i style="background:var(--skill)"></i>第二層・能力</span>
+    <span><i style="background:var(--trend)"></i>第三層・趨勢</span>
+    <span><i style="background:var(--bonus)"></i>加值・對話／兩難</span>
+  </div>
+</header>
+
+<!-- 主視覺 SVG（每次重新構圖，本次：黃昏陽台、圍籬、五盞窗燈） -->
+<div class="hero">
+  <svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- 黃昏漸層天空 -->
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#fbe1bf"/>
+        <stop offset="55%" stop-color="#f6c69a"/>
+        <stop offset="100%" stop-color="#e9a47c"/>
+      </linearGradient>
+      <linearGradient id="bldg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#7d5a48"/>
+        <stop offset="100%" stop-color="#5a3f33"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="800" height="220" fill="url(#sky)"/>
+    <!-- 太陽 -->
+    <circle cx="640" cy="120" r="38" fill="#fff3da" opacity=".95"/>
+    <circle cx="640" cy="120" r="56" fill="#fff3da" opacity=".25"/>
+    <!-- 遠方建築剪影 -->
+    <rect x="0"  y="160" width="120" height="80" fill="#a17460" opacity=".55"/>
+    <rect x="120" y="140" width="80"  height="100" fill="#8d5f4d" opacity=".55"/>
+    <rect x="700" y="150" width="100" height="90" fill="#7d5343" opacity=".55"/>
+    <!-- 主建築 -->
+    <rect x="200" y="120" width="500" height="120" fill="url(#bldg)"/>
+    <!-- 五扇窗（亮燈），代表 5 篇 -->
+    <g>
+      <rect x="230" y="160" width="60" height="50" fill="#fff1cc"/>
+      <rect x="320" y="160" width="60" height="50" fill="#fde0a8"/>
+      <rect x="410" y="160" width="60" height="50" fill="#ffe9b8"/>
+      <rect x="500" y="160" width="60" height="50" fill="#fde0a8"/>
+      <rect x="590" y="160" width="60" height="50" fill="#fff1cc"/>
+      <!-- 窗框十字 -->
+      <g stroke="#5a3f33" stroke-width="2" opacity=".55">
+        <line x1="260" y1="160" x2="260" y2="210"/>
+        <line x1="230" y1="185" x2="290" y2="185"/>
+        <line x1="350" y1="160" x2="350" y2="210"/>
+        <line x1="320" y1="185" x2="380" y2="185"/>
+        <line x1="440" y1="160" x2="440" y2="210"/>
+        <line x1="410" y1="185" x2="470" y2="185"/>
+        <line x1="530" y1="160" x2="530" y2="210"/>
+        <line x1="500" y1="185" x2="560" y2="185"/>
+        <line x1="620" y1="160" x2="620" y2="210"/>
+        <line x1="590" y1="185" x2="650" y2="185"/>
+      </g>
+    </g>
+    <!-- 地面 -->
+    <rect x="0" y="240" width="800" height="80" fill="#3a2920"/>
+    <!-- 圍籬 -->
+    <g stroke="#d97757" stroke-width="2" opacity=".7">
+      <line x1="40"  y1="240" x2="40"  y2="280"/>
+      <line x1="80"  y1="240" x2="80"  y2="280"/>
+      <line x1="120" y1="240" x2="120" y2="280"/>
+      <line x1="160" y1="240" x2="160" y2="280"/>
+      <line x1="40"  y1="258" x2="160" y2="258"/>
+    </g>
+    <!-- 孩子剪影 -->
+    <g fill="#1d1410">
+      <circle cx="100" cy="232" r="8"/>
+      <rect x="94" y="240" width="12" height="28" rx="2"/>
+    </g>
+    <!-- 飛鳥 -->
+    <g stroke="#5a3f33" stroke-width="1.6" fill="none" opacity=".7">
+      <path d="M460 70 q6 -6 12 0 q6 -6 12 0"/>
+      <path d="M520 90 q5 -5 10 0 q5 -5 10 0"/>
+    </g>
+  </svg>
+</div>
+
+<!-- 文案 1：社交孤立（痛點） -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag pain">第一層・痛點 ・社交孤立</span>
+    <span class="tag plat">FB / LINE 家長社群</span>
+  </div>
+  <h2 class="headline">「老師說他午餐都自己吃」——比成績單更先壞的，是那張看不見的同學名單</h2>
+
+  <div class="scene">
+    四年級下學期的家長日，老師把你拉到一旁，輕輕說：<br>
+    「他成績還不錯，只是……午餐時間，他都自己一個人坐。」<br>
+    你愣了三秒，想問「為什麼？」——可是你回家問他，<br>
+    他只說「我自己吃比較快啊」，就低頭滑平板。<br>
+    那天晚上，你看著他書包裡塞著一張沒人簽名的生日卡，<br>
+    心裡的某個地方塌下去。
+  </div>
+
+  <h3 class="sub">教育新知</h3>
+  <div class="body">
+    <p>2024 年兒福聯盟「兒少心理健康調查」公布，37.4% 的台灣兒少同意「世界少了我也沒有關係」，比 2023 年高出 9 個百分點，創近三年新高；其中國中生達 41.7%，遠高於國小生的 33.2%。台灣學童主觀生活滿意度只有 68 分，比國際平均的 75 分低了 7 分。</p>
+    <p>兒盟同步指出：心理疏離感增加，與「真實世界的同儕連結被虛擬社群取代」高度相關——孩子滑得到 1000 個讚，卻可能找不到一個願意和他一起吃午餐的人。</p>
+    <p>CASEL 五大核心能力中，「社會覺察」（social awareness）與「人際技巧」（relationship skills）兩項，正是今天午餐桌上正在悄悄被遺漏的功課。</p>
+  </div>
+
+  <h3 class="sub">覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>孩子說「我自己吃比較快」，不是冷漠——那是他練習了好幾個月之後，最不痛的版本。「沒朋友」這三個字太重，講出口的瞬間就承認了自己「失敗」，他不敢扛。</p>
+    <p>真正有效的第一步，不是逼他「主動找同學玩」，而是先把那張「他根本不孤單」的安全網，鋪在家裡的餐桌上：今晚先讓他知道，不管學校的午餐桌有沒有人，這張晚餐桌永遠有他的位置。</p>
+  </div>
+
+  <h3 class="sub">可直接發布文案</h3>
+  <div class="copy-block">老師說：「他午餐都自己一個人吃。」
+你笑著點頭，
+回家路上眼眶卻紅了。
+
+你問他：「怎麼都沒跟同學一起？」
+他低頭：「我自己吃比較快啊。」
+
+兒福聯盟 2024 年調查：
+台灣 37.4% 的兒少覺得「世界少了我也沒關係」，
+國中生甚至高達 41.7%。
+他們不是叛逆，是孤單。
+
+孩子說「自己吃比較快」，
+不是冷漠，
+是他練習了好幾個月之後——
+最不痛的那個版本。
+
+你不需要替他找朋友。
+你只需要讓他知道，
+不管學校的午餐桌有沒有人坐，
+家裡的這張晚餐桌，
+永遠有他的位置。
+
+#社交孤立 #兒福聯盟 #覺知SEL教育 #家長必讀</div>
+
+  <div class="quote">他不是沒朋友——他只是還在練「就算沒人坐我旁邊，我也值得吃飽」。</div>
+
+  <div class="meta-foot">
+    <div><b>適合對象</b>　國小中高年級、國中生家長；級任老師</div>
+    <div><b>Unsplash 主題</b>　empty lunch table school / boy sitting alone classroom</div>
+  </div>
+  <div class="src">
+    來源：
+    <a href="https://www.children.org.tw/news/news_detail/3245" target="_blank" rel="noopener">兒福聯盟｜2024 不再快樂！台灣兒少幸福指數創新低</a>　·
+    <a href="https://www.children.org.tw/publication_research/research_report/mentalhealth2025" target="_blank" rel="noopener">兒福聯盟｜2025 台灣青少年心理健康調查報告</a>　·
+    <a href="https://casel.org/fundamentals-of-sel/what-is-the-casel-framework/" target="_blank" rel="noopener">CASEL｜五大核心能力（社會覺察 / 人際技巧）</a>
+  </div>
+</article>
+
+
+<!-- 文案 2：青少年不回應父母（痛點） -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag pain">第一層・痛點 ・親子無回應</span>
+    <span class="tag plat">FB 圖文 / LINE 媽媽群</span>
+  </div>
+  <h2 class="headline">「我講話他就戴上耳機」——史丹佛大學發現：13 歲那年，他的大腦真的把你「轉小聲」了</h2>
+
+  <div class="scene">
+    國二的女兒從學校回來，門一甩。<br>
+    你問：「今天還順利嗎？」她背對著你，把耳機塞回耳朵。<br>
+    你提高音量再問一次，她一邊滑手機一邊「嗯」。<br>
+    你站在她房門口三十秒——突然不確定：<br>
+    她到底是討厭你，<br>
+    還是真的沒聽見？
+  </div>
+
+  <h3 class="sub">教育新知</h3>
+  <div class="body">
+    <p>2022 年史丹佛大學醫學院 Daniel Abrams 等人發表於《Journal of Neuroscience》的功能性磁振造影研究發現：12 歲以前的孩子，聽到媽媽聲音時，大腦的獎賞迴路（伏隔核 NAc）與聲音處理區會立刻活化；但約莫 13 歲開始，這個訊號明顯轉向——對「陌生聲音」的反應變強，對「媽媽聲音」的反應減弱。</p>
+    <p>研究團隊直白地說：青春期的大腦正在重新編程「值得我注意的人是誰」。這不是叛逆，是神經發展上「離家」的第一步——孩子的大腦正在告訴他：你已經夠安全了，現在可以開始往外走。</p>
+    <p>《青春期的腦內風暴》一書整理：青春期前額葉與邊緣系統的發展時差，加上多巴胺迴路對「同儕」聲音敏感度上升，會讓父母的話聽起來不再像「重要訊號」，而像「背景白噪音」。</p>
+  </div>
+
+  <h3 class="sub">覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>她不是討厭你，是她的大腦正在替你保留一個「不必再被你保護」的版本。把音量再提高、把訓話再講一次——只會讓那層白噪音更厚。</p>
+    <p>SEL 在這個階段的工作，不是「強迫她聽」，而是「換一條傳訊息的路」：用文字（一句 LINE）、用第三方（教練、阿姨、老師）、用她自己選的時段（睡前 5 分鐘）——讓你的話，繞過那條已經被她大腦設定為「轉小聲」的頻道。</p>
+  </div>
+
+  <h3 class="sub">可直接發布文案</h3>
+  <div class="copy-block">你跟她講話，她戴上耳機。
+你提高音量，她回你「嗯」。
+你站在門口，
+覺得自己是不是哪裡做錯了。
+
+史丹佛大學 2022 年研究發現：
+13 歲那年，孩子的大腦真的把媽媽的聲音「調小」了。
+小時候媽媽的聲音會點亮大腦獎賞區，
+青春期之後，這個訊號開始轉向陌生聲音。
+
+她不是討厭你。
+是她的大腦在說：
+「媽媽，妳已經夠安全了，
+我可以開始往外走了。」
+
+所以——
+晚上 11 點訓話，無效；
+吃飯時打斷她講話，無效；
+但你睡前傳一句 LINE：
+「今天辛苦了，我有看到。」
+那條訊息，會被她讀三遍。
+
+#青春期 #大腦發展 #覺知SEL教育 #媽媽必讀</div>
+
+  <div class="quote">她不是把妳關在門外，是她的大腦正在替妳保留一個「不必再被妳保護」的她。</div>
+
+  <div class="meta-foot">
+    <div><b>適合對象</b>　國中、高中孩子的家長；學校輔導老師</div>
+    <div><b>Unsplash 主題</b>　teenage girl headphones door / mother knocking door</div>
+  </div>
+  <div class="src">
+    來源：
+    <a href="https://www.mombaby.com.tw/articles/9935048" target="_blank" rel="noopener">媽媽寶寶｜史丹佛研究：當孩子不再聽你說話，這不是冷漠，是大腦在成長</a>　·
+    <a href="https://www.jneurosci.org/content/42/19/4019" target="_blank" rel="noopener">Abrams et al. 2022 ｜ Journal of Neuroscience（青少年大腦聲音偏好轉向）</a>　·
+    <a href="https://vocus.cc/article/63725003fd89780001d2d94f" target="_blank" rel="noopener">vocus｜《青春期的腦內風暴》書摘</a>　·
+    <a href="https://vocus.cc/article/692d62cbfd89780001b4b830" target="_blank" rel="noopener">vocus｜好奇而非叛逆：腦科學對青少年的觀察發現</a>
+  </div>
+</article>
+
+
+<!-- 文案 3：認知彈性（能力） -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag skill">第二層・能力 ・認知彈性</span>
+    <span class="tag plat">IG 圖卡 / FB 收藏文</span>
+  </div>
+  <h2 class="headline">「計畫一變他就崩潰」——不是孩子愛固執，是他大腦那個「換軌道」的零件，還沒長好</h2>
+
+  <div class="scene">
+    小三的兒子前一晚答應你週六下午要去公園。<br>
+    早上你發現天氣變了，臨時改成室內樂高館——<br>
+    他從吃早餐那一刻開始崩潰。<br>
+    「你說過要去公園！」「你騙人！」<br>
+    他把湯匙摔到桌上，把樂高館當作背叛。<br>
+    你心想：他怎麼這麼固執？這麼小一件事都不能變？
+  </div>
+
+  <h3 class="sub">教育新知</h3>
+  <div class="body">
+    <p>哈佛大學兒童發展中心（Center on the Developing Child）長期研究指出：「執行功能」（Executive Function, EF）是孩子未來學業、人際、情緒調節的核心地基，由三大子能力組成——工作記憶（working memory）、抑制控制（inhibitory control）、以及「認知彈性」（cognitive flexibility）。</p>
+    <p>認知彈性，指的是「當情況改變時，大腦能不能順利切換到新規則、新計畫、新觀點」。前額葉皮質負責這個「換軌道」的工作，從 3 歲開始萌芽，5 歲快速成熟，但要到 25 歲才完全長好。</p>
+    <p>信誼基金會引述哈佛報告強調：執行功能不是天賦，是練出來的——尤其認知彈性，需要大人在日常生活中刻意「製造小小的變動」，並且在孩子卡住時陪他一起轉，而不是替他直接跳。</p>
+  </div>
+
+  <h3 class="sub">覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>當孩子因為「計畫被改」而炸開，他不是在跟你作對——他是在對「腦中那個還沒長好的換軌道零件」感到挫敗。罵他「不要這麼小題大作」，等於要一個還在學騎平衡車的孩子立刻去飆山路。</p>
+    <p>更有效的是給他一個「轉換中介」：先承認原本的計畫（「我知道你超想去公園」），再幫他預告新的（「樂高館下午 2 點開」），最後給他一個「自己決定的小選擇」（「你要先去還是先吃飯？」）。讓他練習自己換軌，而不是被你硬拉。</p>
+  </div>
+
+  <h3 class="sub">可直接發布文案</h3>
+  <div class="copy-block">他答應你週六去公園。
+你早上改說「下雨，去樂高館」——
+他從吃早餐就開始崩潰。
+「你騙人！」「你說過要去公園！」
+
+你以為他無理取鬧。
+但哈佛大學兒童發展中心發現：
+這個叫「認知彈性」的能力，
+是執行功能（EF）三大零件之一，
+3 歲萌芽、5 歲成熟、25 歲才完全長好。
+
+他不是固執。
+是他大腦裡那條「換軌道」的路，
+還在鋪。
+
+下次計畫要改，請給他三件事：
+1. 承認舊的：「我知道你超想去公園。」
+2. 預告新的：「樂高館下午 2 點開門。」
+3. 給他選擇：「你要先吃飯，還是先換衣服？」
+
+換軌道，是練出來的——
+但只能在被陪著的時候練。
+
+#執行功能 #認知彈性 #覺知SEL教育 #家長筆記</div>
+
+  <div class="quote">不是他想跟你作對，是他大腦那個「換軌道」的零件，還在等你陪他練到能自己切。</div>
+
+  <div class="meta-foot">
+    <div><b>適合對象</b>　幼兒園大班、國小低中年級家長；資源班 / 治療師</div>
+    <div><b>Unsplash 主題</b>　child rainy day window / family changing plans</div>
+  </div>
+  <div class="src">
+    來源：
+    <a href="https://developingchild.harvard.edu/science/key-concepts/executive-function/" target="_blank" rel="noopener">哈佛兒童發展中心｜Executive Function & Self-Regulation 三大核心</a>　·
+    <a href="https://parents.hsin-yi.org.tw/Library/Article/33008" target="_blank" rel="noopener">信誼基金會｜認識「執行功能」──給孩子迎向未來的關鍵能力</a>　·
+    <a href="https://www.combokid.com/knowledge/areas-of-development/cognitive/executive-function/" target="_blank" rel="noopener">ComboKid｜執行功能與兒童前額葉發展</a>　·
+    <a href="https://sccare.com.tw/%E3%80%90%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB%E3%80%91%E6%B7%BA%E8%AB%87%E5%AD%A9%E5%AD%90%E7%9A%84%E5%9F%B7%E8%A1%8C%E5%8A%9F%E8%83%BD%E8%88%87%E5%AD%B8%E7%BF%92/" target="_blank" rel="noopener">SCCare｜淺談孩子的執行功能與學習</a>
+  </div>
+</article>
+
+
+<!-- 文案 4：日本 35 萬不登校（趨勢） -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag trend">第三層・趨勢 ・日本不登校</span>
+    <span class="tag plat">部落格長文 / 媒體投書</span>
+  </div>
+  <h2 class="headline">日本 35 萬人不去上學，連 12 年破紀錄——他們在告訴我們的，不是孩子壞掉了，是學校這條路太窄</h2>
+
+  <div class="scene">
+    2025 年 10 月 29 日，日本文部科學省公布最新數據：<br>
+    2024 學年度全國不登校（拒絕到校）的小中學生達 35 萬 3970 人，<br>
+    連續 12 年創新高，首次突破 35 萬大關。<br>
+    這個數字，已經超過台南市所有國中小學生加起來的人數。<br>
+    一整座城市的孩子，今天早上沒有走進教室。
+  </div>
+
+  <h3 class="sub">教育新知</h3>
+  <div class="body">
+    <p>根據文部科學省 2025 年公布的「兒童生徒問題行動・不登校等諸課題調查結果」：小學不登校 13 萬 7704 人（年增 7334），中學不登校 21 萬 6266 人（年增 154）。每 1000 名學生中就有 38.6 人不登校，其中超過半數（54.2%、19 萬 1958 人）一年缺席超過 90 天。</p>
+    <p>但與台灣家長想像不同：日本社會的解讀並不是「孩子的問題」。文部科學省的官方分析點名了三個結構性背景——「教育機會確保法」推動「不必勉強到校」的觀念定著、新冠疫情後家長與學生對「休息」的看法改變、以及學校生活節奏與孩子的真實節奏之間的落差越來越大。</p>
+    <p>日本因此正在大規模轉向「教育機會多元化」：認證 free school（自由學校）、擴大遠距學習、補助校內「校內適應指導教室」（不必到一般教室也能在校內上課）。這條路，正在重新定義什麼叫「上學」。</p>
+  </div>
+
+  <h3 class="sub">覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>當一個社會有 35 萬個孩子選擇不走進教室，這不是「集體叛逆」——這是教育系統在被孩子用身體投票。台灣這幾年身心症狀、拒學、過度補習帶來的高焦慮，其實是同一張地圖、不同的座標。</p>
+    <p>SEL 之所以在 2025–2026 成為全球教育主流，不是因為大家突然變得「軟」，而是因為大家開始承認：當孩子的內在沒有被理解，他學再多 AI、再多英文、再多奧數，最終也會關上那扇門。「願意去上學」是學業成就的最低條件，而它的根，長在情緒被看見的那一刻。</p>
+  </div>
+
+  <h3 class="sub">可直接發布文案</h3>
+  <div class="copy-block">日本 2024 學年，
+35 萬 3970 個小學、國中生
+沒有走進教室。
+
+連續 12 年破紀錄。
+比台南所有國中小學生加起來還多。
+
+但日本文部科學省這次的解讀，
+不是「孩子壞了」——
+是「教育機會該被確保」。
+他們認證自由學校、擴大遠距、
+補助校內適應指導教室。
+
+換句話說，他們在重新定義
+什麼叫「上學」。
+
+台灣這幾年的身心症、拒學、補習過量，
+是同一張地圖、不同的座標。
+SEL 之所以變成全球主流，
+不是因為大家變軟，
+是因為——
+
+當孩子的情緒沒被看見，
+他學再多英文、再多 AI、
+最後也會關上那扇門。
+
+「願意去上學」，
+是學業的最低條件，
+也是 SEL 的最高證明。
+
+#日本不登校 #SEL #覺知SEL教育 #教育趨勢</div>
+
+  <div class="quote">35 萬個孩子今天沒去上學，他們不是在叛逆——他們在替整個世代，把學校這條路重新量一次寬。</div>
+
+  <div class="meta-foot">
+    <div><b>適合對象</b>　關心國際教育趨勢的家長、教育工作者、政策研究者</div>
+    <div><b>Unsplash 主題</b>　empty japanese classroom / school window morning light</div>
+  </div>
+  <div class="src">
+    來源：
+    <a href="https://www.mext.go.jp/content/20241031-mxt_jidou02-100002753_2_2.pdf" target="_blank" rel="noopener">文部科學省｜兒童生徒問題行動・不登校等調查結果（PDF）</a>　·
+    <a href="https://www.nippon.com/ja/japan-data/h02594/" target="_blank" rel="noopener">nippon.com｜小中不登校過去最多 35 萬人超</a>　·
+    <a href="https://edu.watch.impress.co.jp/docs/news/2059264.html" target="_blank" rel="noopener">Impress Watch 教育｜2024 年度不登校 35 萬人 文科省調查</a>　·
+    <a href="https://megaphone.school-voice-pj.org/2025/11/post-2265/" target="_blank" rel="noopener">Megaphone School Voice Project｜2025 不登校現狀與支援解析</a>　·
+    <a href="https://toco.mom/current-state-of-school-absence-in-japan-mext-2024-data/" target="_blank" rel="noopener">TOCO｜文部科學省 2024 年度資料解讀</a>
+  </div>
+</article>
+
+
+<!-- 文案 5：「我討厭爸爸」對話腳本（加值） -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag bonus">加值・場景對話腳本</span>
+    <span class="tag plat">IG 限動 / FB 短文 / 爸爸社團</span>
+  </div>
+  <h2 class="headline">「我討厭爸爸！」——他甩門喊出那句話的那一刻，你最不該回的，是「你怎麼可以這樣講」</h2>
+
+  <div class="scene">
+    晚餐後，你叫小一的兒子去洗澡。<br>
+    他盯著平板不肯動，你把平板抽走——<br>
+    他突然站起來大喊：「我討厭爸爸！」<br>
+    然後跑回房間摔門。<br>
+    你站在客廳，手還拿著那台平板。<br>
+    你以為自己很冷靜，但其實你心裡有一塊，<br>
+    剛剛被那一句話刺穿。
+  </div>
+
+  <h3 class="sub">教育新知</h3>
+  <div class="body">
+    <p>未來親子《青少年使用說明書》的精神科醫師專訪指出：當孩子（尤其 5 歲到青春期）說「我討厭你」，本質上是「情緒語言發育不完全」的求救——他想說的其實是「我現在好挫折」「我覺得不公平」「我被搶走了重要的東西」，但他還沒長出那麼多字。</p>
+    <p>TNL 關鍵評論網引述兒童青少年精神科醫師補充：青春期孩子嫌惡同性別父母（女兒嫌爸、兒子嫌媽），常常是「分化」（differentiation）的健康訊號——大腦正在學「我不是你」。父母如果這時候用「你怎麼可以這樣講」回擊，會把那條原本要長出獨立性的線剪斷。</p>
+    <p>天才領袖、Uho 優活等臨床親職資源整理出共同建議：第一步先「翻譯情緒」、第二步「承認自己有不完美」、第三步「教他怎麼說會更好聽」——這三步，比任何說教都有效。</p>
+  </div>
+
+  <h3 class="sub">覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>「我討厭爸爸」這句話，經常不是攻擊——是他第一次嘗試把那個太大的感覺裝進語言裡，但詞彙袋裡只剩下「討厭」這個最大號的盒子。</p>
+    <p>SEL 的工作，不是教他「不准討厭」，而是教他「除了討厭，還有別的字可以用」。他罵得出口的那一刻，正好是你陪他長出新字的最好時機。</p>
+  </div>
+
+  <h3 class="sub">可直接發布文案</h3>
+  <div class="copy-block">他甩門大喊：「我討厭爸爸！」
+你站在客廳，手裡還拿著那台被沒收的平板。
+
+你心裡有一塊，剛剛被刺穿。
+
+但請先深呼吸——
+他不是真的討厭你。
+他只是還沒長出那麼多字。
+
+【三句話對話腳本】
+
+第一句（翻譯情緒，不否定）：
+「你現在很氣，氣到只想到『討厭』這兩個字，對吧？」
+
+第二句（承認自己不完美）：
+「爸爸剛剛突然抽走平板，沒有先講，
+這部分爸爸做得不夠好。」
+
+第三句（教他換一個字）：
+「下次你可以說：
+『爸爸我還沒準備好，再五分鐘好不好？』
+這樣我比較聽得懂你想要什麼。」
+
+「我討厭爸爸」
+其實是他第一次想學會表達的求救。
+你今天蹲下來陪他換一個字，
+十年後他就不會用「我討厭你」
+跟全世界吵架。
+
+#爸爸日記 #對話腳本 #覺知SEL教育 #情緒翻譯</div>
+
+  <div class="quote">他喊「我討厭爸爸」，不是想推開你——是他能找到的最大盒子，剛好裝不下他現在多大的委屈。</div>
+
+  <div class="meta-foot">
+    <div><b>適合對象</b>　幼兒園大班～小學中年級孩子的爸爸；爸爸育兒社團</div>
+    <div><b>Unsplash 主題</b>　father child argument / closed door child bedroom</div>
+  </div>
+  <div class="src">
+    來源：
+    <a href="https://futureparenting.cwgv.com.tw/family/content/index/18981" target="_blank" rel="noopener">未來親子｜「我討厭爸爸！」聽到這句話不要急著生氣</a>　·
+    <a href="https://www.thenewslens.com/article/201674" target="_blank" rel="noopener">TNL 關鍵評論網｜《青少年使用說明書》青春期女兒嫌惡爸爸是健康表現</a>　·
+    <a href="https://www.leaderkid.com.tw/2025/06/05/158338/" target="_blank" rel="noopener">天才領袖｜孩子對父母態度差怎麼教？有效溝通 4 方法</a>　·
+    <a href="https://www.uho.com.tw/article-68491.html" target="_blank" rel="noopener">Uho 優活健康網｜當孩子渾身帶刺，父母用愛化解的練習</a>　·
+    <a href="https://myfutureclass.com/12badwaytotreat" target="_blank" rel="noopener">未來塾｜青少年最討厭父母對待的 12 種方式</a>
+  </div>
+</article>
+
+
+<footer class="foot">
+  覺知 SEL 教育｜每日教養文宣｜2026.05.01 18:15<br>
+  痛點 2 ・能力 1 ・趨勢 1 ・加值 1 ｜每日 08:15 / 13:15 / 18:15 自動更新<br>
+  <span style="color:#c9b39d">點擊每張卡片右上角 ☆ 可標記「已實際發布」</span>
+</footer>
+
+</div>
+</body>
+</html>
