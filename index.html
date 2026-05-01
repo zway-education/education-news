@@ -4,13 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>覺知 SEL 教育｜每日文宣資料庫</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  /* Anthropic Brand Tokens
+     - Dark #141413, Light #faf9f5, Mid Gray #b0aea5, Light Gray #e8e6dc
+     - Orange #d97757 (主要強調色，亦為品牌色)
+     - Blue #6a9bcc, Green #788c5d (次要 / 第三強調色)
+     - Headings: Poppins / Body: Lora（中文 fallback：Noto Sans TC、PingFang TC、Microsoft JhengHei）*/
+  :root {
+    --ant-dark:#141413;
+    --ant-light:#faf9f5;
+    --ant-mid:#b0aea5;
+    --ant-light-gray:#e8e6dc;
+    --ant-orange:#d97757;
+    --ant-blue:#6a9bcc;
+    --ant-green:#788c5d;
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-    background: #f7f5f2;
-    color: #2d2d2d;
+    font-family: 'Lora', 'Noto Serif TC', Georgia, 'PingFang TC', 'Microsoft JhengHei', serif;
+    background: var(--ant-light);
+    color: var(--ant-dark);
     min-height: 100vh;
+  }
+  h1, h2, h3, h4, h5, h6,
+  .brand-name, .hero h1, .stat-num, .card-time-badge .nth, .filter-btn, .back-btn,
+  .topic-tag, .date-heading, .tag-cloud-title {
+    font-family: 'Poppins', 'Noto Sans TC', Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
   }
 
   /* ── Header ── */
@@ -35,19 +57,19 @@
     display: flex; align-items: center; justify-content: center;
     color: #fff; font-size: 19px; font-weight: 900;
   }
-  .brand-name { font-size: 20px; font-weight: 800; color: #d97757; letter-spacing: 1px; }
-  .brand-sub { font-size: 11px; color: #bbb; letter-spacing: 2px; margin-top: 2px; }
-  .header-right { font-size: 13px; color: #bbb; }
+  .brand-name { font-size: 20px; font-weight: 700; color: var(--ant-orange); letter-spacing: 1px; }
+  .brand-sub { font-size: 11px; color: var(--ant-mid); letter-spacing: 2px; margin-top: 2px; }
+  .header-right { font-size: 13px; color: var(--ant-mid); }
 
   /* ── Hero ── */
   .hero {
-    background: linear-gradient(135deg, #fff9f6 0%, #fdeee6 100%);
+    background: linear-gradient(135deg, var(--ant-light) 0%, #fdeee6 100%);
     padding: 40px 40px 30px;
     text-align: center;
-    border-bottom: 1px solid #f0ddd4;
+    border-bottom: 1px solid var(--ant-light-gray);
   }
-  .hero h1 { font-size: 26px; font-weight: 900; color: #1e1e1e; margin-bottom: 8px; }
-  .hero p { font-size: 14px; color: #888; line-height: 1.7; }
+  .hero h1 { font-size: 26px; font-weight: 700; color: var(--ant-dark); margin-bottom: 8px; letter-spacing: 1px; }
+  .hero p { font-size: 14px; color: var(--ant-mid); line-height: 1.7; }
   .hero-stats {
     display: flex; gap: 24px; justify-content: center;
     margin-top: 24px; flex-wrap: wrap;
@@ -57,8 +79,8 @@
     text-align: center; box-shadow: 0 2px 12px rgba(217,119,87,0.1);
     border: 1px solid #f5e0d5;
   }
-  .stat-num { font-size: 30px; font-weight: 900; color: #d97757; }
-  .stat-label { font-size: 11px; color: #aaa; margin-top: 3px; letter-spacing: 1px; }
+  .stat-num { font-size: 30px; font-weight: 700; color: var(--ant-orange); letter-spacing: 1px; }
+  .stat-label { font-size: 11px; color: var(--ant-mid); margin-top: 3px; letter-spacing: 1px; }
 
   /* ── Toolbar ── */
   .toolbar {
@@ -69,21 +91,21 @@
   .search-input {
     flex: 1; min-width: 200px;
     padding: 10px 16px;
-    border: 1.5px solid #e8ddd8; border-radius: 30px;
+    border: 1.5px solid var(--ant-light-gray); border-radius: 30px;
     font-size: 14px; outline: none;
-    background: #fff; color: #333;
+    background: #fff; color: var(--ant-dark);
     font-family: inherit;
     transition: border-color 0.2s;
   }
-  .search-input:focus { border-color: #d97757; }
+  .search-input:focus { border-color: var(--ant-orange); }
   .filter-btn {
     padding: 9px 18px; border-radius: 20px;
-    border: 1.5px solid #e0d8d2; background: #fff;
-    font-size: 13px; cursor: pointer; color: #666;
-    font-family: inherit; transition: all 0.2s;
+    border: 1.5px solid var(--ant-light-gray); background: #fff;
+    font-size: 13px; cursor: pointer; color: var(--ant-dark);
+    transition: all 0.2s; font-weight: 500;
   }
   .filter-btn:hover, .filter-btn.active {
-    background: #d97757; border-color: #d97757; color: #fff;
+    background: var(--ant-orange); border-color: var(--ant-orange); color: #fff;
   }
 
   /* ── Legend ── */
@@ -92,7 +114,7 @@
     margin: 10px auto 0; padding: 0 24px;
     max-width: 900px;
   }
-  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #aaa; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ant-mid); }
   .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 
   /* ── Topic Tag Cloud ── */
@@ -100,12 +122,12 @@
     max-width: 900px; margin: 18px auto 0; padding: 0 24px;
   }
   .tag-cloud-title {
-    font-size: 11px; font-weight: 700; color: #ccc;
+    font-size: 11px; font-weight: 600; color: var(--ant-mid);
     letter-spacing: 2px; margin-bottom: 12px;
     display: flex; align-items: center; gap: 8px;
   }
   .tag-cloud-title::after {
-    content: ''; flex: 1; height: 1px; background: #ede9e5;
+    content: ''; flex: 1; height: 1px; background: var(--ant-light-gray);
   }
   .tag-cloud {
     display: flex; flex-wrap: wrap; gap: 8px;
@@ -121,35 +143,35 @@
   .topic-tag:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
   .topic-tag.active { box-shadow: 0 3px 12px rgba(0,0,0,0.15); transform: translateY(-1px); }
 
-  /* 痛點：暖橘 */
+  /* 痛點：Anthropic Orange */
   .tag-pain {
-    background: #fff3ee; color: #c0512a; border-color: #f5cdb8;
+    background: #fff3ee; color: #a85a31; border-color: #f5cdb8;
   }
-  .tag-pain.active, .tag-pain:hover { background: #d97757; color: #fff; border-color: #d97757; }
+  .tag-pain.active, .tag-pain:hover { background: var(--ant-orange); color: #fff; border-color: var(--ant-orange); }
 
-  /* 能力：紫色 */
+  /* 能力：Anthropic Blue */
   .tag-skill {
-    background: #f3f0ff; color: #6b3ea6; border-color: #d4c9f5;
+    background: #eef4fb; color: #3f6997; border-color: #c5d8ec;
   }
-  .tag-skill.active, .tag-skill:hover { background: #7c5cbf; color: #fff; border-color: #7c5cbf; }
+  .tag-skill.active, .tag-skill:hover { background: var(--ant-blue); color: #fff; border-color: var(--ant-blue); }
 
-  /* 趨勢：薄荷綠 */
+  /* 趨勢：Anthropic Green */
   .tag-trend {
-    background: #edfaf4; color: #1e7d52; border-color: #b8e8d0;
+    background: #eff2e6; color: #51613f; border-color: #c8d2b3;
   }
-  .tag-trend.active, .tag-trend:hover { background: #2aa06b; color: #fff; border-color: #2aa06b; }
+  .tag-trend.active, .tag-trend:hover { background: var(--ant-green); color: #fff; border-color: var(--ant-green); }
 
-  /* 加值：灰金 */
+  /* 加值：Mid Gray */
   .tag-extra {
-    background: #f8f5ea; color: #7a6420; border-color: #e0d49a;
+    background: #f3f1ea; color: #6b6960; border-color: var(--ant-light-gray);
   }
-  .tag-extra.active, .tag-extra:hover { background: #b89a38; color: #fff; border-color: #b89a38; }
+  .tag-extra.active, .tag-extra:hover { background: var(--ant-mid); color: #fff; border-color: var(--ant-mid); }
 
-  /* 關鍵字：淺灰 */
+  /* 關鍵字：Dark */
   .tag-kw {
-    background: #f5f3f1; color: #888; border-color: #e5e0db;
+    background: var(--ant-light-gray); color: var(--ant-dark); border-color: var(--ant-light-gray);
   }
-  .tag-kw.active, .tag-kw:hover { background: #555; color: #fff; border-color: #555; }
+  .tag-kw.active, .tag-kw:hover { background: var(--ant-dark); color: #fff; border-color: var(--ant-dark); }
 
   .tag-cloud-divider { width: 100%; height: 0; margin: 4px 0; }
 
@@ -159,9 +181,9 @@
   }
   .date-group { margin-bottom: 32px; }
   .date-heading {
-    font-size: 12px; font-weight: 700; color: #bbb;
+    font-size: 12px; font-weight: 600; color: var(--ant-mid);
     letter-spacing: 3px; text-transform: uppercase;
-    padding: 8px 0; border-bottom: 1px solid #ede9e5; margin-bottom: 12px;
+    padding: 8px 0; border-bottom: 1px solid var(--ant-light-gray); margin-bottom: 12px;
   }
 
   /* ── Article Card ── */
@@ -184,37 +206,37 @@
     border: 1.5px solid #f5ddd0; border-radius: 10px;
     padding: 8px 12px; text-align: center; min-width: 76px;
   }
-  .card-time-badge .nth { font-size: 17px; font-weight: 900; color: #d97757; letter-spacing: 1px; line-height: 1.15; }
-  .card-time-badge .time { font-size: 11px; color: #c8a690; letter-spacing: .5px; margin-top: 2px; }
+  .card-time-badge .nth { font-size: 17px; font-weight: 700; color: var(--ant-orange); letter-spacing: 1px; line-height: 1.15; }
+  .card-time-badge .time { font-size: 11px; color: var(--ant-mid); letter-spacing: .5px; margin-top: 2px; }
   .card-info { flex: 1; }
-  .card-filename { font-size: 11px; color: #ccc; letter-spacing: 1px; margin-bottom: 6px; font-family: monospace; }
+  .card-filename { font-size: 11px; color: var(--ant-mid); letter-spacing: 1px; margin-bottom: 6px; font-family: 'JetBrains Mono', Menlo, monospace; }
   .card-topics { display: flex; flex-direction: column; gap: 5px; }
   .topic-line {
-    font-size: 14px; color: #444; line-height: 1.5;
+    font-size: 14px; color: var(--ant-dark); line-height: 1.6;
     display: flex; align-items: flex-start; gap: 8px;
   }
   .topic-dot {
     width: 7px; height: 7px; border-radius: 50%;
-    margin-top: 6px; flex-shrink: 0;
+    margin-top: 7px; flex-shrink: 0;
   }
-  .dot-pain { background: #d97757; }
-  .dot-skill { background: #a07ee0; }
-  .dot-trend { background: #4ec99a; }
-  .dot-extra { background: #c4b07a; }
-  .dot-default { background: #ccc; }
-  .card-arrow { flex-shrink: 0; color: #e0d8d2; font-size: 20px; align-self: center; transition: color 0.2s; }
-  .article-card:hover .card-arrow { color: #d97757; }
+  .dot-pain { background: var(--ant-orange); }
+  .dot-skill { background: var(--ant-blue); }
+  .dot-trend { background: var(--ant-green); }
+  .dot-extra { background: var(--ant-mid); }
+  .dot-default { background: var(--ant-light-gray); }
+  .card-arrow { flex-shrink: 0; color: var(--ant-light-gray); font-size: 20px; align-self: center; transition: color 0.2s; }
+  .article-card:hover .card-arrow { color: var(--ant-orange); }
 
   /* ── Viewer ── */
   #viewer {
     display: none;
     position: fixed; inset: 0; z-index: 200;
-    background: #f7f5f2;
+    background: var(--ant-light);
     flex-direction: column;
   }
   #viewer.open { display: flex; }
   .viewer-bar {
-    background: #fff; border-bottom: 2px solid #d97757;
+    background: #fff; border-bottom: 2px solid var(--ant-orange);
     padding: 14px 24px;
     display: flex; align-items: center; gap: 14px;
     flex-shrink: 0;
@@ -223,14 +245,14 @@
   .back-btn {
     display: flex; align-items: center; gap: 6px;
     padding: 8px 18px; border-radius: 20px;
-    background: #d97757; color: #fff;
+    background: var(--ant-orange); color: #fff;
     border: none; cursor: pointer;
-    font-size: 14px; font-weight: 700;
-    font-family: inherit; transition: background 0.2s;
+    font-size: 14px; font-weight: 600;
+    transition: background 0.2s;
   }
   .back-btn:hover { background: #c4663f; }
   .viewer-title {
-    font-size: 13px; color: #aaa;
+    font-size: 13px; color: var(--ant-mid);
     flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .viewer-frame {
@@ -240,7 +262,7 @@
   /* ── Empty ── */
   .empty-state {
     text-align: center; padding: 60px 20px;
-    color: #ccc; font-size: 15px; display: none;
+    color: var(--ant-mid); font-size: 15px; display: none;
   }
 </style>
 </head>
@@ -338,6 +360,15 @@
 //  文宣清單（每次新增檔案後在這裡加一筆）
 // ══════════════════════════════════════════
 const articles = [
+  {
+    file: "awareness_2026-05-01_1715.html",
+    date: "2026-05-01", time: "17:15",
+    topics: [
+      { text: "「媽，我肚子痛——」但醫生說沒事，他星期一早上又這樣了", type: "pain" },
+      { text: "「你怎麼這麼聰明！」這句讚美，反而把他養成不敢失敗的孩子", type: "skill" },
+      { text: "MIT用腦電圖證實：用ChatGPT寫作4個月，孩子的大腦連結正在「縮水」", type: "trend" }
+    ]
+  },
   {
     file: "awareness_2026-05-01_1615.html",
     date: "2026-05-01", time: "16:15",
