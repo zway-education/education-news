@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.02 18:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(0,0,0,0.03);
+  position:relative;
+}
+.star-slot{
+  position:absolute;
+  top:14px;
+  right:18px;
+  width:32px;
+  height:32px;
+  border:1.5px dashed #d8cdbf;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  color:#cfc1ad;
+  background:#fff;
+  user-select:none;
+  cursor:pointer;
+  transition:.2s;
+}
+.star-slot:hover{border-color:var(--brand);color:var(--brand)}
+.star-slot.marked{
+  border-style:solid;
+  border-color:#f0b338;
+  background:#fff8e6;
+  color:#f0a000;
+}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;padding-right:48px}
+.tag{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 11px;
+  border-radius:14px;
+  font-weight:500;
+  letter-spacing:.5px;
+}
+.tag-pain{background:#fcebde;color:#b85a3e}
+.tag-skill{background:#ece4f7;color:#6b4ea0}
+.tag-trend{background:#dcf0eb;color:#3d8a78}
+.tag-extra{background:#f0eadc;color:#7a6438}
+.tag-plain{background:#f5efe7;color:#7a6d63}
+
+.card h2{
+  font-size:21px;
+  line-height:1.55;
+  margin:6px 0 18px;
+  color:var(--ink);
+  font-weight:700;
+  letter-spacing:.3px;
+}
+
+.section-label{
+  font-size:12px;
+  font-weight:700;
+  color:var(--brand-deep);
+  letter-spacing:2px;
+  margin:18px 0 6px;
+  text-transform:uppercase;
+}
+.scenario{
+  background:#fdf6ee;
+  border-left:3px solid var(--brand);
+  padding:14px 18px;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  color:#4a3f35;
+  margin:10px 0 4px;
+}
+.research{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  background:#f7f3ec;
+  padding:14px 18px;
+  border-radius:10px;
+  margin:8px 0;
+}
+.research b{color:var(--ink)}
+.insight{
+  font-size:15px;
+  color:var(--ink);
+  margin:6px 0;
+  padding:0 2px;
+}
+.copy{
+  background:#fffaf3;
+  border:1px dashed #e8c9a8;
+  border-radius:12px;
+  padding:18px 20px;
+  font-size:15px;
+  color:#3a322c;
+  margin:10px 0;
+  white-space:pre-wrap;
+  line-height:1.85;
+}
+.script-box{
+  background:#fef4f0;
+  border:1px solid #f3d5c1;
+  border-radius:12px;
+  padding:14px 18px;
+  margin:8px 0;
+}
+.script-box ol{margin:6px 0 4px 18px;padding:0}
+.script-box li{margin:6px 0;color:#4a3f35;font-size:14.5px}
+.script-box li b{color:var(--brand-deep)}
+
+.punchline{
+  background:linear-gradient(135deg,#fce8db 0%,#fff5ec 100%);
+  border-radius:12px;
+  padding:16px 20px;
+  font-weight:700;
+  color:var(--brand-deep);
+  font-size:15.5px;
+  letter-spacing:.4px;
+  margin:14px 0 8px;
+  line-height:1.75;
+}
+
+.meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.meta .row{display:flex;gap:8px;flex-wrap:wrap}
+.meta .row b{color:var(--ink);min-width:74px;display:inline-block}
+.meta a{color:var(--brand-deep);text-decoration:none;border-bottom:1px dotted #e3a78a}
+.meta a:hover{color:var(--brand)}
+
+.footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:36px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  letter-spacing:1px;
+}
+.footer .heart{color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 檔頭 -->
+<div class="head">
+  <span class="brand-tag">覺知 SEL · 每日教養文宣</span>
+  <h1>晚餐桌上的那 7 秒，是孩子最深的 SEL 課</h1>
+  <div class="date">2026.05.02 ｜ 18:15 ｜ 台灣時間</div>
+  <div class="sub">五則文案 ｜ 跨四個層級 ｜ 從晚餐叫不動、玄關穿衣戰、教室爆炸前 30 秒，到紐西蘭橄欖球員推進 600 所小學的心理課，與外婆接小孫女放學那句「沒有人喜歡我……」</div>
+</div>
+
+<!-- 主視覺：黃昏窗邊・晚餐時刻 -->
+<div class="hero">
+<svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce4d0"/>
+      <stop offset="55%" stop-color="#f4b894"/>
+      <stop offset="100%" stop-color="#d97757"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbeadb"/>
+      <stop offset="100%" stop-color="#f0d5b9"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#fff3d6" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff3d6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景天空 -->
+  <rect width="880" height="360" fill="url(#sky)"/>
+  <!-- 地板/桌面 -->
+  <rect y="260" width="880" height="100" fill="url(#floor)"/>
+
+  <!-- 太陽 -->
+  <circle cx="730" cy="140" r="48" fill="#ffe1c0" opacity="0.95"/>
+  <circle cx="730" cy="140" r="32" fill="#ffd09a"/>
+
+  <!-- 雲 -->
+  <ellipse cx="160" cy="80" rx="55" ry="14" fill="#fff" opacity="0.5"/>
+  <ellipse cx="220" cy="90" rx="40" ry="10" fill="#fff" opacity="0.4"/>
+  <ellipse cx="600" cy="60" rx="48" ry="12" fill="#fff" opacity="0.45"/>
+
+  <!-- 窗框 -->
+  <rect x="60" y="40" width="320" height="220" fill="none" stroke="#8b6f5a" stroke-width="3"/>
+  <line x1="220" y1="40" x2="220" y2="260" stroke="#8b6f5a" stroke-width="2"/>
+  <line x1="60" y1="150" x2="380" y2="150" stroke="#8b6f5a" stroke-width="2"/>
+
+  <!-- 窗外景色（樹影） -->
+  <ellipse cx="120" cy="230" rx="26" ry="34" fill="#a87a55" opacity="0.55"/>
+  <rect x="116" y="230" width="6" height="26" fill="#7a5a3e" opacity="0.6"/>
+  <ellipse cx="320" cy="225" rx="30" ry="38" fill="#a87a55" opacity="0.5"/>
+  <rect x="316" y="225" width="6" height="32" fill="#7a5a3e" opacity="0.6"/>
+
+  <!-- 燈光暈 -->
+  <ellipse cx="610" cy="220" rx="180" ry="120" fill="url(#lamp)"/>
+
+  <!-- 餐桌 -->
+  <rect x="430" y="245" width="420" height="14" rx="3" fill="#c69370"/>
+  <rect x="445" y="259" width="8" height="60" fill="#a87a55"/>
+  <rect x="820" y="259" width="8" height="60" fill="#a87a55"/>
+
+  <!-- 桌上餐盤 -->
+  <ellipse cx="540" cy="244" rx="32" ry="6" fill="#fff" stroke="#d8c4ad" stroke-width="1"/>
+  <ellipse cx="540" cy="240" rx="28" ry="5" fill="#fdf6ee"/>
+  <circle cx="540" cy="238" r="6" fill="#e8a87c"/>
+  <ellipse cx="700" cy="244" rx="32" ry="6" fill="#fff" stroke="#d8c4ad" stroke-width="1"/>
+  <ellipse cx="700" cy="240" rx="28" ry="5" fill="#fdf6ee"/>
+  <circle cx="700" cy="238" r="6" fill="#a8c87c"/>
+
+  <!-- 一杯熱湯（冒煙） -->
+  <ellipse cx="620" cy="244" rx="22" ry="5" fill="#fff" stroke="#d8c4ad" stroke-width="1"/>
+  <ellipse cx="620" cy="241" rx="18" ry="4" fill="#e8a87c"/>
+  <path d="M612 232 Q610 222 615 215 Q620 208 616 198" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M624 232 Q628 222 622 213 Q618 205 624 196" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- 大人剪影（媽媽，左側站著喊孩子） -->
+  <ellipse cx="475" cy="170" rx="20" ry="22" fill="#3d2e23"/>
+  <path d="M455 192 L455 270 L495 270 L495 192 Q495 188 475 188 Q455 188 455 192 Z" fill="#3d2e23"/>
+  <!-- 對話泡泡 -->
+  <g>
+    <ellipse cx="412" cy="135" rx="58" ry="26" fill="#fff" stroke="#d97757" stroke-width="2"/>
+    <path d="M450 155 L460 175 L445 162 Z" fill="#fff" stroke="#d97757" stroke-width="2"/>
+    <text x="412" y="142" font-size="16" fill="#b85a3e" text-anchor="middle" font-weight="700">吃飯了！</text>
+  </g>
+
+  <!-- 小孩剪影（右側專注拼東西） -->
+  <ellipse cx="775" cy="200" rx="14" ry="16" fill="#3d2e23"/>
+  <path d="M762 216 L762 270 L788 270 L788 216 Q788 213 775 213 Q762 213 762 216 Z" fill="#3d2e23"/>
+  <!-- 小孩手 -->
+  <circle cx="757" cy="240" r="5" fill="#3d2e23"/>
+  <!-- 樂高方塊 -->
+  <rect x="745" y="240" width="12" height="8" fill="#d97757"/>
+  <rect x="751" y="232" width="10" height="8" fill="#8c6bc7"/>
+  <circle cx="751" cy="240" r="1.2" fill="#3d2e23"/>
+  <circle cx="755" cy="240" r="1.2" fill="#3d2e23"/>
+
+  <!-- 小孩頭頂的「7秒」標記 -->
+  <g>
+    <circle cx="775" cy="155" r="22" fill="#5fb3a1" opacity="0.95"/>
+    <text x="775" y="155" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">大腦</text>
+    <text x="775" y="170" font-size="11" fill="#fff" text-anchor="middle">換軌道中</text>
+    <text x="775" y="125" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">7 秒</text>
+  </g>
+
+  <!-- 標題文字 -->
+  <text x="40" y="332" font-size="14" fill="#5a4f46" letter-spacing="2">覺知 SEL · Daily Awareness · 2026.05.02 18:15</text>
+</svg>
+</div>
+
+
+<!-- ============ CARD 1：第一層 痛點 · 講不聽／轉換成本 ============ -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('marked');this.textContent=this.classList.contains('marked')?'★':'☆'" title="標記已發布">☆</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">🧡 第一層 ｜ 痛點 · 講不聽／轉換成本</span>
+    <span class="tag tag-plain">適合：FB 長文 / IG 圖文輪播 / LINE 媽媽群</span>
+    <span class="tag tag-plain">對象：學齡前～國小高年級家長</span>
+  </div>
+  <h2>「我叫他三次他都沒應」——他不是裝沒聽到，是大腦正在「換軌道」的那 7 秒</h2>
+
+  <div class="section-label">家長共鳴開頭</div>
+  <div class="scenario">「兒子！吃飯了！」喊一次。沒應。「兒——子！」第二次，聲音已經高了八度。第三次我直接走到房門口，他正趴在地上拼樂高，小手指還夾著一塊紅色積木，眼神沒抬。我胸口的火，啪一聲點起來——「叫你三次了你聽不到嗎？！」他這才像被打雷劈到一樣抬頭。</div>
+
+  <div class="section-label">教育新知引用</div>
+  <div class="research">加州大學戴維斯分校認知神經實驗室（Center for Mind &amp; Brain）長期研究「<b>注意力轉換成本（task-switching cost）</b>」：兒童大腦從深度專注切換到下一個任務，需要 <b>7–15 秒「神經滑行時間」</b>。Russell Barkley 在《家有過動兒》與 CHADD（美國 ADHD 協會）家長手冊中明確指出：當孩子被叫「沒反應」，多數時候不是「不尊重」，而是負責「停下手邊→轉頭→處理新指令」的<b>前額葉執行功能（executive function）</b>還在啟動。叫得越急、語氣越逼，孩子的杏仁核會先一步進入防衛狀態——耳朵聽到了，大腦反而關閉。</div>
+
+  <div class="section-label">覺知 SEL 觀點轉化</div>
+  <div class="insight">我們以為「聽話」是耳朵的事，其實它是大腦皮質的事。孩子不是不尊重你——是他大腦那塊「停下、抬頭、切換」的零件，比我們想的慢。CASEL 五大核心能力裡的「自我管理」，第一塊地基不是控制情緒，是<b>「能被溫柔地中斷」</b>。每一次你忍住三秒、走到他身邊、輕拍他的肩、平視他的眼睛說一句「五分鐘內收，OK 嗎？」——你不是在妥協，是在替他大腦寫下一條新的迴路：被打斷可以是溫柔的、人是可以被尊重地切換的。</div>
+
+  <div class="section-label">可直接發布文案</div>
+  <div class="copy">「我兒子是不是耳朵壞了？」
+晚餐叫他三次都沒回應，
+我每次都氣到血壓上升。
+
+直到我看到一篇研究：
+孩子大腦從深度專注「切換」到下一件事，
+需要 7–15 秒的「神經滑行時間」。
+
+加州大學戴維斯分校的腦科學家說：
+我們以為「叫不動」是態度問題，
+其實是大腦那塊「換軌道」的零件，還在裝。
+
+從那之後，我學會做一件小事——
+不是更大聲，是更靠近。
+走到他身邊、輕拍肩膀、平視他眼睛說一句：
+「五分鐘內收喔，可以嗎？」
+
+他真的會收。
+而且我發現——
+他不是叫不動。
+是過去那幾年，他一直被「叫得很痛」。
+
+✦ 講不聽，從來不是耳朵的事；
+✦ 是大腦那塊「被尊重地切換」的肌肉，還在練。
+
+#講不聽 #叫不動 #轉換成本 #覺知教養 #SEL #自我管理</div>
+
+  <div class="punchline">他不是叫不動，是大腦正在請你等他 7 秒——那 7 秒，是你給他「被尊重地切換」的禮物。</div>
+
+  <div class="meta">
+    <div class="row"><b>來源：</b>
+      <a href="https://mindbrain.ucdavis.edu/" target="_blank">UC Davis Center for Mind &amp; Brain</a>、
+      <a href="https://chadd.org/for-parents/overview/" target="_blank">CHADD 美國 ADHD 協會家長手冊</a>、
+      Russell Barkley《家有過動兒》、親子天下《孩子叫不動 6 原因》
+    </div>
+    <div class="row"><b>🖼 Unsplash：</b>boy playing lego concentrated, mother calling kid dinner, frustrated mom kitchen evening</div>
+  </div>
+</section>
+
+
+<!-- ============ CARD 2：第一層 痛點 · 早晨穿衣／自主權拉鋸 ============ -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('marked');this.textContent=this.classList.contains('marked')?'★':'☆'" title="標記已發布">☆</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">🧡 第一層 ｜ 痛點 · 早晨穿衣戰／自主權拉鋸</span>
+    <span class="tag tag-plain">適合：FB 親職社團 / IG 圖文 / 部落格</span>
+    <span class="tag tag-plain">對象：學齡前～國小中年級家長</span>
+  </div>
+  <h2>「我不要穿這件！」——她蹲在玄關尖叫的那一刻，不是在挑戰你，是在告訴你「我長大了」</h2>
+
+  <div class="section-label">家長共鳴開頭</div>
+  <div class="scenario">早上 7:25，校門 7:40 鐘響。她蹲在玄關地板上，把媽媽幫她搭好的那件粉紅外套丟到腳邊，眼淚快要決堤——「我不要穿這件！我要穿那件藍色的！」我（她爸）整個人想直接抓著她衝出門。但我深呼吸，蹲下來，把臉放到跟她一樣的高度。她瞪我，鼻子吸了一下。</div>
+
+  <div class="section-label">教育新知引用</div>
+  <div class="research">心理學家 Erik Erikson 的人格發展理論指出：<b>2–6 歲是「自主 vs 羞愧與懷疑」</b>的核心階段，這幾年孩子大腦正在建構一條叫做「我是一個獨立個體」的神經迴路。加州大學柏克萊兒童發展實驗室主持人 Alison Gopnik 在《<b>The Philosophical Baby</b>》中明確指出：學齡前的「我不要」不是叛逆，是大腦正在第一次試探「我可以決定我是誰」的疆界。Jane Nelsen《<b>正向教養</b>》與信誼基金會 2025 家長手冊都強調：被剝奪選擇權的孩子，到了青春期更容易出現極端反抗——因為他從沒練過「在小事上贏過大人」。</div>
+
+  <div class="section-label">覺知 SEL 觀點轉化</div>
+  <div class="insight">「我不要」這三個字，不是要打敗你——是孩子第一次練習「我有權決定我是誰」。CASEL 五大能力裡的「<b>負責任的決定</b>」，根就紮在這裡。你不是輸給她——是讓她贏一場剛剛好的小仗，她才有底氣，未來在更大的人生裡（情人、職場、價值觀），對不該的事說出「不」。所以下次玄關崩潰，試著不問「妳為什麼這麼難搞」，改問一句：<b>「藍色或粉紅色，妳選一個，30 秒內。」</b>——你給的不是兩件外套，是兩個未來。</div>
+
+  <div class="section-label">可直接發布文案</div>
+  <div class="copy">早上 7:25，
+她蹲在玄關地板尖叫——
+「我不要穿這件！」
+
+我心裡的火，跟時鐘一樣分秒在跳。
+但我忍住沒吼，蹲下來，跟她一樣高。
+
+後來我才知道，
+心理學家 Erik Erikson 把 2–6 歲叫做
+「自主 vs 羞愧」的關鍵期。
+
+加州大學柏克萊 Alison Gopnik 教授說：
+這個階段的「我不要」，
+不是叛逆——
+是大腦第一次在問：「我可以決定我是誰嗎？」
+
+被剝奪選擇權的孩子，
+到了青春期會用更激烈的方式問同一個問題。
+
+所以那天早上，我做了一件小事——
+我問她：「藍色或粉紅色，妳選一個，30 秒內。」
+
+她哭著選了藍色。
+然後 31 秒後我們牽手出門。
+
+✦ 你讓她贏了一場剛剛好的小仗，
+✦ 她未來，才贏得了人生那場大的。
+
+#自主權 #早晨之爭 #正向教養 #覺知教養 #SEL #負責任的決定</div>
+
+  <div class="punchline">你讓她決定外套的顏色，是在替她未來，存「能不能說不」的本錢。</div>
+
+  <div class="meta">
+    <div class="row"><b>來源：</b>
+      <a href="https://www.simplypsychology.org/erik-erikson.html" target="_blank">Erik Erikson 八階段論</a>、
+      <a href="https://alisongopnik.com/" target="_blank">Alison Gopnik《The Philosophical Baby》</a>、
+      <a href="https://www.positivediscipline.com/" target="_blank">Jane Nelsen《Positive Discipline》</a>、信誼基金會《當孩子說我不要》家長手冊
+    </div>
+    <div class="row"><b>🖼 Unsplash：</b>little girl tantrum entryway, dad kneeling daughter morning, child choosing clothes</div>
+  </div>
+</section>
+
+
+<!-- ============ CARD 3：第二層 能力 · 自我覺察／內感受 interoception ============ -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('marked');this.textContent=this.classList.contains('marked')?'★':'☆'" title="標記已發布">☆</div>
+  <div class="tag-row">
+    <span class="tag tag-skill">💜 第二層 ｜ 能力 · 自我覺察／內感受 interoception</span>
+    <span class="tag tag-plain">適合：IG 知識圖卡 / 部落格 / 家長講座</span>
+    <span class="tag tag-plain">對象：國小～國中家長 / 教師</span>
+  </div>
+  <h2>他在教室爆炸前 30 秒，沒人教過他「身體在講話」——比情緒控制更早的能力，叫做「聽見自己」</h2>
+
+  <div class="section-label">家長共鳴開頭</div>
+  <div class="scenario">三年級導師接送時間跟我（受訪老師）說：「他每次爆炸前——臉會先紅、肩膀會先聳、拳頭會先握——但他自己完全不知道。」上週他又因為一支被借走的橡皮擦，朝同學砸了一拳。輔導室裡，我問他：「你出手前一秒，身體有什麼感覺？」他怔了三秒，小聲說：「好像……心臟有東西在跳。」這是他人生第一次，「察覺到自己」。</div>
+
+  <div class="section-label">教育新知引用</div>
+  <div class="research">CASEL 五大核心能力之首是「<b>自我覺察（Self-Awareness）</b>」——但科學家後來發現，覺察的真正起點不是想法，是<b>身體</b>。神經心理學界把這個能力叫做「<b>內感受（interoception）</b>」：感知自己心跳、呼吸、肌肉緊繃、腸胃變化的能力。職能治療師 Kelly Mahler（賓州 OT 學者，內感受兒童課程開發者）研究發現：能描述「我心臟跳很快、我肩膀很硬」的孩子，情緒爆炸前自我中斷的成功率是同齡的 <b>2.4 倍</b>。哈佛兒童發展中心 2025 報告也明確指出：<b>身體覺察是情緒調節的「先發部隊」</b>，沒有它，再多「冷靜」「深呼吸」都接不進來。</div>
+
+  <div class="section-label">覺知 SEL 觀點轉化</div>
+  <div class="insight">我們花了好多年教孩子「<b>冷靜</b>」、「<b>深呼吸</b>」——但他連「我現在不平靜」都不知道。情緒調節從來不是控制，是<b>覺察</b>。下次當他開始煩躁、開始分心、開始要爆——不要急著糾正，問他三句話：「你心臟跳得快嗎？」「拳頭是不是握起來了？」「肚子有沒有怪怪的？」你不是在質詢他——你是在替他大腦裝一台<b>「能聽見自己」的雷達</b>。</div>
+
+  <div class="section-label">可直接發布文案</div>
+  <div class="copy">「老師，他爆炸前我都看到了——
+但他自己完全不知道。」
+
+三年級導師這句話，
+讓我（學校心理師）愣了好久。
+
+科學上有個詞，
+比「情緒控制」更早一步——
+叫做「內感受 interoception」：
+感覺到自己心跳、呼吸、肌肉緊繃的能力。
+
+職能治療師 Kelly Mahler 研究發現：
+能說出「我心臟跳很快、肩膀好硬」的孩子，
+情緒爆炸前「自我中斷」的成功率，
+是同齡孩子的 2.4 倍。
+
+哈佛兒童發展中心 2025 年報告寫得明白——
+身體覺察，是情緒調節的先發部隊。
+
+所以下次他開始煩、開始分心、開始要爆，
+不要急著說「冷靜！」
+問他三句話就好：
+「心臟跳得快嗎？」
+「拳頭握起來了嗎？」
+「肚子怪怪的嗎？」
+
+你不是在質詢他，
+你是在替他裝一台
+「能聽見自己」的雷達。
+
+#自我覺察 #內感受 #interoception #情緒調節 #覺知教養 #SEL</div>
+
+  <div class="punchline">教孩子「先聽見身體」——比教他「冷靜」早了 10 步，但決定他這一生能不能不被自己淹沒。</div>
+
+  <div class="meta">
+    <div class="row"><b>來源：</b>
+      <a href="https://www.kelly-mahler.com/what-is-interoception/" target="_blank">Kelly Mahler《Interoception in Children》</a>、
+      <a href="https://developingchild.harvard.edu/science/key-concepts/executive-function/" target="_blank">Harvard Center on the Developing Child</a>、
+      <a href="https://casel.org/fundamentals-of-sel/what-is-the-casel-framework/" target="_blank">CASEL 自我覺察核心能力</a>、Dan Siegel《Whole-Brain Child》
+    </div>
+    <div class="row"><b>🖼 Unsplash：</b>child hand on chest heartbeat, kid mindful breathing classroom, teacher quiet conversation child</div>
+  </div>
+</section>
+
+
+<!-- ============ CARD 4：第三層 趨勢 · 紐西蘭 Mitey 計畫 ============ -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('marked');this.textContent=this.classList.contains('marked')?'★':'☆'" title="標記已發布">☆</div>
+  <div class="tag-row">
+    <span class="tag tag-trend">🌿 第三層 ｜ 趨勢 · 紐西蘭 Mitey 兒童心理健康課程</span>
+    <span class="tag tag-plain">適合：FB 知識長文 / IG 圖文 / 部落格</span>
+    <span class="tag tag-plain">對象：所有家長 / 教育工作者</span>
+  </div>
+  <h2>紐西蘭最會踢球的那個男人，把橄欖球場上學到的事，搬進了 600 所小學</h2>
+
+  <div class="section-label">家長共鳴開頭</div>
+  <div class="scenario">紐西蘭奧克蘭東區一所小學，午餐後不是體育課，是「Mitey 課」。九歲的孩子們圍坐成一圈，老師問：「今天，你的心情是什麼天氣？」一個男孩想了很久，小聲說：「我是雷雨——因為媽媽今天又說我哥比較棒。」沒有人笑他。坐在他旁邊的女生輕輕說：「我今天是陰天，但有一點點陽光，因為我吃到草莓。」</div>
+
+  <div class="section-label">教育新知引用</div>
+  <div class="research">紐西蘭橄欖球國家隊（All Blacks）傳奇球員 Sir John Kirwan 公開談過自己的憂鬱症經驗，2018 年成立 <b>JK Foundation</b> 並推出「<b>Mitey programme</b>」（兒童心理健康課程），現已進入紐西蘭超過 <b>600 所小學</b>。紐西蘭教育部的《<b>Te Whāriki</b>》課綱與《Children &amp; Young People Wellbeing Strategy》明確把<b>「兒童心理健康」列為國家優先</b>。背景是這 5 年紐西蘭 12 歲以下兒童心理求助率上升超過 40%——他們的回應不是「加強考試」，是「<b>把心理健康教進小學</b>」，從一年級開始。Mitey 的核心不是治療，是<b>讓孩子有語言去說自己</b>。</div>
+
+  <div class="section-label">覺知 SEL 觀點轉化</div>
+  <div class="insight">當其他國家還在拼數學排名、拼升學率，紐西蘭把「<b>用天氣說情緒</b>」當成國家級兒童課程。他們相信：一個 9 歲就能說「我今天是雷雨」的孩子，未來不會在情緒裡迷路。台灣家長最常問的「我們什麼時候才有 SEL？」——答案不在等政府，而在你今晚問孩子那一句：「<b>你今天的心情，是什麼天氣？</b>」這 9 個字，就是 Mitey 的入門課。</div>
+
+  <div class="section-label">可直接發布文案</div>
+  <div class="copy">紐西蘭最會踢橄欖球的男人 Sir John Kirwan，
+得過 35 次代表國家隊的榮耀——
+但他更出名的是公開談自己的憂鬱症。
+
+2018 年他創辦 JK Foundation，
+推出「Mitey」兒童心理健康課程，
+現在已經進入紐西蘭 600 多所小學。
+
+紐西蘭教育部把「兒童心理健康」
+寫進國家優先策略——
+因為他們發現：
+12 歲以下兒童心理求助率，5 年漲了 40%。
+
+別國的反應是加強考試，
+紐西蘭的反應是——
+把心理健康教進小學，從一年級開始。
+
+Mitey 的入門題不深奧：
+老師問孩子「今天，你的心情是什麼天氣？」
+有孩子說「我是雷雨」、
+有孩子說「我是陰天但一點點陽光」。
+
+沒有人笑他們。
+
+你問我，
+台灣的 SEL 什麼時候開始？
+就在你今晚問他那一句——
+
+「你今天的心情，是什麼天氣？」
+
+那 9 個字，
+就是 Mitey 的入門課。
+
+#紐西蘭 #JKFoundation #Mitey #SEL全球趨勢 #覺知教養 #兒童心理健康</div>
+
+  <div class="punchline">一個會用「天氣」說自己心情的孩子，遠比一個會背 99 乘法表的孩子，更接近大人。</div>
+
+  <div class="meta">
+    <div class="row"><b>來源：</b>
+      <a href="https://www.mitey.org.nz/" target="_blank">Mitey programme · JK Foundation</a>、
+      <a href="https://tewhariki.tahurangi.education.govt.nz/" target="_blank">紐西蘭教育部 Te Whāriki 課綱</a>、
+      <a href="https://www.health.govt.nz/our-work/mental-health-and-addiction/child-and-youth-mental-health" target="_blank">NZ Child &amp; Youth Wellbeing Strategy</a>、
+      Education Review Office (ERO) 2025 報告
+    </div>
+    <div class="row"><b>🖼 Unsplash：</b>new zealand classroom kids circle, weather emotion chart child, primary school auckland</div>
+  </div>
+</section>
+
+
+<!-- ============ CARD 5：加值類別 · 場景對話腳本「沒有人喜歡我」 ============ -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('marked');this.textContent=this.classList.contains('marked')?'★':'☆'" title="標記已發布">☆</div>
+  <div class="tag-row">
+    <span class="tag tag-extra">✨ 加值類別 ｜ 場景對話腳本「沒有人喜歡我」三句話</span>
+    <span class="tag tag-plain">適合：FB 長文 / IG 圖文輪播 / LINE 媽媽群</span>
+    <span class="tag tag-plain">對象：國小～國中家長 / 祖父母</span>
+  </div>
+  <h2>「外婆……沒有人喜歡我。」她小聲說的那一秒——你回的第一句話，會決定她明天願不願意再去學校</h2>
+
+  <div class="section-label">家長共鳴開頭</div>
+  <div class="scenario">校門口接放學，平常蹦蹦跳跳的孫女低著頭，書包帶子拖在地上。我（外婆）牽她上車後，她窩在後座很久很久，才小小聲說：「外婆……沒有人喜歡我。」我心臟揪了一下——好想脫口而出「怎麼會！妳那麼可愛！」但我吞了回去。我把車停在路邊，伸手到後座握住她的手。我問了三個字。</div>
+
+  <div class="section-label">教育新知引用</div>
+  <div class="research">心理學家 John Gottman 在《<b>The Heart of Parenting</b>》提出「情緒輔導五步驟（Emotion Coaching）」研究指出：<b>當孩子說出脆弱話，最傷的不是同學的冷漠，是父母／祖父母的「秒否認」</b>——「怎麼會！」「不會啦！」「妳想太多了！」這些反射性安慰，等於告訴孩子：你的痛是我接不住的。Brené Brown《<b>Daring Greatly</b>》指出：被秒否認的孩子，下一次受傷會學會「先把痛藏起來」。兒童福利聯盟 2025《當孩子說沒有人喜歡我》家長手冊與心理師陳志恆《別讓你的孩子被自己情緒勒索》都明確建議：<b>聽，比答更重要</b>。</div>
+
+  <div class="section-label">三句話對話腳本（可直接背起來用）</div>
+  <div class="script-box">
+    <ol>
+      <li><b>第 1 句：</b>「妳願意告訴外婆嗎？」<br><span style="color:#7a6d63;font-size:13.5px">→ 不下結論、不評價、先邀請她講。</span></li>
+      <li><b>第 2 句：</b>「聽起來……今天，真的好難。」<br><span style="color:#7a6d63;font-size:13.5px">→ 命名她的感覺，告訴她「我懂了」。</span></li>
+      <li><b>第 3 句：</b>「外婆會在這裡，妳慢慢說。」<br><span style="color:#7a6d63;font-size:13.5px">→ 不急著解決，讓她知道：你在。</span></li>
+    </ol>
+  </div>
+
+  <div class="section-label">覺知 SEL 觀點轉化</div>
+  <div class="insight">我們的本能是「<b>修好她的情緒</b>」——但情緒不是壞掉的東西，是訊號。CASEL 五大能力裡的「<b>關係技巧</b>」，從一個被聽懂的時刻長出來。你今天接住了她那句「沒人喜歡我」，未來她在更大的拒絕裡（情人、考試、職場），就不會崩成碎片。記住：<b>不要急著辯護她、不要急著想辦法、不要急著替她罵同學</b>——只要那三句話，她會自己慢慢說出全部。</div>
+
+  <div class="section-label">可直接發布文案</div>
+  <div class="copy">校門口接她的時候，
+她書包帶子拖在地上。
+上車很久才小聲說——
+「外婆……沒有人喜歡我。」
+
+我心臟揪了一下。
+好想脫口說「怎麼會！妳那麼可愛！」
+但我吞了回去。
+
+心理學家 Gottman 研究發現：
+這種「秒否認」式的安慰，
+等於告訴孩子：
+「你的痛，我接不住。」
+
+下一次，她就會把痛藏起來。
+
+那天我只說了三句話：
+
+第一句：「妳願意告訴外婆嗎？」
+第二句：「聽起來……今天，真的好難。」
+第三句：「外婆會在這裡，妳慢慢說。」
+
+她在後座沉默了 5 分鐘。
+然後開始小小聲哭。
+哭了一陣，她說——
+「今天分組沒有人選我……」
+
+我沒有罵那些同學，
+也沒有立刻打給老師。
+我只是握著她的手，陪她哭完。
+
+到家前，她抬頭看我說：
+「外婆，明天我還是要去上學。」
+
+✦ 你接住的不是一句童言，
+✦ 是她未來，敢不敢繼續被世界看見的那把鑰匙。
+
+#沒有人喜歡我 #對話腳本 #情緒輔導 #覺知教養 #SEL #關係技巧</div>
+
+  <div class="punchline">你接住的不是一句童言——是她未來，在世界裡敢不敢繼續被看見的那把鑰匙。</div>
+
+  <div class="meta">
+    <div class="row"><b>來源：</b>
+      <a href="https://www.gottman.com/blog/an-introduction-to-emotion-coaching/" target="_blank">John Gottman《Emotion Coaching 五步驟》</a>、
+      <a href="https://brenebrown.com/book/daring-greatly/" target="_blank">Brené Brown《Daring Greatly》</a>、
+      兒童福利聯盟 2025《當孩子說沒有人喜歡我》家長手冊、
+      陳志恆《別讓你的孩子被自己情緒勒索》
+    </div>
+    <div class="row"><b>🖼 Unsplash：</b>grandmother granddaughter holding hand car, sad child after school backpack, listening to child tears</div>
+  </div>
+</section>
+
+
+<div class="footer">
+  覺知 SEL 教育 · 2026.05.02 18:15 ｜ 五則文案 ｜ 跨痛點・能力・趨勢・加值四層級<br>
+  <span class="heart">♥</span> 願每一位辛苦的家長，今晚能被自己接住一次。
+</div>
+
+</div>
+</body>
+</html>
