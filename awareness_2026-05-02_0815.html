@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.02 08:15</title>
+<style>
+  :root{
+    --brand:#d97757;
+    --brand-soft:#f4d8c8;
+    --pain:#d97757;     /* 痛點＝暖橘 */
+    --skill:#7c5cb0;    /* 能力＝紫色 */
+    --trend:#5dbfa1;    /* 趨勢＝薄荷綠 */
+    --bonus:#a8896b;    /* 加值＝灰金 */
+    --ink:#2d2520;
+    --ink-soft:#5a4a40;
+    --line:#ece4dc;
+    --bg:#fbf8f4;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 22px 80px}
+  header.head{
+    text-align:center;
+    padding:8px 4px 22px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:32px;
+  }
+  .brand{
+    display:inline-block;
+    color:var(--brand);
+    font-weight:700;
+    letter-spacing:.18em;
+    font-size:13px;
+  }
+  .date-line{
+    color:var(--ink-soft);
+    font-size:13.5px;
+    margin-top:6px;
+    letter-spacing:.06em;
+  }
+  h1.title{
+    font-size:24px;
+    line-height:1.55;
+    margin:14px 0 6px;
+    color:var(--ink);
+    font-weight:700;
+  }
+  .subtitle{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin-top:4px;
+  }
+  .hero{
+    margin:24px 0 6px;
+    border-radius:18px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fff7ed 0%,#fde9d8 60%,#f4d8c8 100%);
+  }
+  .hero svg{display:block;width:100%;height:auto}
+  article.card{
+    background:#ffffff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:26px 24px 22px;
+    margin:26px 0;
+    box-shadow:0 2px 8px rgba(60,40,28,.04);
+    position:relative;
+  }
+  .star-slot{
+    position:absolute;
+    top:18px; right:18px;
+    width:34px; height:34px;
+    border:1.5px dashed #e2cfbd;
+    border-radius:10px;
+    color:#c9b39d;
+    display:flex; align-items:center; justify-content:center;
+    font-size:17px;
+    user-select:none;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .star-slot:hover{border-color:var(--brand);color:var(--brand)}
+  .star-slot.on{
+    border-style:solid;
+    background:#fff7ed;
+    border-color:var(--brand);
+    color:var(--brand);
+  }
+  .tag-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; padding-right:48px}
+  .tag{
+    display:inline-block;
+    font-size:12.5px;
+    padding:4px 10px;
+    border-radius:999px;
+    color:#fff;
+    letter-spacing:.04em;
+  }
+  .tag.pain{background:var(--pain)}
+  .tag.skill{background:var(--skill)}
+  .tag.trend{background:var(--trend)}
+  .tag.bonus{background:var(--bonus)}
+  .tag.plat{
+    background:#fff;
+    color:var(--ink-soft);
+    border:1px solid var(--line);
+  }
+  h2.headline{
+    font-size:19.5px;
+    line-height:1.55;
+    margin:6px 0 12px;
+    color:var(--ink);
+    font-weight:700;
+  }
+  .scene{
+    background:#faf3eb;
+    border-left:3px solid var(--brand);
+    padding:14px 16px;
+    border-radius:6px 14px 14px 6px;
+    color:var(--ink);
+    font-size:15.5px;
+    line-height:1.85;
+    margin-bottom:14px;
+  }
+  h3.sub{
+    font-size:14px;
+    color:var(--brand);
+    letter-spacing:.1em;
+    margin:18px 0 6px;
+    font-weight:700;
+  }
+  .body{font-size:15.2px; line-height:1.85; color:var(--ink)}
+  .body p{margin:6px 0 10px}
+  .copy-block{
+    background:#fff8f1;
+    border:1px dashed #e7c8ad;
+    border-radius:12px;
+    padding:16px 18px;
+    margin:8px 0 14px;
+    white-space:pre-wrap;
+    font-size:15.2px;
+    line-height:1.95;
+    color:#3a2f28;
+  }
+  .quote{
+    font-size:17px;
+    line-height:1.7;
+    color:var(--brand);
+    border-top:1px dotted #ecd0b8;
+    border-bottom:1px dotted #ecd0b8;
+    padding:12px 4px;
+    margin:14px 0 6px;
+    font-weight:700;
+    text-align:center;
+  }
+  .meta-foot{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:10px;
+    line-height:1.8;
+  }
+  .meta-foot b{color:var(--ink)}
+  .src{
+    margin-top:10px;
+    font-size:12.8px;
+    line-height:1.85;
+    color:var(--ink-soft);
+    word-break:break-all;
+  }
+  .src a{color:var(--brand); text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer.foot{
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:12.5px;
+    padding:30px 4px 0;
+    margin-top:40px;
+    border-top:1px solid var(--line);
+  }
+  .legend{
+    display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
+    font-size:12.5px; margin-top:14px;
+  }
+  .legend span{
+    display:inline-flex; align-items:center; gap:5px;
+    color:var(--ink-soft);
+  }
+  .legend i{
+    display:inline-block; width:10px; height:10px; border-radius:3px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <div class="brand">覺知 SEL 教育 ｜ 每日教養文宣</div>
+  <div class="date-line">2026.05.02 ｜ 08:15 ｜ 台灣時間</div>
+  <h1 class="title">早晨那杯還沒涼的茶——五個今天就能放進書包的 SEL 練習</h1>
+  <div class="subtitle">當孩子寫到一半哭、考砸了不敢回家、等不了那 15 分鐘——他們其實還在問你那同一句話</div>
+  <div class="legend">
+    <span><i style="background:var(--pain)"></i>第一層・痛點</span>
+    <span><i style="background:var(--skill)"></i>第二層・能力</span>
+    <span><i style="background:var(--trend)"></i>第三層・趨勢</span>
+    <span><i style="background:var(--bonus)"></i>加值・對話／兩難</span>
+  </div>
+</header>
+
+<!-- 主視覺 SVG（本次：清晨書桌、一盞檯燈、五本攤開的書） -->
+<div class="hero">
+  <svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#fff5e8"/>
+        <stop offset="55%" stop-color="#fde0c5"/>
+        <stop offset="100%" stop-color="#f4c79f"/>
+      </linearGradient>
+      <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#a87a5a"/>
+        <stop offset="100%" stop-color="#7e5640"/>
+      </linearGradient>
+      <radialGradient id="lamp" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fff8e1" stop-opacity="0.95"/>
+        <stop offset="100%" stop-color="#fff8e1" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <!-- 晨光天空 -->
+    <rect x="0" y="0" width="800" height="220" fill="url(#dawn)"/>
+    <!-- 太陽（清晨） -->
+    <circle cx="135" cy="90" r="32" fill="#ffe7c0" opacity=".95"/>
+    <circle cx="135" cy="90" r="50" fill="#ffe7c0" opacity=".25"/>
+    <!-- 窗框 -->
+    <g stroke="#5a3f33" stroke-width="2.4" fill="none" opacity=".55">
+      <rect x="60" y="40" width="200" height="160"/>
+      <line x1="160" y1="40" x2="160" y2="200"/>
+      <line x1="60" y1="120" x2="260" y2="120"/>
+    </g>
+    <!-- 飛鳥（清晨） -->
+    <g stroke="#5a3f33" stroke-width="1.4" fill="none" opacity=".7">
+      <path d="M310 70 q5 -5 10 0 q5 -5 10 0"/>
+      <path d="M360 90 q4 -4 8 0 q4 -4 8 0"/>
+      <path d="M500 60 q5 -5 10 0 q5 -5 10 0"/>
+    </g>
+    <!-- 桌面 -->
+    <rect x="0" y="240" width="800" height="80" fill="url(#desk)"/>
+    <!-- 桌邊陰影 -->
+    <rect x="0" y="240" width="800" height="6" fill="#3a2920" opacity=".35"/>
+    <!-- 檯燈光暈 -->
+    <circle cx="600" cy="240" r="160" fill="url(#lamp)"/>
+    <!-- 檯燈 -->
+    <g>
+      <rect x="595" y="170" width="10" height="60" fill="#5a3f33"/>
+      <path d="M560 160 L640 160 L620 200 L580 200 Z" fill="#d97757"/>
+      <rect x="580" y="232" width="40" height="6" fill="#3a2920"/>
+    </g>
+    <!-- 五本攤開的書（代表 5 篇） -->
+    <g>
+      <!-- 書 1 -->
+      <g transform="translate(320,222)">
+        <path d="M0 18 L40 12 L80 18 L80 26 L40 22 L0 26 Z" fill="#fff1cc" stroke="#9a6f4f" stroke-width="1.2"/>
+        <line x1="40" y1="12" x2="40" y2="22" stroke="#c8a378" stroke-width="1"/>
+      </g>
+      <!-- 書 2 -->
+      <g transform="translate(410,218)">
+        <path d="M0 18 L40 10 L80 18 L80 28 L40 22 L0 28 Z" fill="#fde0a8" stroke="#9a6f4f" stroke-width="1.2"/>
+        <line x1="40" y1="10" x2="40" y2="22" stroke="#c8a378" stroke-width="1"/>
+      </g>
+      <!-- 書 3（中央亮光） -->
+      <g transform="translate(500,214)">
+        <path d="M0 18 L40 8 L80 18 L80 30 L40 22 L0 30 Z" fill="#ffeac4" stroke="#9a6f4f" stroke-width="1.4"/>
+        <line x1="40" y1="8" x2="40" y2="22" stroke="#c8a378" stroke-width="1.2"/>
+      </g>
+      <!-- 書 4 -->
+      <g transform="translate(590,218)">
+        <path d="M0 18 L40 10 L80 18 L80 28 L40 22 L0 28 Z" fill="#fde0a8" stroke="#9a6f4f" stroke-width="1.2"/>
+        <line x1="40" y1="10" x2="40" y2="22" stroke="#c8a378" stroke-width="1"/>
+      </g>
+      <!-- 書 5 -->
+      <g transform="translate(680,222)">
+        <path d="M0 18 L40 12 L80 18 L80 26 L40 22 L0 26 Z" fill="#fff1cc" stroke="#9a6f4f" stroke-width="1.2"/>
+        <line x1="40" y1="12" x2="40" y2="22" stroke="#c8a378" stroke-width="1"/>
+      </g>
+    </g>
+    <!-- 桌邊一杯熱茶 -->
+    <g transform="translate(180,232)">
+      <ellipse cx="20" cy="2" rx="20" ry="4" fill="#8a5a3e"/>
+      <path d="M0 2 L4 26 L36 26 L40 2 Z" fill="#c8865d" stroke="#7e5640" stroke-width="1.2"/>
+      <path d="M40 8 q14 4 14 12 q0 8 -14 12" fill="none" stroke="#7e5640" stroke-width="1.4"/>
+      <!-- 蒸氣 -->
+      <g stroke="#fff5e8" stroke-width="1.6" fill="none" opacity=".8">
+        <path d="M12 -4 q-6 -8 0 -16"/>
+        <path d="M22 -6 q6 -8 0 -16"/>
+        <path d="M30 -4 q-6 -8 0 -14"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<!-- ════════════════════════════════════════ -->
+<!-- 文案 1：寫作業崩潰（痛點・情緒風暴） -->
+<!-- ════════════════════════════════════════ -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag pain">第一層・痛點 ・寫作業崩潰／情緒過載</span>
+    <span class="tag plat">FB / LINE 家長社群</span>
+  </div>
+  <h2 class="headline">「他寫到一半趴下去哭」——不是孩子鬧脾氣，是他大腦那張小桌子，已經堆不下了</h2>
+
+  <div class="scene">
+    禮拜二晚上九點，你從書房走出來倒水。<br>
+    經過餐桌，看見小三的兒子整個人趴在數學作業上，肩膀一抽一抽地在哭。<br>
+    桌上是寫到一半的應用題、橡皮擦碎屑、和一支被他咬到沒帽子的鉛筆。<br>
+    你蹲下來問：「怎麼了？」<br>
+    他憋著哭聲，只擠出一句：「我不會……我什麼都不會……」<br>
+    你想說「再看一次題目」，但你看著他通紅的眼睛，<br>
+    第一次發現，他不是不寫——是他真的，已經寫不下去了。
+  </div>
+
+  <h3 class="sub">▍教育新知</h3>
+  <div class="body">
+    <p>大腦處理資訊靠的是「工作記憶」（Working Memory）——就像桌面，一次只能放下 5–9 樣東西。國家教育研究院的詞典定義它為「儲存並操作臨時資訊以執行複雜認知任務」的系統，是寫作業最核心的引擎。</p>
+    <p>但工作記憶有兩個殘酷的事實：第一，它的容量隨年齡發展，小三的孩子比成人小很多；第二，當情緒湧上（焦慮、害怕被罵、自我懷疑），杏仁核會搶走額葉的資源，工作記憶能裝的東西會「即時縮水」。</p>
+    <p>這就是為什麼孩子會「明明會寫的字突然忘了怎麼寫」「整題抄完發現抄錯數字」「念到一半哭出來」——不是耍賴，是大腦那張小桌子，當下真的滿出來了，連空間都沒有給他「再看一次」。</p>
+  </div>
+
+  <h3 class="sub">▍覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>寫作業崩潰，是一場「認知 + 情緒」雙重過載的事件。傳統處理方式是「把題目降難一點」，但 SEL 取向會先處理另一件事——<b>把情緒先從桌面挪走</b>，桌面才能再放進思考。</p>
+    <p>覺知 SEL 教練在課堂上會教三步：<b>命名（這是挫折感）→ 暫停（離開椅子三分鐘喝水）→ 重啟（從你最會的那一題開始）</b>。當孩子學會「卡住的時候大腦需要先呼吸」，他下次寫作業才不會把所有不會都翻譯成「我很爛」。</p>
+  </div>
+
+  <h3 class="sub">▍可直接發布文案</h3>
+  <div class="copy-block">【他不是不寫，是大腦那張小桌子滿出來了】
+
+昨晚，朋友傳訊息給我：
+「我兒子寫作業寫到趴下去哭，我快瘋了，是不是他根本不認真？」
+
+我跟她說一個冷知識——
+小三的孩子，工作記憶的容量大概只有 5 樣東西。
+寫一道應用題，他要同時記住：
+題目裡的數字、運算符號、單位、已經寫了什麼、下一步要做什麼……
+光算一算，桌面早就滿了。
+
+而當他開始焦慮的那一秒，
+焦慮會直接「占用」桌面——
+他不是變笨了，
+是大腦已經沒有位置可以放思考了。
+
+所以他需要的不是「再算一次」，
+是有人陪他把那張桌子，重新清空。
+
+可以對他說的三句話：
+1. 「先停下來，我們一起喝口水。」
+2. 「告訴我，你現在卡在哪一步？」
+3. 「我們從你最會的那題開始，不一定要照順序。」
+
+這不是寵壞他。
+是給他重新打開大腦的鑰匙。
+
+#覺知SEL #工作記憶 #寫作業崩潰 #小學生陪寫</div>
+
+  <div class="quote">他不是不寫，是大腦那張小桌子，正在哭著請你幫忙清空。</div>
+
+  <div class="meta-foot">
+    <b>適合平台</b>：FB 家長社團、LINE 群組、IG 圖文卡<br>
+    <b>適合對象</b>：國小 1–4 年級孩子的家長、陪寫作業就會吵架的家庭<br>
+    <b>Unsplash 關鍵字</b>：child homework crying / overwhelmed kid desk / pencil eraser shavings
+  </div>
+
+  <div class="src">
+    來源：
+    <a href="https://terms.naer.edu.tw/detail/1302182/" target="_blank" rel="noopener">國家教育研究院｜Working Memory 工作記憶詞條</a>、
+    <a href="https://www.cognifit.com/hk/science/working-memory" target="_blank" rel="noopener">CogniFit｜認知技能：工作記憶</a>、
+    <a href="https://e-carebaby.com/health_education-75-432/" target="_blank" rel="noopener">安兒康小兒專科診所｜工作記憶與長期記憶</a>、
+    <a href="https://medium.com/kevins-venture/%E6%95%99%E5%AD%B8%E8%80%85%E7%9A%84%E5%9F%BA%E7%A4%8E%E6%B6%B5%E9%A4%8A-%E5%B7%A5%E4%BD%9C%E8%A8%98%E6%86%B6-abcfbce52b19" target="_blank" rel="noopener">教學者的基礎涵養｜工作記憶（Medium）</a>、
+    <a href="https://vocus.cc/article/699d0dd1fd89780001f8131d" target="_blank" rel="noopener">vocus｜孩子讀不下書，不一定是懶，而是大腦被焦慮困住了</a>
+  </div>
+</article>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 文案 2：考不好對話腳本（加值・場景對話腳本） -->
+<!-- ════════════════════════════════════════ -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag bonus">加值・場景對話腳本 ・考不好的回應</span>
+    <span class="tag plat">IG / FB 圖文卡</span>
+  </div>
+  <h2 class="headline">「我考不好……」他在電話那頭哭了——三句話，比一張更高的考卷救他得多</h2>
+
+  <div class="scene">
+    奶奶接到孫子放學那通電話時，正在剝豌豆。<br>
+    電話那頭抽抽搭搭的：<br>
+    「阿嬤……我這次月考……我數學只考 58 分……」<br>
+    她差點脫口而出「怎麼會這樣？」「你不是有去補習嗎？」<br>
+    但她忍住了。<br>
+    她把豌豆放下，找了張椅子坐下，深呼吸一口，<br>
+    然後輕輕地說：「乖孫，你現在有沒有躲在哪裡哭？」<br>
+    電話那頭安靜了三秒，<br>
+    然後是更大聲、卻像放鬆下來的哭聲。
+  </div>
+
+  <h3 class="sub">▍教育新知</h3>
+  <div class="body">
+    <p>諮商心理師陳志恆在天下文化專欄指出：當孩子考不好時，父母最大的本能反應是「分析原因」「給建議」「重申鼓勵」——但這三件事，在孩子當下都聽不進去，因為他的大腦還浸泡在羞愧感裡。</p>
+    <p>《媽媽寶寶》訪問的兒少心理師也提醒：成績發下來那一刻，孩子心裡播放的不是「我這次哪裡錯」，而是「爸媽會不會失望」「我是不是讓他們沒面子」。如果父母這時補刀（即使語氣很溫柔），那塊羞愧會直接焊進「我不夠好」的自我認同裡。</p>
+    <p>真正能接住孩子的回應公式是：<b>先承認情緒（你一定很難過）→ 再具體分辨（每科都不好嗎？）→ 最後留下陪伴（沒關係，下次我們一起想辦法）</b>，這不是「不計較」，是讓孩子在挫折裡還能保留下次再來一次的力氣。</p>
+  </div>
+
+  <h3 class="sub">▍覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>SEL 五大核心能力裡的「自我覺察」與「人際技巧」，第一個練習場就是家裡的這通電話。覺知 SEL 教練常跟家長說：考卷只是「事件」，但你回應他的那三句話，才是孩子日後遇到挫折時——大腦自動 replay 的那捲錄音帶。</p>
+    <p>三句話的設計不是技巧，是「順序」。先處理感受再處理事情，這個順序學會了，他這輩子在所有挫敗裡，都會比別人多一條回血的路。</p>
+  </div>
+
+  <h3 class="sub">▍可直接發布文案</h3>
+  <div class="copy-block">【孩子哭著說「我考不好」——你只需要說的三句話】
+
+第一句：
+「你現在是不是很難過？」
+（不是質問，是接住他的羞愧）
+
+第二句：
+「告訴我，你最想哭的是哪一題？」
+（不是分析，是縮小他的恐慌）
+
+第三句：
+「沒關係，我們今天先不討論這張考卷。」
+（不是放棄，是給大腦一個關機的權利）
+
+——
+
+孩子怕的從來不是分數。
+他怕的是回家以後，
+你看他的眼神會跟以前不一樣。
+
+那張考卷，他自己會難過很久。
+但如果你那一刻沒接住他——
+他下次就會把考卷直接塞進書包最底層。
+
+考試只考一次，
+但「我能不能讓爸媽失望」這個感覺，
+會跟著他考一輩子。
+
+所以下次當他低頭說「我考不好」，
+請先放下要說的話。
+深呼吸三秒，
+然後給他這三句。
+
+#覺知SEL #考不好怎麼辦 #接住情緒 #挫折回應 #對話腳本</div>
+
+  <div class="quote">他怕的不是分數，是你看他那一眼，會不會跟以前不一樣。</div>
+
+  <div class="meta-foot">
+    <b>適合平台</b>：IG 圖文卡（每句一格）、LINE 截圖轉傳<br>
+    <b>適合對象</b>：國小 3 年級到國中孩子的家長、阿嬤阿公主要照顧者<br>
+    <b>Unsplash 關鍵字</b>：child phone call crying / kid backpack alone / grandma comforting child
+  </div>
+
+  <div class="src">
+    來源：
+    <a href="https://bookzone.cwgv.com.tw/article/27687" target="_blank" rel="noopener">天下文化｜陳志恆「孩子考差了家長如何反應？養出愈挫愈勇孩子的說話之道」</a>、
+    <a href="https://www.mombaby.com.tw/articles/9927322" target="_blank" rel="noopener">媽媽寶寶｜會考成績出爐，家長應該對孩子說什麼？心理師告訴你</a>、
+    <a href="https://www.nanamamath.com/momgiveup/" target="_blank" rel="noopener">娜她媽的數學教室｜家長的態度，決定孩子的未來</a>、
+    <a href="https://mamilove.com.tw/articles/1074" target="_blank" rel="noopener">Mamilove｜處理孩子的情緒失控，把握「一個心法、五個步驟」</a>
+  </div>
+</article>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 文案 3：延遲滿足（能力・棉花糖實驗 50 年後） -->
+<!-- ════════════════════════════════════════ -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag skill">第二層・能力 ・延遲滿足</span>
+    <span class="tag plat">FB 長文 / 部落格</span>
+  </div>
+  <h2 class="headline">棉花糖實驗 50 年後被翻案——孩子能不能等那 15 分鐘，竟然不是看意志，是看你身後那雙手</h2>
+
+  <div class="scene">
+    禮拜六早上 10 點，媽媽剛從洗衣機把毛巾拎出來，<br>
+    客廳就傳來尖叫——<br>
+    「他先拿的！」「我等很久了！」<br>
+    五歲的弟弟跟七歲的姐姐，<br>
+    為了一台只能輪流玩 20 分鐘的平板，<br>
+    地板上躺成一字。<br>
+    媽媽嘆了一口氣，腦袋閃過那篇看過 N 次的文章——<br>
+    「能延遲滿足的孩子，未來成就比較高」。<br>
+    她苦笑了一下：所以我兒子完蛋了嗎？
+  </div>
+
+  <h3 class="sub">▍教育新知</h3>
+  <div class="body">
+    <p>1960 年代末，史丹佛 Walter Mischel 在校園裡做了那個經典實驗：給 4 歲孩子一顆棉花糖，告訴他「如果 15 分鐘後我回來，棉花糖還在，你就可以再得到一顆」。後來追蹤研究指出：能等待的孩子，多年後 SAT 分數較高、人際與健康狀況也較好。「延遲滿足 = 成功」這句話從此被引用了半個世紀。</p>
+    <p>但 2018 年，紐約大學 Tyler Watts 與加州大學共同研究，把樣本擴大、納入更多家庭社經背景變數做後續復刻——結果發現：當把家庭收入、母親教育程度、語言環境等變數控制掉以後，<b>「能不能等」對未來成就的預測力，下降到原研究的不到一半</b>。</p>
+    <p>後續 Mischel 自己用 fMRI 進一步觀察：低延遲組的右側額葉皮質活動量明顯較低、抑制控制系統較弱；但更關鍵的是——這個系統能不能練起來，跟孩子身邊「大人是不是穩定的、會回來的」有非常深的關聯。換句話說：<b>意志力不是天生硬體，是被一次次「我答應你的事，我做到了」餵出來的軟體</b>。</p>
+  </div>
+
+  <h3 class="sub">▍覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>覺知 SEL 教練不會逼孩子「忍」。我們做的，是把「等待」拆成三件事：<b>看見等的那個我（自我覺察）→ 用得到的方式陪自己等（自我管理）→ 結果出現時被接住（信任修復）</b>。當這三件事重複幾百次，孩子大腦那條煞車線才會真的長出來。</p>
+    <p>所以那 15 分鐘他能不能等，不是看他多有意志，是看他身後——有沒有一雙手，曾經一次又一次，在他等到的時候真的出現。</p>
+  </div>
+
+  <h3 class="sub">▍可直接發布文案</h3>
+  <div class="copy-block">【棉花糖實驗 50 年後被翻案——關鍵不是孩子的意志】
+
+那個著名的棉花糖實驗你一定聽過：
+能等 15 分鐘的小孩，後來人生比較成功。
+
+很多家長因此焦慮：
+「我兒子才等三分鐘就抓走點心了，是不是完蛋？」
+
+——別怕。
+
+2018 年紐約大學重做了這個研究，
+把家庭背景變數控制掉以後發現：
+「能不能等」對未來成就的影響，
+其實沒有那麼大。
+
+真正的關鍵，是後來腦造影揭曉的：
+能等的孩子，不是「天生會忍」，
+而是他大腦學會了一件事——
+「答應我的人，會回來。」
+
+棉花糖實驗，
+其實是一場「信任實驗」。
+
+所以你今天能做的不是叫他忍，
+而是：
+✓ 答應 5 分鐘後給他玩，就 5 分鐘後給他
+✓ 說好「玩 20 分鐘」就 20 分鐘
+✓ 講過「等媽媽下班再陪你」就真的陪
+這些「我說到做到」的時刻，
+會一塊一塊，把他大腦的煞車蓋好。
+
+延遲滿足不是天生的硬體。
+是你用一千次「我答應你的事我做到」，
+慢慢給他裝上去的軟體。
+
+#覺知SEL #延遲滿足 #棉花糖實驗 #自我控制 #信任養成</div>
+
+  <div class="quote">那 15 分鐘他能不能等，不是看意志多強——是看你身後那雙手，平不平靜。</div>
+
+  <div class="meta-foot">
+    <b>適合平台</b>：FB 長文、部落格、深度家長 Email 電子報<br>
+    <b>適合對象</b>：學齡前到國小中年級家長、夫妻搶平板家庭、阿德勒派教養家長<br>
+    <b>Unsplash 關鍵字</b>：marshmallow on plate / child waiting / parent holding hand toddler
+  </div>
+
+  <div class="src">
+    來源：
+    <a href="https://www.bella.tw/articles/novelty/41358" target="_blank" rel="noopener">儂儂｜棉花糖實驗被推翻！時隔 50 年重新實驗</a>、
+    <a href="https://nckupsyscholarship.wixsite.com/get-in-psy/post/%E6%A3%89%E8%8A%B1%E7%B3%96%E5%AF%A6%E9%A9%97" target="_blank" rel="noopener">成大心理｜棉花糖實驗回顧</a>、
+    <a href="https://www.thenewslens.com/article/118951" target="_blank" rel="noopener">關鍵評論網｜棉花糖實驗證明自制力影響一生</a>、
+    <a href="https://www.synnex-grp.com/tw/%E7%A0%94%E7%A9%B6%E3%80%8C%E8%87%AA%E6%88%91%E6%8E%A7%E5%88%B6%E3%80%8D%E7%9A%84%E3%80%90%E6%A3%89%E8%8A%B1%E7%B3%96%E5%AF%A6%E9%A9%97%E3%80%91" target="_blank" rel="noopener">研究自我控制的棉花糖實驗｜fMRI 額葉皮質觀察</a>、
+    <a href="https://www.isofh.org/15942/stanford-marshmallow-experiment/" target="_blank" rel="noopener">史丹佛棉花糖實驗 2 關鍵培養孩子自律習慣</a>、
+    <a href="https://vocus.cc/article/6746ae07fd89780001921910" target="_blank" rel="noopener">vocus｜不要急著吃棉花糖（後續研究整理）</a>、
+    <a href="https://www.books.com.tw/products/0010687561" target="_blank" rel="noopener">Walter Mischel《忍耐力》（棉花糖實驗之父著作）</a>
+  </div>
+</article>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 文案 4：芬蘭情緒教育必修（趨勢） -->
+<!-- ════════════════════════════════════════ -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag trend">第三層・趨勢 ・芬蘭情緒教育必修</span>
+    <span class="tag plat">FB / LinkedIn 教育者社群</span>
+  </div>
+  <h2 class="headline">芬蘭把「情緒」排進國中小每週課表——當別國還在補數學，他們已經教孩子怎麼修自己</h2>
+
+  <div class="scene">
+    台灣的早自習，孩子們在抄昨天聯絡簿、在背英文單字、在補昨晚沒寫完的功課。<br>
+    赫爾辛基一所小學的早晨，<br>
+    十個七歲孩子圍坐成一圈，老師拿出一張臉譜表，問：<br>
+    「今天，誰可以告訴我，你身體裡那團情緒，是什麼顏色的？」<br>
+    一個男孩舉手：「我的胸口有點黃黃的，因為奶奶昨天住院。」<br>
+    老師沒有急著安慰他，只說：<br>
+    「謝謝你說出來。我們一起待在這個黃裡面，一下下就好。」
+  </div>
+
+  <h3 class="sub">▍教育新知</h3>
+  <div class="body">
+    <p>芬蘭 2016 年啟動全面課綱改革，到 2020 年正式廢除小學與中學階段純學科式教學，全面採取「現象式學習（Phenomenon-Based Learning）」——主題從真實世界擷取，例如水資源、城市規劃、高齡社會、氣候等，跨領域整合教學。</p>
+    <p>更值得關注的是：2021 年底芬蘭教育界正式提案，<b>將「情緒教育」列入小一到國九的必修課程，每週至少一堂</b>。這不是社團、不是補救教學，而是跟數學語文同等地位的核心科目。</p>
+    <p>這個決定的背景是 OECD 跨國資料：在芬蘭，學生對「我能管理自己情緒」的自評，跟數學成績的相關性高於台灣、韓國、日本。換句話說——情緒不是分散學習的雜訊，是學習能不能進得去的入口。</p>
+  </div>
+
+  <h3 class="sub">▍覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>很多家長以為「情緒教育」是西方軟性課程，跟我們考試體系不相容。但芬蘭模式告訴我們的是：當孩子能說出「我胸口黃黃的」、「我肩膀緊緊的」，他大腦會把這些情緒從「煩躁」翻譯成具體訊息，<b>學習通道才會被打開</b>。</p>
+    <p>覺知 SEL 教練在課堂上做的，正是這件芬蘭老師每週都做的事——不是把情緒「處理掉」，而是教孩子在情緒裡，還能繼續看見自己。</p>
+  </div>
+
+  <h3 class="sub">▍可直接發布文案</h3>
+  <div class="copy-block">【芬蘭把「情緒」排進每週課表——當別國還在補數學】
+
+赫爾辛基的小一教室，每週都有一堂課。
+不是數學、不是英文，
+是一堂——「情緒課」。
+
+老師會拿出臉譜表問：
+「你身體裡那團情緒，是什麼顏色？」
+七歲的孩子會舉手回答：
+「我胸口有點黃，因為奶奶住院了。」
+
+老師不急著安慰，
+只說：「謝謝你說出來，我們一起待在這個黃裡。」
+
+——
+
+而我們的早自習，
+孩子在補昨晚沒寫完的功課，
+在背明天要考的單字，
+在抄聯絡簿。
+
+不是我們不愛孩子。
+是我們從來沒被教過，
+情緒，也是一門可以「學」的科目。
+
+芬蘭從 2021 年起，
+把情緒教育列為國中小必修，
+每週至少一堂。
+
+理由很簡單，OECD 跨國資料早就指出：
+能管理情緒的孩子，
+數學也學得比較好。
+
+情緒不是學習的雜訊。
+情緒，是學習能不能進得去的入口。
+
+#覺知SEL #芬蘭教育 #情緒教育必修 #現象式學習 #SEL趨勢</div>
+
+  <div class="quote">當芬蘭把「情緒」當主科——我們才看清，自己錯過的不是分數，是孩子的內在地圖。</div>
+
+  <div class="meta-foot">
+    <b>適合平台</b>：FB 教育者社群、LinkedIn、品牌官方專欄<br>
+    <b>適合對象</b>：對教育趨勢敏感的家長、教師、SEL 從業者、教育創業者<br>
+    <b>Unsplash 關鍵字</b>：finland classroom kids circle / emoji feeling chart / nordic school
+  </div>
+
+  <div class="src">
+    來源：
+    <a href="https://www.ettoday.net/news/20190115/1356612.htm" target="_blank" rel="noopener">ETtoday｜芬蘭致力教育改革 融合學科與「現象式學習」</a>、
+    <a href="https://udn.com/news/story/6885/6112018" target="_blank" rel="noopener">聯合新聞網｜跨領域 新課綱與芬蘭教育相似</a>、
+    <a href="https://flipedu.parenting.com.tw/article/008912" target="_blank" rel="noopener">翻轉教育｜學校如何讓 SEL 情緒教育融入課堂</a>、
+    <a href="https://flipedu.parenting.com.tw/article/007592" target="_blank" rel="noopener">翻轉教育｜SEL 是什麼？4 方法讓社會情緒學習融入課程</a>、
+    <a href="https://premium.parenting.com.tw/article/5093530" target="_blank" rel="noopener">親子天下｜SEL 是什麼？了解社會情緒學習技巧、優點與情緒量表</a>、
+    <a href="https://www.gel-net.com/post/202509-04" target="_blank" rel="noopener">GEL-Net｜社會情緒學習與品德教育能共存共榮？</a>
+  </div>
+</article>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 文案 5：補習補多少（加值・教養兩難） -->
+<!-- ════════════════════════════════════════ -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'⭐':'☆'">☆</div>
+  <div class="tag-row">
+    <span class="tag bonus">加值・教養兩難 ・補習補到幾點才夠</span>
+    <span class="tag plat">FB 長文 / 親子社群</span>
+  </div>
+  <h2 class="headline">「他補一個月一萬二，我們夫妻一個月吵三次」——補習補的不是分數，是父母內心那把不敢承認的尺</h2>
+
+  <div class="scene">
+    禮拜天晚上 11 點，先生坐在沙發看補習班的繳費單，<br>
+    太太從浴室出來擦頭髮。<br>
+    「英文加數學，加上一對一作文，這個月一萬兩千。」<br>
+    太太頓了一下：「他真的需要補這麼多嗎？」<br>
+    先生沒抬頭：「別人都在補，我們不補他怎麼跟得上？」<br>
+    太太想說點什麼，但她也想起兒子昨晚邊吃晚餐邊閉著眼睛，<br>
+    說：「媽媽，我可以明天不要去安親班嗎，就一天就好。」<br>
+    那一句「就一天就好」，比那張一萬二的單，<br>
+    更讓她睡不著。
+  </div>
+
+  <h3 class="sub">▍教育新知</h3>
+  <div class="body">
+    <p>2025 年補習市場數據：團體班月費約 3,000–6,000 元，小班 5,000–10,000，一對一單堂 1,500–2,500（暑假密集班 6,000–12,000，雙科以上輕鬆破萬）。再加上「報名費、行政費、保險費」等容易被忽略的隱藏支出，許多雙薪家庭一年補習帳單破 15 萬並不罕見。</p>
+    <p>但更值得家長停下來看的，是另一條曲線：天下雜誌 2024 年報導指出，<b>台灣自傷自殺學生通報數五年內增加 4 倍</b>；保誠 2024 兒童幸福指數調查也顯示，台灣兒少對自身「社會情緒能力」的了解不足四成。補習費用爬升的同時，孩子的內在資源並沒有跟著補上來。</p>
+    <p>娜她媽數學教室、家長智庫等多個平台都點出同一件事：當孩子並無學習意願、家長卻一味要求補習，反而造成「習得無助」與抗拒——分數可能撐住，但「我可以」這個感覺會慢慢被磨平。</p>
+  </div>
+
+  <h3 class="sub">▍覺知 SEL 觀點</h3>
+  <div class="body">
+    <p>覺知 SEL 教練常被家長私訊問「該不該補習」，我們的回答是：補習本身不是問題，<b>「為了補誰的焦慮在補」才是</b>。如果補的是孩子的學習興趣與穩定的師生關係，這筆錢花得很值；但如果補的是「別人都在補，我不能讓他輸」這把家長內心的尺，這筆錢補的不是孩子，是父母自己睡不著的夜。</p>
+    <p>SEL 教家長的第一件事，不是教孩子，是先問自己：<b>「我焦慮的是什麼？我的孩子，還是我自己 30 年前那個沒被誇獎的我？」</b>當這個問題被誠實地問一次，補習的選擇，才會回到孩子身上。</p>
+  </div>
+
+  <h3 class="sub">▍可直接發布文案</h3>
+  <div class="copy-block">【補一個月一萬二，我們夫妻一個月吵三次】
+
+禮拜天晚上 11 點，
+先生看著繳費單，
+太太剛從浴室出來。
+
+「英文加數學，加一對一作文，這個月一萬二。」
+「他真的需要補這麼多嗎？」
+「別人都在補，我們不補他怎麼跟？」
+
+——
+
+我採訪過很多這樣的家庭。
+他們說最怕的不是這一萬二，
+是想到萬一不補：
+「會不會他考輸別人？」
+「會不會我以後後悔？」
+「會不會……我不是個盡責的爸媽？」
+
+可是當我問孩子：
+「你覺得最累的是什麼？」
+他們說的不是補習，
+是「我爸媽因為我吵架的那天晚上」。
+
+——
+
+2025 年的補習市場數據是這樣的：
+團體班月費 3,000–6,000，
+小班 5,000–10,000，
+一對一單堂 1,500–2,500。
+但同一年，台灣自傷自殺通報的學生，
+五年裡增加了 4 倍。
+
+補習補得起來。
+那把孩子心裡寫著「我不夠」的小尺，
+補不起來。
+
+所以下次簽繳費單前，
+先問自己一個問題——
+
+「我補的，是孩子的興趣？
+還是，我自己 30 年前那個沒被誇獎的我？」
+
+這個問題答得清楚，
+那筆錢，才不會白花。
+
+#覺知SEL #補習兩難 #雙薪家庭 #教養兩難 #家長自我覺察</div>
+
+  <div class="quote">補了那麼多，補不上的，永遠是那把寫著「我不夠」的小尺——孩子的，與你自己的。</div>
+
+  <div class="meta-foot">
+    <b>適合平台</b>：FB 長文、親子部落格、雙薪家庭社群、夫妻教養帳號<br>
+    <b>適合對象</b>：國小 4 年級到國中家長、雙薪家庭、為補習費爭執的夫妻<br>
+    <b>Unsplash 關鍵字</b>：family budget receipts night / parents arguing kitchen / tired student backpack
+  </div>
+
+  <div class="src">
+    來源：
+    <a href="https://schoolaa.net/2025/09/25/%E5%9C%8B%E4%B8%AD%E8%A3%9C%E7%BF%92%E7%8F%AD%E8%B2%BB%E7%94%A8%E6%80%8E%E9%BA%BC%E7%AE%97%EF%BC%9F2025%E5%AE%B6%E9%95%B7%E4%B8%8D%E8%83%BD%E4%B8%8D%E7%9F%A5%E7%9A%845%E5%A4%A7%E9%81%BF%E5%9D%91/" target="_blank" rel="noopener">數位果子｜2025 國中補習班費用 5 大避坑重點</a>、
+    <a href="https://www.best-edu.com.tw/topic-detail/69/" target="_blank" rel="noopener">Best-Edu｜國中補習班費用與挑選重點</a>、
+    <a href="https://www.obearedu.com/post/one-on-one-cram-school" target="_blank" rel="noopener">Obear｜一對一補習班費用整理</a>、
+    <a href="https://vocus.cc/article/690306e7fd89780001733ad7" target="_blank" rel="noopener">vocus｜2025 年補習班選擇不踩雷懶人包</a>、
+    <a href="https://www.cw.com.tw/article/5135534" target="_blank" rel="noopener">天下雜誌｜自傷自殺學生數 5 年增 4 倍 情緒被壓抑的世代</a>、
+    <a href="https://tw.news.yahoo.com/%E4%BF%9D%E8%AA%A0%E7%99%BC%E5%B8%83%E6%9C%80%E6%96%B0%E5%85%92%E7%AB%A5%E5%B9%B8%E7%A6%8F%E6%8C%87%E6%95%B8-%E7%A4%BE%E6%9C%83%E6%83%85%E7%B7%92%E5%AD%B8%E7%BF%92%E8%83%BD%E5%8A%9B%E4%BA%86%E8%A7%A3%E7%A8%8B%E5%BA%A6%E4%B8%8D%E8%B6%B3%E5%9B%9B%E6%88%90-055652574.html" target="_blank" rel="noopener">Yahoo / 保誠｜兒童幸福指數 SEL 能力了解程度不足四成</a>、
+    <a href="https://www.nanamamath.com/momgiveup/" target="_blank" rel="noopener">娜她媽的數學教室｜家長的態度，決定孩子的未來</a>
+  </div>
+</article>
+
+
+<footer class="foot">
+  <div>覺知 SEL 教育 ｜ 每日教養文宣</div>
+  <div style="margin-top:6px;color:#a89282">2026.05.02 ｜ 08:15 ｜ 5 篇 ｜ 跨第一層・第二層・第三層・加值（4 個層級）</div>
+  <div style="margin-top:8px;color:#c9b39d;font-size:11.5px">⭐ 點擊每篇右上方的星號，可標記「已實際發過」的文案</div>
+</footer>
+
+</div>
+</body>
+</html>
