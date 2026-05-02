@@ -8,8 +8,9 @@
   :root{
     --brand:#d97757;
     --brand-soft:#fbece4;
+    --leaf:#7fb487;
     --pain:#d97757;            /* 痛點：暖橘 */
-    --skill:#7a5cb0;           /* 能力：紫色 */
+    --skill:#7a5cb0;           /* 能力：紫 */
     --trend:#4fb39a;           /* 趨勢：薄荷綠 */
     --plus:#a3884e;            /* 加值：灰金 */
     --ink:#2d2a26;
@@ -19,17 +20,19 @@
     --bg:#fbf8f4;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Heiti TC",sans-serif;line-height:1.75}
-  .wrap{max-width:880px;margin:0 auto;padding:32px 22px 80px}
-  /* Header */
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Heiti TC",sans-serif;line-height:1.78}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 22px 60px}
   .top{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 30px 26px;box-shadow:0 4px 18px rgba(217,119,87,.06)}
-  .top .meta{font-size:13px;color:var(--ink3);letter-spacing:2px}
-  .top h1{font-size:26px;line-height:1.45;margin:10px 0 6px;color:var(--ink)}
+  .brand-row{display:flex;align-items:center;gap:10px;color:var(--ink2);font-size:13px;letter-spacing:1px}
+  .brand-dot{width:8px;height:8px;border-radius:50%;background:var(--brand)}
+  .top .meta{font-size:13px;color:var(--ink3);letter-spacing:2px;margin-top:6px}
+  .top h1{font-size:26px;line-height:1.5;margin:12px 0 8px;color:var(--ink)}
   .top h1 em{font-style:normal;color:var(--brand)}
-  .top p.sub{margin:6px 0 0;color:var(--ink2);font-size:15px}
+  .top .tag-line{margin:8px 0 0;color:var(--ink2);font-size:15px}
+  .top .pillar{margin-top:14px;padding:14px 16px;background:linear-gradient(90deg,#fff7f0,#f4f9ee);border:1px dashed #e7dccd;border-radius:12px;font-size:14px;color:#5b4a3f;letter-spacing:1px}
+  .pillar b{color:var(--brand);font-weight:700;letter-spacing:2px}
   .hero{margin-top:18px;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#fff7f0 0%,#f3eef9 50%,#eaf6f1 100%);border:1px solid var(--line)}
   .hero svg{display:block;width:100%;height:auto}
-  /* Cards */
   .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 28px 26px;margin-top:22px;position:relative;box-shadow:0 4px 14px rgba(0,0,0,.03)}
   .star-slot{position:absolute;top:18px;right:18px;width:32px;height:32px;border:1px dashed #d8d2c8;border-radius:8px;color:#c9c1b4;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;background:#fdfaf6;user-select:none}
   .star-slot:hover{background:var(--brand-soft);color:var(--brand);border-color:var(--brand)}
@@ -41,23 +44,33 @@
   .tag.trend{background:var(--trend)}
   .tag.plus{background:var(--plus)}
   .tag.ghost{background:#fff;color:var(--ink2);border:1px solid var(--line)}
-  .title{font-size:21px;line-height:1.5;margin:6px 50px 10px 0;color:var(--ink);font-weight:700}
+  .title{font-size:21px;line-height:1.55;margin:6px 50px 10px 0;color:var(--ink);font-weight:700}
   .lead{color:var(--ink2);font-size:15.5px;margin:8px 0 16px}
   .section{margin-top:14px}
   .h{font-size:13px;letter-spacing:3px;color:var(--brand);font-weight:700;margin:0 0 6px}
-  .body{font-size:15px;color:var(--ink);margin:0}
+  .body{font-size:15.2px;color:var(--ink);margin:0}
+  .insight{margin-top:14px;padding:14px 16px;background:#f5f0e6;border-left:4px solid #c9a47a;border-radius:8px;color:#4a3f2f;font-size:14.8px}
+  .insight b{color:#7a3d22}
   .quote{margin-top:18px;padding:14px 16px;background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:8px;color:#7a3d22;font-size:15.5px;font-weight:600}
-  .post{margin-top:14px;padding:16px 18px;background:#fbf8f4;border:1px dashed var(--line);border-radius:10px;font-size:14.8px;color:#3a3530;white-space:pre-wrap}
+  .post{margin-top:14px;padding:16px 18px;background:#fbf8f4;border:1px dashed var(--line);border-radius:10px;font-size:14.8px;color:#3a3530;white-space:pre-wrap;line-height:1.85}
   .meta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);font-size:13px;color:var(--ink2)}
   .meta-row span b{color:var(--ink);font-weight:600}
   a.src{color:#3a6f63;text-decoration:none;border-bottom:1px dotted #4fb39a}
   a.src:hover{color:#206e5a}
-  .footer{margin-top:32px;padding:16px;text-align:center;color:var(--ink3);font-size:13px}
+  /* 頁尾品牌區 */
+  .brand-foot{margin-top:36px;padding:24px 26px;background:#fff;border:1px solid var(--line);border-radius:18px}
+  .brand-foot h3{margin:0 0 8px;font-size:16px;color:var(--brand);letter-spacing:2px}
+  .brand-foot .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  .brand-foot .col{font-size:13.5px;color:var(--ink2);line-height:1.85}
+  .brand-foot .col b{color:var(--ink);font-weight:600}
+  .brand-foot .slogan{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);text-align:center;color:#7a3d22;font-size:14px;letter-spacing:3px}
+  .footer{margin-top:18px;text-align:center;color:var(--ink3);font-size:12.5px}
   @media (max-width:520px){
-    .wrap{padding:18px 12px 60px}
-    .card,.top{padding:22px 18px}
+    .wrap{padding:18px 12px 50px}
+    .card,.top,.brand-foot{padding:22px 18px}
     .title{font-size:19px;margin-right:42px}
     .star-slot{top:14px;right:14px;width:28px;height:28px}
+    .brand-foot .grid{grid-template-columns:1fr}
   }
 </style>
 </head>
@@ -65,11 +78,13 @@
 <div class="wrap">
 
   <header class="top">
-    <div class="meta">2026.05.02 ｜ 13:15 ｜ 台灣時間</div>
-    <h1>當「他不肯起床」遇上「99 分還哭」——五件你以為很小、其實在<em>替他長大腦</em>的事</h1>
-    <p class="sub">覺知 SEL 教育每日教養文宣 ｜ 五月第二天 ・ 午後第一杯水的時間</p>
+    <div class="brand-row"><span class="brand-dot"></span>覺知 SEL 教育 ・ 台灣展威文化教育 × 中華覺知教育關懷協會</div>
+    <div class="meta">2026.05.02 ｜ 13:15 ｜ 台灣時間 ・ 每日教養文宣</div>
+    <h1>當早晨變戰場、當 99 分還哭——五個今天就能<em>回到內在</em>的覺察練習</h1>
+    <p class="tag-line">教育，不是讓孩子多會什麼；而是當事情來的時候，他能不能安定自己、好好想、做出不後悔的選擇。</p>
+    <div class="pillar"><b>覺察己心，知行合一</b>　・　<b>先懂心，再懂教</b>　・　<b>蒙以養正，老而有尊</b></div>
     <div class="hero">
-      <!-- 主視覺：清晨書桌前的母親與孩子 + 紙張紛飛意象 -->
+      <!-- 主視覺：晨光、樹苗、書桌、來回羽毛球（serve and return） -->
       <svg viewBox="0 0 880 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
           <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
@@ -83,43 +98,46 @@
           </radialGradient>
         </defs>
         <rect width="880" height="280" fill="url(#sky)"/>
-        <circle cx="710" cy="84" r="120" fill="url(#sun)"/>
+        <circle cx="700" cy="80" r="130" fill="url(#sun)"/>
+        <!-- 樹苗 -->
+        <g transform="translate(610,200)">
+          <rect x="-3" y="-30" width="6" height="40" fill="#a06b3e"/>
+          <ellipse cx="0" cy="-50" rx="46" ry="40" fill="#9bc89f"/>
+          <ellipse cx="-22" cy="-58" rx="20" ry="16" fill="#7fb487"/>
+          <ellipse cx="22" cy="-46" rx="22" ry="14" fill="#7fb487"/>
+        </g>
         <!-- 桌子 -->
-        <rect x="80" y="200" width="720" height="14" rx="3" fill="#e9d6c4"/>
-        <rect x="100" y="214" width="6" height="46" fill="#d8c2ae"/>
-        <rect x="774" y="214" width="6" height="46" fill="#d8c2ae"/>
+        <rect x="80" y="200" width="500" height="14" rx="3" fill="#e9d6c4"/>
+        <rect x="100" y="214" width="6" height="50" fill="#d8c2ae"/>
+        <rect x="554" y="214" width="6" height="50" fill="#d8c2ae"/>
         <!-- 紙張紛飛 -->
         <g opacity=".88">
-          <rect x="180" y="120" width="60" height="78" rx="4" fill="#fff" stroke="#e6dfd4" transform="rotate(-12 210 159)"/>
-          <rect x="260" y="100" width="60" height="78" rx="4" fill="#fff" stroke="#e6dfd4" transform="rotate(8 290 139)"/>
-          <rect x="340" y="130" width="60" height="78" rx="4" fill="#fff" stroke="#e6dfd4" transform="rotate(-4 370 169)"/>
-          <line x1="190" y1="135" x2="226" y2="135" stroke="#e0d7c8" stroke-width="2" transform="rotate(-12 210 159)"/>
-          <line x1="190" y1="148" x2="218" y2="148" stroke="#e0d7c8" stroke-width="2" transform="rotate(-12 210 159)"/>
-          <text x="282" y="148" font-size="22" fill="#d97757" font-weight="700" transform="rotate(8 290 139)">99</text>
-          <line x1="350" y1="148" x2="386" y2="148" stroke="#e0d7c8" stroke-width="2" transform="rotate(-4 370 169)"/>
+          <rect x="160" y="120" width="60" height="78" rx="4" fill="#fff" stroke="#e6dfd4" transform="rotate(-12 190 159)"/>
+          <rect x="240" y="100" width="60" height="78" rx="4" fill="#fff" stroke="#e6dfd4" transform="rotate(8 270 139)"/>
+          <rect x="330" y="130" width="60" height="78" rx="4" fill="#fff" stroke="#e6dfd4" transform="rotate(-4 360 169)"/>
+          <text x="262" y="148" font-size="22" fill="#d97757" font-weight="700" transform="rotate(8 270 139)">99</text>
+          <line x1="170" y1="135" x2="206" y2="135" stroke="#e0d7c8" stroke-width="2" transform="rotate(-12 190 159)"/>
+          <line x1="340" y1="148" x2="376" y2="148" stroke="#e0d7c8" stroke-width="2" transform="rotate(-4 360 169)"/>
         </g>
         <!-- 媽媽剪影 -->
-        <g transform="translate(450,90)">
+        <g transform="translate(440,90)">
           <ellipse cx="0" cy="0" rx="20" ry="22" fill="#3f2a26"/>
           <path d="M-30 22 Q 0 18 30 22 L 36 110 L -36 110 Z" fill="#7a5cb0" opacity=".82"/>
         </g>
         <!-- 孩子剪影 -->
-        <g transform="translate(540,140)">
+        <g transform="translate(520,140)">
           <circle cx="0" cy="0" r="16" fill="#3f2a26"/>
           <path d="M-22 16 Q 0 12 22 16 L 26 80 L -26 80 Z" fill="#d97757" opacity=".88"/>
         </g>
-        <!-- 手機 / 鬧鐘小圖示 -->
-        <g transform="translate(120,150)">
-          <rect x="-12" y="-20" width="24" height="40" rx="4" fill="#4fb39a" opacity=".85"/>
-          <rect x="-9" y="-16" width="18" height="28" rx="2" fill="#fff"/>
-          <circle cx="0" cy="16" r="2" fill="#fff"/>
+        <!-- 來回羽毛球：serve and return -->
+        <g opacity=".7">
+          <path d="M390 60 Q 480 20 600 60" stroke="#a3884e" stroke-dasharray="3 4" stroke-width="1.6" fill="none"/>
+          <circle cx="600" cy="60" r="6" fill="#fff" stroke="#a3884e" stroke-width="1.5"/>
+          <path d="M600 60 l-5 -10 m5 10 l 5 -10 m-5 10 l 0 -12" stroke="#a3884e" stroke-width="1.4" fill="none"/>
+          <circle cx="390" cy="60" r="6" fill="#fff" stroke="#a3884e" stroke-width="1.5"/>
         </g>
-        <!-- 漂浮的羽球（serve and return） -->
-        <g opacity=".75">
-          <circle cx="630" cy="60" r="6" fill="#fff"/>
-          <path d="M630 60 l-6 -10 m6 10 l 6 -10 m-6 10 l 0 -12" stroke="#a3884e" stroke-width="1.6" fill="none"/>
-          <path d="M540 40 q 40 -20 90 20" stroke="#a3884e" stroke-dasharray="3 4" stroke-width="1.4" fill="none"/>
-        </g>
+        <!-- 一道光 -->
+        <line x1="700" y1="0" x2="700" y2="280" stroke="#ffd9b8" stroke-width="0.6" opacity=".5"/>
       </svg>
     </div>
   </header>
@@ -127,25 +145,27 @@
   <!-- 文章 1 - 痛點 / 早晨拖拉 -->
   <article class="card">
     <div class="star-slot" onclick="this.classList.toggle('on')" title="標記為已發布">⭐</div>
-    <div class="tags"><span class="tag pain">第一層 ・ 痛點</span><span class="tag ghost">早晨戰爭</span><span class="tag ghost">皮質醇</span></div>
-    <h2 class="title">「快點！要遲到了！」——你每天早上吼的那 7 分鐘，正在悄悄替他寫好「今天會不會壞掉」的劇本</h2>
-    <p class="lead">早上 7:23，妳一手拿著吐司，一手拉他的襪子——他卻還趴在床上滑手指。妳深吸一口氣，第三次，妳的聲音比昨天又高了一階。然後車一發動、紅燈一停，妳看著後照鏡裡那張眼眶紅紅的小臉，妳心想：他今天上學會好嗎？</p>
+    <div class="tags"><span class="tag pain">第一層 ・ 痛點</span><span class="tag ghost">早晨戰爭</span><span class="tag ghost">情緒切換</span></div>
+    <h2 class="title">「快點！要遲到了！」——你每天早上吼的那 7 分鐘，正在替孩子寫好「今天會不會穩定」的劇本</h2>
+    <p class="lead">早上 7:23，妳一手拿著吐司、一手拉他的襪子——他卻還趴在床上滑手指。妳深吸一口氣，第三次，妳的聲音比昨天又高了一階。然後車一發動、紅燈一停，妳看著後照鏡裡那張眼眶紅紅的小臉，妳心想：他今天上學會好嗎？</p>
 
     <div class="section">
       <p class="h">▍教育新知</p>
-      <p class="body">親子天下與天才領袖團隊整理：孩子起床氣的成因不是「故意」，而是四件事疊在一起——前一晚沒睡夠、沒有起床的「動機」、大腦警醒系統還沒切換、加上「被催被強迫」的感覺。香港大學睡眠實驗室也提醒，學齡兒童在被叫醒到上學的這 20 分鐘，皮質醇（壓力荷爾蒙）會在大腦海馬迴與前額葉留下殘影——慢性的早晨衝突，會讓孩子白天的情緒調節能力下降、學習專注力縮短。</p>
+      <p class="body">親子天下與天才領袖團隊整理：孩子起床氣的成因不是「故意」，是四件事疊在一起——前一晚沒睡夠、沒有起床的「動機」、大腦警醒系統還沒切換、加上「被催被強迫」的感覺。香港大學睡眠實驗室也提醒，學齡兒童在被叫醒到上學的這 20 分鐘，壓力荷爾蒙會在情緒與專注的腦區留下殘影——慢性的早晨衝突，會讓孩子白天的情緒調節能力下降、學習專注力縮短。</p>
     </div>
 
     <div class="section">
       <p class="h">▍覺知 SEL 觀點</p>
-      <p class="body">早晨那 7 分鐘的吼，從來不只是「叫他起床」——它是孩子今天的第一堂情緒課。我們以為自己在處理時間，其實在處理一個還沒長好的小神經系統。SEL 的第一個核心是「自我覺察」，而它的起點不是孩子的覺察，是父母在自己快要爆炸前的那 0.5 秒——願不願意先把音量調回來。</p>
+      <p class="body">早晨那 7 分鐘的吼，從來不只是「叫他起床」——它是孩子今天的第一堂情緒課。我們以為自己在處理時間，其實在處理一個還沒長好的小神經系統。覺知 SEL 不是要父母「不能生氣」——是請父母在開口前，先<b>看見自己正在發生什麼</b>。當你願意給自己 0.5 秒的空間，孩子也會多出一秒能呼吸的縫隙。<b>先懂心，再懂教</b>——這條順序，從每天的第一個早晨就開始。</p>
     </div>
+
+    <div class="insight"><b>覺察 → 選擇空間 → 行動</b>　｜　看見自己快要爆炸的那 0.5 秒，是孩子最需要的「空間」。當大人能安住，孩子才有機會學會自己安住。</div>
 
     <div class="section">
       <p class="h">📱 可直接發布文案（複製即用）</p>
       <div class="post">「快點！要遲到了！」
 
-那句話今天早上，妳又吼了第三次。
+那句話，今天早上妳又吼了第三次。
 
 他不是故意拖。
 是他的大腦——
@@ -159,21 +179,25 @@
 不是動力，是壓力荷爾蒙。
 那會跟著他，一路跟到第一節課。
 
-明天試試看：
-把鬧鐘調早 10 分鐘，
-然後妳——也早 10 分鐘下床。
+明天試試看，把鬧鐘調早 10 分鐘——
+然後妳，也早 10 分鐘下床。
 
 不是替他爭時間，
-是替自己爭那 0.5 秒——
+是替自己留 0.5 秒——
 能在開口之前，
-先深吸一口氣的那 0.5 秒。
+先看見「我現在很急、很慌」的那 0.5 秒。
+
+那一秒不是浪費。
+那一秒，叫做覺察。
+有了它，行動才不會被情緒帶走。
 
 他學會的，不是早起。
 是「就算這個早晨很難，
-媽媽也沒有把它變成戰場」。</div>
+媽媽也沒把它變成戰場」——
+這就是 SEL 真正的第一堂課。</div>
     </div>
 
-    <div class="quote">妳吼的不是時間，是壓力——他帶進教室的，也是。</div>
+    <div class="quote">妳吼的不是時間，是壓力——他帶進教室的，也是。先安住自己，才能安住孩子。</div>
 
     <div class="meta-row">
       <span><b>適合平台</b>　LINE 群組／FB 長文／IG 圖卡分段</span>
@@ -191,18 +215,20 @@
   <article class="card">
     <div class="star-slot" onclick="this.classList.toggle('on')" title="標記為已發布">⭐</div>
     <div class="tags"><span class="tag pain">第一層 ・ 痛點</span><span class="tag ghost">完美主義</span><span class="tag ghost">害怕失敗</span></div>
-    <h2 class="title">考 99 分回家還哭——他不是貪心、不是抗壓低，是把那一分變成了「我不夠好」的證據</h2>
+    <h2 class="title">考 99 分回家還哭——他不是貪心，是把那 1 分悄悄翻成了「我不夠好」的證據</h2>
     <p class="lead">爸爸下班，看到桌上的考卷——99 分。他正想說一聲「太厲害了」，孩子卻趴在書桌上抽泣：「我那一題只是粗心。」爸爸愣在那裡，心裡五味雜陳——明明考這麼好，為什麼是這個表情？</p>
 
     <div class="section">
       <p class="h">▍教育新知</p>
-      <p class="body">美國西維吉尼亞大學學者 Katie Rasmussen 整理跨國研究指出：每 5 個兒童青少年，就有 2 個是「臨床等級的完美主義者」。國立臺灣師範大學特殊教育研究學刊的論文（白秀玲）發現，完美主義孩子最常見的不是「追求第一名」，而是把「不完美 = 我這個人不夠好」綁在一起；女人迷《回家吧 I'm home》引用心理師指出，這種孩子常同時具備高敏感特質——他不是輸不起，是輸了會懷疑「我整個人是不是有問題」。信誼基金會也提醒：當父母長期用「結果取向」回應（你考一百我帶你去玩），孩子就會把「分數」誤認成「自己被愛的條件」。</p>
+      <p class="body">美國西維吉尼亞大學學者 Katie Rasmussen 整理跨國研究指出：每 5 個兒童青少年，就有 2 個是「臨床等級的完美主義者」。國立臺灣師範大學特殊教育研究學刊白秀玲的論文發現，完美主義孩子最常見的不是「想拿第一」，而是把「不完美 = 我這個人不夠好」綁在一起。信誼基金會也提醒：當父母長期用「結果取向」回應（你考一百帶你去玩），孩子就會把分數誤認成「自己被愛的條件」。</p>
     </div>
 
     <div class="section">
       <p class="h">▍覺知 SEL 觀點</p>
-      <p class="body">他哭的不是那 1 分，是「我以為自己做到了，可是還不夠」。完美主義孩子最缺的，從來不是更高的標準，而是「就算我沒做到，我這個人還是好的」這句話——而這句話，只能從你嘴裡說。SEL 的第二個核心「自我管理」，根本不是壓抑情緒，是先有人替他把「我」和「我做的事」分開——他才學得會怎麼分。</p>
+      <p class="body">他哭的不是 1 分，是「我以為自己做到了，可是還不夠」。完美主義孩子最缺的，從來不是更高的標準，而是「就算我沒做到，我這個人還是好的」這句話。覺知 SEL 教育從不否定努力——它只請父母先看見：當你心疼那 1 分時，到底是疼孩子的失誤，還是急著想替他補上「我們沒讓他輸」的不安？<b>蒙以養正</b>，正在這個地方扎根：在他人生最容易被形塑的時刻，先把「我」和「我做的事」分開——他長大後，才不會把每一次失誤都當成自己崩塌的開始。</p>
     </div>
+
+    <div class="insight"><b>先懂心，再懂教</b>　｜　把成績和孩子分開的那一刻，是父母內在覺察的展現——也是孩子一輩子的禮物。</div>
 
     <div class="section">
       <p class="h">📱 可直接發布文案（複製即用）</p>
@@ -213,12 +239,11 @@
 
 ——他不是貪心。
 他是把那 1 分，
-偷偷翻譯成了：
-「我不夠好。」
+偷偷翻譯成了「我不夠好」。
 
 研究說，
 每 5 個孩子，
-就有 2 個活在這種翻譯機裡。
+就有 2 個活在這台翻譯機裡。
 
 這時候，
 請不要說「99 分已經很棒了啦」，
@@ -229,21 +254,24 @@
 
 「那 1 分，是粗心丟的，
 不是你這個人丟的。
-你有沒有發現——
-你剛剛把自己跟那 1 分，
-綁在一起了？」
+我看到你——
+正把自己跟那 1 分，綁在一起。」
 
 他可能會愣住。
 那一愣，
 是他第一次練習：
-把自己，
-和成績解開。
+把「我」和「我考的分數」鬆開。
 
 那是一輩子的功課。
-你今天，幫他開了第一堂。</div>
+你今天，幫他開了第一堂。
+
+我們從來不是要孩子拿一百，
+是要他長成——
+拿到再多分數，
+都不需要犧牲自己也覺得自己好的那種人。</div>
     </div>
 
-    <div class="quote">他不是輸不起 1 分，是還沒學會「我」和「我考的分數」是兩回事。</div>
+    <div class="quote">他不是輸不起 1 分，是還沒學會：「我」和「我考的分數」是兩件不一樣的事。</div>
 
     <div class="meta-row">
       <span><b>適合平台</b>　FB 長文／部落格／LINE 親師群組</span>
@@ -262,18 +290,20 @@
   <article class="card">
     <div class="star-slot" onclick="this.classList.toggle('on')" title="標記為已發布">⭐</div>
     <div class="tags"><span class="tag skill">第二層 ・ 能力</span><span class="tag ghost">內在動機</span><span class="tag ghost">自我決定理論 SDT</span></div>
-    <h2 class="title">「你彈得真好！」這句鼓勵——正在悄悄殺掉他想彈下一首的力氣</h2>
-    <p class="lead">阿嬤接孫子下課，孫子第三週主動坐到鋼琴前。阿嬤一邊洗碗一邊說：「哇彈得真好！等等阿嬤給你買布丁。」沒想到第二天，孫子打開琴蓋又默默闔上：「不要彈了。」阿嬤百思不得其解——明明她那麼用力誇了。</p>
+    <h2 class="title">「你彈得真好！」這句鼓勵——正在悄悄替他熄掉「想彈下一首」的那盞燈</h2>
+    <p class="lead">阿嬤接孫子下課，孫子第三週主動坐到鋼琴前。阿嬤一邊洗碗一邊說：「哇彈得真好！等等阿嬤給你買布丁。」沒想到第二天，孫子打開琴蓋又默默闔上：「不要彈了。」阿嬤百思不得其解——她明明那麼用力誇了。</p>
 
     <div class="section">
       <p class="h">▍教育新知</p>
-      <p class="body">心理學家 Edward L. Deci 與 Richard M. Ryan 自 1980 年代提出「自我決定理論」（Self-Determination Theory, SDT）。理論主張：人的內在動機要長出來，需要三個心理養分同時被滿足——自主（autonomy，這是我選的）、勝任（competence，我做得到）、連結（relatedness，做這件事讓我感受到關係）。當父母用獎賞、排名或誇讚來「催熟」孩子時，會把原本屬於「自主」的內在動機，慢慢偷換成「為了別人的反應」的外在動機——這現象在 Deci 1971 年經典實驗中被命名為「過度辯護效應」（overjustification effect）。教點心聞 2025 年最新整理也指出：這也是為什麼許多孩子小時候喜歡的事，長大後反而不愛了。</p>
+      <p class="body">心理學家 Edward L. Deci 與 Richard M. Ryan 提出「自我決定理論」（Self-Determination Theory, SDT）。理論主張：人的內在動機要長出來，需要三個心理養分同時被滿足——<b>自主</b>（這是我選的）、<b>勝任</b>（我做得到）、<b>連結</b>（做這件事讓我感受到關係）。當父母用獎賞、排名或誇讚來「催熟」孩子，會把原本屬於「自主」的內在動機，慢慢偷換成「為了別人的反應」的外在動機——這現象在 Deci 1971 年經典實驗中被命名為「過度辯護效應」。許多孩子小時候喜歡的事，長大後反而不愛了，這是其中一個關鍵。</p>
     </div>
 
     <div class="section">
       <p class="h">▍覺知 SEL 觀點</p>
-      <p class="body">最會澆熄孩子內在動機的話，往往是大人最善意的那句「你好棒」。因為「棒」這個字評的是表現，而孩子原本要長的，是「我享受這個過程」。覺知 SEL 不是不誇孩子，而是把誇的方向換掉——從「結果」轉到「他自己選擇的那一刻」、從「你彈得好」轉到「我看到你今天又自己坐下來了」。SEL 的第三個核心「負責任的決定」，根本起點就是「我感覺得到——這件事，是我選的」。</p>
+      <p class="body">最會澆熄孩子內在動機的話，往往是大人最善意的「你好棒」。「棒」這個字評的是表現，孩子原本要長的，是「我享受這個過程」。覺知 SEL 從來不是不誇孩子——是請父母先在心裡停一下：我現在這句誇，是想餵養他的內在動機，還是想餵飽我自己作為父母的安心？這就是<b>協會主軸：先有動機，再談成績</b>——把孩子主動奔向想做的事的那盞燈，點亮，並且不熄滅。</p>
     </div>
+
+    <div class="insight"><b>覺察己心，知行合一</b>　｜　把誇獎從「結果」轉到「他自主選擇的那一刻」，是父母覺察與行動之間的橋——孩子日後也會這樣認得自己。</div>
 
     <div class="section">
       <p class="h">📱 可直接發布文案（複製即用）</p>
@@ -313,10 +343,14 @@
 「這是我自己選的」這條神經迴路。
 
 那條迴路，
-會一輩子載著他。</div>
+會一輩子載著他。
+
+先有動機，再談成績。
+這不是口號——
+這是父母每一句話的選擇。</div>
     </div>
 
-    <div class="quote">不是少誇孩子，是別把他的內在動機，換成你的滿意度。</div>
+    <div class="quote">不是少誇孩子，是不要把他的內在動機，換成你的滿意度。</div>
 
     <div class="meta-row">
       <span><b>適合平台</b>　FB 長文／部落格 SEO 文／IG 多圖卡</span>
@@ -335,18 +369,20 @@
   <article class="card">
     <div class="star-slot" onclick="this.classList.toggle('on')" title="標記為已發布">⭐</div>
     <div class="tags"><span class="tag trend">第三層 ・ 趨勢</span><span class="tag ghost">哈佛兒童發展中心</span><span class="tag ghost">Serve &amp; Return</span></div>
-    <h2 class="title">寶寶哭你回 1 秒，他大腦就少 1000 條神經迴路被剪掉——哈佛 30 年研究：愛，是來回打的羽毛球</h2>
+    <h2 class="title">寶寶哭你回 1 秒，他大腦少 1000 條神經迴路被剪掉——哈佛 30 年研究：愛，是一場來回打的羽毛球</h2>
     <p class="lead">新手爸抱著三個月大的女兒，半夜兩點。他低頭看著哭得通紅的小臉，腦袋裡卻在打架——「育兒書說不能太快回應，會寵壞她」、「老婆說等等就好」、「我媽說讓她哭一下肺活量比較好」。那一刻他想——我到底該回，還是不該回？</p>
 
     <div class="section">
       <p class="h">▍教育新知</p>
-      <p class="body">哈佛大學「兒童發展中心」（Center on the Developing Child）累積 30 年的研究提出一個關鍵概念：Serve and Return（來回互動）——指照顧者與嬰幼兒之間像羽毛球一樣的「你來我往」。寶寶咿呀、哭、伸手、看你眼睛，都是「serve」（發球）；大人有目光接觸、回話、做表情，就是「return」（接球）。這個來回，會直接觸發嬰兒大腦的神經突觸連結——出生後前 3 年，大腦每秒形成超過 100 萬條新迴路，而最關鍵的一組「電線怎麼接」，就是被這些「有沒有人回應我」的時刻決定的。Maryland Essentials for Childhood 2025 指出：早期長期缺乏 serve and return，會讓孩子日後的語言、注意力、情緒調節能力一起受影響。</p>
+      <p class="body">哈佛大學「兒童發展中心」（Center on the Developing Child）累積 30 年研究提出一個關鍵概念：<b>Serve and Return（來回互動）</b>——指照顧者與嬰幼兒之間像羽毛球一樣的「你來我往」。寶寶咿呀、哭、伸手、看你眼睛，都是「serve」（發球）；大人有目光接觸、回話、做表情，就是「return」（接球）。這個來回，會直接觸發嬰兒大腦的神經連結——出生後前 3 年，大腦每秒形成超過 100 萬條新迴路，而最關鍵的一組「電線怎麼接」，就是被「有沒有人回應我」這些時刻決定的。</p>
     </div>
 
     <div class="section">
       <p class="h">▍覺知 SEL 觀點</p>
-      <p class="body">回應寶寶從來不會把他寵壞——只會把他「接好」。一個被「serve and return」充分餵養的孩子，他不需要不停地測試「你還在不在」，他可以把那些大腦能量留下來，去長語言、去長好奇心、去長情緒調節。SEL 的「自我覺察」與「人際關係技巧」這兩個核心，最深的根，從寶寶第一次哭、第一次被接到的那一秒就埋下了。覺知教育從來不只給學齡孩子——它從你抱著他、跟他對望的那 1 秒就開始了。</p>
+      <p class="body">回應寶寶從來不會把他寵壞——只會把他「接好」。一個被 serve and return 充分餵養的孩子，他不需要不停測試「你還在不在」，可以把那些大腦能量留下來，長語言、長好奇心、長情緒調節。這就是覺知 SEL 教育最深的承諾——<b>蒙以養正</b>：在孩子最容易被形塑的時刻，為他奠下穩定、清明而不被動搖的心智根基。覺知教育從來不只給學齡孩子——從你抱著他、跟他對望的那 1 秒就開始了。</p>
     </div>
+
+    <div class="insight"><b>蒙以養正，老而有尊</b>　｜　你 1 秒內接住的那聲哭，是他日後置身變局時，仍能站立的那塊根。</div>
 
     <div class="section">
       <p class="h">📱 可直接發布文案（複製即用）</p>
@@ -376,8 +412,8 @@
 都在形成超過 100 萬條新迴路。
 其中最關鍵的一組——
 「我安全嗎？我能信任這個世界嗎？」
-就是被這些「我哭你接到了」
-的時刻決定的。
+就是被「我哭你接到了」
+那一刻決定的。
 
 你回得越穩，
 她日後就越不需要花力氣
@@ -390,7 +426,8 @@
 
 凌晨兩點抱起她，
 不是寵壞，
-是替她接好神經電線。
+是在替她奠下
+一份「老而有尊」的根。
 
 最累的那段，
 你做得很好。</div>
@@ -419,13 +456,15 @@
 
     <div class="section">
       <p class="h">▍教育新知</p>
-      <p class="body">美國《兒科》（Journal of Pediatrics, 2025）的最新研究，分析了「青少年大腦認知發展研究」（ABCD Study）超過 1 萬 5 百名兒童的長期數據——這是目前美國針對兒童大腦發育最大規模的長期追蹤計畫。結果發現：12 歲前擁有智慧型手機的孩子，相較於同齡未擁有的孩子，憂鬱症風險增加 31%、肥胖風險增加 40%、睡眠不足風險增加 62%；而且每提早一年擁有，風險約再增加 8-9%。研究主持人、費城兒童醫院巴茲萊醫師（Dr. Barzilay）特別強調：「12 歲跟 16 歲的孩子，是兩個物種，不能套同一套規則。」加州大學舊金山分校的納塔加醫師則建議：就算已經給了，「徹夜把手機移出臥房」就是最有效的減害。</p>
+      <p class="body">美國《兒科》（Journal of Pediatrics）2025 最新研究分析了「青少年大腦認知發展研究」（ABCD Study）超過 1 萬 5 百名兒童的長期數據——這是目前美國針對兒童大腦發育最大規模的長期追蹤計畫。結果發現：12 歲前擁有智慧型手機的孩子，相較同齡未擁有的孩子，憂鬱症風險增加 31%、肥胖風險增加 40%、睡眠不足風險增加 62%；而且每提早一年擁有，風險再增加 8-9%。研究主持人費城兒童醫院巴茲萊醫師強調：「12 歲跟 16 歲的孩子，是兩個物種，不能套同一套規則。」加州大學舊金山分校的納塔加醫師建議：就算已經給了，「徹夜把手機移出臥房」就是最有效的減害。</p>
     </div>
 
     <div class="section">
       <p class="h">▍覺知 SEL 觀點</p>
-      <p class="body">「給不給手機」這個問題，不是時間題，是關係題。當父母兩人因為這個決定睡不著、吵架，那已經告訴我們——焦慮的不只是孩子被排擠，是「我們不知道怎麼跟他談手機這件事」。覺知 SEL 教養的關鍵不在「幾歲給」，而在「給之前的那場對話，你們有沒有真的把他當成一個能討論、能負責的人」。手機可以晚一點給，但孩子問你「為什麼別人有我沒有」的那一刻，必須要有大人，能夠不防衛、不敷衍、好好回答他。</p>
+      <p class="body">「給不給手機」這個問題，從來不是時間題，是<b>關係題</b>。當父母兩人因為這個決定睡不著、吵架——焦慮的不只是孩子被排擠，是「我們不知道怎麼跟他談手機這件事」。覺知教養的關鍵不在「幾歲給」，而在「給之前的那場對話，你們有沒有真的把他當成一個能討論、能負責的人」。手機可以晚一點給；但孩子問你「為什麼別人有我沒有」的那一刻，必須要有大人能不防衛、不敷衍地回他——那才是<b>先懂心，再懂教</b>真正落地的時刻。</p>
     </div>
+
+    <div class="insight"><b>覺察 → 對話 → 規則</b>　｜　規則沒有覺察，孩子只會學會抗拒；先有覺察的對話，規則才會被一起遵守。</div>
 
     <div class="section">
       <p class="h">📱 可直接發布文案（複製即用）</p>
@@ -457,7 +496,7 @@
 你睡不著的，
 不是給不給。
 是「他問為什麼別人有，
-我沒辦法不防衛地回他」。
+我不知道怎麼不防衛地回他」。
 
 所以今晚——
 比起決定給不給，
@@ -473,7 +512,11 @@
 
 手機可以晚一點。
 但這些對話，
-不能晚一年。</div>
+不能晚一年。
+
+先懂心，再懂教——
+這條順序，
+從一支還沒到他手上的手機開始。</div>
     </div>
 
     <div class="quote">幾歲給手機是時間題；他問「為什麼別人有」那一刻，才是關係題。</div>
@@ -490,6 +533,33 @@
       <span><b>Unsplash 關鍵字</b>　parents arguing late night、kid smartphone classroom、phone in pocket child</span>
     </div>
   </article>
+
+  <!-- 品牌頁尾 -->
+  <section class="brand-foot">
+    <h3>覺知 SEL 教育 ・ 一群人、一件事、一輩子</h3>
+    <p style="margin:0;color:#5b5651;font-size:14px">在 AI 加速變動的時代，為教育勾勒一條回到內在、穩定前行的路徑。我們相信——父母最在意的，不是孩子會多少，而是遇到事情時，能不能安定自己、好好想、做出不後悔的選擇。</p>
+    <div class="grid">
+      <div class="col">
+        <b>台灣展威文化教育有限公司</b><br/>
+        Taiwan Z Way Co., Ltd.<br/>
+        高雄市鼓山區美術東三路 86 號<br/>
+        電話 ｜ 07-2693525<br/>
+        LINE ｜ <a class="src" href="https://line.me/ti/p/~@zwayedu" target="_blank">@zwayedu</a><br/>
+        信箱 ｜ admin@z-way-edu.com<br/>
+        FB ｜ <a class="src" href="https://www.facebook.com/zwayedu" target="_blank">facebook.com/zwayedu</a>
+      </div>
+      <div class="col">
+        <b>社團法人中華覺知教育關懷協會</b><br/>
+        Chinese Self-awareness Education Caring Association<br/>
+        高雄市鼓山區美術東三路 86 號 4 樓<br/>
+        電話 ｜ 07-2693525　傳真 ｜ 07-2693526<br/>
+        信箱 ｜ contact@z-way-edu.com<br/>
+        統編 ｜ 72188904<br/>
+        服務時間 ｜ 週一至週五 9:00–18:00
+      </div>
+    </div>
+    <div class="slogan">蒙以養正　・　老而有尊　｜　覺察己心　・　知行合一　｜　先懂心　・　再懂教</div>
+  </section>
 
   <p class="footer">覺知 SEL 教育 ・ 每日教養文宣 ｜ 2026.05.02 13:15 ｜ 台灣時間 ・ 共 5 則 ・ 跨 4 個分類層級</p>
 </div>
