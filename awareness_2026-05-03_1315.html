@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.03 13:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(0,0,0,0.03);
+  position:relative;
+}
+.star-slot{
+  position:absolute;
+  top:14px;
+  right:18px;
+  width:32px;
+  height:32px;
+  border:1.5px dashed #d8cdbf;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  color:#cfc1ad;
+  background:#fff;
+  user-select:none;
+  cursor:pointer;
+  transition:.2s;
+}
+.star-slot:hover{border-color:var(--brand);color:var(--brand)}
+.star-slot.marked{
+  border-style:solid;
+  border-color:#f0b338;
+  background:#fff8e6;
+  color:#f0a000;
+}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;padding-right:48px}
+.tag{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 11px;
+  border-radius:14px;
+  font-weight:500;
+  letter-spacing:.5px;
+}
+.tag-pain{background:#fcebde;color:#b85a3e}
+.tag-skill{background:#ece4f7;color:#6b4ea0}
+.tag-trend{background:#dcf0eb;color:#3d8a78}
+.tag-extra{background:#f0eadc;color:#7a6438}
+.tag-plain{background:#f5efe7;color:#7a6d63}
+
+.card h2{
+  font-size:21px;
+  line-height:1.55;
+  margin:6px 0 18px;
+  color:var(--ink);
+  font-weight:700;
+  letter-spacing:.3px;
+}
+
+.section-label{
+  font-size:12px;
+  font-weight:700;
+  color:var(--brand-deep);
+  letter-spacing:2px;
+  margin:18px 0 6px;
+  text-transform:uppercase;
+}
+.scenario{
+  background:#fdf6ee;
+  border-left:3px solid var(--brand);
+  padding:14px 18px;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  color:#4a3f35;
+  margin:10px 0 4px;
+}
+.research{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  background:#f7f3ec;
+  padding:14px 18px;
+  border-radius:10px;
+  margin:8px 0;
+}
+.research b{color:var(--ink)}
+.insight{
+  font-size:15px;
+  color:var(--ink);
+  margin:6px 0;
+  padding:0 2px;
+}
+.copy{
+  background:#fffaf3;
+  border:1px dashed #e8c9a8;
+  border-radius:12px;
+  padding:18px 20px;
+  font-size:15px;
+  color:#3a322c;
+  margin:10px 0;
+  white-space:pre-wrap;
+  line-height:1.85;
+}
+.script-box{
+  background:#fef4f0;
+  border:1px solid #f3d5c1;
+  border-radius:12px;
+  padding:14px 18px;
+  margin:8px 0;
+}
+.script-box ol{margin:6px 0 4px 18px;padding:0}
+.script-box li{margin:6px 0;color:#4a3f35;font-size:14.5px}
+.script-box li b{color:var(--brand-deep)}
+
+.punchline{
+  background:linear-gradient(135deg,#fce8db 0%,#fff5ec 100%);
+  border-radius:12px;
+  padding:16px 20px;
+  font-weight:700;
+  color:var(--brand-deep);
+  font-size:15.5px;
+  letter-spacing:.4px;
+  margin:14px 0 8px;
+  line-height:1.75;
+}
+
+.meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.meta .row{display:flex;gap:8px;flex-wrap:wrap}
+.meta .row b{color:var(--ink);min-width:74px;display:inline-block}
+.meta a{color:var(--brand-deep);text-decoration:none;border-bottom:1px dotted #e3a78a}
+.meta a:hover{color:var(--brand)}
+
+.footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:36px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  letter-spacing:1px;
+}
+.footer .heart{color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 檔頭 -->
+<div class="head">
+  <span class="brand-tag">覺知 SEL · 每日教養文宣</span>
+  <h1>正午陽光斜進客廳——五則寫給此刻已經有點累、但還想讀一段話的你</h1>
+  <div class="date">2026.05.03 ｜ 13:15 ｜ 台灣時間</div>
+  <div class="sub">五則文案 ｜ 跨五個層級 ｜ 從她舉手又放下三次的數學課，到阿公看著孫子盯著作業本一個字也寫不出，到生日派對廁所裡哭的小女孩；從加拿大教室裡躺著一個嬰兒當老師的畫面，到一位媽媽吼完孩子後，蹲在門外對自己再吼一次的午後。</div>
+</div>
+
+<!-- 主視覺：午後窗光・客廳一角 -->
+<div class="hero">
+<svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="noon-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="60%" stop-color="#ffe8c8"/>
+      <stop offset="100%" stop-color="#f7c79b"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3deb9"/>
+      <stop offset="100%" stop-color="#caa074"/>
+    </linearGradient>
+    <linearGradient id="sunbeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5cf" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff5cf" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- 牆面 -->
+  <rect x="0" y="0" width="880" height="240" fill="#fdf3e3"/>
+  <!-- 大窗戶 -->
+  <rect x="80" y="36" width="320" height="190" fill="url(#noon-sky)" stroke="#a87850" stroke-width="6" rx="4"/>
+  <line x1="240" y1="36" x2="240" y2="226" stroke="#a87850" stroke-width="4"/>
+  <line x1="80" y1="131" x2="400" y2="131" stroke="#a87850" stroke-width="4"/>
+  <!-- 太陽 + 光暈 -->
+  <circle cx="320" cy="90" r="22" fill="#ffd99a" opacity="0.95"/>
+  <circle cx="320" cy="90" r="36" fill="#ffd99a" opacity="0.25"/>
+  <!-- 雲 -->
+  <ellipse cx="160" cy="78" rx="28" ry="8" fill="#fff" opacity="0.75"/>
+  <ellipse cx="220" cy="92" rx="22" ry="6" fill="#fff" opacity="0.6"/>
+  <!-- 窗台植物 -->
+  <rect x="100" y="220" width="46" height="30" fill="#a48a64" rx="3"/>
+  <path d="M122 220 Q108 196 114 174 Q124 192 122 220" fill="#5fb3a1"/>
+  <path d="M125 220 Q138 196 134 172 Q126 192 125 220" fill="#7ec8b6"/>
+  <path d="M118 220 Q104 204 100 184 Q112 200 118 220" fill="#5fb3a1"/>
+  <!-- 陽光斜射光束 -->
+  <polygon points="380,70 450,120 240,360 110,360" fill="url(#sunbeam)" opacity="0.55"/>
+  <!-- 地板 -->
+  <rect x="0" y="240" width="880" height="120" fill="url(#floor)"/>
+  <!-- 木板紋理 -->
+  <line x1="0" y1="278" x2="880" y2="278" stroke="#a8825a" stroke-width="1" opacity="0.5"/>
+  <line x1="0" y1="316" x2="880" y2="316" stroke="#a8825a" stroke-width="1" opacity="0.5"/>
+  <!-- 矮櫃 + 書 + 杯子 -->
+  <rect x="500" y="180" width="320" height="80" fill="#b88864" rx="3"/>
+  <rect x="510" y="186" width="148" height="68" fill="#a07752" rx="2"/>
+  <rect x="666" y="186" width="148" height="68" fill="#a07752" rx="2"/>
+  <!-- 矮櫃上的書 -->
+  <rect x="520" y="148" width="14" height="32" fill="#8c6bc7"/>
+  <rect x="535" y="142" width="14" height="38" fill="#5fb3a1"/>
+  <rect x="550" y="152" width="14" height="28" fill="#d97757"/>
+  <rect x="566" y="146" width="14" height="34" fill="#a48a64"/>
+  <!-- 矮櫃上的水杯 -->
+  <rect x="610" y="150" width="34" height="32" fill="#fff" stroke="#b85a3e" stroke-width="2" rx="3"/>
+  <ellipse cx="627" cy="152" rx="17" ry="3" fill="#bcd9f0" opacity="0.7"/>
+  <!-- 矮櫃上的相框 -->
+  <rect x="700" y="138" width="60" height="44" fill="#fff" stroke="#7a5a3a" stroke-width="3" rx="2"/>
+  <circle cx="720" cy="158" r="7" fill="#f7c79b"/>
+  <circle cx="740" cy="158" r="7" fill="#f3a672"/>
+  <path d="M708 174 Q720 168 730 174 Q740 168 752 174 L752 178 L708 178 Z" fill="#5fb3a1"/>
+  <!-- 地板上的玩具：木塊 -->
+  <rect x="500" y="290" width="32" height="32" fill="#d97757" rx="3"/>
+  <rect x="538" y="304" width="22" height="18" fill="#5fb3a1" rx="2"/>
+  <rect x="568" y="296" width="26" height="26" fill="#8c6bc7" rx="2"/>
+  <!-- 沙發抱枕 -->
+  <ellipse cx="800" cy="298" rx="42" ry="18" fill="#f0d8b8" opacity="0.8"/>
+  <rect x="760" y="280" width="80" height="32" fill="#fce8db" stroke="#b85a3e" stroke-width="2" rx="14"/>
+  <!-- 簽名 -->
+  <text x="640" y="350" font-family="'Noto Sans TC',sans-serif" font-size="13" fill="#7a5a3a" letter-spacing="2">覺知 SEL · 午後 13:15</text>
+</svg>
+</div>
+
+<!-- ============ 卡片 1：自信低落 / 痛點 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">第一層・家長痛點</span>
+    <span class="tag tag-plain">自信低落</span>
+    <span class="tag tag-plain">自我效能</span>
+    <span class="tag tag-plain">國小三年級</span>
+  </div>
+  <h2>「她每堂課都把手舉到一半，又默默放下三次」——不是她答不出，是她對自己說的那句「萬一錯了怎麼辦」，比題目還要重</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">家長日結束後，老師把你拉到走廊邊：「她其實都會喔，前幾天的隨堂測驗 92 分。但只要要她舉手回答，她每一次都把手舉到一半，又默默放下。」你回家後問她：「你不是會嗎？」她低著頭，把書包帶子捲了又捲，輕輕說：「萬一答錯，大家會笑我。」那一刻你才發現——她書桌上、抽屜裡、書包裡，每一張被改過的考卷，都是被她對折再對折，藏到看不見。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">心理學家 <b>Albert Bandura</b> 在 1977 年提出「<b>自我效能（self-efficacy）</b>」概念——指一個人對「自己能不能完成某件事」的內在信念。研究指出，自我效能低的孩子並不是「能力差」，而是 <b>把任務想得比實際更難</b>，因此選擇逃避、規劃變保守、壓力升高、甚至與「兒童憂鬱」高度相關。Bandura 同時指出，自我效能有四個來源：<b>成功經驗、替代經驗（看別人做到）、口語說服（被肯定）、情緒喚起</b>。其中——「重複的失敗」會迅速削弱效能感，而「累積的小成功」則是最有力的補回。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">孩子說「我不會」「我不要」「我等下再說」——很多時候不是能力的問題，是「自我效能」太低。覺知 SEL 強調的不是給更多讚美，而是幫孩子拆出「她已經做到的那一小步」、為她翻譯成「你會做到 A，所以你下一步可以試 B」。是用一個個微小成功，慢慢替她把那台壞掉的內在計算機，重新校正。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">家長日老師說：「她其實都會。但每次要舉手，她都把手舉到一半就放下。」
+我那一晚問她：「你不是會嗎？」
+她小聲說：「萬一答錯，大家會笑我。」
+
+我才發現——她書包裡每一張被改過的考卷，都被對折了三次。
+
+心理學家 Bandura 1977 年提出「自我效能」——
+不是孩子不會，而是她對「自己能不能做到」這件事，已經先打了零分。
+
+而最會擊垮自我效能的，不是失敗——
+是「失敗一次，就被全家盯著看」。
+
+今天，請別只說「你很棒」這四個字。
+請改說：「你昨天是 7 題寫對 5 題，今天我看到你又多寫對了 1 題。」
+
+那不是讚美——
+那是替她那台壞掉的內在計算機，重新校正一次。
+
+#自信低落 #自我效能 #兒童心理 #覺知SEL</div>
+
+  <div class="punchline">📌 她舉了手又放下，不是她答不出——是她還沒被「答錯也沒關係」這句話，認真地接過幾次。先補回那幾次，她下一次的手，才舉得起來。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LINE 社群 ｜ IG（拆 3 張卡片）</div>
+    <div class="row"><b>適合對象：</b>國小中低年級家長／國小教師／安親班</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://pedia.cloud.edu.tw/Entry/WikiContent?title=Bandura%E8%87%AA%E6%88%91%E6%95%88%E8%83%BD%E8%AB%96(self-efficacy_theory)" target="_blank">教育百科｜Bandura 自我效能論 self-efficacy theory</a> ｜
+      <a href="https://zh.wikipedia.org/zh-tw/%E8%87%AA%E6%88%91%E6%95%88%E8%83%BD" target="_blank">維基百科｜自我效能</a> ｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/17905" target="_blank">未來親子｜建立自信心、培養自我效能感的 7 原則</a> ｜
+      <a href="https://website.ncyu.edu.tw/giee/ServerFile/Get/8b806634-2d72-4705-bdd8-0c21032c741d?nodeId=33280&sId=17611" target="_blank">嘉大教育研究學刊 第 46 期｜自我效能與學業成就的相關性</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>shy girl raising hand classroom / quiet child desk / elementary school hesitation</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 2：寫作業崩潰 / 痛點 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">第一層・家長痛點</span>
+    <span class="tag tag-plain">寫作業崩潰</span>
+    <span class="tag tag-plain">任務啟動</span>
+    <span class="tag tag-plain">執行功能</span>
+  </div>
+  <h2>「8 點半，他還盯著作業本第一行——」不是他懶、不是他笨，是「按下開始」這四個字，本身就要花他一整顆腦袋</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">阿公從安親班接孫子回家。8 點半，他洗好碗走進房間——孫子坐在書桌前已經一個多鐘頭，鉛筆放在作業本上，第一行還是空的。阿公小聲問：「累不累？」孫子眼眶一紅：「我不知道從哪裡開始……」那一刻阿公心裡又疼又氣，又怕兒子媳婦回家又要罵孩子「拖拖拉拉」。他蹲下來，把鉛筆放進孫子手裡，自己念出第一個字：「『今』——你抄這一個就好。」孫子寫完那一個字，眼淚才掉下來。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">「<b>任務啟動（Task Initiation）</b>」是執行功能 EF 的子能力之一——指「不靠拖延、不靠別人催、能主動開始一件事」的能力。國際 EF 工具庫 <b>Executive Function Toolkit</b> 用一句話總結它：「<b>Starting is the hardest part. When you can't start, you're not lazy — you're stuck.</b>」香港 EP Services Centre 也把「任務開展」列為兒童 EF 五大關鍵之一，並指出——孩子卡在開始的真正原因，是「無法把作業這件大任務拆成第一個小動作」。蒙特梭利教育中的「<b>任務分析（Task Analysis）</b>」也是同一個道理：把一個困難的動作拆解成一個個簡單的小動作，孩子才有「能踩出去」的第一步。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">「快點寫」這三個字，是父母最常說的，但也是讓孩子「按不下開始鍵」的最大噪音。覺知 SEL 在實作上叫做「給第一筆」——不是替他寫，是替他把那個「我不知道從哪裡開始」的卡關，剝掉一層。從「先寫名字」「先抄第一個字」「先把鉛筆握起來」——大腦只要按下第一個動作，剩下的就會自己接手。先懂他卡在哪裡，再決定要催他什麼。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">阿公 8 點半走進房間。
+孫子坐在桌前已經一個多鐘頭，作業本第一行還是空的。
+
+他低聲說：「我不知道從哪裡開始……」
+
+——這不是他在拖。
+是他大腦那個叫「任務啟動」的功能，還沒長好。
+
+國際 EF 工具庫一句話：「Starting is the hardest part.」
+（最難的，永遠是『開始』那一秒。）
+
+今天晚上，請別吼「快點寫！」。
+試著蹲下來，把鉛筆放進他手裡，幫他念出第一個字：
+「『今』——你抄這一個就好。」
+
+寫完一個字，他大腦就會自己接手。
+
+孩子缺的不是意志力——是「按下開始」那一個被你陪過的瞬間。
+
+#寫作業崩潰 #任務啟動 #執行功能 #覺知SEL</div>
+
+  <div class="punchline">📌 他不是不寫——是「按下開始」這四個字，對他的大腦比「寫完」還要重。先把第一筆陪他放下去，他才接得住後面那五十個字。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LINE 社群 ｜ 親職社團 ｜ 安親班家長群</div>
+    <div class="row"><b>適合對象：</b>國小低中年級家長／祖父母／安親班老師</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://www.executivefunctiontoolkit.org/task-initiation.html" target="_blank">Executive Function Toolkit｜Task Initiation</a> ｜
+      <a href="https://www.hkep.org/executive-functions/" target="_blank">Hong Kong EP Services Centre｜Executive Functions</a> ｜
+      <a href="https://sites.google.com/view/clclab/%E5%85%92%E7%AB%A5%E8%AA%9E%E8%A8%80%E5%8F%8A%E8%AA%8D%E7%9F%A5%E8%AE%80%E6%9B%B8%E6%9C%83ebp/%E5%9F%B7%E8%A1%8C%E5%8A%9F%E8%83%BDexecutive-functions" target="_blank">兒童語言及認知實驗室｜Executive Functions（3-5 歲執行功能發展）</a> ｜
+      <a href="https://www.facebook.com/bigooday/posts/1101617548665596/" target="_blank">蒙特梭利教育｜任務分析 Task Analysis 的原理</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>child blank homework / pencil empty paper / kid stuck writing desk</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 3：高敏感族 HSP / 能力 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-skill">第二層・能力培養</span>
+    <span class="tag tag-plain">高敏感族</span>
+    <span class="tag tag-plain">HSP</span>
+    <span class="tag tag-plain">Elaine Aron</span>
+  </div>
+  <h2>「她在生日派對的廁所裡，哭了 20 分鐘」——不是她膽小、不是她不合群，是她耳朵裡同時聽見了 30 個聲音</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">阿姨陪 7 歲姪女去同學家生日派對。氣球啪一聲爆掉那一瞬間，姪女衝去廁所，門一關，蹲在馬桶旁邊抖到不行。阿姨輕輕推門進去，問她：「妳被嚇到嗎？」姪女搖頭，眼淚卻一直流：「我聽到他們唱歌、有人在尖叫、阿姨煮飯的聲音、廚房在切水果……都同時在我耳朵裡。」阿姨那一刻才聽懂——這個被全家說「玻璃心、太敏感、不夠開朗」的小女孩，並不是脆弱。她只是生來，就帶著一台音量永遠關不掉的接收器。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">心理學家 <b>Elaine Aron</b> 在 1990 年代提出「<b>高敏感族 HSP（Highly Sensitive Person）</b>」概念，並指出全球約 <b>15-20%</b> 的人天生具有這項特質。HSP 的核心是 <b>DOES 四特徵</b>：<b>D</b>epth of processing 訊息深度處理／<b>O</b>verstimulation 容易被過度刺激／<b>E</b>motional reactivity & empathy 情緒反應強且共情高／<b>S</b>ensing the subtle 對細微訊號特別敏銳。台灣多家身心科診所與心理治療所都指出——這不是病、不是缺點，更不需要被「矯正」。家長要做的，不是把孩子的接收器調粗，而是教她，怎麼跟這台敏銳的儀器舒服共處。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">高敏感的孩子，最容易被誤讀成「太黏、太鬧、太愛哭、太不合群」。但他們其實是天生的觀察者、共情者、藝術家——只是還沒長出「處理過量訊息」的那把濾網。覺知 SEL 強調，先承認他的感受是真的（「你不是太誇張，你是真的聽到那麼多聲音」），再陪他練習「我的身體現在告訴我什麼」「我需要先離開現場 5 分鐘」——這就是內感受 + 自我調節的早期練習。先懂心，他才願意走出廁所。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">姪女 7 歲，去同學家生日派對。
+氣球啪一聲爆掉，她衝去廁所，門一關，蹲在馬桶旁邊抖到不行。
+
+我推門進去，問她：「妳被嚇到嗎？」
+她搖頭，眼淚一直流：
+「我聽到唱歌、尖叫、煮飯、切水果……都同時塞在我耳朵裡。」
+
+那一刻我才聽懂——
+她不是玻璃心、不是不合群。
+她只是生來，就帶著一台音量永遠關不掉的接收器。
+
+心理學家 Elaine Aron 在 90 年代發現——
+全球約 15-20% 的人天生屬於「高敏感族 HSP」。
+他們不是有病，是訊息接收的精細度高出別人一截。
+
+別再叫她「不要那麼敏感」。
+請替她蓋上一條毛毯，輕聲說：
+「我們在廁所裡待 5 分鐘，等聲音變小一點，再回去，好嗎？」
+
+那不是退讓——
+那是替她在這個太吵的世界裡，留一塊可以喘氣的角落。
+
+#高敏感兒童 #HSP #覺知教養 #SEL情緒</div>
+
+  <div class="punchline">📌 高敏感不是缺點——是她生來就帶著一套更精細的接收器。你的工作不是把她調粗，是教她，怎麼跟那台敏銳的儀器，舒服地共處。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ IG ｜ 親職社團 ｜ 高敏感家長社群</div>
+    <div class="row"><b>適合對象：</b>學齡前～國小中年級家長／幼兒園/國小教師</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://hsperson.com/" target="_blank">Elaine Aron 官網｜The Highly Sensitive Person</a> ｜
+      <a href="https://kymhc.cycu.edu.tw/%E6%88%91%E5%8F%AA%E6%98%AF%E9%AB%98%E5%BA%A6%E6%95%8F%E6%84%9F%E8%80%8C%E5%B7%B2%EF%BC%9A%E9%99%AA%E4%BC%B4%E9%AB%98%E6%95%8F%E7%89%B9%E8%B3%AA/" target="_blank">中原大學附設冠英心理治療所｜陪伴高敏特質</a> ｜
+      <a href="https://clinic.farhugs.com/posts/65b082c9c75d7a000155a99a" target="_blank">FarHugs 抱抱心身醫學｜HSP 4 大徵兆與因應方式</a> ｜
+      <a href="https://www.slekmed.com/post/_hsp2" target="_blank">心理特質與生活影響｜HSP 是什麼</a> ｜
+      <a href="https://www.psychologytoday.com/us/basics/highly-sensitive-person" target="_blank">Psychology Today｜Highly Sensitive Person</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>sensitive child crying bathroom / overwhelmed child party / quiet introvert kid corner</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 4：加拿大 Roots of Empathy / 趨勢 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-trend">第三層・科學趨勢</span>
+    <span class="tag tag-plain">加拿大 Roots of Empathy</span>
+    <span class="tag tag-plain">Mary Gordon</span>
+    <span class="tag tag-plain">同理心教育</span>
+  </div>
+  <h2>加拿大教室裡躺著一個嬰兒——5 歲孩子圍著他，學的不是 ABC，是「另一個生命，正在感受什麼」</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">多倫多一所公立小學的教室裡，地板鋪了一塊綠色毯子。一位媽媽抱著她 4 個月大的嬰兒走進教室，輕輕把寶寶放在毯子中央。20 多個 5 歲孩子圍坐成一圈，安靜地看著嬰兒揮手、皺眉、發出聲音。老師蹲下來輕聲問：「你們覺得寶寶現在想說什麼？」一個小男孩說：「他可能餓了。」一個小女孩說：「他在看燈，他被燈嚇到了。」——這是加拿大「<b>Roots of Empathy</b>」課，已經上了快 30 年。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">「<b>Roots of Empathy（同理之根）</b>」由加拿大教育家 <b>Mary Gordon</b> 於 <b>1996 年於多倫多</b>創立，初衷是「降低校園暴力與霸凌」。課程設計極為單純——一位媽媽帶著嬰兒，每月走進小學教室一次，由經過訓練的指導員引導孩子觀察寶寶的情緒、需求、變化。一整個學年共 <b>27 堂課、9 大主題</b>。截至目前，這套課程已在加拿大全境，以及 <b>紐西蘭、美國、愛爾蘭、英格蘭、威爾斯、北愛爾蘭、蘇格蘭、德國、瑞士、荷蘭、挪威、哥斯大黎加、南韓</b> 等共 14 國推行，已陪伴 <b>近 100 萬名兒童</b> 學會情緒識讀。Mary Gordon 因此獲頒加拿大勳章（Order of Canada）與安大略省勳章。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">同理心不是用「你怎麼可以這樣對人」「為什麼不替別人想想」這幾句話講出來的。它是被「親眼看見另一個生命的感受」一次次餵大的。覺知 SEL 在台灣的實踐裡，也一直主張：先讓孩子觀察一個比他更小、更弱、更需要被讀懂的存在——可能是嬰兒、是寵物、是植物、是哭泣的同學——孩子才有機會把「我」之外的「另一個人」，第一次放進心裡。同理之根，是這樣慢慢長出來的。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">加拿大有一堂全世界最特別的課——
+教室地板鋪一塊毯子，一位媽媽抱著嬰兒走進來，
+20 多個 5 歲孩子圍著看寶寶皺眉、揮手、發出聲音。
+
+老師問：「你們覺得寶寶現在想說什麼？」
+一個小男孩說：「他可能餓了。」
+一個小女孩說：「他被燈嚇到了。」
+
+這堂課叫「Roots of Empathy（同理之根）」。
+Mary Gordon 1996 年在多倫多創立，目前推行到全球 14 國、近 100 萬名兒童上過。
+
+它的目的不是教知識——
+是讓孩子坐在地板上，安靜看著一個比他更小、更弱、更需要被讀懂的生命，
+慢慢長出那個叫「同理心」的東西。
+
+如果你問我，台灣最缺的不是補習。
+是這樣一塊毯子、一個小生命、和「停下來看見」這 5 個字。
+
+#同理心教育 #SEL全球趨勢 #RootsofEmpathy #覺知教養</div>
+
+  <div class="punchline">📌 同理心不是用「你怎麼可以這樣對人」教出來的——是讓孩子坐在地板上，看著一個小生命的眼神，慢慢長出來的。台灣的孩子，也值得這樣一塊毯子。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LinkedIn ｜ 教育論壇 ｜ 教師社群</div>
+    <div class="row"><b>適合對象：</b>幼教/國小老師、教育政策關注者、SEL 推廣家長</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://rootsofempathy.org/mary-gordon/" target="_blank">Roots of Empathy 官網｜Mary Gordon 介紹</a> ｜
+      <a href="https://en.wikipedia.org/wiki/Roots_of_Empathy" target="_blank">Wikipedia｜Roots of Empathy</a> ｜
+      <a href="https://rootsofempathy.org/programs/roots-of-empathy/" target="_blank">Roots of Empathy 官網｜課程介紹</a> ｜
+      <a href="https://ashokacanada.org/fellow/mary-gordon/" target="_blank">Ashoka Canada Fellow｜Mary Gordon</a> ｜
+      <a href="https://hundred.org/en/innovations/roots-of-empathy" target="_blank">HundrED Education Innovations｜Roots of Empathy</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>baby classroom circle children / empathy education kindergarten / Canada elementary school SEL</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 5：媽媽羞愧感 / 加值 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-extra">加值・家長自我照顧</span>
+    <span class="tag tag-plain">媽媽羞愧感</span>
+    <span class="tag tag-plain">完美主義</span>
+    <span class="tag tag-plain">Brené Brown</span>
+  </div>
+  <h2>「我又對他吼了——」她蹲在房門外，對自己再吼一次「我是不是壞媽媽」。不，妳不是。妳只是被一件叫「完美主義」的盔甲，悄悄壓垮</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">下午 1 點半，午飯後她又因為孩子第三次打翻牛奶，衝口吼出「你怎麼那麼不小心！」孩子抱著熊娃娃回房，砰一聲關門。她蹲在門口，眼淚才開始流。腦袋裡有個聲音說：「妳又失控了。妳這樣下去他會討厭妳。妳是不是根本不適合當媽媽？」——她把手機翻出來，又開始滑那些「100 招正向教養法」「不吼不叫的媽媽都這樣做」。每一篇看完，她只覺得自己更糟。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">休士頓大學教授 <b>Brené Brown</b> 二十多年羞愧（shame）研究指出一件最反直覺的事——「<b>完美主義不是健康的追求卓越</b>」（Perfectionism is not healthy striving）。它是一面厚重的盔甲，本質是「<b>如果我看起來夠完美、做得夠完美，我就可以避開羞愧、責備與評判</b>」。Brown 進一步強調：完美主義 <b>不是減少羞愧的解藥，反而是羞愧的延伸</b>，並與憂鬱、焦慮、上癮、人生停滯顯著相關。她在《<b>Daring Greatly</b>》與《<b>The Gifts of Imperfection</b>》中提出「<b>羞愧復原力理論（Shame Resilience Theory）</b>」：辨認羞愧的觸發點、實踐自我同情、與信任的人說出來、向自己宣告新的故事。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">SEL 不只是「教孩子」的事。一個對自己嚴厲的媽媽，再多教養法都救不了一段親子關係——因為孩子最先學會的，不是妳教他的字，是妳怎麼對待自己。覺知 SEL 在台灣的家長工作坊裡，最常做的第一件事，就是「把孩子先放下，先把自己抱回來」。先承認「我今天吼了，我不是壞媽媽，我是累壞了」，孩子才會學到：人是會犯錯的、犯錯之後是可以修復的、修復本身就是愛。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">下午 1 點半，她又對孩子吼了。
+他抱著熊娃娃回房，砰一聲關門。
+她蹲在門外，眼淚才掉下來。
+
+腦袋裡那個最毒的聲音說：
+「妳又失控了。妳這樣下去他會討厭妳。妳根本不適合當媽媽。」
+
+她翻開手機，找了 100 篇「不吼不叫的媽媽都這樣做」——
+看完，更糟。
+
+但研究羞愧 20 年的學者 Brené Brown 說過一句話：
+「完美主義不是健康的追求，它是羞愧的盔甲。」
+
+意思是——
+妳不是因為「不夠好」才失控。
+妳是因為「想要好得不可能」，才把自己壓垮。
+
+今天下午，請別再翻第 101 篇教養文。
+請走進房間，輕輕對孩子說：
+「媽媽剛剛太大聲，對不起。」
+
+然後，對著自己，再說一次：
+「妳今天已經很努力了。妳不是壞媽媽，妳只是累壞了。」
+
+孩子最先學會的，不是妳教他的字——
+是妳怎麼對待那個不完美的妳。
+
+#媽媽羞愧感 #完美主義 #家長自我照顧 #覺知SEL</div>
+
+  <div class="punchline">📌 妳今晚對他吼的那一句，不會把他毀掉——但如果妳今晚對自己再吼第二句「我是不是壞媽媽」，那一句，才會慢慢把妳毀掉。先放過自己，他才看得見「人是可以修復的」這件事。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ IG ｜ Threads ｜ 媽媽社團 ｜ Podcast 引文</div>
+    <div class="row"><b>適合對象：</b>新手媽媽、職業媽媽、全職媽媽、所有「對自己太嚴厲」的家長</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://www.sandrazimmer.com/blog/dr-brene-brown-on-shame-perfectionism/" target="_blank">Dr. Brené Brown on Shame & Perfectionism</a> ｜
+      <a href="https://positivepsychology.com/shame-resilience-theory/" target="_blank">Positive Psychology｜Shame Resilience Theory: Advice From Brené Brown</a> ｜
+      <a href="https://goop.com/wellness/mindfulness/perfect/" target="_blank">goop｜Brené Brown On Perfection And The Culture of Scarcity</a> ｜
+      <a href="https://www.huffpost.com/entry/brene-brown-perfectionism-shame-oprah_n_4045358" target="_blank">HuffPost｜Brené Brown: Perfectionism Is The 20-Ton Shield</a> ｜
+      <a href="https://newdirectionscounseling.com/vulnerability-perfectionism-shame/" target="_blank">New Directions Counseling｜On Vulnerability, Perfectionism and Shame</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>tired mother sitting floor / mom guilt afternoon / overwhelmed parent door</div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>覺知 SEL 教育 <span class="heart">♥</span> 每日教養文宣 ｜ 2026.05.03 13:15<br>
+  五則文案 · 跨五個層級 · 五個不同主角的午後</p>
+</div>
+
+</div>
+
+<script>
+// ⭐ 標記實際已發布的文案（給每週日 review 任務讀取用）
+document.querySelectorAll('.star-slot').forEach(s => {
+  s.addEventListener('click', () => {
+    s.classList.toggle('marked');
+  });
+});
+</script>
+
+</body>
+</html>
