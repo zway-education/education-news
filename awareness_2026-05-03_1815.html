@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.03 18:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(0,0,0,0.03);
+  position:relative;
+}
+.star-slot{
+  position:absolute;
+  top:14px;
+  right:18px;
+  width:32px;
+  height:32px;
+  border:1.5px dashed #d8cdbf;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  color:#cfc1ad;
+  background:#fff;
+  user-select:none;
+  cursor:pointer;
+  transition:.2s;
+}
+.star-slot:hover{border-color:var(--brand);color:var(--brand)}
+.star-slot.marked{
+  border-style:solid;
+  border-color:#f0b338;
+  background:#fff8e6;
+  color:#f0a000;
+}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;padding-right:48px}
+.tag{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 11px;
+  border-radius:14px;
+  font-weight:500;
+  letter-spacing:.5px;
+}
+.tag-pain{background:#fcebde;color:#b85a3e}
+.tag-skill{background:#ece4f7;color:#6b4ea0}
+.tag-trend{background:#dcf0eb;color:#3d8a78}
+.tag-extra{background:#f0eadc;color:#7a6438}
+.tag-plain{background:#f5efe7;color:#7a6d63}
+
+.card h2{
+  font-size:21px;
+  line-height:1.55;
+  margin:6px 0 18px;
+  color:var(--ink);
+  font-weight:700;
+  letter-spacing:.3px;
+}
+
+.section-label{
+  font-size:12px;
+  font-weight:700;
+  color:var(--brand-deep);
+  letter-spacing:2px;
+  margin:18px 0 6px;
+  text-transform:uppercase;
+}
+.scenario{
+  background:#fdf6ee;
+  border-left:3px solid var(--brand);
+  padding:14px 18px;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  color:#4a3f35;
+  margin:10px 0 4px;
+}
+.research{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  background:#f7f3ec;
+  padding:14px 18px;
+  border-radius:10px;
+  margin:8px 0;
+}
+.research b{color:var(--ink)}
+.insight{
+  font-size:15px;
+  color:var(--ink);
+  margin:6px 0;
+  padding:0 2px;
+}
+.copy{
+  background:#fffaf3;
+  border:1px dashed #e8c9a8;
+  border-radius:12px;
+  padding:18px 20px;
+  font-size:15px;
+  color:#3a322c;
+  margin:10px 0;
+  white-space:pre-wrap;
+  line-height:1.85;
+}
+.script-box{
+  background:#fef4f0;
+  border:1px solid #f3d5c1;
+  border-radius:12px;
+  padding:14px 18px;
+  margin:8px 0;
+}
+.script-box ol{margin:6px 0 4px 18px;padding:0}
+.script-box li{margin:6px 0;color:#4a3f35;font-size:14.5px}
+.script-box li b{color:var(--brand-deep)}
+
+.punchline{
+  background:linear-gradient(135deg,#fce8db 0%,#fff5ec 100%);
+  border-radius:12px;
+  padding:16px 20px;
+  font-weight:700;
+  color:var(--brand-deep);
+  font-size:15.5px;
+  letter-spacing:.4px;
+  margin:14px 0 8px;
+  line-height:1.75;
+}
+
+.meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.meta .row{display:flex;gap:8px;flex-wrap:wrap}
+.meta .row b{color:var(--ink);min-width:74px;display:inline-block}
+.meta a{color:var(--brand-deep);text-decoration:none;border-bottom:1px dotted #e3a78a}
+.meta a:hover{color:var(--brand)}
+
+.footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:36px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  letter-spacing:1px;
+}
+.footer .heart{color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 檔頭 -->
+<div class="head">
+  <span class="brand-tag">覺知 SEL · 每日教養文宣</span>
+  <h1>傍晚 18:15、夕陽斜進廚房——五則寫給今天忙了一整天、還願意停下來讀一讀孩子的你</h1>
+  <div class="date">2026.05.03 ｜ 18:15 ｜ 台灣時間</div>
+  <div class="sub">五則文案 ｜ 跨四個層級 ｜ 從幼兒園廁所裡被笑到崩潰的小男孩、到爸爸發現孩子指甲被咬到流血、到一位被「催」到熄火的國二女孩、到一位校長把美國焦慮世代研究帶回校務會議、到一位媳婦在週日下午看著婆婆又偷塞糖果——每一個畫面，背後都是一個正在問「我到底該怎麼辦」的大人。</div>
+</div>
+
+<!-- 主視覺：傍晚廚房窗光 -->
+<div class="hero">
+<svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dusk-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd8a8"/>
+      <stop offset="50%" stop-color="#f4a86b"/>
+      <stop offset="100%" stop-color="#d97757"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8d4b6"/>
+      <stop offset="100%" stop-color="#b88864"/>
+    </linearGradient>
+    <linearGradient id="warm-light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5cf" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fff5cf" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- 牆 -->
+  <rect x="0" y="0" width="880" height="240" fill="#fef0e2"/>
+  <!-- 大窗 + 夕陽天空 -->
+  <rect x="60" y="34" width="380" height="200" fill="url(#dusk-sky)" stroke="#7a5a3a" stroke-width="6" rx="3"/>
+  <line x1="250" y1="34" x2="250" y2="234" stroke="#7a5a3a" stroke-width="4"/>
+  <line x1="60" y1="134" x2="440" y2="134" stroke="#7a5a3a" stroke-width="4"/>
+  <!-- 太陽 -->
+  <circle cx="320" cy="170" r="32" fill="#ffe4a8" opacity="0.95"/>
+  <circle cx="320" cy="170" r="50" fill="#ffd28a" opacity="0.35"/>
+  <circle cx="320" cy="170" r="68" fill="#ffc26d" opacity="0.18"/>
+  <!-- 遠山 -->
+  <path d="M60 196 Q140 156 220 184 Q310 148 440 200 L440 234 L60 234 Z" fill="#a85c44" opacity="0.55"/>
+  <!-- 暖光斜射 -->
+  <polygon points="420,80 460,200 240,360 80,360" fill="url(#warm-light)" opacity="0.55"/>
+  <!-- 廚房檯面 -->
+  <rect x="0" y="240" width="880" height="40" fill="url(#counter)"/>
+  <rect x="0" y="280" width="880" height="80" fill="#9b6b48"/>
+  <line x1="0" y1="320" x2="880" y2="320" stroke="#7a5230" stroke-width="1" opacity="0.5"/>
+  <!-- 吊燈 -->
+  <line x1="640" y1="0" x2="640" y2="40" stroke="#7a5a3a" stroke-width="2"/>
+  <ellipse cx="640" cy="56" rx="38" ry="20" fill="#fff1c8" stroke="#a85c44" stroke-width="2"/>
+  <ellipse cx="640" cy="80" rx="60" ry="14" fill="#ffe9a8" opacity="0.45"/>
+  <!-- 檯面上的物件：杯 + 茶壺 + 麵包 + 玩具 -->
+  <!-- 茶壺 -->
+  <ellipse cx="540" cy="232" rx="36" ry="9" fill="#7a5230" opacity="0.4"/>
+  <path d="M510 232 Q510 195 540 195 Q570 195 570 232 Z" fill="#5fb3a1"/>
+  <rect x="566" y="208" width="14" height="6" fill="#5fb3a1"/>
+  <path d="M538 195 Q540 188 542 195" fill="#a48a64" stroke="#7a5230" stroke-width="2"/>
+  <!-- 杯 -->
+  <rect x="600" y="208" width="32" height="26" fill="#fff" stroke="#b85a3e" stroke-width="2" rx="2"/>
+  <ellipse cx="616" cy="210" rx="14" ry="3" fill="#caa074" opacity="0.7"/>
+  <!-- 麵包籃 -->
+  <ellipse cx="700" cy="232" rx="40" ry="8" fill="#7a5230" opacity="0.4"/>
+  <path d="M662 232 L666 210 L734 210 L738 232 Z" fill="#d4a26a" stroke="#7a5230" stroke-width="2"/>
+  <ellipse cx="690" cy="208" rx="14" ry="6" fill="#e8c690"/>
+  <ellipse cx="710" cy="208" rx="12" ry="5" fill="#dab17a"/>
+  <!-- 小孩亂放的玩具車 -->
+  <rect x="450" y="220" width="32" height="14" fill="#d97757" rx="3"/>
+  <circle cx="458" cy="236" r="4" fill="#2d2620"/>
+  <circle cx="476" cy="236" r="4" fill="#2d2620"/>
+  <!-- 桌邊小盒糖果 -->
+  <rect x="180" y="220" width="50" height="14" fill="#f0b338" stroke="#7a5230" stroke-width="1.5" rx="2"/>
+  <text x="205" y="231" text-anchor="middle" font-size="9" fill="#7a5230" font-weight="700">糖</text>
+  <!-- 牆上掛畫 -->
+  <rect x="510" y="50" width="100" height="64" fill="#fff" stroke="#7a5a3a" stroke-width="3" rx="2"/>
+  <circle cx="540" cy="76" r="9" fill="#f0b338"/>
+  <path d="M520 100 Q540 88 560 100 Q580 88 600 100 L600 110 L520 110 Z" fill="#5fb3a1"/>
+  <!-- 沙發影子 -->
+  <rect x="760" y="200" width="120" height="60" fill="#fce8db" stroke="#b85a3e" stroke-width="2" rx="14"/>
+  <circle cx="790" cy="200" r="14" fill="#fce8db" stroke="#b85a3e" stroke-width="2"/>
+  <circle cx="850" cy="200" r="14" fill="#fce8db" stroke="#b85a3e" stroke-width="2"/>
+  <!-- 簽名 -->
+  <text x="630" y="350" font-family="'Noto Sans TC',sans-serif" font-size="13" fill="#fef0e2" letter-spacing="2">覺知 SEL · 傍晚 18:15</text>
+</svg>
+</div>
+
+<!-- ============ 卡片 1：被笑哭・幼兒自尊 / 痛點 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">第一層・家長痛點</span>
+    <span class="tag tag-plain">幼兒自尊</span>
+    <span class="tag tag-plain">被嘲笑</span>
+    <span class="tag tag-plain">幼兒園</span>
+  </div>
+  <h2>「他在廁所裡被笑了一聲，回家三小時不講話」——4 歲不是玻璃心，是大腦剛長出「我看見了我自己」的那年</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">幼兒園阿萍老師午休後巡到廁所，看見小宇縮在最角落的隔間，褲子拉鏈還沒拉好，眼眶整圈紅。問了三次他才小聲說：「剛剛上廁所，他笑我尿尿尿到腳，他們三個都笑。」她蹲下來幫他擦褲管，抱著他在廁所外坐了五分鐘。傍晚送他出園，媽媽問「今天好玩嗎」，他只說「還好」。回家三個小時——他不吃飯、不畫圖、連最愛的恐龍貼紙都沒拿出來。媽媽以為他生病，量了體溫才發現是 36.7。她蹲下來抱他，他才小聲說：「媽媽，我是不是很笨？」</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">美國發展心理學家 <b>Michael Lewis</b> 在《<b>The Self-Conscious Emotions</b>》中指出，<b>15–24 個月</b>是孩子第一次「在鏡子裡認得自己」的時期，從這一刻起——「<b>自我意識情緒（self-conscious emotions）</b>」開始出現：尷尬、嫉妒、同理；到了 <b>2.5 歲</b>，孩子開始用「規則與標準」評價自己，從此會出現 <b>羞愧（shame）、罪惡感（guilt）、驕傲（pride）</b> 三種更複雜的情緒。Lewis 強調：3 歲孩子已經能在「失敗」時感到羞愧、在「成功」時感到驕傲。所以——4 歲被同學笑，不是「玻璃心」，是他大腦裡那個剛長出來的「我」，第一次被人指著、笑著、丟出來給全世界看。對他而言，那不是一句玩笑，是一場身分崩塌。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">幼兒被嘲笑後的「不講話」「不吃飯」「躲」——不是任性，是他在用沉默保護那個太薄、剛長出來的「自我」。覺知 SEL 教家長的不是「你不要在意他們」（因為這對 4 歲腦袋來說根本是外星語），而是「<b>替他命名那個情緒</b>」「<b>陪他重新長回那個我</b>」。當羞愧被命名出來、被陪伴接住，它就不會內化成「我是壞的」，而是會變成「我經歷過一件難的事，但我還是我」。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">他從幼兒園回家。
+不哭、不鬧、不講話。連最愛的恐龍貼紙都沒拿出來。
+
+我抱著他，他小聲說：「媽媽，我是不是很笨？」
+
+——他才 4 歲。
+他不是玻璃心，
+是他大腦那一年才剛長出「我看見了我自己」的能力。
+
+發展心理學家 Michael Lewis 的研究指出，
+2.5 歲後孩子開始有「羞愧」「驕傲」這些自我意識情緒。
+所以 4 歲被 3 個同學笑——
+對他來說不是「鬧著玩」，是身分被丟出來踩。
+
+今晚，請別說「沒關係啦」「他們開玩笑而已」。
+請改說：
+
+「你剛剛是覺得很丟臉、很想消失、對不對？
+那種感覺很重。
+但你回來找媽媽——
+你已經做了大孩子才會做的事。」
+
+#覺知SEL #幼兒情緒 #幼兒自尊 #被嘲笑</div>
+
+  <div class="punchline">📌 4 歲被笑哭，不是他玻璃心——是他剛長出「我」這個東西，第一次被人指著、笑著推下來。你今晚把它接住，他下次摔下來時，會記得有一雙手在底下。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LINE 社群 ｜ IG（拆 4 張卡片）</div>
+    <div class="row"><b>適合對象：</b>幼兒園家長／幼教老師／3–6 歲家庭</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://www.child-encyclopedia.com/emotions/according-experts/self-conscious-emotions" target="_blank">Encyclopedia on Early Childhood Development｜The Self-Conscious Emotions（Michael Lewis 專文）</a> ｜
+      <a href="https://www.child-encyclopedia.com/pdf/expert/emotions/according-experts/self-conscious-emotions" target="_blank">Lewis 專文 PDF</a> ｜
+      <a href="https://local.psy.miami.edu/faculty/dmessinger/c_c/rsrcs/rdgs/emot/EarlyEmotionalDevelopment.pdf" target="_blank">Lewis《Early Emotional Development》Chapter 12 PDF</a> ｜
+      <a href="https://emotionresearcher.com/the-development-of-guilt-as-repair-in-childhood/" target="_blank">Emotion Researcher｜The Development of Guilt as Repair in Childhood</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>shy preschooler crying / 4 year old quiet bedroom / kindergarten boy alone</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 2：咬指甲 / 痛點 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">第一層・家長痛點</span>
+    <span class="tag tag-plain">咬指甲</span>
+    <span class="tag tag-plain">焦慮訊號</span>
+    <span class="tag tag-plain">國小四年級</span>
+  </div>
+  <h2>「他兩手十根指甲，沒有一根超過指尖」——爸爸幫他剪指甲那一晚才發現，那不是壞習慣，是他身體在替自己呼救</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">爸爸是工程師，這個學期幾乎晚上 10 點才回家。週六難得有空，他坐在沙發上幫小四的兒子剪指甲。剪刀打開——他停住了。十根指甲沒有一根超過指尖，幾根右手食指甚至咬到肉的部分滲出血色，指甲邊緣紅紅腫腫的。「你這是什麼時候開始的？」兒子低頭：「上學期吧。考試的時候我會一直咬，後來上課也會。我自己也不知道為什麼。」爸爸那一刻心揪了一下——他想起這半年加班加到忘了問兒子任何事。他原以為兒子「過得不錯」，原來他的焦慮，全寫在那十根指甲上。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">「<b>咬指甲（onychophagia）</b>」是兒童最常見的「<b>身體焦點重複行為（Body-Focused Repetitive Behavior, BFRB）</b>」之一，根據臨床調查 <b>7–10 歲兒童約有 28%–33% 出現咬指甲行為</b>。臺灣兒科醫師 <b>黃瑽寧</b> 在《關心咬指甲背後的心理需求》中強調：傳統認為咬指甲是「焦慮、緊張」，但近年研究發現原因更複雜——<b>活動量不夠、感覺統合需求、無聊、處理困難任務時自我打氣、焦慮與壓力</b> 都可能。香港精神科醫師 <b>沈君豪</b> 也指出，咬指甲在臨床上常與「強迫症」「焦慮症」一起出現。最關鍵的——多項研究顯示：<b>「打罵、塗苦甲油」效果比什麼都不做還差</b>，因為責罵會讓孩子更焦慮，咬甲行為反而循環不斷。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">咬指甲不是「壞習慣」，是身體在替孩子說「我有東西沒消化」。覺知 SEL 提醒家長：先別急著「戒掉這個動作」，而是去懂——<b>那個動作正在替他做什麼工作？</b> 是上課太緊繃？考試前的自我安撫？爸媽吵架時的求生機制？當底下那個焦慮被你看見、被你陪伴，那十根指甲，才會慢慢有機會長回來。手指上的紅，從來不是孩子「不聽話」的證據——是他在沒人看見的地方，獨自撐了好久好久的證據。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">爸爸幫小四的兒子剪指甲。
+剪刀打開——停住了。
+
+十根指甲沒有一根超過指尖。
+食指咬到肉的地方，紅紅腫腫的。
+
+「你什麼時候開始的？」
+「上學期。考試的時候我會一直咬。後來上課也會。」
+
+——這不是壞習慣。
+是他身體在替自己呼救。
+
+研究指出，7–10 歲兒童約有 28–33% 出現咬指甲行為。
+醫師說：打罵和塗苦甲油的效果，比什麼都不做還差。
+因為責罵只會讓孩子更焦慮，把那個動作循環得更深。
+
+今晚，請別罵「不要再咬了！」。
+請改說：「你這雙手咬成這樣，
+是不是有什麼事情，你一個人扛了好久？」
+
+那十根指甲，會替你回答。
+
+#咬指甲 #兒童焦慮 #BFRB #覺知SEL</div>
+
+  <div class="punchline">📌 他咬的不是指甲，是他自己也說不出口的那團情緒。你今晚問的不是「為什麼咬」，而是「你最近是不是壓得太緊」——他下一次咬之前，才會先想到你。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LINE 家長群 ｜ IG（拆 3 張卡片，最後一張留問號）</div>
+    <div class="row"><b>適合對象：</b>國小中高年級家長／忙碌雙薪家庭／隔代教養家庭</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://www.parenting.com.tw/article/5074440" target="_blank">親子天下｜黃瑽寧：關心咬指甲背後的心理需求</a> ｜
+      <a href="https://www.leaderkid.com.tw/2021/01/13/%E5%AD%A9%E5%AD%90%E3%80%8C%E5%92%AC%E6%8C%87%E7%94%B2%E3%80%8D%EF%BC%8C%E5%85%B6%E5%AF%A6%E6%98%AF%E4%B8%80%E7%A8%AE%E7%94%9F%E7%90%86%E5%8F%8A%E5%BF%83%E7%90%86%E6%9A%97%E7%A4%BA/" target="_blank">天才領袖｜孩子愛咬指甲不是小事，要注意四心理原因</a> ｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/13258" target="_blank">未來親子｜愛咬手指和摳指甲的孩子：要處理的不是行為，而是孩子內在說不出口的焦慮</a> ｜
+      <a href="https://www.healthyd.com/articles/expert-blog/%E5%92%AC%E6%8C%87%E7%94%B2-%E5%BC%B7%E8%BF%AB%E7%97%87-%E7%84%A6%E6%85%AE%E7%97%87-%E5%A3%93%E5%8A%9B-%E7%97%87%E7%8B%80-%E6%B2%BB%E7%99%82" target="_blank">healthyD｜沈君豪醫師：咬指甲與強迫症、壓力和焦慮</a> ｜
+      <a href="https://zh.wikipedia.org/zh-tw/%E5%92%AC%E7%94%B2%E7%99%96" target="_blank">維基百科｜咬甲癖</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>child biting nails anxious / kid hands stress / school exam pressure</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 3：挫折復原力 / 能力 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-skill">第二層・能力培養</span>
+    <span class="tag tag-plain">挫折復原力</span>
+    <span class="tag tag-plain">Ann Masten</span>
+    <span class="tag tag-plain">Ordinary Magic</span>
+  </div>
+  <h2>「她考差一次，整個人就熄火兩週」——讓孩子站起來的，從來不是奇蹟，是日常生活裡七件「再普通不過的事」</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">國二導師看著班上的子涵，期中考數學從 88 掉到 62。她是那種從小成績都穩穩前段的女生，老師從來沒擔心過她。但是這兩週——她交作業遲交、午餐只吃一口、跟最好的朋友也沒講話。家長日，媽媽說：「她在家就把自己鎖在房間裡，連我們煮她最愛的咖哩，她也只說『我不餓』。」老師那天放學後，把子涵叫到走廊，沒問她考差的事，只問：「妳這兩週，是不是覺得，掉下去之後就站不起來了？」子涵抬頭，眼淚一直掉。她點頭。老師說：「妳爸媽愛妳，妳的好朋友想找妳，我們班今天還有人問我『子涵今天怎麼了』。妳不是一個人掉下去的——妳是被一張你看不見的網接住的。」</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">明尼蘇達大學發展心理學家 <b>Ann Masten</b> 研究兒童復原力 50 年，提出影響全球的「<b>Ordinary Magic（平凡的奇蹟）</b>」框架。她指出——「<b>復原力不是少數人擁有的超能力，而是日常生活裡『一般正常的系統』正在運作的結果</b>」。Masten 整理出復原力的核心保護因子：<b>① 至少一位關心你的大人；② 大腦正常運作（睡眠、營養、健康）；③ 與一群關心你的人建立過互動；④ 父母／老師會鼓勵孩子練習注意力、解決問題、控制行為；⑤ 歸屬感與被支持感；⑥ 友誼與同儕；⑦ 重要的家庭儀式與信念</b>。最重要的訊息是：<b>「最大的威脅，不是孩子遇到困難——而是這些『日常系統』被破壞」</b>。她在 2014 年的訪談中說：「<b>當這些再普通不過的關係與儀式都還在，復原力就會自動運作</b>」。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">挫折復原力不是「打不死的小強精神」，不是逼孩子吞下一句「人生本來就不公平」就能訓練出來的。覺知 SEL 引用 Masten 的研究告訴家長——孩子掉下去那一刻，最會把他拉起來的不是一句激勵的話，是「<b>那七張平凡的網，仍然在</b>」：那位會傾聽的爸媽、那杯每天回家都還溫的湯、那位週五會找她聊天的好朋友、那個睡足 8 小時的夜晚。今天當你的孩子熄火，請別急著拍他、推他、訓練他——<b>請先確認那七張網，這幾天有沒有破洞</b>。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">考差一次，她兩週把自己鎖在房間裡。
+媽媽煮她最愛的咖哩——她說「我不餓」。
+
+老師那天問她：「妳是不是覺得掉下去之後，就站不起來了？」
+她點頭，眼淚一直掉。
+
+——讓孩子站起來的，從來不是激勵的話。
+是那張你看不見的網，這幾天還在不在。
+
+明尼蘇達大學 Ann Masten 研究兒童復原力 50 年，
+她叫它「Ordinary Magic — 平凡的奇蹟」。
+
+復原力的七個保護因子：
+① 至少一位關心你的大人
+② 大腦正常運作（睡眠 / 營養 / 健康）
+③ 與一群關心你的人建立過互動
+④ 練過注意力 / 解題 / 控制行為
+⑤ 歸屬感與被支持感
+⑥ 朋友與同儕
+⑦ 重要的家庭儀式與信念
+
+她說：「最大的威脅，不是孩子遇到困難——
+是這些『日常系統』被破壞。」
+
+所以當你的孩子熄火——
+請別急著教訓他。
+先看看那七張網，
+這幾天有沒有破洞。
+
+#覺知SEL #挫折復原力 #兒童心理 #平凡的奇蹟</div>
+
+  <div class="punchline">📌 復原力不是奇蹟，是日常。是那一杯還溫的湯、那一通沒被掛斷的電話、那一張還會替她留座位的桌子。先讓那七件普通的事還在，孩子才回得了家。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB（適合長文）｜部落格 ｜ LINE OA</div>
+    <div class="row"><b>適合對象：</b>國小高年級～國高中家長／導師／心輔老師</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/11315249/" target="_blank">PubMed｜Masten (2001)《Ordinary Magic: Resilience Processes in Development》原始論文</a> ｜
+      <a href="https://ocfcpacourts.us/wp-content/uploads/2020/06/Ordinary_Magic_Resilience_Process_000935.pdf" target="_blank">Masten 原文 PDF</a> ｜
+      <a href="https://www.minnpost.com/mental-health-addiction/2014/09/ann-masten-children-s-natural-resilience-nurtured-through-ordinary-m/" target="_blank">MinnPost｜Ann Masten 訪談：兒童復原力來自「平凡的奇蹟」</a> ｜
+      <a href="https://connect.cehd.umn.edu/ordinary-magic" target="_blank">University of Minnesota CEHD｜Ordinary Magic</a> ｜
+      <a href="https://www.amazon.com/Ordinary-Magic-Development-Ann-Masten/dp/146255766X" target="_blank">Masten《Ordinary Magic: Resilience in Development》專書</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>teen girl quiet bedroom / family dinner soup / supportive teacher hallway</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 4：Haidt 焦慮世代 / 趨勢 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-trend">第三層・科學與趨勢</span>
+    <span class="tag tag-plain">Jonathan Haidt</span>
+    <span class="tag tag-plain">焦慮世代</span>
+    <span class="tag tag-plain">青少年憂鬱</span>
+  </div>
+  <h2>「2010 年那年，他們把童年外包給了一支手機」——紐約大學教授 Haidt 用一本書告訴全球家長：我們不是被「太焦慮的孩子」打敗的，是被「拿走童年的那塊螢幕」</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">花蓮一所國中校長，5 月 1 日把美國紐約大學社會心理學家 Jonathan Haidt 的書《<b>The Anxious Generation（焦慮世代）</b>》帶進校務會議。她翻開其中一頁，把它讀給 38 位老師聽：「全球青少年的心理健康，2010 年之後突然在『英美澳加』四個英語系國家同步崩盤——憂鬱率、焦慮率、自傷率，幾乎所有指標都在那一兩年翻倍。」她抬起頭，會議室一片安靜。她說：「同學們，我們不是『最近的孩子比較玻璃心』，我們是——這 15 年我們把童年，外包給了一支手機。」會議結束，國一導師舉手：「那我們該怎麼做？」她翻到書的最後一頁，唸出 Haidt 給全世界家長的四個建議。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">Jonathan Haidt 是紐約大學史登商學院的社會心理學家，他在 2024 年出版的《<b>The Anxious Generation</b>》（中譯《焦慮世代》）提出兩個核心發現——<b>① 全球青少年心理健康在 2010 年之後同步崩潰</b>：英、美、澳、加、紐西蘭等國的青少年憂鬱、焦慮、自傷、自殺率，從 2010-2012 年起急遽上升，許多指標翻倍以上；<b>② 罪魁禍首是「童年被重新接線（the great rewiring of childhood）」</b>——智慧手機取代了「自由遊戲」，社群媒體取代了「面對面互動」。Haidt 指出這帶來四大基礎傷害：<b>社交剝奪、睡眠剝奪、注意力碎片化、上癮</b>。他給家長與政府的四個建議：<b>① 高中以前不給智慧型手機（約 14 歲前）；② 16 歲以前不給社群媒體；③ 校園無手機；④ 大量回歸「無大人監督的自由遊戲」</b>。這本書 2024 年上市後，立即推動美國多州、英國、澳洲修法限制 16 歲以下使用社群（澳洲已於 2025 年底正式實施）。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">「螢幕時間」這個議題不再是「家庭風格」，是「童年公共衛生」。覺知 SEL 給家長的訊息是——你不是在跟自家孩子的手機戰，你是在跟一個全球被重新接線的童年戰。Haidt 給的四個建議聽起來嚴格，但他在書裡反覆強調一件事：「<b>個別家長很難一個人成功——必須和學校、社區、其他家長一起做</b>。」所以最有效的方法，不是你一個人在客廳沒收手機，而是「組一個小社群——10 個家庭一起決定『高中前不給手機』」。當這 10 個家庭都這樣做，你的孩子就不會是「全班唯一沒有的那一個」。這是 Haidt 給我們最重要、也最可行的功課。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">2010 年那一年，
+全球青少年的心理健康，在英、美、澳、加同步崩盤。
+憂鬱、焦慮、自傷、自殺率——幾乎全部翻倍。
+
+紐約大學社會心理學家 Jonathan Haidt 在《焦慮世代》中說：
+「我們不是被『太焦慮的孩子』打敗的——
+是這 15 年，我們把童年外包給了一支手機。」
+
+他列出手機帶給孩子的四大傷害：
+☐ 社交剝奪
+☐ 睡眠剝奪
+☐ 注意力碎片化
+☐ 上癮
+
+他給全世界家長的四個建議：
+1️⃣ 14 歲前不給智慧型手機
+2️⃣ 16 歲前不給社群媒體
+3️⃣ 校園無手機
+4️⃣ 大量回歸「無大人監督的自由遊戲」
+
+但他在書裡反覆強調一件事：
+「個別家長很難一個人成功——
+必須和學校、社區、其他家長一起做。」
+
+所以今晚，請不要一個人在客廳跟孩子搶手機。
+去找另外 9 個家庭。
+讓孩子，不是「全班唯一沒有的那一個」。
+
+#焦慮世代 #JonathanHaidt #覺知SEL #童年保護</div>
+
+  <div class="punchline">📌 收回手機，不是收回一台機器——是把「無大人監督的自由遊戲」、「面對面的失敗」、「跟朋友吵完架還要見面的窘」這些東西，還給童年。一個人很難，10 個家庭一起，孩子就有同伴了。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ 部落格 ｜ 學校家長會 LINE 群 ｜ IG（拆 5 張）</div>
+    <div class="row"><b>適合對象：</b>國小高年級～高中家長／國高中導師／校長／家長會幹部</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://www.anxiousgeneration.com/book" target="_blank">The Anxious Generation 官方網站</a> ｜
+      <a href="https://en.wikipedia.org/wiki/The_Anxious_Generation" target="_blank">Wikipedia｜The Anxious Generation</a> ｜
+      <a href="https://www.stern.nyu.edu/experience-stern/faculty-research/anxious-generation-how-great-rewiring-childhood-causing-epidemic-mental-illness" target="_blank">NYU Stern｜Jonathan Haidt 教授頁</a> ｜
+      <a href="https://jonathanhaidt.com/anxious-generation/" target="_blank">Jonathan Haidt 個人網站</a> ｜
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11221737/" target="_blank">PMC｜The Anxious Generation 學術書評</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>teenager phone bedroom alone / kids free play playground / parents discussion group</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 5：阿嬤偷塞糖 / 加值・隔代教養對話腳本 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-extra">加值・教養兩難</span>
+    <span class="tag tag-plain">隔代教養衝突</span>
+    <span class="tag tag-plain">對話腳本</span>
+    <span class="tag tag-plain">婆媳</span>
+  </div>
+  <h2>「我才剛跟他說『今天糖只能吃一顆』——阿嬤就從口袋掏出第三顆塞進他嘴裡」——三句話，比翻臉有用 100 倍</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">週日下午婆婆來家裡。媳婦剛跟 5 歲的兒子說好：「今天糖只能吃一顆，因為等下要吃晚餐了。」兒子點頭，乖乖含著一顆。婆婆走進客廳，從她那個花布袋掏出兩顆水果糖：「你媽媽不知道啦，奶奶愛你，多吃一顆沒關係。」兒子看了媽媽一眼，又看了奶奶一眼，眼神在兩個人之間擺盪。媳婦那一刻——胸口有一團火往上衝。她想吼：「媽妳到底有沒有把我講的話當一回事！」但她想起上次吼完，公公一個禮拜不講話，先生夾在中間吃了三天的安眠藥。她吞下那團火。但她知道——這件事，今天必須說。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">隔代教養衝突在台灣是普遍家庭結構議題，<b>主計總處 2022 年調查</b>顯示，台灣約 <b>10–13%</b> 雙親家庭由祖父母提供日常照顧。<b>臺灣教育評論月刊 11(8)</b>《隔代教養家庭的代間學習限制及因應策略》指出，最常見三大衝突：<b>① 飲食與糖分管理；② 3C 與螢幕時間；③ 規矩與管教權</b>。研究強調——<b>正面衝突 80% 以失敗收場</b>，因為阿公阿嬤的反應通常是「我帶大三個都沒事」「你是嫌我帶不好」。臨床心理師 <b>洪仲清</b> 與兒科醫師 <b>黃瑽寧</b> 都建議用「<b>三層溝通法</b>」：<b>① 先肯定愛，不否定行為；② 把「對錯」改成「我和老公商量好的」；③ 把規矩外包給「醫生／老師／書」這類第三方</b>。重點不是「贏婆婆」，而是「保住家庭關係的同時，把規矩立穩」。</div>
+
+  <div class="section-label">覺知 SEL 觀點 ・ 三句話對話腳本</div>
+  <div class="script-box">
+    <ol>
+      <li><b>第一句（接住愛、不否定關係）：</b>「媽，我知道您很疼他，他也最喜歡奶奶帶來的糖。」<br><span style="color:#7a6438;font-size:13.5px">→ 把婆婆的「愛」先講出來。她不會被否定，火氣降一半。</span></li>
+      <li><b>第二句（外包規矩給第三方，不是「妳對我錯」）：</b>「不過上次牙醫叔叔有交代，他這個月有三顆牙在蛀，糖一天只能一顆，我們有跟孩子也講好了。」<br><span style="color:#7a6438;font-size:13.5px">→ 把規矩外包給醫生／老師／書。不是「我規定」，是「醫生規定」。</span></li>
+      <li><b>第三句（把愛還給婆婆，給她一個替代角色）：</b>「您下次來，我們在門口設一個『奶奶禮物盒』——您帶來的糖放進去，我和孩子每天晚餐後一起拿一顆。這樣每一顆糖都是您送的，他也吃得安心。」<br><span style="color:#7a6438;font-size:13.5px">→ 給婆婆一個「正式的愛的儀式」。她不會覺得被推開。</span></li>
+    </ol>
+  </div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">週日下午。
+我才剛跟兒子說：「今天糖只能一顆。」
+婆婆走進來，從花布袋掏出兩顆水果糖：
+「你媽媽不知道啦，奶奶愛你，多吃一顆沒關係。」
+
+我胸口那團火想衝出來。
+但我想起上次吼完，公公一個禮拜不講話。
+我吞下那團火。
+
+——隔代教養的衝突，
+不是吵贏婆婆，是保住家庭，又能立穩規矩。
+
+研究指出，正面衝突 80% 以失敗收場。
+因為「我跟妳吵」這件事本身，就是輸。
+
+請改用三句話：
+
+1️⃣「媽，我知道您很疼他。」（先接住愛）
+2️⃣「不過牙醫叔叔交代糖一天只能一顆。」（規矩外包給第三方）
+3️⃣「您下次帶來的糖，我們一起放進『奶奶的禮物盒』，
+　每天晚餐後一起拿一顆。」（給她一個替代角色）
+
+愛沒有被否定。
+規矩立得起來。
+婆婆下週還會想再來。
+
+——這才是覺知 SEL 教家長的「隔代溝通」。
+
+#隔代教養 #婆媳 #對話腳本 #覺知SEL</div>
+
+  <div class="punchline">📌 跟婆婆吵贏，孩子失去阿嬤；跟婆婆認輸，孩子失去規矩。第三條路是——把婆婆的愛，放進一個你訂的儀式裡。她繼續愛，你繼續立規矩。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB（媽媽社團）｜ LINE 媽媽群 ｜ IG（拆 5 張卡片：場景＋三句話＋金句）</div>
+    <div class="row"><b>適合對象：</b>學齡前～國小家長／隔代教養家庭／與公婆同住或週末同住的雙薪家庭</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="http://www.ater.org.tw/journal/article/11-8/free/16.pdf" target="_blank">臺灣教育評論月刊 11(8)｜隔代教養家庭的代間學習限制及因應策略</a> ｜
+      <a href="https://www.children.org.tw/" target="_blank">兒福聯盟官網</a> ｜
+      <a href="https://plus.children.org.tw/" target="_blank">兒福聯盟｜育兒+ 親職教養平台</a> ｜
+      <a href="https://www.parenting.com.tw/" target="_blank">親子天下｜隔代教養專欄</a> ｜
+      <a href="https://www.commonhealth.com.tw/" target="_blank">康健雜誌｜隔代教養專題</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>grandmother giving candy / 3 generation family kitchen / Taiwan grandparent grandchild</div>
+  </div>
+</div>
+
+<!-- 頁尾 -->
+<div class="footer">
+  覺知 SEL 教育｜每日教養文宣 ｜ 2026.05.03 ｜ 18:15 台灣時間<br>
+  以日常的眼睛，照見孩子心裡正在發生的事<br>
+  <span class="heart">♥</span> 五則跨四個層級 ｜ 痛點 × 2 ・能力 × 1 ・趨勢 × 1 ・加值 × 1
+</div>
+
+</div>
+
+<script>
+// 星星標記功能：使用者可手動標記實際發布的文案
+document.querySelectorAll('.star-slot').forEach(s=>{
+  s.addEventListener('click',()=>{
+    s.classList.toggle('marked');
+  });
+});
+</script>
+
+</body>
+</html>
