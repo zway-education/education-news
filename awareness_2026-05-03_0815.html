@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.03 08:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(0,0,0,0.03);
+  position:relative;
+}
+.star-slot{
+  position:absolute;
+  top:14px;
+  right:18px;
+  width:32px;
+  height:32px;
+  border:1.5px dashed #d8cdbf;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  color:#cfc1ad;
+  background:#fff;
+  user-select:none;
+  cursor:pointer;
+  transition:.2s;
+}
+.star-slot:hover{border-color:var(--brand);color:var(--brand)}
+.star-slot.marked{
+  border-style:solid;
+  border-color:#f0b338;
+  background:#fff8e6;
+  color:#f0a000;
+}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;padding-right:48px}
+.tag{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 11px;
+  border-radius:14px;
+  font-weight:500;
+  letter-spacing:.5px;
+}
+.tag-pain{background:#fcebde;color:#b85a3e}
+.tag-skill{background:#ece4f7;color:#6b4ea0}
+.tag-trend{background:#dcf0eb;color:#3d8a78}
+.tag-extra{background:#f0eadc;color:#7a6438}
+.tag-plain{background:#f5efe7;color:#7a6d63}
+
+.card h2{
+  font-size:21px;
+  line-height:1.55;
+  margin:6px 0 18px;
+  color:var(--ink);
+  font-weight:700;
+  letter-spacing:.3px;
+}
+
+.section-label{
+  font-size:12px;
+  font-weight:700;
+  color:var(--brand-deep);
+  letter-spacing:2px;
+  margin:18px 0 6px;
+  text-transform:uppercase;
+}
+.scenario{
+  background:#fdf6ee;
+  border-left:3px solid var(--brand);
+  padding:14px 18px;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  color:#4a3f35;
+  margin:10px 0 4px;
+}
+.research{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  background:#f7f3ec;
+  padding:14px 18px;
+  border-radius:10px;
+  margin:8px 0;
+}
+.research b{color:var(--ink)}
+.insight{
+  font-size:15px;
+  color:var(--ink);
+  margin:6px 0;
+  padding:0 2px;
+}
+.copy{
+  background:#fffaf3;
+  border:1px dashed #e8c9a8;
+  border-radius:12px;
+  padding:18px 20px;
+  font-size:15px;
+  color:#3a322c;
+  margin:10px 0;
+  white-space:pre-wrap;
+  line-height:1.85;
+}
+.script-box{
+  background:#fef4f0;
+  border:1px solid #f3d5c1;
+  border-radius:12px;
+  padding:14px 18px;
+  margin:8px 0;
+}
+.script-box ol{margin:6px 0 4px 18px;padding:0}
+.script-box li{margin:6px 0;color:#4a3f35;font-size:14.5px}
+.script-box li b{color:var(--brand-deep)}
+
+.punchline{
+  background:linear-gradient(135deg,#fce8db 0%,#fff5ec 100%);
+  border-radius:12px;
+  padding:16px 20px;
+  font-weight:700;
+  color:var(--brand-deep);
+  font-size:15.5px;
+  letter-spacing:.4px;
+  margin:14px 0 8px;
+  line-height:1.75;
+}
+
+.meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.meta .row{display:flex;gap:8px;flex-wrap:wrap}
+.meta .row b{color:var(--ink);min-width:74px;display:inline-block}
+.meta a{color:var(--brand-deep);text-decoration:none;border-bottom:1px dotted #e3a78a}
+.meta a:hover{color:var(--brand)}
+
+.footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-top:36px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  letter-spacing:1px;
+}
+.footer .heart{color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 檔頭 -->
+<div class="head">
+  <span class="brand-tag">覺知 SEL · 每日教養文宣</span>
+  <h1>清晨還沒醒的書桌——五則寫給今天忙著上班、上課的你</h1>
+  <div class="date">2026.05.03 ｜ 08:15 ｜ 台灣時間</div>
+  <div class="sub">五則文案 ｜ 跨五個層級 ｜ 從考前一晚翻來覆去到 12 點、5 歲女兒掛著餅乾屑說不是我吃的，到「我就是不擅長數學」那句把孩子釘住的話、Yale 的情緒系統正進到全球 5000 所學校，與姪子第一次說「我討厭弟弟」的那個下午。</div>
+</div>
+
+<!-- 主視覺：清晨書桌・五月的微光 -->
+<div class="hero">
+<svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4e8"/>
+      <stop offset="55%" stop-color="#fbd7b6"/>
+      <stop offset="100%" stop-color="#e8a07a"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0d8b8"/>
+      <stop offset="100%" stop-color="#c89870"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff5d6" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff5d6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- 天空 -->
+  <rect x="0" y="0" width="880" height="220" fill="url(#sky)"/>
+  <!-- 窗框 -->
+  <rect x="540" y="40" width="290" height="180" fill="none" stroke="#9b6d4a" stroke-width="6" rx="6"/>
+  <line x1="685" y1="40" x2="685" y2="220" stroke="#9b6d4a" stroke-width="4"/>
+  <line x1="540" y1="130" x2="830" y2="130" stroke="#9b6d4a" stroke-width="4"/>
+  <!-- 太陽 -->
+  <circle cx="650" cy="110" r="28" fill="#ffd29a" opacity="0.9"/>
+  <!-- 雲 -->
+  <ellipse cx="600" cy="80" rx="28" ry="9" fill="#fff" opacity="0.7"/>
+  <ellipse cx="760" cy="100" rx="34" ry="10" fill="#fff" opacity="0.65"/>
+  <!-- 桌面 -->
+  <rect x="0" y="220" width="880" height="140" fill="url(#desk)"/>
+  <!-- 桌邊光線 -->
+  <ellipse cx="240" cy="240" rx="220" ry="60" fill="url(#lamp)"/>
+  <!-- 桌燈 -->
+  <line x1="120" y1="240" x2="120" y2="160" stroke="#7a5a3a" stroke-width="4"/>
+  <line x1="120" y1="160" x2="170" y2="135" stroke="#7a5a3a" stroke-width="4"/>
+  <path d="M170 135 L210 110 L195 150 L150 165 Z" fill="#d97757" stroke="#9b4f30" stroke-width="2"/>
+  <ellipse cx="120" cy="240" rx="22" ry="6" fill="#7a5a3a"/>
+  <!-- 書本（疊起） -->
+  <rect x="200" y="222" width="120" height="14" fill="#8c6bc7" rx="2"/>
+  <rect x="195" y="236" width="125" height="12" fill="#5fb3a1" rx="2"/>
+  <rect x="205" y="248" width="115" height="10" fill="#a48a64" rx="2"/>
+  <!-- 馬克杯 -->
+  <rect x="350" y="218" width="48" height="46" fill="#fff" stroke="#b85a3e" stroke-width="3" rx="4"/>
+  <path d="M398 226 Q418 232 418 244 Q418 256 398 256" fill="none" stroke="#b85a3e" stroke-width="3"/>
+  <path d="M362 210 Q368 200 374 210 M380 210 Q386 200 392 210" stroke="#cfc1ad" stroke-width="2" fill="none"/>
+  <!-- 筆記本 與 鉛筆 -->
+  <rect x="430" y="240" width="170" height="100" fill="#fff" stroke="#cfc1ad" stroke-width="2" rx="3"/>
+  <line x1="445" y1="265" x2="585" y2="265" stroke="#e8d8c4" stroke-width="1.5"/>
+  <line x1="445" y1="285" x2="565" y2="285" stroke="#e8d8c4" stroke-width="1.5"/>
+  <line x1="445" y1="305" x2="555" y2="305" stroke="#e8d8c4" stroke-width="1.5"/>
+  <line x1="445" y1="325" x2="540" y2="325" stroke="#e8d8c4" stroke-width="1.5"/>
+  <rect x="615" y="252" width="160" height="6" fill="#d97757" transform="rotate(8 615 252)"/>
+  <polygon points="775,255 790,260 775,265" fill="#3a322c" transform="rotate(8 615 252)"/>
+  <!-- 葉子・植物 -->
+  <rect x="730" y="240" width="40" height="44" fill="#a48a64" rx="3"/>
+  <path d="M750 240 Q740 220 745 200 Q752 215 750 240" fill="#5fb3a1"/>
+  <path d="M752 240 Q762 220 758 198 Q752 218 752 240" fill="#7ec8b6"/>
+  <path d="M748 240 Q738 226 730 208 Q740 224 748 240" fill="#5fb3a1"/>
+  <!-- 簽名 -->
+  <text x="440" y="350" font-family="'Noto Sans TC',sans-serif" font-size="13" fill="#7a5a3a" letter-spacing="2">覺知 SEL · 早晨 8:15</text>
+</svg>
+</div>
+
+<!-- ============ 卡片 1：考試焦慮 / 痛點 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">第一層・家長痛點</span>
+    <span class="tag tag-plain">考試焦慮</span>
+    <span class="tag tag-plain">失眠</span>
+    <span class="tag tag-plain">國中</span>
+  </div>
+  <h2>「我睡不著……」——他凌晨 12 點還在翻身，不是不認真，是大腦那盞警報器，整晚都關不掉</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">考前那一晚，你經過他房間三次，每次都看到一盞檯燈還亮著。你輕輕推門，他蓋著被子裝睡，卻翻身翻得整張床嘎吱響。明早就要會考了，你在門外站了一分鐘，最後還是沒進去——你不知道該說「快點睡」，還是「沒事的」。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">兒福聯盟 <b>2025 台灣青少年心理健康調查</b>（7,007 份國高中職有效問卷）顯示——超過五成（54.3%）國中生正承受「對未來的壓力」，這群孩子出現焦慮、失眠等身心症狀的比例，是同齡其他孩子的 <b>3.5 倍</b>；近一成（9.2%）孩子每週至少一次入睡困難。更值得家長停下來看的一個數字是：當情緒問題發生時，<b>46.5%</b> 的青少年第一個求助的對象——不是父母、不是朋友，是 AI。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">考前失眠不是「太緊張、放鬆一點就好」。這是大腦內分泌的「警戒系統」一旦升高、就降不下來——當孩子身體已經告訴你「我睡不著」，那不是抗議，是求救。SEL 五大核心裡，最先要被點亮的，是「自我覺察」——讓孩子先把那團模糊的不舒服，命名成「我焦慮」，而不是任由它變成「我睡不著」。先懂心，再懂教。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">考前一晚，他凌晨 12 點還在翻身。
+你想敲門問他「怎麼了」，又怕一問，他更睡不著。
+
+但孩子失眠的時候，最痛苦的不是試卷。
+是他覺得「全家都靠這一晚」，而他連自己的呼吸都控制不了。
+
+兒福聯盟 2025 年調查——超過五成國中生正承受「對未來的壓力」，他們失眠和焦慮的比例，是同齡的 3.5 倍。
+而當孩子真的撐不住時，46.5% 的人第一個傾訴對象——不是爸媽，是 AI。
+
+那不是孩子背叛你。
+是因為 AI 不會嘆氣、不會說「你怎麼又這樣」。
+
+今晚如果你經過他房門，請別只說「快點睡」。
+試著推開門，輕輕說：「你不用考好。我只想知道你還在不在。」
+
+那一句話——比安眠藥有用得多。
+
+#考試焦慮 #國中生心理健康 #覺知教養 #SEL自我覺察</div>
+
+  <div class="punchline">📌 他不是不會考試——他是不知道，怎麼跟那個「全家都在等好消息」的自己睡同一張床。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LINE 社群 ｜ IG（拆 3 張卡片）</div>
+    <div class="row"><b>適合對象：</b>國中生家長（會考、段考前後）／國高中老師</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://www.children.org.tw/publication_research/research_report/mentalhealth2025" target="_blank">兒福聯盟 2025 台灣青少年心理健康調查報告</a> ｜
+      <a href="https://www.children.org.tw/news/news_detail/3284" target="_blank">兒福聯盟新聞稿《國中生心理健康拉警報 升學壓力大、沉迷社群》</a> ｜
+      <a href="https://www.children.org.tw/news/news_detail/3417" target="_blank">兒福聯盟新聞稿《孩子遇情緒問題先問 AI》</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>night desk lamp / teenager sleep insomnia / late night studying</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 2：說謊 / 痛點 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-pain">第一層・家長痛點</span>
+    <span class="tag tag-plain">幼兒說謊</span>
+    <span class="tag tag-plain">不認錯</span>
+    <span class="tag tag-plain">5 歲</span>
+  </div>
+  <h2>「不是我吃的！」——餅乾屑還掛在嘴角，5 歲女兒第一次睜眼說瞎話的那天，不是在學壞，是大腦剛上線了一個新功能</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">廚房地上散著餅乾屑，你蹲下來問 5 歲女兒：「是不是妳吃的？」她搖搖頭，眼神認真到讓你差點相信——直到你看到她嘴角還沾著一片。你那一瞬間又好氣又好笑，又有點慌——「她什麼時候開始會這樣？」「我這個爸爸是不是哪裡沒教好？」</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">兒童發展心理學一個大家不太敢談的研究數字——大約 <b>30%</b> 的孩子在 2 歲時就會說第一句謊；3 歲約 <b>一半</b>，4 歲飆到約 <b>80%</b>。這不是「學壞」，而是孩子的大腦發展出了 <b>心智理論（Theory of Mind）</b>——能理解「別人腦袋裡想的，跟我不一樣」。少了這個能力，孩子根本「不會」說謊。換句話說——說謊，反而是大腦上線的證明。研究者進一步指出，孩子要會「圓謊」，還需要兩種能力：讀懂大人反應的能力，以及自我控制能力。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">當孩子第一次說謊，最該被處理的——不是這個謊，是「他為什麼覺得需要說謊」。是怕你罵？怕你失望？怕你不愛他了？覺知 SEL 裡的「先懂心，再懂教」，在這一刻最重要：不戳破、不貼標籤、不一路追問「你是不是又騙我」。先讓孩子知道——說真話的代價，沒有他想像中那麼可怕。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">餅乾屑還沾在嘴角，5 歲女兒理直氣壯：「不是我吃的！」
+我那一秒想笑、想生氣、又有點慌——
+「我女兒怎麼這麼小就會說謊？」
+
+後來才知道——孩子 2 歲就有 30% 會說第一句謊，4 歲約 80% 都會。
+心理學家說：這不是「學壞」，是大腦長出了一個叫「心智理論」的新能力——
+他開始知道，「別人腦袋裡想的，可能跟我不一樣」。
+
+換個角度看——
+孩子說的不是謊，是他第一次站在你的角度替自己擋一下。
+
+那一刻，你最該回的——不是「你怎麼可以騙人」，而是：
+「告訴爸爸真話，沒有那麼可怕，好嗎？」
+
+別讓他學會的第一課——是「下次說謊要更厲害」。
+
+#幼兒說謊 #心智理論 #5歲教養 #覺知SEL</div>
+
+  <div class="punchline">📌 他第一次說謊的那一天，不是要對抗你——是大腦在告訴你：「他終於懂得在乎你怎麼想了。」那才是你真正可以教他的開始。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ IG ｜ 親職社團</div>
+    <div class="row"><b>適合對象：</b>3-7 歲幼兒家長／幼兒園教師</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://kids.heho.com.tw/archives/170810" target="_blank">Heho 親子《小孩說謊正常嗎？約 30% 孩子 2 歲就會說謊》</a> ｜
+      <a href="http://babynews.in-mommy.com/2016/04/theory-of-mind.html" target="_blank">in 媽咪《教你辨別孩子是否具備說謊的能力（心智理論）》</a> ｜
+      <a href="https://www.leaderkid.com.tw/2022/01/24/lie/" target="_blank">天才領袖《九成孩子會說謊！會不會變壞習慣，關鍵在「大人的反應」》</a> ｜
+      <a href="https://hisworkclinic.com/news/moral-1/" target="_blank">五餅二魚身心科診所《孩子，你怎麼會說謊！？》</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>child cookie crumbs / kid honesty / preschool girl</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 3：成長型思維 / 能力 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-skill">第二層・能力培養</span>
+    <span class="tag tag-plain">成長型思維</span>
+    <span class="tag tag-plain">Carol Dweck</span>
+    <span class="tag tag-plain">數學焦慮</span>
+  </div>
+  <h2>「我就是不擅長數學」——孩子說這句話的那一刻，他不是在分析自己，是把一道門「砰」一聲關上了</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">補習班老師在班上發回考卷，那個小四男孩拿到 58 分，沒哭、沒鬧，只是把考卷對折塞進書包，輕聲說了一句「反正我就是不擅長數學」。坐在隔壁的同學笑了笑，老師卻在心裡愣了半秒——這句話，最近她已經連續聽了三個孩子講出來。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">史丹佛心理學家 <b>Carol Dweck</b> 在《Mindset: The New Psychology of Success》中提出 <b>成長型思維 vs 定型思維</b>——當孩子相信「能力是天生固定的」（定型思維），他會把每一次考差解讀成「我不夠聰明」，並開始迴避挑戰；當他相信「能力是可以練出來的」（成長型思維），同一張不及格的考卷會變成「下次該怎麼做」。Dweck 推薦一個只有兩個字、家長今晚就能用的工具——把「我不會」改成「我<b>還沒</b>會」（英文是 "Not yet"）。一個小小的詞，就能把那扇關起來的門重新推開一條縫。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">「我就是不擅長」——這句話最危險的，不是這次的成績，是它正在變成孩子腦中的一個 <b>身份標籤</b>。覺知 SEL 主張先看見孩子那句話背後的「自我評價」，再陪他重新框定：不是「我這個人」不行，是「這個方法」我還沒找到。從「我不會」到「我還沒會」——中間只差一個字，但那個字，就是孩子能不能一直願意嘗試下去的分水嶺。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">小四男孩拿到 58 分，把考卷對折塞進書包：
+「反正我就是不擅長數學。」
+
+老師那一秒沒罵他，反而心驚——
+這句話，這禮拜她已經連續聽了三個孩子說出來。
+
+史丹佛大學的 Carol Dweck 教授提醒所有家長：
+當孩子相信「能力是天生的」，他就會把「考差」解讀成「我不行」，
+然後悄悄關掉那扇願意再試一次的門。
+
+她推薦一個只要 2 個字、今晚就能用的小工具——
+把「我不會」，改成「我還沒會」。
+
+別小看這 2 個字。
+它告訴孩子的不是答案，是：
+「這條路還沒走完，你還在路上。」
+
+我們大人這一生，丟棄了多少夢想——
+就是因為那一年沒人在我們耳邊說：「你只是還沒會。」
+
+別讓孩子也走那條路。
+
+#成長型思維 #Carol_Dweck #我還沒會 #覺知SEL</div>
+
+  <div class="punchline">📌 孩子的「我不會」是句結尾——你幫他補上的那兩個字「還沒」，是他下一段路的開頭。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ LINE 家長群 ｜ Threads</div>
+    <div class="row"><b>適合對象：</b>國小中高年級家長／補教老師／國中導師</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://mentalhealth.edb.gov.hk/uploads/mh/content/2021010_growth%20mindset.pdf" target="_blank">香港教育局《以成長型思維協助子女面對挑戰》(Carol Dweck 整理)</a> ｜
+      <a href="https://mentalhealth.edb.gov.hk/uploads/mh/content/20241017_growth%20mindset.pdf" target="_blank">香港教育局 2024《如何以成長型思維提升子女抗逆力？》</a> ｜
+      <a href="https://zh.wikipedia.org/zh-hans/%E5%8D%A1%E8%98%BF%C2%B7%E5%BE%B7%E5%A8%81%E5%85%8B" target="_blank">維基百科：卡蘿・德威克 Carol Dweck</a> ｜
+      <a href="https://crossing.cw.com.tw/article/16995" target="_blank">換日線《成長型思維，只是一碗撒了心理學味精的毒雞湯？》</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>child math test / classroom student / chalkboard equation</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 4：Yale RULER / 趨勢 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-trend">第三層・科學與趨勢</span>
+    <span class="tag tag-plain">Yale RULER</span>
+    <span class="tag tag-plain">情緒智商</span>
+    <span class="tag tag-plain">全球 5000 校</span>
+  </div>
+  <h2>耶魯大學那 5 個英文字母——已經悄悄走進全球 5000 所學校，把「會辨認情緒」教成像數學一樣的基本科</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">一位高雄的小學校長坐在辦公室，桌上堆著三疊輔導通報單。她翻著翻著嘆口氣——「我們學生不是不努力，是他們情緒一上來，根本聽不見老師在說什麼。」她在筆記本上抄下幾個英文字母：R-U-L-E-R——同事剛從一場研習回來，告訴她耶魯有一套東西，可以系統化地教孩子「先看懂自己」。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research"><b>耶魯大學情緒智商中心 Yale Center for Emotional Intelligence</b> 由 <b>Marc Brackett</b> 教授創立，發展出 <b>RULER 五能力情緒教育系統</b>——R 辨認（Recognizing）、U 理解（Understanding）、L 命名（Labeling）、E 表達（Expressing）、R 調節（Regulating）。這套以實證為基礎的 SEL 框架，目前已經被全球 <b>超過 5,000 所學校</b> 採用，研究顯示能有效改善學業表現、降低霸凌、減輕教師職業倦怠，並改善整體校園氛圍。Brackett 教授的著作《Permission to Feel》已被翻譯成 <b>27 種語言</b>。RULER 的特色之一——它從「教大人怎麼面對自己的情緒」開始，再進到孩子。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">當別國正在用一整套系統，把「會看見自己」教成跟九九乘法一樣的基本功，台灣家長最容易遇到的情境是——孩子炸了，我們也跟著炸；事後又一起後悔。覺知 SEL 跟 Yale RULER 在底層哲學完全一致：<b>先有自我覺察，再談自我管理</b>。先讓孩子（和大人）能說出「我現在是什麼狀態」，後面所有的方法才接得上去。</div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">你聽過 RULER 嗎？
+不是尺，是耶魯大學打造的一套「情緒能力系統」。
+
+R 辨認、U 理解、L 命名、E 表達、R 調節——
+五個動詞，串成孩子一輩子用得到的內建能力。
+
+這套系統，現在已經悄悄走進全球 5000 多所學校。
+他們發現的事很驚人：當孩子學會「會說出自己的情緒」，
+不只霸凌變少、學業變好——
+連老師的職業倦怠，都跟著降下來。
+
+更妙的是——RULER 不是從教孩子開始的，
+是從「先教大人」開始。
+
+因為他們知道：
+一個自己也炸過頭的大人，是教不出穩定的孩子的。
+
+我們在台灣談覺知 SEL，講了 10 年的同一句話——
+「先懂心，再懂教。」
+
+世界正在追上來。
+我們的孩子，值得這套教育走進每一間台灣的教室。
+
+#Yale_RULER #情緒智商 #SEL全球趨勢 #覺知教養</div>
+
+  <div class="punchline">📌 別國已經把「會辨認情緒」當成第六科——而台灣家長還在門外問「我家孩子是不是有問題」。先教大人，孩子才會跟上。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB（長文）｜ LinkedIn ｜ 學校／補教社團</div>
+    <div class="row"><b>適合對象：</b>校長／教師／補教主管／關心 SEL 的家長／企業 HR</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://marcbrackett.com/ruler/" target="_blank">Marc Brackett 官網：RULER Approach</a> ｜
+      <a href="https://rulerapproach.org/" target="_blank">RULER Approach 官方網站</a> ｜
+      <a href="https://medicine.yale.edu/profile/marc-brackett/" target="_blank">Yale School of Medicine — Marc A. Brackett 個人檔</a> ｜
+      <a href="https://www.tandfonline.com/doi/abs/10.1080/00461520.2019.1614447" target="_blank">Educational Psychologist 期刊論文《RULER: A Theory-Driven, Systemic Approach》</a> ｜
+      <a href="https://en.wikipedia.org/wiki/Marc_Brackett" target="_blank">維基百科 Marc Brackett</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>classroom emotion / feelings chart / child reading school</div>
+  </div>
+</div>
+
+<!-- ============ 卡片 5：對話腳本「我討厭弟弟」/ 加值 ============ -->
+<div class="card">
+  <div class="star-slot" title="按一下標記為已發布">⭐</div>
+  <div class="tag-row">
+    <span class="tag tag-extra">加值・場景對話腳本</span>
+    <span class="tag tag-plain">手足嫉妒</span>
+    <span class="tag tag-plain">三句話</span>
+    <span class="tag tag-plain">姑姑視角</span>
+  </div>
+  <h2>「我討厭弟弟！」——5 歲哥哥握緊小拳頭那一刻，你最不該回的，是「他才是小寶貝你要讓他」</h2>
+
+  <div class="section-label">家長共鳴・場景</div>
+  <div class="scenario">那天我去哥哥家幫忙照顧兩個孩子。剛幫小的弟弟泡完奶，5 歲的姪子突然把他畫到一半的圖紙整張撕掉，眼眶泛紅地對我大喊：「我討厭弟弟！妳們都不喜歡我了！」——我一秒沒回話。如果我說「他還小，你要讓他」，我知道他這顆心，今天就會被我關上一扇門。</div>
+
+  <div class="section-label">教育新知</div>
+  <div class="research">親子教養專家普遍指出——<b>手足關係並非與生俱來</b>，需要大人耐心培養。當孩子說「我討厭他」，往往不是真的恨手足，而是在搶奪父母的關注與愛。專家建議的回應原則：<b>先暫停表達自己，以傾聽孩子為主</b>，給予孩子充分表達情緒的機會，讓他感受到被尊重；<b>不偏幫任何一方</b>，並在大孩子情緒平穩時，一起討論「怎麼把善意傳遞給弟弟妹妹」。研究也提醒——過度強調排行責任（你是哥哥／姊姊，你要讓）會產生反效果，可能讓老大把情緒轉嫁到老二身上。</div>
+
+  <div class="section-label">覺知 SEL 觀點</div>
+  <div class="insight">「我討厭弟弟」這句話，翻譯成大人聽得懂的——其實是「我以為我會永遠是你們的第一名，但現在他來了」。覺知 SEL 提醒我們：孩子情緒最大的時候，最不需要被講道理。他需要的是——「有沒有人，先聽見我」。先處理情緒，再處理事情。先讓他知道「你還是被愛的」，他才有力氣，慢慢學著去愛那個搶走他半張床的小生物。</div>
+
+  <div class="section-label">三句話對話腳本</div>
+  <div class="script-box">
+    <ol>
+      <li><b>第 1 句（接住情緒，不評價）：</b>「你現在好生氣對不對？覺得弟弟搶走我們了，姑姑聽到了。」<br>— 不解釋、不反駁、不糾正。先讓他知道，他的感受被看見。</li>
+      <li><b>第 2 句（重申他的位置，不被取代）：</b>「弟弟是新來的，他還很小。但你是我們家的哥哥，這個位置——只有你可以坐。」<br>— 把他的「身份焦慮」回應掉。讓他知道：弟弟的到來，沒有讓他降級。</li>
+      <li><b>第 3 句（給選擇，邀請他重新加入）：</b>「等下你想自己玩一下，還是想跟姑姑一起去幫弟弟蓋小被被？沒關係，你決定。」<br>— 不強迫他「愛弟弟」，而是把主導權還給他。給他一條他能自己走進去的路。</li>
+    </ol>
+  </div>
+
+  <div class="section-label">直接可發布文案</div>
+  <div class="copy">5 歲的姪子撕掉自己畫的圖，眼眶紅紅大喊：
+「我討厭弟弟！你們都不喜歡我了！」
+
+那一秒，我差點脫口說：「他才是小寶貝你要讓他啊。」
+還好——我嚥了回去。
+
+孩子說「討厭手足」，從來不是真的恨。
+是他在問你那句沒問出口的話：
+「我還是你們的第一名嗎？」
+
+如果你也遇到，可以試試這三句話：
+1️⃣「你現在好生氣，覺得弟弟搶走我們了——我聽到了。」
+2️⃣「弟弟是新來的，他還很小。但你是我們家的哥哥，這個位置只有你可以坐。」
+3️⃣「等下你想自己玩，還是要跟我一起幫弟弟蓋被被？沒關係，你決定。」
+
+孩子的怒氣，從來不需要被矯正。
+它需要被聽見、被回應、被重新邀請。
+
+請別再讓那句「你是哥哥你要讓」，
+變成他這一生對「家」的第一個誤會。
+
+#手足戰爭對話腳本 #我討厭弟弟 #覺知SEL #先懂心再懂教</div>
+
+  <div class="punchline">📌 「我討厭弟弟」——是哥哥對你說的「我怕被你忘記」。先接住他這一句，他才接得住下一個生命的到來。</div>
+
+  <div class="meta">
+    <div class="row"><b>適合平台：</b>FB ｜ IG（拆 4 張對話卡片）｜ 親子社團</div>
+    <div class="row"><b>適合對象：</b>二寶／三寶家庭、長輩照顧者、幼兒園教師、姑姑舅舅阿姨輩</div>
+    <div class="row"><b>來源連結：</b>
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/23644" target="_blank">未來 Family《「我討厭他！」手足感情不像父母愛小孩，不是與生俱來》</a> ｜
+      <a href="https://www.leaderkid.com.tw/2024/03/04/83670/" target="_blank">天才領袖《手足愛吵架怎麼辦？爸媽必知教養重點》</a> ｜
+      <a href="https://midwayforyou.com/speech-therapist-brother-picturebook/" target="_blank">米蔚 MIDWAY《從繪本裡的手足關係培養因應未來的能力》</a> ｜
+      <a href="https://www.plan.org.hk/zh/child-safeguarding-tips-parents-020/" target="_blank">國際培幼會《家長教得樂・幫助建立手足情誼》</a>
+    </div>
+    <div class="row"><b>Unsplash：</b>siblings jealous / older brother younger / family two children</div>
+  </div>
+</div>
+
+<!-- 頁腳 -->
+<div class="footer">
+  <div>覺知 SEL 教育 ｜ 先懂心，再懂教 <span class="heart">♡</span></div>
+  <div style="margin-top:6px;font-size:12px">每日三次自動產出 ｜ 08:15 ・ 13:15 ・ 18:15</div>
+  <div style="margin-top:6px;font-size:12px">右上角的 ⭐ 可手動標記「實際發過的文案」，每週日 review 任務會讀取</div>
+</div>
+
+</div>
+
+<script>
+// 點擊 ⭐ 標記已發過
+document.querySelectorAll('.star-slot').forEach(el=>{
+  el.addEventListener('click',()=>{
+    el.classList.toggle('marked');
+  });
+});
+</script>
+
+</body>
+</html>
