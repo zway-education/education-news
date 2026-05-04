@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.04 08:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+.axis-banner{
+  background:linear-gradient(135deg,#f4eee5 0%,#e8dfd0 100%);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px 20px;
+  margin-bottom:22px;
+  font-size:14px;
+  line-height:1.85;
+  color:var(--ink-soft);
+}
+.axis-banner strong{ color:var(--brand-deep); letter-spacing:1px; }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>250 年沒換過的學校──孩子提早替我們問了</h1>
+  <div class="date">2026.05.04 ｜ 08:15 ｜ 台灣時間</div>
+  <div class="sub">
+    早晨 8:15、書包還沒揹起的這一刻──五則寫給今天還願意停下來、想一想「我們到底想把孩子送去什麼樣的教育裡」的你。<br>
+    今天的核心軸線：從 1763 普魯士那一張學校藍圖，走到 2026 AI 走進教室──我們還在用工業時代的方式，面對 AI 時代的孩子。
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0e6d6"/>
+      <stop offset="50%" stop-color="#fbf5ec"/>
+      <stop offset="100%" stop-color="#dff1ec"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf3e6"/>
+      <stop offset="100%" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="880" height="320" fill="url(#bgGrad)"/>
+  <rect y="0" width="880" height="220" fill="url(#skyGrad)" opacity="0.5"/>
+
+  <!-- 左側：舊工廠學校 (1763) -->
+  <g transform="translate(60,140)">
+    <rect x="0" y="20" width="160" height="100" fill="#a48a64" opacity="0.85"/>
+    <rect x="0" y="0" width="160" height="22" fill="#7a6643"/>
+    <rect x="14" y="40" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="46" y="40" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="78" y="40" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="110" y="40" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="14" y="76" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="46" y="76" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="78" y="76" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <rect x="110" y="76" width="22" height="22" fill="#fbf5ec" opacity="0.7"/>
+    <!-- 煙囪 -->
+    <rect x="130" y="-50" width="18" height="55" fill="#7a6643"/>
+    <ellipse cx="139" cy="-58" rx="14" ry="8" fill="#cfc1ac" opacity="0.7"/>
+    <ellipse cx="146" cy="-72" rx="18" ry="10" fill="#cfc1ac" opacity="0.5"/>
+    <ellipse cx="135" cy="-90" rx="22" ry="12" fill="#cfc1ac" opacity="0.35"/>
+    <text x="80" y="148" text-anchor="middle" font-size="13" fill="#7a6643" font-weight="700" letter-spacing="2">1763 普魯士</text>
+    <text x="80" y="166" text-anchor="middle" font-size="11" fill="#9c8973" letter-spacing="1">義務教育・工廠模型</text>
+  </g>
+
+  <!-- 中央：時間軌道 + 齒輪 → 羅盤 -->
+  <g>
+    <path d="M 240 200 Q 440 140 640 200" stroke="#d97757" stroke-width="3" fill="none" stroke-dasharray="0" stroke-linecap="round"/>
+    <path d="M 240 200 Q 440 140 640 200" stroke="#fff" stroke-width="1.5" fill="none" stroke-dasharray="6 8" stroke-linecap="round"/>
+    <!-- 齒輪 (左) -->
+    <g transform="translate(310,168)">
+      <circle r="22" fill="none" stroke="#a48a64" stroke-width="2.5"/>
+      <circle r="7" fill="#a48a64"/>
+      <g fill="#a48a64">
+        <rect x="-3" y="-26" width="6" height="8"/>
+        <rect x="-3" y="18" width="6" height="8"/>
+        <rect x="-26" y="-3" width="8" height="6"/>
+        <rect x="18" y="-3" width="8" height="6"/>
+        <rect x="-21" y="-21" width="6" height="8" transform="rotate(45)"/>
+        <rect x="13" y="13" width="8" height="6" transform="rotate(45)"/>
+      </g>
+    </g>
+    <text x="310" y="220" text-anchor="middle" font-size="10" fill="#9c8973" letter-spacing="1">標準化・量產</text>
+
+    <!-- 中間里程碑 -->
+    <circle cx="440" cy="160" r="6" fill="#d97757"/>
+    <text x="440" y="142" text-anchor="middle" font-size="11" fill="#b85a3e" font-weight="700">2010</text>
+    <text x="440" y="184" text-anchor="middle" font-size="9" fill="#9c8973">青少年焦慮拐點</text>
+
+    <!-- 羅盤 (右) -->
+    <g transform="translate(570,168)">
+      <circle r="24" fill="#fff" stroke="#5fb3a1" stroke-width="2.5"/>
+      <circle r="3" fill="#5fb3a1"/>
+      <path d="M 0 -18 L 5 0 L 0 18 L -5 0 Z" fill="#5fb3a1"/>
+      <text y="-28" text-anchor="middle" font-size="9" fill="#3f8a78" font-weight="700">N</text>
+    </g>
+    <text x="570" y="220" text-anchor="middle" font-size="10" fill="#3f8a78" letter-spacing="1">學習者主體・羅盤</text>
+  </g>
+
+  <!-- 右側：新教室 (2026) -->
+  <g transform="translate(680,135)">
+    <!-- 開放式建築輪廓 -->
+    <path d="M 0 130 L 0 40 L 60 0 L 130 40 L 130 130 Z" fill="#5fb3a1" opacity="0.18" stroke="#5fb3a1" stroke-width="2"/>
+    <!-- 大面開窗 -->
+    <rect x="20" y="55" width="40" height="60" fill="#fff" stroke="#5fb3a1" stroke-width="1.5" opacity="0.85"/>
+    <rect x="70" y="55" width="40" height="60" fill="#fff" stroke="#5fb3a1" stroke-width="1.5" opacity="0.85"/>
+    <!-- 內部圓桌（學生圍坐） -->
+    <ellipse cx="65" cy="100" rx="22" ry="6" fill="#5fb3a1" opacity="0.4"/>
+    <circle cx="42" cy="92" r="3" fill="#b85a3e"/>
+    <circle cx="65" cy="86" r="3" fill="#8c6bc7"/>
+    <circle cx="88" cy="92" r="3" fill="#5fb3a1"/>
+    <circle cx="42" cy="108" r="3" fill="#a48a64"/>
+    <circle cx="88" cy="108" r="3" fill="#d97757"/>
+    <text x="65" y="148" text-anchor="middle" font-size="13" fill="#3f8a78" font-weight="700" letter-spacing="2">2026 AI 教室</text>
+    <text x="65" y="166" text-anchor="middle" font-size="11" fill="#5a8a7e" letter-spacing="1">提問・共創・覺知</text>
+  </g>
+
+  <!-- 標題 -->
+  <text x="440" y="50" text-anchor="middle" font-size="20" fill="#b85a3e" font-weight="800" letter-spacing="3">從工廠到羅盤・250 年的這條路</text>
+  <text x="440" y="78" text-anchor="middle" font-size="13" fill="#7a6643" letter-spacing="2">我們還在用工業時代的方式，面對 AI 時代的孩子</text>
+
+  <!-- 底色草地 -->
+  <path d="M 0 280 Q 440 250 880 280 L 880 320 L 0 320 Z" fill="#e8dfd0" opacity="0.6"/>
+</svg>
+</div>
+
+<div class="axis-banner">
+  <strong>今日核心軸線</strong>　從 1763 年普魯士那張第一份義務教育藍圖，到 2024 年 UNESCO 那份「重新想像我們的未來」報告──5 則文宣，4 個層級，1 條線：當孩子問「為什麼讀書？」、「為什麼一定要學這個？」時，他們不是叛逆，他們是替整個世代，比大人早一步，問對了問題。
+</div>
+
+
+<!-- ── 第 1 篇 ── -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'★':'☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-pain">第一層 ‧ 家長痛點</span>
+  <h2>「他考全班第一，期末卻關上門問我──『讀那麼多書，到底要幹嘛？』」</h2>
+
+  <div class="opening">
+    <em>場景：</em>媽媽自述。國二男生，段考全班第一，這學期第三次。<br>
+    上週日晚上，她端水進房間，看見他攤在書桌前，眼睛沒看書，看著一張白白的牆。<br>
+    她剛要開口，他先說了：「媽，我有個問題想問你很久了──讀那麼多書，到底要幹嘛？我考第一了啊，我還是不知道我為什麼要讀。」<br>
+    她那一刻，端著的那杯水忘了放下。
+  </div>
+
+  <div class="news">
+    <strong>覺知小知識：</strong>當孩子問出「讀那麼多書要幹嘛？」這句話，第一反應通常是「他叛逆了」、「他是不是被同學帶壞」。但教養專家尚瑞君在《未來親子》長期書寫提醒：<strong>真正讓孩子失去學習動力的，往往不是「壓力太大」，而是「找不到意義」</strong>──當「考第一」變成終點，他到了那個終點，反而看見的是一片空白。教養顧問也一致指出：當孩子在外在獎勵中讀書讀久了，會出現一種「我最會做的就是考試──但這是最沒用的事」的虛無感。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>「成績」是 19 世紀普魯士工廠模型留下的舊指標──按出生日期分批、考相同的題目、給單一的分數。<br>
+    但 2026 年的孩子，活在 AI 已經會替他寫作文的世界裡。當他考到第一，他開始問的不是「我夠不夠好」，而是「我這樣讀，是在替誰讀？」<br>
+    協會主軸這句話──「<strong>先有動機，再談成績</strong>」──不是反對成績，是提醒：當動機這個地基塌了，那座高分大樓再高，也站不久。<br>
+    他問你「讀書要幹嘛？」的那一刻，不是危險信號，是一個禮物──<strong>他終於肯把那個藏了三年的問題，拿出來給你了。</strong>
+  </div>
+
+  <div class="post">
+    <span class="post-label">直接複製・發 LINE / FB / IG</span>
+    考第一名的孩子，問我「讀書要幹嘛？」<br><br>
+    我那一秒愣住。我以為考第一的孩子，動機不會壞。<br>
+    後來我才懂──他不是在叛逆，他是替我們大人，問了一個我們也答不出來的問題。<br><br>
+    那天晚上我沒回他答案。我只說了一句：「你這個問題問得真好，媽媽自己也想了好幾天。」<br>
+    他抬頭看我，第一次像個朋友，不像個學生。<br><br>
+    成績可以考到第一，但「我為什麼讀」這個問題，沒人能替他回答。<br>
+    我們做爸媽的工作，不是給他答案，是讓他敢一直問。<br><br>
+    #覺知SEL教育 #先有動機再談成績 #學習意義 #國中生
+  </div>
+
+  <div class="quote">
+    成績是工廠的指標──但孩子的動機，是他這一生要走的羅盤。<br>
+    當他願意把「讀書要幹嘛」這個問題，攤在你面前──那不是叛逆，那是他第一次，想跟你「一起想」。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層 ‧ 家長痛點 ｜ 學習動機／意義感喪失／國中生</div>
+    <div><span class="k">適合平台</span>LINE 群組 ‧ FB 媽媽社團 ‧ 國中家長 IG</div>
+    <div><span class="k">適合對象</span>國中以上孩子的父母 ‧ 高分但低動機家庭</div>
+    <div><span class="k">來源</span>
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/35313" target="_blank">未來親子｜尚瑞君：孩子的未來不是分數決定</a>　／
+      <a href="https://flipedu.parenting.com.tw/article/006534" target="_blank">翻轉教育｜為什麼要讀書？大考倒數孩子問讀書的意義</a>
+    </div>
+    <div><span class="k">配圖建議</span>Unsplash 關鍵字：teen boy reading at desk / empty exam paper / window light at night
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 第 2 篇 ── -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'★':'☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-pain">第一層 ‧ 家長痛點</span>
+  <h2>「為什麼一定要學這個？」──小六女兒寫公因數寫到一半問的這句，不是頂嘴，是她替整個世代問了一個對的問題</h2>
+
+  <div class="opening">
+    <em>場景：</em>爸爸視角。週三晚上 9 點，餐桌變成書桌。<br>
+    小六女兒寫到「最大公因數」第三題，鉛筆「啪」一聲放下，抬頭看著他：<br>
+    「爸，為什麼一定要學這個？算這題我以後要幹嘛？AI 不是按一下就好了？」<br>
+    他下意識想開口：「妳考試會考啊。」──但那句話卡在喉嚨。<br>
+    他第一次發現，他自己也答不出來。
+  </div>
+
+  <div class="news">
+    <strong>覺知小知識：</strong>已故教育學家 Sir Ken Robinson 在那場全球瀏覽超過 6,500 萬次的 RSA Animate 演講《Changing Education Paradigms》中提醒大家：<strong>我們現在的學校系統，是 19 世紀工業革命時代為了「製造工廠工人」設計出來的</strong>──按出生日期分批（像產品的製造日期）、按同樣的進度、學同樣的內容、考同樣的題目。Robinson 點出三個訊號正在同時惡化：休學率上升、藝術科目被砍、被診斷 ADHD 的孩子大量增加。他說：「我們把孩子放進這台機器，然後責怪他們不專心。」
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>當小六的女兒問「為什麼一定要學這個」，她不是在頂嘴。她是站在 21 世紀的孩子，剛好遇上 19 世紀為工廠設計的學校──她身體裡那個「不對勁」的訊號響了。<br>
+    這時候，最差的回答是「考試會考」。因為你等於告訴她：你問的這個問題，沒有答案，閉嘴就好。<br>
+    最好的回答──不是替她解釋這題的用處，而是<strong>「你問的這個問題，比這道題更重要。我們今天先把它寫完，週末來一起想，妳願意嗎？」</strong><br>
+    覺知 SEL 的核心：先讓孩子的「為什麼」被聽見，他才願意走進「怎麼做」。
+  </div>
+
+  <div class="post">
+    <span class="post-label">直接複製・發 LINE / FB / IG</span>
+    小六女兒寫作業寫到一半，抬頭問我：「為什麼一定要學這個？」<br><br>
+    我那一秒，差點脫口說出「考試會考」。<br>
+    然後我發現──我自己也答不出來。<br><br>
+    後來我才知道，全球都在問這個問題。Sir Ken Robinson 那場演講說：我們現在的學校，是 19 世紀的工廠，孩子是 21 世紀的孩子──兩邊不對盤，是正常的。<br><br>
+    我那天放下筆，跟她說：「你問的這個問題，比這道題重要。我們先寫完，週末一起想，好嗎？」<br>
+    她點頭。我看見她眼裡那盞燈，沒被吹熄。<br><br>
+    孩子不是不想學。<br>
+    他只是──想知道，他學的東西，到底跟他的人生有沒有關係。<br><br>
+    #覺知SEL教育 #學習意義 #小六生 #別急著回答考試會考
+  </div>
+
+  <div class="quote">
+    當孩子問「為什麼要學這個」──那不是反抗，是他大腦裡那盞「我想知道」的燈，還亮著。<br>
+    你今晚的回應，會決定那盞燈，明天還會不會亮。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層 ‧ 家長痛點 ｜ 寫作業崩潰／意義感／學習動機</div>
+    <div><span class="k">適合平台</span>FB 國小高年級家長社團 ‧ LINE 親子群組</div>
+    <div><span class="k">適合對象</span>國小高年級家長 ‧ 國中家長</div>
+    <div><span class="k">來源</span>
+      <a href="https://www.ted.com/talks/sir_ken_robinson_changing_education_paradigms" target="_blank">TED ‧ Sir Ken Robinson：Changing Education Paradigms</a>　／
+      <a href="https://revisesociology.com/2017/07/30/ken-robinson-changing-education-paradigms/" target="_blank">ReviseSociology｜Changing Education Paradigms 重點整理</a>
+    </div>
+    <div><span class="k">配圖建議</span>Unsplash 關鍵字：girl doing homework / pencil on math notebook / empty classroom desk
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 第 3 篇 ── -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'★':'☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-skill">第二層 ‧ 能力培養</span>
+  <h2>會用 AI 不算贏──會「問 AI 一個好問題」的孩子才贏。AI 時代的元能力，不是輸入，是提問</h2>
+
+  <div class="opening">
+    <em>場景：</em>補習班英文老師視角。國一男生，週三晚上交讀後感作業。<br>
+    他打開那份作業，第一行就嗅到熟悉的味道──句子太順、用詞太穩、毫無痕跡的「孩子的稚氣」。<br>
+    他叫那男生過來，問他怎麼寫的。男生坦白：「我問 AI『幫我寫一篇 500 字的讀後感』──它就生出來了。」<br>
+    老師沒罵他。他只反問了一句：「那你下次，要不要試試問 AI 一個更好的問題？」<br>
+    男生愣住──「⋯⋯什麼叫『更好的問題』？」
+  </div>
+
+  <div class="news">
+    <strong>覺知小知識：</strong>世界經濟論壇（WEF）在 2025 年 1 月發布的《Future of Jobs Report 2025》明確指出：到 2030 年最重要的核心職場能力中，<strong>「分析性思考」（Analytical Thinking）排名第一</strong>，七成企業認為它是必備能力；其後是韌性／彈性、領導力、創意思考、動機與自我覺察。AI 與大數據雖然技術需求大幅成長，但「人本能力」如創造力、批判性思考、好奇心與終身學習，反而被列為「成長最快的人類能力」。一份刊登於 Springer《Smart Learning Environments》的論文也指出：批判性思考是 21 世紀四大關鍵能力之一，但學校課綱裡始終缺乏──而最好的養成起點，是從兒童期培養「會問問題」的習慣。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>這就是 4C 非認知能力──創造力、思辨力、溝通力、合作力──其中「思辨力」的入口，就是「提問力」。<br>
+    AI 不是孩子的競爭對手，是他的鏡子。<br>
+    <strong>會用 AI 的孩子，得到的是答案；會問 AI 一個好問題的孩子，得到的是思考。</strong>前者只是把 AI 當作答機，後者把 AI 當作對話的夥伴──而後者，才是 2030 年市場真正搶的人。<br>
+    在家庭裡，培養提問力的第一步，不是給孩子買題庫，是──當孩子問問題時，<strong>先別急著給答案，先說一句：「你怎麼想到要問這個？」</strong>那一秒，他大腦裡的「思考引擎」就啟動了。
+  </div>
+
+  <div class="post">
+    <span class="post-label">直接複製・發 LINE / FB / IG</span>
+    最近發現：會用 AI 的孩子越來越多，會「問 AI 一個好問題」的孩子卻很少。<br><br>
+    一個是按下 enter 等答案。<br>
+    一個是把 AI 當成對話的鏡子，反問自己「我真正想知道什麼」。<br><br>
+    WEF 2025 報告說，2030 年企業最缺的是「分析性思考」──排名第一。AI 不缺，缺的是會問 AI 對問題的人。<br><br>
+    在家裡可以怎麼練？<br>
+    當孩子問你問題時，先別急著答。<br>
+    回他一句：「你怎麼想到要問這個？」<br>
+    那一秒，他的思考肌肉就啟動了。<br><br>
+    AI 替不了「會問問題的腦袋」。<br>
+    那是孩子這輩子，最值得我們陪他練的能力。<br><br>
+    #覺知SEL教育 #提問力 #批判性思考 #4C能力
+  </div>
+
+  <div class="quote">
+    AI 可以替孩子寫作業──但它替不了他「想知道」的那一刻。<br>
+    把那一刻護好，那才是他大腦裡，AI 拿不走的東西。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第二層 ‧ 能力培養 ｜ 提問力／批判性思考／4C</div>
+    <div><span class="k">適合平台</span>FB 教育趨勢粉專 ‧ LINE 補教家長群 ‧ IG 教育帳號</div>
+    <div><span class="k">適合對象</span>國小高年級至高中家長 ‧ 教師 ‧ 補教老師</div>
+    <div><span class="k">來源</span>
+      <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/3-skills-outlook/" target="_blank">WEF Future of Jobs Report 2025 ‧ Skills Outlook</a>　／
+      <a href="https://www.weforum.org/stories/2025/01/future-of-jobs-report-2025-jobs-of-the-future-and-the-skills-you-need-to-get-them/" target="_blank">WEF 2025 報告：未來的工作與你需要的技能</a>　／
+      <a href="https://link.springer.com/article/10.1186/s40561-019-0088-z" target="_blank">Smart Learning Environments｜Inquiry &amp; Critical Thinking for the Next Generation</a>
+    </div>
+    <div><span class="k">配圖建議</span>Unsplash 關鍵字：child asking question / chatbot conversation / kid thinking with laptop
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 第 4 篇（核心軸線） ── -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'★':'☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-trend">第三層 ‧ 全球趨勢</span>
+  <h2>從普魯士工廠到 AI 教室──250 年，學校長成同一個樣子；2024 年，它第一次真的被改寫</h2>
+
+  <div class="opening">
+    <em>場景：</em>記者旁白。如果你能搭一台時光機，從 1763 年的東普魯士起飛，飛到 2026 年的台北──你會發現這 250 年裡，世界變了無數次：馬車變成自駕車、信件變成 LINE、算盤變成 ChatGPT。<br>
+    但有一樣東西，幾乎沒變過──<strong>教室。</strong><br>
+    一塊黑板（後來換螢幕）、一排排面對前方的桌椅、按出生年份分班、按進度教課、用同一張考卷打分。<br>
+    這 250 年，孩子坐的那張椅子，方向幾乎沒轉過。
+  </div>
+
+  <div class="news">
+    <strong>覺知小知識（時間軸）：</strong><br>
+    <strong>1763 年</strong>，普魯士國王腓特烈二世頒布《普通學校條例》，是全球第一份義務教育法令。它原本是為了訓練更聽話的士兵與更有效率的工人──按年齡分級、教師專業化、有固定學年（依據維基百科 Prussian education system）。<br>
+    <strong>19 世紀</strong>，這套模型隨著工業革命傳到英、美──Horace Mann 把它帶進美國公立學校，從此「教育」與「工廠」幾乎同構。<br>
+    <strong>2010 年</strong>，Sir Ken Robinson 在 RSA Animate 講出那段全球瘋傳的話：「我們還在用工業時代的學校，教資訊時代的孩子。」<br>
+    <strong>2019 年</strong>，OECD 發布《Learning Compass 2030》──第一次正式把「學生主體性 student agency」、「共創 co-agency」放進跨國教育藍圖；學校的隱喻，從「工廠」改成「羅盤」。<br>
+    <strong>2021 年</strong>，UNESCO 公布《Reimagining Our Futures Together：A New Social Contract for Education》──經 100 萬人共識凝聚而成，主張：教學從「個人成就」轉向「合作共學」、課綱從「分科格子」轉向「跨域整合」、學校從「統一模型」轉向「多元設計」。<br>
+    <strong>2024–2026 年</strong>，AI 走進教室。WEF 2025 報告指出，分析性思考、創意、批判性思考、好奇心、自我覺察──這些工廠模型過去最不擅長的能力，反而是接下來最值錢的能力。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>250 年的學校長一個樣，不是因為它好，是因為它「夠用」──工業時代要的是聽話、守時、能標準化作業的工人，這套系統正好擅長製造這個。<br>
+    但 AI 不需要這種人。AI 已經比任何工人更聽話、更標準、更不抱怨。<br>
+    當機器把「工人」做完了，學校剩下能教的，就只有──<strong>機器永遠學不會的那部分。</strong>那是覺知、是動機、是「我為什麼想學」、是「我跟世界的關係」、是「面對情緒不被淹沒」。<br>
+    這就是為什麼 OECD 把學校的隱喻從「工廠」換成「羅盤」、UNESCO 把教育從「公共服務」升格成「公共財」。<br>
+    <strong>不是孩子適應不了學校──是學校，已經到了該調整去適應這群孩子的時候。</strong>
+  </div>
+
+  <div class="post">
+    <span class="post-label">直接複製・發 LINE / FB / IG</span>
+    一個小事實：你現在的孩子坐的那張椅子，方向幾乎跟 1763 年普魯士的孩子一樣。<br><br>
+    250 年。馬車變自駕車、信件變 LINE、算盤變 AI──但教室幾乎沒變。一塊板、一排桌、按出生年份分班、考同樣的卷。<br><br>
+    為什麼？因為工業時代的學校，原本就是設計來訓練聽話的工人。它擅長的是──製造標準化的人。<br>
+    但 AI 已經比任何工人更聽話、更標準。當機器把「工人」做完了──學校剩下能教的，只有機器學不會的那部分。<br><br>
+    覺知。動機。提問力。情緒復原。「我為什麼想學」。<br><br>
+    OECD 已經把學校的比喻，從「工廠」改成「羅盤」。<br>
+    UNESCO 已經把教育，從「公共服務」升格成「全人類的公共財」。<br><br>
+    不是孩子適應不了學校──是學校，該轉身去適應 AI 時代的孩子了。<br>
+    我們，這一代家長，剛好站在那個轉彎點上。<br><br>
+    #覺知SEL教育 #教育典範轉移 #UNESCO #OECD #AI時代教育
+  </div>
+
+  <div class="quote">
+    1763 年的普魯士造了一所學校，要訓練聽話的工人。<br>
+    2026 年的我們，要陪孩子上的，是另一所學校──訓練「能聽見自己」的人。<br>
+    那不是同一棟建築，那是教育的世紀大轉彎。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第三層 ‧ 全球趨勢 ｜ 教育典範轉移／工業到 AI 時代</div>
+    <div><span class="k">適合平台</span>FB 教育議題粉專 ‧ LinkedIn ‧ 校長／主任群組</div>
+    <div><span class="k">適合對象</span>所有家長 ‧ 教育工作者 ‧ 校長與行政</div>
+    <div><span class="k">來源</span>
+      <a href="https://en.wikipedia.org/wiki/Prussian_education_system" target="_blank">Wikipedia｜Prussian education system</a>　／
+      <a href="https://www.ted.com/talks/sir_ken_robinson_changing_education_paradigms" target="_blank">TED｜Sir Ken Robinson - Changing Education Paradigms</a>　／
+      <a href="https://www.unesco.org/en/articles/reimagining-our-futures-together-new-social-contract-education" target="_blank">UNESCO｜Reimagining Our Futures Together (2021)</a>　／
+      <a href="https://www.oecd.org/en/data/tools/oecd-learning-compass-2030.html" target="_blank">OECD Learning Compass 2030</a>
+    </div>
+    <div><span class="k">配圖建議</span>Unsplash 關鍵字：old factory school / classroom rows / compass on map / modern open classroom
+    </div>
+  </div>
+</section>
+
+
+<!-- ── 第 5 篇 ── -->
+<section class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent=this.classList.contains('on')?'★':'☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-extra">加值類別 ‧ 場景對話腳本</span>
+  <h2>「讀那麼多書到底有什麼用？」──孩子問你這句時，最不該說的就是「以後就知道」。三句話，把對話接住</h2>
+
+  <div class="opening">
+    <em>場景：</em>阿姨視角。國一姪女，禮拜六下午來家裡寫作業。<br>
+    寫著寫著，她突然把筆放下，眼睛沒看書，看著窗外那棵剛抽芽的桂花樹：<br>
+    「阿姨⋯⋯你說真的，我們讀那麼多書，到底有什麼用？反正以後 AI 都會做啊。」<br>
+    阿姨那一秒，差點脫口的一句是：「妹妹妳專心寫嘛，這個以後妳就知道了。」<br>
+    還好，她忍住了。
+  </div>
+
+  <div class="news">
+    <strong>覺知小知識：</strong>菲莉帕．派瑞（Philippa Perry）在台灣熱銷的《一本你希望父母讀過的書》中提醒：當孩子問出「人生大哉問」時，父母最常給的三種回應，剛好都是會把對話切斷的那三種──<strong>否定（這個問題很無聊）、敷衍（以後就知道）、轉移（你先把作業寫完再說）</strong>。<br>
+    台灣教養作家尚瑞君長期在《未來親子》指出：「孩子的未來不是分數決定，而是興趣、能力與企圖心能在哪發光。」當孩子問「讀書要幹嘛」，他不是在挑釁，他是在<strong>邀請你進入他的內在世界</strong>。錯過那扇門，下一次他就不會再開了。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 三句話腳本（按順序使用）：</strong><br><br>
+    <strong>第一句（先接住情緒，不評價）</strong>：「妳會問這個問題，代表妳真的有在想自己的未來。」<br>
+    　→ 把問題本身肯定下來。她以為自己會被罵，結果你欣賞她。她的肩膀就放下來了。<br><br>
+    <strong>第二句（坦白自己，不裝大人）</strong>：「老實說，我以前也問過這個問題，到現在我都還在想。」<br>
+    　→ 不要假裝你已經有答案。讓她知道，這是一個「真實的大人也會問」的真問題，不是她叛逆。<br><br>
+    <strong>第三句（轉成共學，留住對話）</strong>：「妳願不願意這個禮拜，跟我各想三件事──讀書這件事，到目前為止，幫妳開了哪些『沒想到』的門？週日晚上我們交換看看？」<br>
+    　→ 不立刻答，把問題變成「我們一起想」。這就是覺知 SEL 的核心：先懂心，再懂教。
+  </div>
+
+  <div class="post">
+    <span class="post-label">直接複製・發 LINE / FB / IG</span>
+    當孩子問「讀書到底有什麼用？」──最差的回答是「以後就知道」。<br><br>
+    那句話會把他剛打開的那扇門，輕輕關上。<br>
+    從那一刻起，他就不會再問你了。<br><br>
+    試試這三句：<br><br>
+    1. 「你會問這個問題，代表你真的有在想自己的未來。」<br>
+    　（先肯定問題本身）<br><br>
+    2. 「老實說，我以前也問過，到現在還在想。」<br>
+    　（不裝大人，承認自己也沒答案）<br><br>
+    3. 「我們這禮拜各想三件事，讀書幫你開了哪些『沒想到』的門？週日交換看看？」<br>
+    　（不立刻答，把它變成共學）<br><br>
+    孩子問你問題的那一秒，他不是在考你──<br>
+    他是在試試看：「我這個內在世界，你還願不願意進來？」<br><br>
+    #覺知SEL教育 #對話腳本 #讀書有什麼用 #先懂心再懂教
+  </div>
+
+  <div class="quote">
+    孩子問你「讀書要幹嘛」──不是在挑戰你，是在替自己開一扇門。<br>
+    你不需要給他答案，你只要──不關上那扇門。<br>
+    只要那扇門還開著，他下一次，還會回來找你想。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>加值 ‧ 場景對話腳本 ｜ 學習意義／三句話腳本</div>
+    <div><span class="k">適合平台</span>LINE 媽媽群組 ‧ FB 親子社團 ‧ IG 對話腳本貼文</div>
+    <div><span class="k">適合對象</span>國小高年級至高中家長 ‧ 阿姨／姑姑／長輩照顧者</div>
+    <div><span class="k">來源</span>
+      <a href="https://www.books.com.tw/products/0010854755" target="_blank">博客來｜菲莉帕．派瑞《一本你希望父母讀過的書》</a>　／
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/35313" target="_blank">未來親子｜尚瑞君：孩子的未來不是分數決定</a>　／
+      <a href="https://buzzorange.com/vidaorange/2015/08/13/honey-why-did-you-go-to-school/" target="_blank">VidaOrange｜「孩子，你為什麼讀書？」</a>
+    </div>
+    <div><span class="k">配圖建議</span>Unsplash 關鍵字：grandmother teen niece talk / window light afternoon / open book on table conversation
+    </div>
+  </div>
+</section>
+
+
+<div class="foot">
+  <strong>覺知 SEL 教育｜每日教養文宣</strong><br>
+  2026.05.04　08:15　台灣時間　／　今日核心軸線：從工廠到羅盤・250 年的這條路<br>
+  <em style="color:#9c8973;font-style:normal;">「先懂心，再懂教──先有動機，再談成績。」</em>
+</div>
+
+</div>
+</body>
+</html>
