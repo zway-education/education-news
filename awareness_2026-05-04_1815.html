@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.04 18:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>傍晚 18:15──當作業寫完、晚餐還沒上桌，是孩子最願意說真話的那道縫</h1>
+  <div class="date">2026.05.04 ｜ 18:15 ｜ 台灣時間</div>
+  <div class="sub">
+    五則為今晚還沒下班的爸爸、剛接完小孩的媽媽、在學校多留半小時的老師、在 LINE 群組裡焦急發問的阿公阿嬤而寫。<br>
+    今天聊：書包最底層那張被揉皺的考卷、Switch 約定 30 分鐘變兩小時的多巴胺真相、暑假作業最後三天的「計畫力」腦科學、丹麥用 30 年把同理心寫進國民課表的 Klassens Tid，以及──孩子說「同學叫我大象腿」時，老師那 3 句話。
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="duskGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde6cf"/>
+      <stop offset="55%" stop-color="#f6d2c5"/>
+      <stop offset="100%" stop-color="#cbd6e8"/>
+    </linearGradient>
+    <radialGradient id="duskSun" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#ffb87a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffb87a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tableTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6d5bd"/>
+      <stop offset="100%" stop-color="#cbb89c"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="300" fill="url(#duskGrad)"/>
+
+  <!-- 夕陽光圈 -->
+  <circle cx="180" cy="105" r="125" fill="url(#duskSun)"/>
+  <circle cx="180" cy="105" r="32" fill="#ff9d5c" opacity="0.55"/>
+
+  <!-- 遠方屋頂剪影 -->
+  <g opacity="0.35" fill="#7a5b4a">
+    <polygon points="640,180 700,140 760,180 760,210 640,210"/>
+    <polygon points="730,170 790,135 850,170 850,210 730,210"/>
+    <rect x="660" y="175" width="14" height="20" fill="#5a4334"/>
+    <rect x="755" y="160" width="12" height="22" fill="#5a4334"/>
+  </g>
+
+  <!-- 桌面 -->
+  <rect x="0" y="220" width="880" height="80" fill="url(#tableTop)"/>
+  <line x1="0" y1="220" x2="880" y2="220" stroke="#a8907a" stroke-width="1"/>
+
+  <!-- 揉皺的考卷 -->
+  <g transform="translate(120,210)">
+    <path d="M -28 -8 Q -32 -22 -18 -28 Q 0 -34 18 -26 Q 32 -18 26 -2 Q 28 8 14 10 Q -2 12 -22 6 Q -34 0 -28 -8 Z" fill="#fff8ee" stroke="#c9a989" stroke-width="1.2"/>
+    <path d="M -18 -18 L 14 -16 M -14 -10 L 16 -8 M -10 -2 L 12 0" stroke="#d6a08f" stroke-width="1" opacity="0.7"/>
+    <text x="-8" y="2" font-size="10" fill="#b85a3e" font-weight="700">58</text>
+  </g>
+
+  <!-- 遊戲手把（多巴胺主題） -->
+  <g transform="translate(280,205)">
+    <rect x="-30" y="-12" width="60" height="22" rx="11" fill="#3a4a6a"/>
+    <circle cx="-16" cy="-1" r="4" fill="#ff7a6b"/>
+    <circle cx="14" cy="-1" r="4" fill="#7ad6c2"/>
+    <rect x="-4" y="-6" width="8" height="3" rx="1.5" fill="#fff" opacity="0.7"/>
+  </g>
+
+  <!-- 計畫筆記本（計畫力主題） -->
+  <g transform="translate(420,200)">
+    <rect x="-22" y="-16" width="44" height="32" rx="3" fill="#fff" stroke="#8c6bc7" stroke-width="1.5"/>
+    <line x1="-15" y1="-9" x2="14" y2="-9" stroke="#c9bce0" stroke-width="1.2"/>
+    <line x1="-15" y1="-3" x2="9" y2="-3" stroke="#c9bce0" stroke-width="1.2"/>
+    <line x1="-15" y1="3" x2="14" y2="3" stroke="#c9bce0" stroke-width="1.2"/>
+    <line x1="-15" y1="9" x2="6" y2="9" stroke="#c9bce0" stroke-width="1.2"/>
+    <text x="-22" y="-20" font-size="9" fill="#6f4eb2" font-weight="700">PLAN</text>
+  </g>
+
+  <!-- 丹麥圍坐圈 -->
+  <g transform="translate(560,200)">
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#5fb3a1" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="-14" cy="-8" r="4" fill="#5fb3a1"/>
+    <circle cx="14" cy="-8" r="4" fill="#5fb3a1"/>
+    <circle cx="0" cy="-16" r="4" fill="#5fb3a1"/>
+    <circle cx="-14" cy="8" r="4" fill="#5fb3a1"/>
+    <circle cx="14" cy="8" r="4" fill="#5fb3a1"/>
+    <circle cx="0" cy="14" r="4" fill="#5fb3a1"/>
+  </g>
+
+  <!-- 一面小鏡子（外貌主題） -->
+  <g transform="translate(700,205)">
+    <ellipse cx="0" cy="-2" rx="18" ry="22" fill="#fff" stroke="#a48a64" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-2" rx="14" ry="18" fill="#dde6f0"/>
+    <text x="0" y="2" text-anchor="middle" font-size="14" fill="#7a6643" font-weight="700">?</text>
+    <line x1="-6" y1="22" x2="6" y2="22" stroke="#a48a64" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- 浮現的關鍵字泡泡 -->
+  <g font-family="Noto Sans TC, sans-serif" font-weight="600">
+    <g transform="translate(380,75)">
+      <rect x="-58" y="-18" width="116" height="32" rx="16" fill="#fff" stroke="#d97757" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#b85a3e">藏起來的考卷</text>
+    </g>
+    <g transform="translate(540,55)">
+      <rect x="-54" y="-18" width="108" height="32" rx="16" fill="#fff" stroke="#d97757" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#b85a3e">多巴胺平衡</text>
+    </g>
+    <g transform="translate(680,90)">
+      <rect x="-50" y="-18" width="100" height="32" rx="16" fill="#fff" stroke="#8c6bc7" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#6f4eb2">看見未來</text>
+    </g>
+    <g transform="translate(420,150)">
+      <rect x="-58" y="-18" width="116" height="32" rx="16" fill="#fff" stroke="#5fb3a1" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#3f8a78">Klassens Tid</text>
+    </g>
+    <g transform="translate(580,140)">
+      <rect x="-58" y="-18" width="116" height="32" rx="16" fill="#fff" stroke="#a48a64" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#7a6643">大象腿那句</text>
+    </g>
+  </g>
+
+  <!-- 標題 -->
+  <text x="60" y="48" font-family="Noto Sans TC, sans-serif" font-size="20" font-weight="700" fill="#b85a3e" letter-spacing="2">傍晚．覺知 SEL 五則</text>
+  <text x="60" y="72" font-family="Noto Sans TC, sans-serif" font-size="13" fill="#7a6643" letter-spacing="1">2026.05.04 ｜ 18:15 ｜ 台灣時間</text>
+</svg>
+</div>
+
+<!-- =========================== 第 1 則 =========================== -->
+<article class="card" data-card="1">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-pain">● 痛點・怕讓父母失望／藏考卷</span>
+  <h2>「她書包最底層，那張被揉成一團、邊角還沾著橡皮擦屑的考卷」──小五女兒不是失誤，是她已經在練習：把『不夠好』的自己藏起來</h2>
+
+  <div class="opening">
+    <em>媽媽視角｜國小五年級女兒｜週日下午整理書包。</em><br>
+    我只是想把週末沒帶回的水壺找出來，把書包翻過來倒在客廳地板上。<br>
+    課本掉出來、鉛筆盒掉出來、然後──<strong>一張被揉成一團的紙團，從最底層滾到我腳邊。</strong><br>
+    我撿起來、慢慢攤平。是上週四的數學考卷。<br>
+    上面用紅筆寫著：「<strong>58</strong>」。<br>
+    我抬頭看她──她站在沙發後面，整個人僵住，眼睛紅紅的，小聲說：「我……怕妳生氣。」
+  </div>
+
+  <div class="news">
+    <strong>華人正念減壓中心</strong>〈正念教養陪伴孩子面對考後失落〉指出：孩子對考試的恐懼通常不是「能力不足」，而是<strong>怕被罵、怕被比較、怕讓大人失望</strong>。許多孩子寧願把考卷塞在書包最底層，也不願主動提起。<strong>未來 Family</strong>〈孩子該讀的都讀了，還是考不好？〉作家彭菊仙進一步提醒：當家長把孩子的成績當成自己的臉面，孩子會默默把失敗當成一種羞辱──懷疑自己是不是讓爸媽失望了，是不是不值得被愛了。<strong>獨立評論</strong>〈走過家有考生這條路〉心理師陳姝蓉則寫到：孩子願意把考卷拿給家長看，本身就是<strong>信任的象徵</strong>；如果第一句是責備，下一次就會塞得更深。
+  </div>
+
+  <div class="insight">
+    藏考卷的孩子，不是在說謊──是她已經<strong>偷偷預演過妳的反應</strong>，並且做出了一個小小的決定：「這次不要讓媽媽看到，比較好過。」<br>
+    她把那張紙揉皺、塞進書包最底層的那一秒，<strong>不是在逃避責任，是在保護妳們的關係</strong>。她寧願自己一個人吞下這份「不夠好」，也不想讓妳因為這個分數，眼神黯下去。<br>
+    妳今晚翻出它的這一秒，妳的<strong>第一句話</strong>，會決定下一次的考卷，是攤開放在書桌上、還是塞得更深、更皺。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    那張被揉皺的考卷，<br>
+    不是她在騙妳──<br>
+    是她已經<strong>偷偷預演過妳的反應</strong>，<br>
+    然後決定：「這次不要讓媽媽看到，比較好過。」<br><br>
+
+    華人正念減壓中心提醒：<br>
+    孩子怕的，不是那 58 分。<br>
+    是怕妳眼神黯下去的那一秒。<br>
+    是怕妳那句「我這麼辛苦栽培你⋯⋯」。<br>
+    是怕自己，配不上妳給的愛。<br><br>
+
+    所以今晚，先別問「妳為什麼不告訴我？」──<br>
+    先蹲下來，把那張紙慢慢攤平，輕輕說：<br>
+    「謝謝妳願意讓我看到這一張。<br>
+    考差，不會讓媽媽不愛妳。<br>
+    把妳藏起來，才會。」<br><br>
+
+    分數可以再考一次。<br>
+    但她對妳的信任，<br>
+    今晚就要被接住。
+  </div>
+
+  <div class="quote">
+    那張被揉皺的考卷，不是她在騙妳──是她在用最笨拙的方式告訴妳：「我怕妳因為這個就不愛我了。」妳今晚翻出它的那一秒，妳的第一句話，會決定她下一次的考卷，是攤開放在書桌上、還是塞得更深。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜LINE 親師群｜IG（晚間 9-11 點）</div>
+    <div><span class="k">適合對象：</span>國小中高年級到國中孩子的家長</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.mindfulness.com.tw/blog-detail/academic-disappointment" target="_blank">華人正念減壓中心《人生不會只有一場考試──正念教養陪伴孩子面對考後失落》</a>｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/8684" target="_blank">未來 Family｜彭菊仙《孩子該讀的都讀了，還是考不好？》</a>｜
+      <a href="https://opinion.cw.com.tw/blog/profile/513/article/14049" target="_blank">獨立評論｜陳姝蓉《走過家有考生這條路，心理師媽媽的過來人建議》</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>crumpled test paper in bottom of school backpack / mother holding child's exam paper softly / sad child standing behind sofa</div>
+  </div>
+</article>
+
+<!-- =========================== 第 2 則 =========================== -->
+<article class="card" data-card="2">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-pain">● 痛點・3C 戰爭／多巴胺平衡</span>
+  <h2>「說好 30 分鐘的，怎麼又變成兩小時？」──不是他賴皮，是他大腦那個叫『多巴胺』的開關，被打開後，要 90 分鐘才關得上</h2>
+
+  <div class="opening">
+    <em>爸爸視角｜國小四年級男孩｜週三晚上 8:00。</em><br>
+    我手裡拿著計時器，認真地跟他說：「OK，30 分鐘 Switch，9 點關掉，乖。」<br>
+    他點頭、坐下、開始玩。<br>
+    9 點，計時器響。我去客廳一看──他眼睛還黏在螢幕上，回我：「<strong>等我打完這場！</strong>」<br>
+    9 點 15 分。「<strong>再 5 分鐘啦拜託拜託，這個 boss 快打完了！</strong>」<br>
+    9 點 30 分，我終於走過去把搖桿從他手上拿開──<br>
+    他突然激動到哭：「<strong>你都不懂啦！我關掉就什麼都沒了！</strong>」
+  </div>
+
+  <div class="news">
+    <strong>史丹佛大學成癮醫學主任 Anna Lembke</strong> 在 2021 年出版的《<strong>Dopamine Nation 多巴胺國度：在縱慾年代找到平衡</strong>》中提出：大腦的<strong>快樂與痛苦在同一個天平上（pleasure-pain balance）</strong>。每當我們做一件帶來快樂的事，多巴胺釋放後，大腦會自動「往痛苦那一端」加重，以維持平衡──所以「快樂結束的那一刻，會帶來相對的不舒服」。<strong>智慧型手機被她稱為「現代的皮下注射針頭」，24 小時不間斷遞送數位多巴胺。</strong>《關掉螢幕，拯救青春期大腦》也提醒：青少年大腦仍在發育，過早暴露在高強度多巴胺刺激下，<strong>前額葉「煞車系統」會被弱化</strong>。
+  </div>
+
+  <div class="insight">
+    所以那句「再 5 分鐘」不是他故意騙你──是他大腦的天平正在<strong>往痛苦那端傾斜</strong>，他得再按一次「玩」這個按鈕，才能把那一點點不舒服，再壓下去。<br>
+    那不是貪玩，是<strong>多巴胺退潮的不適</strong>。對成人來說都很難對抗，何況一個 10 歲的前額葉。<br>
+    不是不准玩、也不是無限放任──是要陪他做一件事：<strong>學習「快樂結束時的那一點點不舒服，可以撐過去」</strong>。第一次撐 30 秒，第二次撐 1 分鐘，第三次他能自己關掉螢幕──那一刻，他才算真的「擁有」了 Switch，而不是被 Switch 擁有。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    說好 30 分鐘的，怎麼又變成兩小時？<br>
+    不是他賴皮──<br>
+    是他大腦的「多巴胺天平」，<br>
+    還沒學會怎麼平衡。<br><br>
+
+    史丹佛大學 Anna Lembke 在<br>
+    《Dopamine Nation》裡寫：<br>
+    每一次快樂，都會讓痛苦那端<strong>等量加重</strong>。<br>
+    所以「快樂結束的那一秒」，<br>
+    本身就帶著痛。<br><br>
+
+    他喊「再 5 分鐘」，<br>
+    不是貪玩──<br>
+    是身體在<strong>抗拒那一點點退潮的不舒服</strong>。<br>
+    這對成人都很難，<br>
+    何況一個 10 歲的前額葉。<br><br>
+
+    今晚不是把搖桿搶走，<br>
+    是陪他做一件比較難的事：<br>
+    「我們一起，撐過關掉之後的那 60 秒。」<br>
+    撐三次，他大腦會記得──<br>
+    「那一點不舒服，原來會過去。」<br><br>
+
+    他不是在玩遊戲，<br>
+    是在練「對誘惑說不」這件事。<br>
+    這個練習，比那一場 boss，<br>
+    重要 100 倍。
+  </div>
+
+  <div class="quote">
+    不是他騙你那 30 分鐘，是他大腦還沒學會──「快樂結束的那一秒，會帶著一點點痛」這件事。爸爸今晚願意陪他熬過那一點點痛，他下一次，才有機會，自己關掉螢幕。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜爸爸社群｜LINE 補習班群（平日晚間）</div>
+    <div><span class="k">適合對象：</span>國小中年級到國中孩子的家長</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.annalembke.com/dopamine-nation" target="_blank">Anna Lembke 官網《Dopamine Nation》</a>｜
+      <a href="https://en.wikipedia.org/wiki/Anna_Lembke" target="_blank">Wikipedia｜Anna Lembke（Stanford 成癮醫學主任）</a>｜
+      <a href="https://www.npr.org/transcripts/1030930259" target="_blank">NPR Shots《'Dopamine Nation' Author Explores Link Between Pleasure And Pain》</a>｜
+      <a href="https://www.thenewslens.com/article/125027" target="_blank">關鍵評論網《關掉螢幕，拯救青春期大腦：遊戲成癮——多巴胺搔癢與髓鞘化帶來的虛擬高潮》</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>boy holding game controller crying / father's hand and a small alarm clock / teen brain pleasure pain balance illustration</div>
+  </div>
+</article>
+
+<!-- =========================== 第 3 則 =========================== -->
+<article class="card" data-card="3">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-skill">● 能力・計畫力 EF Planning／看見未來</span>
+  <h2>「她開學前一晚，跟我哭著說『阿姨我寫不完』」──暑假作業不是她偷懶，是她大腦那個『看見未來』的零件，還在長</h2>
+
+  <div class="opening">
+    <em>阿姨視角｜國小六年級姪女｜開學前 3 天傍晚。</em><br>
+    姊姊出差，姪女這幾天住我家。<br>
+    我隨口問：「妳暑假作業寫完沒？」<br>
+    她臉色一變，從房間裡抱出兩本厚厚的習作放到我桌上，眼眶紅紅的：「<strong>還剩 60 多頁。</strong>」<br>
+    我嚇了一跳：「妳這兩個月在做什麼？」<br>
+    她小聲說：「<strong>我以為……還有時間。</strong>」<br>
+    那一瞬間我才意識到──她不是不寫，是她真的<strong>還看不見「兩個月後的自己」</strong>。
+  </div>
+
+  <div class="news">
+    <strong>美國 ADHD 與執行功能權威 Russell Barkley 教授</strong>（2012 出版《Executive Functions: What They Are, How They Work, and Why They Evolved》）指出：執行功能（Executive Function, EF）的核心，是<strong>「自我管理以走向未來」</strong>。Barkley 強調，EF 較弱的學生需要反覆練習「<strong>看見未來、說出未來、感受未來、玩出未來</strong>（see / say / feel / play with the future）」。<br>
+    Barkley 也指出，ADHD 與 EF 較弱的孩子，<strong>在計畫力等執行功能上，比同齡平均落後 30%</strong>。<strong>Child Mind Institute</strong> 與 <strong>ADDA-SR</strong> 進一步說明：計畫力（planning）涉及把未來目標拆成現在可執行的步驟，是 EF 中<strong>最晚成熟、要到青少年中後期才接近成人水準</strong>的能力之一。
+  </div>
+
+  <div class="insight">
+    所以「<strong>我以為還有時間</strong>」不是藉口──是她大腦真的<strong>把未來的時間感看得很模糊</strong>。對成人來說，「還有兩個月」是 60 天 × 60 頁 = 一天 1 頁；但對 12 歲的大腦，「兩個月後」跟「很遙遠」幾乎是同一件事。<br>
+    更深一層──計畫力是要靠「<strong>外部支架</strong>」一次次練出來的：<br>
+    ・<strong>看見未來</strong>：把它畫成一張行事曆，攤在桌上<br>
+    ・<strong>說出未來</strong>：「8 月 25 號之前，我們要寫完這幾頁」<br>
+    ・<strong>感受未來</strong>：「想像開學前一晚還剩 60 頁的妳，會是什麼心情？」<br>
+    ・<strong>玩出未來</strong>：用倒數小貼紙、進度條，把抽象的時間變得看得見<br>
+    當大人陪她做幾次這四步，她大腦那條叫<strong>「看見未來」的神經路徑</strong>，才會慢慢長出來。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    開學前一晚，姪女哭著說：<br>
+    「阿姨，我以為還有時間。」<br><br>
+
+    那不是藉口。<br>
+    那是 12 歲的大腦，<br>
+    真的<strong>還看不見「兩個月後的自己」</strong>。<br><br>
+
+    美國執行功能權威 Russell Barkley 說：<br>
+    EF 較弱的孩子，計畫力<br>
+    比同齡平均<strong>落後 30%</strong>。<br>
+    Child Mind Institute 也指出：<br>
+    計畫力是 EF 裡<br><strong>最晚成熟</strong>的能力之一，<br>
+    要到青少年後期才接近成人水準。<br><br>
+
+    所以「<strong>看見未來</strong>」這件事，<br>
+    不是她該天生會的──<br>
+    是要爸爸媽媽陪她，<br>
+    一次又一次地：<br>
+    把它<strong>畫</strong>出來、<strong>說</strong>出來、<br>
+    <strong>感受</strong>它、<strong>玩</strong>它。<br><br>
+
+    今晚，不要罵她拖延。<br>
+    陪她拿出一張白紙，<br>
+    把剩下的 60 頁，<br>
+    分到接下來的 3 個晚上。<br>
+    她大腦那條「看見未來」的線，<br>
+    今晚才會多長一點。
+  </div>
+
+  <div class="quote">
+    計畫力不是她該天生會的──是要在身邊有大人，陪她一次又一次地把「未來」說出口、畫出來、感受到，她大腦那條叫『看見未來』的神經路徑，才會慢慢長出來。她不是不寫，是還沒被陪著看見過。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜LINE 親師群｜安親班社群（暑假尾聲、學期結束時最有共鳴）</div>
+    <div><span class="k">適合對象：</span>國小高年級到國中孩子的家長／安親老師</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.russellbarkley.org/factsheets/ADHD_EF_and_SR.pdf" target="_blank">Russell Barkley《The Important Role of Executive Functioning and Self-Regulation》</a>｜
+      <a href="https://childmind.org/article/adhd-and-executive-function/" target="_blank">Child Mind Institute《ADHD and Executive Function》</a>｜
+      <a href="https://www.additudemag.com/7-executive-function-deficits-linked-to-adhd/" target="_blank">ADDitude《7 Executive Function Deficits Linked to ADHD》</a>｜
+      <a href="https://www.thecambridgeschool.org/special-services/executive-function/" target="_blank">The Cambridge School《Executive Function: see / say / feel / play with the future》</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>child overwhelmed with summer homework / blank calendar with stickers / brain prefrontal cortex planning illustration</div>
+  </div>
+</article>
+
+<!-- =========================== 第 4 則 =========================== -->
+<article class="card" data-card="4">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-trend">● 趨勢・丹麥 Klassens Tid 國民同理心課</span>
+  <h2>丹麥小學每週一節「班級時間」──30 年來，6 到 16 歲的孩子，在這 1 小時裡只練習一件事：聽見彼此</h2>
+
+  <div class="opening">
+    <em>narrator 視角｜丹麥某公立小學二年級教室｜週四上午 10:00。</em><br>
+    沒有課本、沒有黑板上的數學題。<br>
+    20 個孩子把椅子搬成一個圓圈，老師也坐進那個圓裡，<strong>跟學生平視</strong>。<br>
+    一個男孩舉起手，臉紅紅地說：「這禮拜⋯⋯有人在午餐時，把我從那一桌趕走。」<br>
+    沒有人插嘴。沒有人笑。<br>
+    一個女孩小聲說：「我可以下次跟他坐一起。」<br>
+    老師慢慢說：「謝謝你願意說出來。我們一起想想，下禮拜怎麼讓那一桌不再有人被趕走？」<br>
+    這節課，叫做「<strong>Klassens Tid</strong>」──班級時間。
+  </div>
+
+  <div class="news">
+    <strong>1993 年，丹麥透過《教育法》（Law on Education）將「Klassens Tid 班級時間」列入國民義務教育課表</strong>，從此小學一年級到高中前的每一個班級，<strong>每週固定有 1 小時，由導師帶領全班討論本週發生的人際與情緒議題</strong>，覆蓋年齡為 6 至 16 歲。<br>
+    丹麥心理治療師 <strong>Iben Sandahl</strong> 在著作《<strong>The Danish Way of Parenting</strong>》與專文 Klassens Tid（2017）中描述其核心三步：<strong>輪流分享挑戰／無評論地傾聽／全班一起想解決方法</strong>。Adecco Group、Quartz、EdWeek、My Modern Met、Today's Mama、Bright Vibes 等國際媒體，過去 10 年陸續報導：丹麥連年高居全球最幸福國家前段班，「<strong>同理心被當成必修科</strong>」是其中一塊重要的拼圖。
+  </div>
+
+  <div class="insight">
+    把同理心寫進國民課表，不是「多教一科」──是國家做了一個假設：<strong>「能聽見別人」這件事，比閱讀、寫字、算數，更早需要被教。</strong><br>
+    背後的邏輯也很丹麥：「<strong>一個人未來能不能跟別人合作、能不能在團體裡被信任、能不能解決衝突</strong>」──不是 18 歲那年自然會的，是從 6 歲那年，每週坐進一個圓圈，<strong>輪流被聽見、學著聽別人</strong>，30 週、30 年地練出來的。<br>
+    研究指出：丹麥的學校霸凌率、退學率，都低於 OECD 平均。當別國還在爭論「SEL 該不該進學校」時，丹麥已經把這 1 小時，<strong>守了 30 年</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    1993 年，丹麥做了一件事──<br>
+    把「<strong>聽見彼此</strong>」這件事，<br>
+    寫進國民義務教育課表。<br><br>
+
+    這節課叫 <strong>Klassens Tid</strong>，<br>
+    每週 1 小時、6 到 16 歲、<br>
+    全國學校一起上、上了 30 年。<br><br>
+
+    教室裡沒有黑板上的算式。<br>
+    只有一個圈，<br>
+    和輪流說出「<strong>這禮拜我過得怎樣</strong>」<br>
+    「<strong>有沒有人讓我難過</strong>」<br>
+    的聲音。<br><br>
+
+    丹麥沒有培養出更會考試的孩子，<br>
+    但──<br>
+    它培養出了一群<br>
+    <strong>更會修補關係的大人</strong>。<br><br>
+
+    把 1 小時讓給孩子說真話，<br>
+    比 100 句道德說教都管用。<br>
+    這件事，30 年來都沒有變。<br><br>
+
+    下次妳跟孩子吃晚餐時，<br>
+    試試看丹麥老師那句──<br>
+    「謝謝你願意告訴我。<br>
+    這禮拜，你還有什麼想說的？」<br>
+    那個圓圈，從妳的餐桌就可以開始。
+  </div>
+
+  <div class="quote">
+    把 1 小時讓給孩子說「我這週過得怎樣」，比任何道德說教都管用。30 年下來，丹麥不是培養出更會考試的孩子──而是培養出更會修補關係的大人。那個圓圈，妳家的餐桌也圍得起來。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜學校教師社群｜FB 社團「親師交流」（傍晚／晚間）</div>
+    <div><span class="k">適合對象：</span>國小到國中老師、校長、班導、家長代表、SEL 推動者</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.adeccogroup.com/our-thinking/articles-and-editorials/empathy-in-denmark" target="_blank">Adecco Group《Teaching empathy? In Denmark, they're learning it in school》</a>｜
+      <a href="https://qz.com/763289/denmark-has-figured-out-how-to-teach-kids-empathy-and-make-them-happier-adults" target="_blank">Quartz《Denmark has figured out how to teach kids empathy》</a>｜
+      <a href="https://www.edweek.org/policy-politics/lessons-from-denmark-teachers-can-incorporate-empathy-in-the-curriculum/2016/08" target="_blank">EdWeek《Lessons From Denmark: Teachers Can Incorporate Empathy in the Curriculum》</a>｜
+      <a href="https://mymodernmet.com/empathy-classes-demark/" target="_blank">My Modern Met《Schools in Denmark Have Mandatory Empathy Classes》</a>｜
+      <a href="https://letscareproject.eu/jprogramme/the-danish-way-klassens-tid-aspects-of-building-democracy-in-danish-schools/" target="_blank">Let's Care Project EU《The Danish Way: Klassens Tid》</a>｜
+      <a href="https://ibensandahl.com/articles/blog-post-9t3tr-y4k4m" target="_blank">Iben Sandahl《Danish Schools Teach Empathy》</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>Danish elementary classroom circle discussion / children sitting in circle on floor sharing / empathy education curriculum infographic</div>
+  </div>
+</article>
+
+<!-- =========================== 第 5 則 =========================== -->
+<article class="card" data-card="5">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-extra">● 加值・場景對話腳本／同學嘲笑外表</span>
+  <h2>「她下課躲在保健室，小聲說『同學叫我大象腿』」──老師接下來那 3 句話，會決定她明天願不願意再走進教室</h2>
+
+  <div class="opening">
+    <em>班導視角｜國小三年級女學生｜週二下課前到老師桌邊。</em><br>
+    其他孩子都跑出去玩了，只剩她一個人，站在我桌邊磨磨蹭蹭。<br>
+    我笑著問：「怎麼啦？」<br>
+    她不看我，眼睛盯著地板，小小聲：「<strong>老師⋯⋯我明天可以不要上體育課嗎？</strong>」<br>
+    我蹲下來：「為什麼呢？」<br>
+    她肩膀抖了一下，眼淚開始掉：「<strong>因為⋯⋯有同學叫我『大象腿』。</strong>」<br>
+    那一刻我心裡知道──<strong>我接下來那 3 句話，會被她記一輩子。</strong>
+  </div>
+
+  <div class="news">
+    <strong>嬰兒與母親</strong>〈將心比心，請不要隨便批評孩子的外表〉與<strong>媽媽寶寶</strong>〈孩子被笑、被打、被排擠怎麼辦？專家教你防霸凌 3 原則〉都提到一個關鍵：當孩子說「同學笑我」，大人最常犯的錯，是<strong>反射性地否定那句話</strong>──「沒有啊妳很瘦」、「他亂講你別聽」、「你不要那麼在意」。但這些話會讓孩子心裡關掉一道門：「<strong>原來這種話，是不能跟大人講的。</strong>」<br>
+    <strong>信誼基金會</strong>〈父母效能訓練：清楚表達「我訊息」〉與<strong>天下雜誌</strong>〈學會傾聽，10 個與孩子的正確對話法〉提供更穩的回應方向：<strong>先接住情緒、再命名感受、最後把焦點從外貌轉到她自己「能掌握的東西」</strong>。
+  </div>
+
+  <div class="insight">
+    這 3 句話腳本，是大人在那一刻，最不會傷到她的版本：<br><br>
+    <strong>第 1 句｜不否定那句話本身</strong><br>
+    ❌ 不要說：「沒有啦你很瘦／他亂講」<br>
+    ✅ 改說：「<strong>謝謝妳願意告訴老師。妳一定鼓起好大的勇氣。</strong>」<br>
+    （把焦點從「身材對錯」拉回「她敢說」這件事。）<br><br>
+    <strong>第 2 句｜命名感受，不講道理</strong><br>
+    ❌ 不要說：「你不要那麼在意他講什麼」<br>
+    ✅ 改說：「<strong>他說的時候，妳眼淚都掉下來了，那是──難過，對不對？</strong>」<br>
+    （讓她知道：那種痛，是真的；不是她太敏感。）<br><br>
+    <strong>第 3 句｜把焦點從外貌，搬到她自己掌握的東西</strong><br>
+    ❌ 不要說：「沒事，妳長大就瘦了」<br>
+    ✅ 改說：「<strong>不管腿是粗是細，妳跑步那一秒，它幫妳追到風的力氣，是不會變的。我們明天一起，把那一秒找回來，好嗎？</strong>」<br>
+    （把身體從「被別人評價的對象」，換回「她自己的夥伴」。）
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    當她說：「同學叫我大象腿。」<br><br>
+
+    最不該說的 3 句話：<br>
+    ❌「沒有啊妳很瘦。」<br>
+    ❌「他亂講妳別聽就好。」<br>
+    ❌「你不要那麼在意。」<br><br>
+
+    這些話，<br>
+    會讓她下次連這種話都不敢跟妳說。<br><br>
+
+    試試看這 3 句──<br>
+    ① <strong>「謝謝妳願意告訴我。<br>
+    妳一定鼓起好大的勇氣。」</strong><br>
+    （先接住「她敢說」這件事）<br><br>
+
+    ② <strong>「他說的時候，妳眼淚都掉了，<br>
+    那是難過，對不對？」</strong><br>
+    （命名感受，不講道理）<br><br>
+
+    ③ <strong>「不管腿是粗是細，<br>
+    妳跑步那一秒，<br>
+    它幫妳追到風的那份力氣，<br>
+    是不會變的。」</strong><br>
+    （把身體還給她自己）<br><br>
+
+    她明天願不願意再走進教室，<br>
+    不靠那個同學閉嘴，<br>
+    靠妳今天那 3 句話──<br>
+    在她心裡留下了什麼。
+  </div>
+
+  <div class="quote">
+    當她說「同學叫我大象腿」，最不該說的就是「沒有啊妳很瘦」──那會讓她下一次，連這種話都不敢跟妳講了。先接住難過，再陪她找回身體那一份「我自己也喜歡的力氣」，她才會在明天的體育課，重新站起來。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜LINE 班級群（傍晚發布最有共鳴）｜IG（給家長與老師）</div>
+    <div><span class="k">適合對象：</span>幼兒園到國小高年級孩子的家長與老師</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.mababy.com/knowledge-detail?id=5695" target="_blank">嬰兒與母親《將心比心，請不要隨便批評孩子的外表》</a>｜
+      <a href="https://www.mababy.com/knowledge-detail?id=12055" target="_blank">媽媽寶寶《孩子被笑、被打、被排擠怎麼辦？專家教你防霸凌 3 原則》</a>｜
+      <a href="https://parents.hsin-yi.org.tw/Library/Article/999" target="_blank">信誼基金會《父母效能訓練：清楚表達「我訊息」》</a>｜
+      <a href="https://www.cw.com.tw/article/5070132" target="_blank">天下雜誌《學會傾聽，10 個與孩子的正確對話法》</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>young girl crying quietly to teacher / school health office sitting alone / teacher kneeling down to listen to child</div>
+  </div>
+</article>
+
+<div class="foot">
+  覺知 SEL 教育每日教養 ｜ <strong>傍晚 18:15</strong> ｜ 共 5 則<br>
+  ⭐ 點擊每張卡片右上角的星號，可標記為「實際發過的文案」（每週日的回顧任務會讀取此記號）<br>
+  覺知．SEL．先有動機，再談成績
+</div>
+
+</div>
+</body>
+</html>
