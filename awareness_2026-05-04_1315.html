@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.04 13:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>午後 13:15──那些孩子沒說出口的，藏在哪些細節裡</h1>
+  <div class="date">2026.05.04 ｜ 13:15 ｜ 台灣時間</div>
+  <div class="sub">
+    午餐後、孩子回到下午課的這一刻──五則為今天還想多懂孩子一點的爸媽、老師、阿公阿嬤、姑姑阿姨們而寫。<br>
+    今天聊：12 歲女兒突然要 iPhone 的真正原因、三年級男孩寫作業前先嘆三口氣的腦科學、5 歲在便利商店伸手抓糖背後的「抑制控制關鍵期」、新加坡如何把品格寫進國民課表，以及──那個學了三個月就想放棄鋼琴的小男孩。
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf3e6"/>
+      <stop offset="50%" stop-color="#fdf7ee"/>
+      <stop offset="100%" stop-color="#ece4f7"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#ffd9a8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd9a8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="300" fill="url(#bgGrad2)"/>
+
+  <!-- 午後光圈 -->
+  <circle cx="690" cy="100" r="120" fill="url(#sun)"/>
+  <circle cx="690" cy="100" r="36" fill="#ffc987" opacity="0.55"/>
+
+  <!-- 桌面 -->
+  <rect x="0" y="220" width="880" height="80" fill="#e8dcc6" opacity="0.7"/>
+  <line x1="0" y1="220" x2="880" y2="220" stroke="#d4c8b6" stroke-width="1"/>
+
+  <!-- 一個孩子的剪影背影 (左側) -->
+  <g transform="translate(140,120)">
+    <ellipse cx="0" cy="-8" rx="22" ry="24" fill="#3a2f26" opacity="0.85"/>
+    <path d="M -28 14 Q -28 60 -22 100 L 22 100 Q 28 60 28 14 Q 22 -2 0 -2 Q -22 -2 -28 14 Z" fill="#d97757" opacity="0.85"/>
+    <rect x="-18" y="98" width="36" height="6" fill="#7a6643" opacity="0.7"/>
+  </g>
+
+  <!-- 牽手的大人 (中間) -->
+  <g transform="translate(220,100)">
+    <ellipse cx="0" cy="-12" rx="20" ry="22" fill="#4a3a2f" opacity="0.85"/>
+    <path d="M -26 12 Q -26 70 -20 120 L 22 120 Q 28 70 28 12 Q 22 -4 0 -4 Q -22 -4 -26 12 Z" fill="#8c6bc7" opacity="0.78"/>
+    <!-- 牽著孩子的手 -->
+    <line x1="-26" y1="80" x2="-72" y2="100" stroke="#8c6bc7" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+  </g>
+
+  <!-- 浮現的關鍵字泡泡 -->
+  <g font-family="Noto Sans TC, sans-serif" font-weight="600">
+    <g transform="translate(380,80)">
+      <rect x="-50" y="-18" width="100" height="32" rx="16" fill="#fff" stroke="#d97757" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#b85a3e">同儕壓力</text>
+    </g>
+    <g transform="translate(510,55)">
+      <rect x="-58" y="-18" width="116" height="32" rx="16" fill="#fff" stroke="#8c6bc7" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#6f4eb2">抑制控制</text>
+    </g>
+    <g transform="translate(660,150)">
+      <rect x="-54" y="-18" width="108" height="32" rx="16" fill="#fff" stroke="#5fb3a1" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#3f8a78">CCE 品格課</text>
+    </g>
+    <g transform="translate(420,165)">
+      <rect x="-58" y="-18" width="116" height="32" rx="16" fill="#fff" stroke="#a48a64" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#7a6643">才藝想放棄</text>
+    </g>
+    <g transform="translate(560,200)">
+      <rect x="-58" y="-18" width="116" height="32" rx="16" fill="#fff" stroke="#d97757" stroke-width="1.5"/>
+      <text x="0" y="3" text-anchor="middle" font-size="13" fill="#b85a3e">學習無助</text>
+    </g>
+  </g>
+
+  <!-- 標題 -->
+  <text x="60" y="48" font-family="Noto Sans TC, sans-serif" font-size="20" font-weight="700" fill="#b85a3e" letter-spacing="2">午後．覺知 SEL 五則</text>
+  <text x="60" y="72" font-family="Noto Sans TC, sans-serif" font-size="13" fill="#7a6643" letter-spacing="1">2026.05.04 ｜ 13:15 ｜ 台灣時間</text>
+</svg>
+</div>
+
+<!-- =========================== 第 1 則 =========================== -->
+<article class="card" data-card="1">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-pain">● 痛點・同儕壓力／FOMO</span>
+  <h2>「我朋友都有 iPhone，為什麼我不能？」──12 歲女兒甩房門那一秒</h2>
+
+  <div class="opening">
+    <em>媽媽視角｜國小六年級女兒｜週六下午百貨公司前。</em><br>
+    剛從電梯下來，她突然停住腳步，小聲說：「妳可以買那個給我嗎？」我順著她的手看過去──是櫥窗裡那台她念了快半年的手機。<br>
+    我說：「妳才小六，再等一下。」<br>
+    話一出口，她沒回嘴，只是抿著嘴、加快腳步走在前面，到家後甩上房門。<br>
+    那一晚，我才從她書包裡那張同學「生日聚會合照」上發現：<strong>整桌六個女生，只有她沒有手機。</strong>
+  </div>
+
+  <div class="news">
+    <strong>翻轉教育（親子天下旗下）008571 篇</strong>《面對 FOMO，孩子該裝備的四種人際社交能力》指出，FOMO（Fear of Missing Out，錯失恐懼症）是青少年「害怕錯過朋友之間的話題、活動」而產生的焦慮感。<strong>教育百科</strong>對「同儕壓力」的定義也提醒我們：在這個年齡，同儕團體的規範會成為孩子重要的參考指標，從眾行為由此而生。
+  </div>
+
+  <div class="insight">
+    很多家長一聽到「我朋友都有」就直覺想糾正：<em>「人家有，妳就要有？妳是沒有自己的腦袋嗎？」</em><br>
+    但從發展心理學的角度看，<strong>9-13 歲正是「同儕參照」開始取代「父母參照」的關鍵期</strong>──她不是貪心，是大腦正在學習一件事：「我是誰，要透過『我跟同伴一不一樣』來確認。」<br>
+    所以當她說「我也想要 iPhone」，她要的常常不是那台手機──是「<strong>我也屬於這群人</strong>」的那張入場券。<br>
+    比起馬上回答「買 / 不買」，更值得做的是先把那張隱形的入場券，攤在桌上談一談。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    女兒甩上房門前那句「我朋友都有 iPhone」，<br>
+    不是在跟妳要一台機器──<br>
+    是她第一次發現，「合群」這件事，<br>
+    爸媽幫不了她。<br><br>
+
+    9-13 歲的同儕參照，是大腦的功課，不是叛逆。<br>
+    她不是不懂事，是正在「成為自己」的路上，<br>
+    用「跟朋友一樣」這四個字，先確認自己不孤單。<br><br>
+
+    所以今晚，先別急著回答買或不買──<br>
+    試著問她：<br>
+    「那個沒有手機的妳，在那張合照裡，<br>
+    心裡是什麼感覺？」<br><br>
+
+    手機可以晚一點再決定。<br>
+    但她那一刻的孤單，<br>
+    今晚就要被聽見。
+  </div>
+
+  <div class="quote">
+    她要的不是那台 iPhone──是同學群組裡那個沒被剔掉的位置。妳今晚怎麼接住這份「我怕被落下」，會決定她以後遇到團體壓力時，是急著加入、還是有底氣留在自己這一邊。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜LINE 社群｜IG（六、日午後）</div>
+    <div><span class="k">適合對象：</span>國小高年級～國中孩子的家長</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://flipedu.parenting.com.tw/article/008571" target="_blank">翻轉教育《面對 FOMO，孩子該裝備的四種人際社交能力》</a>｜
+      <a href="https://pedia.cloud.edu.tw/Entry/Detail/?title=%E5%90%8C%E5%84%95%E5%A3%93%E5%8A%9B" target="_blank">教育百科｜同儕壓力</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>teenage girl looking at phone shop window / sad preteen alone at party / friendship group photo
+    </div>
+  </div>
+</article>
+
+<!-- =========================== 第 2 則 =========================== -->
+<article class="card" data-card="2">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-pain">● 痛點・學習無助感</span>
+  <h2>「他連寫都還沒寫，先嘆了三口氣」──三年級男孩的學習無助訊號</h2>
+
+  <div class="opening">
+    <em>安親班老師視角｜國小三年級男孩｜下午 4:20 寫作業時間。</em><br>
+    其他孩子都拿出鉛筆盒、翻開作業本了，<strong>只有他坐在原位，雙手交叉在胸前，看著本子嘆了第一口氣。</strong><br>
+    我走過去說：「先寫數學？」<br>
+    他抬頭看我，又低下頭──嘆了第二口氣。<br>
+    我等了一會，再問：「我陪你寫第一題？」<br>
+    他輕聲說：「沒用啦，反正我寫了也錯。」──然後嘆了第三口氣。
+  </div>
+
+  <div class="news">
+    <strong>教育百科</strong>對「塞利格曼（M. Seligman）的學習無助論」整理：學習無助（learned helplessness）來自 Seligman 1967 年的動物實驗──當個體連續面對「努力也改變不了」的處境時，會逐漸放棄嘗試，即使後來情境改變、其實有出路了，仍然不會嘗試。<br>
+    這個理論被廣泛應用在教育場域：<strong>學業上長期挫敗的孩子，常會把失敗歸因為「我天生不行」（內在、穩定、整體性），而停止努力。</strong>
+  </div>
+
+  <div class="insight">
+    嘆三口氣，不是耍賴，是大腦的<strong>「歸因系統」已經短路</strong>：<br>
+    ・<strong>內在歸因</strong>──「不是題目難，是我笨。」<br>
+    ・<strong>穩定歸因</strong>──「不是這次差，是以後都會差。」<br>
+    ・<strong>整體歸因</strong>──「不是數學差，是我整個人都差。」<br><br>
+    當這三條線在他大腦裡同時亮起來，他就會在還沒動筆之前，先放棄。<br>
+    我們以為他是<strong>不寫</strong>，其實他是<strong>不再相信「再試一次有用」</strong>。<br>
+    要鬆動它，不是先教他算數學──是先還他一次「我有試過，而且有差」的小成功經驗。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    他嘆的不是氣──<br>
+    是他大腦裡那條「努力也沒用」的線，<br>
+    已經被點亮過太多次。<br><br>
+
+    心理學家 Seligman 1967 年發現：<br>
+    當一個人「連續嘗試但改變不了」之後，<br>
+    他會在下一次連試都不試。<br>
+    這不是懶，是「習得性無助」。<br><br>
+
+    對孩子來說，最先點亮這條線的，<br>
+    很多時候不是他自己──<br>
+    是大人那句「<strong>你怎麼又錯</strong>」、<br>
+    「<strong>這麼簡單你都不會</strong>」、<br>
+    「<strong>跟你哥比差太多了</strong>」。<br><br>
+
+    今晚，先不教他寫對──<br>
+    先讓他做一題會的、做完後說：<br>
+    「你看，剛才那一題，是你自己想出來的。」<br><br>
+
+    把「努力＝有用」這條線，<br>
+    一次一次重新點亮。
+  </div>
+
+  <div class="quote">
+    他不是不會──是不再相信「再試一次有用」。父母和老師的工作，不是再給他一張更難的考卷，是給他一個「我做了會有差」的小證據──哪怕只是一題、一行字、一次微小的成功，都足以重新接回那條已經被切斷的線。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜安親班／補習班 LINE 群｜教師社群</div>
+    <div><span class="k">適合對象：</span>國小中低年級孩子的家長／安親老師</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://pedia.cloud.edu.tw/Entry/WikiContent?title=%E5%A1%9E%E5%88%A9%E6%A0%BC%E6%9B%BC(M._Seligman)%E7%9A%84%E5%AD%B8%E7%BF%92%E7%84%A1%E5%8A%A9%E8%AB%96" target="_blank">教育百科｜塞利格曼的學習無助論</a>｜
+      <a href="https://www.jmhf.org/20210809p30-33" target="_blank">家扶基金會月刊《心理輔導避免習得性無助・樂觀心態也可培養》</a>｜
+      <a href="https://ppc.sas.upenn.edu/sites/default/files/lhreformulation.pdf" target="_blank">Penn 大學 Positive Psychology Center｜Learned Helplessness in Humans: Critique and Reformulation</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>tired schoolboy at desk sighing / homework paper untouched pencil / kid head down on textbook
+    </div>
+  </div>
+</article>
+
+<!-- =========================== 第 3 則 =========================== -->
+<article class="card" data-card="3">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-skill">● 能力・抑制控制 inhibitory control</span>
+  <h2>5 歲在便利商店伸手就抓糖那一秒──不是貪吃，是大腦正在學「等一下」</h2>
+
+  <div class="opening">
+    <em>阿姨視角｜5 歲姪子｜週日午後超商收銀台前。</em><br>
+    才剛跟他說「結帳前不要拿東西」，<br>
+    他還是<strong>整隻手伸出去，抓住了那條彩虹糖</strong>──手指張開又合上、合上又張開，最後緊緊握住，眼睛卻直勾勾盯著我，像在等我說「好啦」。<br>
+    那一刻我才意識到：他不是不聽話。<br>
+    是他的大腦──還沒長出那個叫「等一下」的零件。
+  </div>
+
+  <div class="news">
+    加拿大 UBC 大學發展認知神經科學講座教授 <strong>Adele Diamond</strong> 在 2013 年《Annual Review of Psychology》發表的〈Executive Functions〉指出，<strong>3 大核心執行功能</strong>是：<br>
+    ① <strong>抑制控制 Inhibitory control</strong>（自我控制／衝動抑制）<br>
+    ② <strong>工作記憶 Working memory</strong><br>
+    ③ <strong>認知彈性 Cognitive flexibility</strong><br>
+    其中「抑制控制」（resisting temptations and resisting acting impulsively）是 4-7 歲發展最快、也是日後學業表現與社會適應的強力預測指標。Diamond 2007 年在《Science》發表的 Tools of the Mind 課程研究，更證實這項能力可以被「教」出來。
+  </div>
+
+  <div class="insight">
+    很多家長以為「自制力」是天生的：「他就是比較會忍。」<br>
+    但 Diamond 40 年的研究告訴我們：<strong>抑制控制不是性格，是一個可以被陪練的腦區功能</strong>。<br>
+    那一條彩虹糖、那台想再玩 5 分鐘的 iPad、那塊蛋糕還想吃第二片──<br>
+    每一次他「想伸手又收回來」、「想說又先吞回去」的當下，<br>
+    都是他前額葉皮質正在被使用的瞬間。<br>
+    <strong>大人罵的那一秒，剛好掐斷了那個練習。</strong>
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    5 歲，他在超商看到糖、整隻手伸出去那一秒──<br>
+    不是不乖，<br>
+    是大腦那個叫「<strong>等一下</strong>」的零件，還沒長好。<br><br>
+
+    加拿大 UBC 大學 Adele Diamond 教授<br>
+    研究兒童執行功能 40 年，她說：<br>
+    「<strong>抑制控制，是可以被教出來的</strong>。」<br><br>
+
+    不是用罵的、不是用沒收的、<br>
+    是用一次又一次「等一下」的小練習：<br>
+    ・「我們先把麵包放上去結帳，糖等一下再選一個。」<br>
+    ・「我數到 3 你才能吃，1、2、3──現在！」<br>
+    ・「想看影片，先等媽媽放好水。」<br><br>
+
+    每一次他「想伸手又收回來」，<br>
+    都是他前額葉皮質在做重訓。<br><br>
+
+    所以下次，<br>
+    當他終於把手收回去那一秒──<br>
+    請看著他的眼睛說：<br>
+    「你剛剛，<strong>等了一下</strong>。」
+  </div>
+
+  <div class="quote">
+    「等一下」這兩個字，不是壓抑──是在他大腦裡，多挖一個空隙，讓他學會：在「想要」跟「行動」之間，還有一個叫「我可以選擇」的位置。這個位置，會在他十年後，決定他能不能對手機、對情緒、對誘惑說出那句──「等一下」。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜IG｜幼兒園家長 LINE 群</div>
+    <div><span class="k">適合對象：</span>3-7 歲學齡前／低年級孩子家長、幼兒園老師</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.annualreviews.org/doi/10.1146/annurev-psych-113011-143750" target="_blank">Adele Diamond《Executive Functions》Annual Review of Psychology 2013</a>｜
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4084861/" target="_blank">NIH PMC 全文版</a>｜
+      <a href="https://www.toolsofthemind.org/tools-for-thought/adele-diamond-neuroscience-pioneer-on-executive-function" target="_blank">Tools of the Mind｜Adele Diamond</a>｜
+      <a href="https://www.bcchr.ca/adiamond" target="_blank">BC Children's Hospital Research Institute｜Adele Diamond</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>preschool boy reaching for candy at convenience store / kid hand hovering over snack / child pause moment grocery aisle
+    </div>
+  </div>
+</article>
+
+<!-- =========================== 第 4 則 =========================== -->
+<article class="card" data-card="4">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-trend">● 趨勢・新加坡 CCE 品格與公民教育</span>
+  <h2>新加坡每週兩節「品格課」進國民課表──CCE 把 SEL 寫進義務教育</h2>
+
+  <div class="opening">
+    <em>narrator 敘事視角｜新加坡某公立小學四年級教室｜週二下午 14:00。</em><br>
+    黑板上沒有數學公式，也沒有作文題目。<br>
+    今天的標題只有一行字：<strong>「當你的好朋友被冷落時，你會怎麼做？」</strong><br>
+    這不是班會時間──這是<strong>必修課</strong>。<br>
+    每週兩節，從小一上到中四，國家把它寫進了課表，跟英文、數學一樣有教材、有教學進度、有評鑑指標。<br>
+    這門課的名字叫：<strong>Character & Citizenship Education（CCE）</strong>──品格與公民教育。
+  </div>
+
+  <div class="news">
+    根據<strong>新加坡教育部 MOE 2021 年發布的《CCE Syllabus》</strong>，CCE 的核心架構建立在三大主軸：<strong>Identity（身分認同）、Relationships（人際關係）、Choices（選擇）</strong>。<br>
+    內容融合：品格價值（respect / responsibility / resilience 等）、社會情緒能力（SEL）、心理健康（Mental Health）、網路素養（Cyber Wellness）、性教育（SEd）、家庭教育（FE）、國家認同（NE）、生涯輔導（ECG）。<br>
+    新加坡國立教育學院（NIE）期刊《SingTeach》第 86 期（2023/9）整理：CCE 推動三大原則──<strong>學生中心（Student-Centricity）、有意設計（Intentionality）、整體連貫（Coherence）</strong>。哈佛大學教育研究所 ExploreSEL 平台也將其收錄為國家級 SEL 框架。
+  </div>
+
+  <div class="insight">
+    我們常聽人說「新加坡學生數學好」──<br>
+    但這個城邦真正特別的地方，是他們<strong>把「品格」也寫進了和數學同等地位的課表</strong>。<br>
+    不是早自習講一講、不是放暑假再來、不是出事了才補──<br>
+    是<strong>從小一第一週開始、每週兩節、12 年不中斷</strong>。<br>
+    他們的邏輯是：再好的成績，沒有「能跟人合作、做選擇、面對挫折」的能力，撐不起一個人。<br>
+    這也是 SEL 全球趨勢的一個指標──<strong>從「附加課程」走進「國家義務教育」</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">📱 直接複製貼文</span>
+    新加坡，每週兩節「品格課」進課表。<br>
+    從小一到中四，12 年不中斷。<br><br>
+
+    這門課的名字叫 CCE──<br>
+    <strong>Character &amp; Citizenship Education</strong><br>
+    （品格與公民教育）<br><br>
+
+    內容是什麼？<br>
+    ・我是誰（Identity）<br>
+    ・我跟別人的關係（Relationships）<br>
+    ・我怎麼做選擇（Choices）<br>
+    ・心理健康、網路素養、性教育、家庭關係<br>
+    ・全部跟英文、數學一樣有課本、有進度、有評鑑<br><br>
+
+    他們不是不重視成績──<br>
+    是他們相信：<br>
+    「<strong>沒有品格與情緒能力，<br>
+    再高的分數，也撐不起一個完整的人</strong>。」<br><br>
+
+    這就是為什麼<br>
+    全世界的 SEL 教育正在從「附加」走進「必修」──<br>
+    不是因為它好教，<br>
+    是因為它，是孩子日後活得好的根。
+  </div>
+
+  <div class="quote">
+    新加坡把品格寫進國民課表的那一刻，等於宣告了一件事──學科只是工具，做人才是目的。當別國還在爭論「SEL 該不該進學校」時，他們已經把「我是誰、我怎麼跟人相處、我怎麼選擇」這三個問題，從小一陪孩子練 12 年。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB（教育議題）｜協會官方｜LinkedIn</div>
+    <div><span class="k">適合對象：</span>關心教育趨勢的家長、教育工作者、政策觀察者</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://www.moe.gov.sg/news/edtalks/what-is-character-and-citizenship-education-and-what-do-students-learn" target="_blank">Singapore MOE｜What Is CCE and What Do Students Learn</a>｜
+      <a href="https://www.moe.gov.sg/api/media/b7c7c81d-cc3e-4103-806f-b56142d6f4dc/2021-primary-character-and-citizenship-education.pdf" target="_blank">Singapore MOE｜2021 Primary CCE Syllabus PDF</a>｜
+      <a href="https://singteach.nie.edu.sg/2023/10/11/character-and-citizenship-education-in-singapore/" target="_blank">SingTeach Issue 86（2023/9）｜CCE in Singapore</a>｜
+      <a href="http://exploresel.gse.harvard.edu/frameworks/56/" target="_blank">Harvard ExploreSEL｜Singapore Framework for 21CC</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>singapore primary school classroom / asian children classroom discussion / school subject board character education
+    </div>
+  </div>
+</article>
+
+<!-- =========================== 第 5 則 =========================== -->
+<article class="card" data-card="5">
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="點一下標記為已發布">☆</div>
+  <span class="card-tag tag-extra">● 加值・教養兩難×才藝想放棄</span>
+  <h2>「我不想學鋼琴了。」──三個月、八年、十年，放棄到底是不是半途而廢？</h2>
+
+  <div class="opening">
+    <em>爸爸視角｜國小三年級兒子｜鋼琴課第三個月、週四傍晚回家路上。</em><br>
+    上週還練得好好的，這禮拜下課他坐進後座，就把書包丟到旁邊：<br>
+    「<strong>爸，我不想學鋼琴了。</strong>」<br>
+    我握著方向盤，心裡轉了三圈：<br>
+    一台二手琴四萬五、上課費一個月四千二、老婆說過「給他一個興趣總比滑手機好」、<strong>還有那句在我自己童年裡迴盪的「半途而廢的人沒出息」</strong>。<br>
+    我嘆口氣，問：「為什麼不想學？」<br>
+    他沒回答，只是把臉貼在車窗上。
+  </div>
+
+  <div class="news">
+    <strong>未來 Family 雜誌</strong>第 60/3 期〈孩子學才藝，父母得失心太重？〉專訪心理師建議：<br>
+    「<strong>父母要先當孩子的「追隨者」，再當「教育者」</strong>──別劈頭就問『有沒有認真上課』，先問『今天彈了什麼』。」<br>
+    《媽媽寶寶》專欄文章〈作家陳名珉談學鋼琴 8 年放棄〉提出另一個視角：<strong>「放棄本身可以是一種成長──是孩子對『我是誰、我適合什麼』的理解，不是失敗。」</strong><br>
+    未來 Family 30750 期〈孩子不想學才藝了怎麼辦？〉鋼琴老師也提醒：人生需要「探索、停留、再出發」的時間，學一項樂器至少要 3-4 年才走完入門期，但「決定停下來」也要被尊重。
+  </div>
+
+  <div class="insight">
+    當孩子說「我不想學了」，大人的腦中通常會跳出三個聲音：<br>
+    ① <strong>沉沒成本</strong>──「都已經學三個月／八年了，怎麼能說放就放？」<br>
+    ② <strong>我的童年陰影</strong>──「我以前就被罵半途而廢，他不能再走我的老路。」<br>
+    ③ <strong>對未來的焦慮</strong>──「他現在隨便放棄，以後遇到難關也會跑。」<br>
+    這三個聲音，<strong>沒有一個是來自孩子當下的</strong>。<br>
+    與其逼他繼續、或乾脆放掉，<br>
+    更值得做的是──<strong>把「放棄」這個詞拆開來談</strong>：他是「累了」、「卡關了」、還是「真的不適合」？<br>
+    這三種狀態，需要的不是同一個答案。
+  </div>
+
+  <div class="post">
+    <span class="post-label">💬 三句話對話腳本｜直接複製</span>
+    當孩子說「我不想學鋼琴了」──<br>
+    先別急著回答「好」或「不好」。<br>
+    試試這三句：<br><br>
+
+    第①句｜<strong>先當追隨者，不當教育者</strong><br>
+    「我聽到了。可以告訴我，<br>
+    是<u>練琴的過程</u>讓你不想學，<br>
+    還是<u>那台鋼琴</u>讓你不想學？」<br>
+    （把「整件事」拆開，他才能說清楚）<br><br>
+
+    第②句｜<strong>命名三種放棄</strong><br>
+    「我們一起想：你是<u>累了想休息</u>、<br>
+    還是<u>卡在某一首怎麼彈都不對</u>，<br>
+    還是<u>你發現你真的不喜歡彈琴</u>？」<br>
+    （命名，是放棄變成成長的第一步）<br><br>
+
+    第③句｜<strong>給他選擇權，但留一個門</strong><br>
+    「不管你最後決定要不要繼續──<br>
+    我都不會說你半途而廢。<br>
+    爸爸／媽媽答應你：這是<u>你的決定</u>。<br>
+    我們先一起想三天，週末再決定，好嗎？」<br>
+    （他選擇權還在，焦慮才會降下來）<br><br>
+
+    💡 為什麼這樣有用？<br>
+    放棄一項才藝，可以是逃避，也可以是「我更認識自己了」──<br>
+    差別不在學費和琴有沒有浪費，<br>
+    而在<strong>那個下決定的過程，孩子有沒有想清楚</strong>。<br>
+    你陪他想清楚，他這一次「放棄」，<br>
+    就會變成他下一次「堅持」的底氣。
+  </div>
+
+  <div class="quote">
+    放棄，不一定是半途而廢。當他清楚知道「這條路不適合我」、並且能說出為什麼──那是他第一次，把人生的方向盤握回自己手裡。爸爸媽媽的工作，不是替他決定要不要繼續，是陪他練習：怎麼好好地，做一個決定。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">適合平台：</span>FB｜LINE 社群｜媽媽社團（中高轉發類）</div>
+    <div><span class="k">適合對象：</span>中年級～國中孩子在學才藝的家長</div>
+    <div><span class="k">參考來源：</span>
+      <a href="https://futureparenting.cwgv.com.tw/family/weekly/index/60/3" target="_blank">未來 Family 第 60 期/3｜學才藝，父母得失心太重？</a>｜
+      <a href="https://www.mombaby.com.tw/articles/9930233" target="_blank">媽媽寶寶｜作家陳名珉：放棄本身就是一種成長</a>｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/30750" target="_blank">未來 Family 30750｜孩子不想學才藝了怎麼辦？鋼琴老師的一席話</a>
+    </div>
+    <div><span class="k">配圖關鍵字：</span>boy at piano looking unhappy / father son talking in car / piano keys close-up
+    </div>
+  </div>
+</article>
+
+<div class="foot">
+  <strong>覺知 SEL 教育</strong> ｜ 每天 08:15 / 13:15 / 18:15 自動發送 ｜ 一日 5 則・寫給願意停下來、想一想的你<br>
+  ⭐ 點一下卡片右上角的星號，標記今天已實際發出去的文案（每週日 review 任務會讀取）
+</div>
+
+</div>
+</body>
+</html>
