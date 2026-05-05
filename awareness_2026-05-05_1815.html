@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.05 18:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#f5dccb 60%,#e8c4ad 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>傍晚 18:15──當天色暗下、晚餐還沒開鍋的這一小時，孩子最想被你看見的，往往不是他做了什麼，而是他今天怎麼過的</h1>
+  <div class="date">2026.05.05 ｜ 18:15 ｜ 台灣時間</div>
+  <div class="sub">
+    五則為下班路上塞在車陣裡的爸爸、剛把鍋蓋蓋上開始切菜的媽媽、把孩子接回正在曬制服的阿嬤，以及和正在房門那頭沒講話的青少年僵持中的家庭而寫。<br>
+    今天聊：13 歲女兒打開 LINE 看見閨蜜頭像變灰那一秒、14 歲兒子第一次「咔」一聲鎖上房門、四年級兒子寫完功課低聲說「我好像沒懂這題」、1992 年義大利實驗室那隻吃葡萄乾的猴子，以及──國中女兒甩出那句「你根本不懂我」時，爸爸的三句話該怎麼接。
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" aria-label="傍晚 18:15 視覺主圖">
+  <defs>
+    <linearGradient id="duskGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d2a4a"/>
+      <stop offset="35%" stop-color="#7a4863"/>
+      <stop offset="70%" stop-color="#d97757"/>
+      <stop offset="100%" stop-color="#f4cba0"/>
+    </linearGradient>
+    <linearGradient id="floorDusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b3f4f"/>
+      <stop offset="100%" stop-color="#3a2838"/>
+    </linearGradient>
+    <radialGradient id="windowLight" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#fff3c2" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff3c2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="300" fill="url(#duskGrad)"/>
+
+  <!-- 背景遠山 -->
+  <path d="M 0 200 L 120 160 L 240 185 L 360 155 L 500 180 L 640 150 L 780 175 L 880 165 L 880 220 L 0 220 Z" fill="#3a2838" opacity="0.55"/>
+  <path d="M 0 215 L 160 195 L 320 215 L 480 198 L 640 218 L 800 200 L 880 213 L 880 230 L 0 230 Z" fill="#28192a" opacity="0.7"/>
+
+  <!-- 地板 -->
+  <rect x="0" y="225" width="880" height="75" fill="url(#floorDusk)"/>
+  <line x1="0" y1="225" x2="880" y2="225" stroke="#1f1422" stroke-width="1"/>
+
+  <!-- 上方一顆暈散的傍晚太陽 -->
+  <circle cx="135" cy="90" r="120" fill="url(#windowLight)" opacity="0.7"/>
+  <circle cx="135" cy="90" r="32" fill="#ffd28a" opacity="0.85"/>
+
+  <!-- 1. 手機畫面（被封鎖） -->
+  <g transform="translate(155,170)">
+    <rect x="-22" y="-40" width="44" height="78" rx="6" fill="#1d1320" stroke="#5a4f46" stroke-width="1.2"/>
+    <rect x="-18" y="-35" width="36" height="62" rx="2" fill="#fbf7f1"/>
+    <!-- 灰色頭像 -->
+    <circle cx="0" cy="-22" r="8" fill="#c8bcae"/>
+    <line x1="-12" y1="-8" x2="12" y2="-8" stroke="#d4c8b6" stroke-width="1"/>
+    <line x1="-12" y1="-2" x2="8" y2="-2" stroke="#d4c8b6" stroke-width="1"/>
+    <line x1="-12" y1="4" x2="10" y2="4" stroke="#d4c8b6" stroke-width="1"/>
+    <text x="0" y="20" text-anchor="middle" font-size="6" fill="#8a7d6e" font-weight="700">已封鎖</text>
+    <!-- 一滴眼淚 -->
+    <path d="M 22 -10 Q 28 -2 22 4 Q 16 -2 22 -10" fill="#7a98c4" opacity="0.85"/>
+  </g>
+
+  <!-- 2. 緊閉的房門（青春期） -->
+  <g transform="translate(305,150)">
+    <rect x="-32" y="-40" width="64" height="115" fill="#5a3d2e" stroke="#2c1d14" stroke-width="1.5" rx="3"/>
+    <rect x="-26" y="-32" width="52" height="46" fill="#4a3225" stroke="#2c1d14" stroke-width="0.8"/>
+    <rect x="-26" y="22" width="52" height="46" fill="#4a3225" stroke="#2c1d14" stroke-width="0.8"/>
+    <circle cx="22" cy="22" r="2.6" fill="#d2a866"/>
+    <!-- 鎖上的小燈 -->
+    <rect x="18" y="6" width="8" height="6" fill="#c3413f" rx="1"/>
+    <!-- 走廊地板那雙爸爸的拖鞋 -->
+    <ellipse cx="-50" cy="72" rx="14" ry="4" fill="#3a2838" opacity="0.6"/>
+    <ellipse cx="-32" cy="72" rx="14" ry="4" fill="#3a2838" opacity="0.6"/>
+  </g>
+
+  <!-- 3. 課本＋鉛筆＋小燈泡（元認知） -->
+  <g transform="translate(450,210)">
+    <rect x="-32" y="-22" width="64" height="36" fill="#fff8ee" stroke="#c9a989" stroke-width="1.2" rx="2"/>
+    <line x1="-22" y1="-12" x2="22" y2="-12" stroke="#bfa385" stroke-width="0.8"/>
+    <line x1="-22" y1="-4" x2="14" y2="-4" stroke="#bfa385" stroke-width="0.8"/>
+    <line x1="-22" y1="4" x2="22" y2="4" stroke="#bfa385" stroke-width="0.8"/>
+    <!-- 鉛筆 -->
+    <line x1="-14" y1="20" x2="22" y2="-18" stroke="#d4a866" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="-18" x2="26" y2="-22" stroke="#444" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 思考燈泡 -->
+    <g transform="translate(28,-38)">
+      <circle r="11" fill="#fff" stroke="#8c6bc7" stroke-width="1.2"/>
+      <text y="4" text-anchor="middle" font-size="11" fill="#8c6bc7" font-weight="700">?</text>
+      <line x1="-14" y1="-12" x2="-18" y2="-16" stroke="#8c6bc7" stroke-width="1.2"/>
+      <line x1="0" y1="-15" x2="0" y2="-19" stroke="#8c6bc7" stroke-width="1.2"/>
+      <line x1="14" y1="-12" x2="18" y2="-16" stroke="#8c6bc7" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- 4. 義大利實驗室猴子＋葡萄（鏡像神經元） -->
+  <g transform="translate(580,200)">
+    <!-- 葡萄 -->
+    <g transform="translate(-32,4)">
+      <circle cx="0" cy="0" r="3.5" fill="#7a4b8a"/>
+      <circle cx="-4" cy="3" r="3.5" fill="#7a4b8a"/>
+      <circle cx="4" cy="3" r="3.5" fill="#7a4b8a"/>
+      <circle cx="0" cy="6" r="3.5" fill="#7a4b8a"/>
+      <path d="M 0 -4 Q 2 -10 8 -10" stroke="#3f8a78" stroke-width="1" fill="none"/>
+    </g>
+    <!-- 猴子側臉 -->
+    <g transform="translate(8,0)">
+      <ellipse cx="0" cy="0" rx="22" ry="20" fill="#a48a64" stroke="#5a4f46" stroke-width="1"/>
+      <ellipse cx="-4" cy="2" rx="14" ry="13" fill="#f0d9b8"/>
+      <circle cx="-8" cy="-2" r="2.4" fill="#1f1422"/>
+      <circle cx="-2" cy="-3" r="2.4" fill="#1f1422"/>
+      <ellipse cx="-6" cy="6" rx="5" ry="2.5" fill="#7a6643"/>
+      <ellipse cx="14" cy="-8" rx="6" ry="9" fill="#a48a64"/>
+    </g>
+    <!-- 腦電波 -->
+    <g transform="translate(40,-22)">
+      <path d="M -10 0 L -7 -6 L -4 4 L -1 -8 L 2 6 L 5 -4 L 8 0" stroke="#5fb3a1" stroke-width="1.5" fill="none"/>
+      <text x="-1" y="14" text-anchor="middle" font-size="8" fill="#5fb3a1" font-weight="700">F5</text>
+    </g>
+  </g>
+
+  <!-- 5. 對話框（你根本不懂我） -->
+  <g transform="translate(740,180)">
+    <!-- 大泡泡（孩子說的） -->
+    <path d="M -50 -30 Q -56 -30 -56 -22 L -56 -2 Q -56 6 -48 6 L -10 6 L -4 16 L -2 6 L 30 6 Q 36 6 36 -2 L 36 -22 Q 36 -30 30 -30 Z" fill="#fff" stroke="#d97757" stroke-width="1.5"/>
+    <text x="-12" y="-13" text-anchor="middle" font-size="10" fill="#b85a3e" font-weight="700">你根本</text>
+    <text x="-12" y="-1" text-anchor="middle" font-size="10" fill="#b85a3e" font-weight="700">不懂我</text>
+    <!-- 小泡泡（爸爸的回應） -->
+    <g transform="translate(8,38)">
+      <path d="M -34 -10 Q -38 -10 -38 -4 L -38 6 Q -38 12 -32 12 L 24 12 Q 30 12 30 6 L 30 -4 Q 30 -10 24 -10 Z" fill="#a48a64" stroke="#7a6643" stroke-width="1"/>
+      <text x="-4" y="6" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">你說得對。</text>
+    </g>
+  </g>
+
+  <!-- 飄過的窗光 -->
+  <g opacity="0.4">
+    <rect x="40" y="240" width="48" height="16" fill="#fff3c2"/>
+    <rect x="220" y="248" width="52" height="14" fill="#fff3c2"/>
+    <rect x="500" y="245" width="56" height="14" fill="#fff3c2"/>
+    <rect x="700" y="248" width="44" height="12" fill="#fff3c2"/>
+  </g>
+
+  <text x="440" y="287" text-anchor="middle" font-size="11" fill="#ffe6c2" letter-spacing="3" opacity="0.85">傍晚 18:15 ｜ 在天色暗下、晚餐沒開鍋的那一小時</text>
+</svg>
+</div>
+
+
+<!-- ============ 第 1 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-pain">● 痛點・社群焦慮／青少女友誼</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「她昨天還在我家睡——今天打開 LINE，她的頭像變成灰色」13 歲女兒被閨蜜封鎖那一秒，不是她小題大作，是她大腦正在把「我」這個人重新拆掉、再蓋一次</h2>
+
+  <div class="opening">
+    週日傍晚 6:18，<em>媽媽</em>剛從廚房走出來想叫女兒吃飯。<br>
+    打開房門那一秒，女兒抱著手機，整個人縮在床角，<em>眼睛紅紅的，沒哭出聲</em>。<br>
+    媽媽蹲下去問：「怎麼了？」<br>
+    女兒把手機螢幕朝上推給她看──那是一個灰色的頭像、一個「對方目前無法接收訊息」的提示。<br>
+    「她昨天還來我們家過夜……今天她把我封鎖了。」<br>
+    媽媽愣了 5 秒。<br>
+    第一個冒上來的念頭是：「這有什麼好難過的，再交朋友就好。」<br>
+    她差點脫口而出。<br>
+    但她在那一秒，<strong>把那句話吞了回去</strong>──因為她記起來，自己 13 歲那年，被最好的朋友從筆友名單上劃掉那一晚，<strong>是怎麼把臉埋在枕頭裡，哭了半個學期</strong>。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    台灣兒童福利聯盟近年（2023 年起多次發布）的「兒少社群網路使用調查」反覆指出：超過 8 成的兒少表示自己出現「社群恐慌」徵狀，2 成兒少自承沉迷無法自拔；社群上的關係互動，是青少年壓力來源的前段班（兒福聯盟新聞稿〈越滑越恐慌、越滑越憂鬱〉）。<br>
+    Mayo Clinic 的家長指南〈Teens and social media use: What's the impact?〉同樣引用美國 2023 年公衛署長報告：每天使用社群超過 3 小時的青少年，憂鬱與焦慮風險約是其他孩子的兩倍；其中「被排擠／被封鎖／被退出群組」是最常見、也最令孩子失語的傷害類型之一。<br>
+    青少年大腦研究領域的代表學者 Sarah-Jayne Blakemore（倫敦大學學院 / 劍橋大學）在 2018 年的著作《Inventing Ourselves》中也提醒：12-15 歲的孩子大腦對「同儕排斥」的疼痛反應，幾乎和身體被踢一腳一樣強烈──那不是矯情，那是<strong>大腦正在用最大力氣告訴他「我屬不屬於這裡」</strong>。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    對 13 歲的女兒來說，被閨蜜封鎖那一秒，<strong>不是失去一個朋友──是失去一面她用來照見自己的鏡子</strong>。<br>
+    青少年正在做一件這輩子最重要的工作：拆掉「爸媽眼裡那個小孩」的舊架構，蓋起「我自己」這個新的人。在這段重建期，<strong>朋友不是配件，是建材</strong>──她從同儕對她的反應裡，一塊一塊蓋出「我是誰」這棟房子。<br>
+    當那個最重要的建材被抽走時，她會感覺整面牆塌下來。<br>
+    妳此刻最不該做的，就是說「再交一個就好了啊」──那句話會讓她覺得「<strong>連我媽都看不見我心裡真的塌了一塊</strong>」。<br>
+    妳今晚要做的，是讓她知道：<strong>那塊塌下來的牆，妳看見了；妳會在旁邊陪她，等她有力氣再蓋一次</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    當 13 歲女兒紅著眼睛說：<br>
+    「媽……她把我封鎖了。」<br><br>
+    妳第一個想脫口而出的，可能是「再交一個朋友就好了啊」。<br>
+    請把那句話吞回去。<br><br>
+    對 13 歲的孩子來說，被閨蜜封鎖，不是失去一個人──是大腦警報全開的「我是不是不屬於這裡」的存在危機。<br>
+    倫敦大學學院 Blakemore 教授說過：青春期大腦對「被排斥」的反應，跟身體被痛打幾乎一樣強烈。<br><br>
+    她要的不是分析。她要的，是一個願意陪她坐 10 分鐘、不急著解決的妳。<br><br>
+    那 10 分鐘裡，妳可以說的就只有 3 句話：<br>
+    1.「妳一定很痛吼。」<br>
+    2.「她做這件事，跟妳這個人值不值得被愛，沒有關係。」<br>
+    3.「不管發生什麼，媽都在。」<br><br>
+    妳今晚那 10 分鐘的安靜陪伴，<br>
+    比她未來十年想到「人不能被信任」時，多救她回來一次。
+  </div>
+
+  <div class="quote">
+    13 歲的孩子哭的不是「失去一個朋友」──是大腦正在拼湊「我是誰」的時候，少了一塊最重要的鏡子。妳今晚那 10 分鐘的安靜陪伴，比一百句「再交一個就好」更靠近她的心。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・青少女友誼／社群焦慮／同儕排擠</div>
+    <div><span class="k">適合平台</span>FB／IG（青少年家長社群）／LINE 媽媽群組</div>
+    <div><span class="k">適合對象</span>11-17 歲孩子的家長、特別是青春期女孩家長／國中老師輔導參考</div>
+    <div><span class="k">引用來源</span>兒福聯盟〈越滑越恐慌、越滑越憂鬱〉新聞稿（children.org.tw/news/3170）；Mayo Clinic〈Teens and social media use〉；Sarah-Jayne Blakemore《Inventing Ourselves》(2018)；國家衛生研究院論壇〈社群焦慮斷捨離〉</div>
+    <div><span class="k">Unsplash 主題</span>teenage girl crying bedroom phone；grayed out chat bubble screen；mother sitting beside daughter dim light</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 2 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-pain">● 痛點・青春期親子斷線／房門那一秒</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「咔。」14 歲兒子第一次反鎖房門那一晚──那扇門不是把你關在外面，是他大腦第一次嘗試把「我自己」這個房間，整修成你還沒進去過的樣子</h2>
+
+  <div class="opening">
+    週四晚上 9:47，<em>爸爸</em>泡了一壺熱茶想拿去給兒子。<br>
+    走到房門前，正要伸手敲門──手停在半空中。<br>
+    他聽見那一聲：「<em>咔</em>。」<br>
+    從門裡傳來，很輕，但很明確。<br>
+    那是房門裡那顆轉鎖被擰下去的聲音。<br>
+    爸爸站在門外那 8 秒。<br>
+    手裡的熱茶還冒著煙，茶香一點一點散在走廊。<br>
+    他第一個念頭是：「這小子是不是有什麼事不能讓我知道？」<br>
+    第二個念頭是：「我是不是哪裡惹他了？」<br>
+    第三個念頭，他自己也嚇了一跳──<br>
+    「<strong>我是不是，再也走不進那扇門了？</strong>」
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    青春期心理學最古老、也最被引用的框架，是 Erik Erikson 在 1968 年《Identity: Youth and Crisis》提出的「自我認同 vs. 角色混淆」階段：12-18 歲的孩子，最重要的發展任務不是「聽話」，而是<strong>「把『我是誰』這個問題第一次認真地問一遍」</strong>。<br>
+    倫敦大學學院 Sarah-Jayne Blakemore 教授近 20 年的青少年腦影像研究（綜述見其 2018 年著作《Inventing Ourselves》以及《Nature Reviews Neuroscience》多篇論文）指出：青春期是大腦「重新接線」最劇烈的時期，前額葉與邊緣系統的連結正在重組──這意味著孩子正在經歷一場<strong>「自己也搞不清楚自己」的內部裝修</strong>。<br>
+    台灣親職諮商心理師陳志恆〈與青少年設定界線：在收與放之間，該如何拿捏？〉文章中也明白指出：青少年要的不是更多監控，而是「在被尊重的範圍裡，有一個可以暫時躲起來、消化情緒的角落」。BitterSweet 心理諮商所〈如何跟孩子溝通？心理師教你青少年的親子溝通技巧〉也整理過：青少年不講話，往往不是冷漠，而是「<strong>講了會被否定，那就乾脆不講</strong>」的長期反應。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    那扇被鎖上的房門，<strong>不是一張「我不要你了」的拒絕信</strong>──是一張「我正在裝修『我自己』，請給我一點時間」的施工告示。<br>
+    14 歲的孩子，正在他人生第一次大規模的「<strong>內部裝修</strong>」：把童年那個「爸爸的兒子」拆掉一些，蓋起「我這個人」的雛形。在這段時期，他需要一個「<strong>沒有大人在的角落</strong>」，去想他想不通的事、發他不知道為什麼會發的脾氣、聽他覺得很丟臉所以不能讓你知道他喜歡的歌。<br>
+    爸爸今晚最不該做的，是用力敲門問「你在幹嘛」、「為什麼鎖門」。<br>
+    最該做的，是<strong>把那壺熱茶輕輕放在門口的椅子上</strong>，敲一下門說：「茶放在外面了，不燙的時候自己拿。」<br>
+    然後──走開。<br>
+    那一刻你練習的不是「放手」，是<strong>「我相信你正在長大」</strong>這句話的具體版本。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    14 歲兒子第一次在房間裡反鎖那一晚，<br>
+    我站在門外，手裡握著一壺熱茶，整整 8 秒不知道該怎麼辦。<br><br>
+    我以為他叛逆了。<br>
+    後來才看懂：<br>
+    那扇門，不是把我關在外面──<br>
+    是他第一次嘗試把「<strong>我自己</strong>」這個房間，整修成我還沒進去過的樣子。<br><br>
+    Erikson 那本 1968 年的書講得清楚：12-18 歲的孩子，正在做這輩子最重要的功課──認真把「我是誰」這個問題問一遍。<br>
+    Blakemore 教授的腦影像研究也告訴我們：青春期的大腦正在重新接線。他自己也搞不清楚自己。<br><br>
+    所以爸爸們，學一個動作：<br>
+    把那壺茶放在門口的椅子上。<br>
+    敲一下門，輕輕說：「茶放外面，不燙的時候自己拿。」<br>
+    然後──走開。<br><br>
+    那不是放棄。<br>
+    那是你練習對他說那句最難的話的──<br>
+    「<strong>我相信你，正在長大。</strong>」
+  </div>
+
+  <div class="quote">
+    那扇被反鎖的房門，從來不是寫給你的拒絕信──是寫給他自己的施工告示。你今晚把那壺熱茶輕輕放在門口、轉身走開的這個動作，比一百句「你怎麼可以鎖門」更靠近他正在重新蓋起來的那個自己。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・青春期親子斷線／房門界線／父子關係</div>
+    <div><span class="k">適合平台</span>FB（爸爸社群最有共鳴）／LINE 家長群組／IG 反思貼文</div>
+    <div><span class="k">適合對象</span>12-18 歲青少年的家長／國中與高中老師</div>
+    <div><span class="k">引用來源</span>Erik Erikson《Identity: Youth and Crisis》(1968)；Sarah-Jayne Blakemore《Inventing Ourselves》(2018) 與 Nature Reviews Neuroscience 系列；陳志恆〈與青少年設定界線〉(listenpsy.com/110389)；BitterSweet 回甘心理〈青少年的親子溝通技巧〉</div>
+    <div><span class="k">Unsplash 主題</span>closed bedroom door teenager hallway warm tea；father standing alone corridor night；young man in dim room headphones</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 3 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-skill">● 能力・元認知 Metacognition</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「阿姨，這題我好像沒懂。」國小四年級外甥功課寫完那一秒突然冒出的這句話──不是他笨，是大腦那條叫「會看見自己有沒有懂」的線，剛剛長出來</h2>
+
+  <div class="opening">
+    週日下午 4:50，<em>阿姨</em>幫姊姊家四年級的外甥訂正數學作業。<br>
+    最後一題寫完，外甥把鉛筆放下，眼睛盯著本子三秒，然後抬頭、有點不好意思地小聲說：<br>
+    「阿姨……<em>這一題我答案有寫對，可是我好像沒懂為什麼是這樣</em>。」<br>
+    阿姨愣了一下。<br>
+    這個 10 歲的男孩，平常數學考試在班上中段，作業向來「寫完就交」，從來不會主動問。<br>
+    今天，他第一次<strong>在沒人問他的情況下，自己把「我會」跟「我懂」分開來</strong>。<br>
+    阿姨突然發現，<strong>剛剛那 3 秒鐘，比這整本作業都珍貴</strong>──因為他大腦那個叫「會看見自己懂不懂」的零件，今天剛剛上線。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    「<strong>元認知 Metacognition</strong>」這個詞，是史丹佛大學發展心理學家 John H. Flavell 在 1976 年的論文〈Metacognitive Aspects of Problem Solving〉首先系統化提出的概念，意思是「對自己的思考的思考」（thinking about thinking）。簡單來說，就是孩子能不能在學習當下，<strong>跳出來看自己現在「懂不懂」、「卡在哪裡」、「下一步要怎麼辦」</strong>。<br>
+    OECD 在 PISA 2018 的學習策略報告中明確指出：跨國資料顯示，元認知能力與學業成就的相關性，比 IQ 還穩定──孩子不是因為「比較聰明」表現好，是因為他「比較知道自己不懂什麼」，所以願意問、願意停下來、願意重做。<br>
+    哈佛 Project Zero 推動 30 年的「Visible Thinking 看見思考」教學法，核心也是同一件事：用簡單的問句（例如「我之前以為……現在我覺得……」、「這讓我想到的是什麼？」）讓孩子的思考被自己「看見」一次。Project Zero 的研究指出，<strong>元認知不是天生的，是被一次次大人陪他「停下來想一想」練出來的</strong>。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    家長最常問的問題是「我的孩子怎麼讓他更會讀書？」<br>
+    研究的答案，從來不是「再多寫一張考卷」──<br>
+    是讓孩子練習一件事：<strong>「我懂了嗎？」</strong>這四個字，自己對自己說。<br>
+    當外甥那天說「我答案對了，可是我好像沒懂」──<br>
+    阿姨那一刻最不該做的，是說「答案對就好啊，下一題」。<br>
+    最該做的是：<strong>停下來，給他一個眼神，說「你發現了一件這輩子最重要的事情」</strong>。<br>
+    元認知不是補習補出來的。<br>
+    它是用<strong>每一次大人願意陪他停下來、把「我以為」跟「我真的懂」分開</strong>的那一秒，慢慢長出來的。<br>
+    20 年後，當他大學讀到一個自己也搞不清楚的章節、或是工作遇到一個沒人教過他的問題──他能不能停下來、誠實對自己說「我好像還沒懂」，<strong>就靠你今天陪他停的這 30 秒</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    四年級外甥寫完數學最後一題，把鉛筆放下，<br>
+    很小聲地說：「阿姨，我答案有寫對……可是，我好像沒懂為什麼。」<br><br>
+    我愣了 3 秒。<br>
+    然後我才看懂──<br>
+    這 3 秒鐘，比他這整本作業都珍貴。<br><br>
+    因為他大腦那條叫「<strong>元認知</strong>（會看見自己有沒有懂）」的線，今天剛剛長出來。<br><br>
+    史丹佛 Flavell 教授在 1976 年提出的這個概念，後來在 OECD PISA 2018 跨國資料裡被驗證得很清楚：<br>
+    <strong>孩子的學業成就，靠的不是 IQ──是他能不能對自己誠實地說「我好像還沒懂」。</strong><br><br>
+    所以下次，當你的孩子寫完功課冒出這句話時──<br>
+    請你停下來、看著他，說：<br>
+    「<strong>你剛剛發現的這件事，比你今天寫對的所有題目都重要。</strong>」<br><br>
+    不是你比較會讀書的孩子聰明。<br>
+    是他，更早學會了問自己一句：「我，懂了嗎？」
+  </div>
+
+  <div class="quote">
+    學會學習，從來不是「多寫一張考卷」──是孩子能對自己誠實地說一句「這題我還沒懂」。那一秒，他就贏了一輩子的自學能力。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第二層・元認知／自學能力／學習動機</div>
+    <div><span class="k">適合平台</span>FB／IG／LINE 家長群組／補教與安親業者轉發</div>
+    <div><span class="k">適合對象</span>國小中高年級到國中家長／關心孩子「會不會讀書」的中產家庭</div>
+    <div><span class="k">引用來源</span>John H. Flavell〈Metacognitive Aspects of Problem Solving〉(1976)；OECD PISA 2018 學習策略報告；Harvard Project Zero〈Visible Thinking〉框架（pz.harvard.edu）</div>
+    <div><span class="k">Unsplash 主題</span>boy child writing homework pencil paper；child thinking lightbulb table；aunt helping child homework warm light</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 4 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-trend">● 趨勢・腦科學新發現／鏡像神經元</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>1992 年義大利帕爾馬實驗室那隻猴子伸手抓葡萄乾的那一秒──研究員餓著肚子的中午，意外發現了一群「會替別人感受」的腦細胞，那也是孩子為什麼會「悄悄變成你」的科學答案</h2>
+
+  <div class="opening">
+    1992 年某個義大利的中午，<em>narrator</em>帕爾馬大學那間有點悶熱的實驗室。<br>
+    神經學家 Giacomo Rizzolatti 與他的研究團隊，正在記錄一隻獼猴的<strong>運動前皮質 F5 區</strong>神經元的放電。<br>
+    儀器上的曲線像往常一樣平穩。<br>
+    研究員自己肚子餓了，順手抓了一顆放在桌邊的葡萄乾，放進嘴裡。<br>
+    「<em>滴！</em>」<br>
+    「滴！滴！」<br>
+    儀器突然瘋狂跳動。<br>
+    研究員愣住──<br>
+    猴子<strong>沒有動</strong>。<br>
+    猴子只是<strong>看著他抓葡萄乾</strong>。<br>
+    可是猴子大腦裡那群神經元，<strong>跳得跟牠自己抓葡萄乾的時候，一模一樣</strong>。<br>
+    那是科學史上「<strong>鏡像神經元 mirror neurons</strong>」第一次被人類意外發現的瞬間。<br>
+    後來的 30 多年，這個發現會徹底改寫我們對「<strong>同理心</strong>」、「<strong>學習</strong>」、「<strong>父母為什麼會悄悄變成孩子的鏡子</strong>」的理解。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    Rizzolatti 與同事 Di Pellegrino、Fadiga、Fogassi、Gallese 在 1992 年的《Experimental Brain Research》論文〈Understanding motor events: a neurophysiological study〉首次報告了這一發現。後續加州大學洛杉磯分校 Marco Iacoboni 教授在 2008 年的著作《Mirroring People》進一步把鏡像系統與人類的同理心、模仿學習、語言發展連結起來。美國心理學會（APA）2005 年 10 月《Monitor on Psychology》也以〈The mind's mirror〉專題報導指出：<strong>鏡像神經元為「理解他人」提供了第一個生理層次的解釋──我們不是透過推理理解別人，是透過大腦悄悄模擬</strong>。<br>
+    這個發現對養育最直接的意義是：<strong>孩子不是聽你「說」什麼學會做人，是看你「怎麼做」、悄悄在大腦裡跑過一遍</strong>。當你今天在塞車的時候罵了一句髒話、當你今天對另一半翻了一個白眼、當你今天面對挫折時深呼吸 3 秒──孩子大腦裡那群鏡像神經元，<strong>正一筆一筆替他存下一份「人遇到事情可以怎麼辦」的內在劇本</strong>。<br>
+    （需要說明的是，鏡像神經元是否「直接等於」同理心，學界目前仍有爭論──但「觀察學習有強烈神經基礎」這件事，是有共識的。Wikipedia〈Mirror neuron〉條目對此爭議有完整整理。）
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    覺知 SEL 教育最常被家長問的一個問題是：「你們都教這些『情緒、覺察、好好說話』，可是我家裡狀況一團亂，他能學得會嗎？」<br>
+    我們的回答從來只有一句：<strong>「沒關係。先從你自己練起。」</strong><br>
+    1992 年那隻猴子告訴我們的事，其實很殘忍、也很慷慨：<br>
+    殘忍的是──你想藏的，孩子的大腦都看得見。<br>
+    慷慨的是──<strong>你今天願意練的，不必開口說，孩子的大腦都會替他學起來</strong>。<br>
+    當你下班開車塞在路上、深呼吸 3 秒、對自己說一句「沒關係，慢一點」時──<br>
+    後座那個 5 歲的孩子，他的<strong>運動前皮質 F5 區</strong>，正在替他存下一個 25 年後遇到塞車、遇到主管罵、遇到失戀時，<strong>能不能找回平靜</strong>的本錢。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    1992 年義大利某個中午，<br>
+    一個研究員在實驗室裡餓了，順手抓了一顆葡萄乾。<br><br>
+    旁邊那隻猴子沒動。<br>
+    可是猴子大腦的儀器，跟猴子自己抓葡萄乾的時候──跳得一模一樣。<br><br>
+    那是「<strong>鏡像神經元</strong>」被人類發現的第一秒。<br>
+    Rizzolatti 教授後來說：「我們不是用推理理解別人，是用大腦悄悄模擬。」<br><br>
+    這對所有爸媽的意義是──<br>
+    你的孩子，不是聽你說什麼學會做人。<br>
+    是<strong>看你怎麼做、然後在大腦裡悄悄跑過一遍</strong>。<br><br>
+    所以今天當你下班塞在車裡、深呼吸 3 秒、對自己說「沒關係，慢一點」的時候──<br>
+    後座那個 5 歲的他，他的鏡像神經元，正在替他存下：<br><br>
+    「人，遇到事情，可以這樣。」<br><br>
+    你不用變完美。<br>
+    你只要──<strong>願意當一個值得被他看的人</strong>。
+  </div>
+
+  <div class="quote">
+    當你今天在孩子面前深呼吸 3 秒、放慢半拍、把一句火氣壓下來──他大腦那群叫「鏡像神經元」的細胞，正在替他存下一輩子能不能在情緒最大那一秒、找回平靜的本錢。你不必說一個字。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第三層・腦科學新發現／鏡像神經元／父母身教</div>
+    <div><span class="k">適合平台</span>FB（高知識家長社群）／IG 長文／部落格深度文章</div>
+    <div><span class="k">適合對象</span>關心腦科學的家長、教育工作者、SEL 教學現場老師</div>
+    <div><span class="k">引用來源</span>Rizzolatti, Di Pellegrino, Fadiga, Fogassi, Gallese 1992《Experimental Brain Research》〈Understanding motor events〉；Marco Iacoboni 2008《Mirroring People》UCLA；APA《Monitor on Psychology》2005/10〈The mind's mirror〉；Wikipedia〈Mirror neuron〉學界爭議整理</div>
+    <div><span class="k">Unsplash 主題</span>vintage neuroscience laboratory monkey research；father in driver seat warm dusk light；father child mirror reflection</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 5 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-extra">● 加值・對話腳本／國中親子衝突</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「你根本不懂我！」國二女兒甩出這句話那一秒──你最不該說的是「我怎麼會不懂你」，最該說的是這 3 句話，能把那扇正在闔上的門，輕輕擋住</h2>
+
+  <div class="opening">
+    週六晚上 7:20，<em>爸爸</em>剛從便利商店回來。<br>
+    國二的女兒坐在餐桌前，眼眶紅紅的，手機螢幕還亮著。<br>
+    爸爸關心地問：「怎麼了，吃飯時間還盯著手機？」<br>
+    女兒抬頭瞪他一眼：「<em>你根本不懂我！</em>」<br>
+    然後砰一聲把手機蓋上，回房間。<br>
+    爸爸站在客廳，那袋微波食品還在手裡冒著熱氣。<br>
+    他第一個衝動是想喊：「我怎麼會不懂你！我陪了你 14 年！」<br>
+    幸好──他沒有。<br>
+    因為他已經連續 3 個週末，看著女兒對他說同一句話、然後關上同一扇門。<br>
+    今天他終於想清楚了：<strong>那句「我怎麼會不懂你」，正是過去 3 個週末，把那扇門越關越快的那一句</strong>。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    台灣親職諮商心理師陳志恆在〈與青少年設定界線：在收與放之間，該如何拿捏？〉中明確提到，當青少年說「你不懂我」時，他要的<strong>不是被說服、不是被反駁，而是被看見</strong>──任何替自己辯護的開口（例如「我怎麼會不懂你」「我以前也年輕過」），對青少年來說都等於關門訊號。<br>
+    《親子天下》與《翻轉教育》多篇親職文章（包括 premium.parenting 〈親子溝通終極指南〉）整理過國內外青少年溝通研究的共識：青春期的孩子需要爸媽進入<strong>「先共感、後處理」</strong>的對話模式──情緒先被看見，事情才有可能被討論。<br>
+    BitterSweet 回甘心理〈如何跟孩子溝通？心理師教你青少年的親子溝通技巧〉以及華人健康網〈青春期孩子不是難溝通，而是需要你和他站在同一陣線〉都提到同一個原則：<strong>當你急著證明自己懂，孩子聽到的就是「你還是不懂」</strong>。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    當國中女兒甩出那句「你根本不懂我」──<br>
+    她不是在指控你；<br>
+    她在試探一件事：「你願不願意，<strong>承認你不懂</strong>？」<br>
+    這是青少年最需要、卻最難開口要的一種愛：<strong>「不要再當解釋我的人，請當聽我的人。」</strong><br>
+    覺知 SEL 教育在親子衝突場景的對話設計，從來不是教爸媽「怎麼贏」這場對話，<br>
+    而是──<strong>怎麼讓那扇正在闔上的門，被輕輕擋住一條縫</strong>。<br>
+    那條縫，是你下次想跟她聊的時候，唯一還能擠進去的入口。<br>
+    所以今晚，不要解釋。先承認。<br>
+    說一句「<strong>你說得對</strong>」，比任何反駁都有用。<br>
+    因為你從來不是要贏──你是要她<strong>願意，再一次，把心打開給你</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案・3 句話腳本</span>
+    當國中女兒對你甩出那句：「你根本不懂我！」──<br><br>
+    你最不該說的，是「我怎麼會不懂你」。<br>
+    那句話會讓她下一秒，把那扇門關得更死。<br><br>
+    試著練習這 3 句話：<br><br>
+    <strong>① 承認 ──「你說得對。爸（媽）大概，真的還沒懂。」</strong><br>
+    （承認你不懂，比你裝懂可靠 100 倍。）<br><br>
+    <strong>② 邀請 ──「但我很想懂。如果你願意，等你想講的時候，我都在。」</strong><br>
+    （把球留在她手上。讓她知道權力是她的。）<br><br>
+    <strong>③ 給空間 ──「不講也沒關係。我先去煮飯，你慢慢來。」</strong><br>
+    （青少年最受傷的一句話是「現在馬上跟我講！」最療癒的一句話是「慢慢來，我不催。」）<br><br>
+    這 3 句話，不是讓你「贏」這場對話。<br>
+    是讓那扇正在闔上的門──<br>
+    <strong>留下一條，下次還能擠進去的縫。</strong>
+  </div>
+
+  <div class="quote">
+    「你說得對」這 4 個字，比 100 句反駁都靠近她──因為青少年要的從來不是答案，是被看見。今晚那扇門能不能留下一條縫，靠的是你願不願意，先放下「我比較懂」的那個位置。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>加值・對話腳本／國中親子衝突／青少年溝通</div>
+    <div><span class="k">適合平台</span>LINE 家長群組（最容易被轉發）／FB／IG 圖文卡</div>
+    <div><span class="k">適合對象</span>國中、高中孩子的家長／親職講座／導師班會分享</div>
+    <div><span class="k">引用來源</span>陳志恆〈與青少年設定界線〉(listenpsy.com/110389)；premium.parenting〈親子溝通終極指南〉(6001015)；BitterSweet 回甘心理〈青少年的親子溝通技巧〉；華人健康網〈青春期孩子不是難溝通〉(89880)</div>
+    <div><span class="k">Unsplash 主題</span>teenager girl angry parent kitchen evening；father standing kitchen takeout bag warm light；door slightly ajar light coming through</div>
+  </div>
+</article>
+
+
+<div class="foot">
+  <strong>覺知 SEL 教育</strong>｜每日教養文宣 ｜ 2026.05.05 18:15<br>
+  五則為下班路上、廚房邊、孩子房門外、餐桌前的你而寫
+</div>
+
+</div>
+</body>
+</html>
