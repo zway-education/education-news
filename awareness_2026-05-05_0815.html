@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.05 08:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+.axis-banner{
+  background:linear-gradient(135deg,#f4eee5 0%,#e8dfd0 100%);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px 20px;
+  margin-bottom:22px;
+  font-size:14px;
+  line-height:1.85;
+  color:var(--ink-soft);
+}
+.axis-banner strong{ color:var(--brand-deep); letter-spacing:1px; }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>她連著三個週一都喊肚子痛──那不是裝的，是身體先替她說話了</h1>
+  <div class="date">2026.05.05 ｜ 08:15 ｜ 台灣時間</div>
+  <div class="sub">
+    早晨 8:15、書包還沒揹起的這 1 分鐘，是孩子最容易說出真話、也最容易被大人錯過的縫。<br>
+    今天的核心軸線：當孩子用身體、用比較、用「等一下」、用沉默──向我們發出訊號時，我們聽得見嗎？
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dawnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce8d4"/>
+      <stop offset="55%" stop-color="#fdf3e6"/>
+      <stop offset="100%" stop-color="#fbf8f4"/>
+    </linearGradient>
+    <linearGradient id="warmGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7e8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff7e8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fce5c4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fce5c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景天色（清晨） -->
+  <rect width="880" height="320" fill="url(#dawnGrad)"/>
+
+  <!-- 晨光暈 -->
+  <circle cx="700" cy="120" r="180" fill="url(#sunGlow)"/>
+  <circle cx="700" cy="120" r="56" fill="#fad9a5" opacity="0.85"/>
+  <circle cx="700" cy="120" r="42" fill="#f6c889" opacity="0.95"/>
+
+  <!-- 窗框（左側） -->
+  <rect x="60" y="40" width="320" height="240" fill="#fff" stroke="#ebe2d6" stroke-width="2" rx="6"/>
+  <line x1="220" y1="40" x2="220" y2="280" stroke="#ebe2d6" stroke-width="2"/>
+  <line x1="60" y1="160" x2="380" y2="160" stroke="#ebe2d6" stroke-width="2"/>
+
+  <!-- 窗外風景 -->
+  <rect x="62" y="42" width="156" height="116" fill="#fdf0db"/>
+  <rect x="222" y="42" width="156" height="116" fill="#fdf0db"/>
+  <rect x="62" y="162" width="156" height="116" fill="#f9e7cc"/>
+  <rect x="222" y="162" width="156" height="116" fill="#f9e7cc"/>
+
+  <!-- 窗外山影 -->
+  <path d="M62 158 L120 110 L160 130 L218 100 L218 158 Z" fill="#e8d2a9"/>
+  <path d="M222 158 L260 120 L320 100 L378 130 L378 158 Z" fill="#e8d2a9"/>
+
+  <!-- 窗外鳥 -->
+  <path d="M280 80 q 5 -5 10 0 q 5 -5 10 0" stroke="#b85a3e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M150 95 q 4 -4 8 0 q 4 -4 8 0" stroke="#b85a3e" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  <!-- 晨光投在地面 -->
+  <polygon points="60,280 380,280 510,320 30,320" fill="url(#warmGlow)"/>
+
+  <!-- 桌椅（書桌一角） -->
+  <rect x="430" y="220" width="200" height="10" fill="#d6bf9c"/>
+  <rect x="450" y="230" width="6" height="60" fill="#c8ad84"/>
+  <rect x="604" y="230" width="6" height="60" fill="#c8ad84"/>
+
+  <!-- 攤開的作業本（一頁空白） -->
+  <rect x="460" y="200" width="100" height="22" fill="#fff" stroke="#ebe2d6" stroke-width="1" rx="2"/>
+  <line x1="468" y1="208" x2="552" y2="208" stroke="#f0e3cd" stroke-width="1"/>
+  <line x1="468" y1="214" x2="552" y2="214" stroke="#f0e3cd" stroke-width="1"/>
+
+  <!-- 鉛筆 -->
+  <rect x="565" y="206" width="55" height="5" fill="#d97757" rx="1"/>
+  <polygon points="620,206 628,208.5 620,211" fill="#5a4f46"/>
+
+  <!-- 書包輪廓（地上） -->
+  <path d="M740 240 q -8 -22 14 -28 l 60 0 q 22 6 14 28 l -8 38 q -2 8 -10 8 l -52 0 q -8 0 -10 -8 z"
+        fill="#d97757" opacity="0.85"/>
+  <rect x="754" y="244" width="48" height="14" fill="#b85a3e" rx="3"/>
+  <line x1="760" y1="218" x2="772" y2="234" stroke="#b85a3e" stroke-width="3" stroke-linecap="round"/>
+  <line x1="800" y1="218" x2="788" y2="234" stroke="#b85a3e" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 一杯沒喝的牛奶 -->
+  <rect x="403" y="186" width="22" height="34" fill="#fff" stroke="#c8ad84" stroke-width="1.5" rx="2"/>
+  <rect x="405" y="200" width="18" height="18" fill="#fbf3df"/>
+
+  <!-- 文字標題 -->
+  <text x="440" y="80" font-family="Noto Sans TC, sans-serif" font-size="22" font-weight="700" fill="#b85a3e">當早晨還很安靜</text>
+  <text x="440" y="112" font-family="Noto Sans TC, sans-serif" font-size="15" fill="#7a6643">他用身體說話，妳聽得見嗎？</text>
+  <text x="440" y="140" font-family="Noto Sans TC, sans-serif" font-size="13" fill="#a89880" letter-spacing="3">— 覺知 SEL ｜ 早安五則</text>
+</svg>
+</div>
+
+<div class="axis-banner">
+  <strong>今日軸線</strong>　從早晨 1-5% 喊肚子痛的孩子，到那句「妳偏心」、5 歲眼前的菠蘿麵包、芬蘭課表上的「波羅的海」、晚上第 7 次「等一下啦」──孩子發出的，從來不只是噪音，是訊號。聽得見訊號，是覺知的第一步。
+</div>
+
+<!-- ===== 第 1 篇 ===== -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆';">☆</div>
+  <span class="card-tag tag-pain">● 第一層・家長痛點</span>
+  <h2>她連著三個週一都說「媽媽我肚子痛」──那 1-5% 的孩子，正在用身體替自己喊救命</h2>
+
+  <div class="opening">
+    這是第三個<em>週一早晨 7:10</em>，蹲在馬桶旁、臉色發白的二年級女兒抬起頭，小聲說：「媽媽，我肚子又痛了。」<br>
+    上週帶去看了腸胃科，醫生說沒事；可是只要一說「妳今天先在家休息」，她臉上就會悄悄鬆下來──那種鬆，連她自己都還不知道是什麼。
+  </div>
+
+  <div class="news">
+    <strong>教育新知：</strong>臺大醫院 2021 年 3 月健康電子報〈孩子拒學行為的成因和因應方式〉（林其瑾臨床心理師）整理研究指出，<strong>兒童青少年拒學行為的盛行率約為 1-5%</strong>，不因性別、學業、家庭社經地位而異。常見表現是「<strong>頭痛、胃痛、肌肉緊張、呼吸不順、臉色蒼白</strong>」，但醫學檢查多無異常，<strong>不用上學時症狀就會消失</strong>。維基百科「學校恐懼症」與童伴心理諮商所〈兒童拒學症的行為表現〉也指出：拒學常見背後因素包括家庭關係、過度保護、期待過高、教養態度不一致、同儕壓力或潛在焦慮。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>她不是「裝病逃學」，是<strong>大腦還沒長出能說「我害怕」的那部分語言</strong>，所以先請身體幫忙。我們覺知教育有句話──「<strong>沒有無意義的搗蛋，只有沒被看懂的求救</strong>」。早晨那一個「肚子痛」，就是還沒被翻譯出來的求救。
+    今天不需要立刻找出原因，今天只需要：<strong>蹲下來，跟她平視，問一句「妳是不是有點怕去學校？」</strong>──讓她知道，這份怕，是可以被說出來的。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▎可直接發布文案</span>
+    給「她週一早上又喊肚子痛」的妳：<br><br>
+    醫生說沒事，妳鬆了一口氣，但又總覺得哪裡不對。<br>
+    根據臺大醫院的整理，1-5% 的孩子會用身體──頭痛、胃痛、想吐──告訴大人「我不想去」。那不是裝的，是她大腦裡那條「說出害怕」的神經，還沒長好；身體就先替她，說出來了。<br><br>
+    今天早晨，妳不必逼她答，也不必硬把她送上校車。<br>
+    妳只需要做一件事：<strong>蹲下來，跟她平視，告訴她──「肚子痛是真的，媽媽相信妳。我們今天先一起想辦法。」</strong><br>
+    當「怕」不再需要藏在身體裡，肚子才會慢慢，不痛了。
+  </div>
+
+  <div class="quote">
+    肚子痛不是裝的──是她大腦還沒練出能說「我怕」的語言，先讓身體替她喊。妳今天蹲下那一分鐘，會比硬把她送上校車，更靠近答案。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・家長痛點（拒學徵兆／心因性身體化）</div>
+    <div><span class="k">適合平台</span>FB 長貼文 / LINE 家長群組 / 部落格</div>
+    <div><span class="k">適合對象</span>幼小至國中孩子的爸媽、班導師、輔導老師</div>
+    <div><span class="k">來源</span>
+      <a href="https://epaper.ntuh.gov.tw/health/202103/child_2.html" target="_blank">臺大醫院健康電子報 2021/3 林其瑾〈孩子拒學行為的成因和因應方式〉</a>｜
+      <a href="https://www.acmate-group.com/child-and-youth-counseling/refusal-to-study/" target="_blank">童伴心理諮商所〈兒童拒學症／懼學症的行為表現〉</a>｜
+      <a href="https://zh.wikipedia.org/zh-tw/%E5%AD%B8%E6%A0%A1%E6%81%90%E6%87%BC%E7%97%87" target="_blank">維基百科｜學校恐懼症</a>｜
+      <a href="https://www.tongpsy.com/article_detail.php?id=101" target="_blank">同心心理治療所〈為什麼孩子突然不想上學？〉</a>
+    </div>
+    <div><span class="k">配圖關鍵字</span>morning light bedroom, child curled up on bed, soft window curtain, asia kid school bag</div>
+  </div>
+</article>
+
+<!-- ===== 第 2 篇 ===== -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆';">☆</div>
+  <span class="card-tag tag-pain">● 第一層・家長痛點</span>
+  <h2>「爸爸，你都比較愛哥哥」──那一句不是抗議，是她在替全世界的老二發問</h2>
+
+  <div class="opening">
+    這是<em>週六下午 3:40 的客廳</em>。九歲的哥哥剛拿到生日禮物的變形金剛，六歲的妹妹蹲在地上、把自己的積木一個一個收進袋子裡，沒哭、也沒鬧──只是抬起頭，<strong>很平靜地</strong>說：「爸爸，你都比較愛哥哥。」<br>
+    你愣了 2 秒。你想說「沒有啊妳也有禮物啊」，可是話到嘴邊──你發現那句話，根本不是她要的回答。
+  </div>
+
+  <div class="news">
+    <strong>教育新知：</strong>未來 Family〈父母偏心容易造成手足的隔閡〉與媽媽寶寶 9924882 引用諮商心理師蔡宜芳指出：「<strong>父母因為孩子的個性、成績或氣質，比較疼愛某一個孩子，是人之常情──但千萬不要表現出來</strong>。」基督教今日報〈情感本難公平，但要避免不平等對待〉、看見心理諮商所〈為什麼養你這麼大還這麼愛計較〉等專文指出：當「不被偏愛」的感受持續累積，孩子會發展出「<strong>我是不是不夠好</strong>」的核心信念，影響到成年後的自我價值感與親密關係。專家建議：父母不必自證公平，要做的是──<strong>具體地、個別地，回應這一個孩子此刻的感受</strong>。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>她說「你比較愛哥哥」的那一秒，不是要你拿出計算機算清禮物的價錢，而是要你<strong>看見一件事──她也很努力，但她覺得自己好像，還是輸了</strong>。
+    覺知教育主張「<strong>先懂心，再懂教</strong>」。在你解釋公平之前，先做一個動作：<strong>蹲下來，看著她，跟她說「你剛剛說的話，爸爸有聽到。你是不是覺得，今天哥哥被注意得比較多？」</strong>──讓那份委屈，先被命名、被接住。情緒被看見了，理性才回得來。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▎可直接發布文案</span>
+    給「孩子哭著說你偏心」的爸爸媽媽：<br><br>
+    當她說「你比較愛哥哥」，最沒用的回答就是──「沒有啊我們都一樣愛你。」<br>
+    心理師蔡宜芳說過：你<strong>不需要證明自己公平，因為公平本來就證明不完</strong>。她要的不是天平，是<strong>「我此刻的難過，被你看見了」</strong>這一句。<br><br>
+    試著把「沒有啊我都一樣愛你」改成這 3 句：<br>
+    ① <strong>「你說的話爸爸有聽到。」</strong>（接住她敢說）<br>
+    ② <strong>「你是不是覺得今天哥哥被注意得比較多？」</strong>（命名感受，不否認）<br>
+    ③ <strong>「你來，我抱妳一下，跟妳講今天我看到妳做了什麼。」</strong>（個別、具體地，把目光還給她）<br><br>
+    手足之間從來不是公平的問題──是「<strong>我有沒有被單獨看見</strong>」這件事。
+  </div>
+
+  <div class="quote">
+    她說「你比較愛哥哥」的那一秒，不是要你算清禮物的價錢──是她要你看見：「我也很努力，可是我好像，還是輸了。」你今晚那 30 秒的擁抱，勝過你花 30 分鐘解釋為什麼公平。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・家長痛點（手足戰爭／偏心抗議／個別看見）</div>
+    <div><span class="k">適合平台</span>IG 圖文 / FB 中長貼 / 媽媽社團</div>
+    <div><span class="k">適合對象</span>家有兩個以上孩子的爸媽、家中常起手足衝突的家庭</div>
+    <div><span class="k">來源</span>
+      <a href="https://www.mombaby.com.tw/articles/9924882" target="_blank">媽媽寶寶〈父母偏心容易造成手足的隔閡，專家傳授 7 原則〉</a>｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/20322" target="_blank">未來親子〈父母偏心容易造成手足的隔閡〉</a>｜
+      <a href="https://ct.org.tw/html/news/3-3.php?cat=20&article=1391151" target="_blank">基督教今日報〈情感本難公平，但要避免不平等對待〉</a>｜
+      <a href="https://www.seeingcounseling.com/post/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%A4%8A%E4%BD%A0%E9%80%99%E9%BA%BC%E5%A4%A7%EF%BC%8C%E9%82%84%E9%80%99%E9%BA%BC%E6%84%9B%E8%A8%88%E8%BC%83" target="_blank">看見心理諮商所〈為什麼養你這麼大，還這麼愛計較〉</a>
+    </div>
+    <div><span class="k">配圖關鍵字</span>siblings playing living room, asian children blocks toy, brother sister back to back, soft afternoon light</div>
+  </div>
+</article>
+
+<!-- ===== 第 3 篇 ===== -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆';">☆</div>
+  <span class="card-tag tag-skill">● 第二層・能力培養</span>
+  <h2>5 歲孫子盯著菠蘿麵包的那 8 分鐘──那叫「延遲滿足」，也是大腦前額葉的安靜練習</h2>
+
+  <div class="opening">
+    這是<em>週六下午 4:20 的麵包店</em>。剛買完一袋還溫的菠蘿麵包，5 歲的孫子蹲在收銀台旁邊、抬頭看著阿嬤手裡那袋熱氣，認真地說：「阿嬤，<strong>我現在就要吃</strong>。」<br>
+    阿嬤心軟，正想撕開。可是又想起昨天爸爸下班回來時、看到桌上空盤的失望表情──「他下班最期待的就是這個了。」於是阿嬤蹲下來，跟他說：「我們等爸爸 6 點下班，跟他一起吃，好不好？」
+  </div>
+
+  <div class="news">
+    <strong>教育新知：</strong>1972 年史丹佛大學心理學家 <strong>Walter Mischel</strong> 進行著名的<strong>棉花糖實驗 (Marshmallow Test)</strong>：4-6 歲幼兒被告知如果不立刻吃掉眼前的棉花糖、等實驗者回來，就能多得到一顆。<strong>約三分之一的孩子能撐過 15 分鐘的等待</strong>。1988、1990 的追蹤研究指出：能延遲滿足的孩子，到青少年期社會適應、人際與抗挫折表現較佳，1990 追蹤組 SAT 平均分數較高。
+    <br>
+    <strong>但 2018 年由 Tyler Watts 等學者重做的大樣本研究（NYU、UC Irvine）</strong>指出：延遲滿足表現受家庭社經、孩子當下對獎勵的信任程度影響甚大，<strong>原始實驗的「自制力決定論」需要被謹慎重新看待</strong>。換句話說──那 8 分鐘，不是「天生意志力」，是「<strong>環境讓他相信『等是值得的』</strong>」這件事的累積。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>延遲滿足，從來不是逼孩子「忍一忍」。它是 3 件事的疊加──
+    <strong>① 等待是可預期的（要等到爸爸 6 點，不是無期徒刑）</strong>；
+    <strong>② 等待時有大人在旁邊（你不是一個人面對誘惑）</strong>；
+    <strong>③ 這份等，最後真的得到了某個更好的東西（信任會被驗證）</strong>。
+    覺知教育常說：「<strong>從他律到自律到自主</strong>」是教育的三段轉化。5 歲那 8 分鐘的等，是「他律」階段──大人是他大腦的外掛前額葉。陪他練、不逼他練，他長大後，那條神經才會慢慢，自己長出來。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▎可直接發布文案</span>
+    給「孩子總是『現在就要』」的阿公阿嬤爸媽：<br><br>
+    你以為他在貪心？其實他大腦那塊負責「等」的區域（前額葉皮質），還在工地、還沒蓋好。<br>
+    史丹佛 1972 棉花糖實驗讓我們以為「能等的孩子才有未來」，可是 2018 NYU 的重做研究說了第二句更重要的話──<strong>能不能等，跟「他相不相信等下去會有結果」很有關</strong>。<br><br>
+    所以下一次他說「我現在就要吃」，你可以這樣陪：<br>
+    ① <strong>把等變得具體</strong>：「我們等到時鐘的長針指到 12，就吃。」（不是模糊的「等一下」）<br>
+    ② <strong>陪他度過那段空白</strong>：「我們先看一本書／走去公園，一回來剛好可以吃。」<br>
+    ③ <strong>等到了，要兌現</strong>：「你今天等了 8 分鐘，這就是那一塊麵包換到的──你看，<u>等是值得的</u>。」<br><br>
+    他人生不會只剩一塊菠蘿麵包要等。但你今天那 8 分鐘的陪伴，是他下一次面對手機、考卷、誘惑時，腦中那條「我可以等」的神經，第一根被牽起來的線。
+  </div>
+
+  <div class="quote">
+    5 歲的他能不能等 8 分鐘，不會單獨決定 25 歲的人生──但你今天願意陪他等、不給他、也不罵他「貪心」，他大腦裡那條叫「等」的神經，就會比同齡孩子，多長出一段。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第二層・能力培養（延遲滿足／前額葉鍛鍊／自律建構）</div>
+    <div><span class="k">適合平台</span>FB 中長貼 / LINE 家長群組 / 教養部落格</div>
+    <div><span class="k">適合對象</span>3-10 歲孩子的爸媽、阿公阿嬤、學前老師</div>
+    <div><span class="k">來源</span>
+      <a href="https://nckupsyscholarship.wixsite.com/get-in-psy/post/%E6%A3%89%E8%8A%B1%E7%B3%96%E5%AF%A6%E9%A9%97" target="_blank">成大心理〈棉花糖實驗〉</a>｜
+      <a href="https://zh.wikipedia.org/zh-hans/%E6%A3%89%E8%8A%B1%E7%B3%96%E5%AE%9E%E9%AA%8C" target="_blank">維基百科｜棉花糖實驗</a>｜
+      <a href="https://www.bella.tw/articles/novelty/41358" target="_blank">Bella 儂儂〈棉花糖實驗被推翻？時隔 50 年重新實驗〉</a>｜
+      <a href="https://www.thenewslens.com/article/118951" target="_blank">關鍵評論網〈棉花糖實驗證明自制力影響一生〉</a>｜
+      <a href="https://www.isofh.org/15942/stanford-marshmallow-experiment/" target="_blank">未來智能〈自律從養成習慣開始：棉花糖實驗 2 關鍵〉</a>
+    </div>
+    <div><span class="k">配圖關鍵字</span>child waiting bakery, pineapple bun, asian grandmother grandchild, soft afternoon, patience moment</div>
+  </div>
+</article>
+
+<!-- ===== 第 4 篇 ===== -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆';">☆</div>
+  <span class="card-tag tag-trend">● 第三層・科學與趨勢</span>
+  <h2>「波羅的海的塑膠」當主題，他們用 6 個學科一起教──芬蘭 2016 課綱那場安靜的革命</h2>
+
+  <div class="opening">
+    這是<em>赫爾辛基郊區某公立小學三年級教室、週四上午 9:00</em>。三年級的小朋友以為今天會跟平常一樣上自然課，但黑板上貼著一張波羅的海的衛星照、寫著三個字：「<strong>塑膠的事</strong>」。<br>
+    然後，數學老師、地理老師、英文老師、藝術老師同時走進教室，互相點頭──這不是他們搞錯課表，這是芬蘭 2016 年國家核心課綱裡，一年至少要做一次的事：<strong>跨學科現象式學習</strong>。
+  </div>
+
+  <div class="news">
+    <strong>教育新知：</strong>芬蘭於 2014 年通過、2016 年正式上路的<strong>《國家核心課綱》(National Core Curriculum for Basic Education)</strong>，導入「<strong>現象式學習 phenomenon-based learning (PhenoBL)</strong>」。<br>
+    最關鍵的條文：<strong>7-16 歲學生每年必須至少參與一個跨學科現象式學習單元 (multidisciplinary learning module)</strong>，由多科老師共同備課、圍繞一個真實世界的「現象」（氣候、移民、城市、健康、媒體……）展開。
+    <br>
+    五大特徵（Tandfonline 2024 學術綜論）：<strong>整體性 holisticity / 真實性 authenticity / 情境性 contextuality / 探究性 problem-based inquiry / 開放性 open-ended</strong>。
+    <br>
+    需要澄清一件常被誤傳的事：<strong>芬蘭並沒有「廢掉學科」</strong>──學科課還在，PhenoBL 是疊加在學科之上、把學科綁進真實世界。研究指出此設計受赫爾辛基大學<strong>Rauste-von Wright 的建構主義傳統</strong>影響極深。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>芬蘭沒有換掉老師、沒有換掉教室、沒有放棄學科──他們做的事，<strong>是把孩子心裡那個「為什麼」放回課表的中央</strong>。
+    這正是覺知教育主張的──「<strong>先有動機，再談成績</strong>」。當孩子問「為什麼要學分數」，芬蘭給的回答不是「因為要考」，而是──「因為要算這片海裡，每平方公里有多少塊塑膠」。動機回來了，分數，自然會跟上。
+    呼應 WEF《Future of Jobs Report 2025》──未來最重要的能力，<strong>分析性思考 (Analytical Thinking) 70% 排名第一</strong>，跟芬蘭課綱要練的，是同一件事。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▎可直接發布文案</span>
+    給「孩子問為什麼要學這個」的爸爸媽媽：<br><br>
+    芬蘭 2016 年做了一件事：他們在國家課綱裡寫下──<strong>每個 7-16 歲的孩子，每年至少要做一次「現象式學習」</strong>。<br>
+    什麼意思？簡單講──老師不再各自教各自的學科。一個禮拜，數學老師、地理老師、英文老師、藝術老師，圍著同一個真實的問題（例如「我們城裡的水從哪裡來」）一起教。<br><br>
+    他們沒有廢掉數學課，<strong>他們只是讓數學變得，跟孩子有關係</strong>。<br>
+    10 年下來，芬蘭培養出來的不是更會考試的孩子，是更願意問「為什麼」、也敢自己找答案的大人。<br><br>
+    那麼今天，當你的孩子在餐桌上問你「為什麼要學這個」──<br>
+    別急著塞答案，回他一句：「<strong>那你想用這個學的，去解決你看到的什麼事？</strong>」<br>
+    一句話，把芬蘭的精神，搬到你家餐桌。
+  </div>
+
+  <div class="quote">
+    芬蘭沒有換掉學科，他們只是把「現實裡真的會發生的事」放回課表的中央。10 年下來，他們培養出的不是更高分的孩子──而是更願意問問題的大人。那也是我們今天就可以做的事：讓孩子帶著那個「為什麼」回家，而你願意，跟他一起想。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第三層・科學與趨勢（芬蘭 PhenoBL／跨學科／2016 課綱）</div>
+    <div><span class="k">適合平台</span>FB 長貼文 / 教育部落格 / LinkedIn / 學校研習</div>
+    <div><span class="k">適合對象</span>關心教育趨勢的爸媽、教師、校長、教育改革者</div>
+    <div><span class="k">來源</span>
+      <a href="https://www.tandfonline.com/doi/full/10.1080/2331186X.2024.2309733" target="_blank">Tandfonline 2024〈Phenomenon-based learning in Finland: a critical overview〉</a>｜
+      <a href="https://www.teachermagazine.com/au_en/articles/what-is-finlands-phenomenon-based-learning-approach" target="_blank">Teacher Magazine〈What is Finland's Phenomenon-based Learning approach?〉</a>｜
+      <a href="https://link.springer.com/chapter/10.1007/978-3-319-78580-6_13" target="_blank">Springer〈Case Study: The Finnish National Curriculum 2016〉</a>｜
+      <a href="https://www.ccefinland.org/phenomenon" target="_blank">CCE Finland《The Phenomenon Program》</a>｜
+      <a href="http://www.edite.eu/wp-content/uploads/2017/11/Phenomenon-based-teaching-and-learning-through-the-pedagogical-lenses-of-phenomenology_The-recent-curriculum-reform-in-Finland.pdf" target="_blank">EDiTE《The Recent Curriculum Reform in Finland》PDF</a>
+    </div>
+    <div><span class="k">配圖關鍵字</span>finnish classroom multidisciplinary, kids around big map, baltic sea satellite, scandinavian school</div>
+  </div>
+</article>
+
+<!-- ===== 第 5 篇 ===== -->
+<article class="card">
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆';">☆</div>
+  <span class="card-tag tag-extra">● 加值類別・對話腳本</span>
+  <h2>「等一下啦」第 7 次後──我把那句「你怎麼又拖」吞了下去，換成這 3 句話</h2>
+
+  <div class="opening">
+    這是<em>週二晚上 8:00 的餐桌</em>。國小三年級的兒子，國語作業才寫到第 4 題，剩下半張紙。<br>
+    這是我今晚第 <strong>7 次</strong> 喊他寫作業。我吸了一大口氣，那句快要衝出嘴的「<strong>你怎麼又這樣？</strong>」我把它──吞了下去。<br>
+    不是因為我修養好。是因為昨天我那一吼，他眼睛紅紅地說：「<strong>媽媽，反正寫完妳又會說我寫太醜。</strong>」這句話卡在我心裡 24 小時，沒有走。
+  </div>
+
+  <div class="news">
+    <strong>教育新知：</strong>天下雜誌〈為什麼孩子的拖延症如此難改？〉、未來 Family〈正向教養，教出自律小孩〉、天才領袖〈孩子拖拖拉拉有 3 大原因〉皆指出：兒童拖延的常見原因不是懶，而是<strong>①面對任務感到無力（已被罵到怕）／②不會啟動 task initiation（執行功能 EF 子能力之一）／③追求完美而僵住／④被動式攻擊 (passive-aggressive)</strong>──表面服從，但用「慢慢來」當作對控制的無聲反抗。
+    <br>
+    親職教養作家羅寶鴻在〈父母的語言力量〉中強調：<strong>「鼓勵比讚美更能幫助孩子肯定自己」</strong>，把「快點寫」改成「具體的、可以選擇的、有時間框架的」對話，孩子的腦才會從「對抗」切回「合作」。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>「等一下啦」不是孩子的罪──是他大腦裡<strong>啟動 task initiation</strong> 這條神經還沒練好；或者，是他用「時間」這個還握在手裡的東西，無聲地告訴妳：「<strong>媽媽，這件事什麼時候開始，是不是我能說的算？</strong>」
+    覺知教育的「3 秒鐘覺知對話」 ── <strong>我現在怎麼了？他現在是什麼狀態？我要反應，還是回應？</strong>──就是替今晚的妳留出那 3 秒。3 秒之後，妳說出口的那一句話，會決定他下一次面對作業時，是更想躲、還是願意動。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▎可直接發布文案</span>
+    給「每晚為作業崩潰」的妳：<br><br>
+    心理師說過，孩子拖延通常不是懶──是他大腦裡那個「啟動鍵」太弱，或是他正用「拖延」這 2 個字、無聲地問你：「這件事，我可不可以也有一點主導權？」<br><br>
+    今晚試著把「<strong>你怎麼還在玩？快點寫！</strong>」換成這 3 句：<br>
+    ① <strong>命名感受不評斷</strong>：「我看你今晚是不是有點不想動？沒事，先告訴媽媽。」（先把對抗的牆，放下來）<br>
+    ② <strong>給選擇而不是命令</strong>：「你想先寫國語、還是先寫數學？媽媽都可以陪。」（把主導權還他一點）<br>
+    ③ <strong>具體時間框架，不是「快點」</strong>：「我們訂 8:30 寫第一行，9:30 之前寫完，剩下時間都是你的。」（具體 + 可預期 + 有獎勵）<br><br>
+    當他不再覺得這場仗是「妳逼他寫」，他才不需要用「拖」的方式，把主導權偷回來。
+  </div>
+
+  <div class="quote">
+    「等一下」不是他的罪──是他大腦裡還沒練出「啟動」這條肌肉，或是他在用拖延，無聲地討回那一點點主導權。妳今晚那一句「你想先寫國語還是數學」，不是讓步──是妳替他，把「我的事」這 3 個字，輕輕還回他手裡。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>加值類別・場景對話腳本（拖延寫作業／3 句話）</div>
+    <div><span class="k">適合平台</span>IG 圖卡 / FB 短貼 / 媽媽社團 / LINE 群組</div>
+    <div><span class="k">適合對象</span>國小 1-6 年級孩子的爸媽、安親班老師、輔導老師</div>
+    <div><span class="k">來源</span>
+      <a href="https://books.cw.com.tw/article/1339" target="_blank">天下雜誌出版〈東摸西摸、拖拖拉拉──為什麼孩子的拖延症如此難改？〉</a>｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/24161" target="_blank">未來 Family〈孩子總是拖拖拉拉，遲遲不寫作業？〉</a>｜
+      <a href="https://www.leaderkid.com.tw/2023/02/02/procrastination-2/" target="_blank">天才領袖〈孩子拖拖拉拉有 3 大原因〉</a>｜
+      <a href="https://futureparenting.cwgv.com.tw/family/content/index/28379" target="_blank">未來親子〈孩子拖了好久還是不想寫作業，這些話別輕易說出口〉</a>｜
+      <a href="https://www.facebook.com/unclehenrylo/posts/937340855243598/" target="_blank">羅寶鴻〈父母的語言力量〉</a>
+    </div>
+    <div><span class="k">配圖關鍵字</span>kid homework procrastination, mom evening dinner table, asian boy notebook pencil, soft warm lamp light</div>
+  </div>
+</article>
+
+<div class="foot">
+  <strong>覺知 SEL 教育</strong> ｜ 用覺知打開 SEL 的大門 ｜ 先懂心，再懂教<br>
+  Written by 李守蕾 ｜ 台灣展威文化教育・中華覺知教育關懷協會
+</div>
+
+</div>
+</body>
+</html>
