@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.05 13:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>午後 13:15──當午餐後的安靜回來，你會聽見孩子心裡那些沒說出口的事</h1>
+  <div class="date">2026.05.05 ｜ 13:15 ｜ 台灣時間</div>
+  <div class="sub">
+    五則為剛吃完午餐還在公司打盹的爸爸、把碗洗完坐下喘口氣的媽媽、午休時翻著聯絡簿的老師、剛從幼兒園接回孩子準備午睡的阿公阿嬤而寫。<br>
+    今天聊：6 歲女兒甩門喊「我恨你」那一秒、爸爸一回家那句沒過大腦的「考幾分」、5 歲孫子堅持要紅襪子的 12 分鐘、日本 1998 年那條把週三下午還給孩子的修課令，以及──「她 5 歲了還要我陪睡，到底要不要分床？」
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" aria-label="午後 13:15 視覺主圖">
+  <defs>
+    <linearGradient id="noonGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4e3"/>
+      <stop offset="60%" stop-color="#fde7d2"/>
+      <stop offset="100%" stop-color="#f4d6c0"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9d6bf"/>
+      <stop offset="100%" stop-color="#cdb699"/>
+    </linearGradient>
+    <radialGradient id="warmSun" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#ffd28a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd28a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="300" fill="url(#noonGrad)"/>
+
+  <!-- 午後光暈 -->
+  <circle cx="700" cy="80" r="140" fill="url(#warmSun)"/>
+  <circle cx="700" cy="80" r="34" fill="#ffc26b" opacity="0.55"/>
+
+  <!-- 地板 -->
+  <rect x="0" y="225" width="880" height="75" fill="url(#floorGrad)"/>
+  <line x1="0" y1="225" x2="880" y2="225" stroke="#a78b6e" stroke-width="1"/>
+
+  <!-- 1. 半開房門（甩門那一秒） -->
+  <g transform="translate(110,150)">
+    <rect x="-32" y="-30" width="64" height="105" fill="#c79478" stroke="#8d5e44" stroke-width="1.5" rx="3"/>
+    <rect x="-26" y="-22" width="52" height="42" fill="#b8866a" stroke="#8d5e44" stroke-width="0.8"/>
+    <rect x="-26" y="26" width="52" height="42" fill="#b8866a" stroke="#8d5e44" stroke-width="0.8"/>
+    <circle cx="22" cy="22" r="2.6" fill="#ffd980"/>
+    <!-- 動線 -->
+    <path d="M 36 -10 Q 50 0 56 14" stroke="#d97757" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.65"/>
+    <path d="M 40 22 Q 54 30 58 38" stroke="#d97757" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- 對話框「我恨你」 -->
+    <g transform="translate(-8,-58)">
+      <path d="M -36 -16 Q -40 -16 -40 -10 L -40 6 Q -40 12 -34 12 L -10 12 L -4 22 L -2 12 L 28 12 Q 34 12 34 6 L 34 -10 Q 34 -16 28 -16 Z" fill="#fff" stroke="#d97757" stroke-width="1.5"/>
+      <text x="-3" y="0" text-anchor="middle" font-size="13" fill="#b85a3e" font-weight="700">我恨你！</text>
+    </g>
+  </g>
+
+  <!-- 2. 段考考卷（考幾分） -->
+  <g transform="translate(255,210)">
+    <rect x="-28" y="-30" width="56" height="40" fill="#fff8ee" stroke="#c9a989" stroke-width="1.2" rx="2" transform="rotate(-6)"/>
+    <text x="-12" y="-12" font-size="9" fill="#777" transform="rotate(-6)">段考</text>
+    <line x1="-22" y1="-4" x2="20" y2="-4" stroke="#d6a08f" stroke-width="0.8" transform="rotate(-6)"/>
+    <line x1="-22" y1="2" x2="14" y2="2" stroke="#d6a08f" stroke-width="0.8" transform="rotate(-6)"/>
+    <text x="-2" y="0" font-size="14" fill="#b85a3e" font-weight="700" transform="rotate(-6)">76</text>
+    <!-- 問號泡泡 -->
+    <g transform="translate(28,-30)">
+      <circle r="14" fill="#fff" stroke="#d97757" stroke-width="1.2"/>
+      <text y="5" text-anchor="middle" font-size="14" fill="#b85a3e" font-weight="700">?</text>
+    </g>
+  </g>
+
+  <!-- 3. 紅襪子（認知彈性） -->
+  <g transform="translate(395,212)">
+    <path d="M -18 -2 L -12 -22 Q -10 -28 -2 -28 L 8 -28 Q 14 -28 14 -22 L 14 -4 Q 18 -2 22 0 L 22 8 Q 22 12 18 12 L -16 12 Q -20 12 -20 8 L -20 0 Q -20 -2 -18 -2 Z" fill="#d23a3a" stroke="#7a1c1c" stroke-width="1.2"/>
+    <line x1="-12" y1="-14" x2="12" y2="-14" stroke="#fff" stroke-width="1.5" opacity="0.65"/>
+    <line x1="-12" y1="-8" x2="12" y2="-8" stroke="#fff" stroke-width="1.5" opacity="0.65"/>
+    <!-- 旁邊那隻沒被選上的藍襪 -->
+    <g transform="translate(38,3) scale(0.78)" opacity="0.55">
+      <path d="M -18 -2 L -12 -22 Q -10 -28 -2 -28 L 8 -28 Q 14 -28 14 -22 L 14 -4 Q 18 -2 22 0 L 22 8 Q 22 12 18 12 L -16 12 Q -20 12 -20 8 L -20 0 Q -20 -2 -18 -2 Z" fill="#5a78b3" stroke="#36497a" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- 4. 日本提燈（綜合學習時間） -->
+  <g transform="translate(540,160)">
+    <line x1="0" y1="-50" x2="0" y2="-30" stroke="#6b4f3a" stroke-width="1.2"/>
+    <ellipse cx="0" cy="-10" rx="22" ry="28" fill="#fff" stroke="#5fb3a1" stroke-width="1.5"/>
+    <line x1="-22" y1="-22" x2="22" y2="-22" stroke="#5fb3a1" stroke-width="1.2"/>
+    <line x1="-22" y1="-10" x2="22" y2="-10" stroke="#5fb3a1" stroke-width="1.2"/>
+    <line x1="-22" y1="2" x2="22" y2="2" stroke="#5fb3a1" stroke-width="1.2"/>
+    <text x="0" y="-7" text-anchor="middle" font-size="10" fill="#3f8a78" font-weight="700">総合</text>
+    <ellipse cx="0" cy="20" rx="14" ry="3" fill="#3f8a78"/>
+  </g>
+
+  <!-- 5. 小床＋玩偶（陪睡） -->
+  <g transform="translate(700,205)">
+    <rect x="-44" y="-8" width="90" height="22" rx="4" fill="#a48a64"/>
+    <rect x="-44" y="-22" width="14" height="14" rx="2" fill="#7a6643"/>
+    <rect x="-44" y="-4" width="90" height="6" fill="#fffaf3" stroke="#c9a989" stroke-width="0.6"/>
+    <ellipse cx="-22" cy="-2" rx="14" ry="6" fill="#fff5dc" stroke="#c9a989" stroke-width="0.6"/>
+    <!-- 小熊 -->
+    <g transform="translate(20,-3)">
+      <circle cx="0" cy="0" r="8" fill="#c8a274"/>
+      <circle cx="-5" cy="-7" r="3" fill="#c8a274"/>
+      <circle cx="5" cy="-7" r="3" fill="#c8a274"/>
+      <circle cx="-2" cy="-1" r="0.8" fill="#3a2a1c"/>
+      <circle cx="2" cy="-1" r="0.8" fill="#3a2a1c"/>
+      <path d="M -2 3 Q 0 5 2 3" stroke="#3a2a1c" stroke-width="0.8" fill="none"/>
+    </g>
+    <!-- 月亮 zZz -->
+    <text x="-32" y="-30" font-size="14" fill="#a48a64" font-weight="700">z</text>
+    <text x="-22" y="-38" font-size="11" fill="#a48a64" font-weight="700">z</text>
+  </g>
+
+  <text x="440" y="285" text-anchor="middle" font-size="11" fill="#9c8973" letter-spacing="3">午後 13:15 ｜ 那些沒說出口的事</text>
+</svg>
+</div>
+
+
+<!-- ============ 第 1 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-pain">● 痛點・情緒風暴</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「媽媽我恨你！」──6 歲女兒甩浴室門那一秒，不是她變壞，是她大腦還沒長出「分得開情緒和你」的那條線</h2>
+
+  <div class="opening">
+    週五晚上 8:40，<em>媽媽</em>第三次催 6 歲女兒去刷牙。<br>
+    女兒抱著小毯子坐在沙發角落不動。媽媽走過去把毯子抽走，「你再不去，明天就不准看卡通。」<br>
+    女兒突然站起來，雙手握拳，眼眶整個紅，<em>對著媽媽吼了一聲：「媽媽我恨你！」</em>──然後甩上浴室門，「砰」的那一聲，把媽媽手裡的毯子也震得一抖。<br>
+    媽媽愣在客廳那 3 秒。<br>
+    她不是被那句話嚇到，是被那句話後面，自己心裡冒出來的那一句嚇到──<br>
+    「我女兒……是不是真的，討厭我了？」
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    兒童發展心理學的經典觀察：4-7 歲是孩子情緒詞彙正在「上線」的階段，但他們大腦的前額葉抑制系統還很薄弱（大約要到 25 歲才完整成熟，Casey 等人 2008 年在 PNAS 的青春期腦影像研究已成共識）。<br>
+    這個年齡的孩子，當情緒一上來時，他們嘴巴裡能找到的最重的字，往往就是「恨」、「討厭」、「永遠不要」。<br>
+    以色列兒童心理學家 Haim Ginott 在 1965 年的經典《Between Parent and Child》早就點出：孩子說的「我恨你」，幾乎從來不等於成人理解的恨意，而是「我此刻好痛苦，可是我找不到別的字」。<br>
+    台灣諮商心理師周慕姿在多篇親職文章中也提醒，孩子最激烈的話，常常是說給「他最信任的人」聽的──因為他知道，這個人不會因為這句話就離開他。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    「我恨你」是孩子大腦發育中的一道<strong>裂縫</strong>，不是道德上的瑕疵。<br>
+    他還沒辦法把「我現在很挫折」「我覺得不被理解」「我累了」這些細緻的情緒分開，更沒辦法在情緒最大那一秒，記得「我其實愛媽媽」這件事。<br>
+    當孩子說出最重的話──那不是他最壞的一刻，那是他<strong>最需要你</strong>的一刻。<br>
+    妳今晚願不願意在那扇浴室門外，先深呼吸 30 秒、再敲門問一句「妳剛才一定很難過齁？」──會決定她下一次情緒風暴的時候，<strong>是繼續對妳吼，還是願意把那扇門打開、讓妳進去</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    當 6 歲女兒對妳吼「媽媽我恨你」──<br><br>
+    妳第一個反應，可能是想罵她「怎麼可以這樣跟媽媽講話」。<br>
+    但腦科學告訴我們：4-7 歲的孩子，前額葉還在長，他們在情緒最大那一秒，能找到的最重的字，就是「恨」。<br><br>
+    那句話從來不是恨。那是──<br>
+    「我此刻好痛，可是我找不到別的字。」<br><br>
+    妳今晚要做的，不是糾正那句話。<br>
+    是在浴室門外深呼吸 30 秒，然後敲門問一句：<br>
+    「妳剛剛一定很難過對不對？媽媽在這裡，等妳。」<br><br>
+    她不是真的恨妳。<br>
+    她只是──還在學怎麼好好地，<strong>愛妳這個她最信任的人</strong>。
+  </div>
+
+  <div class="quote">
+    孩子敢對妳說最重的話，不是因為他不愛妳──而是因為他知道，妳不會因為這句話就離開他。妳今晚那 30 秒的深呼吸，就是她未來 30 年情緒安全感的第一塊磚。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・情緒風暴／親子衝突</div>
+    <div><span class="k">適合平台</span>FB／IG／LINE 群組（媽媽社群最有共鳴）</div>
+    <div><span class="k">適合對象</span>3-9 歲孩子的家長／幼小銜接父母</div>
+    <div><span class="k">引用來源</span>Haim Ginott《Between Parent and Child》(1965)；Casey 等人 2008 PNAS 青春期前額葉發展研究；周慕姿親職文章</div>
+    <div><span class="k">Unsplash 主題</span>child crying tantrum bedroom door；mother kneeling outside door；warm hallway dim light</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 2 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-pain">● 痛點・考試焦慮／家長口頭禪</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「考幾分？」──你一回家那句沒過大腦的口頭禪，正在悄悄替孩子寫好「他怎麼看自己」的劇本</h2>
+
+  <div class="opening">
+    週二下午 5:30，<em>爸爸</em>剛下班，騎車到校門口接國二的兒子。<br>
+    今天是段考第一天。<br>
+    兒子上車那一秒，背包還沒放好──爸爸的嘴比腦子快，那句口頭禪自己跑出來：「<em>考幾分？</em>」<br>
+    後座沉默了 3 秒。<br>
+    然後兒子悶悶地說：「……都還沒改完。」<br>
+    爸爸再問：「那你寫得還順嗎？」<br>
+    兒子拿出耳機，戴上，把頭轉向窗外。<br>
+    爸爸從後照鏡看著兒子的後腦勺，突然想起──<br>
+    這已經是他這個月第 4 次，把「考幾分」當成「兒子你回來了」的開場白。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    台灣兒童福利聯盟近幾年（包含 2024 年）的國小、國中生壓力相關調查反覆指出：<strong>來自家長的學業期待與「成績比較」</strong>，是孩子日常壓力來源的前幾名。許多孩子在訪談中提到，最不想聽到的家長問句就是「考幾分」、「別人考多少」。<br>
+    親子教養媒體《親子天下》、《翻轉教育》多篇文章也整理過：當家長把「考幾分」當作每天回家的第一句話，孩子大腦會把「我＝那個分數」綁在一起。久了，孩子不再分得清「我這次考差」和「我是個沒用的人」這兩件事。<br>
+    這在心理學上有個簡單的名字：<strong>條件性愛 conditional love</strong>──孩子感覺到「你愛我，是因為我表現好」。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    爸爸那句「考幾分」，本意可能只是<strong>關心、隨口、習慣</strong>。<br>
+    但孩子聽到的，是另一句話：<br>
+    「在你眼裡，我這個人＝今天那張考卷上的數字。」<br>
+    覺知 SEL 教育的核心，不是逼孩子不在意成績，而是──讓爸媽先練習一件事：<strong>把「你」這個人，跟「你做的事」分開來看</strong>。<br>
+    把那句「考幾分」收起來，換成「今天最累的是哪一科？」「有沒有哪一題你寫完覺得很爽的？」──同樣關心成績，但你問的是<strong>那個人</strong>，不是<strong>那個分數</strong>。<br>
+    換一句話，三年後，他會願意把考差的那次，<strong>主動拿出來跟你聊</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    每天接孩子放學那一秒，你的第一句話是什麼？<br><br>
+    很多爸爸跟我一樣，嘴比腦子快，自然就脫口問──「考幾分？」<br>
+    但研究告訴我們，孩子聽到的不是「我關心你」，是──<br>
+    「我這個人＝今天那張考卷的數字。」<br><br>
+    久了，孩子會開始把考差的那一次藏起來。再久一點，他會把整個自己藏起來。<br><br>
+    從今天起，把「考幾分」收起來。換成這三句之中的一句：<br>
+    1.「今天最累的是哪一科？」<br>
+    2.「有沒有哪一題寫完覺得很爽？」<br>
+    3.「你想先洗澡還是先吃飯？」<br><br>
+    同樣是關心。<br>
+    但你問的，是<strong>那個人</strong>，不是<strong>那個分數</strong>。
+  </div>
+
+  <div class="quote">
+    你愛的不是那個分數──你愛的是那個人。把這句話練習成你的口頭禪，3 年後，他會願意把人生最難的那次，主動打給你聊。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・考試焦慮／家長自覺</div>
+    <div><span class="k">適合平台</span>FB／LINE 家長群組／IG 反思貼文</div>
+    <div><span class="k">適合對象</span>國小高年級～高中生家長／月考期間特別有共鳴</div>
+    <div><span class="k">引用來源</span>兒福聯盟 國中小學生壓力調查（多年度）；親子天下／翻轉教育 親職文章；條件性愛 conditional love 心理學概念</div>
+    <div><span class="k">Unsplash 主題</span>father waiting at school gate sunset；teenager backpack motorcycle ride home；exam paper desk</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 3 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-skill">● 能力・認知彈性 Cognitive Flexibility</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>5 歲孫子早晨堅持要紅襪子的那 12 分鐘──不是他鬧脾氣，是大腦那條叫「能轉彎」的肌肉，正在悄悄練習</h2>
+
+  <div class="opening">
+    週一早晨 7:25，<em>阿公</em>從廚房端著熱牛奶走出來。<br>
+    5 歲的孫子站在玄關，雙手抱胸，眼睛紅紅的，腳上套著一隻紅襪子、另一腳光著。<br>
+    阿公蹲下來：「阿公昨天晚上洗了那雙紅的，還沒乾。今天先穿藍的好不好？」<br>
+    孫子搖頭。<br>
+    阿公說：「藍的也很帥啊。」<br>
+    孫子搖頭。<br>
+    阿公又說：「不然這樣，今天穿黃色的？」<br>
+    孫子<em>整個人坐在地上，把另一隻紅襪扔出去：「我就是要穿那雙紅的！」</em><br>
+    阿公看了看牆上的鐘──7:37。<br>
+    再 8 分鐘就要遲到。<br>
+    他深呼吸，沒罵孫子；只是想起小兒子小時候，<strong>也曾經為了一根固定要從某個角度插進飲料盒的吸管，僵在原地哭了 15 分鐘</strong>。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    執行功能 EF 三大核心之一的「<strong>認知彈性 Cognitive Flexibility</strong>」，是大腦能不能切換規則、轉換觀點、接受 plan B 的能力。它和「抑制控制」「工作記憶」並列，是預測學業表現、人際適應、未來成就最強的非認知能力之一（Adele Diamond 2013 在 <em>Annual Review of Psychology</em> 〈Executive Functions〉的整合性回顧已成領域共識）。<br>
+    多倫多大學的 Philip Zelazo 與 Ulrich Müller 等學者多年研究指出：<strong>3-7 歲是認知彈性快速發展的視窗期</strong>。這個年齡的孩子，在他「設定的規則」被打斷時（例如襪子顏色、吸管角度、走哪一條路、誰先進門），會出現強烈的固著反應。那不是壞脾氣，那是<strong>大腦在還沒學會「換」這件事之前，必經的一段路</strong>。<br>
+    哈佛兒童發展中心（Center on the Developing Child at Harvard University）也整理過：執行功能不是天生的，是「在每一次大人陪他度過 plan A 失敗的時刻」中，慢慢建造起來的。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    阿公那一刻最珍貴的，<strong>不是「找到讓孫子穿藍襪子的辦法」</strong>──而是他願意承認：「孩子大腦還在學『換』，現在那一塊肌肉還很小。」<br>
+    認知彈性不是用罵長出來的。<br>
+    它是用「<strong>大人的耐性</strong>」灌溉長出來的──<br>
+    每一次你願意陪他多坐 3 分鐘、把選項說慢、給他一點時間悲傷他失去的那雙紅襪子，他大腦那條「我可以換」的神經迴路，就被加固了一次。<br>
+    10 年後，當他面對「想念的高中第一志願沒上」「和最好的朋友吵架」「打工被臨時換班」──他能不能轉得過來，<strong>就靠你今天早上多陪他坐的那 3 分鐘</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    5 歲孫子早晨僵在玄關，堅持要穿那雙還沒乾的紅襪子。<br><br>
+    我蹲下來想了想──沒有罵他，因為我突然懂了：<br>
+    這不是他鬧脾氣，是他大腦那條叫「<strong>認知彈性</strong>」的肌肉，正在練習怎麼接受「事情不照我想的走」。<br><br>
+    Adele Diamond 那篇被引用上萬次的論文寫得很清楚：<br>
+    3-7 歲的孩子，正在學三件事──<br>
+    抑制衝動、記住規則、<strong>還有換個方法</strong>。<br><br>
+    我多陪他坐了 3 分鐘。<br>
+    我說：「你很想穿那雙紅的，阿公知道。我們今天先穿藍的，回家阿公馬上洗，明天讓你穿。可以嗎？」<br>
+    他抽抽搭搭地點了頭。<br><br>
+    10 年後當他遇到失戀、考差、被換組──能不能轉得過來，靠的不是運氣。<br>
+    靠的是──<strong>我們今天早上多陪他坐的那 3 分鐘</strong>。
+  </div>
+
+  <div class="quote">
+    認知彈性不是教的，是陪的。每一次你願意陪他度過「事情不照我想的走」，他大腦那條「我可以換」的路，就多被踩了一遍。10 年後遇到人生的紅襪子沒乾，他才轉得過來。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第二層・能力培養（執行功能 EF 之一）</div>
+    <div><span class="k">適合平台</span>FB 長文／IG 知識型 carousel</div>
+    <div><span class="k">適合對象</span>3-7 歲幼兒家長／學齡前阿公阿嬤／幼教老師</div>
+    <div><span class="k">引用來源</span>Adele Diamond 2013《Annual Review of Psychology》〈Executive Functions〉；Philip Zelazo &amp; Ulrich Müller 多倫多大學認知彈性研究；哈佛兒童發展中心 Center on the Developing Child 執行功能 working paper 系列</div>
+    <div><span class="k">Unsplash 主題</span>red socks pair morning floor；grandfather kneeling child entrance；toddler stubborn hallway warm light</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 4 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-trend">● 趨勢・日本 1998 課綱</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>日本 1998 年那條安靜的修課令──把每週的一段時間還給「沒有教科書、沒有正解」的學習，給了 25 年後的全球教育一個答案</h2>
+
+  <div class="opening">
+    週四上午 9:00，日本本州一間公立小學。<br>
+    四年級的教室桌椅被推開，孩子們圍著一張畫滿便利貼的大紙。<br>
+    紙的中央寫著本學期的主題：<em>「我們的小鎮，10 年後會剩下什麼？」</em><br>
+    沒有課本，沒有標準答案。<br>
+    他們上週訪問了車站前的麵店老闆、寺廟的住持、小學前那家糖果舖的奶奶。<br>
+    今天的功課是──把訪問本上的對話貼回大紙上，找出「最常被提到的那 3 件事」。<br>
+    這節課，叫做「<em>総合的な学習の時間</em>」（綜合學習時間）。<br>
+    時間表上沒有「國語」「算數」「理科」──<strong>只有那塊孩子們自己決定的縫</strong>。
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    1998 年（平成 10 年），日本文部科學省修訂《學習指導要領》，正式設立「<strong>総合的な学習の時間</strong>」（綜合學習時間，Period for Integrated Studies），於 2000 年逐步試行、2002 年起在全國中小學正式實施。<br>
+    這節課的設計原則寫在指導要領中很清楚：<br>
+    ① <strong>沒有統一教科書</strong>，由各校、各年級老師依在地議題自行設計；<br>
+    ② 主題以「橫斷／綜合課題」為主：環境、國際理解、資訊、健康福祉、地方學習；<br>
+    ③ 學生「自己決定問題、自己找方法、自己整理結論」──這是日本教育從「傳授」轉向「探究」的指標性政策。<br>
+    雖然這 25 年來，這節課曾因為「課時被擠壓」「老師備課負擔重」而幾度被縮減，但 2017 年新版指導要領把它升級為「<strong>探究學習</strong>」，再次強化了「沒有正解的學習」這個核心精神。<br>
+    當其他國家還在爭論「要不要刪減考試」，日本在 1998 年就把答案寫好了：<strong>把一塊時間，還給「不為了考試」而學的事情</strong>。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    日本人很安靜地做了一件事：他們承認「<strong>學業時間，不全部交給課本</strong>」。<br>
+    在台灣的家長眼中，這聽起來像「奢侈」──但這正是 SEL 的核心：學會問問題、學會合作、學會在沒有正解的情況下做選擇，<strong>才是孩子未來真正會用上的能力</strong>。<br>
+    日本沒有換掉學科。他們只是承認──<strong>有些東西，課本教不來</strong>。<br>
+    那些東西包括：怎麼跟糖果舖奶奶聊天、怎麼把不同人說的話整理成一個故事、怎麼跟小組同學意見不同時還能繼續走下去。<br>
+    這些，正是 25 年後 AI 時代孩子最需要的事。<br>
+    回到家裡──你今晚可不可以也給孩子<strong>那一塊時間</strong>？沒有作業、沒有考試、沒有功能。只是一段他可以亂問問題、亂講夢想、亂發呆的時間。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    1998 年，日本悄悄做了一件事──<br><br>
+    他們在國民義務教育的時間表上，劃出一塊「沒有教科書、沒有考試、沒有正解」的時間。<br>
+    這節課叫做「綜合學習時間」（総合的な学習の時間）。<br><br>
+    孩子在這節課裡做什麼？<br>
+    四年級的孩子訪問家鄉麵店老闆。<br>
+    五年級的孩子調查學校附近的小溪有沒有變髒。<br>
+    六年級的孩子整理出「我們的小鎮 10 年後會剩什麼」。<br><br>
+    沒有人給他們答案。<br>
+    他們自己問問題、自己找資料、自己整理結論。<br><br>
+    25 年後，當 AI 寫得出比孩子更好的作文，全世界終於發現──<br>
+    日本當年那塊「沒有正解」的時間，<br>
+    才是真正在教 21 世紀的能力：<strong>提問、合作、做選擇</strong>。<br><br>
+    今晚，你願不願意也給家裡那個小孩一塊「沒有作業、沒有考試」的 30 分鐘？<br>
+    他亂問、你亂答──那就是學習開始的地方。
+  </div>
+
+  <div class="quote">
+    教育最深的轉彎，從來不是換更厚的課本──而是承認「有些東西，課本教不來」。1998 年那塊被日本還給孩子的時間，就是 SEL 在亞洲最早的一個入口。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第三層・科學與趨勢（亞洲教育政策）</div>
+    <div><span class="k">適合平台</span>FB 知識長文／教育類社團／LinkedIn 教師同行</div>
+    <div><span class="k">適合對象</span>關注課綱／108 課綱探究學習／國際比較的家長與教育者</div>
+    <div><span class="k">引用來源</span>日本文部科學省《學習指導要領》1998（平成 10 年）／2017（平成 29 年）；総合的な学習の時間 → 探究的な学習の時間 政策沿革；維基百科 総合的な学習の時間</div>
+    <div><span class="k">Unsplash 主題</span>japanese elementary school classroom；children sticky notes group discussion；small town japan station storefront</div>
+  </div>
+</article>
+
+
+<!-- ============ 第 5 篇 ============ -->
+<article class="card">
+  <span class="card-tag tag-extra">● 加值・教養兩難 × 場景對話腳本</span>
+  <div class="star-slot" onclick="this.classList.toggle('on'); this.textContent = this.classList.contains('on') ? '★' : '☆';" title="標記為實際發過的文案">☆</div>
+  <h2>「她 5 歲了還要我陪睡」──不是黏，是依附還在長；幾歲分床從來不是答案，是你怎麼陪她過渡</h2>
+
+  <div class="opening">
+    週六晚上 9:10，<em>阿姨</em>到姊姊家幫忙顧 5 歲的外甥女。<br>
+    姊姊夫妻去吃結婚紀念日晚餐。<br>
+    床邊燈關了，外甥女抓著阿姨的手，小小聲說：<br>
+    「阿姨可以陪我睡到我睡著嗎？媽媽都這樣。」<br>
+    阿姨愣了一下：「妳 5 歲了，不能自己睡嗎？」<br>
+    外甥女眼眶紅了，<em>把臉埋進枕頭裡，半晌才悶悶地說：「我不要……一個人。」</em><br>
+    阿姨突然想起姊姊上週的抱怨：<br>
+    「她到底要黏到幾歲？我朋友的孩子 3 歲就分房了。」<br>
+    那一刻，阿姨第一次認真思考──<br>
+    <strong>「分床到底是不是個越早越好的事？」</strong>
+  </div>
+
+  <div class="news">
+    <strong>▍教育新知</strong><br>
+    分床睡是台灣家長社群最常爭論的議題之一。但兒童發展與依附理論的研究其實很一致：<br>
+    ① 英國精神分析師 John Bowlby 的「<strong>依附理論 Attachment Theory</strong>」（1969 年代起的系列著作）指出，0-7 歲是「安全堡壘 secure base」建立的關鍵期。孩子有沒有自己睡，重點不是床，是<strong>他知不知道有大人「在」</strong>。<br>
+    ② 美國兒科醫師 William Sears《The Attachment Parenting Book》（2001）的「親密育兒」主張，與其討論「幾歲一定要分床」，不如討論「孩子準備好了沒」。<br>
+    ③ 跨文化人類學研究反覆指出：日本、韓國、東南亞、北歐部分國家，孩子和父母同床（co-sleeping）到學齡甚至更晚，是相當普遍的家庭常態，並未顯示對心理發展的負面影響（McKenna 等人 在 <em>American Journal of Physical Anthropology</em> 與 <em>Behavioral and Brain Sciences</em> 等期刊的長期跨文化研究）。<br>
+    結論很清楚：<strong>「越早分床」並不等於「孩子越獨立」</strong>。獨立來自「我知道你在」的安全感，不是「我必須一個人」的孤單。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點──</strong><br>
+    分床從來不是一場「<strong>該不該</strong>」的爭論，而是一場「<strong>怎麼陪她過渡</strong>」的設計。<br>
+    與其每天逼孩子「自己睡」，不如分三步驟練習：<br>
+    ① <strong>承認</strong>她的需要：「妳會怕一個人，這個感覺是真的，不是不乖。」<br>
+    ② <strong>分階段</strong>：先媽媽陪到她睡著、再變成媽媽坐在門口、再變成她自己睡但留小夜燈。每一步停留 1-2 週。<br>
+    ③ <strong>給她選擇權</strong>：「妳今天想要媽媽陪 5 分鐘，還是 10 分鐘？」<br>
+    分床那一天，不是她「終於獨立」的那一天──<strong>是她終於相信「就算媽媽不在房間裡，媽媽也還在這個家」的那一天</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍可直接發布文案</span>
+    「她 5 歲了還要我陪睡，到底要黏到幾歲？」<br><br>
+    我外甥女今晚握著我的手，小聲說：「我不要……一個人。」<br>
+    那一刻我懂了一件事──<br><br>
+    分床從來不是一場「該不該」的爭論。<br>
+    依附理論的研究已經很清楚：獨立不是「我必須一個人」，<br>
+    而是「<strong>我知道你在</strong>」。<br><br>
+    與其逼她自己睡，三步驟陪她過渡：<br>
+    ❶ 承認：「妳會怕，這個感覺是真的，不是不乖。」<br>
+    ❷ 分階段：媽媽陪到睡著 → 媽媽坐門口 → 留小夜燈自己睡。每階段 1-2 週。<br>
+    ❸ 給選擇：「妳今天想要陪 5 分鐘還是 10 分鐘？」<br><br>
+    分床那一天，不是她「終於獨立」的那一天。<br>
+    是她終於相信──<strong>就算媽媽不在房間裡，媽媽也還在這個家</strong>。
+  </div>
+
+  <div class="quote">
+    獨立不是「我必須一個人」。獨立是──「我知道你在，所以我可以一個人。」這兩句話，差的是一輩子的安全感。妳今晚那 10 分鐘，就是她未來敢不敢一個人去外地讀大學的那一塊地基。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>加值類別・教養兩難 × 場景對話腳本</div>
+    <div><span class="k">適合平台</span>FB 媽媽社團／LINE 群組／IG 反思貼文</div>
+    <div><span class="k">適合對象</span>3-8 歲孩子家長／煩惱分床／隔代教養家庭</div>
+    <div><span class="k">引用來源</span>John Bowlby 依附理論《Attachment and Loss》系列（1969-1980）；William Sears《The Attachment Parenting Book》(2001)；James McKenna 跨文化 co-sleeping 研究（American Journal of Physical Anthropology 等）</div>
+    <div><span class="k">Unsplash 主題</span>child bedroom soft night light；mother holding child hand bedside；teddy bear small bed warm</div>
+  </div>
+</article>
+
+
+<div class="foot">
+  <strong>覺知 SEL 教育</strong>　・　一群人、一件事、一輩子<br>
+  下午 13:15　午後的安靜，是孩子心裡最願意說真話的那道縫
+</div>
+
+</div>
+</body>
+</html>
