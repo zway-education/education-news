@@ -344,7 +344,7 @@ section.body p:last-child{margin-bottom:0}
   <p>家庭關係不是大事決定的，是日常的 10 分鐘累積出來的。當孩子知道「每天 7 點，那個位置上一定有人在等我」，他的世界就有了一個錨。</p>
 <p>你不需要當一個有趣的父母、不需要每天有新點子、不需要把家經營成一個樂園。你只需要每天到場，準時坐下。光是這個動作，就已經是給孩子一輩子的禮物了。</p>
   <div class="practice"><strong>今晚 1 分鐘小練習</strong>：今晚找全家人，討論明天起想要的「10 分鐘儀式」是什麼時段。寫在一張紙上，貼在冰箱。從明天開始試一週，週末再來檢討。</div>
-  <div class="signature">Written by 李守蕾　｜　覺知素養教育創辦人</div>
+  <div class="signature">Written by K12覺知素養教育學苑</div>
 </section>
 
 <div class="checklist">
@@ -390,6 +390,35 @@ section.body p:last-child{margin-bottom:0}
 </style>
 <a class="share-fab" href="parenting_essence_2026-05-02_share.png" download title="下載 IG/FB 分享圖">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
+
+<style>
+.home-fab{
+  position:fixed;bottom:22px;right:78px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(217,119,87,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.home-fab:hover{background:rgba(217,119,87,1);transform:scale(1.08);}
+.home-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.home-fab::after{
+  content:'回首頁';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#a85a31;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.home-fab:hover::after{opacity:1;}
+@media(max-width:600px){.home-fab{bottom:16px;right:64px;width:42px;height:42px;}.home-fab::after{display:none;}}
+</style>
+<a class="home-fab" href="./" title="回首頁">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l-9 8h2.5v9h13v-9H21L12 3zm0 2.7L18.5 11H17v8h-3v-5h-4v5H7v-8H5.5L12 5.7z"/></svg>
 </a>
 
 </body>

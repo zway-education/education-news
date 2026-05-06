@@ -345,7 +345,7 @@ section.body p:last-child{margin-bottom:0}
   <p>「乖」不是教養的終點，「自主」才是。你的目標不是養出一個聽你話的孩子，而是養出一個 30 年後不需要你也能活得很好的人。</p>
 <p>這條路上你會比較辛苦——你要忍住不替他做決定、忍住看他犯錯、忍住替他擔心。但每一次你忍住，他就多長出一點點屬於自己的力量。等到他長大，他會謝謝你——謝謝你願意把他的人生，還給他自己。</p>
   <div class="practice"><strong>今晚 1 分鐘小練習</strong>：今晚回想，今天你幫孩子做了哪些他其實可以自己決定的事？挑一件，明天讓他自己選。不論結果如何，都不要『接管』。</div>
-  <div class="signature">Written by 李守蕾　｜　覺知素養教育創辦人</div>
+  <div class="signature">Written by K12覺知素養教育學苑</div>
 </section>
 
 <div class="checklist">
@@ -391,6 +391,35 @@ section.body p:last-child{margin-bottom:0}
 </style>
 <a class="share-fab" href="parenting_essence_2026-04-25_share.png" download title="下載 IG/FB 分享圖">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
+
+<style>
+.home-fab{
+  position:fixed;bottom:22px;right:78px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(217,119,87,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.home-fab:hover{background:rgba(217,119,87,1);transform:scale(1.08);}
+.home-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.home-fab::after{
+  content:'回首頁';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#a85a31;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.home-fab:hover::after{opacity:1;}
+@media(max-width:600px){.home-fab{bottom:16px;right:64px;width:42px;height:42px;}.home-fab::after{display:none;}}
+</style>
+<a class="home-fab" href="./" title="回首頁">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l-9 8h2.5v9h13v-9H21L12 3zm0 2.7L18.5 11H17v8h-3v-5h-4v5H7v-8H5.5L12 5.7z"/></svg>
 </a>
 
 </body>
