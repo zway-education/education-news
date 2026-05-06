@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.06 08:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+.axis-banner{
+  background:linear-gradient(135deg,#f4eee5 0%,#e8dfd0 100%);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px 20px;
+  margin-bottom:22px;
+  font-size:14px;
+  line-height:1.85;
+  color:var(--ink-soft);
+}
+.axis-banner strong{ color:var(--brand-deep); letter-spacing:1px; }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>當孩子安靜下來時，他不是沒事──是說不出哪裡不對，但你還聽得見</h1>
+  <div class="date">2026.05.06 ｜ 08:15 ｜ 台灣時間</div>
+  <div class="sub">
+    清晨 8:15，孩子書包剛揹上，世界還沒擠進來的這 1 分鐘──是他最不設防的時候。<br>
+    今天的核心軸線：當孩子用「一個人吃飯」「不想去最愛的課」「不再問為什麼」傳遞訊號時──我們聽得見嗎？
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dawnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce8d4"/>
+      <stop offset="55%" stop-color="#fdf3e6"/>
+      <stop offset="100%" stop-color="#fbf8f4"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.78" cy="0.32" r="0.32">
+      <stop offset="0%" stop-color="#ffe0b3" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffe0b3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8d3b6"/>
+      <stop offset="100%" stop-color="#c9a880"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景晨光 -->
+  <rect width="880" height="320" fill="url(#dawnGrad)"/>
+  <circle cx="690" cy="100" r="180" fill="url(#sunGlow)"/>
+
+  <!-- 遠景：學校窗框輪廓 -->
+  <g opacity="0.18" stroke="#b88a5f" stroke-width="1" fill="none">
+    <rect x="60" y="40" width="120" height="160" rx="3"/>
+    <line x1="120" y1="40" x2="120" y2="200"/>
+    <line x1="60" y1="120" x2="180" y2="120"/>
+    <rect x="200" y="60" width="80" height="100" rx="3"/>
+    <line x1="240" y1="60" x2="240" y2="160"/>
+  </g>
+
+  <!-- 中景：教室桌子（一張椅子有人，一張椅子空著） -->
+  <rect x="320" y="220" width="220" height="14" rx="2" fill="url(#tableGrad)"/>
+  <rect x="345" y="234" width="6" height="50" fill="#a8855c"/>
+  <rect x="510" y="234" width="6" height="50" fill="#a8855c"/>
+
+  <!-- 椅子 1：一個人坐（小女孩剪影） -->
+  <rect x="370" y="240" width="40" height="6" fill="#a8855c"/>
+  <rect x="372" y="246" width="4" height="38" fill="#8d6e44"/>
+  <rect x="404" y="246" width="4" height="38" fill="#8d6e44"/>
+  <!-- 小女孩剪影 -->
+  <circle cx="390" cy="200" r="14" fill="#b07a4f" opacity="0.92"/>
+  <path d="M 374 213 Q 390 207 406 213 L 408 240 L 372 240 Z" fill="#d97757" opacity="0.85"/>
+  <!-- 便當盒 -->
+  <rect x="380" y="216" width="20" height="8" rx="2" fill="#fff" stroke="#b88a5f"/>
+
+  <!-- 椅子 2：空椅子 -->
+  <rect x="450" y="240" width="40" height="6" fill="#a8855c" opacity="0.65"/>
+  <rect x="452" y="246" width="4" height="38" fill="#8d6e44" opacity="0.65"/>
+  <rect x="484" y="246" width="4" height="38" fill="#8d6e44" opacity="0.65"/>
+
+  <!-- 飄浮：問號雲 -->
+  <g fill="#b88a5f" opacity="0.6">
+    <text x="120" y="260" font-size="34" font-family="serif">?</text>
+    <text x="178" y="282" font-size="22" font-family="serif">?</text>
+    <text x="612" y="195" font-size="38" font-family="serif">?</text>
+    <text x="664" y="232" font-size="22" font-family="serif">?</text>
+    <text x="710" y="265" font-size="28" font-family="serif">?</text>
+  </g>
+
+  <!-- 鋼琴側影 -->
+  <g transform="translate(720,210)" opacity="0.58">
+    <rect x="0" y="0" width="100" height="40" rx="3" fill="#5a4f46"/>
+    <rect x="6" y="42" width="88" height="14" fill="#fff" stroke="#5a4f46"/>
+    <line x1="18" y1="42" x2="18" y2="56" stroke="#5a4f46"/>
+    <line x1="32" y1="42" x2="32" y2="56" stroke="#5a4f46"/>
+    <line x1="46" y1="42" x2="46" y2="56" stroke="#5a4f46"/>
+    <line x1="60" y1="42" x2="60" y2="56" stroke="#5a4f46"/>
+    <line x1="74" y1="42" x2="74" y2="56" stroke="#5a4f46"/>
+    <line x1="88" y1="42" x2="88" y2="56" stroke="#5a4f46"/>
+  </g>
+
+  <!-- 標題文字 -->
+  <text x="440" y="62" text-anchor="middle" font-size="22" font-family="'Noto Sans TC',sans-serif" font-weight="700" fill="#b85a3e">當孩子安靜下來時，那不是沒事</text>
+  <text x="440" y="92" text-anchor="middle" font-size="14" font-family="'Noto Sans TC',sans-serif" fill="#7a6643" letter-spacing="2">2026.05.06 ｜ 早晨 08:15 ｜ 五則覺知 SEL 教養觀察</text>
+</svg>
+</div>
+
+<div class="axis-banner">
+  <strong>本日核心軸線</strong>　｜　孩子很少會直說「我不開心」──他會用「一個人吃飯」「不想學了」「不再問為什麼」對你說。<br>
+  從一張空椅子、一架鋼琴、一個沒有人問的「為什麼」開始，今天 5 則文案，學著聽懂他沒說出口的那一句。
+</div>
+
+<!-- ===================== 第 1 篇 ｜ 痛點：歸屬感／午餐桌孤立 ===================== -->
+<div class="card" data-card-id="1">
+  <span class="card-tag tag-pain">▎ 痛點．第一層</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'">☆</div>
+
+  <h2>「老師說她午餐都自己一個人坐」──不是她沒朋友，是教室裡少了一個叫「被想到」的角落</h2>
+
+  <div class="opening">
+    <em>週三 12:25，五年三班。</em>班導陳老師在教室後面整理回收紙箱，眼睛餘光瞥到——
+    <em>子瑜端著便當，從教室前面走到後面，再從後面走回前面，繞了快 3 分鐘，終於在最角落那張靠窗的桌子，自己坐下來。</em>
+    隔壁那一桌 4 個女生有說有笑，沒人回頭。子瑜把便當蓋打開，低頭，一口一口吃。
+    <br>當天晚上 8:40，陳老師在 LINE 裡傳給子瑜媽媽一句：「她最近⋯⋯午餐都自己一個人坐。」
+    <em>媽媽看著手機螢幕亮著，半天沒打字。</em>
+  </div>
+
+  <div class="news">
+    <strong>歸屬感：比朋友數量更深的需要。</strong>馬斯洛 1943 年提出的需求層次中，「愛與歸屬」是僅次於生理、安全的第三層基礎需求；
+    Brené Brown 2017《Braving the Wilderness》定義歸屬感不是「融入 fitting in」、而是「不必改變自己也能被接住 belonging」。
+    2013 年美國賓州一位 8 歲男孩 Christian Bucks 提出「Buddy Bench 友誼長椅」概念──操場上一張長椅，
+    任何覺得孤單的孩子坐上去，看見的同學就會主動過去問「要不要一起玩」──這個校園小設計後來推到全美超過數千所小學。
+    它真正在做的不是「找朋友」──是讓孩子知道：<strong>「孤單可以被看見」是一種制度。</strong>
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>子瑜不是「沒朋友」──她是還沒練過「我可以告訴別人我想加入」這件事。
+    高年級的女生友誼網有一個殘酷的特徵：<strong>不是被排擠，是「沒被想到」。</strong>她不是被趕走的，她是
+    <strong>每一次大家圍成一圈時，沒有人多留一張椅子給她。</strong>
+    這時最不該說的是「妳怎麼不主動一點？」──那會讓她把孤單從「外面的事」變成「我的問題」。
+    妳該做的是：讓她知道，她值得被想到。然後，<strong>陪她練 1 句話</strong>──「我可以坐這嗎？」
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍ 可直接發布文案</span>
+    妳孩子今天的午餐，是跟誰一起吃的？<br><br>
+    這個問題，如果妳問了，孩子說「自己一個」──不要急著教她怎麼交朋友。<br>
+    先抱她一下，告訴她：<br><br>
+    「自己吃午餐不是妳的問題。是那一張桌子，還沒有人多留一個位子給妳。」<br><br>
+    高年級的友誼，最常見的不是被排擠──是「沒被想到」。她不是不可愛，是在那個時間點，剛好沒人想起她。<br><br>
+    今晚妳能陪她練的那一句，不是「妳要勇敢」──是這個：<br>
+    「明天午餐妳可以走去問○○：『我可以坐這嗎？』──她會說好，因為妳本來就值得被想到。」<br><br>
+    歸屬感不是「我有多少朋友」──是「我知道，這個世界有人會替我留一張椅子」。<br>
+    那把椅子，妳今晚可以先在她心裡先擺好。
+  </div>
+
+  <div class="quote">
+    被排擠很痛，但「沒被想到」更安靜，也更傷。妳今晚抱她那 30 秒，就是在替她在這個世界擺下第一張椅子──告訴她，孤單不是妳的問題，妳值得被想到。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・痛點（歸屬感／同儕關係／午餐桌孤立）</div>
+    <div><span class="k">適合對象</span>國小中高年級家長、老師、輔導志工</div>
+    <div><span class="k">適合平台</span>LINE 社群、FB 主貼文、IG 文字輪播</div>
+    <div><span class="k">引用來源</span>Maslow 1943 需求層次理論｜Brené Brown 2017《Braving the Wilderness》｜Christian Bucks 2013 Buddy Bench Project（York PA）｜兒福聯盟兒少友誼系列調查</div>
+    <div><span class="k">配圖關鍵字</span>empty chair lunch, lonely school cafeteria, buddy bench, classroom corner light</div>
+  </div>
+</div>
+
+<!-- ===================== 第 2 篇 ｜ 痛點：動機消失／自我決定論 ===================== -->
+<div class="card" data-card-id="2">
+  <span class="card-tag tag-pain">▎ 痛點．第一層</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'">☆</div>
+
+  <h2>「我不想學鋼琴了」──不是她不愛了，是她大腦裡有 3 個東西，悄悄被切斷了</h2>
+
+  <div class="opening">
+    <em>週六上午 9:50，鋼琴老師家樓下的停車場。</em>媽媽剛把車停好、解開後座的安全帶，
+    <em>四年級的小語在副駕駛座一動也不動。</em>「下車啊，老師等了。」她沒回。媽媽轉頭，看見女兒手指絞著外套拉鍊，眼眶紅紅的，
+    <em>很小聲地說：「媽媽⋯⋯我不想學鋼琴了。」</em>
+    去年才剛通過英皇五級。上個月還在家彈〈夢中的婚禮〉給阿嬤聽。
+    這個女兒，以前每次經過鋼琴老師家，是會主動問「我們今天可不可以早一點到」的那個女兒。
+  </div>
+
+  <div class="news">
+    <strong>動機不會「消失」──它是被切斷的。</strong>美國心理學家 Edward L. Deci 與 Richard M. Ryan 1985 年提出
+    <strong>自我決定論 Self-Determination Theory（SDT）</strong>，2000 年於《American Psychologist》發表完整框架，
+    指出人類的內在動機，需要 3 個基本心理需求同時被滿足：
+    ❶ <strong>自主感 Autonomy</strong>（這是我自己想做的）
+    ❷ <strong>勝任感 Competence</strong>（我做得到、我在進步）
+    ❸ <strong>連結感 Relatedness</strong>（這件事讓我和某人靠近）。
+    當其中一個被切斷──孩子不會說「我自主感不夠」──他會說「我不想學了」、「好無聊」、「我又不會」。
+    這 3 個字背後，永遠是這 3 個心理需求之一在求救。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>小語不是不愛鋼琴了──請妳今晚在床邊問她這 3 個問題：
+    ❶「是不是最近老師都在催妳考檢定，所以妳開始覺得『不是我自己想彈』？」（自主）
+    ❷「是不是這首新曲子卡了 3 週都過不了，妳開始懷疑自己『其實沒那麼厲害』？」（勝任）
+    ❸「是不是阿嬤住院之後，沒人在客廳聽妳彈了？」（連結）
+    <strong>3 個問題裡，總有一個會讓她突然紅眼眶。</strong>那一個，就是要先被接住的。先處理需求，再談要不要繼續學。
+    順序顛倒，妳會逼她說謊。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍ 可直接發布文案</span>
+    當孩子說「我不想學了」，那 5 個字不是結論──是線索。<br><br>
+    心理學家 Deci 跟 Ryan 研究 30 年告訴我們：人想做一件事，需要 3 個感覺同時還在──<br>
+    ❶ 我自己想做的（自主感）<br>
+    ❷ 我做得到（勝任感）<br>
+    ❸ 這件事讓我跟某個人靠近（連結感）<br><br>
+    當孩子說「我不想學」，妳今晚在床邊可以這樣問：<br><br>
+    「是因為妳發現，這件事好像不是妳自己選的了？」<br>
+    「還是，妳卡在那個地方好久，開始懷疑自己？」<br>
+    「還是──以前聽妳的那個人，這陣子不在了？」<br><br>
+    這 3 個問題裡，總有一個會讓她紅眼眶。那個，就是要先處理的。<br><br>
+    不要急著「鼓勵她繼續」。先讓她知道：<br>
+    妳看見的不是「她退步了」──是她身上某一個重要的東西，斷了線。<br>
+    斷的線可以重接。但前提是，妳得先看見它，正在飄。
+  </div>
+
+  <div class="quote">
+    「我不想學了」5 個字裡，沒有一個字是真的關於那件事。妳今晚願意多問 3 個問題，妳會找到那條斷掉的線──然後妳會發現，她從沒不愛過。她只是，在求妳幫她接回去。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・痛點（動機掉落／興趣消失／才藝放棄）</div>
+    <div><span class="k">適合對象</span>有才藝班/補習孩子的家長、3-12 歲學齡父母</div>
+    <div><span class="k">適合平台</span>FB 長文、Threads、IG 多頁圖文</div>
+    <div><span class="k">引用來源</span>Edward Deci & Richard Ryan 1985《Intrinsic Motivation and Self-Determination in Human Behavior》｜Ryan & Deci 2000《American Psychologist》〈Self-Determination Theory and the Facilitation of Intrinsic Motivation〉｜Center for Self-Determination Theory（selfdeterminationtheory.org）</div>
+    <div><span class="k">配圖關鍵字</span>piano child reluctant, parking car back seat, music lesson child sad, reluctant practice</div>
+  </div>
+</div>
+
+<!-- ===================== 第 3 篇 ｜ 能力：好奇心／提問頻率下降 ===================== -->
+<div class="card" data-card-id="3">
+  <span class="card-tag tag-skill">▎ 能力．第二層</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'">☆</div>
+
+  <h2>「她已經一年沒問過『為什麼』了」──幼兒園 2.36 次，五年級剩 0.48 次的好奇心斷崖</h2>
+
+  <div class="opening">
+    <em>週日下午 2:40，國立自然科學博物館恐龍館。</em>阿姨牽著六年級姪女小恬，
+    走到那隻 12 公尺長的暴龍化石前。<em>5 歲的時候，小恬會抬起頭，連珠炮地問：</em>
+    「為什麼牠的手那麼短？」「牠們怎麼睡覺？」「牠是不是會痛？」──那一年，姪女問了她一整個下午。
+    今天，姪女只是把展板上的字念了一遍：「身高 4 公尺、體重 7 公噸。」
+    <em>然後抬起頭問了 1 句：「阿姨，這題會考嗎？」</em>
+  </div>
+
+  <div class="news">
+    <strong>幼兒園 2.36，五年級 0.48。</strong>美國 Williams College 心理學系教授 Susan Engel 帶研究生在
+    <strong>幼兒園與五年級教室各蹲點 5 次、每次 2 小時</strong>，數算「好奇行為」（提問、專注凝視、操作物件）。
+    結果發表於 2011 年《Harvard Educational Review》〈Children's Need to Know: Curiosity in Schools〉：
+    <strong>幼兒園每 2 小時平均出現 2.36 次好奇行為，五年級降至 0.48 次。</strong>更關鍵的是：
+    五年級教室裡，「整堂 2 小時連 1 次好奇行為都沒出現」是常態。
+    Engel 在後續著作《The Hungry Mind》（2015 Harvard University Press）裡寫下：
+    孩子不是失去好奇心──是學會了，「在這個地方，問問題不會被獎勵」。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>好奇心不是天賦，是<strong>「我可以問」這 4 個字的心理安全感</strong>。
+    一個孩子如果在 6 年的學校時光裡，反覆收到「這不會考」「等一下再說」「你怎麼問這麼怪的問題」──
+    他不會「失去好奇」，他會學會 <strong>「把好奇心藏起來，比較安全」。</strong>
+    妳今晚可以做的事很小：在餐桌上，認真接住孩子隨口的一句「為什麼⋯⋯」，回他一句
+    <strong>「這個我也沒想過耶，我們一起查查看？」</strong>──這 12 個字，就是把那條斷掉的好奇神經，輕輕接回去。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍ 可直接發布文案</span>
+    妳的孩子，最近一次問妳「為什麼⋯⋯」是什麼時候？<br><br>
+    Williams College 的 Susan Engel 教授做了一個讓人心痛的研究：<br>
+    幼兒園的孩子，每 2 小時出現 2.36 次好奇行為。<br>
+    到了五年級，剩下 0.48 次。<br>
+    更可怕的是──五年級教室裡，<strong>整整 2 小時連 1 次好奇心都沒出現</strong>，是常態。<br><br>
+    孩子不是失去好奇心──<br>
+    他是學會了：「在這個地方，問問題不會被獎勵。」<br><br>
+    妳家如果還有那個會問「天空為什麼是藍的」的孩子──<br>
+    請妳今晚做這 1 件事：<br><br>
+    當他下一次冒出一句「為什麼⋯⋯」<br>
+    不要說「等一下」「這不會考」<br>
+    請妳放下手機，看著他眼睛，回 1 句：<br><br>
+    「咦，這個我也沒想過耶。我們一起查查看？」<br><br>
+    這 12 個字，會替他的好奇心，多買 1 年的命。
+  </div>
+
+  <div class="quote">
+    五年級每 2 小時 0.48 次，不是孩子變笨──是孩子學會了「不問比較安全」。妳今晚那一句「我們一起查查看」，是替他在這個世界，留下「我可以問」的最後一張通行證。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第二層・能力（好奇心／提問力／求知動機）</div>
+    <div><span class="k">適合對象</span>3-12 歲家長、自學家庭、教育工作者</div>
+    <div><span class="k">適合平台</span>FB 主貼文、Threads、教育社群轉發</div>
+    <div><span class="k">引用來源</span>Susan Engel 2011《Harvard Educational Review》〈Children's Need to Know: Curiosity in Schools〉｜Susan Engel 2015《The Hungry Mind: The Origins of Curiosity in Childhood》Harvard University Press｜Williams College Program in Teaching</div>
+    <div><span class="k">配圖關鍵字</span>museum child curious, dinosaur fossil child, curiosity question mark, classroom raised hand</div>
+  </div>
+</div>
+
+<!-- ===================== 第 4 篇 ｜ 趨勢：韓國自由學期制 ===================== -->
+<div class="card" data-card-id="4">
+  <span class="card-tag tag-trend">▎ 趨勢．第三層</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'">☆</div>
+
+  <h2>「2016 年那個學期，韓國國中生的考卷不見了」──一個全亞洲考試最重的國家，為什麼把分數還給孩子？</h2>
+
+  <div class="opening">
+    <em>2016 年 3 月，首爾近郊一所公立國中。</em>國一新生敏俊背書包走進教室，
+    <em>桌上沒有發新的測驗卷、黑板上沒有「下週段考倒數」的紅字。</em>
+    導師在台前說了一句他從沒在韓國校園聽過的話：
+    「這個學期，我們不考試。週一是社團、週二是主題選修、週三和週四是藝術和體育，週五，
+    <em>我們離開教室，去看看這個城市裡的人，怎麼工作。」</em>
+    敏俊愣了 3 秒，舉手問：「老師，那⋯⋯我們是要做什麼？」
+    導師笑了：「練習做你自己。」
+  </div>
+
+  <div class="news">
+    <strong>韓國「自由學期制」자유학기제（Free Semester System）。</strong>
+    朴槿惠政府教育公約之一，2013 年由教育部宣布試辦、2015 年擴大至全國 80% 國中、
+    <strong>2016 年起全國國中強制實施。</strong>對象是國一某一個學期（多為下學期），
+    特色：❶ 取消所有期中、期末筆試 ❷ 不排名、不打分數 ❸ 改以多元評量取代
+    （學習日誌、作品集、自評互評）。一週課表結構：
+    週一<strong>社團活動</strong>、週二<strong>主題選修</strong>、週三/週四<strong>藝術 × 體育</strong>、週五<strong>職涯探索</strong>
+    （學生會走出校園，到醫院、消防隊、設計工作室、咖啡店、市政府實際體驗一日工作）。
+    2018 年再升級為「自由學年制」자유학년제，從一個學期延長為一整學年。
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>韓國這項政策不是「教育鬆綁」──是一個全亞洲補習最重的國家，集體承認了一件事：
+    <strong>「孩子在 13 歲那年，需要一個沒有分數的學期，去問自己『我是誰』。」</strong>
+    當你抽掉考試──你才會看見孩子真正喜歡什麼、害怕什麼、擅長什麼。
+    這就是 SEL 的「自我覺察」最具體的實踐。台灣現在的國一生，一個學期要考幾次？
+    妳可以做的版本不是「逼學校放棄考試」──而是在每個週末，<strong>替孩子留出 3 小時「沒有目的」的時間</strong>──
+    不寫評量、不上才藝、不查資料。讓他發呆、亂畫、亂問、亂想。
+    那 3 小時，就是妳家的「自由學期」。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍ 可直接發布文案</span>
+    2016 年，韓國──那個亞洲補習最重、自殺率最高、考試壓力最大的國家──做了一件事：<br><br>
+    全國國中生，有一個學期，<strong>不考試、不打分數、不排名。</strong><br><br>
+    週一社團、週二選修、週三四藝術體育，週五，他們離開教室，<br>
+    去消防隊、咖啡店、設計工作室，看大人怎麼工作。<br><br>
+    導師在第一堂課對他們說：<br>
+    「這個學期，練習做你自己。」<br><br>
+    為什麼？因為韓國終於承認一件事：<br>
+    <strong>「13 歲的孩子，需要一個沒有分數的學期，才能練習問自己——『我是誰？我喜歡什麼？』」</strong><br><br>
+    我們改變不了體制──<br>
+    但每一個週末，妳可以替孩子留出 3 小時，<br>
+    那 3 小時：不寫作業、不上才藝、不安排活動。<br>
+    讓他發呆、亂畫、亂問、亂想。<br><br>
+    那是妳家的「自由學期」。<br>
+    那 3 小時，是妳給他這一輩子，最珍貴的學費。
+  </div>
+
+  <div class="quote">
+    全亞洲最會考試的國家，2016 年集體鬆手了 1 學期──不是因為他們不在乎成績，是因為他們終於明白：13 歲那年沒練過「做自己」的孩子，30 歲那年會用一場崩潰，把學費連本帶利討回來。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第三層・趨勢（國際教育政策／SEL 全球趨勢／自我覺察制度化）</div>
+    <div><span class="k">適合對象</span>國中家長、教育政策關注者、體制反思家庭</div>
+    <div><span class="k">適合平台</span>FB 長文、教育媒體投稿、家長社團轉發</div>
+    <div><span class="k">引用來源</span>韓國教育部《自由學期制 자유학기제》政策白皮書（2013 試辦／2015 擴大／2016 全面實施）｜Yoonsoo Park《자유학기제 효과성 연구》SSRN｜韓國國家教育課程資訊中心 NCIC｜韓國 2018 自由學年制升級政策（자유학년제）</div>
+    <div><span class="k">配圖關鍵字</span>Korean middle school classroom, free semester Korea, students career exploration, exam-free learning</div>
+  </div>
+</div>
+
+<!-- ===================== 第 5 篇 ｜ 加值：教養兩難 × Baumrind 4 種教養型態 ===================== -->
+<div class="card" data-card-id="5">
+  <span class="card-tag tag-extra">▎ 加值．教養兩難</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'">☆</div>
+
+  <h2>「我是太兇，還是妳太寵？」──週日晚上 10 點，我和老婆為孩子的事，吵了第 47 次</h2>
+
+  <div class="opening">
+    <em>週日晚上 10:08，客廳燈光昏黃。</em>兒子剛上樓睡覺，
+    我在沙發上滑手機，老婆從廚房走出來，把剛擦完的杯子放下，深吸了一口氣：
+    <em>「你今天那樣兇他，他眼眶都紅了你知道嗎？」</em>我手機放下，火也上來了：
+    <em>「妳一直護著他，他才永遠學不會！」</em>
+    然後就是熟悉的台詞：「你太嚴。」「妳太寵。」「我嚴妳就裝白臉。」「你那樣孩子會怕你！」
+    時鐘指向 10:32。我們又一次，沒吵完──就一個躺左邊、一個躺右邊地睡了。
+    這已經是這半年，第 47 次了。
+  </div>
+
+  <div class="news">
+    <strong>不是「嚴」對「寬」，是 4 種教養型態的拼圖。</strong>
+    美國加州大學柏克萊分校發展心理學家 Diana Baumrind 1966 年發表
+    《Effects of Authoritative Parental Control on Child Behavior》於《Child Development》期刊，
+    1971 年再以 3 種教養型態建立完整框架；1983 年 Eleanor Maccoby 與 John Martin 補上第 4 種。
+    這個跨 60 年、被引用超過 4 萬次的經典模型，把教養拆成 2 軸 4 型：
+    ❶ <strong>威權型 Authoritarian</strong>（高要求 + 低回應）「你聽我的就對了」
+    ❷ <strong>民主威信型 Authoritative</strong>（高要求 + 高回應）「我有規則，但我也聽你」
+    ❸ <strong>放任型 Permissive</strong>（低要求 + 高回應）「沒事，你開心就好」
+    ❹ <strong>忽視型 Uninvolved</strong>（低要求 + 低回應）「隨便你⋯⋯」
+    超過半世紀的縱貫研究都指向同一個結論：
+    <strong>「民主威信型」（高要求 × 高回應）的孩子，自尊、學業、心理健康全面最佳。</strong>
+  </div>
+
+  <div class="insight">
+    <strong>覺知 SEL 觀點：</strong>夫妻吵的「嚴 vs 寬」是假議題──
+    真正的軸線從來不是「嚴或寬」，是
+    <strong>「要求 × 回應」這 2 個維度，能不能同時打開。</strong>
+    威權型只有「要求」、放任型只有「回應」──兩個都對孩子是傷害，只是傷的方式不同。
+    民主威信型的關鍵不是「中間」，是「兩個都要」：
+    <strong>「我堅守 9 點上床（高要求），但我願意聽你說，你今天為什麼不想去上學（高回應）。」</strong>
+    今晚當妳跟伴侶吵「嚴或寬」時，把問題換掉。
+    問彼此：「我們的『要求』夠清楚嗎？我們的『回應』夠柔軟嗎？」
+    這時候，妳們不再是敵人──是並肩在做同一件事。
+  </div>
+
+  <div class="post">
+    <span class="post-label">▍ 可直接發布文案</span>
+    我跟太太（先生）今年為孩子吵第 47 次。<br>
+    每次都是同一個劇本：「你太嚴」「妳太寵」「你都黑臉」「妳都白臉」。<br><br>
+    後來我才知道──<br>
+    <strong>嚴對寬，是個假議題。</strong><br><br>
+    心理學家 Diana Baumrind 60 年前的研究告訴我們：<br>
+    教養不是 1 條尺從嚴到寬──是 2 個軸：<br>
+    ❶ 對孩子的<strong>要求</strong>夠不夠清楚<br>
+    ❷ 對孩子的<strong>回應</strong>夠不夠柔軟<br><br>
+    只有要求、沒有回應 → 威權型 → 孩子怕你<br>
+    只有回應、沒有要求 → 放任型 → 孩子失序<br>
+    都沒有 → 忽視型 → 孩子孤單<br>
+    <strong>2 個都有 → 民主威信型 → 孩子最穩</strong><br><br>
+    所以我跟先生（老婆）今晚不再吵「嚴或寬」。<br>
+    我們改問彼此 2 句話：<br><br>
+    「我們的規則夠清楚嗎？」<br>
+    「我們的擁抱夠柔軟嗎？」<br><br>
+    這 2 句問完，才發現──我們根本不是站在對立面。<br>
+    我們站在同一邊，只是過去 5 年，沒人告訴我們：<br>
+    嚴和愛，從來不是要選一邊。
+  </div>
+
+  <div class="quote">
+    嚴對寬，是夫妻最常吵、卻最假的議題。真正的問題從來不是「誰太嚴誰太寵」──而是我們有沒有同時做到「規則清楚 × 擁抱柔軟」。一旦這 2 個維度同時打開，黑臉白臉就消失了。剩下的，是 2 個並肩的大人。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>加值類別・教養兩難（夫妻教養觀分歧／父母自我照顧）</div>
+    <div><span class="k">適合對象</span>夫妻共同帶孩子的家庭、隔代教養衝突家庭、單親後重組家庭</div>
+    <div><span class="k">適合平台</span>FB 長文、Threads 對話腳本、夫妻關係社群</div>
+    <div><span class="k">引用來源</span>Diana Baumrind 1966《Child Development》〈Effects of Authoritative Parental Control on Child Behavior〉｜Baumrind 1971《Current Patterns of Parental Authority》Developmental Psychology Monograph｜Maccoby & Martin 1983 第 4 型補充｜APA 教養型態系列研究</div>
+    <div><span class="k">配圖關鍵字</span>parents arguing kitchen night, family living room dim light, couple parenting disagreement, parenting style</div>
+  </div>
+</div>
+
+<div class="foot">
+  <div>—</div>
+  <div><strong>覺知 SEL 教育</strong>　｜　每天 08:15 / 13:15 / 18:15 自動產出 5 則家長文宣</div>
+  <div>本日 ｜ 2026.05.06 ｜ 早晨 08:15 ｜ 五則覺知 SEL 教養觀察</div>
+  <div style="margin-top:10px;font-size:12px;color:#bdae98">★ 標記：請點擊每張卡片右上角的星星，記錄您實際發布過的文案，週日 review 任務會讀取此標記。</div>
+</div>
+
+</div>
+</body>
+</html>
