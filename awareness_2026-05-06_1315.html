@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>覺知 SEL 教育每日教養文宣 ｜ 2026.05.06 13:15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#b85a3e;
+  --pain:#d97757;
+  --skill:#8c6bc7;
+  --trend:#5fb3a1;
+  --extra:#a48a64;
+  --ink:#2d2620;
+  --ink-soft:#5a4f46;
+  --bg:#fbf8f4;
+  --card:#ffffff;
+  --border:#ebe2d6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.78;
+}
+.wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#fff5ec 0%,#fce8db 100%);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .brand-tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:4px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:14px 0 6px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.5;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:14px;
+  letter-spacing:1.5px;
+}
+.head .sub{
+  margin-top:14px;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.7;
+}
+.hero{
+  margin:24px 0 32px;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 24px rgba(217,119,87,0.06);
+}
+.hero svg{display:block;width:100%;height:auto}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px 28px 26px;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 14px rgba(45,38,32,0.04);
+  position:relative;
+}
+.card-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  padding:5px 11px;
+  border-radius:20px;
+  margin-bottom:12px;
+}
+.tag-pain{ background:#fbe5d9; color:var(--pain); }
+.tag-skill{ background:#ece4f7; color:var(--skill); }
+.tag-trend{ background:#dff1ec; color:#3f8a78; }
+.tag-extra{ background:#efe7d6; color:#7a6643; }
+
+.star-slot{
+  position:absolute;
+  top:18px;
+  right:20px;
+  width:34px;
+  height:34px;
+  border:1px dashed #d4c8b6;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#bdae98;
+  font-size:18px;
+  background:#fbf7f1;
+  cursor:pointer;
+  transition:all 0.2s;
+  user-select:none;
+}
+.star-slot:hover{ border-color:var(--brand); color:var(--brand); }
+.star-slot.on{ background:#fff3df; border:1px solid var(--brand); color:#e8a030; }
+
+.card h2{
+  font-size:20px;
+  line-height:1.55;
+  margin:8px 0 14px;
+  color:var(--ink);
+  letter-spacing:0.5px;
+  padding-right:48px;
+}
+.card .opening{
+  background:#fbf7f1;
+  border-left:3px solid var(--border);
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:15px;
+  color:var(--ink-soft);
+  margin:14px 0 18px;
+  line-height:1.85;
+}
+.card .opening em{
+  color:var(--brand-deep);
+  font-style:normal;
+  font-weight:600;
+}
+.card .news{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:#f4eee5;
+  padding:12px 14px;
+  border-radius:8px;
+  margin:14px 0 18px;
+  line-height:1.8;
+}
+.card .news strong{ color:var(--ink); }
+.card .insight{
+  margin:14px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .insight strong{ color:var(--brand-deep); }
+.card .post{
+  background:linear-gradient(135deg,#fffaf3 0%,#fff5ea 100%);
+  border:1px solid #f0e2cf;
+  border-radius:12px;
+  padding:18px 20px;
+  margin:18px 0;
+  font-size:15px;
+  line-height:1.95;
+}
+.card .post .post-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:8px;
+  display:block;
+}
+.card .quote{
+  margin-top:16px;
+  padding:14px 18px;
+  border-left:3px solid var(--brand);
+  background:#fff8f1;
+  border-radius:0 10px 10px 0;
+  font-size:15px;
+  font-weight:600;
+  color:var(--brand-deep);
+  line-height:1.85;
+}
+.meta{
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px dashed var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.85;
+}
+.meta div{ margin:3px 0; }
+.meta .k{ color:#9c8973; display:inline-block; min-width:84px; }
+
+.foot{
+  text-align:center;
+  margin-top:36px;
+  font-size:13px;
+  color:#a89880;
+  letter-spacing:1px;
+}
+.foot strong{ color:var(--brand-deep); }
+@media (max-width:600px){
+  .head h1{ font-size:21px; }
+  .card h2{ font-size:18px; padding-right:42px; }
+  .star-slot{ width:30px; height:30px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="brand-tag">覺知 SEL 每日教養</span>
+  <h1>午後 13:15──那些孩子用「我不想」說出口的話，背後其實是「我撐不住了」</h1>
+  <div class="date">2026.05.06 ｜ 13:15 ｜ 台灣時間</div>
+  <div class="sub">
+    五則為剛吃完便當回到辦公室的爸爸、把碗筷洗完坐下喘口氣的媽媽、午休備課的老師、剛把孩子接回幼兒園準備午睡的阿公阿嬤，與一個人在捷運上滑著家庭群組照片的新手爸爸而寫。<br>
+    今天聊：國三兒子模考完癱在床上 3 天的「學習無助」、16 歲女兒在高鐵站推開爸爸那一秒的「分離個體化」、8 歲外甥女只會說「煩」到能說出 12 種情緒的「情緒粒度」、澳洲 1500 所學校共用的 GEM 三字訣，以及──「我跟兒子相處 5 分鐘就不知道要講什麼」那種爸爸才懂的孤單。
+  </div>
+</header>
+
+<div class="hero">
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" aria-label="午後 13:15 視覺主圖">
+  <defs>
+    <linearGradient id="afterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4e3"/>
+      <stop offset="55%" stop-color="#fde7d2"/>
+      <stop offset="100%" stop-color="#f4d6c0"/>
+    </linearGradient>
+    <linearGradient id="floorGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9d6bf"/>
+      <stop offset="100%" stop-color="#cdb699"/>
+    </linearGradient>
+    <radialGradient id="warmSun2" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#ffd28a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffd28a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="300" fill="url(#afterGrad)"/>
+
+  <!-- 午後光暈 -->
+  <circle cx="730" cy="70" r="140" fill="url(#warmSun2)"/>
+  <circle cx="730" cy="70" r="32" fill="#ffc26b" opacity="0.5"/>
+
+  <!-- 地板 -->
+  <rect x="0" y="225" width="880" height="75" fill="url(#floorGrad2)"/>
+  <line x1="0" y1="225" x2="880" y2="225" stroke="#a78b6e" stroke-width="1"/>
+
+  <!-- 1. 攤在床上的男孩（學習無助） -->
+  <g transform="translate(110,180)">
+    <rect x="-46" y="-2" width="92" height="22" rx="3" fill="#a98668" stroke="#7a5a40" stroke-width="1.2"/>
+    <rect x="-46" y="-26" width="22" height="24" rx="3" fill="#c89e7c" stroke="#7a5a40" stroke-width="1.2"/>
+    <ellipse cx="-12" cy="-2" rx="28" ry="6" fill="#e8d0b8" stroke="#a98668" stroke-width="0.8"/>
+    <!-- 人形 -->
+    <rect x="-32" y="-10" width="60" height="8" rx="3" fill="#5e7ab5" opacity="0.85"/>
+    <circle cx="-30" cy="-15" r="6" fill="#e2b794" stroke="#a8835f" stroke-width="0.8"/>
+    <!-- 雲朵：考卷飄走 -->
+    <g transform="translate(38,-32)">
+      <rect x="-12" y="-8" width="24" height="18" fill="#fff" stroke="#c9a989" stroke-width="0.8" rx="1.5" transform="rotate(8)"/>
+      <text x="0" y="3" text-anchor="middle" font-size="9" fill="#b85a3e" font-weight="700" transform="rotate(8)">62</text>
+    </g>
+    <!-- 灰色雲（空白） -->
+    <g transform="translate(20,-46)">
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="#d4cabd" opacity="0.7"/>
+      <text x="0" y="3" text-anchor="middle" font-size="9" fill="#7a6f5e">...</text>
+    </g>
+  </g>
+
+  <!-- 2. 高鐵站推開的那一秒（分離個體化） -->
+  <g transform="translate(265,200)">
+    <!-- 行李箱 -->
+    <rect x="-18" y="-8" width="36" height="34" rx="3" fill="#9ab5c7" stroke="#5d7a8c" stroke-width="1.2"/>
+    <line x1="-12" y1="-8" x2="-12" y2="26" stroke="#5d7a8c" stroke-width="0.8"/>
+    <rect x="-3" y="-18" width="6" height="12" fill="#5d7a8c"/>
+    <!-- 大手 -->
+    <g transform="translate(-30,-22)">
+      <ellipse cx="0" cy="0" rx="11" ry="7" fill="#e2b794" stroke="#a8835f" stroke-width="0.8" transform="rotate(-30)"/>
+    </g>
+    <!-- 推開動線 -->
+    <path d="M -38 -16 Q -50 -22 -56 -28" stroke="#d97757" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -38 -10 Q -52 -14 -58 -20" stroke="#d97757" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- 高鐵符號 -->
+    <g transform="translate(28,-30)">
+      <rect x="-12" y="-6" width="24" height="11" rx="3" fill="#fff" stroke="#5fb3a1" stroke-width="1.2"/>
+      <line x1="-7" y1="-3" x2="-2" y2="-3" stroke="#5fb3a1" stroke-width="1.2"/>
+      <line x1="2" y1="-3" x2="9" y2="-3" stroke="#5fb3a1" stroke-width="1.2"/>
+      <text x="0" y="14" text-anchor="middle" font-size="8" fill="#3f8a78">HSR</text>
+    </g>
+  </g>
+
+  <!-- 3. 12 種情緒詞彙小光點（情緒粒度） -->
+  <g transform="translate(420,150)">
+    <!-- 中央色板：從單色到多色 -->
+    <rect x="-44" y="-4" width="22" height="22" rx="2" fill="#9aa3b3" opacity="0.55"/>
+    <text x="-33" y="11" text-anchor="middle" font-size="8" fill="#fff" font-weight="700">煩</text>
+    <!-- 箭頭 -->
+    <path d="M -16 8 L -4 8" stroke="#8c6bc7" stroke-width="1.6" fill="none" marker-end="url(#arr)"/>
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c6bc7"/>
+      </marker>
+    </defs>
+    <!-- 12 個小色塊 -->
+    <g transform="translate(8,-12)">
+      <rect x="0" y="0" width="14" height="14" rx="2" fill="#f5b8a5"/>
+      <rect x="16" y="0" width="14" height="14" rx="2" fill="#c2a8e6"/>
+      <rect x="32" y="0" width="14" height="14" rx="2" fill="#9ed6c4"/>
+      <rect x="48" y="0" width="14" height="14" rx="2" fill="#ffd28a"/>
+      <rect x="0" y="16" width="14" height="14" rx="2" fill="#a4c1e8"/>
+      <rect x="16" y="16" width="14" height="14" rx="2" fill="#f0a4b8"/>
+      <rect x="32" y="16" width="14" height="14" rx="2" fill="#bdc9a0"/>
+      <rect x="48" y="16" width="14" height="14" rx="2" fill="#dda8b8"/>
+      <rect x="0" y="32" width="14" height="14" rx="2" fill="#e8c89c"/>
+      <rect x="16" y="32" width="14" height="14" rx="2" fill="#9bb5d6"/>
+      <rect x="32" y="32" width="14" height="14" rx="2" fill="#c79a7f"/>
+      <rect x="48" y="32" width="14" height="14" rx="2" fill="#7fa8a0"/>
+    </g>
+  </g>
+
+  <!-- 4. 澳洲：袋鼠剪影 + GEM 三顆寶石（趨勢） -->
+  <g transform="translate(600,210)">
+    <!-- 袋鼠剪影簡化 -->
+    <path d="M -18 8 L -22 -4 Q -22 -14 -10 -16 L -4 -18 Q 4 -22 8 -14 L 12 -6 L 22 -2 L 14 4 L 14 12 L 8 12 L 6 6 L -2 6 L -4 14 L -10 14 Z" fill="#a48164" stroke="#7a5d40" stroke-width="0.8"/>
+    <!-- GEM 寶石 -->
+    <g transform="translate(-2,-44)">
+      <polygon points="-22,0 -16,-8 -8,0 -16,8" fill="#7fbfa9" stroke="#3f8a78" stroke-width="1"/>
+      <text x="-16" y="3" text-anchor="middle" font-size="8" fill="#1f4d40" font-weight="700">G</text>
+      <polygon points="-6,0 0,-8 8,0 0,8" fill="#f0b08a" stroke="#b85a3e" stroke-width="1"/>
+      <text x="0" y="3" text-anchor="middle" font-size="8" fill="#5e2a18" font-weight="700">E</text>
+      <polygon points="10,0 16,-8 24,0 16,8" fill="#bda6e0" stroke="#7c5fb0" stroke-width="1"/>
+      <text x="16" y="3" text-anchor="middle" font-size="8" fill="#3a2860" font-weight="700">M</text>
+    </g>
+  </g>
+
+  <!-- 5. 捷運上的爸爸（自我照顧） -->
+  <g transform="translate(770,170)">
+    <!-- 吊環 -->
+    <line x1="0" y1="-50" x2="0" y2="-22" stroke="#888" stroke-width="1.4"/>
+    <circle cx="0" cy="-18" r="6" fill="none" stroke="#888" stroke-width="1.6"/>
+    <!-- 人 -->
+    <circle cx="0" cy="2" r="9" fill="#e2b794" stroke="#a8835f" stroke-width="0.8"/>
+    <rect x="-12" y="10" width="24" height="22" rx="6" fill="#5d7a8c" stroke="#3a4f5e" stroke-width="0.8"/>
+    <!-- 手機 -->
+    <rect x="-5" y="14" width="10" height="14" rx="1.5" fill="#fff" stroke="#3a4f5e" stroke-width="0.6"/>
+    <circle cx="0" cy="20" r="1.4" fill="#f5b8a5"/>
+    <!-- 思考泡泡：問號 -->
+    <g transform="translate(20,-8)">
+      <ellipse cx="0" cy="0" rx="13" ry="10" fill="#fff" stroke="#a48a64" stroke-width="1"/>
+      <text x="0" y="4" text-anchor="middle" font-size="13" fill="#7a6643" font-weight="700">?</text>
+    </g>
+  </g>
+</svg>
+</div>
+
+<!-- ============= 卡片 1 ============= -->
+<div class="card">
+  <span class="card-tag tag-pain">● 家長痛點</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'" title="標記為已發布">☆</div>
+  <h2>「他模考完那 3 天，連手機都不滑了」──國三兒子整個人「攤」掉那一刻，不是擺爛，是一種叫「學習無助」的腦反應在他身上開機了</h2>
+
+  <div class="opening">
+    週日中午 12:40，<em>媽媽走進兒子房間</em>，模考成績單還壓在桌角。「你要不要起來吃飯？」她小聲問。15 歲的兒子背對著她，「不想吃。」<br>
+    這已經是第三天了。模考分數沒到他自己預設的標準，他從週四晚回家後，就把書包丟進房間，連他平常最愛的籃球直播都沒打開。媽媽心裡那句話差點脫口：「你才考一次而已，至於這樣嗎？」──但她忍住了。
+  </div>
+
+  <div class="news">
+    🧠 <strong>研究線索</strong>：心理學家 Martin Seligman 與 Steven Maier 在賓州大學提出的「學習無助 (learned helplessness)」概念指出，當一個人反覆經歷「我再怎麼努力都改變不了結果」之後，大腦會逐漸切換到一種「乾脆什麼都不做」的省電模式──不是懶，是內建保護機制被啟動。後來 Seligman 也被視為正向心理學的奠基者之一。
+    （參考：Seligman & Maier 1967 的經典實驗，後續延伸進整個正向心理學領域）
+  </div>
+
+  <div class="insight">
+    很多家長以為「孩子考差就消沉」是一種任性、玻璃心。但從 SEL 的角度看，這 3 天的「攤」，其實是他大腦在說：「我已經試過了，但我撐不住，請給我一個喘口氣的角落。」<br>
+    這時候你說「你才一次而已」「人家誰誰誰也才考差過」，會把他僅剩的那點力氣，<strong>逼成「連抱怨都不敢」的安靜</strong>。<br>
+    真正能把他從攤的姿勢扶起來的，不是激勵話，是<strong>幫他把那場考試的「失敗」拆小</strong>──哪一科崩、哪一題卡、是時間不夠還是觀念不通？把那團「我整個人都不行」的感覺，拆成 3 個可以動的小零件，他就能重新開機。
+  </div>
+
+  <div class="post">
+    <span class="post-label">可直接發布</span>
+    孩子考差後消沉那幾天，最不要做的事，是逼他「振作」。<br>
+    當他癱在床上、不講話、連手機都懶得滑──那不是擺爛，是他大腦正在進入一種叫「學習無助」的省電模式。<br>
+    心理學家 Seligman 早就提醒過：當一個孩子覺得「我再怎麼努力都沒用」，他不是不在意，是他比你還在意，只是他撐不住了。<br>
+    這時候你能做的，是輕輕替他把那場「失敗」拆小：<br>
+    「這次哪一科最讓你失望？」<br>
+    「是時間沒分配好，還是有觀念你還沒搞懂？」<br>
+    「下一次，你只想先處理哪一個？」<br>
+    這 3 句話，比 30 句激勵都靠近他。<br>
+    因為孩子要的，不是你叫他站起來──是你願意蹲下來，陪他一起，把那塊壓在他身上的石頭，搬到他可以扛得起的小塊。
+  </div>
+
+  <div class="quote">
+    孩子的「無助」不是個性，是訊號。當他說「不想動」的那一天，請先別急著幫他動──先問他：「你身上現在最累的是哪一塊？」那一個被聽見的瞬間，就是他重新有力氣的開始。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・家長痛點（考試焦慮／學習無助／青少年消沉）</div>
+    <div><span class="k">適合平台</span>FB／LINE 群組／IG 圖文</div>
+    <div><span class="k">適合對象</span>國中、高中生家長；孩子在考試文化高壓下的爸媽</div>
+    <div><span class="k">參考來源</span>Martin Seligman & Steven Maier 1967 學習無助經典實驗（賓州大學）／Seligman 後續正向心理學論述</div>
+    <div><span class="k">Unsplash 關鍵字</span>teen boy lying bed quiet afternoon light · exam paper desk corner</div>
+  </div>
+</div>
+
+<!-- ============= 卡片 2 ============= -->
+<div class="card">
+  <span class="card-tag tag-pain">● 家長痛點</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'" title="標記為已發布">☆</div>
+  <h2>「我才不要爸爸載！」──高鐵站送行那一秒，16 歲女兒推開爸爸的手那個動作，不是無情，是她大腦正在學一件事：怎麼成為「她自己」</h2>
+
+  <div class="opening">
+    週日中午 11:50，高鐵左營站。<em>爸爸視角，16 歲高一女兒</em>第一次自己北上參加營隊。爸爸彎腰想替她拉行李箱，女兒的手反射性把他的手撥開：「我自己拿啦！」<br>
+    爸爸愣了 2 秒。心裡冒出 3 句話：<br>
+    「妳幹嘛這樣？」<br>
+    「我幫妳拿，妳會比較輕鬆。」<br>
+    「妳是不是覺得我很煩？」<br>
+    最後他什麼都沒說。只是把手收回來，看著她拖著那個比她小時候大兩倍的行李箱，走進剪票口。
+  </div>
+
+  <div class="news">
+    🧠 <strong>研究線索</strong>：兒童心理學家 Margaret Mahler 提出的「分離-個體化 (separation-individuation)」歷程指出，孩子從幼兒期到青春期，會反覆經歷「黏緊你」與「推開你」這兩種看似矛盾、其實相連的動作──那不是叛逆，是大腦在學「怎麼把『我』從『我們』裡長出來」。Mary Ainsworth 後來透過陌生情境實驗也指出：依附穩定的孩子，反而更敢往外走。
+    （參考：Margaret Mahler《The Psychological Birth of the Human Infant》1975；Mary Ainsworth 安全依附理論）
+  </div>
+
+  <div class="insight">
+    爸爸覺得被推開很心酸。但從 SEL 的角度看，那一秒的推開，其實是──<br>
+    <strong>她信任你會接住她，所以才敢用力把你的手推開</strong>。<br>
+    一個從小沒被穩定接住的孩子，到了 16 歲反而會黏得緊緊、不敢自己走進剪票口。會推開你的手的孩子，是她已經把你的愛存進心裡，準備帶著那個內建版的你，自己出門。<br>
+    這時候你最想說的「你是不是覺得我很煩」會把那扇正在開的門「砰」地關回來。最該說的，是<strong>把退讓變成祝福</strong>──讓她的「自己拿」，變成你在替她開的第一扇門。
+  </div>
+
+  <div class="post">
+    <span class="post-label">可直接發布</span>
+    16 歲的女兒，第一次自己北上參加營隊。<br>
+    我彎腰要替她拉行李，她把我的手撥開：「我自己拿啦！」<br>
+    那一秒，我心臟有點酸。但今天我想說：那不是無情。<br>
+    心理學家 Margaret Mahler 早就告訴我們：孩子從 1 歲到 18 歲，會反覆做兩個動作──<br>
+    1️⃣ 黏緊你：因為他需要你<br>
+    2️⃣ 推開你：因為他需要「成為他自己」<br>
+    第二個動作不是叛逆，是長大。<br>
+    而最關鍵的研究線索是──<br>
+    一個會大方推開你的孩子，往往是被你穩穩接住長大的孩子。<br>
+    所以當她推開你的手那一秒，請別說：<br>
+    ❌「妳幹嘛這樣？」<br>
+    ❌「妳是不是覺得我很煩？」<br>
+    請說：<br>
+    ✅「好，那爸爸退一步。需要我，就回頭找我。」<br>
+    這一句話，會讓那扇正在開的門，留下一條縫──讓她知道，<br>
+    她可以走遠，但她回頭時，你還在。
+  </div>
+
+  <div class="quote">
+    青春期那雙推開你的手，是她在說：「謝謝你把我接住到 16 歲。剩下的這段路，我想自己走一段──但我知道，回頭還能找到你。」這份信任，比她小時候撲進你懷裡那一秒，還珍貴。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第一層・家長痛點（青春期叛逆／分離個體化／父女關係）</div>
+    <div><span class="k">適合平台</span>FB（中年爸爸社團最有共鳴）／LINE 父女家庭群組</div>
+    <div><span class="k">適合對象</span>高中、大學生家長；正在面對「孩子離家」儀式感的爸媽</div>
+    <div><span class="k">參考來源</span>Margaret Mahler《The Psychological Birth of the Human Infant》1975 分離-個體化／Mary Ainsworth 安全依附 strange situation</div>
+    <div><span class="k">Unsplash 關鍵字</span>train station father daughter goodbye luggage · teenage independence backpack</div>
+  </div>
+</div>
+
+<!-- ============= 卡片 3 ============= -->
+<div class="card">
+  <span class="card-tag tag-skill">◆ 能力培養</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'" title="標記為已發布">☆</div>
+  <h2>「她從『我很煩』，到能說出 12 種情緒名字」──那不是辭典背得熟，是大腦長出了一塊叫「情緒粒度」的肌肉</h2>
+
+  <div class="opening">
+    <em>阿姨視角，8 歲外甥女</em>。三個月前她不管遇到什麼事，回應只有一個字：「煩。」<br>
+    考試考差──煩。被同學說頭髮翹一邊──煩。媽媽叫她吃飯──煩。<br>
+    阿姨那時陪她做了一件很小的事：每天睡前 5 分鐘，從一張畫了 36 種表情的小卡裡，挑出「今天你覺得最像哪一張」。<br>
+    三個月後的某一天，她從學校回家，蹲在玄關脫鞋，自己冒了一句：「阿姨，我今天不是生氣，是『被忽略』──那種你站在那裡，沒人看見你的感覺。」
+  </div>
+
+  <div class="news">
+    🧠 <strong>研究線索</strong>：神經科學家 Lisa Feldman Barrett 在《How Emotions Are Made》(2017) 提出「<strong>情緒粒度 (emotional granularity)</strong>」概念──意思是，能精細地區辨自己情緒的人（例如能分辨「失望」「被忽略」「自卑」是 3 種不同的感受），心理健康指標明顯較好，看醫生與用藥的頻率都比較低。她提醒：<strong>能命名一種情緒，大腦才能把它管理起來。</strong>
+    （參考：Lisa Feldman Barrett《How Emotions Are Made: The Secret Life of the Brain》Houghton Mifflin Harcourt 2017；Theory of Constructed Emotion）
+  </div>
+
+  <div class="insight">
+    很多家長以為，孩子的情緒詞彙是「教就會」。但從 SEL 的角度看，<strong>情緒詞彙是大腦的語言肌肉</strong>──當孩子只擁有「煩、爛、累、無聊」這 4 個字，他面對所有情緒時，大腦只能用這 4 個按鈕回應。<br>
+    當你陪他從 4 個按鈕長到 12 個、24 個──「失落、不甘心、被忽略、緊張、羞愧、心疼自己、有點期待又有點害怕」──他大腦處理情緒的解析度，就從<strong>馬賽克變成了高清</strong>。<br>
+    高清的孩子，比較不會崩潰。因為他能告訴自己（也能告訴你）：「我現在是哪一種，我需要什麼。」
+  </div>
+
+  <div class="post">
+    <span class="post-label">可直接發布</span>
+    當你發現孩子最近開口閉口都是「煩、爛、無聊、不知道」──<br>
+    別急著糾正他「你怎麼脾氣那麼差」。<br>
+    那其實是一個訊號：他大腦的「情緒詞彙庫」太小，裝不下他正在感受的東西。<br>
+    神經科學家 Lisa Feldman Barrett 把這件事叫做「情緒粒度」──<br>
+    粒度高的人：能分辨「我是失望、是被忽略、還是不甘心」。<br>
+    粒度低的人：所有負面感受都只能塞進「煩」這一個字裡。<br>
+    研究發現：粒度高的人心理健康指標更好。<br>
+    今天可以陪孩子做的小練習：<br>
+    📌 睡前 3 分鐘，問他：「今天最讓你有感覺的一件事是什麼？那個感覺如果不是『煩』，會是哪個字？」<br>
+    📌 給他 5 個選項：失望、緊張、被忽略、不甘心、有點期待但害怕——讓他挑。<br>
+    📌 不要急著解決那個情緒，<strong>命名它，就已經是一半的療癒</strong>。<br>
+    一個能準確說出自己感受的孩子，會比同齡人更穩定，也更不容易崩潰。
+  </div>
+
+  <div class="quote">
+    當孩子能從「煩」長出 12 種情緒的名字，他不只是詞彙變多──是他開始有能力，<strong>把每一個情緒從身體裡撈出來，看看它，再放回去。</strong>能命名的情緒，才不會反過來吞掉孩子。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第二層・能力培養（情緒辨識／自我覺察／情緒粒度）</div>
+    <div><span class="k">適合平台</span>IG 圖文輪播（最有教學感）／FB 教養社團／部落格</div>
+    <div><span class="k">適合對象</span>3-12 歲幼兒到國小家長；情緒詞彙貧乏的孩子的爸媽</div>
+    <div><span class="k">參考來源</span>Lisa Feldman Barrett《How Emotions Are Made》2017 Houghton Mifflin Harcourt（Theory of Constructed Emotion／Northeastern University 神經科學家）／Frontiers in Psychology 2021〈Cultivating Emotional Granularity〉</div>
+    <div><span class="k">Unsplash 關鍵字</span>child emotion cards facial expression chart · pastel feeling wheel</div>
+  </div>
+</div>
+
+<!-- ============= 卡片 4 ============= -->
+<div class="card">
+  <span class="card-tag tag-trend">▲ 科學與趨勢</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'" title="標記為已發布">☆</div>
+  <h2>一個澳洲老師、3 個英文字母──「GEM」這個字現在被超過 1500 所澳洲學校寫進每週課表，背後不是教改，是一場關於「我們到底要孩子記住什麼」的提問</h2>
+
+  <div class="opening">
+    <em>narrator 視角，澳洲墨爾本郊區小學</em>，週二早晨 9:10。班導 Sarah 在白板上寫下今天的「Daily GEM」：<br>
+    G — 你今天感謝的一件事<br>
+    E — 你今天看見一個同學的什麼<br>
+    M — 你深呼吸 3 次後，注意到的一個感覺<br>
+    8 歲的孩子各自拿出小本子，安靜寫了 5 分鐘。然後分組分享。整個過程沒有評分、沒有對錯、沒有獎品。<br>
+    這就是現在被超過 1500 所澳洲學校採用的「Resilience Project」每週固定動作。
+  </div>
+
+  <div class="news">
+    🌏 <strong>趨勢線索</strong>：澳洲教師 Hugh van Cuylenburg 年輕時到印度北部偏鄉學校做志工，發現那裡物質匱乏的孩子卻特別開朗、有韌性。他歸納出 3 個共通特質──Gratitude（感恩）、Empathy（同理）、Mindfulness（正念）──簡稱 <strong>GEM</strong>。回到澳洲後創立「The Resilience Project」，把這 3 件事設計成學校每週可實踐的活動。
+    至 2024-2025 年間，已與超過 1500 所澳洲學校合作，並擴展至職業運動隊（國家橄欖球聯盟、澳洲板球隊、奧委會等）的心理韌性訓練。
+    （參考：theresilienceproject.com.au；Penguin Books Australia《The Resilience Project》Hugh van Cuylenburg 2019）
+  </div>
+
+  <div class="insight">
+    GEM 的厲害之處，不在它有多新──感恩、同理、正念這 3 件事，每一件都不新。它的厲害是：<br>
+    <strong>把「人格教育」從一場演講，變成一個每週重複的小動作</strong>。<br>
+    我們華人教育最常做的，是「告訴孩子要感恩」「告訴孩子要有同理心」──但只說一次。GEM 把這 3 件事拆成「每天 5 分鐘的肌肉訓練」，連續 12 週，讓那個動作變成神經迴路。<br>
+    當孩子能在每天遇到挫折時，自動冒出「我先深呼吸 3 次」「我謝謝今天身邊的誰」「我看見對方可能也很累」──那不是教養，是<strong>習慣搬進了大腦</strong>。
+  </div>
+
+  <div class="post">
+    <span class="post-label">可直接發布</span>
+    澳洲有一個老師，做了一件很小、又很大的事。<br>
+    Hugh van Cuylenburg 年輕時去印度偏鄉教書，發現一件讓他失眠的事：那些幾乎一無所有的孩子，比他在澳洲教過的小孩都還快樂、還有韌性。<br>
+    他蹲下來觀察了好幾個月，整理出他們共通的 3 個特質：<br>
+    🌿 G — Gratitude（感恩）<br>
+    🌿 E — Empathy（同理）<br>
+    🌿 M — Mindfulness（正念）<br>
+    他把這 3 個字帶回澳洲，做成「The Resilience Project」。現在已經有超過 1500 所學校，每週固定做一次「Daily GEM」：<br>
+    1️⃣ 寫下今天感謝的一件事<br>
+    2️⃣ 寫下你看見一個同學的什麼<br>
+    3️⃣ 深呼吸 3 次，寫下身體現在的一個感覺<br>
+    花 5 分鐘。沒有對錯、沒有獎勵、沒有評分。<br>
+    我們華人家長最常做的，是「告訴孩子要感恩」「告訴孩子要正念」──但只說一次。<br>
+    GEM 教我們的，是把這 3 件事，變成<strong>每天 5 分鐘的小動作</strong>。<br>
+    從今晚的晚餐桌，可以這樣開始：<br>
+    「今天最讓你想說謝謝的一件小事是什麼？」<br>
+    「你今天有沒有看見誰，看起來不太一樣？」<br>
+    「先深呼吸 3 次。你身體現在哪裡比較緊？」<br>
+    這 3 句話，比 30 場演講有用。<br>
+    因為韌性不是教出來的，是練出來的。
+  </div>
+
+  <div class="quote">
+    GEM 的祕密不在 3 個字，而在它每天只花你 5 分鐘──但連續 12 週，會在孩子大腦裡蓋出一條叫「我撐得住」的神經高速公路。今晚的晚餐桌，就可以開工。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>第三層・科學與趨勢（澳洲 SEL 政策／韌性教育／GEM 框架）</div>
+    <div><span class="k">適合平台</span>FB 教育社團／部落格深度文／Threads 引用串</div>
+    <div><span class="k">適合對象</span>對國際 SEL 政策有興趣的家長與老師；想找系統性練習的爸媽</div>
+    <div><span class="k">參考來源</span>The Resilience Project 官方網站 theresilienceproject.com.au／Hugh van Cuylenburg《The Resilience Project: Finding Happiness through Gratitude, Empathy and Mindfulness》Penguin Books Australia 2019</div>
+    <div><span class="k">Unsplash 關鍵字</span>australian classroom wellbeing journal · gratitude empathy mindfulness chalkboard</div>
+  </div>
+</div>
+
+<!-- ============= 卡片 5 ============= -->
+<div class="card">
+  <span class="card-tag tag-extra">◇ 加值・家長自我照顧</span>
+  <div class="star-slot" onclick="this.classList.toggle('on');this.textContent=this.classList.contains('on')?'★':'☆'" title="標記為已發布">☆</div>
+  <h2>「我跟我兒子相處 5 分鐘，就不知道要講什麼」──32 歲爸爸在捷運上滑著家庭群組那 12 分鐘，撞上一個沒人教過他的問題：「我這個爸爸，到底會不會」</h2>
+
+  <div class="opening">
+    週三下午 13:18。<em>32 歲爸爸自述視角</em>，捷運中正紀念堂站，從公司開完會要回家，比平常早了一小時。<br>
+    他打開 LINE 家庭群組，老婆傳了一張 4 歲女兒在幼兒園吃午餐的照片，配字：「她今天說想爸爸。」<br>
+    他盯著那張照片看了大概 12 分鐘，沒有回。<br>
+    心裡有兩句話卡在那裡：<br>
+    「我也想她。」<br>
+    「但我每次跟她相處 5 分鐘，就不知道要講什麼了。」<br>
+    他低頭，繼續滑手機，假裝沒事。
+  </div>
+
+  <div class="news">
+    📚 <strong>研究線索</strong>：兒童發展學者 Michael Lamb 在《The Role of the Father in Child Development》多次再版的綜整研究中指出，過去 30 年的父職研究有一個重要轉變──研究界發現，<strong>爸爸真正的影響力不是來自「陪多久」，而是來自「投入的品質」</strong>。但同時，研究也指出許多爸爸面臨一種「父職孤獨」：他們從沒被自己的父親教過怎麼當爸爸，而社會也很少把「不會帶小孩」當成可以說出口的脆弱。
+    （參考：Michael Lamb《The Role of the Father in Child Development》Wiley，多版；國內外父職研究綜整）
+  </div>
+
+  <div class="insight">
+    「我不知道要跟我女兒講什麼」這句話，幾乎沒有爸爸敢公開講。<br>
+    因為社會給爸爸的劇本是──「養家、堅強、不抱怨」。但從 SEL 的角度看，<strong>當一個爸爸願意承認自己「不太會」，他才剛剛開始學「會」。</strong><br>
+    那 12 分鐘的沉默，不是冷漠。是一個 32 歲的男人，正在面對一個沒人教過他的科目──「怎麼跟自己的小孩說話」。<br>
+    給所有正在這個科目修課的爸爸：<strong>不是你要會，是你願意笨笨地練。</strong>從一句「妳今天最開心的事是什麼」開始，從一個「我也不太知道要怎麼陪妳，但我想試試」的告白開始──那個 12 分鐘的爸爸，會慢慢變成那個女兒回家會直接撲進去的爸爸。
+  </div>
+
+  <div class="post">
+    <span class="post-label">可直接發布</span>
+    寫給捷運上正在滑家庭群組、不知道該回什麼的那個爸爸：<br>
+    「我跟我女兒相處 5 分鐘，就不知道要講什麼。」<br>
+    這句話你可能不敢跟老婆講、不敢跟兄弟講、甚至不敢跟自己講。<br>
+    但這不是你不愛她。是你從沒被教過怎麼陪一個小孩。<br>
+    兒童發展學者 Michael Lamb 提醒過一件事：<br>
+    爸爸的影響力，從來不是來自「陪多久」，是來自<strong>「投入的品質」</strong>。<br>
+    那「品質」不需要你變成超級爸爸。它只需要你從這 3 個動作開始：<br>
+    1️⃣ 蹲下來，跟她視線同高，30 秒。<br>
+    2️⃣ 問她一句具體的話：「妳今天最好笑的一件事是什麼？」（不是「今天好不好」）<br>
+    3️⃣ 不評論、不糾正、不教育──只說一句：「哇，那很酷耶。」<br>
+    就這 3 個動作。每天一次。<br>
+    第 30 天，你會發現她開始主動找你講話。<br>
+    不是因為你變了個人，是因為你<strong>有種第一次的勇敢</strong>──願意在「不會」的位置，繼續陪她。<br>
+    爸爸不是天生會的。爸爸是練出來的。
+  </div>
+
+  <div class="quote">
+    最好的爸爸，不是那個一回家就能跟孩子聊半小時的人；是那個願意承認「我不太會，但我想學」、然後從蹲下、視線同高、問一句具體話開始的人。你今天敢開口的那 30 秒，就是 30 年後她回頭找你的那個原因。
+  </div>
+
+  <div class="meta">
+    <div><span class="k">分類</span>加值・家長自我照顧（爸爸角色焦慮／父職孤獨／父女關係）</div>
+    <div><span class="k">適合平台</span>FB 中年男性社團／LINE 個人簡訊／IG 引言文案</div>
+    <div><span class="k">適合對象</span>0-12 歲女兒的爸爸；不知道怎麼跟孩子講話的新手或忙碌爸爸</div>
+    <div><span class="k">參考來源</span>Michael Lamb《The Role of the Father in Child Development》Wiley 多版次／國內外父職研究綜整／父職孤獨概念於兒童發展學界廣為討論</div>
+    <div><span class="k">Unsplash 關鍵字</span>tired father subway phone family photo · dad daughter eye contact moment</div>
+  </div>
+</div>
+
+<div class="foot">
+  <strong>覺知 SEL 教育</strong>｜每日教養文宣・午後 13:15 場・2026.05.06<br>
+  五則為剛吃完午餐喘口氣的你而寫。請慢慢看，挑一則今晚就用得上的，帶回家。
+</div>
+
+</div>
+</body>
+</html>

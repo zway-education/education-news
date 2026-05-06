@@ -167,6 +167,12 @@
   }
   .tag-extra.active, .tag-extra:hover { background: var(--ant-mid); color: #fff; border-color: var(--ant-mid); }
 
+  /* 教養精華（每日覺知文案）：深靛 + 金杏 */
+  .tag-essence {
+    background: #eaeef7; color: #2a3f73; border-color: #c5cee6;
+  }
+  .tag-essence.active, .tag-essence:hover { background: #3b5998; color: #fff; border-color: #3b5998; }
+
   /* 關鍵字：Dark */
   .tag-kw {
     background: var(--ant-light-gray); color: var(--ant-dark); border-color: var(--ant-light-gray);
@@ -223,7 +229,29 @@
   .dot-skill { background: var(--ant-blue); }
   .dot-trend { background: var(--ant-green); }
   .dot-extra { background: var(--ant-mid); }
+  .dot-essence { background: #3b5998; }
   .dot-default { background: var(--ant-light-gray); }
+
+  /* 上傳日期 chip：每張卡片右上角顯示 */
+  .upload-date {
+    display: inline-block; font-size: 11px; color: #5a5048;
+    background: #f3ede0; border: 1px solid #e1d6bb; border-radius: 8px;
+    padding: 2px 8px; letter-spacing: .5px; margin-left: 6px;
+    font-family: 'JetBrains Mono', Menlo, monospace;
+  }
+  /* essence 卡片：左側深靛色條 + 米杏底色 */
+  .article-card.is-essence {
+    border-left: 4px solid #3b5998; background: #fbf8f1;
+  }
+  .article-card.is-essence:hover {
+    border-color: #3b5998; box-shadow: 0 4px 20px rgba(59,89,152,0.15);
+  }
+  .article-card.is-essence .card-time-badge {
+    background: #eaeef7; border-color: #c5cee6;
+  }
+  .article-card.is-essence .card-time-badge .nth { color: #3b5998; }
+  .article-card.is-essence .card-arrow { color: #c5cee6; }
+  .article-card.is-essence:hover .card-arrow { color: #3b5998; }
   .card-arrow { flex-shrink: 0; color: var(--ant-light-gray); font-size: 20px; align-self: center; transition: color 0.2s; }
   .article-card:hover .card-arrow { color: var(--ant-orange); }
 
@@ -322,6 +350,7 @@
     <button class="topic-tag tag-skill" onclick="tagFilter('skill', this)" data-mode="type" data-val="skill">💜 能力培養</button>
     <button class="topic-tag tag-trend" onclick="tagFilter('trend', this)" data-mode="type" data-val="trend">🌿 科學趨勢</button>
     <button class="topic-tag tag-extra" onclick="tagFilter('extra', this)" data-mode="type" data-val="extra">✨ 加值類別</button>
+    <button class="topic-tag tag-essence" onclick="tagFilter('essence', this)" data-mode="type" data-val="essence">💙 教養精華</button>
     <div class="tag-cloud-divider"></div>
     <!-- 關鍵字標籤 -->
     <button class="topic-tag tag-kw" onclick="tagFilter('情緒', this)" data-mode="kw" data-val="情緒">情緒管理</button>
@@ -361,6 +390,23 @@
 // ══════════════════════════════════════════
 const articles = [
   {
+    file: "awareness_2026-05-06_1315.html",
+    date: "2026-05-06", time: "13:15",
+    topics: [
+      { text: "「我才不要爸爸載！」──高鐵站送行那一秒，16歲女兒推開爸爸的手那個動作，不是無情，是她大腦正在學一件事：怎麼成為「她自己」", type: "pain" },
+      { text: "「她從『我很煩』，到能說出12種情緒名字」──那不是辭典背得熟，是大腦長出了一塊叫「情緒粒度」的肌肉", type: "skill" },
+      { text: "一個澳洲老師、3個英文字母──「GEM」這個字現在被超過1500所澳洲學校寫進每週課表，背後不是教改，是一場關於「我們到底要孩子記住什麼」的提問", type: "trend" }
+    ]
+  },
+  {
+    file: "parenting_essence_2026-05-06.html",
+    date: "2026-05-06", time: "09:30",
+    series: "essence",
+    topics: [
+      { text: "他甩上的那扇門，不是把你關在外面，是他在練習成為自己", type: "essence" }
+    ]
+  },
+  {
     file: "awareness_2026-05-06_0815.html",
     date: "2026-05-06", time: "08:15",
     topics: [
@@ -385,6 +431,14 @@ const articles = [
       { text: "「媽媽我恨你！」──6歲女兒甩浴室門那一秒，不是她變壞，是她大腦還沒長出「分得開情緒和你」的那條線", type: "pain" },
       { text: "「考幾分？」──你一回家那句沒過大腦的口頭禪，正在悄悄替孩子寫好「他怎麼看自己」的劇本", type: "pain" },
       { text: "5歲孫子早晨堅持要紅襪子的那12分鐘──不是他鬧脾氣，是大腦那條叫「能轉彎」的肌肉，正在悄悄練習", type: "skill" }
+    ]
+  },
+  {
+    file: "parenting_essence_2026-05-05.html",
+    date: "2026-05-05", time: "09:30",
+    series: "essence",
+    topics: [
+      { text: "當孩子一遇難就說「我不會」——他要的不是答案，是被相信", type: "essence" }
     ]
   },
   {
@@ -857,8 +911,8 @@ function closeViewer() {
 // ══════════════════════════════════════════
 //  篩選狀態
 // ══════════════════════════════════════════
-const dotClass = { pain: 'dot-pain', skill: 'dot-skill', trend: 'dot-trend', extra: 'dot-extra', default: 'dot-default' };
-const typeLabel = { pain: '家長痛點', skill: '能力培養', trend: '科學趨勢', extra: '加值類別' };
+const dotClass = { pain: 'dot-pain', skill: 'dot-skill', trend: 'dot-trend', extra: 'dot-extra', essence: 'dot-essence', default: 'dot-default' };
+const typeLabel = { pain: '家長痛點', skill: '能力培養', trend: '科學趨勢', extra: '加值類別', essence: '教養精華' };
 
 // 台灣時間今天日期
 const now = new Date();
@@ -927,7 +981,8 @@ function render() {
 
     groups[date].forEach(a => {
       const card = document.createElement('div');
-      card.className = 'article-card';
+      const isEssence = (a.series === 'essence') || (a.topics && a.topics.length === 1 && a.topics[0].type === 'essence');
+      card.className = 'article-card' + (isEssence ? ' is-essence' : '');
       card.onclick = () => openViewer(a.file);
       const tp = a.time.split(':');
       const nth = nthByFile[a.file];
@@ -943,13 +998,17 @@ function render() {
           </div>`;
       }).join('');
 
+      const badgeLabel = isEssence ? '每日精華' : `第 ${nth} 篇`;
       card.innerHTML = `
         <div class="card-time-badge">
-          <div class="nth">第 ${nth} 篇</div>
+          <div class="nth">${badgeLabel}</div>
           <div class="time">｜${tp[0]}:${tp[1]}</div>
         </div>
         <div class="card-info">
-          <div class="card-filename">${a.file}</div>
+          <div class="card-filename">
+            ${a.file}
+            <span class="upload-date" title="上傳日期">📅 ${a.date}</span>
+          </div>
           <div class="card-topics">${topicsHtml}</div>
         </div>
         <div class="card-arrow">›</div>
@@ -967,7 +1026,7 @@ function render() {
 }
 
 function typeColor(type) {
-  return { pain: '#d97757', skill: '#7c5cbf', trend: '#2aa06b', extra: '#b89a38' }[type] || '#aaa';
+  return { pain: '#d97757', skill: '#7c5cbf', trend: '#2aa06b', extra: '#b89a38', essence: '#3b5998' }[type] || '#aaa';
 }
 
 function highlightText(text, q) {
