@@ -6,8 +6,8 @@
 <title>當孩子一遇難就說「我不會」——他要的不是答案，是被相信｜覺知教養每日精華</title>
 <style>
   :root{
-    --brand:#3b5998;
-    --brand-deep:#2a3f73;
+    --brand:#d97757;
+    --brand-deep:#a85a31;
     --accent:#c9a96e;
     --accent-soft:#f3e7cf;
     --ink:#2a2620;
@@ -182,5 +182,34 @@
   </footer>
 
 </div>
+
+<style>
+.share-fab{
+  position:fixed;bottom:22px;right:22px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(59,89,152,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.share-fab:hover{background:rgba(59,89,152,1);transform:scale(1.08);}
+.share-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.share-fab::after{
+  content:'下載 IG/FB 分享圖';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#d97757;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.share-fab:hover::after{opacity:1;}
+@media(max-width:600px){.share-fab{bottom:16px;right:16px;width:42px;height:42px;}.share-fab::after{display:none;}}
+</style>
+<a class="share-fab" href="parenting_essence_2026-05-05_share.png" download title="下載 IG/FB 分享圖">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
 </body>
 </html>

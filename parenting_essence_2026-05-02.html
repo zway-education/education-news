@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>餐桌上的 10 分鐘，比一場家庭會議更深 ｜ 覺知教養．每日精華</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="家庭關係不是靠週末的盛大計畫維繫的，是靠每天那 10 分鐘——你們同時放下手機、抬頭看見彼此的時間。">
+<style>
+:root{
+  --brand:#3b5998;
+  --brand-deep:#2a3f73;
+  --brand-soft:#e9eef7;
+  --accent:#c9a96e;
+  --accent-soft:#f6efe0;
+  --ink:#2a2620;
+  --ink-soft:#5a5048;
+  --bg:#fbf7f1;
+  --card:#ffffff;
+  --border:#e8ddc8;
+  --shadow:0 4px 20px rgba(59,89,152,0.06);
+}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+}
+.wrap{max-width:780px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#eef2fb 0%,#f6efe0 100%);
+  border-radius:20px;
+  padding:32px 28px 28px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:3px;
+  padding:5px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head .age{
+  display:inline-block;
+  margin-left:8px;
+  background:var(--accent);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:5px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:16px 0 10px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.55;
+  font-weight:700;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:13px;
+  letter-spacing:1.5px;
+}
+.head .hook{
+  margin-top:18px;
+  color:var(--ink-soft);
+  font-size:15px;
+  line-height:1.85;
+  border-left:3px solid var(--accent);
+  padding-left:14px;
+}
+.hero{
+  margin:0 0 28px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.hero svg{display:block;width:100%;height:auto}
+section.body{
+  background:var(--card);
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+section.body h2{
+  font-size:19px;
+  margin:0 0 14px;
+  padding-left:14px;
+  border-left:4px solid var(--brand);
+  color:var(--brand-deep);
+  letter-spacing:1px;
+}
+section.body p{margin:0 0 14px;color:var(--ink)}
+section.body p:last-child{margin-bottom:0}
+.steps{
+  background:var(--brand-soft);
+  border-radius:18px;
+  padding:28px 24px 22px;
+  margin-bottom:22px;
+  border:1px solid #d6dff0;
+}
+.steps > h2{
+  font-size:19px;
+  margin:0 0 18px;
+  color:var(--brand-deep);
+  letter-spacing:1px;
+  text-align:center;
+}
+.step{
+  background:#fff;
+  border-radius:14px;
+  padding:20px 20px 18px;
+  margin-bottom:14px;
+  border:1px solid #dde4f1;
+  position:relative;
+}
+.step:last-child{margin-bottom:0}
+.step .num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:var(--brand);
+  color:#fff;
+  font-weight:700;
+  font-size:15px;
+  margin-right:10px;
+  vertical-align:middle;
+}
+.step h3{
+  display:inline;
+  font-size:17px;
+  color:var(--brand-deep);
+  letter-spacing:0.5px;
+  margin:0;
+  vertical-align:middle;
+}
+.step p{margin:12px 0 10px;color:var(--ink);font-size:15px;line-height:1.8}
+.step .quote{
+  background:var(--accent-soft);
+  border-left:3px solid var(--accent);
+  padding:10px 14px;
+  margin:8px 0 0;
+  border-radius:0 8px 8px 0;
+  font-size:14.5px;
+  color:#6f5a35;
+  line-height:1.75;
+}
+.step .quote::before{
+  content:"你可以這樣說　";
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:1px;
+}
+.outro{
+  background:linear-gradient(135deg,#c9a96e 0%,#b8975a 100%);
+  color:#fff;
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  box-shadow:var(--shadow);
+}
+.outro h2{
+  font-size:19px;
+  margin:0 0 14px;
+  color:#fff;
+  letter-spacing:2px;
+  border-left:4px solid #fff;
+  padding-left:14px;
+}
+.outro p{margin:0 0 12px;line-height:1.85}
+.outro p:last-of-type{margin-bottom:18px}
+.outro .practice{
+  background:rgba(255,255,255,0.18);
+  border-radius:12px;
+  padding:14px 18px;
+  margin:14px 0 18px;
+  font-size:15px;
+  line-height:1.8;
+}
+.outro .practice strong{color:#fff;letter-spacing:1px}
+.outro .signature{
+  text-align:right;
+  font-size:14px;
+  letter-spacing:1.5px;
+  margin-top:14px;
+  opacity:0.95;
+}
+.checklist{
+  background:#fff;
+  border:1.5px dashed var(--brand);
+  border-radius:14px;
+  padding:22px 22px 18px;
+  margin-bottom:22px;
+}
+.checklist h3{
+  font-size:16px;
+  margin:0 0 12px;
+  color:var(--brand-deep);
+  letter-spacing:1.5px;
+}
+.checklist ol{
+  margin:0;
+  padding-left:22px;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  line-height:1.85;
+}
+.checklist ol li{margin-bottom:6px}
+.foot{
+  margin-top:20px;
+  padding:22px 20px;
+  background:#fff;
+  border-radius:14px;
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.8;
+}
+.foot .row{margin-bottom:8px}
+.foot .row strong{color:var(--brand-deep);letter-spacing:1px}
+.foot .slogans{
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px dashed var(--border);
+  text-align:center;
+  letter-spacing:2px;
+  color:var(--accent);
+  font-size:13px;
+}
+@media(max-width:600px){
+  .wrap{padding:20px 14px 60px}
+  .head{padding:26px 22px 22px}
+  .head h1{font-size:22px}
+  section.body{padding:24px 22px}
+  section.body h2{font-size:17px}
+  .steps{padding:22px 18px 18px}
+  .step{padding:18px}
+  .outro{padding:26px 22px}
+  .outro h2{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="tag">覺知教養 ｜ 每日精華</span>
+  <span class="age">家庭儀式</span>
+  <h1>餐桌上的 10 分鐘，比一場家庭會議更深</h1>
+  <div class="date">週六．家庭氛圍與儀式感</div>
+  <div class="hook">家庭關係不是靠週末的盛大計畫維繫的，是靠每天那 10 分鐘——你們同時放下手機、抬頭看見彼此的時間。</div>
+</header>
+
+<div class="hero"><svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2fb"/>
+      <stop offset="100%" stop-color="#f6efe0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b5998" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2a3f73" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="780" height="220" fill="url(#g1)"/>
+  <circle cx="640" cy="60" r="42" fill="#c9a96e" opacity="0.55"/>
+  <circle cx="690" cy="120" r="22" fill="#c9a96e" opacity="0.35"/>
+  <path d="M0,170 Q195,110 390,160 T780,140 L780,220 L0,220 Z" fill="url(#g2)"/>
+  <path d="M0,190 Q195,150 390,185 T780,170 L780,220 L0,220 Z" fill="#2a3f73" opacity="0.5"/>
+  <g transform="translate(110,90)" fill="#3b5998" opacity="0.75">
+    <circle cx="0" cy="0" r="8"/>
+    <circle cx="40" cy="-12" r="6"/>
+    <circle cx="80" cy="0" r="8"/>
+    <path d="M0,0 L40,-12 L80,0" stroke="#3b5998" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+  <g transform="translate(280,55)" fill="#c9a96e">
+    <path d="M0,30 C 5,5 25,-5 30,30 Z" opacity="0.7"/>
+    <path d="M14,30 L14,55" stroke="#b8975a" stroke-width="2" opacity="0.7"/>
+  </g>
+</svg></div>
+
+<section class="body">
+  <h2>共鳴開場</h2>
+  <p>晚餐桌上，三支手機、一台平板。爸爸在看股票、媽媽在回工作群組、姐姐在追劇、弟弟在打遊戲。沒有人在聊天，但大家都覺得「我們有一起吃飯」。</p>
+<p>飯吃完了，碗一收，各自回房間。你關上廚房的燈，突然發現——這一個小時裡，你跟孩子加起來說的話，可能不到二十句。</p>
+<p>你不是不關心，你只是太累。但你也隱約知道，如果再這樣下去，等到孩子十七歲、二十歲，你想跟他說話，他可能也不知道怎麼跟你說了。因為你們從來沒有練習過，怎麼安靜地，看著對方吃飯。</p>
+</section>
+
+<section class="body">
+  <h2>覺知洞察</h2>
+  <p>儀式感聽起來很玄，但它在家庭裡的功能很實際——它是讓「我們是一家人」這件事被身體記得的方式。每天固定的時間、固定的位置、固定的動作，會在孩子的大腦裡建立一個叫做「家」的迴路。這個迴路，是他長大後遇到挫折時，會想回來的地方。</p>
+<p>研究家庭治療的學者很早就指出：每週一起吃飯五次以上的家庭，孩子的情緒問題、學業表現、人際關係都明顯較穩定。但這個「一起吃飯」有一個前提——是真的「一起」，不是「同時各看各的螢幕」。</p>
+<p>覺知教育的「先懂心，再懂教」，在家庭儀式裡的實踐就是：每天有那麼一段不長的時間，全家人放下手機、放下角色，只是「在這裡」。不教導、不檢查、不評價，只是一起。</p>
+<p>這 10 分鐘不會立刻變出什麼成績，但它在堆積一個東西——孩子十年後想到「家」時，腦海裡會浮現的那張畫面。那張畫面，會決定他往後要怎麼對待自己跟別人。</p>
+</section>
+
+<section class="body">
+  <h2>真實案例（化名）</h2>
+  <p>高雄一位爸爸分享：他們家是雙薪家庭，三個孩子。他發現大女兒升上國中後，每天回家就回房間，連晚餐都要外帶到房間吃。他試過罵、試過規定、試過獎賞，都沒用。</p>
+<p>後來他做了一個小改變：每天晚上 7 點到 7 點 15 分，全家人，包括他自己，把手機放在客廳一個固定的籃子裡，誰都不能碰。然後一起吃飯，不准談學業、不准談分數，可以聊任何事——電動、漫畫、笑話、學校的鬧劇都行。</p>
+<p>第一週，孩子們覺得很彆扭，常常沒話講。第二週，弟弟開始講學校發生的趣事。第三週，姐姐第一次主動分享她在追的小說劇情。第六週，大女兒突然在飯桌上說：「爸，我可以問你一件事嗎？」</p>
+<p>他後來說：「我以為我要做的是『跟孩子聊天』。後來才知道，我要做的是先把那個『可以聊天的位置』穩定地擺在那裡。她準備好的時候，自然會走過來坐下。」</p>
+</section>
+
+<div class="steps">
+  <h2>3 個今天就能做的步驟</h2>
+  <div class="step">
+    <span class="num">1</span><h3>選一個全家都到得了的時段</h3>
+    <p>不一定要晚餐，可以是早餐、宵夜、睡前 10 分鐘的果汁時間。重點是「每天同一個時段，全家在同一個空間」。固定，比完美更重要。</p>
+    <div class="quote">（全家會議時）「我們以後 7 點到 7 點 15 分，大家都坐在客廳，誰晚到誰要洗碗。」</div>
+  </div>
+  <div class="step">
+    <span class="num">2</span><h3>幫手機設一個「家」</h3>
+    <p>在客廳放一個小籃子或盒子，這 10 分鐘所有人的手機都進去。不是沒收，是讓手機也「下班」。當手機不在手裡，眼睛才會抬起來。</p>
+    <div class="quote">「等等吃飯時間，手機們也要去睡覺，全部放這個籃子裡。」</div>
+  </div>
+  <div class="step">
+    <span class="num">3</span><h3>禁止「教育性話題」</h3>
+    <p>這 10 分鐘不准問成績、不准提作業、不准談未來。可以聊：今天最好笑的一件事、最莫名其妙的一件事、最想吃的東西、最近在看的影片。讓餐桌成為「不被審查的地方」。</p>
+    <div class="quote">「我們今天每個人講一件最廢的事，看誰廢。」</div>
+  </div>
+</div>
+
+<section class="outro">
+  <h2>覺知收筆</h2>
+  <p>家庭關係不是大事決定的，是日常的 10 分鐘累積出來的。當孩子知道「每天 7 點，那個位置上一定有人在等我」，他的世界就有了一個錨。</p>
+<p>你不需要當一個有趣的父母、不需要每天有新點子、不需要把家經營成一個樂園。你只需要每天到場，準時坐下。光是這個動作，就已經是給孩子一輩子的禮物了。</p>
+  <div class="practice"><strong>今晚 1 分鐘小練習</strong>：今晚找全家人，討論明天起想要的「10 分鐘儀式」是什麼時段。寫在一張紙上，貼在冰箱。從明天開始試一週，週末再來檢討。</div>
+  <div class="signature">Written by 李守蕾　｜　覺知素養教育創辦人</div>
+</section>
+
+<div class="checklist">
+  <h3>3 秒鐘覺知對話．自我檢核</h3>
+  <ol>
+    <li>我現在怎麼了？（先看見自己的情緒）</li>
+    <li>他現在是什麼狀態？（再看見孩子的處境）</li>
+    <li>我要反應，還是回應？（選擇你想成為的父母）</li>
+  </ol>
+</div>
+
+<footer class="foot">
+  <div class="row"><strong>台灣展威文化教育有限公司</strong>　高雄市鼓山區美術東三路 86 號 ｜ 07-2693525 ｜ LINE @zwayedu ｜ admin@z-way-edu.com</div>
+  <div class="row"><strong>社團法人中華覺知教育關懷協會 (CSECA)</strong>　同址 4 樓 ｜ contact@z-way-edu.com ｜ 統編 72188904</div>
+  <div class="slogans">覺察己心　・　知行合一　｜　先懂心　・　再懂教　｜　蒙以養正　・　老而有尊</div>
+</footer>
+
+</div>
+
+<style>
+.share-fab{
+  position:fixed;bottom:22px;right:22px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(59,89,152,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.share-fab:hover{background:rgba(59,89,152,1);transform:scale(1.08);}
+.share-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.share-fab::after{
+  content:'下載 IG/FB 分享圖';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#3b5998;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.share-fab:hover::after{opacity:1;}
+@media(max-width:600px){.share-fab{bottom:16px;right:16px;width:42px;height:42px;}.share-fab::after{display:none;}}
+</style>
+<a class="share-fab" href="parenting_essence_2026-05-02_share.png" download title="下載 IG/FB 分享圖">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
+</body>
+</html>

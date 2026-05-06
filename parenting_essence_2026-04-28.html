@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>寫作業拖拉的真相——不是懶，是大腦在保護自己 ｜ 覺知教養．每日精華</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="孩子坐在書桌前一個小時只寫了三行，你以為他在偷懶。但對一個正在害怕失敗的大腦來說，「不開始」是最划算的選擇。">
+<style>
+:root{
+  --brand:#3b5998;
+  --brand-deep:#2a3f73;
+  --brand-soft:#e9eef7;
+  --accent:#c9a96e;
+  --accent-soft:#f6efe0;
+  --ink:#2a2620;
+  --ink-soft:#5a5048;
+  --bg:#fbf7f1;
+  --card:#ffffff;
+  --border:#e8ddc8;
+  --shadow:0 4px 20px rgba(59,89,152,0.06);
+}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+}
+.wrap{max-width:780px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#eef2fb 0%,#f6efe0 100%);
+  border-radius:20px;
+  padding:32px 28px 28px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:3px;
+  padding:5px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head .age{
+  display:inline-block;
+  margin-left:8px;
+  background:var(--accent);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:5px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:16px 0 10px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.55;
+  font-weight:700;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:13px;
+  letter-spacing:1.5px;
+}
+.head .hook{
+  margin-top:18px;
+  color:var(--ink-soft);
+  font-size:15px;
+  line-height:1.85;
+  border-left:3px solid var(--accent);
+  padding-left:14px;
+}
+.hero{
+  margin:0 0 28px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.hero svg{display:block;width:100%;height:auto}
+section.body{
+  background:var(--card);
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+section.body h2{
+  font-size:19px;
+  margin:0 0 14px;
+  padding-left:14px;
+  border-left:4px solid var(--brand);
+  color:var(--brand-deep);
+  letter-spacing:1px;
+}
+section.body p{margin:0 0 14px;color:var(--ink)}
+section.body p:last-child{margin-bottom:0}
+.steps{
+  background:var(--brand-soft);
+  border-radius:18px;
+  padding:28px 24px 22px;
+  margin-bottom:22px;
+  border:1px solid #d6dff0;
+}
+.steps > h2{
+  font-size:19px;
+  margin:0 0 18px;
+  color:var(--brand-deep);
+  letter-spacing:1px;
+  text-align:center;
+}
+.step{
+  background:#fff;
+  border-radius:14px;
+  padding:20px 20px 18px;
+  margin-bottom:14px;
+  border:1px solid #dde4f1;
+  position:relative;
+}
+.step:last-child{margin-bottom:0}
+.step .num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:var(--brand);
+  color:#fff;
+  font-weight:700;
+  font-size:15px;
+  margin-right:10px;
+  vertical-align:middle;
+}
+.step h3{
+  display:inline;
+  font-size:17px;
+  color:var(--brand-deep);
+  letter-spacing:0.5px;
+  margin:0;
+  vertical-align:middle;
+}
+.step p{margin:12px 0 10px;color:var(--ink);font-size:15px;line-height:1.8}
+.step .quote{
+  background:var(--accent-soft);
+  border-left:3px solid var(--accent);
+  padding:10px 14px;
+  margin:8px 0 0;
+  border-radius:0 8px 8px 0;
+  font-size:14.5px;
+  color:#6f5a35;
+  line-height:1.75;
+}
+.step .quote::before{
+  content:"你可以這樣說　";
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:1px;
+}
+.outro{
+  background:linear-gradient(135deg,#c9a96e 0%,#b8975a 100%);
+  color:#fff;
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  box-shadow:var(--shadow);
+}
+.outro h2{
+  font-size:19px;
+  margin:0 0 14px;
+  color:#fff;
+  letter-spacing:2px;
+  border-left:4px solid #fff;
+  padding-left:14px;
+}
+.outro p{margin:0 0 12px;line-height:1.85}
+.outro p:last-of-type{margin-bottom:18px}
+.outro .practice{
+  background:rgba(255,255,255,0.18);
+  border-radius:12px;
+  padding:14px 18px;
+  margin:14px 0 18px;
+  font-size:15px;
+  line-height:1.8;
+}
+.outro .practice strong{color:#fff;letter-spacing:1px}
+.outro .signature{
+  text-align:right;
+  font-size:14px;
+  letter-spacing:1.5px;
+  margin-top:14px;
+  opacity:0.95;
+}
+.checklist{
+  background:#fff;
+  border:1.5px dashed var(--brand);
+  border-radius:14px;
+  padding:22px 22px 18px;
+  margin-bottom:22px;
+}
+.checklist h3{
+  font-size:16px;
+  margin:0 0 12px;
+  color:var(--brand-deep);
+  letter-spacing:1.5px;
+}
+.checklist ol{
+  margin:0;
+  padding-left:22px;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  line-height:1.85;
+}
+.checklist ol li{margin-bottom:6px}
+.foot{
+  margin-top:20px;
+  padding:22px 20px;
+  background:#fff;
+  border-radius:14px;
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.8;
+}
+.foot .row{margin-bottom:8px}
+.foot .row strong{color:var(--brand-deep);letter-spacing:1px}
+.foot .slogans{
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px dashed var(--border);
+  text-align:center;
+  letter-spacing:2px;
+  color:var(--accent);
+  font-size:13px;
+}
+@media(max-width:600px){
+  .wrap{padding:20px 14px 60px}
+  .head{padding:26px 22px 22px}
+  .head h1{font-size:22px}
+  section.body{padding:24px 22px}
+  section.body h2{font-size:17px}
+  .steps{padding:22px 18px 18px}
+  .step{padding:18px}
+  .outro{padding:26px 22px}
+  .outro h2{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="tag">覺知教養 ｜ 每日精華</span>
+  <span class="age">6-12 歲學齡</span>
+  <h1>寫作業拖拉的真相——不是懶，是大腦在保護自己</h1>
+  <div class="date">週二．學習動機與自主</div>
+  <div class="hook">孩子坐在書桌前一個小時只寫了三行，你以為他在偷懶。但對一個正在害怕失敗的大腦來說，「不開始」是最划算的選擇。</div>
+</header>
+
+<div class="hero"><svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2fb"/>
+      <stop offset="100%" stop-color="#f6efe0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b5998" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2a3f73" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="780" height="220" fill="url(#g1)"/>
+  <circle cx="640" cy="60" r="42" fill="#c9a96e" opacity="0.55"/>
+  <circle cx="690" cy="120" r="22" fill="#c9a96e" opacity="0.35"/>
+  <path d="M0,170 Q195,110 390,160 T780,140 L780,220 L0,220 Z" fill="url(#g2)"/>
+  <path d="M0,190 Q195,150 390,185 T780,170 L780,220 L0,220 Z" fill="#2a3f73" opacity="0.5"/>
+  <g transform="translate(110,90)" fill="#3b5998" opacity="0.75">
+    <circle cx="0" cy="0" r="8"/>
+    <circle cx="40" cy="-12" r="6"/>
+    <circle cx="80" cy="0" r="8"/>
+    <path d="M0,0 L40,-12 L80,0" stroke="#3b5998" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+  <g transform="translate(280,55)" fill="#c9a96e">
+    <path d="M0,30 C 5,5 25,-5 30,30 Z" opacity="0.7"/>
+    <path d="M14,30 L14,55" stroke="#b8975a" stroke-width="2" opacity="0.7"/>
+  </g>
+</svg></div>
+
+<section class="body">
+  <h2>共鳴開場</h2>
+  <p>晚上八點，書桌前。你問了第三次：「寫到哪了？」他低著頭，鉛筆在紙上轉啊轉，一行字也沒多。你提高音量：「你到底在發什麼呆？這麼簡單的東西寫一個小時！」</p>
+<p>他突然爆哭：「我就是不會啊！」你愣住，因為這個題目你看過——他一個月前明明會。你想說「上次明明會」這幾個字差點脫口，但又想到上次你說完之後他直接把作業本撕掉。</p>
+<p>你覺得自己快要瘋了。他到底是不會、不想、還是在跟你作對？而你，到底還能怎麼辦。</p>
+</section>
+
+<section class="body">
+  <h2>覺知洞察</h2>
+  <p>孩子在書桌前發呆，常常不是「懶」，而是「卡」。卡在什麼？卡在「我可能會做錯」這個想像裡。對一個曾經被罵、被笑、被比較過的大腦來說，「不開始」就不會被罵；「不寫完」就不算失敗。拖延，其實是大腦在偷偷保護自己。</p>
+<p>從教育心理學的角度看，這叫做「習得性無助」的雛形：不是孩子變笨，而是他過去太多次努力之後仍被否定，於是內建了「先放棄比較不痛」的策略。</p>
+<p>覺知教育裡有一個次序：「從他律→自律→自主」。我們希望孩子最後能自主學習，但他不是直接從「你逼他」跳到「他自己想」。中間那段「自律」，需要的不是更嚴的管教，而是更精準的看見：看見他在害怕什麼、他需要什麼樣的台階。</p>
+<p>當父母只看「進度」，孩子學到的是「應付」。當父母先看「狀態」，孩子才學得到「負責」——因為他第一次感覺到，自己是被當成一個人，不是被當成一張作業表。</p>
+</section>
+
+<section class="body">
+  <h2>真實案例（化名）</h2>
+  <p>台北小欣四年級，國語每次寫作業都拖到睡前。媽媽試過獎勵貼紙、扣零用錢、沒收手機，全都只能撐三天。</p>
+<p>有天媽媽終於放下手機，搬張小椅子坐在小欣旁邊，沒有檢查作業，只是說：「妳今天看起來不太想寫。媽媽可以陪妳坐五分鐘嗎？」小欣愣了一下，沒有反抗。</p>
+<p>媽媽在旁邊安靜坐著，沒催進度，過了一會問：「妳卡在哪？」小欣指著一個成語題說：「我每次都寫錯，老師會在家庭聯絡簿圈紅筆，然後妳又會生氣。」</p>
+<p>那一刻媽媽才聽懂：原來孩子拖的不是作業，是「被罵」這件事。她回應說：「妳是怕媽媽生氣，所以乾脆拖到不要面對。對嗎？」小欣點點頭，眼眶紅了。後來她們約定，錯的題目兩人一起查，媽媽不再拿紅筆當武器。三個禮拜後，小欣作業速度沒有變超快，但她不再哭了，會主動拿來問。</p>
+</section>
+
+<div class="steps">
+  <h2>3 個今天就能做的步驟</h2>
+  <div class="step">
+    <span class="num">1</span><h3>把「進度」換成「狀態」</h3>
+    <p>暫時不要問「寫到哪？」「還要多久？」。改成問一個關於他的問題，讓他知道你在意的是他這個人，不是這張紙。</p>
+    <div class="quote">「你今天看起來有點悶，是學校發生什麼事？還是這份作業特別難？」</div>
+  </div>
+  <div class="step">
+    <span class="num">2</span><h3>陪坐 5 分鐘，但不檢查</h3>
+    <p>搬一張椅子坐在他旁邊，做你自己的事（看書、摺衣服都可以）。不催、不問、不滑手機。你的存在本身就是他大腦的安全感來源。</p>
+    <div class="quote">「我陪你坐一下下就好，不檢查，你寫你的，我做我的。」</div>
+  </div>
+  <div class="step">
+    <span class="num">3</span><h3>把錯題從「武器」改成「線索」</h3>
+    <p>下次看到他寫錯，先別急著糾正。一起看那題，問：「你當時是怎麼想的？」當錯誤變成可以一起研究的東西，孩子才願意把腦袋打開來。</p>
+    <div class="quote">「我們來看看這題你怎麼算出這個答案的，我覺得你的想法蠻有意思的。」</div>
+  </div>
+</div>
+
+<section class="outro">
+  <h2>覺知收筆</h2>
+  <p>寫作業這件事，從來都不只是寫作業。它是孩子和父母之間，一場關於「我能不能在你面前犯錯」的長期對話。</p>
+<p>當你能讓他相信「在這個房間裡，做錯沒關係」，他才會把腦袋打開來，真正開始學。學會的，不只是國語數學，是「我可以面對自己不會的東西」這種一輩子都用得到的能力。</p>
+  <div class="practice"><strong>今晚 1 分鐘小練習</strong>：今晚孩子睡了之後，回想他這禮拜寫過的作業，找一件你曾經罵過他的事。在心裡跟他道歉一次（不用真的說出口），並想一個明天可以替換掉的句子。</div>
+  <div class="signature">Written by 李守蕾　｜　覺知素養教育創辦人</div>
+</section>
+
+<div class="checklist">
+  <h3>3 秒鐘覺知對話．自我檢核</h3>
+  <ol>
+    <li>我現在怎麼了？（先看見自己的情緒）</li>
+    <li>他現在是什麼狀態？（再看見孩子的處境）</li>
+    <li>我要反應，還是回應？（選擇你想成為的父母）</li>
+  </ol>
+</div>
+
+<footer class="foot">
+  <div class="row"><strong>台灣展威文化教育有限公司</strong>　高雄市鼓山區美術東三路 86 號 ｜ 07-2693525 ｜ LINE @zwayedu ｜ admin@z-way-edu.com</div>
+  <div class="row"><strong>社團法人中華覺知教育關懷協會 (CSECA)</strong>　同址 4 樓 ｜ contact@z-way-edu.com ｜ 統編 72188904</div>
+  <div class="slogans">覺察己心　・　知行合一　｜　先懂心　・　再懂教　｜　蒙以養正　・　老而有尊</div>
+</footer>
+
+</div>
+
+<style>
+.share-fab{
+  position:fixed;bottom:22px;right:22px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(59,89,152,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.share-fab:hover{background:rgba(59,89,152,1);transform:scale(1.08);}
+.share-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.share-fab::after{
+  content:'下載 IG/FB 分享圖';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#3b5998;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.share-fab:hover::after{opacity:1;}
+@media(max-width:600px){.share-fab{bottom:16px;right:16px;width:42px;height:42px;}.share-fab::after{display:none;}}
+</style>
+<a class="share-fab" href="parenting_essence_2026-04-28_share.png" download title="下載 IG/FB 分享圖">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>從他律到自律到自主——孩子學會的不是聽話，是負責 ｜ 覺知教養．每日精華</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="你以為「乖孩子」是教養的目標，其實「乖」是最危險的階段。真正的成熟不是聽你的話，是聽他自己內在那個越來越清楚的聲音。">
+<style>
+:root{
+  --brand:#d97757;
+  --brand-deep:#a85a31;
+  --brand-soft:#fbe9de;
+  --accent:#c9a96e;
+  --accent-soft:#f6efe0;
+  --ink:#2a2620;
+  --ink-soft:#5a5048;
+  --bg:#fbf7f1;
+  --card:#ffffff;
+  --border:#e8ddc8;
+  --shadow:0 4px 20px rgba(217, 119, 87, 0.08);
+}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+}
+.wrap{max-width:780px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#eef2fb 0%,#f6efe0 100%);
+  border-radius:20px;
+  padding:32px 28px 28px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:3px;
+  padding:5px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head .age{
+  display:inline-block;
+  margin-left:8px;
+  background:var(--accent);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:5px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:16px 0 10px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.55;
+  font-weight:700;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:13px;
+  letter-spacing:1.5px;
+}
+.head .hook{
+  margin-top:18px;
+  color:var(--ink-soft);
+  font-size:15px;
+  line-height:1.85;
+  border-left:3px solid var(--accent);
+  padding-left:14px;
+}
+.hero{
+  margin:0 0 28px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.hero svg{display:block;width:100%;height:auto}
+section.body{
+  background:var(--card);
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+section.body h2{
+  font-size:19px;
+  margin:0 0 14px;
+  padding-left:14px;
+  border-left:4px solid var(--brand);
+  color:var(--brand-deep);
+  letter-spacing:1px;
+}
+section.body p{margin:0 0 14px;color:var(--ink)}
+section.body p:last-child{margin-bottom:0}
+.steps{
+  background:var(--brand-soft);
+  border-radius:18px;
+  padding:28px 24px 22px;
+  margin-bottom:22px;
+  border:1px solid #d6dff0;
+}
+.steps > h2{
+  font-size:19px;
+  margin:0 0 18px;
+  color:var(--brand-deep);
+  letter-spacing:1px;
+  text-align:center;
+}
+.step{
+  background:#fff;
+  border-radius:14px;
+  padding:20px 20px 18px;
+  margin-bottom:14px;
+  border:1px solid #dde4f1;
+  position:relative;
+}
+.step:last-child{margin-bottom:0}
+.step .num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:var(--brand);
+  color:#fff;
+  font-weight:700;
+  font-size:15px;
+  margin-right:10px;
+  vertical-align:middle;
+}
+.step h3{
+  display:inline;
+  font-size:17px;
+  color:var(--brand-deep);
+  letter-spacing:0.5px;
+  margin:0;
+  vertical-align:middle;
+}
+.step p{margin:12px 0 10px;color:var(--ink);font-size:15px;line-height:1.8}
+.step .quote{
+  background:var(--accent-soft);
+  border-left:3px solid var(--accent);
+  padding:10px 14px;
+  margin:8px 0 0;
+  border-radius:0 8px 8px 0;
+  font-size:14.5px;
+  color:#6f5a35;
+  line-height:1.75;
+}
+.step .quote::before{
+  content:"你可以這樣說　";
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:1px;
+}
+.outro{
+  background:linear-gradient(135deg,#c9a96e 0%,#b8975a 100%);
+  color:#fff;
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  box-shadow:var(--shadow);
+}
+.outro h2{
+  font-size:19px;
+  margin:0 0 14px;
+  color:#fff;
+  letter-spacing:2px;
+  border-left:4px solid #fff;
+  padding-left:14px;
+}
+.outro p{margin:0 0 12px;line-height:1.85}
+.outro p:last-of-type{margin-bottom:18px}
+.outro .practice{
+  background:rgba(255,255,255,0.18);
+  border-radius:12px;
+  padding:14px 18px;
+  margin:14px 0 18px;
+  font-size:15px;
+  line-height:1.8;
+}
+.outro .practice strong{color:#fff;letter-spacing:1px}
+.outro .signature{
+  text-align:right;
+  font-size:14px;
+  letter-spacing:1.5px;
+  margin-top:14px;
+  opacity:0.95;
+}
+.checklist{
+  background:#fff;
+  border:1.5px dashed var(--brand);
+  border-radius:14px;
+  padding:22px 22px 18px;
+  margin-bottom:22px;
+}
+.checklist h3{
+  font-size:16px;
+  margin:0 0 12px;
+  color:var(--brand-deep);
+  letter-spacing:1.5px;
+}
+.checklist ol{
+  margin:0;
+  padding-left:22px;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  line-height:1.85;
+}
+.checklist ol li{margin-bottom:6px}
+.foot{
+  margin-top:20px;
+  padding:22px 20px;
+  background:#fff;
+  border-radius:14px;
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.8;
+}
+.foot .row{margin-bottom:8px}
+.foot .row strong{color:var(--brand-deep);letter-spacing:1px}
+.foot .slogans{
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px dashed var(--border);
+  text-align:center;
+  letter-spacing:2px;
+  color:var(--accent);
+  font-size:13px;
+}
+@media(max-width:600px){
+  .wrap{padding:20px 14px 60px}
+  .head{padding:26px 22px 22px}
+  .head h1{font-size:22px}
+  section.body{padding:24px 22px}
+  section.body h2{font-size:17px}
+  .steps{padding:22px 18px 18px}
+  .step{padding:18px}
+  .outro{padding:26px 22px}
+  .outro h2{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="tag">覺知教養 ｜ 每日精華</span>
+  <span class="age">6-15 歲</span>
+  <h1>從他律到自律到自主——孩子學會的不是聽話，是負責</h1>
+  <div class="date">延伸題．學習動機建構</div>
+  <div class="hook">你以為「乖孩子」是教養的目標，其實「乖」是最危險的階段。真正的成熟不是聽你的話，是聽他自己內在那個越來越清楚的聲音。</div>
+</header>
+
+<div class="hero"><svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2fb"/>
+      <stop offset="100%" stop-color="#f6efe0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97757" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#a85a31" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="780" height="220" fill="url(#g1)"/>
+  <circle cx="640" cy="60" r="42" fill="#c9a96e" opacity="0.55"/>
+  <circle cx="690" cy="120" r="22" fill="#c9a96e" opacity="0.35"/>
+  <path d="M0,170 Q195,110 390,160 T780,140 L780,220 L0,220 Z" fill="url(#g2)"/>
+  <path d="M0,190 Q195,150 390,185 T780,170 L780,220 L0,220 Z" fill="#a85a31" opacity="0.5"/>
+  <g transform="translate(110,90)" fill="#d97757" opacity="0.75">
+    <circle cx="0" cy="0" r="8"/>
+    <circle cx="40" cy="-12" r="6"/>
+    <circle cx="80" cy="0" r="8"/>
+    <path d="M0,0 L40,-12 L80,0" stroke="#d97757" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+  <g transform="translate(280,55)" fill="#c9a96e">
+    <path d="M0,30 C 5,5 25,-5 30,30 Z" opacity="0.7"/>
+    <path d="M14,30 L14,55" stroke="#b8975a" stroke-width="2" opacity="0.7"/>
+  </g>
+</svg></div>
+
+<section class="body">
+  <h2>共鳴開場</h2>
+  <p>同事跟你抱怨：「我兒子國二，回家就打電動，怎麼罵都沒用。我朋友的孩子超乖，每天自己讀書到十一點。」你回家看著自己十歲的女兒，想：她現在還算乖，但會不會到了國二也變那樣？</p>
+<p>你開始焦慮，加重管教、加裝監控、規定時間。她變得安靜，做你說的每一件事，但你開始覺得不對勁——她不再主動講話、不再頂嘴、不再哭鬧，但她也不再笑得很大聲了。</p>
+<p>你看著餐桌對面那個聽話的女兒，突然有一個很恐怖的念頭：我教出了一個乖孩子，但我可能也教掉了一個有自己想法的人。</p>
+</section>
+
+<section class="body">
+  <h2>覺知洞察</h2>
+  <p>覺知教育有一條清楚的成長次序：「從他律 → 自律 → 自主」。他律，是父母管；自律，是孩子自己管自己（但動力來自外在期待）；自主，是孩子按照自己內在的價值在生活。三個階段，缺一個都會出問題。</p>
+<p>很多父母以為「乖」就是好。但「乖」其實只是他律的最末段——孩子還沒有自己的標準，他靠的是「我要讓父母開心、不要被罵」。這種狀態到青春期會崩盤，因為內在的「我」開始發育，他發現「我聽你的、不是聽我的」，於是用叛逆把自己拔出來。</p>
+<p>真正穩定的學習動機，來自於「自主」——孩子知道自己為什麼要做這件事。協會的核心理念之一是「先有動機，再談成績」。當孩子內在沒有動機，所有的成績都是表演；當孩子內在有動機，成績只是順勢而為的結果。</p>
+<p>那要怎麼讓孩子從「他律」走到「自主」？關鍵是：每一個年齡段，都要慢慢還他一點點選擇權。三歲選衣服、六歲選晚餐、十歲選週末活動、十五歲選自己的興趣方向。每一個選擇，都是他練習「我是誰」的機會。</p>
+</section>
+
+<section class="body">
+  <h2>真實案例（化名）</h2>
+  <p>桃園一位爸爸分享：他女兒小芸國一，原本成績都在前十名，國二開始掉到二十幾名。爸爸第一反應是加補習、嚴格管，但成績越管越差。</p>
+<p>有天他放棄了，坐下來問她：「妳告訴我，妳希望自己未來變成怎樣的人？」小芸愣了好久，說：「我不知道。我覺得我這輩子都在做你跟媽要我做的事，我從來沒想過自己要什麼。」</p>
+<p>爸爸聽完一晚沒睡。後來他做了一個冒險的決定：寒假兩個禮拜，他跟媽媽不再管小芸的功課，只給她一個任務——「找一件妳真的有興趣的事，做兩個禮拜，做完跟我們分享。」</p>
+<p>小芸選了畫畫。她每天畫四個小時，廢寢忘食。兩個禮拜後她畫了一本小漫畫，跟爸媽分享時眼睛是亮的。爸爸後來說：「我看到她那種眼神，我突然懂了——以前她寫作業的眼神是空的，因為那不是她的事。當她做自己選的事，整個人就活了。」</p>
+<p>後來小芸成績沒有立刻變好，但她開始會主動找爸爸聊「我想學插畫，可是怕爸你不同意」。對爸爸來說，這個對話比第一名還珍貴。</p>
+</section>
+
+<div class="steps">
+  <h2>3 個今天就能做的步驟</h2>
+  <div class="step">
+    <span class="num">1</span><h3>每天還孩子一個小選擇</h3>
+    <p>從最小的事開始：今天晚餐想吃飯還麵？週末想去公園還是書店？這禮拜的零用錢想存起來還是用掉？選擇權的肌肉，是一次一次練出來的。</p>
+    <div class="quote">「今天晚餐妳決定，妳想吃什麼？我們三個人都聽妳的。」</div>
+  </div>
+  <div class="step">
+    <span class="num">2</span><h3>問『為什麼』，不只問『做了沒』</h3>
+    <p>每天問一個關於他想法的問題：「你今天為什麼選那個朋友坐？」「你為什麼想學那個社團？」當他開始有機會說『為什麼』，他就在練習認識自己。</p>
+    <div class="quote">「我不是要妳交代，我只是好奇——妳為什麼今天突然想練鋼琴？」</div>
+  </div>
+  <div class="step">
+    <span class="num">3</span><h3>讓他承擔選擇的『輕微』後果</h3>
+    <p>他選了不寫作業？讓他自己面對老師。他選了花光零用錢？讓他自己撐到月底。當選擇沒有後果，孩子永遠學不會「我要為自己負責」。</p>
+    <div class="quote">「妳今天決定不寫作業，那明天老師問起來，由妳自己跟老師解釋。爸爸不會幫妳寫請假單。」</div>
+  </div>
+</div>
+
+<section class="outro">
+  <h2>覺知收筆</h2>
+  <p>「乖」不是教養的終點，「自主」才是。你的目標不是養出一個聽你話的孩子，而是養出一個 30 年後不需要你也能活得很好的人。</p>
+<p>這條路上你會比較辛苦——你要忍住不替他做決定、忍住看他犯錯、忍住替他擔心。但每一次你忍住，他就多長出一點點屬於自己的力量。等到他長大，他會謝謝你——謝謝你願意把他的人生，還給他自己。</p>
+  <div class="practice"><strong>今晚 1 分鐘小練習</strong>：今晚回想，今天你幫孩子做了哪些他其實可以自己決定的事？挑一件，明天讓他自己選。不論結果如何，都不要『接管』。</div>
+  <div class="signature">Written by 李守蕾　｜　覺知素養教育創辦人</div>
+</section>
+
+<div class="checklist">
+  <h3>3 秒鐘覺知對話．自我檢核</h3>
+  <ol>
+    <li>我現在怎麼了？（先看見自己的情緒）</li>
+    <li>他現在是什麼狀態？（再看見孩子的處境）</li>
+    <li>我要反應，還是回應？（選擇你想成為的父母）</li>
+  </ol>
+</div>
+
+<footer class="foot">
+  <div class="row"><strong>台灣展威文化教育有限公司</strong>　高雄市鼓山區美術東三路 86 號 ｜ 07-2693525 ｜ LINE @zwayedu ｜ admin@z-way-edu.com</div>
+  <div class="row"><strong>社團法人中華覺知教育關懷協會 (CSECA)</strong>　同址 4 樓 ｜ contact@z-way-edu.com ｜ 統編 72188904</div>
+  <div class="slogans">覺察己心　・　知行合一　｜　先懂心　・　再懂教　｜　蒙以養正　・　老而有尊</div>
+</footer>
+
+</div>
+
+<style>
+.share-fab{
+  position:fixed;bottom:22px;right:22px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(59,89,152,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.share-fab:hover{background:rgba(59,89,152,1);transform:scale(1.08);}
+.share-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.share-fab::after{
+  content:'下載 IG/FB 分享圖';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#d97757;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.share-fab:hover::after{opacity:1;}
+@media(max-width:600px){.share-fab{bottom:16px;right:16px;width:42px;height:42px;}.share-fab::after{display:none;}}
+</style>
+<a class="share-fab" href="parenting_essence_2026-04-25_share.png" download title="下載 IG/FB 分享圖">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>3 秒鐘覺知對話——關掉自動回應的開關 ｜ 覺知教養．每日精華</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="孩子說了一句話，你的反應已經衝出來了——你發現自己又重演了上一代對你的劇本。3 秒鐘，是改變這個劇本唯一的縫隙。">
+<style>
+:root{
+  --brand:#3b5998;
+  --brand-deep:#2a3f73;
+  --brand-soft:#e9eef7;
+  --accent:#c9a96e;
+  --accent-soft:#f6efe0;
+  --ink:#2a2620;
+  --ink-soft:#5a5048;
+  --bg:#fbf7f1;
+  --card:#ffffff;
+  --border:#e8ddc8;
+  --shadow:0 4px 20px rgba(59,89,152,0.06);
+}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+}
+.wrap{max-width:780px;margin:0 auto;padding:32px 20px 80px}
+.head{
+  background:linear-gradient(135deg,#eef2fb 0%,#f6efe0 100%);
+  border-radius:20px;
+  padding:32px 28px 28px;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+  position:relative;
+  overflow:hidden;
+}
+.head .tag{
+  display:inline-block;
+  background:var(--brand);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:3px;
+  padding:5px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head .age{
+  display:inline-block;
+  margin-left:8px;
+  background:var(--accent);
+  color:#fff;
+  font-size:12px;
+  letter-spacing:2px;
+  padding:5px 12px;
+  border-radius:20px;
+  font-weight:600;
+}
+.head h1{
+  font-size:26px;
+  margin:16px 0 10px;
+  letter-spacing:1px;
+  color:var(--brand-deep);
+  line-height:1.55;
+  font-weight:700;
+}
+.head .date{
+  color:var(--ink-soft);
+  font-size:13px;
+  letter-spacing:1.5px;
+}
+.head .hook{
+  margin-top:18px;
+  color:var(--ink-soft);
+  font-size:15px;
+  line-height:1.85;
+  border-left:3px solid var(--accent);
+  padding-left:14px;
+}
+.hero{
+  margin:0 0 28px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.hero svg{display:block;width:100%;height:auto}
+section.body{
+  background:var(--card);
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+section.body h2{
+  font-size:19px;
+  margin:0 0 14px;
+  padding-left:14px;
+  border-left:4px solid var(--brand);
+  color:var(--brand-deep);
+  letter-spacing:1px;
+}
+section.body p{margin:0 0 14px;color:var(--ink)}
+section.body p:last-child{margin-bottom:0}
+.steps{
+  background:var(--brand-soft);
+  border-radius:18px;
+  padding:28px 24px 22px;
+  margin-bottom:22px;
+  border:1px solid #d6dff0;
+}
+.steps > h2{
+  font-size:19px;
+  margin:0 0 18px;
+  color:var(--brand-deep);
+  letter-spacing:1px;
+  text-align:center;
+}
+.step{
+  background:#fff;
+  border-radius:14px;
+  padding:20px 20px 18px;
+  margin-bottom:14px;
+  border:1px solid #dde4f1;
+  position:relative;
+}
+.step:last-child{margin-bottom:0}
+.step .num{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:var(--brand);
+  color:#fff;
+  font-weight:700;
+  font-size:15px;
+  margin-right:10px;
+  vertical-align:middle;
+}
+.step h3{
+  display:inline;
+  font-size:17px;
+  color:var(--brand-deep);
+  letter-spacing:0.5px;
+  margin:0;
+  vertical-align:middle;
+}
+.step p{margin:12px 0 10px;color:var(--ink);font-size:15px;line-height:1.8}
+.step .quote{
+  background:var(--accent-soft);
+  border-left:3px solid var(--accent);
+  padding:10px 14px;
+  margin:8px 0 0;
+  border-radius:0 8px 8px 0;
+  font-size:14.5px;
+  color:#6f5a35;
+  line-height:1.75;
+}
+.step .quote::before{
+  content:"你可以這樣說　";
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:1px;
+}
+.outro{
+  background:linear-gradient(135deg,#c9a96e 0%,#b8975a 100%);
+  color:#fff;
+  border-radius:18px;
+  padding:30px 28px;
+  margin-bottom:22px;
+  box-shadow:var(--shadow);
+}
+.outro h2{
+  font-size:19px;
+  margin:0 0 14px;
+  color:#fff;
+  letter-spacing:2px;
+  border-left:4px solid #fff;
+  padding-left:14px;
+}
+.outro p{margin:0 0 12px;line-height:1.85}
+.outro p:last-of-type{margin-bottom:18px}
+.outro .practice{
+  background:rgba(255,255,255,0.18);
+  border-radius:12px;
+  padding:14px 18px;
+  margin:14px 0 18px;
+  font-size:15px;
+  line-height:1.8;
+}
+.outro .practice strong{color:#fff;letter-spacing:1px}
+.outro .signature{
+  text-align:right;
+  font-size:14px;
+  letter-spacing:1.5px;
+  margin-top:14px;
+  opacity:0.95;
+}
+.checklist{
+  background:#fff;
+  border:1.5px dashed var(--brand);
+  border-radius:14px;
+  padding:22px 22px 18px;
+  margin-bottom:22px;
+}
+.checklist h3{
+  font-size:16px;
+  margin:0 0 12px;
+  color:var(--brand-deep);
+  letter-spacing:1.5px;
+}
+.checklist ol{
+  margin:0;
+  padding-left:22px;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  line-height:1.85;
+}
+.checklist ol li{margin-bottom:6px}
+.foot{
+  margin-top:20px;
+  padding:22px 20px;
+  background:#fff;
+  border-radius:14px;
+  border:1px solid var(--border);
+  font-size:13px;
+  color:var(--ink-soft);
+  line-height:1.8;
+}
+.foot .row{margin-bottom:8px}
+.foot .row strong{color:var(--brand-deep);letter-spacing:1px}
+.foot .slogans{
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px dashed var(--border);
+  text-align:center;
+  letter-spacing:2px;
+  color:var(--accent);
+  font-size:13px;
+}
+@media(max-width:600px){
+  .wrap{padding:20px 14px 60px}
+  .head{padding:26px 22px 22px}
+  .head h1{font-size:22px}
+  section.body{padding:24px 22px}
+  section.body h2{font-size:17px}
+  .steps{padding:22px 18px 18px}
+  .step{padding:18px}
+  .outro{padding:26px 22px}
+  .outro h2{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="head">
+  <span class="tag">覺知教養 ｜ 每日精華</span>
+  <span class="age">親子溝通</span>
+  <h1>3 秒鐘覺知對話——關掉自動回應的開關</h1>
+  <div class="date">週四．覺知對話練習</div>
+  <div class="hook">孩子說了一句話，你的反應已經衝出來了——你發現自己又重演了上一代對你的劇本。3 秒鐘，是改變這個劇本唯一的縫隙。</div>
+</header>
+
+<div class="hero"><svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2fb"/>
+      <stop offset="100%" stop-color="#f6efe0"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b5998" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2a3f73" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="780" height="220" fill="url(#g1)"/>
+  <circle cx="640" cy="60" r="42" fill="#c9a96e" opacity="0.55"/>
+  <circle cx="690" cy="120" r="22" fill="#c9a96e" opacity="0.35"/>
+  <path d="M0,170 Q195,110 390,160 T780,140 L780,220 L0,220 Z" fill="url(#g2)"/>
+  <path d="M0,190 Q195,150 390,185 T780,170 L780,220 L0,220 Z" fill="#2a3f73" opacity="0.5"/>
+  <g transform="translate(110,90)" fill="#3b5998" opacity="0.75">
+    <circle cx="0" cy="0" r="8"/>
+    <circle cx="40" cy="-12" r="6"/>
+    <circle cx="80" cy="0" r="8"/>
+    <path d="M0,0 L40,-12 L80,0" stroke="#3b5998" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+  <g transform="translate(280,55)" fill="#c9a96e">
+    <path d="M0,30 C 5,5 25,-5 30,30 Z" opacity="0.7"/>
+    <path d="M14,30 L14,55" stroke="#b8975a" stroke-width="2" opacity="0.7"/>
+  </g>
+</svg></div>
+
+<section class="body">
+  <h2>共鳴開場</h2>
+  <p>他放學回來，書包一扔，說：「我數學考 62。」你的嘴巴比腦袋還快：「你是怎麼讀的？整個禮拜都在玩手機，現在這樣怪誰？」話一出口，你看見他的眼神瞬間變硬，轉身走進房間。</p>
+<p>那一刻你心裡有一個小聲音說：完蛋了，我又這樣了。明明你昨天才提醒自己，今天要好好聽他講一次話。但話衝出口的速度，永遠比你想要的那個更慢的自己還快。</p>
+<p>你坐在客廳，看著那扇剛關上的房門。你不是不愛他，你只是還沒學會在開口前，先讓自己呼吸一下。</p>
+</section>
+
+<section class="body">
+  <h2>覺知洞察</h2>
+  <p>李守蕾老師的招牌句裡，有一句話是這樣設計的：「我現在怎麼了？他現在是什麼狀態？我要反應，還是回應？」這三個問句，加起來大概只要三秒鐘。但這三秒，是把你從「自動駕駛」切換成「手動駕駛」唯一的開關。</p>
+<p>什麼叫自動駕駛？就是當孩子說某句話，你嘴巴衝出來的回應，其實不是你選的，是你父母三十年前對你說過、刻在你神經迴路裡的句子。你只是按了播放鍵。</p>
+<p>覺知，不是去消除這些自動反應（它們不會消失），而是在按下播放鍵和聲音出來之間，插進一個 3 秒鐘的縫隙。在這個縫隙裡，你有機會選擇——要不要這次當不一樣的父母。</p>
+<p>「先懂心，再懂教」最具體的入口就在這裡：先懂你自己的心，再懂孩子的心。如果你連自己現在是緊張、是失望、是被觸發了童年記憶都不知道，你給出去的，就只是反射，不是回應。</p>
+</section>
+
+<section class="body">
+  <h2>真實案例（化名）</h2>
+  <p>台中一位爸爸分享：他兒子國一，每次月考成績一回家報，他的反應就是「你還能再差嗎」。每次說完都後悔，但下次又一模一樣。</p>
+<p>有次太太提醒他：「你有沒有發現，你說那句話的語氣，跟你爸以前對你說的，一模一樣？」他愣了好久。</p>
+<p>後來他開始練習「3 秒鐘」。當兒子說「我這次數學 58」，他在心裡先問自己：「我現在怎麼了？」答案是：失望、害怕兒子未來不如人、還有一點被觸發的羞愧（因為他自己以前也數學爛）。</p>
+<p>第二問：「他現在是什麼狀態？」他抬頭看，兒子其實也低著頭、聲音很小，眼神在等。</p>
+<p>第三問：「我要反應，還是回應？」他深吸一口氣，說了一句他從沒對兒子說過的話：「謝謝你願意先告訴我。我們等等一起看考卷，看看哪裡可以調整。」兒子抬頭，眼睛濕了一下。那一刻，這位爸爸在心裡跟三十年前那個被罵的自己說：「沒事了，這次我們不一樣了。」</p>
+</section>
+
+<div class="steps">
+  <h2>3 個今天就能做的步驟</h2>
+  <div class="step">
+    <span class="num">1</span><h3>聽到孩子的話，先吸一口氣</h3>
+    <p>不論他說的是什麼，先讓你的嘴巴慢三秒。在這三秒裡問自己第一個問題：「我現在身體哪裡緊？」（喉嚨、胸口、肩膀都常見）</p>
+    <div class="quote">（不一定要立刻回應。可以說：「等我一下，我想想怎麼回你。」）</div>
+  </div>
+  <div class="step">
+    <span class="num">2</span><h3>在心裡幫孩子配旁白</h3>
+    <p>看著他現在的表情、聲音、姿勢，在心裡幫他補一句旁白：「他現在好像在……」這個動作會把你的注意力從『我感覺如何』轉到『他是誰』。</p>
+    <div class="quote">（心裡的旁白可以是：「他講這句話的時候眼睛有點不敢看我，他可能怕我罵他。」）</div>
+  </div>
+  <div class="step">
+    <span class="num">3</span><h3>選一個你 30 年後想被他記得的回應</h3>
+    <p>想像 30 年後，他跟自己的孩子說：「我爸（媽）以前對我說過⋯⋯」你希望那個句子是什麼？這個問題，會幫你過濾掉很多衝動。</p>
+    <div class="quote">「謝謝你願意先告訴我。我知道你也很在乎這件事。」</div>
+  </div>
+</div>
+
+<section class="outro">
+  <h2>覺知收筆</h2>
+  <p>你不會每一次都做到。但只要你在十次裡，能成功插進一次三秒鐘的縫隙，你的孩子就會慢慢知道——這個家，是一個可以說真話的地方。</p>
+<p>而每一次你成功不重複上一代的劇本，你都同時在做兩件事：你在給你的孩子一個新的童年，也在給三十年前那個沒被好好聽過的自己，一個遲來的擁抱。</p>
+  <div class="practice"><strong>今晚 1 分鐘小練習</strong>：今晚睡前，回想今天最後一次對孩子說話的場景。在心裡重播一次，這次按下慢動作鍵——你是用了 3 秒嗎？如果沒有，明天再試一次。</div>
+  <div class="signature">Written by 李守蕾　｜　覺知素養教育創辦人</div>
+</section>
+
+<div class="checklist">
+  <h3>3 秒鐘覺知對話．自我檢核</h3>
+  <ol>
+    <li>我現在怎麼了？（先看見自己的情緒）</li>
+    <li>他現在是什麼狀態？（再看見孩子的處境）</li>
+    <li>我要反應，還是回應？（選擇你想成為的父母）</li>
+  </ol>
+</div>
+
+<footer class="foot">
+  <div class="row"><strong>台灣展威文化教育有限公司</strong>　高雄市鼓山區美術東三路 86 號 ｜ 07-2693525 ｜ LINE @zwayedu ｜ admin@z-way-edu.com</div>
+  <div class="row"><strong>社團法人中華覺知教育關懷協會 (CSECA)</strong>　同址 4 樓 ｜ contact@z-way-edu.com ｜ 統編 72188904</div>
+  <div class="slogans">覺察己心　・　知行合一　｜　先懂心　・　再懂教　｜　蒙以養正　・　老而有尊</div>
+</footer>
+
+</div>
+
+<style>
+.share-fab{
+  position:fixed;bottom:22px;right:22px;z-index:9999;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(59,89,152,0.78);
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+  box-shadow:0 3px 14px rgba(0,0,0,0.18);
+  transition:transform .2s,background .2s;
+  border:1px solid rgba(255,255,255,0.25);
+}
+.share-fab:hover{background:rgba(59,89,152,1);transform:scale(1.08);}
+.share-fab svg{width:21px;height:21px;fill:#fff;display:block;}
+.share-fab::after{
+  content:'下載 IG/FB 分享圖';
+  position:absolute;right:56px;top:50%;transform:translateY(-50%);
+  background:#3b5998;color:#fff;font-size:12px;
+  padding:6px 12px;border-radius:6px;white-space:nowrap;
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .15s;
+}
+.share-fab:hover::after{opacity:1;}
+@media(max-width:600px){.share-fab{bottom:16px;right:16px;width:42px;height:42px;}.share-fab::after{display:none;}}
+</style>
+<a class="share-fab" href="parenting_essence_2026-04-30_share.png" download title="下載 IG/FB 分享圖">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.2a3.7 3.7 0 1 1 0-7.4 3.7 3.7 0 0 1 0 7.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>
+</a>
+
+</body>
+</html>
