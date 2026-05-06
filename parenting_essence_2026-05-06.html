@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺知教養｜他甩上的那扇門，不是把你關在外面，是他在練習成為自己 — 2026-05-06</title>
+<style>
+  :root{
+    --brand:#3b5998;
+    --brand-deep:#2a3f73;
+    --accent:#c9a96e;
+    --accent-soft:#f3e9d4;
+    --ink:#2a2620;
+    --ink-soft:#5a5048;
+    --bg:#fbf7f1;
+    --card:#ffffff;
+    --border:#e8ddc8;
+    --shadow:0 6px 20px rgba(42,63,115,.08);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink)}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 80px}
+  /* === 頁首卡 === */
+  .head{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-deep) 100%);
+    color:#fff;border-radius:18px;padding:34px 30px 30px;
+    box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .head .tag{
+    display:inline-block;font-size:13px;letter-spacing:3px;
+    background:rgba(255,255,255,.16);padding:6px 14px;border-radius:20px;
+    margin-bottom:18px;
+  }
+  .head h1{
+    font-size:28px;line-height:1.45;margin:0 0 14px;font-weight:700;
+    letter-spacing:.5px;
+  }
+  .head .meta{
+    font-size:14px;color:rgba(255,255,255,.85);margin-bottom:18px;
+  }
+  .head .meta .pill{
+    display:inline-block;background:var(--accent);color:#3a2e10;
+    padding:3px 10px;border-radius:12px;font-weight:600;margin-right:8px;
+  }
+  .head .hook{
+    font-size:16px;line-height:1.8;color:#fff;
+    border-left:3px solid var(--accent);padding-left:14px;margin-top:14px;
+  }
+  .head svg{position:absolute;right:-30px;top:-10px;opacity:.18}
+  /* === 文章卡 === */
+  .body{
+    background:var(--card);border-radius:18px;padding:36px 30px;margin-top:22px;
+    box-shadow:var(--shadow);
+  }
+  .body section{margin-bottom:32px}
+  .body section:last-child{margin-bottom:0}
+  .body h2{
+    font-size:20px;color:var(--brand-deep);margin:0 0 14px;
+    padding-left:14px;border-left:4px solid var(--accent);
+    line-height:1.5;
+  }
+  .body p{margin:0 0 14px;color:var(--ink);font-size:16px}
+  .body p:last-child{margin-bottom:0}
+  .body em.soft{color:var(--brand);font-style:normal;font-weight:600}
+  /* === 3 步驟 === */
+  .steps{margin-top:22px}
+  .steps h2{font-size:20px;color:var(--brand-deep);margin:0 0 18px;
+    padding-left:14px;border-left:4px solid var(--accent)}
+  .step{
+    background:var(--card);border:1px solid var(--border);border-radius:14px;
+    padding:22px 22px 20px;margin-bottom:14px;position:relative;
+    box-shadow:0 3px 10px rgba(42,63,115,.05);
+  }
+  .step .num{
+    position:absolute;left:-12px;top:-12px;
+    width:38px;height:38px;border-radius:50%;
+    background:var(--brand);color:#fff;display:flex;
+    align-items:center;justify-content:center;
+    font-size:18px;font-weight:700;
+    box-shadow:0 4px 10px rgba(59,89,152,.3);
+  }
+  .step .title{
+    font-size:17px;font-weight:700;color:var(--brand-deep);
+    margin:0 0 8px;padding-left:32px;
+  }
+  .step .desc{font-size:15.5px;color:var(--ink-soft);margin:0 0 12px;line-height:1.8}
+  .step .quote{
+    background:var(--accent-soft);border-radius:10px;padding:12px 16px;
+    font-size:15px;color:#5a4a20;line-height:1.75;
+    border-left:3px solid var(--accent);
+  }
+  .step .quote .label{font-weight:700;color:#7a5a25;margin-right:6px}
+  /* === 收筆卡 === */
+  .outro{
+    background:linear-gradient(135deg,var(--accent) 0%,#b8985d 100%);
+    color:#3a2e10;border-radius:18px;padding:30px 28px;margin-top:22px;
+    box-shadow:var(--shadow);
+  }
+  .outro h2{font-size:18px;margin:0 0 12px;color:#3a2e10;
+    padding-left:12px;border-left:4px solid #fff}
+  .outro p{font-size:15.5px;line-height:1.85;margin:0 0 12px;color:#3a2e10}
+  .outro .sign{
+    margin-top:16px;padding-top:14px;border-top:1px dashed rgba(58,46,16,.3);
+    font-size:14px;color:#3a2e10;font-weight:600;letter-spacing:.5px;
+  }
+  /* === 自我檢核小卡 === */
+  .selfcheck{
+    background:#f0eee5;border:1px dashed var(--brand);border-radius:14px;
+    padding:20px 22px;margin-top:22px;
+  }
+  .selfcheck .h{
+    font-size:15px;font-weight:700;color:var(--brand-deep);margin-bottom:10px;
+    letter-spacing:.5px;
+  }
+  .selfcheck ul{margin:0;padding-left:20px;color:var(--ink)}
+  .selfcheck li{font-size:15px;line-height:1.85;margin-bottom:4px}
+  /* === 頁尾 === */
+  .foot{
+    margin-top:30px;padding:24px 24px 22px;background:#efeae0;
+    border-radius:14px;font-size:13px;color:var(--ink-soft);line-height:1.85;
+  }
+  .foot .row{margin-bottom:8px}
+  .foot .slogans{
+    margin-top:12px;padding-top:12px;border-top:1px solid #ddd2bc;
+    text-align:center;font-size:13.5px;color:var(--brand-deep);
+    font-weight:600;letter-spacing:1.5px;
+  }
+  .foot .slogans span{margin:0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 頁首卡 -->
+  <header class="head">
+    <svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#c9a96e"/>
+          <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+      </defs>
+      <circle cx="110" cy="80" r="50" fill="url(#g1)" opacity=".7"/>
+      <path d="M40 180 Q110 110 180 180" stroke="#c9a96e" stroke-width="3" fill="none" opacity=".8"/>
+      <circle cx="60" cy="160" r="5" fill="#fff" opacity=".6"/>
+      <circle cx="160" cy="160" r="5" fill="#fff" opacity=".6"/>
+      <path d="M110 30 L110 130" stroke="#fff" stroke-width="2" stroke-dasharray="4 6" opacity=".5"/>
+    </svg>
+    <span class="tag">覺知教養 ｜ 每日精華</span>
+    <h1>他甩上的那扇門，不是把你關在外面，是他在練習成為自己</h1>
+    <div class="meta">
+      <span class="pill">13-18 歲｜青少年自我認同</span>
+      2026 年 5 月 6 日（週三）
+    </div>
+    <div class="hook">
+      青春期的孩子最像一艘剛離岸的小船——他還想被你看見，但他更需要你不要追上來划。今天，我們把這份「靠近與後退的拿捏」說清楚。
+    </div>
+  </header>
+
+  <!-- 文章卡 -->
+  <article class="body">
+
+    <section>
+      <h2>一、那一聲關門，把你關在外面，也把他自己關在裡面</h2>
+      <p>傍晚六點半，你站在廚房，剛切好水果，聽見鑰匙轉動的聲音。你忍不住探出頭：「今天考得怎麼樣？」</p>
+      <p>沒有回答。只有書包掉在沙發上的「咚」、一句含在喉嚨裡的「煩死了，你不要管啦」，然後是房門砰一聲，把整個家分成了兩邊。你站在門外，端著那盤水果，心裡又熱又冷——熱的是被推開的那一下，冷的是你開始懷疑：是不是哪一天起，他就再也不需要我了？</p>
+      <p>如果你最近常在那扇門外站著，這篇文章想先輕輕告訴你：<em class="soft">他不是把你推開，他是在學著怎麼站好自己。</em></p>
+    </section>
+
+    <section>
+      <h2>二、青春期的「頂嘴」，其實是大腦在蓋一個叫做「我」的房子</h2>
+      <p>很多家長以為青春期的甩門、頂嘴、白眼，是「不愛了、變壞了、被同學帶壞了」。但若我們用「<em class="soft">周哈里窗</em>」來看就會明白：13 歲到 18 歲，是一個人這輩子，第一次認真去整理「未知我」和「隱藏我」這兩個區塊的時期。</p>
+      <p>所謂未知我，是連他自己都還沒搞懂的那個自己——「我喜歡什麼？」「我為什麼會在意他怎麼看我？」「我想成為哪一種大人？」這些問題，他需要一個別人看不見的角落去摸索。所以他開始關門、開始有秘密、開始覺得你的「關心」像「監視」。</p>
+      <p>這也正是孩子從「<em class="soft">他律</em>」走向「<em class="soft">自律</em>」、再走向「<em class="soft">自主</em>」的關鍵地段。他開始不想再因為「媽媽說」而做某件事，他想試著因為「我自己決定」而做。這條路一定會撞牆、會說錯話、會用力過猛——但每一次撞牆，都是他在校準自己的方向感。他不是不知道你會難過，他只是當下，情緒先到了，理智還在路上。</p>
+    </section>
+
+    <section>
+      <h2>三、台中林媽媽和小柔的那扇門</h2>
+      <p>台中的林媽媽，有一個剛升上國二的女兒小柔。國一上學期還會在餐桌上聊學校的事，下學期開始，回家第一件事就是進房、關門、戴上耳機。林媽媽問什麼都是「還好」、「不知道」、「不要再問了好不好」。</p>
+      <p>那段時間，林媽媽幾乎每晚睡不著。她原本的反應是追問：「你怎麼這樣跟媽媽說話？」「我關心你錯了嗎？」結果換來更大力的一聲關門、和接下來三天的冷戰。她說：「我覺得我快要失去她了。」</p>
+      <p>後來她做了一件很小、卻很關鍵的事——<em class="soft">她決定先不去敲那扇門，而是去敲自己的門</em>。聽到關門聲時，她先深呼吸三次，告訴自己「她不是在對付我，她在長大」。然後她不再追問，只在房門縫下塞一張紙條：「媽媽不是要查你，是想到你。冰箱有切好的芒果。」</p>
+      <p>第一週，紙條沒被回。第三週的某一晚，小柔自己走出房間，坐在餐桌邊削芒果，淡淡丟了一句：「媽，我跟誰誰最近不太說話。」林媽媽沒急著問細節，只說：「嗯，你願意說，我就在這裡。」那扇門沒從此打開，但林媽媽說：「現在我知道，門關上的時候，我不用站在外面慌——我可以去做我自己的事，等他願意，他會出來。」</p>
+    </section>
+
+    <section class="steps">
+      <h2>四、今天就能做的 3 個小步驟</h2>
+
+      <div class="step">
+        <div class="num">1</div>
+        <div class="title">把「問句」改成「觀察句」</div>
+        <div class="desc">青少年最怕被問——尤其是「今天怎麼樣？」這種開放式問題，他會解讀成「又要查我」。試著把問句換成你眼中看到的觀察＋一個不需要回答的選項，他的肩膀會立刻鬆下來。</div>
+        <div class="quote"><span class="label">你可以這樣說：</span>「你看起來有點累，桌上有水果，要不要先去躺一下？」（不是問題，是邀請。）</div>
+      </div>
+
+      <div class="step">
+        <div class="num">2</div>
+        <div class="title">每天留一個「不問、卻在身邊」的時刻</div>
+        <div class="desc">青少年最不想要的是被「面對面審問」，但他其實很需要「並肩感」。一起洗碗、一起開車、一起摺衣服——這種側臉對側臉的時刻，反而最容易讓他鬆口。不必開話題，安靜共處本身就是訊息：你在，但你不逼。</div>
+        <div class="quote"><span class="label">你可以這樣做：</span>每天找一段 10 分鐘的「不對視時段」——一起切水果、一起遛狗。如果他開口，你只回應，不延伸。</div>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <div class="title">把「我擔心你」說出口，但只說一次，不追問</div>
+        <div class="desc">很多父母把「擔心」藏在「念」裡——念久了，孩子聽到的不是擔心，是控制。試著把擔心直接說出來，但只說一句，不要解釋、不要要求他回應。讓他知道你的心，但不替他做決定。</div>
+        <div class="quote"><span class="label">你可以這樣說：</span>「媽媽最近會想你的事，但我不會逼你說。你想說的時候，我都在。」（說完就轉身去做別的事，這句話會自己發酵。）</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>五、今晚的 1 分鐘小練習</h2>
+      <p>下次他甩上門的瞬間，請先不要動。站在原地，做三個深呼吸，每一個呼吸的長度大約是慢慢數到四。在第三個呼吸吐氣的時候，輕輕對自己說一句話：</p>
+      <p style="text-align:center;font-size:17px;color:var(--brand-deep);font-weight:600;background:var(--accent-soft);padding:14px 18px;border-radius:10px;line-height:1.7;">「他在長大。他在練習成為他自己。<br>這扇門關上，不代表我失去了他。」</p>
+      <p>這 60 秒，不是讓你忍耐，是讓你回到自己。當你回到自己，你才有空間看見他真正在發生的事；你不被他的情緒帶走，他才有一個穩穩的地方，能在繞遠路之後回來。</p>
+      <p>青春期不是親子關係的盡頭，是另一種愛的開始——從緊緊牽著的手，到一段剛剛好的距離。你不必追上去划，你只要讓那艘小船知道：港口一直都在這裡。</p>
+    </section>
+
+    <!-- 自我檢核小卡 -->
+    <div class="selfcheck">
+      <div class="h">＊ 3 秒鐘覺知對話｜今晚自我檢核 ＊</div>
+      <ul>
+        <li>① <strong>我現在怎麼了？</strong>（被推開的失落？被頂嘴的怒？對未來的怕？）</li>
+        <li>② <strong>他現在是什麼狀態？</strong>（是攻擊我？還是在處理他自己？）</li>
+        <li>③ <strong>我要反應，還是回應？</strong>（反應 = 把球打回去；回應 = 接住，再選擇。）</li>
+      </ul>
+    </div>
+
+  </article>
+
+  <!-- 收筆卡 -->
+  <div class="outro">
+    <h2>結語</h2>
+    <p>青春期的孩子，不是不愛你，是他正在學「怎麼當一個有自己的人」。我們這一代父母最難的功課，就是<strong>從「全程陪跑」變成「在岸邊等他靠岸」</strong>。</p>
+    <p>而岸邊那盞燈，能不能穩穩亮著，靠的不是孩子，是我們有沒有先穩住自己。先懂心，再懂教——這顆心，是我們自己的，也是孩子的。</p>
+    <div class="sign">Written by 李守蕾　｜　覺知素養教育創辦人 ｜ 中華覺知教育關懷協會理事長</div>
+  </div>
+
+  <!-- 頁尾 -->
+  <div class="foot">
+    <div class="row"><strong>台灣展威文化教育有限公司</strong>　｜　高雄市鼓山區美術東三路 86 號　｜　07-2693525　｜　LINE @zwayedu　｜　admin@z-way-edu.com</div>
+    <div class="row"><strong>社團法人中華覺知教育關懷協會（CSECA）</strong>　｜　同址 4 樓　｜　contact@z-way-edu.com　｜　協會統編 72188904</div>
+    <div class="slogans">
+      <span>覺察己心　・　知行合一</span>｜<span>先懂心　・　再懂教</span>｜<span>蒙以養正　・　老而有尊</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
